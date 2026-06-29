@@ -1,0 +1,309 @@
+// Mavzu-agnostik kontent modeli:
+//   Topic (mavzu)  ->  Section (qism/bo'lim)  ->  Article (bob/maqola, markdown)
+// Bu model dasturlash kitobi uchun ham, kelajakda ISTALGAN boshqa mavzu uchun ham ishlaydi.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// PostgreSQL (Neon.tech yoki boshqa PG provider).
+// .env da: DATABASE_URL="postgresql://user:pass@host:5432/db?sslmode=require"
+// Neon.tech bepul tier: neon.tech → New Project → Connection string ni oling.
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Foydalanuvchi (auth, admin, progress, bookmark uchun)
+model User {
+  id             String          @id @default(cuid())
+  email          String          @unique
+  name           String?
+  passwordHash   String
+  googleId       String?         @unique
+  /// "admin" yoki "user"
+  role           String          @default("user")
+  /// Email tasdiqlangan-yo'qligi (qat'iy verification)
+  emailVerified  Boolean         @default(false)
+  progress       Progress[]
+  bookmarks      Bookmark[]
+  notes          Note[]
+  comments       Comment[]
+  streak         Streak?
+  plannerDays    PlannerDay[]
+  plannerHabits  PlannerHabits?
+  passwordResets PasswordReset[]
+  emailVerifications EmailVerification[]
+  flashcardReviews FlashcardReview[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+}
+
+/// O'qilgan boblar (progress tracking)
+model Progress {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  articleId String
+  article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  completed Boolean  @default(true)
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, articleId])
+}
+
+/// Saqlangan (bookmark) maqolalar
+model Bookmark {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  articleId String
+  article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, articleId])
+}
+
+/// Shaxsiy eslatmalar (maqolaga)
+model Note {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  articleId String
+  article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  body      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+/// Mavzu — eng yuqori daraja (masalan "Dasturlash kitobi", yoki istalgan boshqa soha)
+model Topic {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  title       String
+  description String?
+  /// Lucide ikonka nomi (emoji emas) — masalan "book-open", "wrench"
+  icon        String?
+  /// Aksent rang (HEX) — mavzu uchun maxsus, ixtiyoriy
+  accent      String?
+  order       Int       @default(0)
+  published   Boolean   @default(true)
+  sections    Section[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([order])
+}
+
+/// Bo'lim (QISM) — mavzu ichidagi guruh
+model Section {
+  id        String    @id @default(cuid())
+  topicId   String
+  topic     Topic     @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  slug      String
+  title     String
+  icon      String?
+  order     Int       @default(0)
+  articles  Article[]
+  quizzes   Quiz[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@unique([topicId, slug])
+  @@index([topicId, order])
+}
+
+/// Maqola (bob) — markdown kontent
+model Article {
+  id          String    @id @default(cuid())
+  sectionId   String
+  section     Section   @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  slug        String
+  title       String
+  /// Asosiy kontent — markdown (renderer HTML va premium ikonkaga aylantiradi)
+  content     String
+  /// Qisqa tavsif (ixtiyoriy, ro'yxat/SEO uchun)
+  excerpt     String?
+  order       Int       @default(0)
+  /// Taxminiy o'qish vaqti (daqiqa)
+  readingTime Int       @default(0)
+  published   Boolean   @default(true)
+  progress    Progress[]
+  bookmarks   Bookmark[]
+  notes       Note[]
+  comments    Comment[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([sectionId, slug])
+  @@index([sectionId, order])
+}
+
+/// Izoh (maqola muhokamasi)
+model Comment {
+  id        String   @id @default(cuid())
+  articleId String
+  article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  body      String
+  createdAt DateTime @default(now())
+
+  @@index([articleId, createdAt])
+}
+
+/// Interaktiv test (bo'limga bog'liq)
+model Quiz {
+  id        String     @id @default(cuid())
+  sectionId String
+  section   Section    @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  title     String
+  order     Int        @default(0)
+  questions Question[]
+  createdAt DateTime   @default(now())
+
+  @@index([sectionId, order])
+}
+
+/// Test savoli
+model Question {
+  id           String  @id @default(cuid())
+  quizId       String
+  quiz         Quiz    @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  text         String
+  /// JSON: ["variant1","variant2",...]
+  options      String
+  correctIndex Int
+  explanation  String?
+  order        Int     @default(0)
+}
+
+// ─── YANGI MODELLAR ────────────────────────────────────────────────────────────
+
+/// Kundalik o'qish seriyasi (streak)
+model Streak {
+  id          String    @id @default(cuid())
+  userId      String    @unique
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  current     Int       @default(0)
+  longest     Int       @default(0)
+  /// Oxirgi checkin sanasi "YYYY-MM-DD" formatida
+  lastCheckin String?
+  updatedAt   DateTime  @updatedAt
+}
+
+/// Kunlik rejalashtiruvchi (planner) — kun ma'lumotlari serverda
+model PlannerDay {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// "YYYY-MM-DD" formatida
+  date      String
+  /// JSON: { blocks: Block[], tasks: Task[], note: string }
+  data      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, date])
+  @@index([userId])
+}
+
+/// Planner odatlari (habits) — foydalanuvchiga bir yozuv
+model PlannerHabits {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// JSON: Habit[]
+  habits    String   @default("[]")
+  /// JSON: Record<date, Record<habitId, boolean>>
+  log       String   @default("{}")
+  updatedAt DateTime @updatedAt
+}
+
+/// Taklif kodlari (invite links)
+model Invite {
+  id        String    @id @default(cuid())
+  code      String    @unique
+  /// Invite yaratgan admin ID
+  createdBy String
+  usedBy    String?
+  usedAt    DateTime?
+  expiresAt DateTime?
+  createdAt DateTime  @default(now())
+}
+
+/// Parolni tiklash tokenlari
+model PasswordReset {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime
+  used      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+/// Email tasdiqlash kodlari (6 xonali)
+model EmailVerification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  code      String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+/// Lug'at flashcard dastalari (daraja bo'yicha)
+model FlashcardDeck {
+  id        String      @id @default(cuid())
+  slug      String      @unique
+  title     String
+  /// CEFR darajasi: "A1", "A2", "B1", "B2", "C1", "C2", "maxsus"
+  level     String
+  cards     Flashcard[]
+  createdAt DateTime    @default(now())
+
+  @@index([level])
+}
+
+/// Flashcard — lug'at kartasi
+model Flashcard {
+  id      String  @id @default(cuid())
+  deckId  String
+  deck    FlashcardDeck @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  /// Inglizcha so'z / ibora
+  front   String
+  /// O'zbekcha tarjima
+  back    String
+  ipa     String?
+  example String?
+  /// So'z turkumi: n, v, adj, adv, prep, conj, det, pron...
+  pos     String?
+  order   Int     @default(0)
+  reviews FlashcardReview[]
+
+  @@index([deckId])
+}
+
+/// SM-2 spaced repetition: foydalanuvchining har bir karta uchun holati
+model FlashcardReview {
+  id         String    @id @default(cuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cardId     String
+  card       Flashcard @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  /// SM-2 sifat bahosi 0-5
+  quality    Int       @default(3)
+  /// Keyingi takrorlashgacha kunlar soni
+  interval   Int       @default(1)
+  easeFactor Float     @default(2.5)
+  nextReview DateTime  @default(now())
+  reviewedAt DateTime  @default(now())
+
+  @@unique([userId, cardId])
+  @@index([userId, nextReview])
+}

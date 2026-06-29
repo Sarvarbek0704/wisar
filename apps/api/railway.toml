@@ -1,0 +1,17 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "apps/api/Dockerfile"
+buildCommand = "npm run build:api"
+
+[deploy]
+startCommand = "node apps/api/dist/main.js"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
+
+[[services]]
+name = "mana-api"
+
+[services.healthcheck]
+path = "/api/health"
+timeout = 30
+interval = 10

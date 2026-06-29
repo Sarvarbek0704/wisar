@@ -1,0 +1,455 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   WISAR — Design System Variables
+   ============================================================ */
+:root {
+  /* Brand */
+  --brand:       #0B111D;
+  --brand-50:    #f0f4f9;
+
+  /* Primary — Emerald */
+  --accent:      #059669;
+  --accent-h:    #047857;
+  --accent-bg:   #ecfdf5;
+
+  /* Secondary — Teal */
+  --accent2:     #0d9488;
+  --accent2-bg:  #f0fdfa;
+
+  /* Ink / Text — Slate */
+  --ink:         #0f172a;
+  --soft:        #64748b;
+  --muted:       #94a3b8;
+
+  /* Surface */
+  --page:        #ffffff;
+  --bg:          #f8fafc;
+  --line:        #e2e8f0;
+
+  /* Semantic */
+  --success:     #16a34a;
+  --danger:      #dc2626;
+  --warn:        #d97706;
+
+  /* Code — Light Minimal (day) */
+  --code-bg:     #f8fafc;
+  --code-fg:     #334155;
+  --code-border: #e2e8f0;
+}
+
+[data-theme="dark"] {
+  --accent:      #34d399;
+  --accent-h:    #6ee7b7;
+  --accent-bg:   rgba(52,211,153,.1);
+
+  --accent2:     #2dd4bf;
+  --accent2-bg:  rgba(45,212,191,.08);
+
+  --ink:         #e2e8f0;
+  --soft:        #94a3b8;
+  --muted:       #475569;
+
+  --page:        #0f172a;
+  --bg:          #0B111D;
+  --line:        #1e293b;
+
+  --success:     #4ade80;
+  --danger:      #f87171;
+  --warn:        #fbbf24;
+
+  /* Code — Catppuccin Mocha (dark) */
+  --code-bg:     #1e1e2e;
+  --code-fg:     #cdd6f4;
+  --code-border: transparent;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+
+/* ============================================================
+   Tipografiya yordamchi klasslari
+   ============================================================ */
+.font-display {
+  font-family: var(--font-titan), 'Titan One', Impact, sans-serif;
+}
+.font-book-head {
+  font-family: var(--font-trocchi), 'Trocchi', Georgia, serif;
+}
+
+/* ============================================================
+   Animatsiya yordamchilari
+   ============================================================ */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(.96); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .6; }
+}
+
+.animate-fade-in       { animation: fade-in      .35s ease both; }
+.animate-slide-right   { animation: slide-in-right .3s ease both; }
+.animate-slide-left    { animation: slide-in-left  .3s ease both; }
+.animate-scale-in      { animation: scale-in      .25s ease both; }
+.animate-pulse-soft    { animation: pulse-soft    2s ease infinite; }
+
+/* stagger helpers */
+.delay-75  { animation-delay: .075s; }
+.delay-150 { animation-delay: .15s; }
+.delay-225 { animation-delay: .225s; }
+.delay-300 { animation-delay: .3s; }
+
+/* ============================================================
+   Hover geçişleri — global yordamchilar
+   ============================================================ */
+.hover-lift { transition: transform .18s ease, box-shadow .18s ease; }
+.hover-lift:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.1); }
+
+/* ============================================================
+   prose-book — Kitob o'qish kontenti
+   ============================================================ */
+.prose-book {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+.prose-book h1,
+.prose-book h2,
+.prose-book h3,
+.prose-book h4 {
+  font-family: var(--font-trocchi), 'Trocchi', Georgia, serif;
+  color: var(--ink);
+  line-height: 1.25;
+  font-weight: 400;
+  scroll-margin-top: 90px;
+  letter-spacing: -.01em;
+}
+.prose-book h1 {
+  font-size: 2.1rem;
+  margin: .2em 0 .6em;
+  padding-bottom: .4em;
+  border-bottom: 3px solid var(--accent);
+}
+.prose-book h2 {
+  font-size: 1.55rem;
+  margin: 2em 0 .5em;
+  padding-left: .6em;
+  border-left: 5px solid var(--accent);
+}
+.prose-book h3 {
+  font-size: 1.22rem;
+  margin: 1.6em 0 .4em;
+  color: var(--accent2);
+}
+.prose-book h4 {
+  font-size: 1.05rem;
+  margin: 1.3em 0 .3em;
+  color: var(--soft);
+}
+.prose-book p  { margin: .7em 0; }
+.prose-book a  { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); transition: border-color .15s; }
+.prose-book a:hover { border-bottom-style: solid; }
+.prose-book strong { color: var(--ink); font-weight: 700; }
+.prose-book ul,
+.prose-book ol { padding-left: 1.5em; margin: .6em 0; }
+.prose-book li { margin: .3em 0; }
+.prose-book hr { border: none; border-top: 1px solid var(--line); margin: 2.4em 0; }
+.prose-book blockquote {
+  margin: 1.2em 0;
+  padding: .6em 1.2em;
+  background: color-mix(in srgb, var(--accent2) 7%, var(--page));
+  border-left: 5px solid var(--accent2);
+  color: var(--soft);
+  border-radius: 0 8px 8px 0;
+}
+.prose-book blockquote p { margin: .3em 0; }
+
+/* Inline code */
+.prose-book :not(pre) > code {
+  font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+  background: color-mix(in srgb, var(--accent) 8%, var(--page));
+  color: #b5305f;
+  font-size: .86em;
+  padding: .12em .42em;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+}
+[data-theme="dark"] .prose-book :not(pre) > code {
+  color: #f38ba8;
+}
+
+/* ============================================================
+   Kod bloki — Light Minimal (day) / Catppuccin Mocha (dark)
+   ============================================================ */
+.prose-book .code-wrap {
+  position: relative;
+  margin: 1.2em 0;
+}
+.prose-book .code-lang {
+  position: absolute;
+  top: 0; left: 0;
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--soft);
+  background: var(--code-bg);
+  padding: .25em .7em;
+  border-radius: 0 0 8px 0;
+  border-right: 1px solid var(--code-border);
+  border-bottom: 1px solid var(--code-border);
+  font-family: var(--font-inter), sans-serif;
+  z-index: 1;
+}
+.prose-book .code-wrap .copy-btn {
+  position: absolute;
+  top: 0; right: 0; z-index: 2;
+  font-size: .7rem;
+  letter-spacing: .04em;
+  color: var(--soft);
+  background: var(--code-bg);
+  border: none;
+  border-radius: 0 8px 0 8px;
+  border-left: 1px solid var(--code-border);
+  border-bottom: 1px solid var(--code-border);
+  padding: .3em .75em;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .15s, color .15s;
+  font-family: var(--font-inter), sans-serif;
+}
+.prose-book .code-wrap:hover .copy-btn { opacity: 1; }
+.prose-book .code-wrap .copy-btn:hover { color: var(--accent); }
+.prose-book .code-wrap .copy-btn.copied { color: var(--success); opacity: 1; }
+
+.prose-book pre {
+  margin: 0;
+  background: var(--code-bg);
+  color: var(--code-fg);
+  padding: 18px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: .84rem;
+  line-height: 1.65;
+  border: 1px solid var(--code-border);
+}
+.prose-book pre code {
+  font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+  background: none;
+  padding: 0;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Highlight.js — Light Minimal (day) */
+.hljs-comment, .hljs-quote      { color: #94a3b8; font-style: italic; }
+.hljs-keyword, .hljs-selector-tag { color: #7c3aed; font-weight: 600; }
+.hljs-string, .hljs-attr        { color: #059669; }
+.hljs-number, .hljs-literal     { color: #ea580c; }
+.hljs-type, .hljs-class .hljs-title { color: #0284c7; }
+.hljs-function .hljs-title,
+.hljs-title.function__          { color: #1d4ed8; }
+.hljs-variable                  { color: #334155; }
+.hljs-built_in                  { color: #0891b2; }
+.hljs-tag                       { color: #dc2626; }
+.hljs-name                      { color: #b45309; }
+.hljs-property                  { color: #0f172a; }
+
+/* Highlight.js — Catppuccin Mocha (dark) */
+[data-theme="dark"] .hljs-comment,
+[data-theme="dark"] .hljs-quote      { color: #585b70; font-style: italic; }
+[data-theme="dark"] .hljs-keyword,
+[data-theme="dark"] .hljs-selector-tag { color: #cba6f7; font-weight: 600; }
+[data-theme="dark"] .hljs-string,
+[data-theme="dark"] .hljs-attr       { color: #a6e3a1; }
+[data-theme="dark"] .hljs-number,
+[data-theme="dark"] .hljs-literal    { color: #fab387; }
+[data-theme="dark"] .hljs-type,
+[data-theme="dark"] .hljs-class .hljs-title { color: #f9e2af; }
+[data-theme="dark"] .hljs-function .hljs-title,
+[data-theme="dark"] .hljs-title.function__   { color: #89b4fa; }
+[data-theme="dark"] .hljs-variable           { color: #cdd6f4; }
+[data-theme="dark"] .hljs-built_in           { color: #89dceb; }
+[data-theme="dark"] .hljs-tag               { color: #f38ba8; }
+[data-theme="dark"] .hljs-name              { color: #cba6f7; }
+[data-theme="dark"] .hljs-property          { color: #cdd6f4; }
+
+/* Jadvallar */
+.prose-book table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.3em 0;
+  font-size: .92rem;
+}
+.prose-book th,
+.prose-book td {
+  border: 1px solid var(--line);
+  padding: .55em .8em;
+  text-align: left;
+  vertical-align: top;
+}
+.prose-book th {
+  background: color-mix(in srgb, var(--accent) 8%, var(--page));
+  font-weight: 700;
+  color: var(--ink);
+}
+.prose-book tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--ink) 3%, var(--page));
+}
+.prose-book img     { max-width: 100%; }
+.prose-book details {
+  margin: .6em 0;
+  padding: .4em .9em;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--page);
+}
+.prose-book summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* ============================================================
+   Premium ikonkalar (emoji o'rniga)
+   ============================================================ */
+.ic {
+  width: 1.1em; height: 1.1em;
+  display: inline-block;
+  vertical-align: -.18em;
+  flex: none;
+}
+.ic-ok   { color: var(--success); }
+.ic-no   { color: var(--danger); }
+.ic-warn { color: var(--warn); }
+.ic-dot  { width: .7em; height: .7em; vertical-align: 0; }
+
+/* ============================================================
+   Fill-in-blank mashqlari
+   ============================================================ */
+.fill-blank {
+  display: inline-block;
+  width: 8em;
+  border: none;
+  border-bottom: 2px solid var(--accent);
+  background: transparent;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0 4px 1px;
+  outline: none;
+  text-align: center;
+  transition: border-color .2s;
+}
+.fill-blank:focus { border-color: var(--accent2); }
+.fill-blank.correct { border-color: var(--success); }
+.fill-blank.wrong   { border-color: var(--danger); }
+.fill-blank-wrap    { display: inline-flex; align-items: center; gap: 4px; }
+.fill-blank-fb      { font-size: .8em; }
+
+/* ============================================================
+   Cross-ref havolalar
+   ============================================================ */
+.cross-ref {
+  display: inline-flex;
+  align-items: center;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: 4px;
+  padding: 0 5px;
+  font-size: .82em;
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background .15s;
+}
+.cross-ref:hover { background: color-mix(in srgb, var(--accent) 18%, transparent); }
+
+/* ============================================================
+   O'qish sozlamalari
+   ============================================================ */
+#reader[data-font="sm"] .prose-book { font-size: 16px; }
+#reader[data-font="lg"] .prose-book { font-size: 20px; }
+#reader[data-width="wide"] .article-card { max-width: 1060px; }
+
+/* ============================================================
+   Sidebar layout
+   ============================================================ */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--soft);
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.sidebar-link:hover {
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  color: var(--ink);
+}
+.sidebar-link.active {
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ============================================================
+   Bottom nav (mobile)
+   ============================================================ */
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex: 1;
+  padding: 8px 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--soft);
+  text-decoration: none;
+  transition: color .15s;
+}
+.bottom-nav-item.active,
+.bottom-nav-item:hover { color: var(--accent); }
+
+/* ============================================================
+   Page transition wrapper (framer-motion)
+   ============================================================ */
+.page-wrapper { min-height: calc(100vh - 56px); }

@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build natijalari
+dist/
+build/
+.next/
+out/
+.turbo/
+
+# Muhit (maxfiy)
+.env
+.env.local
+.env.*.local
+
+# Prisma
+packages/database/prisma/*.db
+
+# Loglar
+*.log
+npm-debug.log*
+
+# OS / muharrir
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Claude Code
+.claude/
