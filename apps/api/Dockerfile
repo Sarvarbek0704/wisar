@@ -5,7 +5,7 @@ WORKDIR /app
 COPY package*.json ./
 COPY packages/database/package*.json ./packages/database/
 COPY apps/api/package*.json ./apps/api/
-RUN npm install --workspace=@mana/database --workspace=@mana/api
+RUN npm install --workspace=@wisar/database --workspace=@wisar/api
 
 # Prisma generate
 COPY packages/database/prisma ./packages/database/prisma

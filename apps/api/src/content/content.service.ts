@@ -1,6 +1,10 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
+import { CacheService } from "../common/cache.service";
 
+/** Public kontent kesh kaliti prefiksi (36-vazifa) */
+export const CONTENT_CACHE_PREFIX = "content:";
+const CONTENT_TTL_MS = 60_000;
 
 type NavItem = {
   topicSlug: string;
@@ -11,30 +15,43 @@ type NavItem = {
 
 @Injectable()
 export class ContentService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly cache: CacheService,
+  ) {}
 
-  /** Sayt statistikasi — landing page uchun. */
+  /** Sayt statistikasi — landing page uchun (keshlanadi 60s). */
   async stats() {
-    const [articles, sections, topics, users] = await Promise.all([
-      this.prisma.article.count({ where: { published: true } }),
-      this.prisma.section.count(),
-      this.prisma.topic.count({ where: { published: true } }),
-      this.prisma.user.count(),
-    ]);
-    return { articles, sections, topics, users };
-  }
-
-  /** Barcha mavzular (bo'limlar soni bilan). */
-  async topics() {
-    return this.prisma.topic.findMany({
-      where: { published: true },
-      orderBy: { order: "asc" },
-      include: { _count: { select: { sections: true } } },
+    return this.cache.wrap(`${CONTENT_CACHE_PREFIX}stats`, CONTENT_TTL_MS, async () => {
+      const [articles, sections, topics, users] = await Promise.all([
+        this.prisma.article.count({ where: { published: true } }),
+        this.prisma.section.count(),
+        this.prisma.topic.count({ where: { published: true } }),
+        this.prisma.user.count(),
+      ]);
+      return { articles, sections, topics, users };
     });
   }
 
-  /** Bitta mavzu — bo'limlar va maqola ro'yxati bilan (kontent emas). */
+  /** Barcha mavzular (bo'limlar soni bilan) — keshlanadi 60s. */
+  async topics() {
+    return this.cache.wrap(`${CONTENT_CACHE_PREFIX}topics`, CONTENT_TTL_MS, () =>
+      this.prisma.topic.findMany({
+        where: { published: true },
+        orderBy: { order: "asc" },
+        include: { _count: { select: { sections: true } } },
+      }),
+    );
+  }
+
+  /** Bitta mavzu — bo'limlar va maqola ro'yxati bilan (kontent emas), keshlanadi 60s. */
   async topicBySlug(slug: string) {
+    return this.cache.wrap(`${CONTENT_CACHE_PREFIX}topic:${slug}`, CONTENT_TTL_MS, () =>
+      this.topicBySlugUncached(slug),
+    );
+  }
+
+  private async topicBySlugUncached(slug: string) {
     const topic = await this.prisma.topic.findUnique({
       where: { slug },
       include: {
@@ -101,11 +118,18 @@ export class ContentService {
         ? { topicSlug, sectionSlug: flat[i].sectionSlug, slug: flat[i].slug, title: flat[i].title }
         : null;
 
+    // Maqola oxiri testi (8-vazifa) — agar bog'langan bo'lsa
+    const articleQuiz = await this.prisma.quiz.findFirst({
+      where: { articleId: article.id },
+      select: { id: true, title: true },
+    });
+
     return {
       topic: { slug: topic.slug, title: topic.title, accent: topic.accent },
       article,
       prev: toNav(idx - 1),
       next: toNav(idx + 1),
+      articleQuiz,
     };
   }
 

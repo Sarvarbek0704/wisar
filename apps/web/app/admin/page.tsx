@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { adminStats, type AdminStats } from "@/lib/admin-api";
 import { CardsSkeleton } from "@/components/Skeleton";
+import { AdminInsights } from "@/components/admin/AdminInsights";
 
 function timeAgo(iso: string): string {
   const diff = Date.now() - new Date(iso).getTime();
@@ -149,6 +150,9 @@ export default function AdminDashboard() {
           </Link>
         </div>
       </div>
+
+      {/* Kengaytirilgan analitika + audit (31,40-vazifa) */}
+      <AdminInsights />
     </div>
   );
 }

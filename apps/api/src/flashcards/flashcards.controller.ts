@@ -57,6 +57,14 @@ export class FlashcardsController {
     return this.flashcards.reviewCard(user.sub, dto.cardId, dto.quality);
   }
 
+  /** POST /flashcards/:cardId/hint — AI yodlash maslahati + misol (11-vazifa). */
+  @UseGuards(JwtGuard)
+  @Post(":cardId/hint")
+  @HttpCode(HttpStatus.OK)
+  hint(@Param("cardId") cardId: string) {
+    return this.flashcards.getHint(cardId);
+  }
+
   /**
    * GET /flashcards/:deckSlug — dastadagi kartalar.
    * Auth token berilsa review holati ham qaytariladi (OptionalJwt).

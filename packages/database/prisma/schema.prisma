@@ -25,6 +25,13 @@ model User {
   role           String          @default("user")
   /// Email tasdiqlangan-yo'qligi (qat'iy verification)
   emailVerified  Boolean         @default(false)
+  /// Onboarding aniqlagan CEFR daraja: "A1".."C2" (10,32-vazifa)
+  cefrLevel        String?
+  /// Kunlik maqsad (daqiqa) (4-vazifa)
+  dailyGoalMinutes Int           @default(10)
+  /// 2FA TOTP secret (base32) — yoqilgan bo'lsa to'ldiriladi (40-vazifa)
+  twoFactorSecret  String?
+  twoFactorEnabled Boolean       @default(false)
   progress       Progress[]
   bookmarks      Bookmark[]
   notes          Note[]
@@ -35,6 +42,17 @@ model User {
   passwordResets PasswordReset[]
   emailVerifications EmailVerification[]
   flashcardReviews FlashcardReview[]
+  dailyActivity    DailyActivity[]
+  reviewItems      ReviewItem[]
+  highlights       Highlight[]
+  refreshTokens    RefreshToken[]
+  groupsOwned      Group[]         @relation("GroupsOwned")
+  groupMemberships GroupMember[]   @relation("GroupMemberships")
+  forumThreads     ForumThread[]
+  forumPosts       ForumPost[]
+  commentLikes     CommentLike[]
+  ieltsAttempts    IeltsAttempt[]
+  aiThreads        AiThread[]
   createdAt      DateTime        @default(now())
   updatedAt      DateTime        @updatedAt
 }
@@ -47,6 +65,8 @@ model Progress {
   articleId String
   article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
   completed Boolean  @default(true)
+  /// O'qish pozitsiyasi (0..1) — "davom etish" uchun (5-vazifa)
+  scrollPct Float?
   updatedAt DateTime @updatedAt
 
   @@unique([userId, articleId])
@@ -132,6 +152,9 @@ model Article {
   bookmarks   Bookmark[]
   notes       Note[]
   comments    Comment[]
+  highlights     Highlight[]
+  chunks         ArticleChunk[]
+  articleQuizzes Quiz[]      @relation("ArticleQuizzes")
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
@@ -139,7 +162,7 @@ model Article {
   @@index([sectionId, order])
 }
 
-/// Izoh (maqola muhokamasi)
+/// Izoh (maqola muhokamasi) — thread (reply) + like (28-vazifa)
 model Comment {
   id        String   @id @default(cuid())
   articleId String
@@ -147,22 +170,32 @@ model Comment {
   userId    String
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   body      String
+  /// Reply (1 daraja) — null bo'lsa ildiz izoh (28-vazifa)
+  parentId  String?
+  parent    Comment? @relation("CommentReplies", fields: [parentId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  replies   Comment[] @relation("CommentReplies")
+  likes     CommentLike[]
   createdAt DateTime @default(now())
 
   @@index([articleId, createdAt])
+  @@index([parentId])
 }
 
-/// Interaktiv test (bo'limga bog'liq)
+/// Interaktiv test (bo'limga bog'liq; ixtiyoriy ravishda aniq maqolaga ham)
 model Quiz {
   id        String     @id @default(cuid())
   sectionId String
   section   Section    @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  /// Article-level quiz (8-vazifa) — to'ldirilgan bo'lsa maqola oxiri testi
+  articleId String?
+  article   Article?   @relation("ArticleQuizzes", fields: [articleId], references: [id], onDelete: Cascade)
   title     String
   order     Int        @default(0)
   questions Question[]
   createdAt DateTime   @default(now())
 
   @@index([sectionId, order])
+  @@index([articleId])
 }
 
 /// Test savoli
@@ -189,6 +222,9 @@ model Streak {
   longest     Int       @default(0)
   /// Oxirgi checkin sanasi "YYYY-MM-DD" formatida
   lastCheckin String?
+  /// Streak freeze / repair (14-vazifa)
+  freezes        Int     @default(2)
+  lastFreezeDate String?
   updatedAt   DateTime  @updatedAt
 }
 
@@ -306,4 +342,191 @@ model FlashcardReview {
 
   @@unique([userId, cardId])
   @@index([userId, nextReview])
+}
+
+// ─── IDEALLASHTIRISH SPEC YANGI MODELLARI ──────────────────────────────────────
+
+/// Kunlik faollik — daily goal, streak heatmap, analitika manbai (4,30,31-vazifa)
+model DailyActivity {
+  id             String @id @default(cuid())
+  userId         String
+  user           User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  date           String // "YYYY-MM-DD"
+  minutes        Int    @default(0)
+  articlesRead   Int    @default(0)
+  cardsReviewed  Int    @default(0)
+  quizzesTaken   Int    @default(0)
+  xp             Int    @default(0) // kelajak XP uchun joy (hozir to'ldirilmaydi)
+
+  @@unique([userId, date])
+  @@index([userId, date])
+}
+
+/// Umumiy takrorlash navbati (SM-2) — flashcard + xato quiz savollari bitta navbatda (7-vazifa)
+model ReviewItem {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  kind       String   // "card" | "question"
+  refId      String   // Flashcard.id yoki Question.id
+  interval   Int      @default(1)
+  easeFactor Float    @default(2.5)
+  reps       Int      @default(0)
+  nextReview DateTime @default(now())
+  reviewedAt DateTime @default(now())
+
+  @@unique([userId, kind, refId])
+  @@index([userId, nextReview])
+}
+
+/// Maqola matnidagi belgilash + inline izoh (24-vazifa)
+model Highlight {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  articleId String
+  article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  quote     String   // belgilangan matn
+  prefix    String?  // anchorlash uchun oldidagi ~20 belgi
+  note      String?  // ixtiyoriy izoh
+  color     String   @default("yellow")
+  createdAt DateTime @default(now())
+
+  @@index([userId, articleId])
+}
+
+/// RAG uchun maqola bo'laklari + embedding (18-vazifa)
+/// pgvector mavjud emas — embedding String (JSON float[]) sifatida saqlanadi, cosine Node'da.
+model ArticleChunk {
+  id        String  @id @default(cuid())
+  articleId String
+  article   Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  ord       Int
+  content   String
+  embedding String  // JSON: number[]
+
+  @@index([articleId])
+}
+
+/// AI suhbat tarixi — multi-turn tutor + roleplay (17,19-vazifa)
+model AiThread {
+  id        String      @id @default(cuid())
+  userId    String?
+  user      User?       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  kind      String      // "tutor" | "roleplay"
+  articleId String?     // tutor uchun
+  scenario  String?     // roleplay senariysi
+  messages  AiMessage[]
+  createdAt DateTime    @default(now())
+
+  @@index([userId])
+}
+
+model AiMessage {
+  id        String   @id @default(cuid())
+  threadId  String
+  thread    AiThread @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  role      String   // "user" | "assistant"
+  content   String
+  createdAt DateTime @default(now())
+
+  @@index([threadId])
+}
+
+/// IELTS urinishlari serverda (20,30-vazifa)
+model IeltsAttempt {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill     String   // "writing" | "speaking" | "reading" | "listening"
+  part      String?  // "1" | "2" | "3"
+  band      Float
+  detail    String   // JSON: to'liq natija
+  createdAt DateTime @default(now())
+
+  @@index([userId, skill, createdAt])
+}
+
+/// Refresh token (34-vazifa) — httpOnly cookie'da saqlanadi, DB'da hash
+model RefreshToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String   @unique
+  expiresAt DateTime
+  revoked   Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+/// O'quv guruhlari (27-vazifa)
+model Group {
+  id        String        @id @default(cuid())
+  name      String
+  code      String        @unique // qo'shilish kodi
+  ownerId   String
+  owner     User          @relation("GroupsOwned", fields: [ownerId], references: [id], onDelete: Cascade)
+  members   GroupMember[]
+  createdAt DateTime      @default(now())
+}
+
+model GroupMember {
+  id       String   @id @default(cuid())
+  groupId  String
+  group    Group    @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  userId   String
+  user     User     @relation("GroupMemberships", fields: [userId], references: [id], onDelete: Cascade)
+  joinedAt DateTime @default(now())
+
+  @@unique([groupId, userId])
+}
+
+/// Comment like (28-vazifa)
+model CommentLike {
+  id        String  @id @default(cuid())
+  commentId String
+  comment   Comment @relation(fields: [commentId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([commentId, userId])
+}
+
+/// Q&A forum (29-vazifa)
+model ForumThread {
+  id        String      @id @default(cuid())
+  userId    String
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  body      String
+  posts     ForumPost[]
+  createdAt DateTime    @default(now())
+
+  @@index([createdAt])
+}
+
+model ForumPost {
+  id        String      @id @default(cuid())
+  threadId  String
+  thread    ForumThread @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  body      String
+  accepted  Boolean     @default(false)
+  createdAt DateTime    @default(now())
+
+  @@index([threadId])
+}
+
+/// Admin audit log (40-vazifa)
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String
+  action    String   // "delete_user" | "delete_comment" | ...
+  target    String?
+  meta      String?  // JSON
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
 }

@@ -1,0 +1,20 @@
+{
+  "nav.dashboard": "Dashboard",
+  "nav.courses": "Courses",
+  "nav.review": "Review",
+  "nav.planner": "My Day",
+  "nav.flashcards": "Flashcards",
+  "nav.practice": "Practice",
+  "nav.ielts": "IELTS Coach",
+  "nav.groups": "Groups",
+  "nav.forum": "Forum",
+  "nav.profile": "Profile",
+  "common.login": "Sign in",
+  "common.logout": "Sign out",
+  "common.save": "Save",
+  "common.cancel": "Cancel",
+  "common.loading": "Loading...",
+  "common.search": "Search",
+  "common.send": "Send",
+  "common.language": "Language"
+}

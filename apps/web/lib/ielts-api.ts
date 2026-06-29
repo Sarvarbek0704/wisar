@@ -1,4 +1,5 @@
 // AI IELTS Coach — backend (NestJS /api/ielts) bilan ishlash.
+import { getToken } from "./auth";
 
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 
@@ -25,9 +26,13 @@ export type SpeakingScore = {
 };
 
 async function post<T>(path: string, body: unknown): Promise<T> {
+  const token = getToken();
   const res = await fetch(`${API}/api/ielts${path}`, {
     method: "POST",
-    headers: { "content-type": "application/json" },
+    headers: {
+      "content-type": "application/json",
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
     body: JSON.stringify(body),
   });
   if (!res.ok) {
@@ -70,3 +75,42 @@ export const genReadingTest = (topic?: string) =>
 
 export const genListeningTest = (topic?: string) =>
   post<ListeningTest>("/listening-test", { topic });
+
+// ─── Audio transkripsiya (20-vazifa, Whisper) ────────────────────────────────
+export async function transcribeAudio(blob: Blob): Promise<{ text: string }> {
+  const token = getToken();
+  const form = new FormData();
+  form.append("audio", blob, "speech.webm");
+  const res = await fetch(`${API}/api/ielts/transcribe`, {
+    method: "POST",
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+    body: form,
+  });
+  if (!res.ok) {
+    let msg = `Transkripsiya xatosi (${res.status})`;
+    try {
+      const j = (await res.json()) as { message?: string };
+      if (j.message) msg = j.message;
+    } catch {
+      /* ignore */
+    }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+// Reading/Listening natijasini serverga saqlash (20,30-vazifa)
+export async function recordAttempt(
+  skill: "reading" | "listening" | "writing" | "speaking",
+  band: number,
+  detail?: unknown,
+  part?: string,
+): Promise<void> {
+  const token = getToken();
+  if (!token) return; // faqat login bo'lsa
+  await fetch(`${API}/api/ielts/attempt`, {
+    method: "POST",
+    headers: { "content-type": "application/json", Authorization: `Bearer ${token}` },
+    body: JSON.stringify({ skill, band, detail, part }),
+  }).catch(() => {});
+}

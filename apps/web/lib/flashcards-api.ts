@@ -64,3 +64,8 @@ export async function reviewCard(cardId: string, quality: 0 | 1 | 2 | 3 | 4 | 5)
 export async function getStats(): Promise<FlashcardStats> {
   return authFetch<FlashcardStats>("/flashcards/stats");
 }
+
+export type CardHint = { mnemonic: string; example: string | null };
+export async function getCardHint(cardId: string): Promise<CardHint> {
+  return authFetch<CardHint>(`/flashcards/${cardId}/hint`, { method: "POST" });
+}

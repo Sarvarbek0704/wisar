@@ -13,14 +13,17 @@ import { toast, confirmDialog } from "@/lib/ui";
 
 export default function AdminUsers() {
   const [users, setUsers] = useState<AdminUser[]>([]);
+  const [total, setTotal] = useState(0);
   const [q, setQ] = useState("");
   const [loading, setLoading] = useState(true);
   const me = typeof window !== "undefined" ? getCurrentUser() : null;
 
-  const load = useCallback(async (search = "") => {
+  const load = useCallback(async (search = "", skip = 0) => {
     setLoading(true);
     try {
-      setUsers(await adminListUsers(search));
+      const res = await adminListUsers(search, 50, skip);
+      setUsers((prev) => (skip === 0 ? res.items : [...prev, ...res.items]));
+      setTotal(res.total);
     } finally {
       setLoading(false);
     }
@@ -57,7 +60,7 @@ export default function AdminUsers() {
       <div className="mb-5 flex items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold text-ink">Foydalanuvchilar</h1>
-          <p className="text-sm text-soft">{users.length} ta foydalanuvchi</p>
+          <p className="text-sm text-soft">{total} ta foydalanuvchi</p>
         </div>
         <div className="flex items-center gap-2 rounded-lg border border-line bg-page px-3 py-2">
           <Search size={15} className="text-soft" />
@@ -149,6 +152,15 @@ export default function AdminUsers() {
             </tbody>
           </table>
         </div>
+      )}
+
+      {!loading && users.length < total && (
+        <button
+          onClick={() => load(q, users.length)}
+          className="mt-4 w-full rounded-lg border border-line py-2.5 text-sm font-medium text-soft hover:text-accent"
+        >
+          Ko'proq yuklash ({users.length}/{total})
+        </button>
       )}
     </div>
   );

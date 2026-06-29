@@ -6,9 +6,15 @@ import {
 } from "@nestjs/common";
 import { JwtService } from "@nestjs/jwt";
 import * as bcrypt from "bcryptjs";
-import { randomBytes } from "crypto";
+import { randomBytes, createHash } from "crypto";
+import { authenticator } from "otplib";
+import * as QRCode from "qrcode";
 import { PrismaService } from "../prisma.service";
 import { MailService } from "../mail/mail.service";
+
+/** Access token muddati (qisqa) — refresh cookie uzoq muddat saqlaydi (34-vazifa). */
+const ACCESS_TTL = "15m";
+const REFRESH_TTL_DAYS = 30;
 
 @Injectable()
 export class AuthService {
@@ -16,6 +22,64 @@ export class AuthService {
     private readonly prisma: PrismaService,
     private readonly jwt: JwtService,
   ) {}
+
+  // ─── Refresh token (34-vazifa) ───────────────────────────────────────────────
+  private hashToken(raw: string): string {
+    return createHash("sha256").update(raw).digest("hex");
+  }
+
+  /** Yangi refresh token yaratadi (DB'da faqat hash saqlanadi), xom qiymatini qaytaradi. */
+  async createRefreshToken(userId: string): Promise<string> {
+    const raw = randomBytes(48).toString("hex");
+    const expiresAt = new Date(Date.now() + REFRESH_TTL_DAYS * 24 * 60 * 60 * 1000);
+    await this.prisma.refreshToken.create({
+      data: { userId, tokenHash: this.hashToken(raw), expiresAt },
+    });
+    return raw;
+  }
+
+  /** Refresh tokenni tekshiradi, rotatsiya qiladi va yangi access + refresh beradi. */
+  async refresh(rawToken: string | undefined): Promise<{
+    token: string;
+    refreshToken: string;
+    user: { id: string; email: string; name: string | null; role: string };
+  } | null> {
+    if (!rawToken) return null;
+    const rec = await this.prisma.refreshToken.findUnique({
+      where: { tokenHash: this.hashToken(rawToken) },
+      include: { user: true },
+    });
+    if (!rec || rec.revoked || rec.expiresAt < new Date()) return null;
+    // Rotatsiya: eskisini bekor qil, yangisini ber
+    await this.prisma.refreshToken.update({ where: { id: rec.id }, data: { revoked: true } });
+    const refreshToken = await this.createRefreshToken(rec.userId);
+    return {
+      token: this.signAccess(rec.user),
+      refreshToken,
+      user: {
+        id: rec.user.id,
+        email: rec.user.email,
+        name: rec.user.name,
+        role: rec.user.role,
+      },
+    };
+  }
+
+  /** Refresh tokenni bekor qiladi (logout). */
+  async revokeRefreshToken(rawToken: string | undefined): Promise<void> {
+    if (!rawToken) return;
+    await this.prisma.refreshToken.updateMany({
+      where: { tokenHash: this.hashToken(rawToken) },
+      data: { revoked: true },
+    });
+  }
+
+  private signAccess(user: { id: string; email: string; role: string; name: string | null }): string {
+    return this.jwt.sign(
+      { sub: user.id, email: user.email, role: user.role, name: user.name },
+      { expiresIn: ACCESS_TTL },
+    );
+  }
 
   /** 6 xonali tasdiqlash kodi yaratib, DB'ga yozadi va emailga yuboradi. */
   private async issueVerificationCode(
@@ -109,7 +173,7 @@ export class AuthService {
     await this.issueVerificationCode(user.id, user.email, user.name, mailService);
   }
 
-  async login(email: string, password: string, mailService: MailService) {
+  async login(email: string, password: string, mailService: MailService, code?: string) {
     const user = await this.prisma.user.findUnique({ where: { email } });
     if (!user) throw new UnauthorizedException("Email yoki parol noto'g'ri");
     const ok = await bcrypt.compare(password, user.passwordHash);
@@ -123,7 +187,61 @@ export class AuthService {
         email: user.email,
       });
     }
+    // 2FA (40-vazifa)
+    if (user.twoFactorEnabled && user.twoFactorSecret) {
+      if (!code) {
+        throw new UnauthorizedException({ message: "2FA kodi kerak", needs2fa: true });
+      }
+      if (!authenticator.verify({ token: code, secret: user.twoFactorSecret })) {
+        throw new UnauthorizedException({ message: "2FA kodi noto'g'ri", needs2fa: true });
+      }
+    }
     return this.sign(user);
+  }
+
+  // ─── 2FA TOTP (40-vazifa) ────────────────────────────────────────────────────
+  async twoFactorStatus(userId: string) {
+    const user = await this.prisma.user.findUnique({
+      where: { id: userId },
+      select: { twoFactorEnabled: true },
+    });
+    return { enabled: !!user?.twoFactorEnabled };
+  }
+
+  async setupTwoFactor(userId: string) {
+    const user = await this.prisma.user.findUnique({ where: { id: userId } });
+    if (!user) throw new BadRequestException("Foydalanuvchi topilmadi");
+    const secret = authenticator.generateSecret();
+    await this.prisma.user.update({
+      where: { id: userId },
+      data: { twoFactorSecret: secret, twoFactorEnabled: false },
+    });
+    const otpauth = authenticator.keyuri(user.email, "Wisar", secret);
+    const qr = await QRCode.toDataURL(otpauth);
+    return { otpauth, qr, secret };
+  }
+
+  async enableTwoFactor(userId: string, code: string) {
+    const user = await this.prisma.user.findUnique({ where: { id: userId } });
+    if (!user?.twoFactorSecret) throw new BadRequestException("Avval 2FA sozlang.");
+    if (!authenticator.verify({ token: code, secret: user.twoFactorSecret })) {
+      throw new BadRequestException("Kod noto'g'ri.");
+    }
+    await this.prisma.user.update({ where: { id: userId }, data: { twoFactorEnabled: true } });
+    return { ok: true };
+  }
+
+  async disableTwoFactor(userId: string, code: string) {
+    const user = await this.prisma.user.findUnique({ where: { id: userId } });
+    if (!user?.twoFactorSecret) return { ok: true };
+    if (!authenticator.verify({ token: code, secret: user.twoFactorSecret })) {
+      throw new BadRequestException("Kod noto'g'ri.");
+    }
+    await this.prisma.user.update({
+      where: { id: userId },
+      data: { twoFactorEnabled: false, twoFactorSecret: null },
+    });
+    return { ok: true };
   }
 
   async forgotPassword(email: string, mailService: MailService): Promise<void> {
@@ -206,14 +324,8 @@ export class AuthService {
     role: string;
     name: string | null;
   }) {
-    const payload = {
-      sub: user.id,
-      email: user.email,
-      role: user.role,
-      name: user.name,
-    };
     return {
-      token: this.jwt.sign(payload),
+      token: this.signAccess(user),
       user: {
         id: user.id,
         email: user.email,

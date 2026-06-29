@@ -5,7 +5,7 @@ import { Flame } from "lucide-react";
 import { isLoggedIn, getToken } from "@/lib/auth";
 import { checkin, getStreak, type StreakData } from "@/lib/streak-api";
 
-const CHECKIN_KEY = "mana-streak-checkin";
+const CHECKIN_KEY = "wisar-streak-checkin";
 
 export function StreakWidget() {
   const [streak, setStreak] = useState<StreakData | null>(null);
@@ -36,14 +36,20 @@ export function StreakWidget() {
   if (!mounted || !streak) return null;
 
   const color = streak.current >= 7 ? "text-orange-500" : streak.current >= 3 ? "text-amber-500" : "text-soft";
+  const freezes = streak.freezes ?? 0;
 
   return (
     <span
       className={`inline-flex items-center gap-1 text-sm font-semibold ${color}`}
-      title={`Eng uzun streak: ${streak.longest} kun`}
+      title={`Eng uzun streak: ${streak.longest} kun · Muzlatish: ${freezes} ta (kun o'tkazib yuborsangiz streakni saqlaydi)`}
     >
       <Flame size={15} />
       {streak.current}
+      {freezes > 0 && (
+        <span className="ml-0.5 text-xs text-sky-400" title={`${freezes} ta muzlatish`}>
+          ❄{freezes}
+        </span>
+      )}
     </span>
   );
 }

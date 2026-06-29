@@ -7,8 +7,8 @@ import { useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
-const TOKEN_KEY = "mana-token";
-const USER_KEY = "mana-user";
+const TOKEN_KEY = "wisar-token";
+const USER_KEY = "wisar-user";
 
 function GoogleCallbackInner() {
   const router = useRouter();

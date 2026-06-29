@@ -2,7 +2,10 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ChevronRight, BookOpen } from "lucide-react";
+import { ChevronRight, BookOpen, Target } from "lucide-react";
+import { isLoggedIn, setCefr, setDailyGoal } from "@/lib/me-api";
+
+const GOAL_OPTIONS = [5, 10, 20, 30];
 
 type Question = {
   q: string;
@@ -100,6 +103,7 @@ export default function OnboardingPage() {
   const [selected, setSelected] = useState<number | null>(null);
   const [done, setDone] = useState(false);
   const [level, setLevel] = useState("");
+  const [goal, setGoal] = useState(10);
 
   const q = QUESTIONS[current];
   const progress = ((current) / QUESTIONS.length) * 100;
@@ -114,8 +118,10 @@ export default function OnboardingPage() {
       const correct = newAnswers.filter((a, i) => a === QUESTIONS[i].answer).length;
       const detectedLevel = scoreToLevel(correct);
       setLevel(detectedLevel);
-      localStorage.setItem("mana-level", detectedLevel);
-      localStorage.setItem("mana-onboarded", "true");
+      localStorage.setItem("wisar-level", detectedLevel);
+      localStorage.setItem("wisar-onboarded", "true");
+      // CEFR darajasini serverga saqlaymiz (10-vazifa adaptiv tavsiya uchun)
+      if (isLoggedIn()) setCefr(detectedLevel).catch(() => {});
       setDone(true);
     } else {
       setCurrent(current + 1);
@@ -123,8 +129,14 @@ export default function OnboardingPage() {
   }
 
   function skip() {
-    localStorage.setItem("mana-onboarded", "true");
+    localStorage.setItem("wisar-onboarded", "true");
     router.push("/");
+  }
+
+  function finish() {
+    localStorage.setItem("wisar-goal", String(goal));
+    if (isLoggedIn()) setDailyGoal(goal).catch(() => {});
+    router.push(LEVEL_TO_SECTION[level] || "/");
   }
 
   if (done) {
@@ -137,14 +149,38 @@ export default function OnboardingPage() {
         <div className="mb-4 rounded-2xl bg-accent px-8 py-3 text-4xl font-extrabold text-white">
           {level}
         </div>
-        <p className="mb-8 text-soft">
+        <p className="mb-6 text-soft">
           {level === "A1" && "Boshlang'ich daraja. Asosiy so'zlar va iboralar bilan boshlaymiz!"}
           {level === "A2" && "Yaxshi boshlanish! Oddiy suhbat va qoidalarni o'rganamiz."}
           {level === "B1" && "O'rta daraja. Erkin muloqot qobiliyatingizni oshiramiz."}
           {level === "B2" && "Zo'r! Murakkab mavzularda nutq va yozishni rivojlantiramiz."}
         </p>
+
+        {/* Kunlik maqsad tanlash (4-vazifa) */}
+        <div className="mb-8 w-full">
+          <div className="mb-3 flex items-center justify-center gap-1.5 text-sm font-semibold text-ink">
+            <Target size={15} className="text-accent" />
+            Kunlik maqsadingiz (daqiqa)
+          </div>
+          <div className="grid grid-cols-4 gap-2">
+            {GOAL_OPTIONS.map((g) => (
+              <button
+                key={g}
+                onClick={() => setGoal(g)}
+                className={`rounded-xl border px-3 py-2.5 text-sm font-semibold transition ${
+                  goal === g
+                    ? "border-accent bg-accent/10 text-accent"
+                    : "border-line text-soft hover:border-accent/40"
+                }`}
+              >
+                {g}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <button
-          onClick={() => router.push(LEVEL_TO_SECTION[level] || "/")}
+          onClick={finish}
           className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-semibold text-white hover:opacity-90"
         >
           O'qishni boshlash <ChevronRight size={18} />

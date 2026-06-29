@@ -375,7 +375,16 @@ body {
 .fill-blank.correct { border-color: var(--success); }
 .fill-blank.wrong   { border-color: var(--danger); }
 .fill-blank-wrap    { display: inline-flex; align-items: center; gap: 4px; }
-.fill-blank-fb      { font-size: .8em; }
+.fill-blank-fb      { font-size: .8em; font-weight: 600; }
+.fill-blank-fb.correct { color: var(--success); }
+.fill-blank-fb.wrong   { color: var(--danger); }
+
+/* Highlight (24-vazifa) */
+mark.hl { border-radius: 2px; padding: 0 1px; cursor: pointer; color: inherit; }
+mark.hl-yellow { background: rgba(250, 204, 21, .40); }
+mark.hl-green  { background: rgba(74, 222, 128, .38); }
+mark.hl-blue   { background: rgba(96, 165, 250, .38); }
+mark.hl-pink   { background: rgba(244, 114, 182, .38); }
 
 /* ============================================================
    Cross-ref havolalar
@@ -396,6 +405,7 @@ body {
   vertical-align: middle;
   transition: background .15s;
 }
+.cross-ref { cursor: pointer; }
 .cross-ref:hover { background: color-mix(in srgb, var(--accent) 18%, transparent); }
 
 /* ============================================================

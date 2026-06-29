@@ -8,29 +8,37 @@ import {
   Query,
   UseGuards,
 } from "@nestjs/common";
-import { IsString, MinLength } from "class-validator";
+import { IsOptional, IsString, MinLength } from "class-validator";
 import { CommentsService } from "./comments.service";
-import { JwtGuard } from "../auth/jwt.guard";
+import { JwtGuard, OptionalJwtGuard } from "../auth/jwt.guard";
 import { CurrentUser, type AuthUser } from "../auth/current-user.decorator";
 
 class CreateCommentDto {
   @IsString() articleId!: string;
   @IsString() @MinLength(1) body!: string;
+  @IsOptional() @IsString() parentId?: string;
 }
 
 @Controller("comments")
 export class CommentsController {
   constructor(private readonly svc: CommentsService) {}
 
+  @UseGuards(OptionalJwtGuard)
   @Get()
-  list(@Query("articleId") articleId: string) {
-    return this.svc.list(articleId);
+  list(@Query("articleId") articleId: string, @CurrentUser() u?: AuthUser) {
+    return this.svc.list(articleId, u?.sub);
   }
 
   @UseGuards(JwtGuard)
   @Post()
   create(@CurrentUser() u: AuthUser, @Body() dto: CreateCommentDto) {
-    return this.svc.create(u.sub, dto.articleId, dto.body);
+    return this.svc.create(u.sub, dto.articleId, dto.body, dto.parentId);
+  }
+
+  @UseGuards(JwtGuard)
+  @Post(":id/like")
+  like(@CurrentUser() u: AuthUser, @Param("id") id: string) {
+    return this.svc.toggleLike(u.sub, id);
   }
 
   @UseGuards(JwtGuard)

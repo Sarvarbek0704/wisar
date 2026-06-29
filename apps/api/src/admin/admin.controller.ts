@@ -40,6 +40,11 @@ export class AdminController {
     return this.admin.stats();
   }
 
+  @Get("analytics")
+  analytics() {
+    return this.admin.analytics();
+  }
+
   @Get("articles/:id")
   getArticle(@Param("id") id: string) {
     return this.admin.getArticle(id);
@@ -55,12 +60,20 @@ export class AdminController {
     return this.admin.updateTopic(id, dto);
   }
   @Patch("topics/:id/publish")
-  setTopicPublished(@Param("id") id: string, @Body() body: { published: boolean }) {
-    return this.admin.setTopicPublished(id, !!body?.published);
+  async setTopicPublished(
+    @CurrentUser() u: AuthUser,
+    @Param("id") id: string,
+    @Body() body: { published: boolean },
+  ) {
+    const r = await this.admin.setTopicPublished(id, !!body?.published);
+    await this.admin.audit(u.sub, "publish_topic", id, { published: !!body?.published });
+    return r;
   }
   @Delete("topics/:id")
-  deleteTopic(@Param("id") id: string) {
-    return this.admin.deleteTopic(id);
+  async deleteTopic(@CurrentUser() u: AuthUser, @Param("id") id: string) {
+    const r = await this.admin.deleteTopic(id);
+    await this.admin.audit(u.sub, "delete_topic", id);
+    return r;
   }
 
   // Section
@@ -73,8 +86,10 @@ export class AdminController {
     return this.admin.updateSection(id, dto);
   }
   @Delete("sections/:id")
-  deleteSection(@Param("id") id: string) {
-    return this.admin.deleteSection(id);
+  async deleteSection(@CurrentUser() u: AuthUser, @Param("id") id: string) {
+    const r = await this.admin.deleteSection(id);
+    await this.admin.audit(u.sub, "delete_section", id);
+    return r;
   }
 
   // Article
@@ -87,12 +102,20 @@ export class AdminController {
     return this.admin.updateArticle(id, dto);
   }
   @Patch("articles/:id/publish")
-  setArticlePublished(@Param("id") id: string, @Body() body: { published: boolean }) {
-    return this.admin.setArticlePublished(id, !!body?.published);
+  async setArticlePublished(
+    @CurrentUser() u: AuthUser,
+    @Param("id") id: string,
+    @Body() body: { published: boolean },
+  ) {
+    const r = await this.admin.setArticlePublished(id, !!body?.published);
+    await this.admin.audit(u.sub, "publish_article", id, { published: !!body?.published });
+    return r;
   }
   @Delete("articles/:id")
-  deleteArticle(@Param("id") id: string) {
-    return this.admin.deleteArticle(id);
+  async deleteArticle(@CurrentUser() u: AuthUser, @Param("id") id: string) {
+    const r = await this.admin.deleteArticle(id);
+    await this.admin.audit(u.sub, "delete_article", id);
+    return r;
   }
 
   // Quiz
@@ -125,8 +148,8 @@ export class AdminController {
 
   // Foydalanuvchilar
   @Get("users")
-  listUsers(@Query("q") q?: string) {
-    return this.admin.listUsers(q);
+  listUsers(@Query("q") q?: string, @Query("take") take?: string, @Query("skip") skip?: string) {
+    return this.admin.listUsers(q, Number(take) || 50, Number(skip) || 0);
   }
   @Get("users/:id")
   getUserDetail(@Param("id") id: string) {
@@ -137,18 +160,28 @@ export class AdminController {
     return this.admin.setUserRole(id, body?.role);
   }
   @Delete("users/:id")
-  deleteUser(@CurrentUser() u: AuthUser, @Param("id") id: string) {
-    return this.admin.deleteUser(u.sub, id);
+  async deleteUser(@CurrentUser() u: AuthUser, @Param("id") id: string) {
+    const r = await this.admin.deleteUser(u.sub, id);
+    await this.admin.audit(u.sub, "delete_user", id);
+    return r;
   }
 
   // Izohlar (moderatsiya)
   @Get("comments")
-  listComments(@Query("q") q?: string) {
-    return this.admin.listComments(q);
+  listComments(@Query("q") q?: string, @Query("take") take?: string, @Query("skip") skip?: string) {
+    return this.admin.listComments(q, Number(take) || 50, Number(skip) || 0);
   }
   @Delete("comments/:id")
-  deleteComment(@Param("id") id: string) {
-    return this.admin.deleteComment(id);
+  async deleteComment(@CurrentUser() u: AuthUser, @Param("id") id: string) {
+    const r = await this.admin.deleteComment(id);
+    await this.admin.audit(u.sub, "delete_comment", id);
+    return r;
+  }
+
+  // Audit jurnal (40-vazifa)
+  @Get("audit")
+  audit() {
+    return this.admin.listAuditLog();
   }
 
   // Invites

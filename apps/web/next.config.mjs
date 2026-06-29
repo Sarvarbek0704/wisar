@@ -3,7 +3,7 @@ import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["@mana/content"],
+  transpilePackages: ["@wisar/content"],
 };
 
 // Sentry faqat SENTRY_DSN bo'lsa wraplaydi
@@ -13,6 +13,6 @@ export default sentryDsn
   ? withSentryConfig(nextConfig, {
       silent: true,
       org: process.env.SENTRY_ORG || "",
-      project: process.env.SENTRY_PROJECT || "mana-web",
+      project: process.env.SENTRY_PROJECT || "wisar-web",
     })
   : nextConfig;

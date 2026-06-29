@@ -4,25 +4,31 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Bookmark, Clock, ChevronRight } from "lucide-react";
 import { isLoggedIn, getBookmarks, type BookmarkItem } from "@/lib/me-api";
+import { EmptyState } from "@/components/EmptyState";
 
 export default function BookmarksPage() {
   const [mounted, setMounted] = useState(false);
   const [logged, setLogged] = useState(false);
   const [items, setItems] = useState<BookmarkItem[]>([]);
+  const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
+
+  function loadMore(skip = 0) {
+    getBookmarks(20, skip)
+      .then((res) => {
+        setItems((prev) => (skip === 0 ? res.items : [...prev, ...res.items]));
+        setTotal(res.total);
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }
 
   useEffect(() => {
     setMounted(true);
     const l = isLoggedIn();
     setLogged(l);
-    if (l) {
-      getBookmarks()
-        .then(setItems)
-        .catch(() => {})
-        .finally(() => setLoading(false));
-    } else {
-      setLoading(false);
-    }
+    if (l) loadMore(0);
+    else setLoading(false);
   }, []);
 
   if (!mounted) return null;
@@ -47,9 +53,12 @@ export default function BookmarksPage() {
       {logged && loading && <p className="text-soft">Yuklanmoqda...</p>}
 
       {logged && !loading && items.length === 0 && (
-        <p className="text-soft">
-          Hozircha saqlangan maqola yo'q. Maqolada "Saqlash" tugmasini bosing.
-        </p>
+        <EmptyState
+          icon={Bookmark}
+          title="Hozircha saqlangan maqola yo'q"
+          description="Maqolani o'qiyotganda 'Saqlash' tugmasini bosing — bu yerda qulay ro'yxat bo'lib turadi."
+          cta={{ label: "Kurslarni ko'rish", href: "/kurslar" }}
+        />
       )}
 
       <ul className="divide-y divide-line overflow-hidden rounded-xl border border-line bg-page">
@@ -79,6 +88,16 @@ export default function BookmarksPage() {
           </li>
         ))}
       </ul>
+
+      {logged && !loading && items.length < total && (
+        <button
+          onClick={() => loadMore(items.length)}
+          className="mt-4 w-full rounded-lg border border-line py-2.5 text-sm font-medium text-soft hover:text-accent"
+        >
+          Ko'proq yuklash ({items.length}/{total})
+        </button>
+      )}
     </div>
   );
 }
+

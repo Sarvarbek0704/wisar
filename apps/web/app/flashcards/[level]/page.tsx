@@ -2,15 +2,17 @@
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { ArrowLeft, RotateCcw, ChevronRight, Eye, Trophy, Frown, HelpCircle, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ChevronRight, Eye, Trophy, Frown, HelpCircle, CheckCircle2, Lightbulb, Loader2 } from "lucide-react";
 import Link from "next/link";
 import {
   getDeckCards,
   reviewCard,
-  type FlashcardWithReview,
+  getCardHint,
   type DeckWithCards,
+  type CardHint,
 } from "@/lib/flashcards-api";
 import { isLoggedIn } from "@/lib/auth";
+import { ActivityHeartbeat } from "@/components/ActivityHeartbeat";
 
 export default function FlashcardStudyPage() {
   const { level } = useParams<{ level: string }>();
@@ -24,6 +26,8 @@ export default function FlashcardStudyPage() {
   const [flipped, setFlipped] = useState(false);
   const [done, setDone] = useState(false);
   const [sessionCount, setSessionCount] = useState(0);
+  const [hint, setHint] = useState<CardHint | null>(null);
+  const [hintLoading, setHintLoading] = useState(false);
 
   useEffect(() => {
     getDeckCards(level)
@@ -83,6 +87,7 @@ export default function FlashcardStudyPage() {
       reviewCard(card.id, q).catch(() => {});
     }
     setSessionCount((n) => n + 1);
+    setHint(null);
     const next = cardIndex + 1;
     if (next >= total) {
       setDone(true);
@@ -92,10 +97,23 @@ export default function FlashcardStudyPage() {
     }
   }
 
+  async function loadHint() {
+    if (hint || hintLoading) return;
+    setHintLoading(true);
+    try {
+      setHint(await getCardHint(card.id));
+    } catch {
+      setHint({ mnemonic: "Maslahat olishda xato (AI sozlanmagan bo'lishi mumkin).", example: null });
+    } finally {
+      setHintLoading(false);
+    }
+  }
+
   const progress = Math.round((cardIndex / total) * 100);
 
   return (
     <div className="mx-auto max-w-lg px-4 py-10 font-sans">
+      <ActivityHeartbeat />
       {/* Header */}
       <div className="mb-6 flex items-center justify-between">
         <Link href="/flashcards" className="inline-flex items-center gap-1.5 text-sm text-soft hover:text-accent">
@@ -147,6 +165,30 @@ export default function FlashcardStudyPage() {
           )}
         </div>
       </div>
+
+      {/* AI yodlash maslahati (11-vazifa) */}
+      {flipped && (
+        <div className="mb-4">
+          {!hint ? (
+            <button
+              onClick={loadHint}
+              disabled={hintLoading}
+              className="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-xs font-medium text-soft transition hover:text-accent disabled:opacity-50"
+            >
+              {hintLoading ? <Loader2 size={14} className="animate-spin" /> : <Lightbulb size={14} />}
+              Yodlash maslahati
+            </button>
+          ) : (
+            <div className="rounded-xl border border-line bg-bg p-3 text-sm">
+              <div className="mb-1 flex items-center gap-1.5 font-medium text-accent">
+                <Lightbulb size={14} /> Yodlash maslahati
+              </div>
+              <p className="text-ink">{hint.mnemonic}</p>
+              {hint.example && <p className="mt-1 italic text-soft">&ldquo;{hint.example}&rdquo;</p>}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* SM-2 tugmalar */}
       {flipped ? (

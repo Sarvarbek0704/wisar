@@ -3,6 +3,10 @@ import { Inter, Titan_One, Trocchi } from "next/font/google";
 import "./globals.css";
 import { AppShell } from "@/components/AppShell";
 import { Toaster } from "@/components/Toaster";
+import { OfflineBanner } from "@/components/OfflineBanner";
+import { I18nProvider } from "@/lib/i18n";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,6 +27,7 @@ const trocchi = Trocchi({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Wisar — O'quv platformasi",
     template: "%s — Wisar",
@@ -30,12 +35,27 @@ export const metadata: Metadata = {
   description:
     "Wisar — ingliz tilini A1 dan C2 gacha o'rganing. Professional, minimalist, to'liq interaktiv.",
   manifest: "/manifest.json",
-  themeColor: "#0B111D",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
     title: "Wisar",
   },
+  openGraph: {
+    type: "website",
+    siteName: "Wisar",
+    title: "Wisar — O'quv platformasi",
+    description: "Ingliz tili, dasturlash va IELTS — interaktiv o'quv platformasi.",
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wisar — O'quv platformasi",
+    description: "Ingliz tili, dasturlash va IELTS — interaktiv o'quv platformasi.",
+  },
+};
+
+export const viewport = {
+  themeColor: "#0B111D",
 };
 
 /* Default: light. Manuel togglda localStorage'da saqlanadi. OS preference ishlatilmaydi. */
@@ -63,8 +83,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
       </head>
       <body className="min-h-screen bg-bg text-ink antialiased">
-        <AppShell>{children}</AppShell>
-        <Toaster />
+        <I18nProvider>
+          <OfflineBanner />
+          <AppShell>{children}</AppShell>
+          <Toaster />
+        </I18nProvider>
         <script dangerouslySetInnerHTML={{ __html: swInit }} />
       </body>
     </html>

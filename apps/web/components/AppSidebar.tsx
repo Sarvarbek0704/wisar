@@ -1,21 +1,31 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard, BookOpen, CalendarDays,
-  Layers, Sparkles, User,
+  Layers, Sparkles, User, Brain, MessageCircle,
+  Users, MessagesSquare,
   PanelLeftClose, PanelLeftOpen,
 } from "lucide-react";
 import { Logo } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { isLoggedIn } from "@/lib/auth";
+import { getDueCount } from "@/lib/review-api";
+import { useI18n } from "@/lib/i18n";
 
 const NAV = [
-  { href: "/me",         icon: LayoutDashboard, label: "Dashboard",     exact: true },
-  { href: "/kurslar",    icon: BookOpen,         label: "Kurslar" },
-  { href: "/planner",    icon: CalendarDays,     label: "Kunim" },
-  { href: "/flashcards", icon: Layers,           label: "Flashkartlar" },
-  { href: "/ielts",      icon: Sparkles,         label: "IELTS Coach" },
+  { href: "/me",         icon: LayoutDashboard, tkey: "nav.dashboard",  label: "Dashboard",   exact: true },
+  { href: "/kurslar",    icon: BookOpen,         tkey: "nav.courses",    label: "Kurslar" },
+  { href: "/review",     icon: Brain,            tkey: "nav.review",     label: "Takrorlash", badge: true },
+  { href: "/planner",    icon: CalendarDays,     tkey: "nav.planner",    label: "Kunim" },
+  { href: "/flashcards", icon: Layers,           tkey: "nav.flashcards", label: "Flashkartlar" },
+  { href: "/practice",   icon: MessageCircle,    tkey: "nav.practice",   label: "Suhbat" },
+  { href: "/ielts",      icon: Sparkles,         tkey: "nav.ielts",      label: "IELTS Coach" },
+  { href: "/groups",     icon: Users,            tkey: "nav.groups",     label: "Guruhlar" },
+  { href: "/forum",      icon: MessagesSquare,   tkey: "nav.forum",      label: "Forum" },
 ];
 
 interface AppSidebarProps {
@@ -25,6 +35,16 @@ interface AppSidebarProps {
 
 export function AppSidebar({ collapsed, onToggle }: AppSidebarProps) {
   const pathname = usePathname();
+  const { t } = useI18n();
+  const [due, setDue] = useState(0);
+
+  // Takrorlash navbatidagi elementlar soni (3-vazifa badge)
+  useEffect(() => {
+    if (!isLoggedIn()) return;
+    getDueCount()
+      .then((d) => setDue(d.total))
+      .catch(() => {});
+  }, [pathname]);
 
   function isActive(href: string, exact?: boolean) {
     if (exact) return pathname === href;
@@ -58,24 +78,39 @@ export function AppSidebar({ collapsed, onToggle }: AppSidebarProps) {
               key={item.href}
               href={item.href}
               title={collapsed ? item.label : undefined}
-              className={`flex items-center gap-2.5 rounded-lg px-2.5 py-2 text-sm font-medium transition-all duration-150 ${
+              className={`relative flex items-center gap-2.5 rounded-lg px-2.5 py-2 text-sm font-medium transition-all duration-150 ${
                 active
                   ? "bg-accent/10 text-accent"
                   : "text-ink/70 hover:bg-ink/5 hover:text-ink"
               } ${collapsed ? "justify-center" : ""}`}
             >
-              <item.icon size={17} className="flex-shrink-0" />
-              {!collapsed && <span>{item.label}</span>}
+              <span className="relative flex-shrink-0">
+                <item.icon size={17} />
+                {item.badge && due > 0 && collapsed && (
+                  <span className="absolute -right-1.5 -top-1.5 h-2 w-2 rounded-full bg-rose-500" />
+                )}
+              </span>
+              {!collapsed && <span className="flex-1">{t(item.tkey)}</span>}
+              {item.badge && due > 0 && !collapsed && (
+                <span className="ml-auto inline-flex h-5 min-w-[20px] items-center justify-center rounded-full bg-rose-500 px-1.5 text-[11px] font-bold text-white">
+                  {due > 99 ? "99+" : due}
+                </span>
+              )}
             </Link>
           );
         })}
       </nav>
 
       {/* Footer */}
+      {!collapsed && (
+        <div className="border-t border-line px-3 pt-3">
+          <LanguageSwitcher />
+        </div>
+      )}
       <div className={`border-t border-line px-2 py-3 flex items-center ${collapsed ? "justify-center" : "justify-between px-3"}`}>
         {!collapsed && (
           <Link href="/me" className="flex items-center gap-2 text-xs text-soft hover:text-ink transition-colors">
-            <User size={13} /> Profilim
+            <User size={13} /> {t("nav.profile")}
           </Link>
         )}
         <ThemeToggle />

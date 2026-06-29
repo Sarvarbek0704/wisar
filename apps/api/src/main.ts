@@ -17,8 +17,8 @@ import { AppModule } from "./app.module";
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // Frontend (Next.js) bilan ishlash uchun CORS
-  app.enableCors({ origin: true });
+  // Frontend (Next.js) bilan ishlash uchun CORS — refresh cookie uchun credentials kerak (34-vazifa)
+  app.enableCors({ origin: true, credentials: true });
   app.use(helmet());
   app.setGlobalPrefix("api");
   app.useGlobalPipes(

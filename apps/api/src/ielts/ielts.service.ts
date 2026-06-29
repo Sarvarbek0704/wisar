@@ -1,15 +1,17 @@
-import { Injectable, ServiceUnavailableException, BadRequestException } from "@nestjs/common";
+import { Injectable, BadRequestException, ServiceUnavailableException } from "@nestjs/common";
+import { LlmService } from "../llm/llm.service";
+import { PrismaService } from "../prisma.service";
+
+type UploadedAudio = { buffer: Buffer; mimetype?: string; originalname?: string };
+export type Skill = "writing" | "speaking" | "reading" | "listening";
 
 /**
- * AI IELTS Coach — Anthropic (Claude) orqali IELTS band baholash.
+ * AI IELTS Coach — markazlashtirilgan LlmService orqali IELTS band baholash (17-vazifa DRY).
  * Yozma (Writing Task 1/2) va og'zaki (Speaking Part 1-3) javoblarni
  * rasmiy 4 mezon bo'yicha baholaydi: band + izoh + tuzatish + namuna.
  *
- * Sozlash: apps/api/.env ga ANTHROPIC_API_KEY=sk-ant-... qo'shing.
- * (ixtiyoriy) ANTHROPIC_MODEL=claude-sonnet-4-6
+ * Provayder: BEPUL OpenAI-mos (LLM_*) yoki ANTHROPIC_API_KEY (LlmService boshqaradi).
  */
-
-const ANTHROPIC_URL = "https://api.anthropic.com/v1/messages";
 
 export type Criterion = { name: string; band: number; comment: string };
 export type Correction = { original: string; better: string; why: string };
@@ -45,126 +47,78 @@ export type ListeningTest = { title: string; script: string; questions: Practice
 
 @Injectable()
 export class IeltsService {
-  /**
-   * AI ga so'rov yuboradi — provayder-agnostik.
-   * 1) BEPUL: LLM_BASE_URL + LLM_API_KEY + LLM_MODEL (OpenAI-mos: Groq/Gemini/OpenRouter/Ollama)
-   * 2) Pullik (fallback): ANTHROPIC_API_KEY (+ ANTHROPIC_MODEL)
-   */
-  private async ask(
-    system: string,
-    user: string,
-    maxTokens = 3000,
-    jsonMode = false,
-  ): Promise<string> {
-    const base = process.env.LLM_BASE_URL?.trim();
-    if (base) {
-      return this.askOpenAICompatible(base, system, user, maxTokens, jsonMode);
-    }
-    if (process.env.ANTHROPIC_API_KEY?.trim()) {
-      return this.askAnthropic(system, user, maxTokens);
-    }
-    throw new ServiceUnavailableException(
-      "AI sozlanmagan. .env ga BEPUL provayder qo'shing: LLM_BASE_URL + LLM_API_KEY + LLM_MODEL " +
-        "(Groq/Gemini/Ollama) — yoki ANTHROPIC_API_KEY.",
-    );
+  constructor(
+    private readonly llm: LlmService,
+    private readonly prisma: PrismaService,
+  ) {}
+
+  private ask(system: string, user: string, maxTokens = 3000, jsonMode = false): Promise<string> {
+    return this.llm.ask(system, user, maxTokens, jsonMode);
   }
 
-  /** OpenAI-mos /chat/completions (Groq, Google Gemini, OpenRouter, Ollama...) — BEPUL. */
-  private async askOpenAICompatible(
-    base: string,
-    system: string,
-    user: string,
-    maxTokens: number,
-    jsonMode: boolean,
-  ): Promise<string> {
-    const url = base.replace(/\/+$/, "") + "/chat/completions";
-    const key = process.env.LLM_API_KEY?.trim();
-    const model = process.env.LLM_MODEL?.trim() || "llama-3.3-70b-versatile";
-    const headers: Record<string, string> = { "content-type": "application/json" };
-    if (key) headers["authorization"] = `Bearer ${key}`;
-
-    const body: Record<string, unknown> = {
-      model,
-      max_tokens: maxTokens,
-      temperature: 0.4,
-      messages: [
-        { role: "system", content: system },
-        { role: "user", content: user },
-      ],
-    };
-    // JSON rejimi — kafolatlangan to'g'ri JSON (literal newline buzilishidan saqlaydi)
-    if (jsonMode) body.response_format = { type: "json_object" };
-
-    let res: Response;
-    try {
-      res = await fetch(url, {
-        method: "POST",
-        headers,
-        body: JSON.stringify(body),
-      });
-    } catch (e) {
-      throw new ServiceUnavailableException("AI xizmatiga ulanib bo'lmadi: " + (e as Error).message);
-    }
-    if (!res.ok) {
-      const body = await res.text().catch(() => "");
-      throw new ServiceUnavailableException(`AI xizmati xatosi (${res.status}): ${body.slice(0, 300)}`);
-    }
-    const data = (await res.json()) as {
-      choices?: Array<{ message?: { content?: string } }>;
-    };
-    const text = data.choices?.[0]?.message?.content || "";
-    if (!text) throw new ServiceUnavailableException("AI bo'sh javob qaytardi.");
-    return text;
-  }
-
-  /** Anthropic (Claude) Messages API — pullik fallback. */
-  private async askAnthropic(system: string, user: string, maxTokens: number): Promise<string> {
-    const model = process.env.ANTHROPIC_MODEL?.trim() || "claude-sonnet-4-6";
-    let res: Response;
-    try {
-      res = await fetch(ANTHROPIC_URL, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-          "x-api-key": process.env.ANTHROPIC_API_KEY as string,
-          "anthropic-version": "2023-06-01",
-        },
-        body: JSON.stringify({
-          model,
-          max_tokens: maxTokens,
-          system,
-          messages: [{ role: "user", content: user }],
-        }),
-      });
-    } catch (e) {
-      throw new ServiceUnavailableException("AI xizmatiga ulanib bo'lmadi: " + (e as Error).message);
-    }
-    if (!res.ok) {
-      const body = await res.text().catch(() => "");
-      throw new ServiceUnavailableException(`AI xizmati xatosi (${res.status}): ${body.slice(0, 300)}`);
-    }
-    const data = (await res.json()) as { content?: Array<{ type: string; text?: string }> };
-    const text = (data.content || [])
-      .filter((b) => b.type === "text" && b.text)
-      .map((b) => b.text)
-      .join("");
-    if (!text) throw new ServiceUnavailableException("AI bo'sh javob qaytardi.");
-    return text;
-  }
-
-  /** Javobdan JSON obyektni ajratib oladi (markdown ```json bloklarini ham). */
   private parseJson<T>(text: string): T {
-    let s = text.trim();
-    const fence = s.match(/```(?:json)?\s*([\s\S]*?)```/);
-    if (fence) s = fence[1].trim();
-    const start = s.indexOf("{");
-    const end = s.lastIndexOf("}");
-    if (start !== -1 && end !== -1) s = s.slice(start, end + 1);
-    try {
-      return JSON.parse(s) as T;
-    } catch {
-      throw new ServiceUnavailableException("AI javobini o'qib bo'lmadi (JSON emas).");
+    return this.llm.parseJson<T>(text);
+  }
+
+  // ─── Audio → transcript (20-vazifa, Whisper OpenAI-mos) ──────────────────────
+  async transcribe(file: UploadedAudio): Promise<{ text: string }> {
+    const base = process.env.WHISPER_BASE_URL?.trim();
+    const key = process.env.WHISPER_API_KEY?.trim();
+    const model = process.env.WHISPER_MODEL?.trim() || "whisper-large-v3";
+    if (!base || !key) {
+      throw new ServiceUnavailableException(
+        "Whisper sozlanmagan (WHISPER_* env). Transkripsiyani qo'lda kiriting.",
+      );
     }
+    if (!file?.buffer?.length) throw new BadRequestException("Audio fayl yo'q.");
+
+    const form = new FormData();
+    form.append(
+      "file",
+      new Blob([file.buffer], { type: file.mimetype || "audio/webm" }),
+      file.originalname || "audio.webm",
+    );
+    form.append("model", model);
+    form.append("language", "en");
+
+    let res: Response;
+    try {
+      res = await fetch(base.replace(/\/+$/, "") + "/audio/transcriptions", {
+        method: "POST",
+        headers: { authorization: `Bearer ${key}` },
+        body: form,
+      });
+    } catch (e) {
+      throw new ServiceUnavailableException("Whisper xizmatiga ulanib bo'lmadi: " + (e as Error).message);
+    }
+    if (!res.ok) {
+      throw new ServiceUnavailableException(`Whisper xatosi (${res.status}): ${(await res.text()).slice(0, 200)}`);
+    }
+    const data = (await res.json()) as { text?: string };
+    return { text: data.text ?? "" };
+  }
+
+  // ─── IELTS urinishlarini serverda saqlash (20,30-vazifa) ─────────────────────
+  async saveAttempt(
+    userId: string,
+    skill: Skill,
+    band: number,
+    detail: unknown,
+    part?: string,
+  ) {
+    return this.prisma.ieltsAttempt.create({
+      data: { userId, skill, part: part ?? null, band, detail: JSON.stringify(detail) },
+    });
+  }
+
+  async attempts(userId: string) {
+    const rows = await this.prisma.ieltsAttempt.findMany({
+      where: { userId },
+      orderBy: { createdAt: "desc" },
+      take: 100,
+      select: { id: true, skill: true, part: true, band: true, createdAt: true },
+    });
+    return rows;
   }
 
   // ── IELTS band deskriptorlari (baholash mezoni) ───────────────────────
@@ -195,7 +149,7 @@ Band 9 = native-daraja. Halol baho ber.`;
 Izohlar O'ZBEKCHA, misollar/tuzatishlar INGLIZCHA. corrections: 3-6 ta eng muhim. modelAnswer: foydalanuvchi savoliga band-9 namuna.`;
 
   /** Writing (Task 1 yoki 2) javobini baholaydi. */
-  async scoreWriting(task: 1 | 2, prompt: string, essay: string): Promise<WritingScore> {
+  async scoreWriting(task: 1 | 2, prompt: string, essay: string, userId?: string): Promise<WritingScore> {
     const trimmed = (essay || "").trim();
     if (trimmed.length < 40) throw new BadRequestException("Esse juda qisqa (kamida 40 belgi).");
     const wordCount = trimmed.split(/\s+/).filter(Boolean).length;
@@ -212,11 +166,18 @@ Yuqoridagi essega 4 mezon bo'yicha IELTS band ber va JSON formatда javob qayta
 
     const raw = await this.ask(system, user, 3500, true);
     const parsed = this.parseJson<Omit<WritingScore, "wordCount">>(raw);
-    return { ...parsed, wordCount };
+    const result = { ...parsed, wordCount };
+    if (userId) await this.saveAttempt(userId, "writing", result.overallBand, result, String(task));
+    return result;
   }
 
   /** Speaking javobini (transcript) baholaydi. */
-  async scoreSpeaking(part: 1 | 2 | 3, question: string, transcript: string): Promise<SpeakingScore> {
+  async scoreSpeaking(
+    part: 1 | 2 | 3,
+    question: string,
+    transcript: string,
+    userId?: string,
+  ): Promise<SpeakingScore> {
     const trimmed = (transcript || "").trim();
     if (trimmed.length < 20) throw new BadRequestException("Javob juda qisqa (kamida 20 belgi).");
 
@@ -231,7 +192,9 @@ ${trimmed}
 Bu javobga 4 mezon bo'yicha IELTS Speaking band ber va JSON formatда javob qaytar.`;
 
     const raw = await this.ask(system, user, 3000, true);
-    return this.parseJson<SpeakingScore>(raw);
+    const result = this.parseJson<SpeakingScore>(raw);
+    if (userId) await this.saveAttempt(userId, "speaking", result.overallBand, result, String(part));
+    return result;
   }
 
   /** Writing mashqi uchun topshiriq (prompt) generatsiya qiladi. */

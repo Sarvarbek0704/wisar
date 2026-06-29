@@ -1,18 +1,18 @@
 services:
   db:
     image: postgres:16-alpine
-    container_name: mana-db
+    container_name: wisar-db
     restart: unless-stopped
     environment:
-      POSTGRES_USER: mana
-      POSTGRES_PASSWORD: mana
-      POSTGRES_DB: mana
+      POSTGRES_USER: wisar
+      POSTGRES_PASSWORD: wisar
+      POSTGRES_DB: wisar
     ports:
       - "5432:5432"
     volumes:
-      - mana-pgdata:/var/lib/postgresql/data
+      - wisar-pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U mana"]
+      test: ["CMD-SHELL", "pg_isready -U wisar"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -20,7 +20,7 @@ services:
   # Ixtiyoriy: brauzerda DB ko'rish uchun (http://localhost:8080)
   adminer:
     image: adminer:latest
-    container_name: mana-adminer
+    container_name: wisar-adminer
     restart: unless-stopped
     ports:
       - "8080:8080"
@@ -28,4 +28,4 @@ services:
       - db
 
 volumes:
-  mana-pgdata:
+  wisar-pgdata:

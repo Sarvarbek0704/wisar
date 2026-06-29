@@ -13,7 +13,7 @@ import { MailModule } from "../mail/mail.module";
     PassportModule,
     JwtModule.register({
       global: true,
-      secret: process.env.JWT_SECRET || "mana-dev-secret",
+      secret: process.env.JWT_SECRET || "wisar-dev-secret",
       signOptions: { expiresIn: "7d" },
     }),
     MailModule,

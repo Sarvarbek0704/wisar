@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { renderMarkdown } from "@mana/content";
+import { renderMarkdown } from "@wisar/content";
 
 export function MarkdownEditor({
   value,

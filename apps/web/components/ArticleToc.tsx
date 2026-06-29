@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { TocItem } from "@mana/content";
+import type { TocItem } from "@wisar/content";
 
 // O'ngdagi ichki mundarija + scrollspy (qaysi bo'limdaligini ko'rsatadi)
 export function ArticleToc({ toc }: { toc: TocItem[] }) {

@@ -88,9 +88,34 @@ export const adminStats = () => authFetch<AdminStats>("/admin/stats");
 export const adminGetArticle = (id: string) =>
   authFetch<AdminArticle>(`/admin/articles/${id}`);
 
-// Foydalanuvchilar
-export const adminListUsers = (q?: string) =>
-  authFetch<AdminUser[]>(`/admin/users${q ? `?q=${encodeURIComponent(q)}` : ""}`);
+export type Paged<T> = { items: T[]; total: number };
+
+export type AdminAnalytics = {
+  dau: number;
+  mau: number;
+  funnel: { registered: number; verified: number; withProgress: number };
+  retention: { cohort: number; d1: number; d7: number };
+  topArticles: { title: string; reads: number }[];
+  leastArticles: { title: string; reads: number }[];
+};
+
+export type AdminAuditEntry = {
+  id: string;
+  action: string;
+  target: string | null;
+  meta: string | null;
+  createdAt: string;
+  actor: string;
+};
+
+export const adminAnalytics = () => authFetch<AdminAnalytics>("/admin/analytics");
+export const adminAuditLog = () => authFetch<AdminAuditEntry[]>("/admin/audit");
+
+// Foydalanuvchilar (sahifalangan — 35-vazifa)
+export const adminListUsers = (q?: string, take = 50, skip = 0) =>
+  authFetch<Paged<AdminUser>>(
+    `/admin/users?take=${take}&skip=${skip}${q ? `&q=${encodeURIComponent(q)}` : ""}`,
+  );
 export const adminGetUser = (id: string) =>
   authFetch<AdminUserDetail>(`/admin/users/${id}`);
 export const adminSetUserRole = (id: string, role: string) =>
@@ -101,9 +126,11 @@ export const adminSetUserRole = (id: string, role: string) =>
 export const adminDeleteUser = (id: string) =>
   authFetch(`/admin/users/${id}`, { method: "DELETE" });
 
-// Izohlar
-export const adminListComments = (q?: string) =>
-  authFetch<AdminComment[]>(`/admin/comments${q ? `?q=${encodeURIComponent(q)}` : ""}`);
+// Izohlar (sahifalangan — 35-vazifa)
+export const adminListComments = (q?: string, take = 50, skip = 0) =>
+  authFetch<Paged<AdminComment>>(
+    `/admin/comments?take=${take}&skip=${skip}${q ? `&q=${encodeURIComponent(q)}` : ""}`,
+  );
 export const adminDeleteComment = (id: string) =>
   authFetch(`/admin/comments/${id}`, { method: "DELETE" });
 

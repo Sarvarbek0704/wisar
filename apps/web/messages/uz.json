@@ -1,0 +1,20 @@
+{
+  "nav.dashboard": "Dashboard",
+  "nav.courses": "Kurslar",
+  "nav.review": "Takrorlash",
+  "nav.planner": "Kunim",
+  "nav.flashcards": "Flashkartlar",
+  "nav.practice": "Suhbat",
+  "nav.ielts": "IELTS Coach",
+  "nav.groups": "Guruhlar",
+  "nav.forum": "Forum",
+  "nav.profile": "Profilim",
+  "common.login": "Kirish",
+  "common.logout": "Chiqish",
+  "common.save": "Saqlash",
+  "common.cancel": "Bekor",
+  "common.loading": "Yuklanmoqda...",
+  "common.search": "Qidirish",
+  "common.send": "Yuborish",
+  "common.language": "Til"
+}

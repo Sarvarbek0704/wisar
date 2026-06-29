@@ -18,13 +18,16 @@ function timeAgo(iso: string): string {
 
 export default function AdminCommentsPage() {
   const [comments, setComments] = useState<AdminComment[]>([]);
+  const [total, setTotal] = useState(0);
   const [q, setQ] = useState("");
   const [loading, setLoading] = useState(true);
 
-  async function load(search = "") {
+  async function load(search = "", skip = 0) {
     setLoading(true);
     try {
-      setComments(await adminListComments(search));
+      const res = await adminListComments(search, 50, skip);
+      setComments((prev) => (skip === 0 ? res.items : [...prev, ...res.items]));
+      setTotal(res.total);
     } finally {
       setLoading(false);
     }
@@ -45,7 +48,7 @@ export default function AdminCommentsPage() {
       <div className="mb-5 flex items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold text-ink">Izohlar</h1>
-          <p className="text-sm text-soft">{comments.length} ta izoh · moderatsiya</p>
+          <p className="text-sm text-soft">{total} ta izoh · moderatsiya</p>
         </div>
         <div className="flex items-center gap-2 rounded-lg border border-line bg-page px-3 py-2">
           <Search size={15} className="text-soft" />
@@ -94,6 +97,15 @@ export default function AdminCommentsPage() {
             </div>
           ))}
         </div>
+      )}
+
+      {!loading && comments.length < total && (
+        <button
+          onClick={() => load(q, comments.length)}
+          className="mt-4 w-full rounded-lg border border-line py-2.5 text-sm font-medium text-soft hover:text-accent"
+        >
+          Ko'proq yuklash ({comments.length}/{total})
+        </button>
       )}
     </div>
   );

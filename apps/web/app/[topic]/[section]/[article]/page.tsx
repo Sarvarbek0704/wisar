@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
-import { renderMarkdown, extractTocFromHtml } from "@mana/content";
+import { renderMarkdown, extractTocFromHtml } from "@wisar/content";
 import { getArticle, getTopic } from "@/lib/api";
 import { Sidebar } from "@/components/Sidebar";
 import { ArticleToc } from "@/components/ArticleToc";
@@ -14,6 +14,12 @@ import { ArticleContent } from "@/components/ArticleContent";
 import { AiTutor } from "@/components/AiTutor";
 import { Comments } from "@/components/Comments";
 import { KeyboardNav } from "@/components/KeyboardNav";
+import { ActivityHeartbeat } from "@/components/ActivityHeartbeat";
+import { ReadingPosition } from "@/components/ReadingPosition";
+import { CrossRefNav } from "@/components/CrossRefNav";
+import { ArticleQuiz } from "@/components/ArticleQuiz";
+import { Highlighter } from "@/components/Highlighter";
+import { ArticleAudio } from "@/components/ArticleAudio";
 
 export const dynamic = "force-dynamic";
 
@@ -27,9 +33,23 @@ export async function generateMetadata({
   const { topic, section, article } = await params;
   const data = await getArticle(topic, section, article).catch(() => null);
   if (!data) return {};
+  const url = `/${topic}/${section}/${article}`;
+  const desc = data.article.excerpt || `${data.topic.title} — ${data.article.title}`;
   return {
     title: data.article.title,
-    description: data.article.excerpt || undefined,
+    description: desc,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      title: data.article.title,
+      description: desc,
+      url,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: data.article.title,
+      description: desc,
+    },
   };
 }
 
@@ -52,9 +72,31 @@ export default async function ArticlePage({ params }: { params: Params }) {
     ? `/${data.next.topicSlug}/${data.next.sectionSlug}/${data.next.slug}`
     : null;
 
+  // JSON-LD structured data (39-vazifa)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: data.article.title,
+    description: data.article.excerpt || undefined,
+    articleSection: data.article.section.title,
+    inLanguage: "uz",
+    isPartOf: { "@type": "Course", name: data.topic.title },
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <ReadingProgress />
+      <ActivityHeartbeat />
+      <Highlighter articleId={data.article.id} />
+      <ReadingPosition articleId={data.article.id} />
+      <CrossRefNav
+        topic={t}
+        sections={topicDetail.sections.map((sec) => ({
+          slug: sec.slug,
+          articles: sec.articles.map((ar) => ar.slug),
+        }))}
+      />
       <KeyboardNav prev={prevHref} next={nextHref} />
       <div
         id="reader"
@@ -78,10 +120,11 @@ export default async function ArticlePage({ params }: { params: Params }) {
               <ReaderSettings />
             </div>
 
-            {/* Foydalanuvchi amallari: o'qildi / saqlash / eslatma / AI yordam */}
+            {/* Foydalanuvchi amallari: o'qildi / saqlash / eslatma / AI yordam / tinglash */}
             <div className="mb-6 flex flex-wrap items-center gap-2">
               <ArticleActions articleId={data.article.id} />
               <AiTutor articleId={data.article.id} />
+              <ArticleAudio />
             </div>
 
             {/* Kontent (JS CodeRunner + fill-in-blank interaktivligi bilan) */}
@@ -120,6 +163,9 @@ export default async function ArticlePage({ params }: { params: Params }) {
                 </Link>
               )}
             </nav>
+
+            {/* Maqola oxiri active-recall test (8-vazifa) */}
+            <ArticleQuiz articleId={data.article.id} quiz={data.articleQuiz ?? null} />
 
             {/* Izohlar */}
             <Comments articleId={data.article.id} />

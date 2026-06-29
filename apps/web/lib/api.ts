@@ -1,4 +1,5 @@
 // NestJS API bilan ishlash — tiplar va fetch yordamchilari.
+import { fetchWithTimeout, notifyOffline, ApiOfflineError } from "./http";
 
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 
@@ -57,6 +58,7 @@ export type ArticleResponse = {
   article: ArticleFull;
   prev: NavItem;
   next: NavItem;
+  articleQuiz?: { id: string; title: string } | null;
 };
 
 export type SearchResult = {
@@ -70,7 +72,13 @@ export type SearchResult = {
 };
 
 async function get<T>(path: string, revalidate = 60): Promise<T> {
-  const res = await fetch(`${API}/api${path}`, { next: { revalidate } });
+  let res: Response;
+  try {
+    res = await fetchWithTimeout(`${API}/api${path}`, { next: { revalidate } } as RequestInit);
+  } catch (e) {
+    if (e instanceof ApiOfflineError) notifyOffline();
+    throw e;
+  }
   if (!res.ok) throw new Error(`API xatosi: ${res.status} ${path}`);
   return res.json() as Promise<T>;
 }
@@ -84,11 +92,16 @@ export const getArticle = (t: string, s: string, a: string) =>
 
 export async function search(q: string): Promise<SearchResult[]> {
   if (q.trim().length < 2) return [];
-  const res = await fetch(`${API}/api/search?q=${encodeURIComponent(q)}`, {
-    cache: "no-store",
-  });
-  if (!res.ok) return [];
-  return res.json();
+  try {
+    const res = await fetchWithTimeout(`${API}/api/search?q=${encodeURIComponent(q)}`, {
+      cache: "no-store",
+    });
+    if (!res.ok) return [];
+    return res.json();
+  } catch (e) {
+    if (e instanceof ApiOfflineError) notifyOffline();
+    return []; // qidiruvda jim fallback
+  }
 }
 
 export { API };

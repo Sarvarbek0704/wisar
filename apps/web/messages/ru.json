@@ -1,0 +1,20 @@
+{
+  "nav.dashboard": "Панель",
+  "nav.courses": "Курсы",
+  "nav.review": "Повторение",
+  "nav.planner": "Мой день",
+  "nav.flashcards": "Карточки",
+  "nav.practice": "Диалог",
+  "nav.ielts": "IELTS Coach",
+  "nav.groups": "Группы",
+  "nav.forum": "Форум",
+  "nav.profile": "Профиль",
+  "common.login": "Войти",
+  "common.logout": "Выйти",
+  "common.save": "Сохранить",
+  "common.cancel": "Отмена",
+  "common.loading": "Загрузка...",
+  "common.search": "Поиск",
+  "common.send": "Отправить",
+  "common.language": "Язык"
+}

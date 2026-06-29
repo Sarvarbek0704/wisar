@@ -1,9 +1,42 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
+import { LlmService } from "../llm/llm.service";
+import { CacheService } from "../common/cache.service";
 
 @Injectable()
 export class FlashcardsService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly llm: LlmService,
+    private readonly cache: CacheService,
+  ) {}
+
+  /** AI yodlash maslahati + misol gap (11-vazifa). Keshlanadi (qayta so'ramaslik). */
+  async getHint(cardId: string) {
+    const key = `hint:${cardId}`;
+    const cached = this.cache.get<{ mnemonic: string; example: string | null }>(key);
+    if (cached) return cached;
+
+    const card = await this.prisma.flashcard.findUnique({ where: { id: cardId } });
+    if (!card) throw new NotFoundException("Karta topilmadi");
+
+    const system =
+      `Sen ingliz tili o'qituvchisisan. So'zni yodlashga yordam ber. ` +
+      `FAQAT shu JSON formatda qaytar (boshqa matnsiz): ` +
+      `{"mnemonic":"<o'zbekcha yodlash usuli, assotsiatsiya>","example":"<inglizcha tabiiy misol gap>"}`;
+    const user = `So'z: "${card.front}" — o'zbekcha tarjimasi: "${card.back}". Yodlash maslahati va bitta tabiiy misol gap ber.`;
+
+    const raw = await this.llm.ask(system, user, 400, true);
+    const parsed = this.llm.parseJson<{ mnemonic: string; example: string }>(raw);
+    const result = { mnemonic: parsed.mnemonic, example: parsed.example || card.example };
+
+    // Misol gap bo'sh bo'lsa Flashcard.example ga saqlaymiz (doimiy)
+    if (!card.example && parsed.example) {
+      await this.prisma.flashcard.update({ where: { id: cardId }, data: { example: parsed.example } });
+    }
+    this.cache.set(key, result, 24 * 60 * 60 * 1000);
+    return result;
+  }
 
   /** Barcha flashcard dastalari — karta soni bilan */
   async getDecks() {

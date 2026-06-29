@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Bookmark, LayoutDashboard, LogIn, LogOut, User } from "lucide-react";
-import { getUser, logout, type AuthUser } from "@/lib/auth";
+import { getUser, logoutServer, type AuthUser } from "@/lib/auth";
 
 export function UserMenu() {
   const [mounted, setMounted] = useState(false);
@@ -73,7 +73,7 @@ export function UserMenu() {
           )}
           <button
             onClick={() => {
-              logout();
+              void logoutServer();
               setUser(null);
               setOpen(false);
               router.refresh();

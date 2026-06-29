@@ -1,4 +1,4 @@
-# Mana — o'quv / kontent platformasi
+# Wisar — o'quv / kontent platformasi
 
 Mavzu-agnostik full-stack platforma: **Next.js + NestJS + PostgreSQL**.
 Dasturlash kitobi (va istalgan boshqa mavzu) uchun professional, minimalist,
@@ -17,7 +17,7 @@ Lucide ikonkalar. Dizayn "Dasturlash-Kitobi-TOLIQ.html" uslubiga sodiq.
 ## Tuzilish
 
 ```text
-mana-platform/
+wisar-platform/
   apps/
     web/        Next.js frontend (dizayn, sahifalar, qidiruv, dark mode)
     api/        NestJS backend (kontent REST API)
@@ -41,7 +41,7 @@ Bu model dasturlash kitobi uchun ham, kelajakda **istalgan boshqa mavzu**
 Talab: Node 20+, Docker (PostgreSQL uchun).
 
 ```bash
-cd mana-platform
+cd wisar-platform
 cp .env.example .env          # sozlamalar (kerak bo'lsa o'zgartiring)
 npm install                   # barcha paketlar
 npm run db:up                 # PostgreSQL'ni Docker'da ko'tarish
@@ -70,12 +70,12 @@ npm run db:down      # PostgreSQL'ni to'xtatish
 ```
 
 Adminer (bazani brauzerda ko'rish): http://localhost:8080
-(Server: `db`, foydalanuvchi: `mana`, parol: `mana`, baza: `mana`).
+(Server: `db`, foydalanuvchi: `wisar`, parol: `wisar`, baza: `wisar`).
 
 ## Kontent manbasi
 
 Seed `CONTENT_DIR` (.env) papkasidan markdown'ni o'qiydi. Standart:
-`../Dasturlash_Kitobi` (mana-platform yonidagi kitob papkasi).
+`../Dasturlash_Kitobi` (wisar-platform yonidagi kitob papkasi).
 
 ## Kelajakda kengaytirish
 

@@ -4,6 +4,8 @@ export type StreakData = {
   current: number;
   longest: number;
   lastCheckin: string | null;
+  freezes?: number;
+  lastFreezeDate?: string | null;
 };
 
 export async function checkin(): Promise<StreakData> {

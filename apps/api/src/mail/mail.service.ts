@@ -36,7 +36,7 @@ export class MailService {
 
   async sendPasswordReset(to: string, token: string, name?: string): Promise<void> {
     const url = `${process.env.NEXT_PUBLIC_API_URL?.replace(':4000', ':3001') || 'http://localhost:3001'}/reset-password?token=${token}`;
-    await this.send(to, 'Parolni tiklash — Mana Platform', `
+    await this.send(to, 'Parolni tiklash — Wisar', `
       <div style="font-family:sans-serif;max-width:480px;margin:0 auto;padding:32px">
         <h2 style="color:#3b5bdb">Parolni tiklash</h2>
         <p>Salom${name ? ` ${name}` : ''}! Parolni tiklash so'rovi qabul qilindi.</p>
@@ -59,7 +59,7 @@ export class MailService {
   }
 
   async sendWeeklySummary(to: string, name: string, completed: number, streak: number): Promise<void> {
-    await this.send(to, 'Haftalik hisobot — Mana Platform', `
+    await this.send(to, 'Haftalik hisobot — Wisar', `
       <div style="font-family:sans-serif;max-width:480px;margin:0 auto;padding:32px">
         <h2 style="color:#3b5bdb">Haftalik hisobot 📊</h2>
         <p>Salom ${name}! Bu hafta:</p>

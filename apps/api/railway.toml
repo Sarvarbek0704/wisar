@@ -9,7 +9,7 @@ restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 3
 
 [[services]]
-name = "mana-api"
+name = "wisar-api"
 
 [services.healthcheck]
 path = "/api/health"

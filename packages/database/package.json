@@ -1,5 +1,5 @@
 {
-  "name": "@mana/database",
+  "name": "@wisar/database",
   "version": "0.1.0",
   "private": true,
   "main": "src/index.ts",
@@ -12,6 +12,7 @@
     "seed": "tsx prisma/seed.ts",
     "seed:english": "tsx prisma/seed-english.ts",
     "seed:flashcards": "dotenv-cli -e ../../.env tsx prisma/seed-flashcards.ts",
+    "index": "dotenv -e ../../.env -- tsx prisma/index-embeddings.ts",
     "studio": "dotenv -e ../../.env -- prisma studio"
   },
   "dependencies": {

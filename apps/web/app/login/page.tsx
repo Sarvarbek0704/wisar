@@ -21,6 +21,8 @@ function LoginInner() {
   const [name, setName] = useState("");
   const [err, setErr] = useState("");
   const [loading, setLoading] = useState(false);
+  const [twofa, setTwofa] = useState(false);
+  const [code, setCode] = useState("");
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -28,9 +30,14 @@ function LoginInner() {
     setLoading(true);
     try {
       const r = mode === "login"
-        ? await login(email, password)
+        ? await login(email, password, twofa ? code : undefined)
         : await register(email, password, name);
       if (!r.ok) {
+        if ("needs2fa" in r) {
+          setTwofa(true);
+          setErr(code ? "2FA kodi noto'g'ri" : "Authenticator kodini kiriting");
+          return;
+        }
         router.push(`/verify-email?email=${encodeURIComponent(r.email)}&next=${encodeURIComponent(next)}`);
         return;
       }
@@ -96,6 +103,16 @@ function LoginInner() {
             {showPw ? <EyeOff size={16} /> : <Eye size={16} />}
           </button>
         </div>
+        {mode === "login" && twofa && (
+          <input
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
+            placeholder="2FA kodi (authenticator)"
+            inputMode="numeric"
+            autoFocus
+            className="w-full rounded-lg border border-accent bg-bg px-3 py-2.5 text-ink outline-none focus:border-accent"
+          />
+        )}
         {err && <p className="text-sm text-red-500">{err}</p>}
         <button
           type="submit"

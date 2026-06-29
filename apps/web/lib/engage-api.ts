@@ -2,27 +2,30 @@ import { authFetch } from "./auth";
 
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 
-// ---- Izohlar ----
+// ---- Izohlar (thread + like + mention) — 28-vazifa ----
 export type CommentItem = {
   id: string;
   body: string;
   createdAt: string;
   userId: string;
   author: string;
+  parentId: string | null;
+  likeCount: number;
+  likedByMe: boolean;
+  replies: CommentItem[];
 };
 
 export async function getComments(articleId: string): Promise<CommentItem[]> {
-  const res = await fetch(`${API}/api/comments?articleId=${articleId}`, {
-    cache: "no-store",
-  });
-  if (!res.ok) return [];
-  return res.json();
+  // authFetch — viewer aniqlanadi (likedByMe), login bo'lmasa ham ishlaydi
+  return authFetch<CommentItem[]>(`/comments?articleId=${articleId}`).catch(() => []);
 }
-export const postComment = (articleId: string, body: string) =>
+export const postComment = (articleId: string, body: string, parentId?: string) =>
   authFetch("/comments", {
     method: "POST",
-    body: JSON.stringify({ articleId, body }),
+    body: JSON.stringify({ articleId, body, ...(parentId ? { parentId } : {}) }),
   });
+export const likeComment = (id: string) =>
+  authFetch<{ liked: boolean }>(`/comments/${id}/like`, { method: "POST" });
 export const deleteComment = (id: string) =>
   authFetch(`/comments/${id}`, { method: "DELETE" });
 
@@ -53,13 +56,19 @@ export async function submitQuiz(
   id: string,
   answers: number[],
 ): Promise<QuizResult> {
-  const res = await fetch(`${API}/api/quizzes/${id}/submit`, {
+  // authFetch — login bo'lsa token yuboriladi, xato savollar review navbatiga tushadi (7,8-vazifa)
+  return authFetch<QuizResult>(`/quizzes/${id}/submit`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ answers }),
   });
-  return res.json();
 }
+
+// AI bilan maqola testi yaratish (admin) — 8-vazifa
+export const generateArticleQuiz = (articleId: string) =>
+  authFetch<{ id: string; title: string }>("/quizzes/generate", {
+    method: "POST",
+    body: JSON.stringify({ articleId }),
+  });
 
 // ---- Admin: quiz / savol ----
 export type AdminQuiz = {

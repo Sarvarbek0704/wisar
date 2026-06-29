@@ -28,6 +28,7 @@ import {
 } from "@/lib/ielts-api";
 import { saveAttempt } from "@/lib/ielts-progress";
 import { IeltsMock } from "@/components/IeltsMock";
+import { AudioRecorder } from "@/components/AudioRecorder";
 import { IeltsProgress } from "@/components/IeltsProgress";
 
 type Tab = "writing" | "speaking" | "reading" | "listening" | "progress";
@@ -428,6 +429,11 @@ function SpeakingTab() {
           Yozilmoqda... To&apos;xtatish uchun mikrofon belgisini bosing.
         </p>
       )}
+
+      {/* Real audio → Whisper transkripsiya (20-vazifa) */}
+      <div className="mt-2">
+        <AudioRecorder onTranscript={(t) => setTranscript((prev) => (prev ? prev + " " + t : t))} />
+      </div>
 
       <button
         onClick={run}

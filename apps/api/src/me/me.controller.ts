@@ -6,16 +6,49 @@ import {
   Param,
   Post,
   Put,
+  Query,
   UseGuards,
 } from "@nestjs/common";
-import { IsString } from "class-validator";
+import { IsInt, IsNumber, IsOptional, IsString, Max, Min } from "class-validator";
 import { MeService } from "./me.service";
 import { StreakService } from "./streak.service";
+import { ActivityService } from "./activity.service";
 import { JwtGuard } from "../auth/jwt.guard";
 import { CurrentUser, type AuthUser } from "../auth/current-user.decorator";
 
 class NoteDto {
   @IsString() body!: string;
+}
+
+class ActivityDto {
+  @IsOptional() @IsInt() @Min(0) @Max(60) minutes?: number;
+  @IsOptional() @IsInt() @Min(0) articlesRead?: number;
+  @IsOptional() @IsInt() @Min(0) cardsReviewed?: number;
+  @IsOptional() @IsInt() @Min(0) quizzesTaken?: number;
+}
+
+class GoalDto {
+  @IsInt() @Min(1) @Max(600) minutes!: number;
+}
+
+class CefrDto {
+  @IsString() level!: string;
+}
+
+class ScrollDto {
+  @IsNumber() @Min(0) @Max(1) pct!: number;
+}
+
+class HighlightDto {
+  @IsString() articleId!: string;
+  @IsString() quote!: string;
+  @IsOptional() @IsString() prefix?: string;
+  @IsOptional() @IsString() note?: string;
+  @IsOptional() @IsString() color?: string;
+}
+
+class HighlightNoteDto {
+  @IsString() note!: string;
 }
 
 @UseGuards(JwtGuard)
@@ -24,6 +57,7 @@ export class MeController {
   constructor(
     private readonly me: MeService,
     private readonly streak: StreakService,
+    private readonly activity: ActivityService,
   ) {}
 
   @Get("state")
@@ -37,8 +71,8 @@ export class MeController {
   }
 
   @Get("bookmarks")
-  bookmarks(@CurrentUser() u: AuthUser) {
-    return this.me.bookmarks(u.sub);
+  bookmarks(@CurrentUser() u: AuthUser, @Query("take") take?: string, @Query("skip") skip?: string) {
+    return this.me.bookmarks(u.sub, Number(take) || 20, Number(skip) || 0);
   }
 
   @Post("progress/:articleId")
@@ -48,6 +82,15 @@ export class MeController {
   @Delete("progress/:articleId")
   unmark(@CurrentUser() u: AuthUser, @Param("articleId") id: string) {
     return this.me.unmarkProgress(u.sub, id);
+  }
+
+  @Put("progress/:articleId/scroll")
+  saveScroll(@CurrentUser() u: AuthUser, @Param("articleId") id: string, @Body() dto: ScrollDto) {
+    return this.me.saveScroll(u.sub, id, dto.pct);
+  }
+  @Get("progress/:articleId/scroll")
+  getScroll(@CurrentUser() u: AuthUser, @Param("articleId") id: string) {
+    return this.me.getScroll(u.sub, id);
   }
 
   @Post("bookmark/:articleId")
@@ -84,5 +127,62 @@ export class MeController {
   @Get("streak")
   getStreak(@CurrentUser() u: AuthUser) {
     return this.streak.getStreak(u.sub);
+  }
+
+  // ─── Kunlik faollik / maqsad (4,30-vazifa) ──────────────────────────────────
+  @Post("activity")
+  addActivity(@CurrentUser() u: AuthUser, @Body() dto: ActivityDto) {
+    return this.activity.addActivity(u.sub, dto);
+  }
+
+  @Get("activity/today")
+  todayActivity(@CurrentUser() u: AuthUser) {
+    return this.activity.today(u.sub);
+  }
+
+  @Put("goal")
+  setGoal(@CurrentUser() u: AuthUser, @Body() dto: GoalDto) {
+    return this.activity.setGoal(u.sub, dto.minutes);
+  }
+
+  @Put("cefr")
+  setCefr(@CurrentUser() u: AuthUser, @Body() dto: CefrDto) {
+    return this.me.setCefr(u.sub, dto.level);
+  }
+
+  @Get("insights")
+  insights(@CurrentUser() u: AuthUser) {
+    return this.activity.insights(u.sub);
+  }
+
+  @Get("recommendations")
+  recommendations(@CurrentUser() u: AuthUser) {
+    return this.me.recommendations(u.sub);
+  }
+
+  // ─── Highlight + inline izoh (24-vazifa) ────────────────────────────────────
+  @Get("highlights")
+  allHighlights(@CurrentUser() u: AuthUser) {
+    return this.me.allHighlights(u.sub);
+  }
+
+  @Get("highlights/:articleId")
+  articleHighlights(@CurrentUser() u: AuthUser, @Param("articleId") id: string) {
+    return this.me.listHighlights(u.sub, id);
+  }
+
+  @Post("highlights")
+  createHighlight(@CurrentUser() u: AuthUser, @Body() dto: HighlightDto) {
+    return this.me.createHighlight(u.sub, dto);
+  }
+
+  @Put("highlights/:id")
+  updateHighlight(@CurrentUser() u: AuthUser, @Param("id") id: string, @Body() dto: HighlightNoteDto) {
+    return this.me.updateHighlight(u.sub, id, dto.note);
+  }
+
+  @Delete("highlights/:id")
+  deleteHighlight(@CurrentUser() u: AuthUser, @Param("id") id: string) {
+    return this.me.deleteHighlight(u.sub, id);
   }
 }

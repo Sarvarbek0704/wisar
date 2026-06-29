@@ -1,5 +1,7 @@
 import { Injectable, NotFoundException, BadRequestException } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
+import { CacheService } from "../common/cache.service";
+import { CONTENT_CACHE_PREFIX } from "../content/content.service";
 import {
   CreateArticleDto,
   CreateQuestionDto,
@@ -28,6 +30,15 @@ function readingTime(md: string): number {
   return Math.max(1, Math.ceil(words / 200));
 }
 
+function dayStr(offset = 0): string {
+  const d = new Date();
+  d.setDate(d.getDate() + offset);
+  return d.toISOString().slice(0, 10);
+}
+function diffDays(a: string, b: string): number {
+  return Math.round((Date.parse(a) - Date.parse(b)) / 86400000);
+}
+
 function excerpt(md: string): string {
   for (const line of md.split(/\r?\n/)) {
     const t = line.trim();
@@ -40,7 +51,17 @@ function excerpt(md: string): string {
 
 @Injectable()
 export class AdminService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly cache: CacheService,
+  ) {}
+
+  /** Kontent o'zgargach public keshni tozalaydi (36-vazifa). */
+  private async mutate<T>(p: Promise<T>): Promise<T> {
+    const r = await p;
+    this.cache.invalidate(CONTENT_CACHE_PREFIX);
+    return r;
+  }
 
   // Umumiy ko'rinish (admin dashboard)
   overview() {
@@ -133,45 +154,154 @@ export class AdminService {
     };
   }
 
-  // --- Topic ---
-  createTopic(dto: CreateTopicDto) {
-    return this.prisma.topic.create({
-      data: { ...dto, slug: dto.slug || slugify(dto.title) },
+  /** Audit log yozuvi (40-vazifa). */
+  audit(actorId: string, action: string, target?: string, meta?: unknown) {
+    return this.prisma.auditLog.create({
+      data: { actorId, action, target: target ?? null, meta: meta ? JSON.stringify(meta) : null },
     });
   }
+
+  /** Audit jurnali (40-vazifa) — aktor email bilan. */
+  async listAuditLog() {
+    const rows = await this.prisma.auditLog.findMany({ orderBy: { createdAt: "desc" }, take: 100 });
+    const actorIds = [...new Set(rows.map((r) => r.actorId))];
+    const actors = actorIds.length
+      ? await this.prisma.user.findMany({
+          where: { id: { in: actorIds } },
+          select: { id: true, name: true, email: true },
+        })
+      : [];
+    const map = new Map(actors.map((a) => [a.id, a.name || a.email]));
+    return rows.map((r) => ({
+      id: r.id,
+      action: r.action,
+      target: r.target,
+      meta: r.meta,
+      createdAt: r.createdAt,
+      actor: map.get(r.actorId) ?? r.actorId,
+    }));
+  }
+
+  /** Kengaytirilgan analitika (31-vazifa): DAU/MAU, retention, funnel, top/least maqolalar. */
+  async analytics() {
+    const today = dayStr(0);
+    const since30 = dayStr(-29);
+
+    const [dauRows, mauRows] = await Promise.all([
+      this.prisma.dailyActivity.findMany({
+        where: { date: today, minutes: { gt: 0 } },
+        select: { userId: true },
+      }),
+      this.prisma.dailyActivity.findMany({
+        where: { date: { gte: since30 }, minutes: { gt: 0 } },
+        select: { userId: true },
+      }),
+    ]);
+    const dau = new Set(dauRows.map((r) => r.userId)).size;
+    const mau = new Set(mauRows.map((r) => r.userId)).size;
+
+    // Funnel: ro'yxat → tasdiqlangan → birinchi dars
+    const [registered, verified, withProgress] = await Promise.all([
+      this.prisma.user.count(),
+      this.prisma.user.count({ where: { emailVerified: true } }),
+      this.prisma.user.count({ where: { progress: { some: {} } } }),
+    ]);
+
+    // Retention (so'nggi 30 kunlik kohort)
+    const cohortSince = new Date();
+    cohortSince.setDate(cohortSince.getDate() - 30);
+    const cohort = await this.prisma.user.findMany({
+      where: { createdAt: { gte: cohortSince } },
+      select: { createdAt: true, dailyActivity: { select: { date: true } } },
+    });
+    let d1 = 0;
+    let d7 = 0;
+    for (const u of cohort) {
+      const created = u.createdAt.toISOString().slice(0, 10);
+      const diffs = u.dailyActivity.map((a) => diffDays(a.date, created)).filter((d) => d >= 1);
+      if (diffs.some((d) => d === 1)) d1++;
+      if (diffs.some((d) => d >= 1 && d <= 7)) d7++;
+    }
+    const retention = {
+      cohort: cohort.length,
+      d1: cohort.length ? Math.round((d1 / cohort.length) * 100) : 0,
+      d7: cohort.length ? Math.round((d7 / cohort.length) * 100) : 0,
+    };
+
+    // Eng ko'p / kam o'qilgan maqolalar (Progress soni bo'yicha)
+    const grouped = await this.prisma.progress.groupBy({
+      by: ["articleId"],
+      _count: { articleId: true },
+      orderBy: { _count: { articleId: "desc" } },
+    });
+    const topIds = grouped.slice(0, 5).map((g) => g.articleId);
+    const leastIds = grouped.slice(-5).reverse().map((g) => g.articleId);
+    const ids = [...new Set([...topIds, ...leastIds])];
+    const articles = ids.length
+      ? await this.prisma.article.findMany({ where: { id: { in: ids } }, select: { id: true, title: true } })
+      : [];
+    const titleMap = new Map(articles.map((a) => [a.id, a.title]));
+    const countMap = new Map(grouped.map((g) => [g.articleId, g._count.articleId]));
+    const toItems = (idList: string[]) =>
+      idList
+        .filter((id) => titleMap.has(id))
+        .map((id) => ({ title: titleMap.get(id)!, reads: countMap.get(id) ?? 0 }));
+
+    return {
+      dau,
+      mau,
+      funnel: { registered, verified, withProgress },
+      retention,
+      topArticles: toItems(topIds),
+      leastArticles: toItems(leastIds),
+    };
+  }
+
+  // --- Topic ---
+  createTopic(dto: CreateTopicDto) {
+    return this.mutate(
+      this.prisma.topic.create({
+        data: { ...dto, slug: dto.slug || slugify(dto.title) },
+      }),
+    );
+  }
   updateTopic(id: string, dto: UpdateTopicDto) {
-    return this.prisma.topic.update({ where: { id }, data: dto });
+    return this.mutate(this.prisma.topic.update({ where: { id }, data: dto }));
   }
   deleteTopic(id: string) {
-    return this.prisma.topic.delete({ where: { id } });
+    return this.mutate(this.prisma.topic.delete({ where: { id } }));
   }
 
   // --- Section ---
   createSection(dto: CreateSectionDto) {
-    return this.prisma.section.create({
-      data: { ...dto, slug: dto.slug || slugify(dto.title) },
-    });
+    return this.mutate(
+      this.prisma.section.create({
+        data: { ...dto, slug: dto.slug || slugify(dto.title) },
+      }),
+    );
   }
   updateSection(id: string, dto: UpdateSectionDto) {
-    return this.prisma.section.update({ where: { id }, data: dto });
+    return this.mutate(this.prisma.section.update({ where: { id }, data: dto }));
   }
   deleteSection(id: string) {
-    return this.prisma.section.delete({ where: { id } });
+    return this.mutate(this.prisma.section.delete({ where: { id } }));
   }
 
   // --- Article ---
   createArticle(dto: CreateArticleDto) {
-    return this.prisma.article.create({
-      data: {
-        sectionId: dto.sectionId,
-        title: dto.title,
-        content: dto.content,
-        slug: dto.slug || slugify(dto.title),
-        order: dto.order ?? 0,
-        excerpt: dto.excerpt ?? excerpt(dto.content),
-        readingTime: readingTime(dto.content),
-      },
-    });
+    return this.mutate(
+      this.prisma.article.create({
+        data: {
+          sectionId: dto.sectionId,
+          title: dto.title,
+          content: dto.content,
+          slug: dto.slug || slugify(dto.title),
+          order: dto.order ?? 0,
+          excerpt: dto.excerpt ?? excerpt(dto.content),
+          readingTime: readingTime(dto.content),
+        },
+      }),
+    );
   }
   updateArticle(id: string, dto: UpdateArticleDto) {
     const data: Record<string, unknown> = { ...dto };
@@ -179,20 +309,22 @@ export class AdminService {
       data.readingTime = readingTime(dto.content);
       if (dto.excerpt === undefined) data.excerpt = excerpt(dto.content);
     }
-    return this.prisma.article.update({ where: { id }, data });
+    return this.mutate(this.prisma.article.update({ where: { id }, data }));
   }
   deleteArticle(id: string) {
-    return this.prisma.article.delete({ where: { id } });
+    return this.mutate(this.prisma.article.delete({ where: { id } }));
   }
 
   // --- Quiz / Question ---
   createQuiz(dto: CreateQuizDto) {
-    return this.prisma.quiz.create({
-      data: { sectionId: dto.sectionId, title: dto.title, order: dto.order ?? 0 },
-    });
+    return this.mutate(
+      this.prisma.quiz.create({
+        data: { sectionId: dto.sectionId, title: dto.title, order: dto.order ?? 0 },
+      }),
+    );
   }
   deleteQuiz(id: string) {
-    return this.prisma.quiz.delete({ where: { id } });
+    return this.mutate(this.prisma.quiz.delete({ where: { id } }));
   }
   // Tahrirlash uchun — to'g'ri javoblar bilan
   async quizForEdit(id: string) {
@@ -210,48 +342,58 @@ export class AdminService {
     };
   }
   createQuestion(dto: CreateQuestionDto) {
-    return this.prisma.question.create({
-      data: {
-        quizId: dto.quizId,
-        text: dto.text,
-        options: JSON.stringify(dto.options),
-        correctIndex: dto.correctIndex,
-        explanation: dto.explanation,
-        order: dto.order ?? 0,
-      },
-    });
+    return this.mutate(
+      this.prisma.question.create({
+        data: {
+          quizId: dto.quizId,
+          text: dto.text,
+          options: JSON.stringify(dto.options),
+          correctIndex: dto.correctIndex,
+          explanation: dto.explanation,
+          order: dto.order ?? 0,
+        },
+      }),
+    );
   }
   updateQuestion(id: string, dto: UpdateQuestionDto) {
     const data: Record<string, unknown> = { ...dto };
     if (dto.options) data.options = JSON.stringify(dto.options);
-    return this.prisma.question.update({ where: { id }, data });
+    return this.mutate(this.prisma.question.update({ where: { id }, data }));
   }
   deleteQuestion(id: string) {
-    return this.prisma.question.delete({ where: { id } });
+    return this.mutate(this.prisma.question.delete({ where: { id } }));
   }
 
-  // --- Foydalanuvchilar ---
-  listUsers(search?: string) {
+  // --- Foydalanuvchilar (sahifalangan — 35-vazifa) ---
+  async listUsers(search?: string, take = 50, skip = 0) {
     const q = (search || "").trim();
-    return this.prisma.user.findMany({
-      where: q
-        ? {
-            OR: [
-              { email: { contains: q, mode: "insensitive" } },
-              { name: { contains: q, mode: "insensitive" } },
-            ],
-          }
-        : undefined,
-      orderBy: { createdAt: "desc" },
-      select: {
-        id: true,
-        email: true,
-        name: true,
-        role: true,
-        createdAt: true,
-        _count: { select: { comments: true, progress: true, bookmarks: true, notes: true } },
-      },
-    });
+    const where = q
+      ? {
+          OR: [
+            { email: { contains: q, mode: "insensitive" as const } },
+            { name: { contains: q, mode: "insensitive" as const } },
+          ],
+        }
+      : undefined;
+    const safeTake = Math.min(100, Math.max(1, take));
+    const [items, total] = await Promise.all([
+      this.prisma.user.findMany({
+        where,
+        orderBy: { createdAt: "desc" },
+        take: safeTake,
+        skip: Math.max(0, skip),
+        select: {
+          id: true,
+          email: true,
+          name: true,
+          role: true,
+          createdAt: true,
+          _count: { select: { comments: true, progress: true, bookmarks: true, notes: true } },
+        },
+      }),
+      this.prisma.user.count({ where }),
+    ]);
+    return { items, total };
   }
 
   async getUserDetail(id: string) {
@@ -303,21 +445,28 @@ export class AdminService {
     return { ok: true };
   }
 
-  // --- Izohlar (moderatsiya) ---
-  listComments(search?: string) {
+  // --- Izohlar (moderatsiya, sahifalangan — 35-vazifa) ---
+  async listComments(search?: string, take = 50, skip = 0) {
     const q = (search || "").trim();
-    return this.prisma.comment.findMany({
-      where: q ? { body: { contains: q, mode: "insensitive" } } : undefined,
-      orderBy: { createdAt: "desc" },
-      take: 200,
-      select: {
-        id: true,
-        body: true,
-        createdAt: true,
-        user: { select: { id: true, name: true, email: true } },
-        article: { select: { title: true, slug: true } },
-      },
-    });
+    const where = q ? { body: { contains: q, mode: "insensitive" as const } } : undefined;
+    const safeTake = Math.min(100, Math.max(1, take));
+    const [items, total] = await Promise.all([
+      this.prisma.comment.findMany({
+        where,
+        orderBy: { createdAt: "desc" },
+        take: safeTake,
+        skip: Math.max(0, skip),
+        select: {
+          id: true,
+          body: true,
+          createdAt: true,
+          user: { select: { id: true, name: true, email: true } },
+          article: { select: { title: true, slug: true } },
+        },
+      }),
+      this.prisma.comment.count({ where }),
+    ]);
+    return { items, total };
   }
   async deleteComment(id: string) {
     await this.prisma.comment.delete({ where: { id } });
@@ -326,18 +475,22 @@ export class AdminService {
 
   // --- Publish holatini almashtirish ---
   setTopicPublished(id: string, published: boolean) {
-    return this.prisma.topic.update({
-      where: { id },
-      data: { published },
-      select: { id: true, published: true },
-    });
+    return this.mutate(
+      this.prisma.topic.update({
+        where: { id },
+        data: { published },
+        select: { id: true, published: true },
+      }),
+    );
   }
   setArticlePublished(id: string, published: boolean) {
-    return this.prisma.article.update({
-      where: { id },
-      data: { published },
-      select: { id: true, published: true },
-    });
+    return this.mutate(
+      this.prisma.article.update({
+        where: { id },
+        data: { published },
+        select: { id: true, published: true },
+      }),
+    );
   }
 
   // --- Invite ---

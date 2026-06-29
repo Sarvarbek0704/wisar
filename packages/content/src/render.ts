@@ -101,11 +101,12 @@ export function extractTocFromHtml(html: string): TocItem[] {
 // (N.N) ko'rinishidagi o'zaro havolalar → styled badge
 // Misol: (3.2) → <a href="#bob-3-2" class="cross-ref">3.2-bob</a>
 function addCrossRefs(html: string): string {
-  // HTML teglar ichida emas, matn qismida amal qiladi
+  // HTML teglar ichida emas, matn qismida amal qiladi.
+  // Haqiqiy navigatsiya client'da (CrossRefNav) data-ch/data-art bo'yicha amalga oshiriladi (26-vazifa).
   return html.replace(
     /(?<![<"a-z])(?<!\d)\((\d+)\.(\d+)\)(?!\s*[<>])/g,
     (_m, chap: string, art: string) =>
-      `<a href="#" class="cross-ref" title="${chap}.${art}-bob ga havola" onclick="return false">${chap}.${art}-bob</a>`,
+      `<a class="cross-ref" role="link" tabindex="0" data-ch="${chap}" data-art="${art}" title="${chap}-bo'lim, ${art}-bobga o'tish">${chap}.${art}-bob</a>`,
   );
 }
 

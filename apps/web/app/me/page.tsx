@@ -10,6 +10,9 @@ import { getUser } from "@/lib/auth";
 import { isLoggedIn, getDashboard, type DashboardData } from "@/lib/me-api";
 import { getStreak } from "@/lib/streak-api";
 import { CardsSkeleton } from "@/components/Skeleton";
+import { DailyGoalRing } from "@/components/DailyGoalRing";
+import { InsightsPanel } from "@/components/InsightsPanel";
+import { TwoFactorSetup } from "@/components/TwoFactorSetup";
 
 /* ── SVG helpers ──────────────────────────────────────── */
 
@@ -144,6 +147,11 @@ export default function MePage() {
 
       {data && (
         <div className="space-y-5">
+
+          {/* ── Kunlik maqsad ringi (4-vazifa) ── */}
+          <div className="rounded-2xl border border-line bg-page p-5">
+            <DailyGoalRing />
+          </div>
 
           {/* ── Row 1: Davom ettirish + Streak ── */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -289,6 +297,12 @@ export default function MePage() {
 
             </div>
           </div>
+
+          {/* ── Tavsiyalar + analitika (10,30,32-vazifa) ── */}
+          <InsightsPanel topicProgress={data.topicProgress} />
+
+          {/* ── Xavfsizlik: 2FA (40-vazifa) ── */}
+          <TwoFactorSetup />
 
         </div>
       )}
