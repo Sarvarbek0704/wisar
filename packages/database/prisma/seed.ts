@@ -189,7 +189,7 @@ async function importCompanion(): Promise<number> {
 async function importEnglish(): Promise<number> {
   if (!existsSync(ENGLISH_DIR)) return 0;
   const folders = readdirSync(ENGLISH_DIR)
-    .filter((n) => /^\d{2}-/.test(n) && statSync(join(ENGLISH_DIR, n)).isDirectory())
+    .filter((n) => (/^\d{2}-/.test(n) || n === "LUGAT") && statSync(join(ENGLISH_DIR, n)).isDirectory())
     .sort((a, b) => a.localeCompare(b));
   if (!folders.length) return 0;
 
@@ -207,8 +207,8 @@ async function importEnglish(): Promise<number> {
   let count = 0;
   for (const folder of folders) {
     const m = folder.match(/^(\d{2})-(.+)$/);
-    const num = m ? parseInt(m[1], 10) : 0;
-    const name = m ? m[2].replace(/-/g, " ") : folder;
+    const num = m ? parseInt(m[1], 10) : 99;
+    const name = m ? m[2].replace(/-/g, " ") : "LUG'AT";
     const section = await prisma.section.create({
       data: { topicId: topic.id, slug: folder.toLowerCase(), title: name, order: num },
     });

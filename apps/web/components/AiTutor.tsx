@@ -73,7 +73,7 @@ export function AiTutor({ articleId }: { articleId: string }) {
   return createPortal(
     <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-3">
       {open && (
-        <div className="flex w-80 flex-col overflow-hidden rounded-2xl border border-line bg-page shadow-2xl">
+        <div className="flex w-[min(20rem,calc(100vw_-_2rem))] flex-col overflow-hidden rounded-2xl border border-line bg-page shadow-2xl">
           <div className="flex items-center justify-between border-b border-line bg-accent/5 px-4 py-3">
             <div className="flex items-center gap-2">
               <Bot size={16} className="text-accent" />

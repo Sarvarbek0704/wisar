@@ -463,3 +463,36 @@ mark.hl-pink   { background: rgba(244, 114, 182, .38); }
    Page transition wrapper (framer-motion)
    ============================================================ */
 .page-wrapper { min-height: calc(100vh - 56px); }
+
+/* ============================================================
+   RESPONSIVE — mobil (telefon) uchun global moslashuvlar
+   ============================================================ */
+/* Gorizontal toshib ketishni oldini olish — sticky/fixed'ni buzmaydi (clip) */
+html, body { overflow-x: clip; }
+
+/* Media va uzun so'z/URL'lar konteynerdan chiqmasin */
+img, video, canvas, iframe { max-width: 100%; }
+.prose-book p, .prose-book li, .prose-book a, .prose-book h1,
+.prose-book h2, .prose-book h3, .prose-book h4 { overflow-wrap: anywhere; }
+
+/* Telefon (≤640px) — o'qish kontenti va keng jadvallar */
+@media (max-width: 640px) {
+  .prose-book        { font-size: 16px; line-height: 1.75; }
+  .prose-book h1     { font-size: 1.6rem; }
+  .prose-book h2     { font-size: 1.3rem; padding-left: .5em; }
+  .prose-book h3     { font-size: 1.12rem; }
+  .prose-book pre    { font-size: .78rem; padding: 14px; }
+  .prose-book blockquote { padding: .5em .9em; }
+  /* Keng jadvallar sahifani buzmasin — gorizontal scroll bo'lsin */
+  .prose-book table  {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Touch nishonlari yetarli kattalikda (mobil bosish qulayligi) */
+@media (max-width: 768px) and (pointer: coarse) {
+  button, a[role="button"], .sidebar-link, .bottom-nav-item { min-height: 40px; }
+}

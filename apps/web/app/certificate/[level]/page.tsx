@@ -117,7 +117,7 @@ export default function CertificatePage() {
       >
         {/* Gradient header banner */}
         <div
-          className="relative flex flex-col items-center justify-center px-12 py-12 text-white"
+          className="relative flex flex-col items-center justify-center px-6 py-10 text-white sm:px-12 sm:py-12"
           style={{ background: gradient }}
         >
           {/* Decorative circles */}
@@ -142,11 +142,11 @@ export default function CertificatePage() {
         </div>
 
         {/* Body */}
-        <div className="px-12 py-10 text-center">
+        <div className="px-6 py-8 text-center sm:px-12 sm:py-10">
           <p className="mb-6 text-soft">Bu sertifikat quyidagiga beriladi:</p>
 
           {/* Name */}
-          <div className="mb-6 font-book text-4xl font-bold text-ink">
+          <div className="mb-6 break-words font-book text-3xl font-bold text-ink sm:text-4xl">
             {user?.name || user?.email || "O‘quvchi"}
           </div>
 

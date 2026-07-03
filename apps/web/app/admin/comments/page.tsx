@@ -45,19 +45,19 @@ export default function AdminCommentsPage() {
 
   return (
     <div>
-      <div className="mb-5 flex items-center justify-between gap-3">
+      <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold text-ink">Izohlar</h1>
           <p className="text-sm text-soft">{total} ta izoh · moderatsiya</p>
         </div>
         <div className="flex items-center gap-2 rounded-lg border border-line bg-page px-3 py-2">
-          <Search size={15} className="text-soft" />
+          <Search size={15} className="flex-none text-soft" />
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && load(q)}
             placeholder="Qidirish..."
-            className="w-40 bg-transparent text-sm text-ink outline-none"
+            className="w-full bg-transparent text-sm text-ink outline-none sm:w-40"
           />
         </div>
       </div>
