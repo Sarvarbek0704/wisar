@@ -8,9 +8,9 @@ COPY apps/api/package*.json ./apps/api/
 # --include-workspace-root: root package.json dagi hoisted deps (helmet, @nestjs/throttler/schedule, @sentry/nestjs, nodemailer, passport...)
 RUN npm install --workspace=@wisar/database --workspace=@wisar/api --include-workspace-root
 
-# Prisma generate
+# Prisma generate (schema yo'lini aniq beramiz — CWD /app)
 COPY packages/database/prisma ./packages/database/prisma
-RUN npx --prefix packages/database prisma generate
+RUN npx prisma generate --schema=packages/database/prisma/schema.prisma
 
 # Build
 COPY . .
