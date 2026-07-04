@@ -6,7 +6,8 @@ WORKDIR /app
 COPY package*.json ./
 COPY apps/web/package*.json ./apps/web/
 COPY packages/content/package*.json ./packages/content/
-RUN npm install --workspace=@wisar/web --workspace=@wisar/content
+# --include-workspace-root: root package.json dagi hoisted deps ham (masalan @sentry/nextjs)
+RUN npm install --workspace=@wisar/web --workspace=@wisar/content --include-workspace-root
 
 # Manba + build (standalone output)
 COPY . .
