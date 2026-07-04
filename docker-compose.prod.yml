@@ -40,8 +40,9 @@ services:
       timeout: 5s
       retries: 5
       start_period: 20s
-    expose:
-      - "4000"
+    # Faqat host'ning localhost'iga ochamiz — Nginx reverse-proxy shu yerga yo'naltiradi
+    ports:
+      - "127.0.0.1:4000:4000"
 
   web:
     build:
