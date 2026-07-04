@@ -4,6 +4,7 @@ import "./globals.css";
 import { AppShell } from "@/components/AppShell";
 import { Toaster } from "@/components/Toaster";
 import { OfflineBanner } from "@/components/OfflineBanner";
+import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { I18nProvider } from "@/lib/i18n";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001";
@@ -86,6 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <I18nProvider>
           <OfflineBanner />
           <AppShell>{children}</AppShell>
+          <FeedbackWidget />
           <Toaster />
         </I18nProvider>
         <script dangerouslySetInnerHTML={{ __html: swInit }} />

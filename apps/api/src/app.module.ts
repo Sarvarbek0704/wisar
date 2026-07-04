@@ -22,6 +22,7 @@ import { ReviewModule } from "./review/review.module";
 import { GroupsModule } from "./groups/groups.module";
 import { ForumModule } from "./forum/forum.module";
 import { NotificationModule } from "./notifications/notification.module";
+import { FeedbackModule } from "./feedback/feedback.module";
 import { HealthController } from "./health/health.controller";
 
 @Module({
@@ -45,6 +46,7 @@ import { HealthController } from "./health/health.controller";
     GroupsModule,
     ForumModule,
     NotificationModule,
+    FeedbackModule,
   ],
   controllers: [ContentController, HealthController],
   providers: [

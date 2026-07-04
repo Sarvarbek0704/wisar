@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import {
   LayoutDashboard, FileText, Users, MessageSquare,
-  Ticket, LogOut, ExternalLink, ShieldCheck,
+  Ticket, LogOut, ExternalLink, ShieldCheck, MessageSquarePlus,
 } from "lucide-react";
 import { getUser, logout, type AuthUser } from "@/lib/auth";
 
@@ -14,6 +14,7 @@ const NAV = [
   { href: "/admin/content", icon: FileText, label: "Kontent" },
   { href: "/admin/users", icon: Users, label: "Foydalanuvchilar" },
   { href: "/admin/comments", icon: MessageSquare, label: "Izohlar" },
+  { href: "/admin/feedback", icon: MessageSquarePlus, label: "Fikrlar" },
   { href: "/admin/invites", icon: Ticket, label: "Takliflar" },
 ];
 

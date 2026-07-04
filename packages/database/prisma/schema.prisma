@@ -548,3 +548,25 @@ model AuditLog {
 
   @@index([createdAt])
 }
+
+/// Foydalanuvchi fikr-mulohazasi (feedback) — hamma yozadi, admin ko'radi.
+/// Kim yozgani (name/email) snapshot sifatida saqlanadi — foydalanuvchi o'chsa ham qoladi.
+model Feedback {
+  id        String   @id @default(cuid())
+  /// Kirgan foydalanuvchi bo'lsa ID (havola uchun; majburiy emas)
+  userId    String?
+  /// Kim yozgani (kirgan bo'lsa hisobdan, mehmon bo'lsa o'zi kiritadi)
+  name      String?
+  email     String?
+  /// "like" | "dislike" | "suggestion" | "bug" | "feature" | "other"
+  category  String   @default("other")
+  message   String
+  /// Qaysi sahifadan yuborilgani (ixtiyoriy kontekst)
+  page      String?
+  /// Admin o'qidimi
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([read, createdAt])
+  @@index([createdAt])
+}
