@@ -11,10 +11,11 @@ import { MailModule } from "../mail/mail.module";
 @Module({
   imports: [
     PassportModule,
+    // Sir prod'da validateEnv() tomonidan kafolatlanadi (fail-fast). Dev uchun aniq nomlangan fallback.
+    // signOptions bermaymiz — har token o'z TTL'sini beradi (access 15m; refresh — DB'da, JWT emas).
     JwtModule.register({
       global: true,
-      secret: process.env.JWT_SECRET || "wisar-dev-secret",
-      signOptions: { expiresIn: "7d" },
+      secret: process.env.JWT_SECRET || "dev-insecure-secret-CHANGE-IN-PROD",
     }),
     MailModule,
   ],

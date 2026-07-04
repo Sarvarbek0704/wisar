@@ -1,0 +1,23 @@
+# Build kontekstidan chiqariladi (image ichiga tushmaydi)
+node_modules
+**/node_modules
+.next
+**/.next
+dist
+**/dist
+.turbo
+.git
+.github
+*.log
+.env
+.env.local
+.env.*.local
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+# SQLite qoldig'i / dev DB
+**/*.db
+# Test/coverage
+coverage
+**/coverage

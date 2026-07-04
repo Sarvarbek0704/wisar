@@ -13,17 +13,40 @@ import { NestFactory } from "@nestjs/core";
 import { ValidationPipe } from "@nestjs/common";
 import helmet from "helmet";
 import { AppModule } from "./app.module";
+import { AllExceptionsFilter } from "./common/all-exceptions.filter";
+import { validateEnv } from "./common/env";
+
+/** CORS uchun ruxsat etilgan domenlar (.env: CORS_ORIGINS yoki NEXT_PUBLIC_SITE_URL). */
+function allowedOrigins(): string[] {
+  const raw = (process.env.CORS_ORIGINS || process.env.NEXT_PUBLIC_SITE_URL || "").trim();
+  if (!raw) {
+    // Sozlanmagan bo'lsa: dev'da localhost, prod'da bo'sh (CORS_ORIGINS majburiy)
+    return process.env.NODE_ENV === "production"
+      ? []
+      : ["http://localhost:3000", "http://localhost:3001"];
+  }
+  return raw.split(",").map((s) => s.trim()).filter(Boolean);
+}
 
 async function bootstrap() {
+  validateEnv(); // prod'da kritik/zaif sirlar bo'lsa shu yerda to'xtaydi (fail-fast)
+
   const app = await NestFactory.create(AppModule);
 
-  // Frontend (Next.js) bilan ishlash uchun CORS — refresh cookie uchun credentials kerak (34-vazifa)
-  app.enableCors({ origin: true, credentials: true });
+  // CORS — faqat oq ro'yxatdagi domenlar (refresh cookie uchun credentials kerak)
+  const origins = allowedOrigins();
+  app.enableCors({
+    origin: (origin, cb) => {
+      // origin yo'q (server-server / curl / mobil) yoki ro'yxatda bo'lsa — ruxsat
+      if (!origin || origins.includes(origin)) return cb(null, true);
+      return cb(new Error(`CORS: ruxsat etilmagan domen — ${origin}`), false);
+    },
+    credentials: true,
+  });
   app.use(helmet());
   app.setGlobalPrefix("api");
-  app.useGlobalPipes(
-    new ValidationPipe({ whitelist: true, transform: true }),
-  );
+  app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
+  app.useGlobalFilters(new AllExceptionsFilter());
 
   const port = Number(process.env.API_PORT) || 4000;
   await app.listen(port);

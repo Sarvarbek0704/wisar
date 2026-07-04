@@ -1,0 +1,66 @@
+# === Wisar — PRODUCTION stack (db + api + web) ===
+# Ishga tushirish: docker compose -f docker-compose.prod.yml up -d --build
+# Sirlar .env dan olinadi (env_file). .env ni GITGA QO'YMANG.
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: wisar-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-wisar}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD kerak}
+      POSTGRES_DB: ${POSTGRES_DB:-wisar}
+    volumes:
+      - wisar-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-wisar}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # Port faqat ichki tarmoqqa — tashqariga ochilmaydi (xavfsizroq)
+    expose:
+      - "5432"
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    container_name: wisar-api
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      API_PORT: 4000
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:4000/api/health/ready || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    expose:
+      - "4000"
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL}
+    container_name: wisar-web
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      PORT: 3001
+    depends_on:
+      - api
+    # Nginx/reverse-proxy shu portga yo'naltiradi
+    ports:
+      - "127.0.0.1:3001:3001"
+
+volumes:
+  wisar-pgdata:

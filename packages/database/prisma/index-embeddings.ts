@@ -40,30 +40,43 @@ function chunkText(md: string, wordsPerChunk = 400): string[] {
   return out;
 }
 
-/** Embedding — 429'da backoff bilan qayta urinadi. */
+/** Embedding — 429 (rate limit) VA tarmoq xatosi (fetch failed / timeout)'da backoff bilan qayta urinadi. */
 async function embed(texts: string[]): Promise<number[][]> {
   const url = EMBED_BASE_URL!.replace(/\/+$/, "") + "/embeddings";
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
-    const res = await fetch(url, {
-      method: "POST",
-      headers: { "content-type": "application/json", authorization: `Bearer ${EMBED_API_KEY}` },
-      body: JSON.stringify({ model: EMBED_MODEL, input: texts }),
-    });
-    if (res.ok) {
-      const data = (await res.json()) as { data: { embedding: number[] }[] };
-      return data.data.map((d) => d.embedding);
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "content-type": "application/json", authorization: `Bearer ${EMBED_API_KEY}` },
+        body: JSON.stringify({ model: EMBED_MODEL, input: texts }),
+        signal: AbortSignal.timeout(60000), // 60s — osilib qolishdan himoya
+      });
+      if (res.ok) {
+        const data = (await res.json()) as { data: { embedding: number[] }[] };
+        return data.data.map((d) => d.embedding);
+      }
+      // Rate limit / kvota — kutib qayta urinamiz
+      if (res.status === 429 && attempt < MAX_RETRIES) {
+        const retryAfter = Number(res.headers.get("retry-after"));
+        const waitMs = retryAfter > 0 ? retryAfter * 1000 : Math.min(60000, 15000 * (attempt + 1));
+        console.log(`    … 429 (limit) — ${Math.round(waitMs / 1000)}s kutib qayta urinish (${attempt + 1}/${MAX_RETRIES})`);
+        await sleep(waitMs);
+        continue;
+      }
+      throw new Error(`Embedding xatosi (${res.status}): ${(await res.text()).slice(0, 300)}`);
+    } catch (e) {
+      const msg = (e as Error)?.message || String(e);
+      const isNetwork = /fetch failed|terminated|timeout|timed out|aborted|ECONN|ENOTFOUND|EAI_AGAIN|socket|network/i.test(msg);
+      if (isNetwork && attempt < MAX_RETRIES) {
+        const waitMs = Math.min(60000, 10000 * (attempt + 1));
+        console.log(`    … tarmoq xatosi (${msg.slice(0, 50)}) — ${Math.round(waitMs / 1000)}s kutib qayta urinish (${attempt + 1}/${MAX_RETRIES})`);
+        await sleep(waitMs);
+        continue;
+      }
+      throw e; // haqiqiy HTTP xatosi (400 va h.k.) yoki qayta urinishlar tugadi
     }
-    // Rate limit / kvota — kutib qayta urinamiz
-    if (res.status === 429 && attempt < MAX_RETRIES) {
-      const retryAfter = Number(res.headers.get("retry-after"));
-      const waitMs = retryAfter > 0 ? retryAfter * 1000 : Math.min(60000, 15000 * (attempt + 1));
-      console.log(`    … 429 (limit) — ${Math.round(waitMs / 1000)}s kutib qayta urinish (${attempt + 1}/${MAX_RETRIES})`);
-      await sleep(waitMs);
-      continue;
-    }
-    throw new Error(`Embedding xatosi (${res.status}): ${(await res.text()).slice(0, 300)}`);
   }
-  throw new Error("Embedding: barcha qayta urinishlar tugadi (429).");
+  throw new Error("Embedding: barcha qayta urinishlar tugadi.");
 }
 
 async function main() {
@@ -91,6 +104,8 @@ async function main() {
 
   let total = 0;
   let done = 0;
+  let skipped = 0;
+  let consecFail = 0;
   for (const a of todo) {
     const chunks = chunkText(a.content ?? "");
     if (!chunks.length) continue;
@@ -107,17 +122,27 @@ async function main() {
       });
       total += chunks.length;
       done++;
+      consecFail = 0;
       console.log(`  ✓ [${done}/${todo.length}] ${a.title} — ${chunks.length} bo'lak`);
     } catch (e) {
-      // Kvota butunlay tugasa — to'xtaymiz, lekin qilingan ish saqlanadi (resumable)
-      console.error(`  ✗ To'xtatildi "${a.title}": ${(e as Error).message}`);
-      console.error(`  → Kvota tiklangach qayta "npm run db:index" — qolganidan davom etadi.`);
-      break;
+      // Bitta maqola xato bersa — o'tkazib yuboramiz, indeks to'xtamaydi (qilingan ish saqlanadi, resumable).
+      skipped++;
+      consecFail++;
+      console.error(`  ✗ O'tkazib yuborildi "${a.title}": ${(e as Error).message}`);
+      // 5 ketma-ket xato = kvota/tarmoq butunlay o'lgan — to'xtaymiz (behuda urinmaslik uchun).
+      if (consecFail >= 5) {
+        console.error(`  → 5 ketma-ket xato: to'xtatildi. Kvota/tarmoq tiklangach qayta "npm run db:index".`);
+        break;
+      }
+      continue;
     }
     await sleep(THROTTLE_MS);
   }
 
-  console.log(`Bu sessiyada: ${done} maqola, ${total} bo'lak indekslandi.`);
+  console.log(
+    `Bu sessiyada: ${done} maqola, ${total} bo'lak indekslandi` +
+      (skipped ? `, ${skipped} o'tkazib yuborildi (keyin qayta urinib ko'ring).` : "."),
+  );
   await prisma.$disconnect();
 }
 

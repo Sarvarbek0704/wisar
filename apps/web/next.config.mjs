@@ -4,6 +4,8 @@ import { withSentryConfig } from "@sentry/nextjs";
 const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ["@wisar/content"],
+  // Docker uchun mustaqil (standalone) build — faqat kerakli fayllarni chiqaradi (kichik image)
+  output: "standalone",
 };
 
 // Sentry faqat SENTRY_DSN bo'lsa wraplaydi
