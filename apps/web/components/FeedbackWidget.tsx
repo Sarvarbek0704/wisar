@@ -69,7 +69,7 @@ export function FeedbackWidget() {
   }
 
   const content = (
-    <div className="fixed bottom-20 left-4 z-[55] flex flex-col items-start gap-3 lg:bottom-6 lg:left-6 font-sans">
+    <div className="fixed bottom-20 right-4 z-[55] flex flex-col items-end gap-3 lg:bottom-6 lg:right-6 font-sans">
       {open && (
         <div className="w-[min(22rem,calc(100vw_-_2rem))] overflow-hidden rounded-2xl border border-line bg-page shadow-2xl">
           <div className="flex items-center justify-between border-b border-line bg-accent/5 px-4 py-3">
