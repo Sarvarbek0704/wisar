@@ -53,8 +53,26 @@ model User {
   commentLikes     CommentLike[]
   ieltsAttempts    IeltsAttempt[]
   aiThreads        AiThread[]
+  notifications    Notification[]
   createdAt      DateTime        @default(now())
   updatedAt      DateTime        @updatedAt
+}
+
+/// In-app bildirishnoma (46-vazifa) — takror-tekshir, forum javobi, guruh, yangi kontent, sertifikat, tizim.
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// "review_due" | "forum_reply" | "group" | "content" | "certificate" | "system"
+  type      String
+  title     String
+  body      String?
+  /// Bosilganda o'tiladigan ichki havola (masalan "/forum/123")
+  link      String?
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId, read, createdAt])
 }
 
 /// O'qilgan boblar (progress tracking)

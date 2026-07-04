@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException, ForbiddenException, BadRequestException } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
+import { NotificationService } from "../notifications/notification.service";
 
 function authorName(u: { name: string | null; email: string }): string {
   return u.name || u.email.split("@")[0];
@@ -7,7 +8,10 @@ function authorName(u: { name: string | null; email: string }): string {
 
 @Injectable()
 export class ForumService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly notifications: NotificationService,
+  ) {}
 
   /** Savollar ro'yxati (sahifalangan — 35-vazifa). */
   async listThreads(take = 20, skip = 0) {
@@ -84,12 +88,26 @@ export class ForumService {
   async addPost(userId: string, threadId: string, body: string) {
     const b = (body || "").trim();
     if (b.length < 2) throw new BadRequestException("Javob juda qisqa.");
-    const thread = await this.prisma.forumThread.findUnique({ where: { id: threadId }, select: { id: true } });
+    const thread = await this.prisma.forumThread.findUnique({
+      where: { id: threadId },
+      select: { id: true, userId: true, title: true },
+    });
     if (!thread) throw new NotFoundException("Savol topilmadi.");
-    return this.prisma.forumPost.create({
+    const post = await this.prisma.forumPost.create({
       data: { threadId, userId, body: b },
       select: { id: true },
     });
+    // Savol egasiga bildirishnoma (o'ziga javob yozsa — yubormaymiz)
+    if (thread.userId !== userId) {
+      await this.notifications.create({
+        userId: thread.userId,
+        type: "forum_reply",
+        title: "Savolingizga javob berildi",
+        body: thread.title,
+        link: `/forum/${threadId}`,
+      });
+    }
+    return post;
   }
 
   /** "To'g'ri javob" belgilash — faqat savol egasi. */

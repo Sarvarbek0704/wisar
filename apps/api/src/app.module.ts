@@ -21,6 +21,7 @@ import { FlashcardsModule } from "./flashcards/flashcards.module";
 import { ReviewModule } from "./review/review.module";
 import { GroupsModule } from "./groups/groups.module";
 import { ForumModule } from "./forum/forum.module";
+import { NotificationModule } from "./notifications/notification.module";
 import { HealthController } from "./health/health.controller";
 
 @Module({
@@ -43,6 +44,7 @@ import { HealthController } from "./health/health.controller";
     ReviewModule,
     GroupsModule,
     ForumModule,
+    NotificationModule,
   ],
   controllers: [ContentController, HealthController],
   providers: [

@@ -4,6 +4,7 @@ import { ThemeToggle } from "./ThemeToggle";
 import { SearchDialog } from "./SearchDialog";
 import { UserMenu } from "./UserMenu";
 import { StreakWidget } from "./StreakWidget";
+import { NotificationBell } from "./NotificationBell";
 import { Logo } from "./Logo";
 
 interface TopBarProps {
@@ -38,6 +39,7 @@ export function TopBar({ inApp }: TopBarProps) {
         <div className="ml-auto flex items-center gap-2">
           <StreakWidget />
           <SearchDialog />
+          <NotificationBell />
           <UserMenu />
           {!inApp && <ThemeToggle />}
         </div>
