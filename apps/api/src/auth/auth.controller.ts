@@ -10,6 +10,7 @@ import {
   UseGuards,
 } from "@nestjs/common";
 import { AuthGuard } from "@nestjs/passport";
+import { Throttle } from "@nestjs/throttler";
 import type { Request, Response, CookieOptions } from "express";
 import { AuthService } from "./auth.service";
 import {
@@ -58,6 +59,8 @@ export class AuthController {
     return undefined;
   }
 
+  // Brute-force himoyasi: hisob yaratishni cheklaymiz (daqiqasiga 5)
+  @Throttle({ default: { limit: 5, ttl: 60_000 } })
   @Post("register")
   async register(@Body() dto: RegisterDto, @Res({ passthrough: true }) res: Response) {
     const result = await this.auth.register(dto.email, dto.password, dto.name, dto.inviteCode, this.mail);
@@ -65,6 +68,8 @@ export class AuthController {
     return result;
   }
 
+  // Brute-force himoyasi: parol tanlashga qarshi (daqiqasiga 10 urinish)
+  @Throttle({ default: { limit: 10, ttl: 60_000 } })
   @Post("login")
   async login(@Body() dto: LoginDto, @Res({ passthrough: true }) res: Response) {
     const result = await this.auth.login(dto.email, dto.password, this.mail, dto.code);
@@ -97,6 +102,8 @@ export class AuthController {
     return this.auth.disableTwoFactor(u.sub, body?.code ?? "");
   }
 
+  // Kodni tanlashga qarshi (6 xonali kod brute-force himoyasi)
+  @Throttle({ default: { limit: 10, ttl: 60_000 } })
   @Post("verify-email")
   async verifyEmail(@Body() dto: VerifyEmailDto, @Res({ passthrough: true }) res: Response) {
     const result = await this.auth.verifyEmail(dto.email, dto.code);
@@ -104,6 +111,8 @@ export class AuthController {
     return result;
   }
 
+  // Email spam himoyasi (daqiqasiga 3 marta)
+  @Throttle({ default: { limit: 3, ttl: 60_000 } })
   @Post("resend-verification")
   async resendVerification(@Body() dto: ResendVerificationDto) {
     await this.auth.resendVerification(dto.email, this.mail);
@@ -136,12 +145,16 @@ export class AuthController {
     return user;
   }
 
+  // Email spam himoyasi (daqiqasiga 3 marta)
+  @Throttle({ default: { limit: 3, ttl: 60_000 } })
   @Post("forgot-password")
   async forgotPassword(@Body() dto: ForgotPasswordDto) {
     await this.auth.forgotPassword(dto.email, this.mail);
     return { message: "Agar email mavjud bo'lsa, xabar yuborildi" };
   }
 
+  // Reset token'ni tanlashga qarshi
+  @Throttle({ default: { limit: 10, ttl: 60_000 } })
   @Post("reset-password")
   async resetPassword(@Body() dto: ResetPasswordDto) {
     await this.auth.resetPassword(dto.token, dto.newPassword);

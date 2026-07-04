@@ -33,6 +33,11 @@ async function bootstrap() {
 
   const app = await NestFactory.create(AppModule);
 
+  // Reverse-proxy (Nginx) orqasida: X-Forwarded-For dan haqiqiy IP — rate-limit va secure cookie to'g'ri ishlashi uchun
+  app.getHttpAdapter().getInstance().set("trust proxy", 1);
+  // SIGTERM/SIGINT'da toza to'xtash (Prisma $disconnect, ulanishlar yopiladi) — konteyner qayta ishga tushishi uchun
+  app.enableShutdownHooks();
+
   // CORS — faqat oq ro'yxatdagi domenlar (refresh cookie uchun credentials kerak)
   const origins = allowedOrigins();
   app.enableCors({
