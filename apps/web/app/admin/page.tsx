@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
   Users, FileText, MessageSquare, Layers, BookOpen,
-  HelpCircle, Ticket, Bookmark, TrendingUp, ShieldCheck,
+  HelpCircle, Ticket, Bookmark, TrendingUp, ShieldCheck, Activity,
 } from "lucide-react";
 import { adminStats, type AdminStats } from "@/lib/admin-api";
 import { CardsSkeleton } from "@/components/Skeleton";
@@ -53,9 +53,14 @@ export default function AdminDashboard() {
           <h1 className="text-2xl font-bold text-ink">Boshqaruv paneli</h1>
           <p className="text-sm text-soft">Sayt umumiy holati va statistikasi</p>
         </div>
-        <span className="ml-auto inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-600">
-          <TrendingUp size={13} /> +{stats.newThisWeek} bu hafta
-        </span>
+        <div className="ml-auto flex items-center gap-2">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-600" title="Bugun faol foydalanuvchilar">
+            <Activity size={13} /> {stats.active.today} bugun · {stats.active.week} hafta faol
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-600">
+            <TrendingUp size={13} /> +{stats.newThisWeek} bu hafta
+          </span>
+        </div>
       </div>
 
       {/* Stat cards */}
@@ -123,6 +128,45 @@ export default function AdminDashboard() {
               </Link>
             ))}
             {stats.latestUsers.length === 0 && <p className="text-sm text-soft">Hali foydalanuvchi yo'q.</p>}
+          </div>
+        </div>
+
+        {/* Mashhur kontent — eng ko'p o'qilgan */}
+        <div className="rounded-2xl border border-line bg-page p-5">
+          <h2 className="mb-3 flex items-center gap-2 font-bold text-ink">
+            <FileText size={17} className="text-accent" /> Eng ko'p o'qilgan
+          </h2>
+          <div className="space-y-2">
+            {stats.popularArticles.map((a, i) => (
+              <div key={i} className="flex items-center gap-3 rounded-lg border border-line p-2.5">
+                <span className="grid h-6 w-6 flex-none place-items-center rounded-md bg-accent/10 text-xs font-bold text-accent">{i + 1}</span>
+                <span className="line-clamp-1 flex-1 text-sm text-ink/90">{a.title}</span>
+                <span className="flex-none text-xs font-medium text-soft">{a.reads.toLocaleString()} o'qish</span>
+              </div>
+            ))}
+            {stats.popularArticles.length === 0 && <p className="text-sm text-soft">Hali o'qish ma'lumoti yo'q.</p>}
+          </div>
+        </div>
+
+        {/* CEFR daraja taqsimoti */}
+        <div className="rounded-2xl border border-line bg-page p-5">
+          <h2 className="mb-3 flex items-center gap-2 font-bold text-ink">
+            <Layers size={17} className="text-accent" /> Daraja taqsimoti
+          </h2>
+          <div className="space-y-2">
+            {stats.levelDist.map((l) => {
+              const max = Math.max(...stats.levelDist.map((x) => x.count), 1);
+              return (
+                <div key={l.level} className="flex items-center gap-3">
+                  <span className="w-8 flex-none text-xs font-semibold text-ink">{l.level}</span>
+                  <div className="h-4 flex-1 overflow-hidden rounded bg-bg">
+                    <div className="h-full rounded bg-accent/70" style={{ width: `${(l.count / max) * 100}%` }} />
+                  </div>
+                  <span className="w-8 flex-none text-right text-xs text-soft">{l.count}</span>
+                </div>
+              );
+            })}
+            {stats.levelDist.length === 0 && <p className="text-sm text-soft">Ma'lumot yo'q.</p>}
           </div>
         </div>
 

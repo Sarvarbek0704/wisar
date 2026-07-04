@@ -57,6 +57,9 @@ export type AdminStats = {
   };
   signups: { date: string; count: number }[];
   newThisWeek: number;
+  active: { today: number; week: number };
+  levelDist: { level: string; count: number }[];
+  popularArticles: { title: string; reads: number }[];
   latestUsers: { id: string; email: string; name: string | null; role: string; createdAt: string }[];
   latestComments: {
     id: string; body: string; createdAt: string;

@@ -142,6 +142,39 @@ export class AdminService {
       },
     });
 
+    // Faol foydalanuvchilar (DailyActivity) — bugun / so'nggi 7 kun
+    const todayKey = new Date().toISOString().slice(0, 10);
+    const weekAgoKey = new Date(Date.now() - 6 * 86_400_000).toISOString().slice(0, 10);
+    const [activeToday, activeWeek] = await Promise.all([
+      this.prisma.dailyActivity.findMany({ where: { date: todayKey }, distinct: ["userId"], select: { userId: true } }),
+      this.prisma.dailyActivity.findMany({ where: { date: { gte: weekAgoKey } }, distinct: ["userId"], select: { userId: true } }),
+    ]);
+
+    // CEFR daraja taqsimoti (tugatish/segmentatsiya)
+    const levelRows = await this.prisma.user.groupBy({ by: ["cefrLevel"], _count: { _all: true } });
+    const levelDist = levelRows
+      .map((r) => ({ level: r.cefrLevel ?? "—", count: r._count._all }))
+      .sort((a, b) => b.count - a.count);
+
+    // Mashhur kontent — eng ko'p o'qilgan 5 maqola
+    const topRead = await this.prisma.progress.groupBy({
+      by: ["articleId"],
+      _count: { articleId: true },
+      orderBy: { _count: { articleId: "desc" } },
+      take: 5,
+    });
+    const topArticles = topRead.length
+      ? await this.prisma.article.findMany({
+          where: { id: { in: topRead.map((r) => r.articleId) } },
+          select: { id: true, title: true },
+        })
+      : [];
+    const titleMap = new Map(topArticles.map((a) => [a.id, a.title]));
+    const popularArticles = topRead.map((r) => ({
+      title: titleMap.get(r.articleId) ?? "—",
+      reads: r._count.articleId,
+    }));
+
     return {
       totals: {
         users, admins, topics, sections, articles, publishedArticles,
@@ -149,6 +182,9 @@ export class AdminService {
       },
       signups,
       newThisWeek,
+      active: { today: activeToday.length, week: activeWeek.length },
+      levelDist,
+      popularArticles,
       latestUsers,
       latestComments,
     };
