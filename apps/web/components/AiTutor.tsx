@@ -71,7 +71,7 @@ export function AiTutor({ articleId }: { articleId: string }) {
   if (!mounted) return null;
 
   return createPortal(
-    <div className="fixed bottom-36 right-4 z-[60] flex flex-col items-end gap-3 lg:bottom-24 lg:right-6">
+    <div className="fixed bottom-20 right-4 z-[60] flex flex-col items-end gap-3 lg:bottom-6 lg:right-6">
       {open && (
         <div className="flex w-[min(20rem,calc(100vw_-_2rem))] flex-col overflow-hidden rounded-2xl border border-line bg-page shadow-2xl">
           <div className="flex items-center justify-between border-b border-line bg-accent/5 px-4 py-3">
