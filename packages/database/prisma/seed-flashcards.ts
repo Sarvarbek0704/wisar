@@ -52,15 +52,20 @@ function parseBack(raw: string): { back: string; ipa?: string; example?: string 
   let example: string | undefined;
 
   if (parts.length >= 2) {
-    // birinchi qism IPA / talaffuz
+    // Ikki format bor:
+    //   3-qismli: "/ipa/ | o'zbekcha | example"  (parts[0]=IPA)
+    //   2-qismli: "o'zbekcha | example"          (IPA yo'q — darslar kartalari)
     const firstPart = parts[0].trim();
     const ipaMatch = firstPart.match(/\/([^/]+)\//);
     if (ipaMatch) {
+      // 3-qismli format: IPA | o'zbekcha | example
       ipa = ipaMatch[1].trim();
-    }
-    back = parts[1].trim();
-    if (parts.length >= 3) {
-      example = parts[2].trim() || undefined;
+      back = parts[1].trim();
+      if (parts.length >= 3) example = parts[2].trim() || undefined;
+    } else {
+      // 2-qismli format: o'zbekcha | example (birinchi qism = tarjima, misol emas!)
+      back = parts[0].trim();
+      example = parts[1].trim() || undefined;
     }
   } else {
     back = raw.trim();
