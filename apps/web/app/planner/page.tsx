@@ -10,7 +10,10 @@ import { DaySidebar } from "@/components/planner/DaySidebar";
 import { WeekStrip } from "@/components/planner/WeekStrip";
 import { WeeklyStats } from "@/components/planner/WeeklyStats";
 import { FocusTimer } from "@/components/planner/FocusTimer";
+import { TodayFocusPanel } from "@/components/planner/TodayFocusPanel";
+import { ActivityHeartbeat } from "@/components/ActivityHeartbeat";
 import { isLoggedIn } from "@/lib/auth";
+import { toast } from "@/lib/ui";
 import {
   loadDayRemote, saveDayRemote, loadHabitsRemote, saveHabitsRemote,
 } from "@/lib/planner-api";
@@ -106,6 +109,10 @@ export default function PlannerPage() {
     saveHabitLog(nl);
     if (isLoggedIn()) saveHabitsRemote(habits, nl);
   }
+  function pickCourseLink(href: string, title: string) {
+    patch({ courseLink: href });
+    toast(`"${title}" bugungi rejaga qo'shildi`);
+  }
 
   // ── Tezkor amallar ──
   function copyYesterday() {
@@ -135,6 +142,11 @@ export default function PlannerPage() {
 
   return (
     <div className="px-4 py-6 sm:px-6">
+      <ActivityHeartbeat />
+
+      {/* ── Bugungi fokus: platforma bilan bog'liq tavsiya/progress ── */}
+      <TodayFocusPanel onPickLink={pickCourseLink} />
+
       {/* ── Header ── */}
       <header className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-3">

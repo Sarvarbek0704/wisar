@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Play, Pause, RotateCcw, Timer, Coffee } from "lucide-react";
+import { Play, Pause, RotateCcw, Timer, Coffee, Flame } from "lucide-react";
+import { isLoggedIn } from "@/lib/auth";
+import { addActivity } from "@/lib/me-api";
 
 type Mode = "focus" | "break";
 const DURATIONS: Record<Mode, number> = { focus: 25 * 60, break: 5 * 60 };
@@ -11,6 +13,7 @@ export function FocusTimer() {
   const [left, setLeft] = useState(DURATIONS.focus);
   const [running, setRunning] = useState(false);
   const [sessions, setSessions] = useState(0);
+  const [justLogged, setJustLogged] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -19,7 +22,16 @@ export function FocusTimer() {
         setLeft((l) => {
           if (l <= 1) {
             // sikl tugadi
-            if (mode === "focus") setSessions((s) => s + 1);
+            if (mode === "focus") {
+              setSessions((s) => s + 1);
+              // Yakunlangan fokus sessiya — haqiqiy kunlik faollikka (DailyActivity) yoziladi.
+              // Shu orqali /me va boshqa joylardagi kunlik maqsad/heatmap bilan bog'lanadi.
+              if (isLoggedIn()) {
+                addActivity({ minutes: Math.round(DURATIONS.focus / 60) }).catch(() => {});
+                setJustLogged(true);
+                setTimeout(() => setJustLogged(false), 4000);
+              }
+            }
             const next: Mode = mode === "focus" ? "break" : "focus";
             setMode(next);
             // ovozli signal (ixtiyoriy, xato bo'lsa jim)
@@ -120,8 +132,12 @@ export function FocusTimer() {
         </div>
 
         {sessions > 0 && (
-          <p className="mt-3 text-xs text-soft">
+          <p className="mt-3 flex items-center gap-1.5 text-xs text-soft">
+            <Flame size={12} className="text-amber-500" />
             Bugun <span className="font-bold text-ink">{sessions}</span> fokus sessiya yakunlandi
+            {justLogged && (
+              <span className="animate-fade-in text-emerald-600">· kunlik maqsadga qo'shildi</span>
+            )}
           </p>
         )}
       </div>

@@ -38,6 +38,7 @@ export type Habit = { id: string; name: string; emoji?: string };
 const DAYS_KEY     = "planner-days-v1";
 const HABITS_KEY   = "planner-habits-v1";
 const HABITLOG_KEY = "planner-habitlog-v1";
+const WEEKGOAL_KEY = "planner-weekgoal-v1";
 
 export function uid(): string {
   return Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
@@ -146,6 +147,14 @@ export function loadHabitLog(): Record<string, Record<string, boolean>> {
 }
 export function saveHabitLog(log: Record<string, Record<string, boolean>>): void {
   write(HABITLOG_KEY, log);
+}
+
+// ── Haftalik soat maqsadi (shaxsiy sozlama, faqat shu qurilmada) ─────
+export function loadWeeklyGoalHours(): number {
+  return read<number>(WEEKGOAL_KEY, 10);
+}
+export function saveWeeklyGoalHours(hours: number): void {
+  write(WEEKGOAL_KEY, Math.max(1, Math.min(100, Math.round(hours))));
 }
 
 // ── Statistika yordamchilari ────────────────────────────────────────
