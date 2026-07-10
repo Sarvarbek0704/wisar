@@ -15,7 +15,7 @@ import type { Request, Response, CookieOptions } from "express";
 import { AuthService } from "./auth.service";
 import {
   LoginDto, RegisterDto, ForgotPasswordDto, ResetPasswordDto,
-  VerifyEmailDto, ResendVerificationDto,
+  VerifyEmailDto, ResendVerificationDto, ChangePasswordDto,
 } from "./dto";
 import { JwtGuard } from "./jwt.guard";
 import { CurrentUser, type AuthUser } from "./current-user.decorator";
@@ -143,6 +143,24 @@ export class AuthController {
   @Get("me")
   me(@CurrentUser() user: AuthUser) {
     return user;
+  }
+
+  // Parolni yangilash (login qilingan holda). Brute-force himoyasi: 5/daqiqa.
+  @Throttle({ default: { limit: 5, ttl: 60_000 } })
+  @UseGuards(JwtGuard)
+  @Post("change-password")
+  async changePassword(
+    @CurrentUser() user: AuthUser,
+    @Body() dto: ChangePasswordDto,
+    @Req() req: Request,
+  ) {
+    await this.auth.changePassword(
+      user.sub,
+      dto.currentPassword,
+      dto.newPassword,
+      this.readRefreshCookie(req),
+    );
+    return { message: "Parol yangilandi. Boshqa qurilmalardagi sessiyalar yopildi." };
   }
 
   // Email spam himoyasi (daqiqasiga 3 marta)

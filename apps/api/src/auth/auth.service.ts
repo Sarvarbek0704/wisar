@@ -285,6 +285,44 @@ export class AuthService {
     });
   }
 
+  /**
+   * Login qilingan foydalanuvchi parolini yangilaydi.
+   * Xavfsizlik: boshqa qurilmalardagi barcha refresh tokenlar bekor qilinadi
+   * (joriy sessiya cookie'si saqlanadi — foydalanuvchi chiqarib yuborilmaydi).
+   */
+  async changePassword(
+    userId: string,
+    currentPassword: string,
+    newPassword: string,
+    keepRefreshRaw?: string,
+  ): Promise<void> {
+    const user = await this.prisma.user.findUnique({ where: { id: userId } });
+    if (!user) throw new UnauthorizedException("Foydalanuvchi topilmadi");
+
+    // Google orqali kirganlarda haqiqiy parol yo'q — avval reset orqali o'rnatsin
+    if (user.passwordHash === "google-oauth-no-password") {
+      throw new BadRequestException(
+        "Siz Google orqali kirgansiz. Parol o'rnatish uchun \"Parolni unutdingizmi?\" bo'limidan foydalaning.",
+      );
+    }
+
+    const ok = await bcrypt.compare(currentPassword, user.passwordHash);
+    if (!ok) throw new BadRequestException("Joriy parol noto'g'ri");
+
+    const passwordHash = await bcrypt.hash(newPassword, 10);
+    await this.prisma.user.update({ where: { id: userId }, data: { passwordHash } });
+
+    // Boshqa qurilmalardagi sessiyalarni yopamiz (joriy refresh saqlanadi)
+    await this.prisma.refreshToken.updateMany({
+      where: {
+        userId,
+        revoked: false,
+        ...(keepRefreshRaw ? { tokenHash: { not: this.hashToken(keepRefreshRaw) } } : {}),
+      },
+      data: { revoked: true },
+    });
+  }
+
   async googleLogin(profile: { googleId: string; email: string; name: string }) {
     // 1. Find by googleId
     let user = await this.prisma.user.findUnique({

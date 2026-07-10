@@ -13,6 +13,7 @@ import { CardsSkeleton } from "@/components/Skeleton";
 import { DailyGoalRing } from "@/components/DailyGoalRing";
 import { InsightsPanel } from "@/components/InsightsPanel";
 import { TwoFactorSetup } from "@/components/TwoFactorSetup";
+import { ChangePassword } from "@/components/ChangePassword";
 
 /* ── SVG helpers ──────────────────────────────────────── */
 
@@ -301,7 +302,8 @@ export default function MePage() {
           {/* ── Tavsiyalar + analitika (10,30,32-vazifa) ── */}
           <InsightsPanel topicProgress={data.topicProgress} />
 
-          {/* ── Xavfsizlik: 2FA (40-vazifa) ── */}
+          {/* ── Xavfsizlik: parol + 2FA (40-vazifa) ── */}
+          <ChangePassword />
           <TwoFactorSetup />
 
         </div>

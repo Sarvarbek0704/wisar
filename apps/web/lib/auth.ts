@@ -90,6 +90,13 @@ export const enable2fa = (code: string) =>
 export const disable2fa = (code: string) =>
   authFetch<{ ok: boolean }>("/auth/2fa/disable", { method: "POST", body: JSON.stringify({ code }) });
 
+/** Login qilingan holda parolni yangilash. */
+export const changePassword = (currentPassword: string, newPassword: string) =>
+  authFetch<{ message: string }>("/auth/change-password", {
+    method: "POST",
+    body: JSON.stringify({ currentPassword, newPassword }),
+  });
+
 export const register = (email: string, password: string, name?: string, inviteCode?: string) =>
   authRequest("/auth/register", { email, password, name, ...(inviteCode ? { inviteCode } : {}) });
 
