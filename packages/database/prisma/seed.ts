@@ -26,6 +26,10 @@ const ENGLISH_DIR = process.env.ENGLISH_DIR
   ? resolve(MONOREPO_ROOT, process.env.ENGLISH_DIR)
   : resolve(MONOREPO_ROOT, "..", "Ingliz_Tili_Kursi");
 
+const RUSSIAN_DIR = process.env.RUSSIAN_DIR
+  ? resolve(MONOREPO_ROOT, process.env.RUSSIAN_DIR)
+  : resolve(MONOREPO_ROOT, "..", "Rus_Tili_Kursi");
+
 // ---- yordamchilar ----
 
 // Emojini olib tashlaymiz (sarlavhalar toza matn bo'lsin; ikonkalar UI'da Lucide).
@@ -235,6 +239,59 @@ async function importEnglish(): Promise<number> {
   return count;
 }
 
+// Rus tili kursini import qiladi (level papkalar -> Section, darslar -> Article)
+async function importRussian(): Promise<number> {
+  if (!existsSync(RUSSIAN_DIR)) return 0;
+  const folders = readdirSync(RUSSIAN_DIR)
+    .filter((n) => (/^\d{2}-/.test(n) || n === "LUGAT") && statSync(join(RUSSIAN_DIR, n)).isDirectory())
+    .sort((a, b) => a.localeCompare(b));
+  if (!folders.length) return 0;
+
+  const topic = await prisma.topic.create({
+    data: {
+      slug: "rus-tili",
+      title: "Rus tili kursi",
+      description:
+        "0 dan native (C2) gacha to'liq rus tili kursi — sof o'zbek tilida. " +
+        "6 kelishik, fe'l aspektlari, harakat fe'llari; ruscha misollar urg'u bilan. " +
+        "A1→C2 (191 dars) + mavzuli tarjima lug'ati. ТРКИ 1–4 standartlari asosida.",
+      icon: "languages",
+      accent: "#c0392b",
+      order: 3,
+    },
+  });
+
+  let count = 0;
+  for (const folder of folders) {
+    const m = folder.match(/^(\d{2})-(.+)$/);
+    const num = m ? parseInt(m[1], 10) : 99;
+    const name = m ? m[2].replace(/-/g, " ") : "LUG'AT (tarjima lug'ati)";
+    const section = await prisma.section.create({
+      data: { topicId: topic.id, slug: folder.toLowerCase(), title: name, order: num },
+    });
+    const files = listMd(join(RUSSIAN_DIR, folder));
+    let artOrder = 0;
+    for (const file of files) {
+      const md = readFileSync(join(RUSSIAN_DIR, folder, file), "utf8");
+      const fm = file.match(/^(\d{2})/);
+      await prisma.article.create({
+        data: {
+          sectionId: section.id,
+          slug: slugFromFile(file),
+          title: titleFromMd(md, file),
+          content: md,
+          excerpt: excerptFromMd(md),
+          order: fm ? parseInt(fm[1], 10) : artOrder,
+          readingTime: readingTime(md),
+        },
+      });
+      count++;
+      artOrder++;
+    }
+  }
+  return count;
+}
+
 async function main() {
   console.log("Seed boshlandi. Manba:", CONTENT_DIR);
   if (!existsSync(CONTENT_DIR)) {
@@ -252,6 +309,7 @@ async function main() {
     total += await importCompanion();
   }
   total += await importEnglish();
+  total += await importRussian();
 
   console.log(`Seed tugadi. Jami ${total} ta maqola import qilindi.`);
 }
