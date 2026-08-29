@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "30-indefinite-pronouns-one-both",
+    "title": "Test — Noaniq olmoshlar, one, both",
+    "questions": [
+      { "text": "«Everyone ___ here» — to'g'ri shakl?", "options": ["are", "is", "were", "be"], "correctIndex": 1, "explanation": "Noaniq olmoshlar bilan fe'l BIRLIK: Everyone is, Nobody knows." },
+      { "text": "«I didn't see nobody» — bu nega xato?", "options": ["see xato", "Qo'sh inkor — to'g'risi: didn't see anybody yoki saw nobody", "nobody xato", "Xato emas"], "correctIndex": 1, "explanation": "Ingliz tilida qo'sh inkor ishlatilmaydi (rus tilidan farqli)." },
+      { "text": "«Yangi nimadir» qanday aytiladi?", "options": ["new something", "something new", "a new something", "something is new"], "correctIndex": 1, "explanation": "Noaniq olmoshda sifat KEYIN keladi: somewhere quiet, anything interesting." },
+      { "text": "«Ko'k rangdagisini olaman» qanday aytiladi?", "options": ["I'll take the blue", "I'll take the blue one", "I'll take blue it", "I'll take one blue"], "correctIndex": 1, "explanation": "one/ones takrorni almashtiradi; faqat sanaladigan otlar bilan." },
+      { "text": "«neither» qanday fe'l oladi?", "options": ["Ko'plik", "Birlik", "Ikkalasi", "Fe'lsiz"], "correctIndex": 1, "explanation": "both (ko'plik) / either (birlik) / neither (birlik, inkor ma'no) — ikki narsa haqida." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "31-what-like-describing-people",
+    "title": "Test — Odamni tasvirlash",
+    "questions": [
+      { "text": "«What is he like?» nima haqida so'raydi?", "options": ["Tashqi ko'rinish", "Xarakter", "Yoqtirishlari", "Sog'lig'i"], "correctIndex": 1, "explanation": "Javob: He's kind and funny — to be bilan." },
+      { "text": "«What does he look like?» nima haqida so'raydi?", "options": ["Xarakter", "Tashqi ko'rinish", "Yoqtirishlari", "Kasbi"], "correctIndex": 1, "explanation": "Javob: He's tall with dark hair." },
+      { "text": "«What does he like?» nima haqida so'raydi?", "options": ["Xarakter", "Tashqi ko'rinish", "Yoqtirishlari", "Sog'ligi"], "correctIndex": 2, "explanation": "Javob: He likes football. Bu yerda «like» — fe'l." },
+      { "text": "«He looks ___ » (charchagan) — to'g'ri shakl?", "options": ["like tired", "tired", "as tired", "to tired"], "correctIndex": 1, "explanation": "look + SIFAT (looks tired) ↔ look LIKE + OT (looks like a teacher)." },
+      { "text": "«How is he?» nima haqida so'raydi?", "options": ["Xarakter", "Holat va sog'liq", "Tashqi ko'rinish", "Kasb"], "correctIndex": 1, "explanation": "Javob: He's fine. Bu «What's he like?» dan farq qiladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "32-a2-roundoff-mixed",
+    "title": "Test — A2 yakuniy takrorlash",
+    "questions": [
+      { "text": "«As soon as I ___ , I'll call you» — to'g'ri shakl?", "options": ["will arrive", "arrive", "arrived", "am arriving"], "correctIndex": 1, "explanation": "Vaqt bog'lovchisidan keyin WILL ishlatilmaydi — Present Simple." },
+      { "text": "«I like coffee» ga rozilik bildirish uchun nima deymiz?", "options": ["So am I", "So do I", "Neither do I", "I like too"], "correctIndex": 1, "explanation": "«I like...» → So do I; «I'm...» → So am I; «I can't...» → Neither can I." },
+      { "text": "«I can't swim» ga inkor rozilik qanday bildiriladi?", "options": ["So can I", "Neither can I", "So do I", "Nor do I swim"], "correctIndex": 1, "explanation": "Inkor rozilik: Neither/Nor + yordamchi + I." },
+      { "text": "«___ a beautiful day!» — bo'shliqqa nima?", "options": ["How", "What", "Which", "So"], "correctIndex": 1, "explanation": "What (a/an) + sifat + OT! ↔ How + sifat/ravish! (How beautiful!)." },
+      { "text": "«until» va «by» qanday farqlanadi?", "options": ["Farqi yo'q", "until — davomiylik («...guncha»); by — eng kech muddat", "by — davomiylik", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Wait until 5 ↔ Finish it by 5." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "33-be-able-to",
+    "title": "Test — Be able to",
+    "questions": [
+      { "text": "«I will ___ swim» (kelajakda uddalayman) — to'g'ri shakl?", "options": ["can", "be able to", "could", "am able"], "correctIndex": 1, "explanation": "«will can» — xato. Kelajakda: will be able to." },
+      { "text": "«to can» — bu nega xato?", "options": ["can xato", "Modal fe'lning infinitivi yo'q: to be able to", "to xato", "Xato emas"], "correctIndex": 1, "explanation": "I want to be able to speak English." },
+      { "text": "Hozirgi zamonda qaysi shakl tabiiyroq?", "options": ["am able to", "can", "will be able to", "have been able to"], "correctIndex": 1, "explanation": "can/could hozir va o'tmishda tabiiyroq; boshqa zamonlarda faqat be able to." },
+      { "text": "«unable to» nimani anglatadi?", "options": ["able to ning kuchaytirilgani", "not able to — uddalay olmaslik", "Kelajak shakli", "O'tgan shakl"], "correctIndex": 1, "explanation": "Inkor: not able to = unable to." },
+      { "text": "«Yong'inda hammani qutqara oldi» — qaysi shakl to'g'ri?", "options": ["could save", "was able to save", "can save", "will save"], "correctIndex": 1, "explanation": "Bir konkret holatdagi muvaffaqiyat — was able to / managed to." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "34-maxsus-word-sentence-stress-connected-speech",
+    "title": "Test — Urg'u va bog'langan nutq",
+    "questions": [
+      { "text": "«REcord» va «reCORD» qanday farqlanadi?", "options": ["Farqi yo'q", "Urg'u so'z turkumini o'zgartiradi: ot ↔ fe'l", "Faqat ohang", "Imlo farqi"], "correctIndex": 1, "explanation": "Har so'zda bitta bo'g'in kuchli: baNAna, COMputer." },
+      { "text": "Gapda qaysi so'zlar kuchli talaffuz qilinadi?", "options": ["Barchasi teng", "Content words — ot, fe'l, sifat", "Function words — a, the, to", "Faqat oxirgi so'z"], "correctIndex": 1, "explanation": "a/the/to/can kabi yordamchi so'zlar zaiflashadi." },
+      { "text": "«to» ning zaif shakli qanday?", "options": ["tu:", "tə", "tou", "ta:"], "correctIndex": 1, "explanation": "Weak forms: to→tə, for→fə, of→əv, and→ən, can→kən." },
+      { "text": "«gonna, wanna, gotta» qayerda ishlatiladi?", "options": ["Yozma matnda", "Faqat og'zaki nutqda", "Rasmiy xatda", "Imtihonda"], "correctIndex": 1, "explanation": "Norasmiy og'zaki qisqartmalar — yozuvda ishlatilmaydi." },
+      { "text": "Yes/no savolida intonatsiya qanday bo'ladi?", "options": ["Tushuvchi ↘", "Ko'tariluvchi ↗", "Tekis", "Farqi yo'q"], "correctIndex": 1, "explanation": "Wh-savol va darak gapda esa tushuvchi ↘." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "35-maxsus-restaurant-cafe",
+    "title": "Test — Restoran va kafe",
+    "questions": [
+      { "text": "Buyurtma berish uchun eng muloyim ibora qaysi?", "options": ["Give me...", "I'll have... / Could I have...", "I want...", "Bring me..."], "correctIndex": 1, "explanation": "«Give me» — qo'pol eshitiladi." },
+      { "text": "«Hisobni keltiring» qanday aytiladi?", "options": ["Could we get the account?", "Could we get the bill?", "Give the check", "The money, please"], "correctIndex": 1, "explanation": "the bill (BrE) / the check (AmE); «account» — bank hisobi." },
+      { "text": "«For here or to go?» nimani so'raydi?", "options": ["Narxni", "Bu yerda yeysizmi yoki olib ketasizmi", "Miqdorni", "To'lov usulini"], "correctIndex": 1, "explanation": "Kafe tili: a coffee to go, Anything else?" },
+      { "text": "«starter, main course, dessert» — bu nima?", "options": ["Ovqat turlari", "Menyu bo'limlari (tartib bo'yicha)", "Ichimliklar", "Narxlar"], "correctIndex": 1, "explanation": "Yana: side dish, drinks." },
+      { "text": "«What do you recommend?» qachon so'raladi?", "options": ["Hisob so'raganda", "Menyudan tanlashda maslahat so'raganda", "Joy so'raganda", "Chiqishda"], "correctIndex": 1, "explanation": "Restoran to'rt bosqichi: joy → buyurtma → davom → hisob." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "36-maxsus-travel-transport-places",
+    "title": "Test — Sayohat va transport",
+    "questions": [
+      { "text": "«Piyoda» qanday aytiladi?", "options": ["by foot", "on foot", "with foot", "in foot"], "correctIndex": 1, "explanation": "Transport: by bus/train/car — lekin ON FOOT." },
+      { "text": "«catch» va «miss» qanday farqlanadi?", "options": ["Farqi yo'q", "catch — ulgurmoq; miss — o'tkazib yubormoq", "miss — ulgurmoq", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "I caught the bus ↔ I missed the train." },
+      { "text": "«Qancha vaqt oladi?» qanday so'raladi?", "options": ["How long is it?", "How long does it take?", "How far is it?", "What time is it?"], "correctIndex": 1, "explanation": "It takes 20 minutes by bus. How far — masofa; What time — aniq soat." },
+      { "text": "«Londonga borish-kelish chiptasi» qanday aytiladi?", "options": ["a single to London", "a return to London", "a ticket for London", "two tickets London"], "correctIndex": 1, "explanation": "single — bir tomonga; return — borish-kelish. Chipta: ticket TO (not for)." },
+      { "text": "«within walking distance» nimani anglatadi?", "options": ["Juda uzoq", "Piyoda borsa bo'ladigan masofada", "Mashinada", "Yopiq"], "correctIndex": 1, "explanation": "Yana: Is there a ... near here? the nearest ..." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "37-maxsus-social-english-apologizing",
+    "title": "Test — Ijtimoiy ingliz tili va uzr so'rash",
+    "questions": [
+      { "text": "«Excuse me» va «Sorry» qanday farqlanadi?", "options": ["Farqi yo'q", "Excuse me — OLDIN (savol/yo'l); Sorry — KEYIN (xato uchun)", "Sorry — oldin", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Sorry ham uzr, ham hamdardlik uchun ishlatiladi." },
+      { "text": "«Would you mind ___ » — bo'shliqqa qaysi shakl?", "options": ["to open", "opening", "open", "opens"], "correctIndex": 1, "explanation": "Would you mind + -ING — eng muloyim iltimos shakli." },
+      { "text": "«Would you mind...?» ga rozilik qanday bildiriladi?", "options": ["Yes, of course", "No, not at all", "Yes, I mind", "Sure, I mind"], "correctIndex": 1, "explanation": "«Mind» — «e'tiroz qilmoq» ma'nosida, shuning uchun rozilik «No»." },
+      { "text": "Muloyimlik darajasi to'g'ri tartibda qaysi?", "options": ["Would you mind < Could you < Can you", "Can you < Could you < Would you mind", "Could you < Can you < Would you mind", "Hammasi teng"], "correctIndex": 1, "explanation": "Can you (oddiy) → Could you (muloyim) → Would you mind + -ing (eng muloyim)." },
+      { "text": "«Do you mind if I...?» ga ruxsat qanday beriladi?", "options": ["Yes, of course", "No, go ahead", "Yes, go ahead", "I mind"], "correctIndex": 1, "explanation": "Bu yerda ham rozilik «No» bilan boshlanadi." }
+    ]
+  }
+]

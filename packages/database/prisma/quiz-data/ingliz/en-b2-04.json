@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "28-comparatives-superlatives-ilgor",
+    "title": "Test — Taqqoslash (ilg'or)",
+    "questions": [
+      { "text": "«very bigger» — bu nega xato?", "options": ["bigger xato", "very qiyosiy daraja bilan ishlatilmaydi — much bigger", "very xato", "Xato emas"], "correctIndex": 1, "explanation": "Katta farq: much/far/a lot/considerably; kichik farq: a bit/slightly." },
+      { "text": "«even/still + comparative» qanday ottenka beradi?", "options": ["Kichik farq", "Ta'kid — «yanada»", "Tenglik", "Orttirma"], "correctIndex": 1, "explanation": "even better, still worse — oldingi holatga nisbatan yanada kuchli." },
+      { "text": "«nowhere near as good as» nimani anglatadi?", "options": ["Xuddi shunday yaxshi", "Umuman yaqin ham emas — ancha yomonroq", "Ozgina yomonroq", "Eng yaxshi"], "correctIndex": 1, "explanation": "as...as qoliplari: not as cold as, twice as big as, nowhere near as good as." },
+      { "text": "«the best I've ever seen» — qaysi zamon bilan keladi?", "options": ["Past Simple", "Present Perfect", "Present Simple", "Future"], "correctIndex": 1, "explanation": "Superlative + ever doim Present Perfect talab qiladi." },
+      { "text": "«The more you practise, the better you get» — bu qanday qurilma?", "options": ["Orttirma", "Proporsional — «qancha..., shuncha...»", "Tenglik", "Inkor"], "correctIndex": 1, "explanation": "...er and ...er esa o'sish jarayonini bildiradi: colder and colder." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "29-inversion",
+    "title": "Test — Inversiya",
+    "questions": [
+      { "text": "«Rarely ___ she come here» — bo'shliqqa nima?", "options": ["hech narsa", "does", "is", "has"], "correctIndex": 1, "explanation": "Yordamchi fe'l bo'lmasa DO/DOES/DID qo'shiladi." },
+      { "text": "«No sooner...» qaysi so'z bilan davom etadi?", "options": ["when", "than", "that", "as"], "correctIndex": 1, "explanation": "Hardly/Scarcely ... WHEN; No sooner ... THAN (Past Perfect + Past Simple)." },
+      { "text": "«Only when I left did I appreciate it» — inversiya qayerda?", "options": ["Ergash gapda", "Asosiy gapda", "Ikkalasida", "Yo'q"], "correctIndex": 1, "explanation": "Only when I LEFT (oddiy tartib) → did I appreciate (inversiya)." },
+      { "text": "«Here it comes» — nega inversiya yo'q?", "options": ["Xato", "Ega olmosh bo'lgani uchun", "here noto'g'ri", "Inversiya bor"], "correctIndex": 1, "explanation": "Here comes the bus (ot — inversiya) ↔ Here it comes (olmosh — inversiya yo'q)." },
+      { "text": "Inversiya qaysi registrga tegishli?", "options": ["Kundalik nutq", "Rasmiy, adabiy, ta'kid", "Jargon", "Bolalar tili"], "correctIndex": 1, "explanation": "Under no circumstances, On no account, Little did I know — kuchli ta'sir vositalari." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "30-cleft-sentences-emphasis",
+    "title": "Test — Cleft gaplar va ta'kid",
+    "questions": [
+      { "text": "«It was John who called» — bu qanday qurilma?", "options": ["Wh-cleft", "It-cleft", "Inversiya", "Passiv"], "correctIndex": 1, "explanation": "It + is/was + ta'kid + that/who + qolgan gap." },
+      { "text": "«What I need ___ a holiday» — to'g'ri shakl?", "options": ["are", "is", "were", "have"], "correctIndex": 1, "explanation": "Wh-cleft doim BIRLIK fe'l oladi." },
+      { "text": "«What he did was ___ call» — bo'shliqqa nima?", "options": ["calling", "(to) call", "called", "calls"], "correctIndex": 1, "explanation": "Harakat ta'kidlanganda (to) + V1 keladi." },
+      { "text": "«I DO love you» — «do» bu yerda nima qiladi?", "options": ["Savol yasaydi", "Tasdiqni kuchaytiradi", "Inkor qiladi", "O'tmish yasaydi"], "correctIndex": 1, "explanation": "Emphatic do/does/did + V1 — inkorni rad etish yoki tasdiqni kuchaytirish." },
+      { "text": "«All (that) I want is...» qanday ma'no beradi?", "options": ["Hammasi", "Yagona — faqat shu", "Ko'pchilik", "Hech narsa"], "correctIndex": 1, "explanation": "The reason (why)..., The thing (that)..., All (that)... — cleft muqobillari." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "31-linking-words-discourse-markers",
+    "title": "Test — Bog'lovchi so'zlar",
+    "questions": [
+      { "text": "«despite» dan keyin nima keladi?", "options": ["Gap (ega + fe'l)", "Ot yoki -ing", "V1", "that + gap"], "correctIndex": 1, "explanation": "Uch tur: bog'lovchi + gap; ravish + yangi gap; predlog + ot/-ing." },
+      { "text": "«however» qanday ishlatiladi?", "options": ["Bir gap ichida bog'lovchi sifatida", "Yangi gapda, vergul bilan", "Ot oldida", "V1 bilan"], "correctIndex": 1, "explanation": "although (gap) | however (yangi gap) | despite (ot)." },
+      { "text": "«due to» dan keyin nima keladi?", "options": ["Gap", "Ot yoki -ing", "V1", "that"], "correctIndex": 1, "explanation": "because/since + gap ↔ because of/due to + ot." },
+      { "text": "«namely» qaysi toifaga kiradi?", "options": ["Xulosa", "Misol/aniqlashtirish", "Qarshilik", "Natija"], "correctIndex": 1, "explanation": "for example/instance, such as, namely — misol keltirish guruhi." },
+      { "text": "«consequently» qaysi toifaga kiradi?", "options": ["Sabab", "Natija", "Qo'shimcha", "Misol"], "correctIndex": 1, "explanation": "therefore, consequently — natija ravishlari, nuqtali vergul bilan." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "32-concession",
+    "title": "Test — Concession (yon berish)",
+    "questions": [
+      { "text": "«despite of the rain» — bu nega xato?", "options": ["despite xato", "«despite» dan keyin «of» kelmaydi; «in spite OF» esa to'g'ri", "rain xato", "Xato emas"], "correctIndex": 1, "explanation": "despite + ot; in spite of + ot — ikkisini chalkashtirmang." },
+      { "text": "«even though» va «even if» qanday farqlanadi?", "options": ["Farqi yo'q", "even though — fakt; even if — faraz", "even if — fakt", "Ikkalasi faraz"], "correctIndex": 1, "explanation": "Even though it rained (yog'di) ↔ Even if it rains (yog'sa ham)." },
+      { "text": "«however hard I try» — so'z tartibi qanday?", "options": ["however I try hard", "however + sifat/ravish + ega + fe'l", "however try I hard", "Erkin"], "correctIndex": 1, "explanation": "no matter how/what/who/where ham shu qolipda ishlaydi." },
+      { "text": "«Although it rained, but we went» — bu nega xato?", "options": ["Although xato", "although va but birga ishlatilmaydi", "went xato", "Xato emas"], "correctIndex": 1, "explanation": "Bittasini tanlang — ikkalasi bir vazifani bajaradi." },
+      { "text": "«nevertheless, nonetheless» qanday ishlatiladi?", "options": ["Bog'lovchi sifatida", "Ravish sifatida — yangi gapda", "Predlog sifatida", "Ot bilan"], "correctIndex": 1, "explanation": "even so, all the same ham shu guruhga kiradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "33-cause-result",
+    "title": "Test — Sabab va natija",
+    "questions": [
+      { "text": "«owing to» dan keyin nima keladi?", "options": ["Gap", "Ot yoki -ing", "V1", "that"], "correctIndex": 1, "explanation": "because of, due to, owing to, on account of, thanks to + ot." },
+      { "text": "«thanks to» qanday ottenka beradi?", "options": ["Salbiy", "Ijobiy sabab", "Neytral", "Zid"], "correctIndex": 1, "explanation": "Thanks to your help, we finished on time." },
+      { "text": "«such ___ cold day that...» — bo'shliqqa nima?", "options": ["hech narsa", "a", "the", "so"], "correctIndex": 1, "explanation": "such + (a) + (sifat) + OT + that; so + sifat/ravish + that." },
+      { "text": "«so many books that...» — «so many» nima bilan keladi?", "options": ["Sanalmaydigan ot", "Sanaladigan ot", "Sifat", "Ravish"], "correctIndex": 1, "explanation": "so much + sanalmaydigan; so many + sanaladigan." },
+      { "text": "«hence, thus» qaysi guruhga kiradi?", "options": ["Sabab", "Natija ravishlari", "Qo'shimcha", "Misol"], "correctIndex": 1, "explanation": "therefore, consequently, as a result, thus, hence — rasmiy natija ravishlari." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "34-purpose",
+    "title": "Test — Maqsad ifodalash",
+    "questions": [
+      { "text": "«I came for help» — bu nega noto'g'ri?", "options": ["for xato", "Fe'l bilan «to» ishlatiladi: I came to help", "help xato", "Xato emas"], "correctIndex": 1, "explanation": "«-uchun» uch xil: to (fe'l) / for (ot) / so that (boshqa odam)." },
+      { "text": "Maqsad inkori qanday beriladi?", "options": ["to not go", "so as not to / in order not to + V1", "not to go only", "for not going"], "correctIndex": 1, "explanation": "«to not» qurilmasi xato hisoblanadi." },
+      { "text": "Ega boshqa bo'lganda maqsad qanday beriladi?", "options": ["to + V1", "so that + ega + can/could/will/would + V1", "for + ot", "in order to"], "correctIndex": 1, "explanation": "I left early so that she could rest." },
+      { "text": "«in case» dan keyin qaysi zamon keladi?", "options": ["will", "Present", "would", "Past Perfect"], "correctIndex": 1, "explanation": "in case ≠ if: in case — oldindan ehtiyot; if — shart bo'lsa keyin." },
+      { "text": "«with a view to» dan keyin qaysi shakl keladi?", "options": ["V1", "-ing", "V3", "to + V1"], "correctIndex": 1, "explanation": "with a view to / with the aim of + -ing — rasmiy maqsad qoliplari." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "35-prepositions-ilgor",
+    "title": "Test — Predloglar (ilg'or)",
+    "questions": [
+      { "text": "«by» va «until» qanday farqlanadi?", "options": ["Farqi yo'q", "by — muddat («...gacha bo'lgan nuqta»); until — davomiylik («...gacha davom»)", "until — muddat", "Ikkalasi davomiylik"], "correctIndex": 1, "explanation": "Finish it by 5 ↔ Wait until 5." },
+      { "text": "«for» va «during» qanday farqlanadi?", "options": ["Farqi yo'q", "for — qancha vaqt; during — qachon", "during — qancha", "Ikkalasi qachon"], "correctIndex": 1, "explanation": "for two hours ↔ during the meeting." },
+      { "text": "«consist ___ » — qaysi predlog?", "options": ["from", "of", "in", "with"], "correctIndex": 1, "explanation": "consist OF, deal WITH, benefit FROM, object TO, succeed IN." },
+      { "text": "«solution ___ the problem» — qaysi predlog?", "options": ["of", "to", "for", "in"], "correctIndex": 1, "explanation": "Ot + predlog: reason FOR, solution TO, difference BETWEEN, increase IN, effect ON." },
+      { "text": "Joy predloglarining torayish tartibi qaysi?", "options": ["at → on → in", "in London → on Oxford St → at number 5", "on → in → at", "Farqi yo'q"], "correctIndex": 1, "explanation": "Kengdan torga: in (hudud) → on (ko'cha) → at (aniq nuqta)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "36-phrasal-verbs-b2",
+    "title": "Test — Phrasal verbs (B2)",
+    "questions": [
+      { "text": "«up» zarrachasi qanday ma'no beradi?", "options": ["Kamayish", "Tugallanish/oshish", "Qaytish", "Ajralish"], "correctIndex": 1, "explanation": "eat up, speak up, grow up — zarracha ma'noni belgilaydi." },
+      { "text": "«out» zarrachasi qanday ma'no beradi?", "options": ["Davom etish", "Topish yoki tugash", "Kamayish", "O'tish"], "correctIndex": 1, "explanation": "find out, run out, work out." },
+      { "text": "«over» zarrachasi qanday ma'no beradi?", "options": ["Qaytish", "Ko'rib chiqish yoki o'tish", "Boshlanish", "Oshish"], "correctIndex": 1, "explanation": "think over, take over, get over." },
+      { "text": "«put up with it» — olmosh qayerda turadi?", "options": ["put it up with", "Oxirida — three-word phrasal verb ajralmaydi", "put up it with", "Farqi yo'q"], "correctIndex": 1, "explanation": "Separable + olmosh o'rtada (turn it on); inseparable va three-word — oxirida." },
+      { "text": "«down» zarrachasi qanday ma'no beradi?", "options": ["Oshish", "Kamayish yoki yozib olish", "Davom etish", "Topish"], "correctIndex": 1, "explanation": "calm down, write down, break down." }
+    ]
+  }
+]

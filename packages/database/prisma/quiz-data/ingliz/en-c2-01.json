@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "01-native-aniqlik-nyuans",
+    "title": "Test — Aniqlik va nyuans",
+    "questions": [
+      { "text": "«slim, thin, skinny» qanday farqlanadi?", "options": ["Darajada", "Konnotatsiyada: slim (+), thin (0), skinny (−)", "Registrda", "Farqi yo'q"], "correctIndex": 1, "explanation": "determined (+) / stubborn (−), curious (+) / nosy (−) — bir tushuncha, uch bo'yoq." },
+      { "text": "«ask / question / interrogate» qaysi o'lchamda farqlanadi?", "options": ["Konnotatsiya", "Registr (Germanic → French → Latin)", "Daraja", "Aniqlik"], "correctIndex": 1, "explanation": "end / finish / terminate ham shu shkalada." },
+      { "text": "«walk» o'rniga «stride, shuffle, saunter» ishlatish qaysi o'lchamni oshiradi?", "options": ["Registrni", "Aniqlikni", "Konnotatsiyani", "Darajani"], "correctIndex": 1, "explanation": "look → glance/glare/gaze; said → muttered/snapped." },
+      { "text": "«Purple prose» nima?", "options": ["Aniq yozuv", "Haddan tashqari bezakli, sun'iy yozuv", "Qisqa yozuv", "Rasmiy yozuv"], "correctIndex": 1, "explanation": "Oddiy so'z ham to'g'ri bo'lishi mumkin — bezak o'z-o'zidan qiymat emas." },
+      { "text": "Thesaurusdan so'z olganda nima qilish kerak?", "options": ["Darhol ishlatish", "Lug'at bilan tasdiqlash — konnotatsiya va registrni tekshirish", "Eng uzunini tanlash", "Eng noyobini tanlash"], "correctIndex": 1, "explanation": "Twain: «almost-right word» — lightning va lightning bug farqi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "02-konnotatsiya-register",
+    "title": "Test — Konnotatsiya va register",
+    "questions": [
+      { "text": "Ma'noning uch qatlami qaysi?", "options": ["Imlo, urg'u, talaffuz", "Denotation + connotation + register", "Ot, sifat, fe'l", "Ma'no, shakl, tovush"], "correctIndex": 1, "explanation": "Lug'at ma'nosi + hissiy bo'yoq + vaziyatga moslik." },
+      { "text": "«Semantic prosody» nima?", "options": ["She'r ritmi", "So'zning yashirin aurasi — qanday sheriklar bilan kelishi", "Urg'u", "Intonatsiya"], "correctIndex": 1, "explanation": "cause, set in, rife — salbiy aura; provide, foster, cherish — ijobiy." },
+      { "text": "«regime» va «government» qanday farqlanadi?", "options": ["Farqi yo'q", "regime salbiy bo'yoqli — framing vositasi", "government salbiy", "Ikkalasi neytral"], "correctIndex": 1, "explanation": "terrorist / freedom fighter — bir voqea, ikki freyming." },
+      { "text": "«passed away, let go» — bu qanday vosita?", "options": ["Dysphemism", "Euphemism — yumshatish", "Idiom", "Slang"], "correctIndex": 1, "explanation": "Dysphemism esa aksincha qattiqlashtiradi: sacked, kicked the bucket." },
+      { "text": "Register nechta o'zgaruvchidan iborat?", "options": ["2", "3: field, tenor, mode", "4", "5"], "correctIndex": 1, "explanation": "Darajalar: frozen → formal → consultative → casual → intimate." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "03-ilgor-idiomlar-allusion",
+    "title": "Test — Idiomlar va allyuziyalar",
+    "questions": [
+      { "text": "«Pandora's box» nimani anglatadi?", "options": ["Boylik manbai", "Muammolar to'plami — ochilsa yomonlik chiqadi", "Yashirin xazina", "Sovg'a"], "correctIndex": 1, "explanation": "Manba hikoyasini aniq bilish shart — aks holda noto'g'ri ishlatiladi." },
+      { "text": "«Pyrrhic victory» nimani anglatadi?", "options": ["Oson g'alaba", "Juda qimmatga tushgan g'alaba", "Mag'lubiyat", "Durang"], "correctIndex": 1, "explanation": "Achilles heel (zaiflik), Gordian knot, Sisyphean task ham mifologiyadan." },
+      { "text": "«Catch-22» qayerdan kelgan?", "options": ["Bibliya", "Adabiyot — Heller romani, paradoks", "Mifologiya", "Tarix"], "correctIndex": 1, "explanation": "Orwellian, Kafkaesque, quixotic, Faustian ham adabiy allyuziyalar." },
+      { "text": "«Frankenstein» kim?", "options": ["Maxluq", "YARATUVCHI olim — maxluq emas", "Shifokor", "Yozuvchi"], "correctIndex": 1, "explanation": "Bu klassik chalkashlik — allyuziyani noto'g'ri ishlatishning tipik namunasi." },
+      { "text": "«the writing on the wall» nimani anglatadi?", "options": ["Devordagi yozuv", "Yaqinlashib kelayotgan halokat belgisi", "Reklama", "Maslahat"], "correctIndex": 1, "explanation": "Bibliyadan: good Samaritan, a Judas, by the skin of your teeth." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "04-slang-kolloquializm",
+    "title": "Test — Slang va kolloquializm",
+    "questions": [
+      { "text": "Kolloquializm va slang qanday farqlanadi?", "options": ["Farqi yo'q", "Kolloquializm barqaror va xavfsizroq; slang tez o'zgaradi", "Slang barqaror", "Ikkalasi rasmiy"], "correctIndex": 1, "explanation": "hang out, grab a bite, chill — barqaror; lit, sus, mid — o'zgaruvchan." },
+      { "text": "«knackered, gutted, chuffed» qaysi mintaqaga xos?", "options": ["AmE", "BrE", "AusE", "Kanada"], "correctIndex": 1, "explanation": "stoked, bummed, bucks — AmE; arvo — AusE." },
+      { "text": "«no cap» nimani anglatadi?", "options": ["Shlyapa yo'q", "Rost, yolg'on emas", "Yomon", "Tugadi"], "correctIndex": 1, "explanation": "Internet/Gen Z slangi: vibe, flex, ghosting, slay, it's giving." },
+      { "text": "Eskirgan slang ishlatish qanday taassurot qoldiradi?", "options": ["Zamonaviy", "«Qari» — groovy, rad kabi so'zlar", "Rasmiy", "Neytral"], "correctIndex": 1, "explanation": "Forced slang «trying too hard» taassurotini beradi." },
+      { "text": "Slangga munosabat strategiyasi qanday bo'lishi kerak?", "options": ["Keng ishlatish", "Keng TUSHUNISH, ehtiyot bilan ishlatish", "Umuman o'rganmaslik", "Faqat yozuvda"], "correctIndex": 1, "explanation": "Input — sitkom/podkast; output — faqat barqaror kolloquializmlar." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "05-soz-oyini-neologizm",
+    "title": "Test — So'z o'yini va neologizm",
+    "questions": [
+      { "text": "«brunch, hangry, podcast» qanday yasalgan?", "options": ["Clipping", "Blend — ikki so'z qorishmasi", "Conversion", "Affiksatsiya"], "correctIndex": 1, "explanation": "smog, staycation, mansplain ham blend." },
+      { "text": "«to google, to text, to adult» qanday hodisa?", "options": ["Blend", "Conversion — turkum o'zgarishi", "Clipping", "Affiksatsiya"], "correctIndex": 1, "explanation": "Ingliz tilidagi eng mahsuldor so'z yasash usuli." },
+      { "text": "«app, vlog, gym» qanday yasalgan?", "options": ["Blend", "Clipping — qisqartirish", "Conversion", "Compound"], "correctIndex": 1, "explanation": "selfie — clipping + affiks." },
+      { "text": "«-gate» suffiksi qanday ma'no beradi?", "options": ["Kasb", "Skandal", "Joy", "Kichraytma"], "correctIndex": 1, "explanation": "Mahsuldor affikslar: -aholic, -core, -splain, un-, super-, -ish." },
+      { "text": "«deafening silence» qanday adabiy vosita?", "options": ["Alliteratsiya", "Oksimoron", "Onomatopeya", "Paradoks"], "correctIndex": 1, "explanation": "Yana: alliteration, onomatopoeia (buzz), paradox, malapropism." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "06-binomiallar-formulaic",
+    "title": "Test — Binomiallar va formulaic til",
+    "questions": [
+      { "text": "Native nutqning qanchasi tayyor bloklardan iborat?", "options": ["~10%", "~25%", "~50%", "~90%"], "correctIndex": 2, "explanation": "Formulaic language — ravonlikning asosiy kaliti." },
+      { "text": "«forth and back» — bu nega noto'g'ri?", "options": ["Ma'nosi yo'q", "Binomial tartibi qat'iy: back and forth", "So'z xato", "Xato emas"], "correctIndex": 1, "explanation": "Tartib buzilsa native quloq darhol sezadi." },
+      { "text": "«blood, sweat and tears» — bu qanday shakl?", "options": ["Binomial", "Trinomial", "Frame", "Idiom"], "correctIndex": 1, "explanation": "lock, stock and barrel; hook, line and sinker." },
+      { "text": "«the more X, the more Y» — bu qanday shakl?", "options": ["Binomial", "Frame — mahsuldor qolip", "Trinomial", "Klishe"], "correctIndex": 1, "explanation": "not so much X as Y; let alone; what with..." },
+      { "text": "Chunkni qanday o'rganish kerak?", "options": ["So'zma-so'z", "YAXLIT blok sifatida", "Faqat birinchi so'zni", "Tarjima qilib"], "correctIndex": 1, "explanation": "Ona tilidagi chunkni so'zma-so'z tarjima qilish tipik xato." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "07-stilistika-ohang-ritm",
+    "title": "Test — Stilistika, ohang, ritm",
+    "questions": [
+      { "text": "Jumla uzunligini o'zgartirish nima beradi?", "options": ["Uzunlik", "Ritm — monotonlikdan qutqaradi; qisqa jumla zarba beradi", "Rasmiylik", "Aniqlik"], "correctIndex": 1, "explanation": "«Read aloud test» — ritmni tekshirishning eng oddiy usuli." },
+      { "text": "«End-focus» tamoyili nimani anglatadi?", "options": ["Gapni qisqartirish", "Eng kuchli so'z OXIRDA turishi", "Gap boshida ta'kid", "Passiv ishlatish"], "correctIndex": 1, "explanation": "Fronting, tricolon, anaphora — boshqa ta'kid vositalari." },
+      { "text": "«due to the fact that» o'rniga nima yozish kerak?", "options": ["owing to the fact", "because", "in view of", "as a result"], "correctIndex": 1, "explanation": "Deadwood kesish — «omit needless words» tamoyili." },
+      { "text": "«Show, don't tell» nimani anglatadi?", "options": ["Ko'proq yozish", "Holatni bayon qilish o'rniga konkret harakat ko'rsatish", "Rasmiy yozish", "Qisqa yozish"], "correctIndex": 1, "explanation": "«He was angry» o'rniga «He slammed his fist on the table»." },
+      { "text": "Uslub asosan qayerda tug'iladi?", "options": ["Ilhomda", "REVISIONda — 3 bosqich: cut → vary → read aloud", "Lug'atda", "Grammatikada"], "correctIndex": 1, "explanation": "«Less is more», «kill your darlings» — klassik tahrir tamoyillari." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "08-register-mastery",
+    "title": "Test — Register mahorati",
+    "questions": [
+      { "text": "Registrning 5 darajasi qaysi?", "options": ["Rasmiy va norasmiy", "Frozen, formal, consultative, casual, intimate", "Yozma va og'zaki", "Uch daraja"], "correctIndex": 1, "explanation": "Frozen — qonun matni; intimate — eng yaqin munosabat." },
+      { "text": "«Register translation» mashqi nima?", "options": ["Tarjima qilish", "Bir fikrni har xil registrda qayta yozish", "Lug'at yodlash", "Grammatika mashqi"], "correctIndex": 1, "explanation": "Bitta gapdan 3–5 versiya yozish — C2 ning asosiy mashqi." },
+      { "text": "Non-native yozuvchilarning asosiy register xatosi qaysi?", "options": ["Juda norasmiy", "OVER-FORMALITY — haddan rasmiy, pompous", "Qisqa yozish", "Slang ishlatish"], "correctIndex": 1, "explanation": "«formal ≠ murakkab» — plain English ko'pincha afzal." },
+      { "text": "«terminate» va «end» qanday farqlanadi?", "options": ["Ma'nosi boshqa", "Latinate (rasmiy) ↔ Anglo-Saxon (norasmiy)", "end rasmiy", "Farqi yo'q"], "correctIndex": 1, "explanation": "Bu — registrni aniqlashning eng ishonchli markeri." },
+      { "text": "«Kod-almashish» (code-switching) nima?", "options": ["Til almashtirish", "Registrni vaziyatga qarab ravon almashtirish", "Aksent o'zgartirish", "Tarjima"], "correctIndex": 1, "explanation": "Native avtomatik qiladi; C2 o'quvchisi ongli mashq orqali tabiiylikka erishadi." }
+    ]
+  }
+]

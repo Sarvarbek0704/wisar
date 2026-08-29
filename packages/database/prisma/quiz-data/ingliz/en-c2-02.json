@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "09-diskurs-kogeziya",
+    "title": "Test — Diskurs va kogeziya",
+    "questions": [
+      { "text": "Band 9 kogeziyaning ta'rifi qanday?", "options": ["Ko'p bog'lovchi", "Tashkilot KO'RINMAS bo'lishi — «attracts no attention»", "Uzun paragraf", "Rasmiy til"], "correctIndex": 1, "explanation": "Mexanik bog'lovchi ishlatish band 6–7 da chegaralab qo'yadi." },
+      { "text": "Ma'lumot oqimining asosiy siri qaysi?", "options": ["Yangi ma'lumot boshda", "Given → new: tanishdan boshlab, yangisi oxirida", "Tasodifiy tartib", "Faqat qisqa gap"], "correctIndex": 1, "explanation": "Topic chaining: yangi ma'lumot keyingi gapda «given» bo'ladi." },
+      { "text": "«This decline..., This approach...» — bu qanday vosita?", "options": ["Bog'lovchi", "This + summary noun — band 9 kaliti", "Ellipsis", "Substitution"], "correctIndex": 1, "explanation": "Yolg'iz «this» chalkash bo'ladi; ot qo'shilsa aniqlik oshadi." },
+      { "text": "Eng kuchli va ko'rinmas kogeziya turi qaysi?", "options": ["Conjunction", "Lexical (sinonim, semantik maydon)", "Ellipsis", "Substitution"], "correctIndex": 1, "explanation": "5 tur: reference, substitution, ellipsis, conjunction, lexical." },
+      { "text": "«in other words» qanday metadiskurs?", "options": ["Hedge", "Code gloss — tushuntirish", "Booster", "Frame"], "correctIndex": 1, "explanation": "Hyland tasnifi: transition, frame, code gloss, hedge/booster." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "10-metafora-kochma-til",
+    "title": "Test — Metafora va ko'chma til",
+    "questions": [
+      { "text": "Lakoff nazariyasida metafora nima?", "options": ["Bezak", "Tafakkur mexanizmi — bir narsani boshqasi orqali tushunish", "Grammatik shakl", "Xato"], "correctIndex": 1, "explanation": "ARGUMENT IS WAR, TIME IS MONEY — konseptual metaforalar." },
+      { "text": "«the crown» monarx ma'nosida — bu qaysi trop?", "options": ["Metafora", "Metonimiya", "Simile", "Personifikatsiya"], "correctIndex": 1, "explanation": "Sinekdoxa esa bo'lak-butun: «hands» = ishchilar." },
+      { "text": "Metaforaning tiriklik spektri qanday?", "options": ["Faqat jonli", "O'lik → konvensional → klishe → jonli", "Faqat o'lik", "Ikki daraja"], "correctIndex": 1, "explanation": "leg of table (o'lik) → spend time (konvensional) → yangi obraz (jonli)." },
+      { "text": "«Mixed metaphor» nima?", "options": ["Ikki metafora", "Bir gapda mos kelmaydigan obrazlarni aralashtirish — kulgili xato", "Yangi metafora", "Klishe"], "correctIndex": 1, "explanation": "Yechim: obrazni ko'z oldingizga keltiring (visualise) va bitta obrazda qoling." },
+      { "text": "Analogiya nima uchun bebaho?", "options": ["Bezak uchun", "Murakkab tushunchani tushuntirish uchun (API = ofitsiant)", "Qisqartirish uchun", "Rasmiylik uchun"], "correctIndex": 1, "explanation": "Texnik suhbat, intervyu va taqdimotda kuchli vosita." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "11-ritorika-ishontirish",
+    "title": "Test — Ritorika va ishontirish",
+    "questions": [
+      { "text": "Aristotel ishontirishning nechta vositasini ajratgan?", "options": ["2", "3: ethos, logos, pathos", "4", "5"], "correctIndex": 1, "explanation": "Ethos avval kelishi kerak — ishonchsiz mantiq ham, his ham ishlamaydi." },
+      { "text": "Toulmin modelida «warrant» nima?", "options": ["Da'vo", "Yashirin mantiq — dalilni da'voga bog'lovchi asos", "Dalil", "Xulosa"], "correctIndex": 1, "explanation": "claim + grounds + warrant + qualifier + rebuttal." },
+      { "text": "Dalillarni qanday tartibda joylash kerak?", "options": ["Eng kuchli birinchi", "Eng kuchli OXIRDA", "Tasodifiy", "Eng zaif oxirda emas"], "correctIndex": 1, "explanation": "Tuzilma: hook → kontekst → dalillar → refutatio → call to action." },
+      { "text": "«Straw man» qanday fallacy?", "options": ["Shaxsga hujum", "Raqib fikrini buzib ko'rsatib, keyin rad etish", "Soxta tanlov", "Aylanma dalil"], "correctIndex": 1, "explanation": "ad hominem, false dilemma, slippery slope, post hoc, red herring." },
+      { "text": "«Concede + rebut» nima uchun kuchli?", "options": ["Qisqa", "Ethosni oshiradi — halollik va ishonch beradi", "Rasmiy", "Oson"], "correctIndex": 1, "explanation": "Qarshi fikrni e'tiborsiz qoldirish argumentni zaiflashtiradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "12-ijodiy-badiiy-yozish",
+    "title": "Test — Ijodiy yozuv",
+    "questions": [
+      { "text": "«She was sad» o'rniga qanday yozish kerak?", "options": ["She was very sad", "Konkret detal: «She left the second cup untouched»", "She felt sadness", "Sadly, she was sad"], "correctIndex": 1, "explanation": "Show, don't tell — o'quvchi xulosani o'zi chiqaradi." },
+      { "text": "«Tell» qachon kerak bo'ladi?", "options": ["Hech qachon", "O'tish, fon va pacing uchun («Years passed»)", "Har doim", "Faqat dialogda"], "correctIndex": 1, "explanation": "Muhim sahnalarni SHOW, qolganini TELL." },
+      { "text": "«walked sadly» o'rniga nima yaxshiroq?", "options": ["walked very sadly", "trudged — kuchli fe'l", "was walking sadly", "sadly walked"], "correctIndex": 1, "explanation": "Sifat va ravish yig'indisi o'rniga bitta aniq fe'l." },
+      { "text": "Personaj qanday ochiladi?", "options": ["Tashqi tasvir orqali", "HARAKAT orqali", "Muallif izohi orqali", "Ism orqali"], "correctIndex": 1, "explanation": "Istak + nuqson = tirik personaj; rounded ↔ flat." },
+      { "text": "Dialogda qaysi fe'l yetarli?", "options": ["exclaimed, uttered", "«said» — ko'p hollarda yetarli", "declared", "articulated"], "correctIndex": 1, "explanation": "Dialog transkript emas, distillangan bo'lishi kerak; subtekst muhim." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "13-akademik-ishontiruvchi-yozuv",
+    "title": "Test — Akademik ishontiruvchi yozuv",
+    "questions": [
+      { "text": "Band 9 akademik yozuvning asosiy farqi nima?", "options": ["Uzunlik", "TAHLIL > tasvir — «so what?» savoliga javob", "Ko'p atama", "Murakkab gap"], "correctIndex": 1, "explanation": "What emas, WHY/HOW/SO WHAT — sabab, oqibat, ahamiyat." },
+      { "text": "Har da'vo nima bilan qo'llab-quvvatlanishi kerak?", "options": ["Hech narsa", "Evidence + reasoning + warrant", "«everyone knows»", "Iqtibos"], "correctIndex": 1, "explanation": "Asossiz da'vo akademik yozuvning eng katta nuqsoni." },
+      { "text": "«Over-hedging» nima uchun yomon?", "options": ["Rasmiy emas", "Matn «mush» bo'lib qoladi — pozitsiya yo'qoladi", "Uzun", "Qisqa"], "correctIndex": 1, "explanation": "Hedging kerak, lekin mutlaqlik (always/proves) ham xato." },
+      { "text": "«While critics argue..., this overlooks...» — bu qanday harakat?", "options": ["Thesis", "Refutatio — concede va rebut", "Xulosa", "Kirish"], "correctIndex": 1, "explanation": "Qarshi argument bilan ishlash — kuchli essening belgisi." },
+      { "text": "IELTS Task 2 da ballni ko'pincha nima cheklaydi?", "options": ["Grammatika", "Task Response", "Lug'at", "Imlo"], "correctIndex": 1, "explanation": "To'liq javob + aniq pozitsiya + rivojlangan g'oyalar." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "14-professional-yuqori-xavf-yozuv",
+    "title": "Test — Professional yuqori-xavf yozuv",
+    "questions": [
+      { "text": "«BLUF» nima?", "options": ["Uzun kirish", "Bottom Line Up Front — xulosa va so'rov oldinda", "Xulosa oxirida", "Sarlavha"], "correctIndex": 1, "explanation": "Akademik yozuvga TESKARI tuzilma — inverted pyramid." },
+      { "text": "«Benefit > feature» tamoyili nimani anglatadi?", "options": ["Xususiyatni sanash", "Foydani o'quvchi tilida aytish: «saves 10 hrs/wk»", "Texnik tafsilot", "Narxni ko'rsatish"], "correctIndex": 1, "explanation": "«has automation» — feature; «saves 10 hours a week» — benefit." },
+      { "text": "Executive summary qanday bo'lishi kerak?", "options": ["Hujjatga bog'liq", "Standalone — mustaqil o'qilganda ham tushunarli", "Qisqa sarlavha", "Ilova"], "correctIndex": 1, "explanation": "Skimmable tuzilma: sarlavha, bullet, bold, qisqa paragraf, oq joy." },
+      { "text": "Professional xatning yakunida nima bo'lishi kerak?", "options": ["Rahmat", "Aniq ask: tavsiya + keyingi qadam + deadline", "Imzo", "Iqtibos"], "correctIndex": 1, "explanation": "Clear call to action — o'quvchi nima qilishi kerakligini biladi." },
+      { "text": "Professional yozuvda qaysi ton mos?", "options": ["Viktoriancha rasmiy", "Ishonchli + iliq + to'g'ridan-to'g'ri", "Juda norasmiy", "Neytral-quruq"], "correctIndex": 1, "explanation": "Over-formal ham, over-casual ham zarar keltiradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "15-nozik-ravon-gapirish",
+    "title": "Test — Nozik va ravon gapirish",
+    "questions": [
+      { "text": "Ravonlikning eng katta kaliti nima?", "options": ["Tez gapirish", "Inglizcha o'ylash + chunklarning avtomatlashuvi", "Ko'p so'z bilish", "Grammatika"], "correctIndex": 1, "explanation": "Tarjima qilish real vaqtda ravonlikni buzadi." },
+      { "text": "Xato qilganda nima qilish kerak?", "options": ["To'xtash", "Harakatda tuzatish: «or rather...» — flow > perfection", "Boshidan boshlash", "Jim qolish"], "correctIndex": 1, "explanation": "To'xtash xato qilishdan ko'ra ko'proq ball yo'qotadi." },
+      { "text": "«Nuclear stress» nima?", "options": ["So'z urg'usi", "Gapdagi fokus urg'usi — ma'noni belgilaydi", "Ritm", "Pauza"], "correctIndex": 1, "explanation": "Prosody — nutq musiqasi, u ma'no tashiydi." },
+      { "text": "Pauzani nima bilan to'ldirish kerak?", "options": ["«Um»", "Diskurs markerlar: well, you know, I mean, the thing is", "Jimlik", "Takror"], "correctIndex": 1, "explanation": "Bu vaqt sotib oladi va tabiiy eshitiladi." },
+      { "text": "«Backchannel» nima?", "options": ["Fon shovqini", "Tinglayotganingizni bildiruvchi qisqa signallar: mm, right, I see", "Mavzu o'zgartirish", "Savol"], "correctIndex": 1, "explanation": "Turn-taking va active listening bilan birga suhbat boshqaruvi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "16-murakkab-tinglash",
+    "title": "Test — Murakkab tinglash",
+    "questions": [
+      { "text": "Tinglashdagi 1-raqamli to'siq nima?", "options": ["Lug'at", "Connected speech — so'zlar yozma shakldek ajralmaydi", "Grammatika", "Tezlik"], "correctIndex": 1, "explanation": "Linking, elision, assimilation, weak forms." },
+      { "text": "«ten boys» nutqda «tem boys» bo'lib eshitilishi qanday hodisa?", "options": ["Elision", "Assimilation", "Linking", "Weak form"], "correctIndex": 1, "explanation": "Qo'shni tovush ta'sirida tovush o'zgaradi." },
+      { "text": "Notanish so'z eshitilganda nima qilish kerak?", "options": ["To'xtab o'ylash", "Davom etish — gist ushlash, noaniqlikka chidam", "Yozib olish", "Qayta tinglash"], "correctIndex": 1, "explanation": "Bitta so'zda qotib qolsangiz, uch jumlani boy berasiz." },
+      { "text": "IELTS Listeningda «distractor» bilan qanday ishlanadi?", "options": ["Birinchi javobni yozish", "Oxirigacha tinglash — yakuniy variant to'g'ri", "Tashlab ketish", "Ikkalasini yozish"], "correctIndex": 1, "explanation": "Paraphrase ham muhim: cheap → inexpensive." },
+      { "text": "Subtitrga doim tayanish nima uchun zararli?", "options": ["Sekin", "Quloqni connected speechga o'rgatmaydi", "Noto'g'ri", "Qimmat"], "correctIndex": 1, "explanation": "Bitta aksentga o'rganib qolish ham cheklov — turli aksentlarni tinglang." }
+    ]
+  }
+]

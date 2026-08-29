@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "08-will-going-to-vs-will",
+    "title": "Test — Will va going to",
+    "questions": [
+      { "text": "«will» dan keyin qanday fe'l keladi?", "options": ["V-ing", "V1 sof (to'siz)", "V2", "V3"], "correctIndex": 1, "explanation": "will barcha shaxsga bir xil: I'll go, she'll go." },
+      { "text": "Telefon jiringladi — «I'll answer it» — bu qaysi ma'no?", "options": ["Oldindan reja", "Shu damdagi qaror", "Dalilga asoslangan bashorat", "Va'da"], "correctIndex": 1, "explanation": "Qaror oldin qabul qilingan bo'lsa → going to; hozir qabul qilinsa → will." },
+      { "text": "Va'da, taklif va iltimos uchun qaysi shakl ishlatiladi?", "options": ["going to", "Doim will", "Present Continuous", "Past Simple"], "correctIndex": 1, "explanation": "I'll help you (va'da), Will you help me? (iltimos)." },
+      { "text": "«won't» va «want» qanday farqlanadi?", "options": ["Farqi yo'q", "won't /wəʊnt/ — will not; want /wɒnt/ — xohlamoq", "want — inkor", "won't — xohlamoq"], "correctIndex": 1, "explanation": "Talaffuz farqi ma'noni butunlay o'zgartiradi." },
+      { "text": "«The train ___ at 6» (jadval bo'yicha) — to'g'ri shakl?", "options": ["will leave", "leaves", "is leaving", "is going to leave"], "correctIndex": 1, "explanation": "Jadval kelajagi Present Simple bilan beriladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "09-making-plans-funksional",
+    "title": "Test — Reja tuzish",
+    "questions": [
+      { "text": "«How about ___ » — bo'shliqqa qaysi shakl?", "options": ["go", "going", "to go", "went"], "correctIndex": 1, "explanation": "How/What about + V-ing. Solishtiring: Let's + V1, Why don't we + V1." },
+      { "text": "«I'd love to» qanday javob?", "options": ["Rad etish", "Rozilik", "Savol", "Taklif"], "correctIndex": 1, "explanation": "Rozilik: Sure! I'd love to. Sounds good! Count me in." },
+      { "text": "Muloyim rad etish uchun eng yaxshi ibora qaysi?", "options": ["No", "I'd love to, but…", "I don't want", "Never"], "correctIndex": 1, "explanation": "Sorry, I can't make it. Maybe another time." },
+      { "text": "«Something came up» qachon ishlatiladi?", "options": ["Taklif qilganda", "Rejani o'zgartirganda", "Rozi bo'lganda", "Tanishganda"], "correctIndex": 1, "explanation": "Can we reschedule? Can we make it later?" },
+      { "text": "Kelishilgan uchrashuv haqida gapirganda qaysi shakl ishlatiladi?", "options": ["will", "Present Continuous", "going to", "Past Simple"], "correctIndex": 1, "explanation": "Uchrashuv → PC; niyat → going to; shu damdagi taklif → will/shall." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "10-comparatives",
+    "title": "Test — Comparatives (qiyosiy daraja)",
+    "questions": [
+      { "text": "«happy» ning qiyosiy shakli qanday?", "options": ["happyer", "happier", "more happy", "happiest"], "correctIndex": 1, "explanation": "2 bo'g'inli -y: y → -ier (easy → easier)." },
+      { "text": "«good» ning qiyosiy shakli qanday?", "options": ["gooder", "more good", "better", "best"], "correctIndex": 2, "explanation": "Irregular: good→better, bad→worse, far→further, little→less." },
+      { "text": "«more bigger» — bu nega xato?", "options": ["more xato", "Ikki marta qiyoslash — faqat bigger", "bigger xato", "Xato emas"], "correctIndex": 1, "explanation": "Yo -er, yo more — ikkalasi birga kelmaydi." },
+      { "text": "Qiyosiy darajani kuchaytirish uchun nima ishlatiladi?", "options": ["very", "much / far / a bit / slightly", "so", "too"], "correctIndex": 1, "explanation": "«very bigger» xato; «much bigger» to'g'ri." },
+      { "text": "«different ___ » — qaysi predlog?", "options": ["to", "from", "as", "than"], "correctIndex": 1, "explanation": "the same AS, different FROM, similar TO — predlogi bilan yodlang." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "11-superlatives",
+    "title": "Test — Superlatives (orttirma daraja)",
+    "questions": [
+      { "text": "Orttirma daraja qaysi artikl bilan keladi?", "options": ["a", "an", "the", "artiklsiz"], "correctIndex": 2, "explanation": "Doim «the»: the tallest, the most expensive." },
+      { "text": "«the most tallest» — bu nega xato?", "options": ["the xato", "Ikki marta orttirma — faqat the tallest", "tallest xato", "Xato emas"], "correctIndex": 1, "explanation": "Yo -est, yo the most — birga kelmaydi." },
+      { "text": "«the best ___ the class» — qaysi predlog?", "options": ["of", "in", "at", "from"], "correctIndex": 1, "explanation": "in — joy/guruh bilan; of — ko'plik yoki davr bilan (the best of my life)." },
+      { "text": "«one of the best ___ » — bo'shliqqa qaysi shakl?", "options": ["film", "films", "filming", "a film"], "correctIndex": 1, "explanation": "one of the + superlative + KO'PLIK ot." },
+      { "text": "«bad» ning orttirma shakli qanday?", "options": ["the baddest", "the worst", "the most bad", "the worse"], "correctIndex": 1, "explanation": "Irregular: the best, the worst, the furthest, the least." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "12-adverbs-of-frequency",
+    "title": "Test — Takror ravishlari",
+    "questions": [
+      { "text": "«I ___ go to school» (always) — ravish qayerga qo'yiladi?", "options": ["Gap oxiriga", "Oddiy fe'ldan OLDIN", "Fe'ldan keyin", "Gap boshiga"], "correctIndex": 1, "explanation": "I always go to school." },
+      { "text": "«I am ___ busy» (always) — ravish qayerda turadi?", "options": ["am dan oldin", "am dan KEYIN", "Gap oxirida", "Gap boshida"], "correctIndex": 1, "explanation": "to be dan keyin: I am always busy. She is never late." },
+      { "text": "«I have ___ been there» (never) — ravish qayerda?", "options": ["have dan oldin", "Yordamchi fe'ldan KEYIN", "Gap oxirida", "been dan keyin"], "correctIndex": 1, "explanation": "I have never been. You can always call." },
+      { "text": "«I don't never go» — bu nega xato?", "options": ["don't xato", "never o'zi inkor — don't bilan ishlatilmaydi", "go xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: I never go." },
+      { "text": "«every day» va «everyday» qanday farqlanadi?", "options": ["Farqi yo'q", "every day — ravish (har kuni); everyday — sifat (kundalik)", "everyday — ravish", "Ikkalasi sifat"], "correctIndex": 1, "explanation": "Aniq takror gap oxirida: every day, once a week, twice a month." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "13-countable-uncountable",
+    "title": "Test — Sanaladigan va sanalmaydigan otlar",
+    "questions": [
+      { "text": "«advice» qanday ot?", "options": ["Sanaladigan", "Sanalmaydigan — a/an va ko'plik olmaydi", "Ikkalasi", "Faqat ko'plik"], "correctIndex": 1, "explanation": "Xavfli sanalmaydigan otlar: information, advice, news, furniture, money, work, luggage, homework." },
+      { "text": "«___ water» — qaysi so'z to'g'ri?", "options": ["many", "much", "few", "a number of"], "correctIndex": 1, "explanation": "much → sanalmaydigan; many → sanaladigan; a lot of → ikkalasi (ijobiy)." },
+      { "text": "«a few» va «few» qanday farqlanadi?", "options": ["Farqi yo'q", "a few — bir oz (ijobiy); few — kam (salbiy)", "few — ijobiy", "Ikkalasi salbiy"], "correctIndex": 1, "explanation": "Xuddi shunday: a little (bir oz) ↔ little (kam)." },
+      { "text": "«Bir maslahat» qanday aytiladi?", "options": ["an advice", "a piece of advice", "one advice", "advices"], "correctIndex": 1, "explanation": "a piece of advice/information/furniture; a glass of water; a slice of bread." },
+      { "text": "«fewer» va «less» qanday farqlanadi?", "options": ["Farqi yo'q", "fewer — sanaladigan; less — sanalmaydigan", "less — sanaladigan", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "fewer books, less water." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "14-quantity-too-enough",
+    "title": "Test — Miqdor, too va enough",
+    "questions": [
+      { "text": "«___ books do you have?» — bo'shliqqa nima?", "options": ["How much", "How many", "How long", "How often"], "correctIndex": 1, "explanation": "how many — sanaladigan; how much — sanalmaydigan (va narx)." },
+      { "text": "«too» va «very» qanday farqlanadi?", "options": ["Farqi yo'q", "too — kerakdan ortiq (muammo); very — neytral «juda»", "very — muammo", "too — kam"], "correctIndex": 1, "explanation": "It's too hot (chidab bo'lmaydi) ≠ It's very hot (juda issiq)." },
+      { "text": "«enough» ot bilan qayerda turadi?", "options": ["Otdan keyin", "Otdan OLDIN: enough money", "Gap oxirida", "Fe'ldan oldin"], "correctIndex": 1, "explanation": "Sifat/ravish bilan esa KEYIN: big enough, fast enough." },
+      { "text": "«He is ___ to drive» (yoshi yetarli) — to'g'ri shakl?", "options": ["enough old", "old enough", "too old", "very old"], "correctIndex": 1, "explanation": "old enough TO drive; too tired TO work." },
+      { "text": "«enough» qanday o'qiladi?", "options": ["inaug", "inaf — gh → f", "enouh", "enog"], "correctIndex": 1, "explanation": "«gh» bu yerda /f/ deb o'qiladi." }
+    ]
+  }
+]

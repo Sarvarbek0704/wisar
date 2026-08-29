@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "01-present-continuous",
+    "title": "Test — Present Continuous",
+    "questions": [
+      { "text": "Present Continuous formulasi qanday?", "options": ["V1 + s", "to be (am/is/are) + V-ing", "did + V1", "will + V1"], "correctIndex": 1, "explanation": "«-yapti» ma'nosi. to be ni hech qachon tushirmang." },
+      { "text": "«run» ning -ing shakli qanday?", "options": ["runing", "running", "runnning", "runing"], "correctIndex": 1, "explanation": "CVC (undosh-unli-undosh) qolipida oxirgi undosh ikkilanadi: run → running, stop → stopping." },
+      { "text": "«die» ning -ing shakli qanday?", "options": ["dieing", "dying", "diing", "dieying"], "correctIndex": 1, "explanation": "-ie → -ying: die → dying, lie → lying." },
+      { "text": "Qaysi fe'l Continuous da ishlatilmaydi?", "options": ["work", "know", "run", "study"], "correctIndex": 1, "explanation": "Stative fe'llar: want, know, like, love, need, understand, believe, see, cost, belong." },
+      { "text": "«I'm meeting him tomorrow» — bu qaysi ma'no?", "options": ["Hozirgi harakat", "Kelajak reja (kelishilgan uchrashuv)", "Odat", "O'tmish"], "correctIndex": 1, "explanation": "Beshta ma'no: hozir, vaqtinchalik, o'zgarish, kelajak reja, always+ing (g'ashlik)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "02-past-simple-was-were",
+    "title": "Test — Past Simple: was / were",
+    "questions": [
+      { "text": "«They ___ at home» — to'g'ri shakl?", "options": ["was", "were", "is", "did"], "correctIndex": 1, "explanation": "I/he/she/it → was; you/we/they → were." },
+      { "text": "«She ___ tired yesterday» — to'g'ri shakl?", "options": ["were", "was", "are", "did"], "correctIndex": 1, "explanation": "she → was." },
+      { "text": "«Men 2000-yilda tug'ilganman» qanday aytiladi?", "options": ["I born in 2000", "I was born in 2000", "I am born in 2000", "I did born in 2000"], "correctIndex": 1, "explanation": "was/were born — doim shu shaklda ishlatiladi." },
+      { "text": "«Were you there?» ga qisqa javob qanday?", "options": ["Yes, I did", "Yes, I was", "Yes, I were", "Yes, I am"], "correctIndex": 1, "explanation": "was/were o'z inkor va savoliga ega — did kerak emas." },
+      { "text": "was/were qanday holatlarda ishlatiladi?", "options": ["Har qanday o'tgan ishda", "Holat, joy, sifat uchun — harakat uchun emas", "Faqat harakat uchun", "Faqat savolda"], "correctIndex": 1, "explanation": "Harakat uchun -ed yoki irregular V2 ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "03-past-simple-regular-ed",
+    "title": "Test — Past Simple: to'g'ri fe'llar",
+    "questions": [
+      { "text": "«study» ning o'tgan zamon shakli qanday?", "options": ["studyed", "studied", "studyd", "studies"], "correctIndex": 1, "explanation": "Undosh + y → -ied: study → studied, try → tried." },
+      { "text": "«I didn't worked» — bu nega xato?", "options": ["didn't xato", "didn't dan keyin SOF fe'l keladi: didn't work", "work xato", "Xato emas"], "correctIndex": 1, "explanation": "-ed did/didn't ga «ko'chadi», asosiy fe'l sof qoladi." },
+      { "text": "«wanted» dagi -ed qanday o'qiladi?", "options": ["/t/", "/d/", "/ɪd/ — qo'shimcha bo'g'in", "O'qilmaydi"], "correctIndex": 2, "explanation": "t/d dan keyin /ɪd/: wanted, needed, started." },
+      { "text": "«worked, stopped, watched» dagi -ed qanday o'qiladi?", "options": ["/t/", "/d/", "/ɪd/", "/əd/"], "correctIndex": 0, "explanation": "Tovushsiz undoshdan keyin /t/; tovushli yoki unlidan keyin /d/ (played, lived)." },
+      { "text": "«stop» ning o'tgan shakli qanday?", "options": ["stoped", "stopped", "stopd", "stopt"], "correctIndex": 1, "explanation": "CVC qolipida oxirgi undosh ikkilanadi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "04-past-simple-irregular",
+    "title": "Test — Past Simple: noto'g'ri fe'llar",
+    "questions": [
+      { "text": "«go» ning V2 shakli qanday?", "options": ["goed", "went", "gone", "goes"], "correctIndex": 1, "explanation": "V1 (go) — V2 (went, o'tgan zamon) — V3 (gone, Perfect uchun)." },
+      { "text": "«Did you went?» — bu nega xato?", "options": ["Did xato", "Did dan keyin SOF V1 keladi: Did you go?", "you xato", "Xato emas"], "correctIndex": 1, "explanation": "Savol va inkorda irregular shakl ishlatilmaydi." },
+      { "text": "«buy» ning V2 shakli qanday?", "options": ["buyed", "bought", "buought", "boughted"], "correctIndex": 1, "explanation": "-ought guruhi: buy/bought, bring/brought, think/thought." },
+      { "text": "«cut» ning V2 shakli qanday?", "options": ["cutted", "cut", "cat", "cutt"], "correctIndex": 1, "explanation": "O'zgarmas guruh: cut/cut, put/put, let/let." },
+      { "text": "«read» (o'tgan zamon) qanday o'qiladi?", "options": ["/riːd/", "/red/", "/reɪd/", "/rɪd/"], "correctIndex": 1, "explanation": "Yozilishi bir xil, o'qilishi boshqa. Yana: said → /sed/, heard → /hɜːd/." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "05-past-simple-inkor-savol",
+    "title": "Test — O'tgan zamon: inkor va savol",
+    "questions": [
+      { "text": "«Kecha uyda edim» inkorini qanday tuzamiz?", "options": ["I didn't at home", "I wasn't at home", "I don't was at home", "I not was at home"], "correctIndex": 1, "explanation": "Holat/sifat → was/were; harakat → did/didn't." },
+      { "text": "«Kecha ishlamadim» qanday aytiladi?", "options": ["I wasn't work", "I didn't work", "I didn't worked", "I not worked"], "correctIndex": 1, "explanation": "Harakat fe'li bilan didn't + sof fe'l." },
+      { "text": "«Didn't you go?» ga «Ha, bordim» qanday javob beriladi?", "options": ["No, I did", "Yes, I did", "Yes, I didn't", "No, I didn't"], "correctIndex": 1, "explanation": "Inkor savolga javob FAKTGA qarab beriladi, savol shakliga emas." },
+      { "text": "Hikoyani ketma-ket bayon qilish uchun qaysi so'zlar ishlatiladi?", "options": ["Because, so", "First... Then... After that... Finally...", "But, and", "Very, really"], "correctIndex": 1, "explanation": "Suddenly — kutilmagan burilish uchun." },
+      { "text": "«Oh, did you?» qanday vazifani bajaradi?", "options": ["Savol beradi", "Echo — qiziqish bildiradi", "Inkor qiladi", "Buyuradi"], "correctIndex": 1, "explanation": "Suhbatda qiziqish ko'rsatuvchi qisqa javob: Was it? Did you really?" }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "06-past-continuous",
+    "title": "Test — Past Continuous",
+    "questions": [
+      { "text": "Past Continuous formulasi qanday?", "options": ["did + V1", "was/were + V-ing", "have + V3", "will + V1"], "correctIndex": 1, "explanation": "O'tmishda davom etgan, tugamagan ish." },
+      { "text": "«I was reading when he ___ (come)» — to'g'ri shakl?", "options": ["was coming", "came", "come", "comes"], "correctIndex": 1, "explanation": "when — qisqa voqea (Past Simple); while/as — uzun fon (Past Continuous)." },
+      { "text": "«When I arrived, she was cooking» nimani anglatadi?", "options": ["Men kelgach pishira boshladi", "Men kelgunimcha pishirayotgan edi", "Umuman pishirmadi", "Birga pishirdik"], "correctIndex": 1, "explanation": "«...she cooked» esa: men kelganimdan keyin pishirdi." },
+      { "text": "«She was knowing the answer» — bu nega xato?", "options": ["was xato", "know — stative fe'l, Continuous da ishlatilmaydi", "answer xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: She knew the answer." },
+      { "text": "«He was always coming late» qanday ma'no beradi?", "options": ["Neytral bayon", "G'ashlik, norozilik ohangi", "Bir marta", "Kelasi zamon"], "correctIndex": 1, "explanation": "always + V-ing takroriy g'ashlantiruvchi harakatni bildiradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "07-be-going-to",
+    "title": "Test — Be going to",
+    "questions": [
+      { "text": "«be going to» formulasi qanday?", "options": ["am/is/are + going to + V1", "will + going to", "going + to V-ing", "did + going to"], "correctIndex": 0, "explanation": "«...moqchi / ...adi» ma'nosi; keyin sof fe'l keladi." },
+      { "text": "«Look at those clouds! It's going to rain» — bu qaysi ma'no?", "options": ["Reja", "Dalilga asoslangan bashorat", "Odat", "O'tmish"], "correctIndex": 1, "explanation": "Uch ma'no: reja/niyat, dalilga asoslangan bashorat, tez orada sodir bo'lish." },
+      { "text": "«I was going to call, but I forgot» nimani anglatadi?", "options": ["Qo'ng'iroq qildim", "Amalga oshmagan reja", "Qo'ng'iroq qilaman", "Qo'ng'iroq qilyapman"], "correctIndex": 1, "explanation": "was/were going to — bajarilmay qolgan niyat." },
+      { "text": "«gonna» qayerda ishlatiladi?", "options": ["Yozma matnda", "Faqat og'zaki nutqda", "Rasmiy xatda", "Imtihonda"], "correctIndex": 1, "explanation": "«going to» ning og'zaki qisqargan shakli; yozuvda ishlatilmaydi." },
+      { "text": "«be going to» va Present Continuous qanday farqlanadi?", "options": ["Farqi yo'q", "going to — niyat; PC — kelishilgan uchrashuv", "PC — niyat", "going to — o'tmish"], "correctIndex": 1, "explanation": "I'm going to study medicine (niyat) / I'm meeting him at 5 (kelishilgan)." }
+    ]
+  }
+]

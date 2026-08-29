@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { GraduationCap, Eye, EyeOff } from "lucide-react";
 import { login, register, loginWithGoogle, isLoggedIn } from "@/lib/auth";
+import { syncPendingReviews } from "@/lib/pending-reviews";
 
 function LoginInner() {
   const router = useRouter();
@@ -41,7 +42,12 @@ function LoginInner() {
         router.push(`/verify-email?email=${encodeURIComponent(r.email)}&next=${encodeURIComponent(next)}`);
         return;
       }
-      router.push(next);
+      // Anonim holatda yig'ilgan flashcard baholarini hisobga ko'chiramiz.
+      await syncPendingReviews().catch(() => {});
+      // Hali daraja aniqlanmagan bo'lsa — 700+ maqola oldida qoldirmasdan,
+      // avval qisqa placement testga yuboramiz (`next` aniq berilmagan bo'lsa).
+      const onboarded = localStorage.getItem("wisar-onboarded") === "true";
+      router.push(!onboarded && !sp.get("next") ? "/onboarding" : next);
       router.refresh();
     } catch (e) {
       setErr((e as Error).message);

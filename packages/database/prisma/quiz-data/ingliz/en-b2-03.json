@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "19-relative-clauses-reduced-quantifiers",
+    "title": "Test — Qisqartirilgan relative clauselar",
+    "questions": [
+      { "text": "«the letter which was sent» ni qanday qisqartiramiz?", "options": ["the letter sending", "the letter sent", "the letter to send", "the letter sends"], "correctIndex": 1, "explanation": "Passiv reduced: who/which + was + V3 → V3." },
+      { "text": "«the man who owns the shop» ni qisqartirish mumkinmi?", "options": ["Ha — the man owning", "Yo'q — faqat BE bo'lganda qisqaradi", "Ha — the man owned", "Ha — the man to own"], "correctIndex": 1, "explanation": "has/owns kabi fe'llar bilan reduction ishlamaydi." },
+      { "text": "«the first ___ arrive» — bo'shliqqa nima?", "options": ["hech narsa", "to", "who", "which"], "correctIndex": 1, "explanation": "first/last/only/next + to + V1 qolipi." },
+      { "text": "«friends, most ___ are abroad» — bo'shliqqa nima?", "options": ["of them", "of whom", "of which", "that"], "correctIndex": 1, "explanation": "Odam uchun of whom; narsa uchun of which — non-defining, vergul bilan." },
+      { "text": "«in which case» qaysi uslubga tegishli?", "options": ["Og'zaki", "Rasmiy", "Jargon", "Bolalar tili"], "correctIndex": 1, "explanation": "Rasmiy qoliplar: the [ot] of which, in which case, by which time." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "20-participle-clauses",
+    "title": "Test — Participle clauses",
+    "questions": [
+      { "text": "«Walking home, a dog bit me» — bu nega xato?", "options": ["Walking xato", "Dangling participle — participle egasi bosh gap egasi bilan mos emas", "dog xato", "Xato emas"], "correctIndex": 1, "explanation": "It bosh qoida: participle egasi = bosh gap egasi." },
+      { "text": "«Having finished, I left» — bu qanday participle?", "options": ["Present", "Perfect — oldingi harakat", "Past passiv", "Perfect passiv"], "correctIndex": 1, "explanation": "having + V3 — bosh harakatdan oldin sodir bo'lgan." },
+      { "text": "«Built in 1900, it...» — bu qanday participle?", "options": ["Present (aktiv)", "Past (passiv)", "Perfect", "Continuous"], "correctIndex": 1, "explanation": "V3 shakli passiv ma'no beradi: «...qurilgan holda»." },
+      { "text": "Participle clauseda inkor qanday beriladi?", "options": ["Don't + V-ing", "Not + V-ing", "No + V-ing", "V-ing + not"], "correctIndex": 1, "explanation": "Not knowing what to do, he waited." },
+      { "text": "«generally speaking, considering, given» qanday xususiyatga ega?", "options": ["Dangling qoidasiga bo'ysunadi", "Idiomatik — dangling qoidasidan ozod", "Faqat passivda", "Faqat perfectda"], "correctIndex": 1, "explanation": "judging by ham shu guruhga kiradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "21-gerunds-infinitives-ilgor",
+    "title": "Test — Gerund va infinitive (ilg'or)",
+    "questions": [
+      { "text": "«having done» qanday shakl?", "options": ["Passiv gerund", "Perfekt gerund — oldingi vaqt", "Continuous", "Bare infinitive"], "correctIndex": 1, "explanation": "to have done — perfekt infinitiv; having been done — perfekt passiv gerund." },
+      { "text": "«make/let» dan keyin qanday infinitiv keladi?", "options": ["to + V1", "Bare infinitive (to siz)", "V-ing", "V3"], "correctIndex": 1, "explanation": "Bare infinitive: make/let + sb + V1, modallar, would rather, why not, help." },
+      { "text": "«I want that you go» — bu nega xato?", "options": ["want xato", "want + sb + TO + V1: I want you to go", "you xato", "Xato emas"], "correctIndex": 1, "explanation": "want/expect/ask/tell/advise + sb + to V1 — «that» ishlatilmaydi." },
+      { "text": "«regret to inform» va «regret informing» qanday farqlanadi?", "options": ["Farqi yo'q", "to — hozir aytishdan afsus; -ing — o'tmishda aytganidan afsus", "-ing — hozir", "Ikkalasi o'tmish"], "correctIndex": 1, "explanation": "Ma'no o'zgaradigan fe'llar: remember/forget/stop/try/regret/go on/mean/need." },
+      { "text": "«look forward to» dan keyin nima keladi?", "options": ["V1", "-ing", "V3", "to + V1"], "correctIndex": 1, "explanation": "Bu yerdagi «to» — predlog: look forward TO seeing, good AT cooking." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "22-that-clause-subjunctive",
+    "title": "Test — Subjunctive (that-clause)",
+    "questions": [
+      { "text": "«I suggest that he ___ » — to'g'ri shakl?", "options": ["goes", "go", "went", "will go"], "correctIndex": 1, "explanation": "Mandative subjunctive: that + ega + V1 (asos shakl)." },
+      { "text": "«It's vital that she ___ there» — to'g'ri shakl?", "options": ["is", "be", "was", "will be"], "correctIndex": 1, "explanation": "essential, important, vital, necessary, crucial, imperative + that + V1." },
+      { "text": "Subjunctive inkori qanday beriladi?", "options": ["that he doesn't go", "that he not go", "that he don't go", "that he isn't go"], "correctIndex": 1, "explanation": "Inkorda ham asos shakl saqlanadi." },
+      { "text": "BrE da subjunctive muqobili qaysi?", "options": ["that he goes", "that he should go", "that he went", "that he would go"], "correctIndex": 1, "explanation": "Norasmiy variantda esa oddiy: ...that he goes." },
+      { "text": "«be that as it may, come what may» — bular nima?", "options": ["Xato", "Idiomatik subjunctive iboralar", "Modal", "Passiv"], "correctIndex": 1, "explanation": "so be it, suffice it to say, if need be — qotib qolgan shakllar." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "23-articles-toliq",
+    "title": "Test — Artikllar (to'liq)",
+    "questions": [
+      { "text": "Artikl tanlashning uch savoli qaysi?", "options": ["Rodi? Soni? Kelishigi?", "Aniqmi? Noaniq sanaladigan birlikmi? Umumiy/sanalmaydiganmi?", "Uzunmi? Qisqami?", "Fe'lmi? Otmi?"], "correctIndex": 1, "explanation": "the → a/an → zero — mantiqiy ketma-ketlik." },
+      { "text": "Umumiy ma'no uchun eng tabiiy shakl qaysi?", "options": ["A tiger is...", "The tiger is...", "Tigers are... (ko'plik, artiklsiz)", "Farqi yo'q"], "correctIndex": 2, "explanation": "Uchalasi grammatik to'g'ri, lekin ko'plik zero eng tabiiy." },
+      { "text": "«___ Alps» — qaysi artikl?", "options": ["a", "an", "the", "artiklsiz"], "correctIndex": 2, "explanation": "the (ko'plik yoki «of»: the USA, the Alps, the Nile) ↔ zero (Japan, Mount Fuji, Lake Como)." },
+      { "text": "«in ___ hospital» (davolanish uchun, BrE) — qaysi artikl?", "options": ["the", "a", "artiklsiz", "an"], "correctIndex": 2, "explanation": "Qat'iy iboralar: to bed/school, in hospital, by car, in fact, have lunch." },
+      { "text": "«___ news» — qaysi artikl?", "options": ["a", "an", "the", "artiklsiz"], "correctIndex": 2, "explanation": "the news/weather/same/cinema — «the» talab qiluvchi qat'iy iboralar." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "24-determiners-quantifiers",
+    "title": "Test — Determinerlar va miqdor so'zlari",
+    "questions": [
+      { "text": "«a number of» qanday fe'l oladi?", "options": ["Birlik", "Ko'plik", "Ikkalasi", "Fe'lsiz"], "correctIndex": 1, "explanation": "a number of + KO'PLIK ↔ the number of + BIRLIK." },
+      { "text": "«fewer» va «less» qanday farqlanadi?", "options": ["Farqi yo'q", "fewer + sanaladigan; less + sanalmaydigan", "less + sanaladigan", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "fewer people ↔ less time." },
+      { "text": "«most people» va «most of the people» qanday farqlanadi?", "options": ["Farqi yo'q", "Birinchisi umumiy, ikkinchisi aniq guruh", "Birinchisi aniq", "Ikkalasi umumiy"], "correctIndex": 1, "explanation": "«of the» aniq, ma'lum guruhni ko'rsatadi." },
+      { "text": "«all» va «whole» qanday joylashadi?", "options": ["Ikkalasi the dan keyin", "all — the/my dan OLDIN; whole — the/my dan KEYIN", "whole — oldin", "Farqi yo'q"], "correctIndex": 1, "explanation": "all the day ↔ the whole day." },
+      { "text": "«each, every, either, neither» qanday fe'l oladi?", "options": ["Ko'plik", "Birlik", "Ikkalasi", "Fe'lsiz"], "correctIndex": 1, "explanation": "both, all, most, several, the majority of esa ko'plik fe'l oladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "25-countable-uncountable-ilgor",
+    "title": "Test — Sanaladigan va sanalmaydigan (ilg'or)",
+    "questions": [
+      { "text": "Qaysi ot doim sanalmaydigan?", "options": ["book", "equipment", "chair", "idea"], "correctIndex": 1, "explanation": "advice, information, news, furniture, luggage, equipment, knowledge, research, progress." },
+      { "text": "«news» qanday fe'l oladi?", "options": ["Ko'plik", "BIRLIK (-s bo'lsa ham)", "Ikkalasi", "Fe'lsiz"], "correctIndex": 1, "explanation": "news, physics, maths, economics, politics — -s bilan tugasa ham birlik." },
+      { "text": "«police» qanday fe'l oladi?", "options": ["Birlik", "KO'PLIK", "Ikkalasi", "Fe'lsiz"], "correctIndex": 1, "explanation": "The police are investigating — doim ko'plik fe'l." },
+      { "text": "«experience» qanday ot?", "options": ["Faqat sanalmaydigan", "Ikkala tur — malaka (uncount) / voqea (count)", "Faqat sanaladigan", "Faqat ko'plik"], "correctIndex": 1, "explanation": "hair, paper, time, coffee, glass ham ikkala turda keladi." },
+      { "text": "«a piece of advice» nima uchun kerak?", "options": ["Bezak", "advice sanalmaydigan — «an advice» xato", "Ko'plik uchun", "Rasmiy uslub uchun"], "correctIndex": 1, "explanation": "some advice yoki much information ham to'g'ri." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "26-adjectives-gradable-order",
+    "title": "Test — Gradable sifatlar va tartib",
+    "questions": [
+      { "text": "«very freezing» — bu nega xato?", "options": ["freezing xato", "freezing — extreme sifat; absolutely bilan keladi", "very xato", "Xato emas"], "correctIndex": 1, "explanation": "gradable → very/quite/fairly; extreme → absolutely/completely/totally/utterly." },
+      { "text": "Qaysi kuchaytirgich har ikkala turda ishlaydi?", "options": ["very", "absolutely", "really / pretty", "totally"], "correctIndex": 2, "explanation": "really cold ham, really freezing ham to'g'ri." },
+      { "text": "«quite perfect» qanday ma'no beradi?", "options": ["Yaxshigina", "Mutlaqo mukammal", "Unchalik emas", "Yomon"], "correctIndex": 1, "explanation": "quite + gradable = fairly; quite + extreme = completely." },
+      { "text": "Sifat tartibining to'g'ri ketma-ketligi qaysi?", "options": ["Colour-Size-Opinion", "Opinion-Size-Age-Shape-Colour-Origin-Material-Purpose", "Material-Origin-Colour", "Erkin"], "correctIndex": 1, "explanation": "a lovely big old red Italian wooden table." },
+      { "text": "«huge, exhausted, amazing» qaysi guruhga kiradi?", "options": ["Gradable", "Extreme", "Neytral", "Ravish"], "correctIndex": 1, "explanation": "Ular «juda» ma'nosini o'z ichiga oladi, shuning uchun very olmaydi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "27-adverbs",
+    "title": "Test — Ravishlar (B2)",
+    "questions": [
+      { "text": "END-tartibda ravishlar qanday joylashadi?", "options": ["Time-Place-Manner", "Manner → Place → Time (MAT)", "Place-Time-Manner", "Erkin"], "correctIndex": 1, "explanation": "She sang beautifully (M) in the hall (P) last night (T)." },
+      { "text": "Chastota ravishlari qayerda turadi?", "options": ["Gap oxirida", "O'rtada — fe'l oldida, be/aux dan keyin", "Gap boshida", "Sifatdan keyin"], "correctIndex": 1, "explanation": "I always go ↔ I am always busy ↔ I have always known." },
+      { "text": "«only, even, just» ning o'rni nimaga ta'sir qiladi?", "options": ["Hech nimaga", "MA'NOGA — fokus ravishlari", "Faqat ohangga", "Faqat uzunlikka"], "correctIndex": 1, "explanation": "Only I saw him ≠ I saw only him." },
+      { "text": "«hardly» va «hard» qanday farqlanadi?", "options": ["Farqi yo'q", "hardly — deyarli yo'q; hard — qattiq", "hard — deyarli yo'q", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Boshqa tuzoqlar: late ≠ lately; near ≠ nearly." },
+      { "text": "«quickly» ning qiyosiy shakli qanday?", "options": ["quicklier", "more quickly", "quicklyer", "most quickly"], "correctIndex": 1, "explanation": "-ly → more; qisqa ravish → -er (faster); well→better, badly→worse." }
+    ]
+  }
+]

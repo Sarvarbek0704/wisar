@@ -1,0 +1,116 @@
+[
+  {
+    "topic": "rus-tili",
+    "section": "01-a1-boshlangich",
+    "article": "05-rod-otlar",
+    "title": "Test — Rod (jins) ni aniqlash",
+    "questions": [
+      {
+        "text": "«кни́га» so'zi qaysi rodda?",
+        "options": ["мужско́й (m)", "же́нский (f)", "сре́дний (n)", "Rus tilida rod yo'q"],
+        "correctIndex": 1,
+        "explanation": "So'z -а bilan tugagani uchun же́нский род (f). Olmoshi — она́."
+      },
+      {
+        "text": "Qaysi so'z сре́дний род (n)?",
+        "options": ["стол", "ла́мпа", "окно́", "чай"],
+        "correctIndex": 2,
+        "explanation": "окно́ -о bilan tugaydi → сре́дний род. стол/чай — undosh va -й (m), ла́мпа — -а (f)."
+      },
+      {
+        "text": "«па́па» so'zi qaysi rodda?",
+        "options": ["же́нский — chunki -а bilan tugaydi", "мужско́й — chunki erkak kishini anglatadi", "сре́дний", "Ikkalasi ham bo'lishi mumkin"],
+        "correctIndex": 1,
+        "explanation": "ISTISNO: oxiri -а bo'lsa ham, so'z erkak kishini anglatsa — мужско́й род. Shuning uchun «па́па был», «па́па была́» emas. Xuddi shunday: дя́дя, де́душка, мужчи́на."
+      },
+      {
+        "text": "-о yoki -е bilan tugagan ot qaysi olmosh bilan almashtiriladi?",
+        "options": ["он", "она́", "оно́", "они́"],
+        "correctIndex": 2,
+        "explanation": "-о/-е → сре́дний род → olmoshi оно́ (окно́ → оно́, мо́ре → оно́)."
+      },
+      {
+        "text": "To'g'ri variantni tanlang: «___ окно́» (mening derazam)",
+        "options": ["мой", "моя́", "моё", "мои́"],
+        "correctIndex": 2,
+        "explanation": "окно́ — сре́дний род, shuning uchun egalik olmoshi ham o'rta rodda: моё. Egalik olmoshi doim otning rodiga moslashadi."
+      }
+    ]
+  },
+  {
+    "topic": "rus-tili",
+    "section": "01-a1-boshlangich",
+    "article": "07-otlar-koplik",
+    "title": "Test — Otlarning ko'pligi",
+    "questions": [
+      {
+        "text": "«стол» so'zining ko'plik shakli qaysi?",
+        "options": ["сто́ла", "столы́", "столо́в", "сто́ли"],
+        "correctIndex": 1,
+        "explanation": "Erkak rod undosh bilan tugasa → -ы qo'shiladi: стол → столы́. Urg'u oxirga ko'chadi."
+      },
+      {
+        "text": "«кни́га» ko'plikda qanday bo'ladi?",
+        "options": ["кни́гы", "кни́ги", "кни́га", "кни́гов"],
+        "correctIndex": 1,
+        "explanation": "Ayol rod -а → -ы bo'lishi kerak edi, lekin к harfidan keyin DOIM -и yoziladi (orfografiya qoidasi). Shuning uchun кни́ги, «книгы» emas."
+      },
+      {
+        "text": "«окно́» ko'pligi qaysi?",
+        "options": ["окны́", "о́кна", "окни́", "окно́в"],
+        "correctIndex": 1,
+        "explanation": "O'rta rod -о → -а: окно́ → о́кна. Diqqat — urg'u boshiga ko'chadi. Xuddi shunday: мо́ре → моря́ (-е → -я)."
+      },
+      {
+        "text": "Qaysi juftlik ISTISNO (oddiy qoidaga bo'ysunmaydi)?",
+        "options": ["стол → столы́", "кни́га → кни́ги", "друг → друзья́", "ла́мпа → ла́мпы"],
+        "correctIndex": 2,
+        "explanation": "друг → друзья́ — istisno. Yana yodlash kerak bo'lganlar: дом → дома́, челове́к → лю́ди, ребёнок → де́ти."
+      },
+      {
+        "text": "Qaysi harflardan keyin ko'plikda doim -и yoziladi?",
+        "options": ["б, в, г, д", "г, к, х, ж, ш, ч, щ", "faqat unlilardan keyin", "л, м, н, р"],
+        "correctIndex": 1,
+        "explanation": "г, к, х, ж, ш, ч, щ — bu harflardan keyin -ы emas, DOIM -и yoziladi: кни́ги, ру́чки, каранда́ши."
+      }
+    ]
+  },
+  {
+    "topic": "rus-tili",
+    "section": "01-a1-boshlangich",
+    "article": "13-bosh-va-tushum-kelishigi",
+    "title": "Test — Bosh va tushum kelishigi",
+    "questions": [
+      {
+        "text": "To'g'ri shaklni tanlang: «Я чита́ю ___» (кни́га)",
+        "options": ["кни́га", "кни́гу", "кни́ги", "кни́ге"],
+        "correctIndex": 1,
+        "explanation": "чита́ть fe'li tushum kelishigini (Вини́тельный) talab qiladi. Ayol rod -а → -у: кни́га → кни́гу."
+      },
+      {
+        "text": "«Я ви́жу ___» (окно́) — qaysi shakl to'g'ri?",
+        "options": ["окно́", "окну́", "окна́", "окно́м"],
+        "correctIndex": 0,
+        "explanation": "O'rta rod otlar tushum kelishigida O'ZGARMAYDI: окно́ → окно́. Xuddi shunday jonsiz erkak rod: дом → дом."
+      },
+      {
+        "text": "Вини́тельный паде́ж (jonsiz otlar uchun) qaysi savolga javob beradi?",
+        "options": ["кто?", "что?", "кому?", "о чём?"],
+        "correctIndex": 1,
+        "explanation": "Jonsiz otlar uchun «что?» (nimani?). Jonli otlar uchun «кого?» — bu A2 darajasida o'rganiladi."
+      },
+      {
+        "text": "«Я покупа́ю дом» — «дом» qaysi kelishikda?",
+        "options": ["Имени́тельный, chunki shakli o'zgarmagan", "Вини́тельный, shakli И. bilan bir xil", "Роди́тельный", "Kelishigi yo'q"],
+        "correctIndex": 1,
+        "explanation": "Bu — Вини́тельный (vositasiz to'ldiruvchi: nimani sotib olyapman?). Jonsiz erkak rodda shakl Имени́тельный bilan bir xil ko'rinadi, lekin vazifasi boshqa."
+      },
+      {
+        "text": "«неде́ля» so'zi tushum kelishigida qanday bo'ladi?",
+        "options": ["неде́ля", "неде́ли", "неде́лю", "неде́лей"],
+        "correctIndex": 2,
+        "explanation": "Ayol rod -я → -ю: неде́ля → неде́лю. (-а → -у, -я → -ю qoidasi.)"
+      }
+    ]
+  }
+]

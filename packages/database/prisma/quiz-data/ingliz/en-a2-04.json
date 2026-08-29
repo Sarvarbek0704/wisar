@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "22-daily-life-routines-reading",
+    "title": "Test — Kundalik hayot va o'qish ko'nikmasi",
+    "questions": [
+      { "text": "«Skimming» nima?", "options": ["Aniq ma'lumot izlash", "Umumiy g'oyani tez ilg'ash", "Har so'zni tarjima qilish", "Ovoz chiqarib o'qish"], "correctIndex": 1, "explanation": "Scanning esa — aniq ma'lumotni (sana, ism, raqam) topish." },
+      { "text": "Extensive reading da notanish so'z uchraganda nima qilish kerak?", "options": ["Lug'atdan qarash", "Kontekstdan taxmin qilib, oqib o'qishni davom ettirish", "To'xtash", "Yozib olish"], "correctIndex": 1, "explanation": "Har so'zni qarash o'qish tezligini va zavqini yo'qotadi." },
+      { "text": "«___ the housework» — qaysi fe'l to'g'ri?", "options": ["make", "do", "have", "take"], "correctIndex": 1, "explanation": "do the housework/dishes/laundry; make the bed/a meal; have a shower/break." },
+      { "text": "«___ a shower» — qaysi fe'l?", "options": ["do", "make", "have", "take (AmE) yoki have (BrE)"], "correctIndex": 3, "explanation": "have a shower (BrE) / take a shower (AmE) — ikkalasi ham to'g'ri." },
+      { "text": "«binge-watch» nimani anglatadi?", "options": ["Ozgina ko'rmoq", "Ketma-ket ko'p seriya ko'rmoq", "Kitob o'qimoq", "Sport qilmoq"], "correctIndex": 1, "explanation": "Bo'sh vaqt: hang out, work out, scroll, binge-watch, catch up, chill." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "23-a2-checkpoint-test",
+    "title": "Test — A2 oraliq nazorat",
+    "questions": [
+      { "text": "«I ___ (work) now» — to'g'ri shakl?", "options": ["work", "am working", "worked", "will work"], "correctIndex": 1, "explanation": "Hozir sodir bo'layotgan ish — Present Continuous." },
+      { "text": "«She ___ (go) to Paris last year» — to'g'ri shakl?", "options": ["goes", "went", "gone", "was going"], "correctIndex": 1, "explanation": "Past Simple, irregular: go → went." },
+      { "text": "«This is ___ film I've ever seen» — to'g'ri shakl?", "options": ["good", "better", "the best", "best"], "correctIndex": 2, "explanation": "Orttirma daraja doim «the» bilan; good → the best." },
+      { "text": "«You ___ smoke here» (ta'qiq) — to'g'ri shakl?", "options": ["don't have to", "mustn't", "shouldn't have to", "needn't"], "correctIndex": 1, "explanation": "mustn't — ta'qiq; don't have to — shart emas." },
+      { "text": "«There is ___ information» — to'g'ri shakl?", "options": ["many", "much", "a few", "few"], "correctIndex": 1, "explanation": "information — sanalmaydigan ot, shuning uchun much." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "24-possessive-reflexive-pronouns",
+    "title": "Test — Egalik va o'zlik olmoshlari",
+    "questions": [
+      { "text": "«mine book» — bu nega xato?", "options": ["mine xato", "mine otsiz ishlatiladi: my book yoki It's mine", "book xato", "Xato emas"], "correctIndex": 1, "explanation": "Egalik olmoshi (mine, yours, hers) otdan keyin turmaydi." },
+      { "text": "«a ___ friend» / «a friend of ___ » — to'g'ri variant?", "options": ["my / my", "my friend / of mine", "mine / of my", "mine friend"], "correctIndex": 1, "explanation": "«a my friend» xato — to'g'risi: a friend of mine." },
+      { "text": "«I did it ___ » (o'zim) — to'g'ri shakl?", "options": ["me", "myself", "mine", "my"], "correctIndex": 1, "explanation": "O'zlik olmoshi ta'kid uchun ham ishlatiladi. by myself — yolg'iz." },
+      { "text": "«each other» va «themselves» qanday farqlanadi?", "options": ["Farqi yo'q", "each other — bir-birini; themselves — har biri o'zini", "themselves — bir-birini", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "They looked at each other ≠ They looked at themselves (oynada)." },
+      { "text": "«I feel myself good» — bu nega xato?", "options": ["good xato", "feel o'zlik olmoshi olmaydi: I feel good", "I xato", "Xato emas"], "correctIndex": 1, "explanation": "O'zlik olmaydigan fe'llar: feel, relax, concentrate, meet, get dressed." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "25-verb-ing-to-ed-ing-adjectives",
+    "title": "Test — Verb + ing / to va -ed/-ing sifatlar",
+    "questions": [
+      { "text": "«I enjoy ___ » — bo'shliqqa qaysi shakl?", "options": ["to read", "reading", "read", "reads"], "correctIndex": 1, "explanation": "Fe'l + -ing: enjoy, finish, mind, avoid, keep, can't stand, miss." },
+      { "text": "«I decided ___ » — bo'shliqqa qaysi shakl?", "options": ["going", "to go", "go", "gone"], "correctIndex": 1, "explanation": "Fe'l + to: want, need, decide, hope, plan, promise, learn, manage, agree." },
+      { "text": "«stop smoking» va «stop to smoke» qanday farqlanadi?", "options": ["Farqi yo'q", "stop -ing — tashlamoq; stop to — ... uchun to'xtamoq", "stop to — tashlamoq", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Shunga o'xshash: remember/forget -ing (o'tmish) ↔ to (kelajak vazifa)." },
+      { "text": "«I'm good at ___ » — bo'shliqqa qaysi shakl?", "options": ["swim", "to swim", "swimming", "swims"], "correctIndex": 2, "explanation": "PREDLOGdan keyin DOIM -ing: interested in learning, look forward to seeing." },
+      { "text": "«I'm boring» nimani anglatadi?", "options": ["Zerikkanman", "Zerikarli odamman", "Charchaganman", "Qiziqarliman"], "correctIndex": 1, "explanation": "-ed — his (odam): I'm bored; -ing — manba (narsa): The film is boring." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "26-could-may-used-to",
+    "title": "Test — Could, may, used to",
+    "questions": [
+      { "text": "«used to» dan keyin qanday fe'l keladi?", "options": ["V-ing", "Sof fe'l (V1)", "V2", "to + V1"], "correctIndex": 1, "explanation": "I used to play football — o'tmish odati yoki holati (endi yo'q)." },
+      { "text": "«used to» ning inkori qanday?", "options": ["didn't used to", "didn't use to", "don't used to", "usen't to"], "correctIndex": 1, "explanation": "Savolda ham: Did you use to...?" },
+      { "text": "«used to do» va «be used to doing» qanday farqlanadi?", "options": ["Farqi yo'q", "used to do — o'tmish odati; be used to doing — ko'nikkan (hozir)", "Ikkalasi o'tmish", "be used to — o'tmish"], "correctIndex": 1, "explanation": "I used to live here (ilgari) ≠ I'm used to living here (ko'nikkanman)." },
+      { "text": "Bitta martalik yutuq haqida gapirganda qaysi shakl ishlatiladi?", "options": ["could", "was able to / managed to", "used to", "would"], "correctIndex": 1, "explanation": "could — umumiy qobiliyat; bitta konkret holatda «was able to»." },
+      { "text": "«might» qanday ishonch darajasini bildiradi?", "options": ["100%", "could/may dan kamroq ishonch", "Ta'qiq", "Majburiyat"], "correctIndex": 1, "explanation": "It could/may/might rain — taxmin; might eng kam ishonch." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "27-movement-prepositions",
+    "title": "Test — Harakat predloglari",
+    "questions": [
+      { "text": "«in» va «into» qanday farqlanadi?", "options": ["Farqi yo'q", "in — turish (joy); into — harakat (yo'nalish)", "into — turish", "Ikkalasi harakat"], "correctIndex": 1, "explanation": "He is in the room ↔ He walked into the room. on ↔ onto." },
+      { "text": "«___ the forest» (o'rmon ichidan o'tib) — qaysi predlog?", "options": ["across", "through", "over", "along"], "correctIndex": 1, "explanation": "across — ochiq sirt (road, bridge); through — ichidan (forest, tunnel, door)." },
+      { "text": "«to» va «towards» qanday farqlanadi?", "options": ["Farqi yo'q", "to — manzilga yetadi; towards — tomonga qarab", "towards — yetadi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "I went to the station ↔ I walked towards the station." },
+      { "text": "«We arrived ___ Tashkent» — qaysi predlog?", "options": ["to", "in", "at", "on"], "correctIndex": 1, "explanation": "arrive IN (shahar/mamlakat), arrive AT (aniq joy). «arrive to» — xato." },
+      { "text": "«get ___ the bus» — qaysi predlog?", "options": ["into", "on", "in", "to"], "correctIndex": 1, "explanation": "get on/off — avtobus, poyezd, samolyot; get into/out of — mashina." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "28-zero-first-conditional",
+    "title": "Test — Zero va first conditional",
+    "questions": [
+      { "text": "«If you heat ice, it ___ » — to'g'ri shakl?", "options": ["will melt", "melts", "melted", "would melt"], "correctIndex": 1, "explanation": "Zero conditional (doimiy haqiqat): If + present, present." },
+      { "text": "«If it rains, I ___ home» — to'g'ri shakl?", "options": ["stay", "will stay", "stayed", "would stay"], "correctIndex": 1, "explanation": "First conditional (real kelajak): If + present, will + fe'l." },
+      { "text": "«If it will rain...» — bu nega xato?", "options": ["rain xato", "if-qismda WILL ishlatilmaydi", "if xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: If it rains, ... — bu A2 ning eng muhim qoidasi." },
+      { "text": "«unless» nimani anglatadi?", "options": ["agar", "if ... not (agar ...masangiz)", "chunki", "lekin"], "correctIndex": 1, "explanation": "Unless you hurry = If you don't hurry." },
+      { "text": "«If» boshda kelganda vergul kerakmi?", "options": ["Yo'q", "Ha — If..., natija", "Faqat uzun gapda", "Har doim yo'q"], "correctIndex": 1, "explanation": "Teskari tartibda esa vergul qo'yilmaydi: I'll stay home if it rains." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "29-phone-directions-health-funksional",
+    "title": "Test — Telefon, yo'l ko'rsatish, sog'liq",
+    "questions": [
+      { "text": "Telefonda «Men Alimen» qanday aytiladi?", "options": ["I am Ali", "This is Ali", "It's me Ali", "Here Ali"], "correctIndex": 1, "explanation": "Telefonda o'zini tanishtirish: This is Ali. Kim so'raganda: Who's calling?" },
+      { "text": "«Hold on» nimani anglatadi?", "options": ["Qo'ng'iroqni tugating", "Kuting, ushlab turing", "Qayta qo'ng'iroq qiling", "Ovozingiz eshitilmayapti"], "correctIndex": 1, "explanation": "Telefon tili: the line's busy, wrong number, you're breaking up." },
+      { "text": "«To'g'riga yuring» qanday aytiladi?", "options": ["Go direct", "Go straight on", "Go forward on", "Turn straight"], "correctIndex": 1, "explanation": "Yo'l: turn left/right, go past/across/along, It's on your left." },
+      { "text": "«You can't miss it» nimani anglatadi?", "options": ["Topolmaysiz", "Albatta topasiz, ko'zga tashlanadi", "Yaqin emas", "Yo'qolgan"], "correctIndex": 1, "explanation": "Yo'l ko'rsatishning odatiy yakuniy iborasi." },
+      { "text": "«Boshim og'riyapti» qanday aytiladi?", "options": ["My head is pain", "I have a headache", "I am headache", "My head hurt"], "correctIndex": 1, "explanation": "I have a cold/temperature; My ... hurts; a pain in my ... Get well soon!" }
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "01-nextjs-kirish-nega-next",
+    "title": "Test — Next.js kirish",
+    "questions": [
+      { "text": "SPA ning asosiy cheklovi qaysi?", "options": ["Tezlik", "SEO va boshlang'ich yuklash og'irligi", "Xavfsizlik", "Routing"], "correctIndex": 1, "explanation": "Bo'sh HTML qidiruv tizimlari uchun muammo tug'diradi." },
+      { "text": "Next.js qaysi rendering strategiyalarini beradi?", "options": ["Faqat SSR", "CSR, SSR, SSG, ISR", "Faqat SSG", "Faqat CSR"], "correctIndex": 1, "explanation": "Har sahifa uchun alohida strategiya tanlash mumkin." },
+      { "text": "App Router va Pages Router qanday farqlanadi?", "options": ["Farqi yo'q", "App Router — Server Components va layout asosida, zamonaviy", "Pages Router zamonaviy", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Yangi loyihalar uchun App Router tavsiya etiladi." },
+      { "text": "«ISR» nima?", "options": ["Server render", "Statik sahifani belgilangan davrda qayta generatsiya qilish", "Client render", "Streaming"], "correctIndex": 1, "explanation": "SSG tezligi + yangilanadigan kontent." },
+      { "text": "Qachon oddiy SPA yetarli?", "options": ["Har doim", "SEO kerak bo'lmagan ichki panel yoki dashboard uchun", "Blog uchun", "E-commerce uchun"], "correctIndex": 1, "explanation": "Ommaviy kontent sayti uchun Next.js afzal." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "02-app-router-file-based-routing",
+    "title": "Test — App Router",
+    "questions": [
+      { "text": "«(group)» papka nima beradi?", "options": ["Yangi route", "Route group — URL'ga ta'sir qilmaydi, faqat tashkil qiladi", "Dinamik segment", "Layout"], "correctIndex": 1, "explanation": "Turli layoutlarni bir darajada guruhlash uchun." },
+      { "text": "«loading.tsx» nima qiladi?", "options": ["Xato", "Suspense fallback — sahifa yuklanayotganda ko'rsatiladi", "404", "Layout"], "correctIndex": 1, "explanation": "error.tsx va not-found.tsx — boshqa maxsus fayllar." },
+      { "text": "«[...slug]» nimani anglatadi?", "options": ["Bitta segment", "Catch-all — bir necha segmentni ushlaydi", "Query", "Group"], "correctIndex": 1, "explanation": "[[...slug]] esa ixtiyoriy catch-all." },
+      { "text": "«generateStaticParams» nima uchun kerak?", "options": ["SSR", "Dinamik route'lar uchun build vaqtida sahifalarni oldindan yaratish", "Cache", "Redirect"], "correctIndex": 1, "explanation": "Dinamik SSG imkonini beradi." },
+      { "text": "Nested layout qanday ishlaydi?", "options": ["Almashadi", "Ota layout saqlanadi, faqat ichki qism o'zgaradi", "Har safar yangi", "Ishlamaydi"], "correctIndex": 1, "explanation": "Navigatsiyada layout state saqlanib qoladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "03-server-components-vs-client-components",
+    "title": "Test — Server va Client Components",
+    "questions": [
+      { "text": "App Router'da komponentlar standart holatda qanday?", "options": ["Client", "SERVER Component", "Ikkalasi", "Static"], "correctIndex": 1, "explanation": "«use client» direktivasi bilan client'ga o'tkaziladi." },
+      { "text": "«use client» qanday ta'sir qiladi?", "options": ["Faqat shu faylga", "Shu fayl va undan import qilingan barcha komponentlarga (cascade)", "Butun loyihaga", "Hech nimaga"], "correctIndex": 1, "explanation": "Shuning uchun chegarani iloji boricha pastga tushirish kerak." },
+      { "text": "Server Component'dan Client'ga uzatiladigan props qanday bo'lishi kerak?", "options": ["Har qanday", "Serializable — funksiya uzatib bo'lmaydi", "Faqat string", "Faqat obyekt"], "correctIndex": 1, "explanation": "Funksiya o'rniga Server Action uzatiladi." },
+      { "text": "Client Component ichida Server Component qanday ishlatiladi?", "options": ["To'g'ridan import", "children prop sifatida uzatiladi", "Mumkin emas", "use server bilan"], "correctIndex": 1, "explanation": "Bu — kompozitsiyaning asosiy naqshi." },
+      { "text": "Server Component'ning asosiy afzalligi qaysi?", "options": ["Interaktivlik", "Bundle'ga tushmaydi va DB/secret'ga bevosita murojaat qila oladi", "Hooklar", "State"], "correctIndex": 1, "explanation": "Client bundle hajmi sezilarli kamayadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "04-rendering-ssr-ssg-isr-csr",
+    "title": "Test — Rendering strategiyalari",
+    "questions": [
+      { "text": "SSG qachon eng mos?", "options": ["Har foydalanuvchiga har xil kontent", "Kam o'zgaradigan ommaviy kontent (blog, hujjat)", "Real-time", "Dashboard"], "correctIndex": 1, "explanation": "Build vaqtida HTML yaratiladi — eng tez." },
+      { "text": "«Hydration mismatch» nima?", "options": ["Build xatosi", "Server HTML va client render natijasi mos kelmasligi", "CSS xato", "Route xato"], "correctIndex": 1, "explanation": "Date.now() yoki random qiymat tipik sabab." },
+      { "text": "Streaming va Suspense nima beradi?", "options": ["Cache", "Sahifani qismlarga bo'lib, tayyor bo'lgan qismini darhol yuborish", "SSG", "ISR"], "correctIndex": 1, "explanation": "Sekin ma'lumot butun sahifani bloklamaydi." },
+      { "text": "Edge va Node runtime qanday farqlanadi?", "options": ["Farqi yo'q", "Edge — foydalanuvchiga yaqin, cheklangan API; Node — to'liq imkoniyat", "Node tezroq", "Edge to'liq"], "correctIndex": 1, "explanation": "Edge'da ba'zi Node API'lari mavjud emas." },
+      { "text": "«PPR» (Partial Prerendering) nima beradi?", "options": ["Faqat SSG", "Bir sahifada statik qobiq + dinamik qismlar", "Faqat SSR", "Cache"], "correctIndex": 1, "explanation": "Statik tezlik va dinamik kontentni birlashtiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "05-data-fetching-va-server-actions",
+    "title": "Test — Data fetching va Server Actions",
+    "questions": [
+      { "text": "Waterfall so'rovlaridan qanday qochiladi?", "options": ["await ketma-ket", "Promise.all bilan parallel bajarish", "Cache", "Suspense"], "correctIndex": 1, "explanation": "Ketma-ket await har so'rov vaqtini qo'shadi." },
+      { "text": "«Request memoization» nima qiladi?", "options": ["Cache", "Bir render davomida bir xil fetch'ni takrorlamaydi (dedup)", "ISR", "Prefetch"], "correctIndex": 1, "explanation": "Bir ma'lumotni bir necha komponentda olish xavfsiz bo'ladi." },
+      { "text": "Server Action nima?", "options": ["API route", "«use server» bilan belgilangan, serverda ishlaydigan funksiya", "Middleware", "Hook"], "correctIndex": 1, "explanation": "Formadan to'g'ridan-to'g'ri chaqirilishi mumkin." },
+      { "text": "Server Action'da validatsiya nima uchun majburiy?", "options": ["Chiroyli", "U ham public endpoint — mijozga ishonib bo'lmaydi", "Tezlik", "Format"], "correctIndex": 1, "explanation": "Zod bilan kirish tekshiriladi va auth qayta ko'rib chiqiladi." },
+      { "text": "«useOptimistic» nima beradi?", "options": ["Cache", "Server javobini kutmasdan UI'ni oldindan yangilash", "Retry", "Prefetch"], "correctIndex": 1, "explanation": "Xato bo'lsa avtomatik oldingi holatga qaytadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "06-route-handlers-va-middleware",
+    "title": "Test — Route Handlers va Middleware",
+    "questions": [
+      { "text": "Route Handler qaysi faylda e'lon qilinadi?", "options": ["page.tsx", "route.ts", "layout.tsx", "api.ts"], "correctIndex": 1, "explanation": "GET, POST kabi funksiyalar export qilinadi." },
+      { "text": "Middleware qachon ishlaydi?", "options": ["Render'dan keyin", "So'rov route'ga yetguncha", "Faqat API'da", "Build'da"], "correctIndex": 1, "explanation": "Auth tekshiruvi va redirect uchun ideal joy." },
+      { "text": "«matcher» konfiguratsiyasi nima beradi?", "options": ["Cache", "Middleware qaysi yo'llarda ishlashini cheklaydi", "Redirect", "Header"], "correctIndex": 1, "explanation": "Statik fayllarda ortiqcha ishlashning oldini oladi." },
+      { "text": "Route Handler va Server Action qachon tanlanadi?", "options": ["Farqi yo'q", "Tashqi mijoz uchun — Route Handler; ichki forma uchun — Server Action", "Doim Route Handler", "Doim Action"], "correctIndex": 1, "explanation": "Server Action faqat o'z ilovangiz ichida ishlatiladi." },
+      { "text": "Middleware qaysi runtime'da ishlaydi?", "options": ["Node majburiy", "Odatda Edge runtime", "Browser", "Worker"], "correctIndex": 1, "explanation": "Shuning uchun og'ir kutubxonalar ishlatilmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "07-caching-va-performance",
+    "title": "Test — Next.js caching va performance",
+    "questions": [
+      { "text": "Next.js'da nechta kesh qatlami bor?", "options": ["2", "3", "4: Request Memoization, Data Cache, Full Route Cache, Router Cache", "5"], "correctIndex": 2, "explanation": "Har biri o'z darajasida ishlaydi." },
+      { "text": "«revalidateTag» nima qiladi?", "options": ["Sahifa yaratadi", "Tegga bog'langan keshni bekor qiladi", "Redirect", "Prefetch"], "correctIndex": 1, "explanation": "Ma'lumot o'zgarganda aniq keshni yangilash imkonini beradi." },
+      { "text": "«next/image» nima beradi?", "options": ["Faqat stil", "Avtomatik optimizatsiya, o'lcham va lazy loading", "Cache", "SEO faqat"], "correctIndex": 1, "explanation": "CLS ni kamaytiradi va zamonaviy formatlarga o'giradi." },
+      { "text": "«next/font» nima uchun kerak?", "options": ["Stil", "Shriftni self-host qilib, layout shift va tashqi so'rovni yo'qotish", "Cache", "SEO"], "correctIndex": 1, "explanation": "Google Fonts so'rovi build vaqtida bajariladi." },
+      { "text": "Core Web Vitals'ning asosiy ko'rsatkichlari qaysi?", "options": ["FPS, RAM", "LCP, CLS, INP", "TTFB faqat", "DOM size"], "correctIndex": 1, "explanation": "Ular real foydalanuvchi tajribasini o'lchaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "08-metadata-seo-optimizatsiya",
+    "title": "Test — Metadata va SEO",
+    "questions": [
+      { "text": "Dinamik sahifa uchun metadata qanday beriladi?", "options": ["metadata obyekti", "generateMetadata funksiyasi", "head tegi", "meta tegi"], "correctIndex": 1, "explanation": "U ma'lumotni olib, sarlavha va tavsifni hosil qiladi." },
+      { "text": "Open Graph metadata nima uchun kerak?", "options": ["SEO reytingi", "Ijtimoiy tarmoqlarda havola ko'rinishini boshqarish", "Cache", "Analytics"], "correctIndex": 1, "explanation": "metadataBase nisbiy URL'larni to'liq qiladi." },
+      { "text": "«JSON-LD» nima beradi?", "options": ["Tezlik", "Strukturali ma'lumot — qidiruvda boy natija (rich result)", "Cache", "Stil"], "correctIndex": 1, "explanation": "Mahsulot, maqola va FAQ uchun ishlatiladi." },
+      { "text": "«viewport» va «themeColor» qayerda e'lon qilinadi?", "options": ["metadata ichida", "Alohida «viewport» export sifatida", "layout'da", "head'da"], "correctIndex": 1, "explanation": "Next.js 14+ da ular metadata'dan ajratilgan." },
+      { "text": "Sahifani indeksdan chiqarish uchun nima ishlatiladi?", "options": ["robots.txt faqat", "metadata'da robots: { index: false }", "CSS", "Middleware"], "correctIndex": 1, "explanation": "sitemap.ts va robots.ts ham App Router'da qo'llab-quvvatlanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "09-autentifikatsiya-nextauth-authjs",
+    "title": "Test — Auth.js (NextAuth)",
+    "questions": [
+      { "text": "Auth.js'da sessiya strategiyalari qaysi?", "options": ["Faqat JWT", "JWT va database", "Faqat cookie", "Faqat session"], "correctIndex": 1, "explanation": "Database strategiyasi adapter talab qiladi." },
+      { "text": "Rolni sessiyaga qanday qo'shamiz?", "options": ["Provider'da", "jwt va session callback'lari orqali", "Middleware'da", "Adapter'da"], "correctIndex": 1, "explanation": "Avval token'ga, keyin sessiyaga uzatiladi." },
+      { "text": "«Credentials» provayder bilan parol qanday tekshiriladi?", "options": ["Ochiq solishtirish", "bcrypt.compare bilan", "Base64", "Hash'siz"], "correctIndex": 1, "explanation": "Parol hech qachon ochiq saqlanmaydi." },
+      { "text": "«Adapter» nima vazifani bajaradi?", "options": ["UI", "Foydalanuvchi va sessiyani bazaga bog'lash", "Routing", "Cache"], "correctIndex": 1, "explanation": "Prisma, Drizzle va boshqa adapterlar mavjud." },
+      { "text": "Auth.js muqobillari qaysi?", "options": ["Yo'q", "Clerk, Lucia, Supabase Auth", "Passport faqat", "JWT"], "correctIndex": 1, "explanation": "Alohida backend bo'lsa (NestJS), auth o'sha yerda ham bo'lishi mumkin." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "10-deploy-va-production",
+    "title": "Test — Next.js deploy",
+    "questions": [
+      { "text": "Docker uchun qaysi build rejimi tavsiya etiladi?", "options": ["Oddiy build", "output: 'standalone'", "Static export", "Dev mode"], "correctIndex": 1, "explanation": "Faqat kerakli fayllar bilan kichik image chiqadi." },
+      { "text": "Client'ga uzatiladigan env o'zgaruvchisi qanday nomlanadi?", "options": ["VITE_", "NEXT_PUBLIC_", "PUBLIC_", "REACT_APP_"], "correctIndex": 1, "explanation": "Prefikssiz o'zgaruvchilar faqat serverda qoladi." },
+      { "text": "«Preview deployment» nima beradi?", "options": ["Production", "Har PR uchun alohida, jonli URL", "Rollback", "Cache"], "correctIndex": 1, "explanation": "Review jarayonini sezilarli osonlashtiradi." },
+      { "text": "Xatolarni kuzatish uchun nima ishlatiladi?", "options": ["console.log", "Sentry", "Analytics faqat", "Log fayl"], "correctIndex": 1, "explanation": "Vercel Analytics va Speed Insights performance uchun." },
+      { "text": "«Instant Rollback» nima beradi?", "options": ["Yangi deploy", "Oldingi ishlaydigan versiyaga darhol qaytish", "Cache tozalash", "Build"], "correctIndex": 1, "explanation": "Buzuq deploy zararini minimallashtiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "13-qism-nextjs", "article": "11-yakuniy-loyiha-va-amaliyot",
+    "title": "Test — Yakuniy loyiha",
+    "questions": [
+      { "text": "Loyihani qayerdan boshlash kerak?", "options": ["Kod yozishdan", "Rejalashtirish: g'oya → funksiyalar → arxitektura", "Dizayndan", "Deploy'dan"], "correctIndex": 1, "explanation": "Aniq reja keyingi bosqichlarni sezilarli tezlashtiradi." },
+      { "text": "Qurish tartibi qanday bo'lishi kerak?", "options": ["Hammasi birdan", "Poydevor (auth, DB, layout) → asosiy funksiya → sayqal", "Dizayn oxirida", "Deploy avval"], "correctIndex": 1, "explanation": "Vertikal tilim (bir to'liq funksiya) yondashuvi ham samarali." },
+      { "text": "Portfolio loyihasida nima muhim?", "options": ["Faqat kod", "README, jonli demo va toza kod", "Faqat demo", "Faqat GitHub"], "correctIndex": 1, "explanation": "Ish beruvchi avval demo va README'ni ko'radi." },
+      { "text": "Eng ko'p uchraydigan xato qaysi?", "options": ["Kam funksiya", "Ko'lamni haddan oshirish (scope creep) — loyiha tugamaydi", "Tez tugatish", "Test yozish"], "correctIndex": 1, "explanation": "MVP'ni tugatib, keyin kengaytirish to'g'riroq." },
+      { "text": "Texnologiya qanday tanlanadi?", "options": ["Eng yangisini", "Loyiha talablari va o'z tajribangizga qarab", "Eng mashhurini", "Tasodifiy"], "correctIndex": 1, "explanation": "Notanish stack loyiha muddatini keskin uzaytiradi." }
+    ]
+  }
+]

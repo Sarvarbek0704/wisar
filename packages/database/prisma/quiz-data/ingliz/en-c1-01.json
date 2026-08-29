@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "01-tense-aspect-nuances",
+    "title": "Test — Zamon nuanslari",
+    "questions": [
+      { "text": "«I was wondering if you could help» — nega o'tgan zamon?", "options": ["Xato", "O'tgan zamon MASOFA yaratadi — muloyimlik", "Haqiqiy o'tmish", "Odat"], "correctIndex": 1, "explanation": "C1 da zamon uslubiy effekt uchun tanlanadi: masofa = muloyimlik yoki noreallik." },
+      { "text": "«So he walks in and says...» — bu qanday hodisa?", "options": ["Xato", "Historic present — hikoyani jonlantirish", "Kelajak", "Odat"], "correctIndex": 1, "explanation": "O'tmish voqeasini hozirgi zamonda aytish ta'sirchanlikni oshiradi." },
+      { "text": "«He's always interrupting!» qanday ottenka beradi?", "options": ["Neytral bayon", "G'ashlik, norozilik", "Maqtov", "Kelajak"], "correctIndex": 1, "explanation": "Present Continuous + always/keep — hissiy shikoyat." },
+      { "text": "«You're being silly» — nega stative fe'l Continuous da?", "options": ["Xato", "Vaqtinchalik xulq-atvorni bildiradi", "Doimiy xususiyat", "Kelajak"], "correctIndex": 1, "explanation": "«I'm loving it» ham shu qolipda — vaqtinchalik holat." },
+      { "text": "«Oil will float on water» — «will» bu yerda nima?", "options": ["Kelajak", "Qonuniyat yoki odat", "Va'da", "Iltimos"], "correctIndex": 1, "explanation": "He'll sit for hours — takroriy xulq-atvor." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "02-inversion-toliq",
+    "title": "Test — Inversiya (to'liq)",
+    "questions": [
+      { "text": "«Under no circumstances ___ you enter» — bo'shliqqa nima?", "options": ["hech narsa", "should/must", "you", "do you should"], "correctIndex": 1, "explanation": "Inkor ibora boshda → yordamchi + ega + fe'l." },
+      { "text": "«No sooner had he left ___ the phone rang» — bo'shliqqa nima?", "options": ["when", "than", "that", "as"], "correctIndex": 1, "explanation": "No sooner ... THAN; Hardly/Scarcely ... WHEN." },
+      { "text": "Shartli inversiyada «if» nima bo'ladi?", "options": ["Saqlanadi", "TUSHADI: Had I known / Were I you / Should you need", "Boshqa so'zga almashadi", "Ikki marta keladi"], "correctIndex": 1, "explanation": "Inkorda qisqarmaydi: Had I NOT known." },
+      { "text": "«Not only» dan keyin odatda nima keladi?", "options": ["and", "but also", "or", "so"], "correctIndex": 1, "explanation": "Not only did he arrive late, but he also forgot the documents." },
+      { "text": "«So + sifat» boshda kelganda qanday tuziladi?", "options": ["So tired he was", "So tired was he that...", "So he was tired", "Inversiya bo'lmaydi"], "correctIndex": 1, "explanation": "Such + (a) + ot + was... ham shu qolipda." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "03-cleft-sentences",
+    "title": "Test — Cleft gaplar",
+    "questions": [
+      { "text": "Cleft gapning maqsadi nima?", "options": ["Gapni qisqartirish", "Bitta elementni fokuslash", "Passiv yasash", "Savol berish"], "correctIndex": 1, "explanation": "Bitta gap bo'linadi va bir element ta'kidlanadi." },
+      { "text": "«It was John ___ called» — bo'shliqqa nima?", "options": ["which", "who / that", "what", "whose"], "correctIndex": 1, "explanation": "Odam → who/that; narsa → that/which; vaqt/joy/sabab → that." },
+      { "text": "«What he did was ___ call» — bo'shliqqa nima?", "options": ["calling", "(to) call", "called", "calls"], "correctIndex": 1, "explanation": "Wh-cleftda harakat fokusi (to) + V1 shaklida beriladi." },
+      { "text": "«All I want is...» — bu qanday cleft?", "options": ["It-cleft", "All-cleft — «yagona» ma'nosi", "Wh-cleft", "Passiv"], "correctIndex": 1, "explanation": "All you have to do is ask. All it takes is..." },
+      { "text": "«A holiday is what I need» — bu qanday shakl?", "options": ["Xato", "Teskari wh-cleft", "It-cleft", "All-cleft"], "correctIndex": 1, "explanation": "What I need is a holiday — teskari tartibda ham to'g'ri." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "04-subjunctive-rasmiy-tuzilmalar",
+    "title": "Test — Subjunctive (rasmiy tuzilmalar)",
+    "questions": [
+      { "text": "«I insist that he ___ present» — to'g'ri shakl?", "options": ["is", "be", "was", "will be"], "correctIndex": 1, "explanation": "Mandative subjunctive: that + ega + V1 (asos shakl)." },
+      { "text": "Subjunctive inkori qanday tuziladi?", "options": ["that he doesn't go", "that he not go — «do» siz", "that he don't go", "that he isn't go"], "correctIndex": 1, "explanation": "Passivda: that it BE DONE / BE SUBMITTED." },
+      { "text": "«It's high time we ___ » — to'g'ri shakl?", "options": ["leave", "left", "will leave", "have left"], "correctIndex": 1, "explanation": "It's (high) time + Past; I'd rather you DIDN'T." },
+      { "text": "«lest he ___ » — to'g'ri shakl?", "options": ["wakes", "wake", "woke", "will wake"], "correctIndex": 1, "explanation": "«lest» arxaik-rasmiy bog'lovchi, subjunctive talab qiladi." },
+      { "text": "«Be that as it may» — bu qanday shakl?", "options": ["Xato", "Formulaic subjunctive — qotib qolgan ibora", "Buyruq", "Savol"], "correctIndex": 1, "explanation": "Come what may, If need be, Suffice it to say, So be it." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "05-conditionals-ilgor",
+    "title": "Test — Shart gaplar (ilg'or)",
+    "questions": [
+      { "text": "«If I had slept, I wouldn't be tired now» — bu qanday shart?", "options": ["Third", "Mixed: o'tmish shart → hozirgi natija", "Second", "First"], "correctIndex": 1, "explanation": "Teskarisi: If I weren't shy, I would have asked (hozir → o'tmish)." },
+      { "text": "«Had it not been for...» nimaga teng?", "options": ["If it were not for", "If it had not been for", "Unless it was", "Even if it was"], "correctIndex": 1, "explanation": "Inverted conditional — rasmiy uslub." },
+      { "text": "«But for your help...» nimani anglatadi?", "options": ["Yordamingiz uchun", "Yordamingiz bo'lmaganida", "Yordamingizga qaramay", "Yordamingizdan keyin"], "correctIndex": 1, "explanation": "Implied conditional: Without X, Otherwise, Given X." },
+      { "text": "«Were I to accept» qanday ma'no beradi?", "options": ["O'tmish faraz", "Kelajakdagi faraz", "Hozirgi fakt", "Majburiyat"], "correctIndex": 1, "explanation": "Were I to... — rasmiy kelajak faraz shakli." },
+      { "text": "«in the event that» qaysi registrga tegishli?", "options": ["Og'zaki", "Rasmiy", "Jargon", "Bolalar tili"], "correctIndex": 1, "explanation": "Supposing/Say — og'zaki muqobillar." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "06-hedging-ehtiyotkor-til",
+    "title": "Test — Hedging (ehtiyotkor til)",
+    "questions": [
+      { "text": "Hedging nima uchun kerak?", "options": ["Gapni uzaytirish", "Da'voni yumshatish — mutlaq emas, ehtiyotkor qilish", "Rasmiylik uchun", "Qisqartirish uchun"], "correctIndex": 1, "explanation": "Akademik va professional yozuvning yuragi." },
+      { "text": "Akademik matnda «proves» o'rniga nima ishlatiladi?", "options": ["shows definitely", "suggests / indicates", "confirms totally", "means"], "correctIndex": 1, "explanation": "Qattiq → yumshoq: everyone→many, will→is likely to, is→may be." },
+      { "text": "«It could be argued that...» qanday vosita?", "options": ["Modal hedge", "«It» qurilmasi orqali hedging", "Ravish", "Miqdor"], "correctIndex": 1, "explanation": "It seems/appears that, It is likely that, It would seem." },
+      { "text": "«tend to» qanday vazifani bajaradi?", "options": ["Kuchaytiradi", "«always» ni yumshatadi", "Inkor qiladi", "Savol yasaydi"], "correctIndex": 1, "explanation": "all→most/many; always→tend to/usually." },
+      { "text": "«arguably, apparently» qaysi guruh hedge?", "options": ["Modal", "Ravish", "Fe'l", "Miqdor"], "correctIndex": 1, "explanation": "probably, possibly, generally, to some extent, relatively." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "07-nuance-kuchaytiruvchilar",
+    "title": "Test — Nuans va kuchaytiruvchilar",
+    "questions": [
+      { "text": "«very tired» o'rniga qaysi so'z aniqroq?", "options": ["so tired", "exhausted", "quite tired", "tired much"], "correctIndex": 1, "explanation": "very big→enormous, very happy→delighted, very angry→furious." },
+      { "text": "«absolutely, utterly, completely» qaysi sifatlar bilan keladi?", "options": ["Gradable", "Extreme", "Ikkalasi", "Hech qaysi"], "correctIndex": 1, "explanation": "«very enormous» xato; «absolutely enormous» to'g'ri." },
+      { "text": "«___ concerned» — qaysi ravish tabiiy?", "options": ["strongly", "deeply", "highly", "hardly"], "correctIndex": 1, "explanation": "Kuchli kollokatsiyalar: deeply concerned, highly likely, bitterly disappointed." },
+      { "text": "«___ likely» — qaysi ravish tabiiy?", "options": ["deeply", "highly", "bitterly", "strongly"], "correctIndex": 1, "explanation": "Kollokatsiya juftlik sifatida yodlanadi — mantiq bilan chiqarilmaydi." },
+      { "text": "Aniq so'z tanlash IELTS ning qaysi mezoniga tegishli?", "options": ["Fluency", "Lexical Resource", "Grammar", "Pronunciation"], "correctIndex": 1, "explanation": "Band 8 uchun «very + oddiy» o'rniga bitta aniq so'z talab qilinadi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "08-ilgor-kollokatsiyalar",
+    "title": "Test — Ilg'or kollokatsiyalar",
+    "questions": [
+      { "text": "«___ research» — qaysi fe'l akademik?", "options": ["make", "conduct", "take", "give"], "correctIndex": 1, "explanation": "conduct research, draw a conclusion, pose a threat, play a role." },
+      { "text": "«___ a decision» — qaysi fe'l?", "options": ["do", "make", "take (BrE ba'zan)", "give"], "correctIndex": 1, "explanation": "make = yaratish; do = faoliyat (do research/homework/business)." },
+      { "text": "«heavy» qaysi ot bilan tabiiy birikadi?", "options": ["heavy coffee", "heavy rain / traffic", "heavy sleep", "heavy hopes"], "correctIndex": 1, "explanation": "strong coffee/accent, deep sleep, high hopes." },
+      { "text": "«strike a balance» nimani anglatadi?", "options": ["Urish", "Muvozanat topmoq", "Yiqilmoq", "Hisoblash"], "correctIndex": 1, "explanation": "address an issue, have an impact, take into account — akademik bloklar." },
+      { "text": "«take its toll» nimani anglatadi?", "options": ["Soliq olmoq", "Salbiy ta'sir ko'rsatmoq, holdan toydirmoq", "Foyda keltirmoq", "Hisoblamoq"], "correctIndex": 1, "explanation": "bear fruit, a foregone conclusion, vested interest — kuchli iboralar." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "09-idiomlar-kochma-til",
+    "title": "Test — Idiomlar",
+    "questions": [
+      { "text": "«a piece of cake» nimani anglatadi?", "options": ["Tort bo'lagi", "Juda oson ish", "Qiyin ish", "Shirinlik"], "correctIndex": 1, "explanation": "Idiom so'zma-so'z tarjima qilinmaydi — qotib qolgan ko'chma ma'no." },
+      { "text": "«as cool as a cucumber» qanday idiom turi?", "options": ["Pure idiom", "Simile idiom", "Binomial", "Proverb"], "correctIndex": 1, "explanation": "Turlar: pure (spill the beans), metaforik (break the ice), simile, binomial, proverb." },
+      { "text": "«cost an arm and a leg» qaysi mavzuga tegishli?", "options": ["Vaqt", "Pul — juda qimmat", "His", "Munosabat"], "correctIndex": 1, "explanation": "in the nick of time (vaqt), over the moon (his), see eye to eye (munosabat)." },
+      { "text": "Idiom qaysi bo'limda ishlatilmasligi kerak?", "options": ["Speaking", "Academic Writing Task 1 va rasmiy hisobot", "Norasmiy suhbat", "Blog"], "correctIndex": 1, "explanation": "Writing Task 2 da faqat mavhum idiomlar (a double-edged sword) o'rinli." },
+      { "text": "«a slice of cake» deb aytish mumkinmi?", "options": ["Ha", "Yo'q — idiom shakli buzilmaydi", "Faqat og'zaki", "Faqat yozma"], "correctIndex": 1, "explanation": "Idiomni buzmang va so'zma-so'z tarjima qilmang (my heart sank — «fell» emas)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "10-phrasal-verbs-ilgor",
+    "title": "Test — Phrasal verbs (ilg'or)",
+    "questions": [
+      { "text": "«look forward to it» — olmosh qayerda?", "options": ["O'rtada", "Oxirida — three-word phrasal verb ajralmaydi", "Boshida", "Farqi yo'q"], "correctIndex": 1, "explanation": "Separable: turn IT on; inseparable/three-word: look after IT." },
+      { "text": "Akademik matnda «find out» o'rniga nima ishlatiladi?", "options": ["figure out", "ascertain / discover", "check out", "look up"], "correctIndex": 1, "explanation": "put off→postpone, look into→investigate — rasmiy lotincha muqobillar." },
+      { "text": "«break down» qaysi turga kiradi?", "options": ["Separable", "Intransitive", "Inseparable transitive", "Three-word"], "correctIndex": 1, "explanation": "To'ldiruvchi olmaydi: The car broke down." },
+      { "text": "Speaking bo'limida qaysi shakl tabiiyroq?", "options": ["Lotincha fe'l", "Phrasal verb", "Idiom", "Passiv"], "correctIndex": 1, "explanation": "Band 9 — registrga qarab to'g'ri tanlash: og'zaki → phrasal, akademik → lotincha." },
+      { "text": "«turn on it» — bu nega xato?", "options": ["turn xato", "Separable phrasal verbda olmosh o'rtada bo'ladi: turn it on", "on xato", "Xato emas"], "correctIndex": 1, "explanation": "Bu qoida faqat olmoshga tegishli; ot ikkala joyda kelishi mumkin." }
+    ]
+  }
+]

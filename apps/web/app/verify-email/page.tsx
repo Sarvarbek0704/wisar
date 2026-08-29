@@ -34,7 +34,9 @@ function VerifyInner() {
     setLoading(true);
     try {
       await verifyEmail(email, code.trim());
-      router.push(next);
+      // Yangi ro'yxatdan o'tgan foydalanuvchi — avval daraja aniqlash testiga.
+      const onboarded = localStorage.getItem("wisar-onboarded") === "true";
+      router.push(!onboarded && !sp.get("next") ? "/onboarding" : next);
       router.refresh();
     } catch (e) {
       setErr((e as Error).message);

@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "15-shopping-money-funksional",
+    "title": "Test — Xarid va pul tili",
+    "questions": [
+      { "text": "«lend» va «borrow» qanday farqlanadi?", "options": ["Farqi yo'q", "lend — bermoq (qarzga); borrow — olmoq", "borrow — bermoq", "Ikkalasi olmoq"], "correctIndex": 1, "explanation": "Can you lend me $10? = Can I borrow $10 from you?" },
+      { "text": "«pay ___ the ticket» — qaysi predlog?", "options": ["on", "for", "to", "at"], "correctIndex": 1, "explanation": "pay FOR something; spend money ON something." },
+      { "text": "«Kiyib ko'rsam bo'ladimi?» qanday aytiladi?", "options": ["Can I wear this?", "Can I try this on?", "Can I put this?", "Can I take this?"], "correctIndex": 1, "explanation": "Kiyim: What size? It doesn't fit. Too tight/loose." },
+      { "text": "«cheap» so'zi qanday ottenka beradi?", "options": ["Doim ijobiy", "Ba'zan salbiy (sifatsiz)", "Neytral", "Rasmiy"], "correctIndex": 1, "explanation": "Maqtab aytish uchun: good value yoki affordable." },
+      { "text": "«receipt» qanday o'qiladi?", "options": ["risept", "risi:t — «p» jim", "resipt", "rikipt"], "correctIndex": 1, "explanation": "Can I have a receipt? — chek so'rash." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "16-object-pronouns",
+    "title": "Test — To'ldiruvchi olmoshlari",
+    "questions": [
+      { "text": "«he» ning to'ldiruvchi shakli qanday?", "options": ["his", "him", "he", "himself"], "correctIndex": 1, "explanation": "I→me, he→him, she→her, we→us, they→them; you/it o'zgarmaydi." },
+      { "text": "«with ___ » (men bilan) — to'g'ri shakl?", "options": ["I", "me", "my", "mine"], "correctIndex": 1, "explanation": "Predlogdan keyin DOIM object olmoshi: with me, for him, to us." },
+      { "text": "«Give me it» — nega tabiiy emas?", "options": ["me xato", "Narsa olmosh bo'lsa: Give it to me", "it xato", "Xato emas"], "correctIndex": 1, "explanation": "give/send/tell/show → to; buy/make/get → for." },
+      { "text": "«between you and ___ » — to'g'ri shakl?", "options": ["I", "me", "my", "mine"], "correctIndex": 1, "explanation": "Predlogdan keyin object: between you and me (and I emas)." },
+      { "text": "«John and ___ went there» (ega) — to'g'ri shakl?", "options": ["me", "I", "my", "mine"], "correctIndex": 1, "explanation": "Ega o'rnida — John and I; to'ldiruvchi o'rnida — John and me." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "17-should-must-have-to",
+    "title": "Test — Should, must, have to",
+    "questions": [
+      { "text": "«mustn't» va «don't have to» qanday farqlanadi?", "options": ["Farqi yo'q", "mustn't — TA'QIQ; don't have to — shart emas (erkin)", "mustn't — erkin", "Ikkalasi ta'qiq"], "correctIndex": 1, "explanation": "Bu ikkisi TESKARI ma'no beradi — A2 ning eng muhim farqi." },
+      { "text": "«must» ning o'tgan zamon shakli qanday?", "options": ["musted", "had to", "must have", "Yo'q, mustn't"], "correctIndex": 1, "explanation": "must ning o'tmishi yo'q → had to; kelajak → will have to." },
+      { "text": "«should» qanday ma'no beradi?", "options": ["Kuchli majburiyat", "Maslahat — «...sa yaxshi»", "Ta'qiq", "Ruxsat"], "correctIndex": 1, "explanation": "ought to = should. Kuchliroq maslahat: had better ('d better)." },
+      { "text": "«have to» savolda qanday tuziladi?", "options": ["Have you to...?", "Do you have to...?", "Are you have to...?", "Must you have to...?"], "correctIndex": 1, "explanation": "have to oddiy fe'l kabi do/does oladi; must esa modal." },
+      { "text": "«should» qanday o'qiladi?", "options": ["shold — «l» eshitiladi", "shud — «l» jim", "shuld", "sho:ld"], "correctIndex": 1, "explanation": "have to = «hafta», mustn't = «masnt»." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "18-would-like-want-to",
+    "title": "Test — Would like / want to",
+    "questions": [
+      { "text": "«I want you ___ help me» — bo'shliqqa nima?", "options": ["that", "to", "for", "hech narsa"], "correctIndex": 1, "explanation": "want + KIM + to + V1. «want that you help» — xato." },
+      { "text": "«I'd like ___ go» — bo'shliqqa nima?", "options": ["hech narsa", "to", "that", "for"], "correctIndex": 1, "explanation": "would like + to + V1. «I'd like go» — xato." },
+      { "text": "«want» va «would like» qanday farqlanadi?", "options": ["Ma'nosi boshqa", "would like — xushmuomala; want — to'g'ridan", "want — xushmuomala", "Farqi yo'q"], "correctIndex": 1, "explanation": "So'rov/buyurtma → would like; orzu yoki do'st bilan → want." },
+      { "text": "«Would you like...?» va «Do you like...?» qanday farqlanadi?", "options": ["Farqi yo'q", "Would you like — HOZIR taklif; Do you like — UMUMAN yoqtirish", "Do you like — taklif", "Ikkalasi taklif"], "correctIndex": 1, "explanation": "Would you like some tea? (hozir) ≠ Do you like tea? (umuman)." },
+      { "text": "Restoranda buyurtma berish uchun qaysi ibora ishlatiladi?", "options": ["I want", "I'll have...", "Give me", "I like"], "correctIndex": 1, "explanation": "I'll have the soup, please. Yoki: I'd like the soup." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "19-conjunctions-because-so-but",
+    "title": "Test — Bog'lovchilar",
+    "questions": [
+      { "text": "«because» va «because of» qanday farqlanadi?", "options": ["Farqi yo'q", "because + GAP; because of + OT", "because of + gap", "Ikkalasi ot bilan"], "correctIndex": 1, "explanation": "because it rained ↔ because of the rain." },
+      { "text": "«Although it was raining, but we went» — bu nega xato?", "options": ["although xato", "although va but birga ishlatilmaydi", "went xato", "Xato emas"], "correctIndex": 1, "explanation": "Bittasini tanlang: Although it was raining, we went. YOKI: It was raining, but we went." },
+      { "text": "«because» va «so» qanday munosabatda?", "options": ["Bir xil", "Bir g'oya, teskari tartib (sabab ↔ natija)", "Ikkalasi sabab", "Ikkalasi natija"], "correctIndex": 1, "explanation": "It rained, so we stayed = We stayed because it rained. Ikkalasini birga ishlatmang." },
+      { "text": "«also» gapda qayerda turadi?", "options": ["Gap oxirida", "Fe'l oldida", "Gap boshida doim", "Fe'ldan keyin"], "correctIndex": 1, "explanation": "also — fe'l oldida; too / as well — gap oxirida." },
+      { "text": "«however» qanday bog'lovchi?", "options": ["Sabab", "but ning rasmiy varianti — alohida gapda", "Natija", "Maqsad"], "correctIndex": 1, "explanation": "Yozma va rasmiy uslubda ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "20-phrasal-verbs-intro",
+    "title": "Test — Phrasal verbs (kirish)",
+    "questions": [
+      { "text": "Phrasal verb nima?", "options": ["Ikki fe'l", "Fe'l + zarracha; ma'no ko'pincha boshqa", "Fe'l + ot", "Sifat + fe'l"], "correctIndex": 1, "explanation": "give up = taslim bo'lmoq — «give» va «up» ma'nosidan chiqmaydi." },
+      { "text": "«turn on the TV» da olmosh ishlatilsa qanday bo'ladi?", "options": ["turn on it", "turn it on", "it turn on", "turn on the it"], "correctIndex": 1, "explanation": "Ajraladigan phrasal verbda OLMOSH doim o'rtada turadi." },
+      { "text": "«look after» qanday phrasal verb?", "options": ["Ajraladigan", "Ajralmaydigan — object doim oxirda", "O'timsiz", "Uch qismli"], "correctIndex": 1, "explanation": "look after them (look them after — xato)." },
+      { "text": "«get up, sit down, break down» — qaysi turga kiradi?", "options": ["Ajraladigan", "O'timsiz — object olmaydi", "Ajralmaydigan", "Uch qismli"], "correctIndex": 1, "explanation": "Bu fe'llar to'ldiruvchisiz ishlatiladi." },
+      { "text": "Phrasal verbni qanday yodlash kerak?", "options": ["Ikki so'zni alohida tarjima qilib", "Butun ibora + misol bilan", "Faqat fe'lni", "Faqat zarrachani"], "correctIndex": 1, "explanation": "Urg'u odatda zarrachada: get UP, turn it ON." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "02-a2-elementar", "article": "21-adverbs-of-manner",
+    "title": "Test — Tarz ravishlari",
+    "questions": [
+      { "text": "«good» ning ravish shakli qanday?", "options": ["goodly", "well", "gooder", "goodly"], "correctIndex": 1, "explanation": "Maxsus shakllar: good→well, fast→fast, hard→hard, late→late." },
+      { "text": "«happy» ning ravish shakli qanday?", "options": ["happyly", "happily", "happy", "happilly"], "correctIndex": 1, "explanation": "-y → -ily; -le → -ly (gently); -ic → -ally (basically)." },
+      { "text": "«hardly» nimani anglatadi?", "options": ["Qattiq", "Deyarli emas", "Tez", "Sekin"], "correctIndex": 1, "explanation": "Tuzoq juftliklar: hardly ≠ hard; lately (so'nggi paytda) ≠ late." },
+      { "text": "«He speaks fluently English» — bu nega xato?", "options": ["fluently xato", "Ravish object dan KEYIN turadi: speaks English fluently", "English xato", "Xato emas"], "correctIndex": 1, "explanation": "Ravish fe'l va to'ldiruvchi orasiga kirmaydi." },
+      { "text": "«It smells ___ » — to'g'ri shakl?", "options": ["well", "good", "goodly", "nicely"], "correctIndex": 1, "explanation": "Sezgi fe'llari (look/feel/smell/taste/sound) SIFAT oladi, ravish emas." }
+    ]
+  }
+]

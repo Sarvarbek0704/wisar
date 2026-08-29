@@ -1,0 +1,145 @@
+[
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "01-big-o-notatsiyasi",
+    "title": "Test — Big-O notatsiyasi",
+    "questions": [
+      { "text": "Big-O nimani tasvirlaydi?", "options": ["Aniq sekundlarni", "Kirish hajmi n ga nisbatan o'sish shaklini (worst case)", "Kod uzunligini", "Xotira hajmini faqat"], "correctIndex": 1, "explanation": "Konstantalar tashlanadi, eng katta had olinadi." },
+      { "text": "Murakkablik darajalarining to'g'ri tartibi qaysi?", "options": ["O(n²) < O(n) < O(1)", "O(1) < O(log n) < O(n) < O(n log n) < O(n²)", "O(log n) < O(1)", "Hammasi teng"], "correctIndex": 1, "explanation": "O(2ⁿ) va O(n!) — eng yomon darajalar." },
+      { "text": "Ichma-ich ikki tsikl qanday murakkablik beradi?", "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"], "correctIndex": 1, "explanation": "O(n log n) — samarali saralash algoritmlarining darajasi." },
+      { "text": "«Space complexity» nimani o'lchaydi?", "options": ["Vaqtni", "Qo'shimcha xotirani", "Kod hajmini", "Fayl hajmini"], "correctIndex": 1, "explanation": "Vaqt va xotira orasida ko'pincha savdo bo'ladi." },
+      { "text": "Set ishlatib O(n²) ni O(n) ga tushirish qanday savdo?", "options": ["Xotira tejash", "Xotira evaziga vaqt yutish", "Ikkalasini yutish", "Ikkalasini yo'qotish"], "correctIndex": 1, "explanation": "Klassik «vaqt vs xotira» savdosi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "02-massiv-va-string-algoritmlari",
+    "title": "Test — Massiv va string algoritmlari",
+    "questions": [
+      { "text": "«Sliding window» qachon ishlatiladi?", "options": ["Saralashda", "Uzluksiz oraliq (subarray/substring) masalalarida", "Qidiruvda", "Rekursiyada"], "correctIndex": 1, "explanation": "Oynani surib yangilash qayta hisoblashni yo'qotadi — O(n)." },
+      { "text": "«Ikki ko'rsatkich» texnikasi qanday xotira ishlatadi?", "options": ["O(n)", "O(1)", "O(n²)", "O(log n)"], "correctIndex": 1, "explanation": "Palindrom va juftlik masalalarida klassik yechim." },
+      { "text": "Kadane algoritmi nimani topadi?", "options": ["Eng katta element", "Eng katta yig'indili subarray", "Eng qisqa yo'l", "Dublikatlarni"], "correctIndex": 1, "explanation": "Manfiy sonlar bo'lganda ham O(n) da ishlaydi." },
+      { "text": "Prefiks yig'indi nima beradi?", "options": ["Saralash", "Oraliq so'rovlarini O(1) da bajarish", "Qidiruv", "Xotira tejash"], "correctIndex": 1, "explanation": "Bir marta O(n) tayyorlanadi, keyin har so'rov O(1)." },
+      { "text": "Massivda o'rtaga qo'shish murakkabligi qanday?", "options": ["O(1)", "O(n) — elementlar suriladi", "O(log n)", "O(n²)"], "correctIndex": 1, "explanation": "Indeks bo'yicha murojaat esa O(1)." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "03-linked-list",
+    "title": "Test — Linked List",
+    "questions": [
+      { "text": "Linked List'da boshga qo'shish murakkabligi qanday?", "options": ["O(n)", "O(1)", "O(log n)", "O(n²)"], "correctIndex": 1, "explanation": "Massivda esa bu O(n) — barcha element suriladi." },
+      { "text": "Linked List'da element murojaati qanday?", "options": ["O(1)", "O(n) — boshdan yurish kerak", "O(log n)", "O(n²)"], "correctIndex": 1, "explanation": "Bu massivning asosiy afzalligi hisoblanadi." },
+      { "text": "«Fast/slow pointer» nima uchun ishlatiladi?", "options": ["Saralash", "O'rtani topish va sikl aniqlash (Floyd)", "Nusxa olish", "Teskari qilish"], "correctIndex": 1, "explanation": "Fast ikki qadam, slow bir qadam yuradi." },
+      { "text": "«Dummy node» nima uchun kerak?", "options": ["Xotira", "Chegaraviy holatlarni (bosh o'zgarishi) soddalashtirish", "Tezlik", "Xavfsizlik"], "correctIndex": 1, "explanation": "Bosh elementni maxsus ishlov berish zaruratini yo'qotadi." },
+      { "text": "Doubly linked list singly'dan nimasi bilan farq qiladi?", "options": ["Tezroq", "«prev» ko'rsatkichi ham bor — ikki tomonga yurish mumkin", "Kamroq xotira", "Sikl bo'lmaydi"], "correctIndex": 1, "explanation": "Circular listda esa oxirgi node boshga ulanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "04-stack-va-queue",
+    "title": "Test — Stack va Queue",
+    "questions": [
+      { "text": "Stack qanday tartibda ishlaydi?", "options": ["FIFO", "LIFO — oxirgi kirgan birinchi chiqadi", "Tasodifiy", "Tartiblangan"], "correctIndex": 1, "explanation": "Call stack, undo, DFS, qavs muvozanati — hammasi stack." },
+      { "text": "JS massivida «shift» murakkabligi qanday?", "options": ["O(1)", "O(n) — barcha element suriladi", "O(log n)", "O(n²)"], "correctIndex": 1, "explanation": "Queue uchun ko'rsatkich yoki Linked List bilan O(1) ga tushiriladi." },
+      { "text": "«Circular Queue» nima beradi?", "options": ["Tezlik", "Xotira o'smaydi — bo'sh joy qayta ishlatiladi", "Tartib", "Xavfsizlik"], "correctIndex": 1, "explanation": "Deque esa ikki uchidan ham qo'shish/olish imkonini beradi." },
+      { "text": "«Monoton stack» nima uchun ishlatiladi?", "options": ["Saralash", "Keyingi katta/kichik element kabi masalalarni O(n) da yechish", "Qidiruv", "Nusxa olish"], "correctIndex": 1, "explanation": "Stack ichida tartib saqlanadi va keraksiz elementlar chiqariladi." },
+      { "text": "Priority Queue nima ustiga quriladi?", "options": ["Massiv", "Heap", "Linked List", "Hash table"], "correctIndex": 1, "explanation": "Eng muhim element birinchi chiqadi — Dijkstra va scheduler'da ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "05-hash-table-map",
+    "title": "Test — Hash Table",
+    "questions": [
+      { "text": "Hash funksiya qanday xususiyatlarga ega bo'lishi kerak?", "options": ["Sekin va murakkab", "Determinik, tez, bir tekis taqsimotli", "Tasodifiy", "Shifrlangan"], "correctIndex": 1, "explanation": "Kalitni indeksga aylantirib, O(1) murojaat beradi." },
+      { "text": "Kolliziya nima?", "options": ["Xato", "Ikki kalit bir indeksga tushishi — muqarrar", "Xotira to'lishi", "Sekinlik"], "correctIndex": 1, "explanation": "Yechim: chaining (ro'yxat) yoki open addressing (probing)." },
+      { "text": "Load factor 0.75 dan oshsa nima qilinadi?", "options": ["Hech narsa", "Resize — jadval kattalashtirilib qayta hash qilinadi", "O'chiriladi", "Sekinlashadi"], "correctIndex": 1, "explanation": "Bu kolliziyalarni kamaytirib O(1) ni saqlaydi." },
+      { "text": "Hash Table'ning worst case murakkabligi qanday?", "options": ["O(1)", "O(n) — yomon hash funksiyada", "O(log n)", "O(n²)"], "correctIndex": 1, "explanation": "O'rtacha holatda esa O(1)." },
+      { "text": "Hash Table'da tartib saqlanadimi?", "options": ["Ha", "Yo'q — tartib kerak bo'lsa BST ishlatiladi", "Faqat Map'da", "Faqat Set'da"], "correctIndex": 1, "explanation": "JS Map qo'shilish tartibini saqlaydi, lekin saralanmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "06-tree-binary-search-tree",
+    "title": "Test — Tree va BST",
+    "questions": [
+      { "text": "BST qoidasi qanday?", "options": ["Chap > node", "Chap < node < o'ng", "Barcha teng", "Tartib yo'q"], "correctIndex": 1, "explanation": "Bu qoida O(log n) qidiruvni ta'minlaydi (balanslangan bo'lsa)." },
+      { "text": "BST'da qaysi traversal saralangan tartib beradi?", "options": ["Pre-order", "In-order", "Post-order", "BFS"], "correctIndex": 1, "explanation": "Chap → node → o'ng tartibida yuriladi." },
+      { "text": "BFS traversal uchun qaysi struktura ishlatiladi?", "options": ["Stack", "Queue", "Heap", "Hash"], "correctIndex": 1, "explanation": "DFS uchun esa stack yoki rekursiya." },
+      { "text": "Egilgan (skewed) daraxtda qidiruv murakkabligi qanday?", "options": ["O(log n)", "O(n)", "O(1)", "O(n²)"], "correctIndex": 1, "explanation": "Shuning uchun AVL va Red-Black kabi self-balancing daraxtlar kerak." },
+      { "text": "Ma'lumotlar bazasi indeksida qaysi daraxt ishlatiladi?", "options": ["BST", "B-tree", "Heap", "Trie"], "correctIndex": 1, "explanation": "B-tree disk bloklariga moslashtirilgan — kam I/O bilan ishlaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "07-graph",
+    "title": "Test — Graf",
+    "questions": [
+      { "text": "Vaznsiz grafda eng qisqa yo'lni qaysi algoritm topadi?", "options": ["DFS", "BFS", "Dijkstra", "Kadane"], "correctIndex": 1, "explanation": "BFS daraja-baraja yuradi, shuning uchun birinchi topilgan yo'l eng qisqa." },
+      { "text": "Graf traversalida «ko'rilgan» Set nima uchun MAJBURIY?", "options": ["Tezlik uchun", "Sikldan saqlaydi — cheksiz tsiklning oldini oladi", "Xotira uchun", "Tartib uchun"], "correctIndex": 1, "explanation": "Bu — graf algoritmlaridagi eng ko'p unutiladigan detal." },
+      { "text": "Vaznli grafda eng qisqa yo'l uchun qaysi algoritm?", "options": ["BFS", "Dijkstra (heap bilan)", "DFS", "Topological sort"], "correctIndex": 1, "explanation": "Manfiy vaznlar bo'lsa Bellman-Ford kerak bo'ladi." },
+      { "text": "«Adjacency list» qachon afzal?", "options": ["Zich grafda", "Siyrak grafda — xotira tejaydi", "Har doim", "Hech qachon"], "correctIndex": 1, "explanation": "Adjacency matrix zich graf va O(1) tekshiruv uchun qulay." },
+      { "text": "«Topological sort» qaysi grafda ishlaydi?", "options": ["Har qanday", "DAG — yo'naltirilgan asiklik graf", "Vaznli", "Undirected"], "correctIndex": 1, "explanation": "Bog'liqlik tartibini aniqlash uchun ishlatiladi (build tizimlari)." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "08-heap",
+    "title": "Test — Heap",
+    "questions": [
+      { "text": "Heap BST'mi?", "options": ["Ha", "Yo'q — faqat ota-bola munosabati bor, chap/o'ng tartibi yo'q", "Ba'zan", "Bir xil"], "correctIndex": 1, "explanation": "Min-heap: ildiz eng kichik; max-heap: ildiz eng katta." },
+      { "text": "Heap qanday saqlanadi?", "options": ["Ko'rsatkichlar bilan", "MASSIVDA — ota (i-1)/2, bola 2i+1 va 2i+2", "Hash table'da", "Linked list'da"], "correctIndex": 1, "explanation": "Bu xotira samaradorligini oshiradi." },
+      { "text": "«peek» amali murakkabligi qanday?", "options": ["O(log n)", "O(1)", "O(n)", "O(n log n)"], "correctIndex": 1, "explanation": "Insert va extract esa O(log n)." },
+      { "text": "Top-K masalasi heap bilan qanday murakkablikda yechiladi?", "options": ["O(n²)", "O(n log K)", "O(n!)", "O(1)"], "correctIndex": 1, "explanation": "K hajmli heap saqlanadi — to'liq saralashdan tez." },
+      { "text": "Heap sort murakkabligi qanday?", "options": ["O(n²)", "O(n log n)", "O(n)", "O(log n)"], "correctIndex": 1, "explanation": "In-place ishlaydi, lekin barqaror emas." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "09-saralash-algoritmlari",
+    "title": "Test — Saralash algoritmlari",
+    "questions": [
+      { "text": "Merge sort qanday xotira talab qiladi?", "options": ["O(1)", "O(n) — qo'shimcha massiv", "O(log n)", "O(n²)"], "correctIndex": 1, "explanation": "Lekin u barqaror va doim O(n log n)." },
+      { "text": "Quick sort'ning worst case murakkabligi qanday?", "options": ["O(n log n)", "O(n²)", "O(n)", "O(log n)"], "correctIndex": 1, "explanation": "Yomon pivot tanlanganda; amalda esa juda tez ishlaydi." },
+      { "text": "«Barqaror» (stable) saralash nima?", "options": ["Tez ishlaydi", "Teng elementlarning nisbiy tartibi saqlanadi", "Kam xotira", "Xatosiz"], "correctIndex": 1, "explanation": "Ko'p maydonli saralashda muhim." },
+      { "text": "Insertion sort qachon yaxshi ishlaydi?", "options": ["Katta massivda", "Kichik yoki qisman tartiblangan massivda", "Tasodifiy massivda", "Hech qachon"], "correctIndex": 1, "explanation": "Deyarli tartiblangan ma'lumotda O(n) ga yaqinlashadi." },
+      { "text": "JavaScript «sort()» qanday algoritm ishlatadi?", "options": ["Bubble sort", "Timsort yoki quick variant — O(n log n), barqaror", "Selection sort", "Heap sort"], "correctIndex": 1, "explanation": "Komparator berish va nusxa ustida ishlash tavsiya etiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "10-qidiruv-algoritmlari",
+    "title": "Test — Qidiruv algoritmlari",
+    "questions": [
+      { "text": "Binary search ishlashi uchun nima shart?", "options": ["Katta massiv", "Massiv TARTIBLANGAN bo'lishi", "Sonlar bo'lishi", "Hash table"], "correctIndex": 1, "explanation": "Har qadamda qidiruv sohasi yarmiga qisqaradi — O(log n)." },
+      { "text": "Binary search'dagi asosiy tuzoq qaysi?", "options": ["Xotira", "Off-by-one — «<=» va «o'rta ± 1»", "Tezlik", "Tur"], "correctIndex": 1, "explanation": "Chegaralarni noto'g'ri yangilash cheksiz tsiklga olib keladi." },
+      { "text": "Bir marta qidirish kerak bo'lsa nima afzal?", "options": ["Sort + binary search", "Linear search", "Hash table qurish", "BST qurish"], "correctIndex": 1, "explanation": "Saralash O(n log n) — bitta qidiruv uchun arzimaydi." },
+      { "text": "«Binary search on answer» nima?", "options": ["Massivda qidiruv", "Monoton javob oralig'ida ikkilik qidiruv", "Hash qidiruv", "Grafda qidiruv"], "correctIndex": 1, "explanation": "«Minimal shunday X topilsinki...» turidagi masalalarda ishlatiladi." },
+      { "text": "Tartibsiz ma'lumotda ko'p marta qidirish uchun nima afzal?", "options": ["Linear search", "Hash table", "Binary search", "BFS"], "correctIndex": 1, "explanation": "O'rtacha O(1) qidiruv beradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "11-rekursiya-va-backtracking",
+    "title": "Test — Rekursiya va backtracking",
+    "questions": [
+      { "text": "Rekursiv funksiyada nima majburiy?", "options": ["Tsikl", "Base case — to'xtash sharti", "Massiv", "Async"], "correctIndex": 1, "explanation": "Base case'siz stack overflow yuz beradi." },
+      { "text": "Backtracking naqshi qanday?", "options": ["Tanla → tugat", "Tanla → davom et → BEKOR QIL", "Faqat tanla", "Qidir → saqla"], "correctIndex": 1, "explanation": "Permutatsiya, kombinatsiya, subsets, N-Queens — hammasi shu naqshda." },
+      { "text": "«Pruning» nima beradi?", "options": ["Xotira", "Ishlamaydigan shoxni erta kesish — tezlik", "Aniqlik", "Tartib"], "correctIndex": 1, "explanation": "Qidiruv daraxtini sezilarli qisqartiradi." },
+      { "text": "Rekursiya qanday mexanizm orqali ishlaydi?", "options": ["Heap", "Call stack", "Queue", "Hash table"], "correctIndex": 1, "explanation": "Chuqurlik — stack darajasiga teng." },
+      { "text": "Rekursiya qachon iteratsiyadan afzal?", "options": ["Har doim", "Daraxt yoki bo'linadigan (divide-and-conquer) masalalarda", "Chiziqli masalalarda", "Hech qachon"], "correctIndex": 1, "explanation": "Chiziqli takrorlash uchun oddiy tsikl samaraliroq." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "12-dinamik-dasturlash",
+    "title": "Test — Dinamik dasturlash",
+    "questions": [
+      { "text": "DP qanday shartlar bo'lganda qo'llaniladi?", "options": ["Katta massiv", "Overlapping subproblems + optimal substructure", "Tartiblangan ma'lumot", "Graf"], "correctIndex": 1, "explanation": "Takrorlanuvchi kichik masalalar bir marta yechilib saqlanadi." },
+      { "text": "Memoization va tabulation qanday farqlanadi?", "options": ["Farqi yo'q", "Memoization — top-down (rekursiya + cache); tabulation — bottom-up (jadval + tsikl)", "Tabulation — rekursiv", "Ikkalasi rekursiv"], "correctIndex": 1, "explanation": "Ikkalasi ham bir xil murakkablikka olib keladi." },
+      { "text": "DP masalasini yechishning 5 qadami qaysi?", "options": ["Kod → test", "State → recurrence → base → tartib → javob", "Sort → search", "Tsikl → shart"], "correctIndex": 1, "explanation": "State'ni to'g'ri aniqlash — eng muhim qadam." },
+      { "text": "Fibonacci DP bilan qanday murakkablikka tushadi?", "options": ["O(2ⁿ) dan O(n) ga", "O(n) dan O(1) ga", "O(n²) dan O(n log n) ga", "O'zgarmaydi"], "correctIndex": 0, "explanation": "Naive rekursiya O(2ⁿ), memoization bilan O(n)." },
+      { "text": "Xotirani O(n) dan O(1) ga tushirish qanday mumkin?", "options": ["Rekursiya bilan", "Faqat kerakli oldingi qiymatlarni saqlash bilan", "Hash bilan", "Mumkin emas"], "correctIndex": 1, "explanation": "Fibonacci'da faqat oxirgi ikki qiymat yetarli." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "03-qism-algoritmlar", "article": "13-masala-yechish-strategiyalari",
+    "title": "Test — Masala yechish strategiyalari",
+    "questions": [
+      { "text": "Masala yechish jarayoni qanday?", "options": ["Kod → test", "Understand → Examples → Approach → Plan → Code → Test → Optimize", "Optimize → code", "Test → code"], "correctIndex": 1, "explanation": "Kodlashdan oldin tushunish va misol ko'rish eng muhim bosqich." },
+      { "text": "Optimallashtirish qanday boshlanadi?", "options": ["Darhol optimal yechim", "Brute force → Big-O → bottleneck → optimallashtirish", "Faqat Big-O", "Tasodifiy"], "correctIndex": 1, "explanation": "Ishlaydigan yechim bo'lmasa, optimallashtirishga o'tib bo'lmaydi." },
+      { "text": "«Uzluksiz oraliq» signali qaysi naqshni ko'rsatadi?", "options": ["DP", "Sliding window", "BFS", "Heap"], "correctIndex": 1, "explanation": "Signal so'zlardan naqshni tanish — intervyu ko'nikmasi." },
+      { "text": "«Eng qisqa yo'l» signali qaysi naqshni ko'rsatadi?", "options": ["DP", "BFS", "Sorting", "Two pointers"], "correctIndex": 1, "explanation": "Vaznli bo'lsa Dijkstra, vaznsiz bo'lsa BFS." },
+      { "text": "Intervyuda eng muhim odat qaysi?", "options": ["Jim ishlash", "Ovoz chiqarib fikrlash va Big-O ni aytish", "Tez yozish", "Optimal yechimni darhol berish"], "correctIndex": 1, "explanation": "Chegaraviy holatlarni aytish ham kuchli signal." }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "37-question-forms-ilgor",
+    "title": "Test — Savol shakllari (ilg'or)",
+    "questions": [
+      { "text": "«Who called?» — nega «did» yo'q?", "options": ["Xato", "who bu yerda EGA — do/did kerak emas", "Qisqa savol uchun", "O'tmish uchun"], "correctIndex": 1, "explanation": "Obyekt savolida esa kerak: Who did you call?" },
+      { "text": "«Don't you like it?» ga «Ha, yoqadi» qanday javob beriladi?", "options": ["No, I do", "Yes, I do", "Yes, I don't", "No, I don't"], "correctIndex": 1, "explanation": "Inkor savolga javob FAKTGA qarab beriladi, savol shakliga emas." },
+      { "text": "«I won.» — «___?» (qiziqish bildirish)", "options": ["Do you", "Did you", "Have you", "Are you"], "correctIndex": 1, "explanation": "Echo savol yordamchi fe'lni takrorlaydi." },
+      { "text": "«I don't know what ___ » — bo'shliqqa nima?", "options": ["to do", "do", "doing", "did"], "correctIndex": 0, "explanation": "WH + to-infinitive: what/where/how to do — lekin «why to do» ishlatilmaydi." },
+      { "text": "«There's a problem, ___ ?» — to'g'ri tag qaysi?", "options": ["is there", "isn't there", "doesn't it", "aren't there"], "correctIndex": 1, "explanation": "There's → isn't there; I'm → aren't I; Let's → shall we." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "38-quantity-approximation",
+    "title": "Test — Miqdor va taxminiylik",
+    "questions": [
+      { "text": "«approximately, roughly» qaysi registrga tegishli?", "options": ["Norasmiy", "Rasmiy", "Jargon", "Bolalar tili"], "correctIndex": 1, "explanation": "about/around — neytral; or so/-ish/give or take — norasmiy." },
+      { "text": "«a great deal of» qanday ot bilan keladi?", "options": ["Sanaladigan", "Sanalmaydigan", "Ikkalasi", "Faqat ko'plik"], "correctIndex": 1, "explanation": "a large number of / dozens of — sanaladigan otlar bilan." },
+      { "text": "«a handful of» qanday miqdorni bildiradi?", "options": ["Juda ko'p", "Oz", "O'rtacha", "Hech narsa"], "correctIndex": 1, "explanation": "a couple of (~2), a handful of (oz), plenty of / loads of (ko'p)." },
+      { "text": "«by and large» qanday ma'no beradi?", "options": ["Juda katta", "Umuman olganda", "Aniq", "Kamdan-kam"], "correctIndex": 1, "explanation": "in general, on the whole, as a rule, more often than not — umumlashtirish." },
+      { "text": "«tend to + V1» nimani bildiradi?", "options": ["Bir marta", "Odatda shunday bo'ladi", "Hech qachon", "Majburiyat"], "correctIndex": 1, "explanation": "Ulush ifodalari: the vast majority, two-thirds, nine out of ten." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "39-maxsus-opinion-argument",
+    "title": "Test — Fikr va argument",
+    "questions": [
+      { "text": "«According to me» — bu nega xato?", "options": ["according xato", "«according to» faqat boshqa manba uchun; o'z fikri — In my opinion", "me xato", "Xato emas"], "correctIndex": 1, "explanation": "In my view / I'd argue that / As I see it — to'g'ri variantlar." },
+      { "text": "«I am agree» — bu nega xato?", "options": ["agree xato", "agree — fe'l, «be» kerak emas: I agree", "am xato", "Xato emas"], "correctIndex": 1, "explanation": "I agree / I don't agree / I disagree." },
+      { "text": "Argument tuzilishi qanday?", "options": ["Da'vo → xulosa", "Da'vo + asos + qarshi-dalil + xulosa", "Faqat asos", "Misol → da'vo"], "correctIndex": 1, "explanation": "Qarshi-dalilni tan olib rad etish — IELTS band 7–8 belgisi." },
+      { "text": "«Admittedly... However...» qanday vazifani bajaradi?", "options": ["Rozilik", "Qarshi-dalilni tan olib, keyin rad etish", "Misol", "Xulosa"], "correctIndex": 1, "explanation": "Some might argue... → However / Even so..." },
+      { "text": "«On balance, All things considered» qaysi guruh?", "options": ["Fikr kiritish", "Xulosa", "E'tiroz", "Qo'shish"], "correctIndex": 1, "explanation": "Ultimately ham xulosa guruhiga kiradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "40-maxsus-speculation-certainty",
+    "title": "Test — Taxmin va ishonch",
+    "questions": [
+      { "text": "«is bound to» qanday ishonch darajasi?", "options": ["50%", "75%", "100% — muqarrar", "25%"], "correctIndex": 2, "explanation": "100%: must be, definitely, is bound to, no doubt." },
+      { "text": "«is likely to» qanday ishonch darajasi?", "options": ["100%", "~75%", "~50%", "~25%"], "correctIndex": 1, "explanation": "should be, probably, chances are — shu darajada." },
+      { "text": "«I doubt» qanday ishonch darajasi?", "options": ["100%", "75%", "~25% — dargumon", "50%"], "correctIndex": 2, "explanation": "is unlikely to, probably not, little chance — past ehtimol." },
+      { "text": "«will ___ come» (definitely) — ravish qayerda turadi?", "options": ["Boshda", "will DEFINITELY come", "Oxirida", "come dan keyin"], "correctIndex": 1, "explanation": "Inkorda esa oldinga o'tadi: probably WON'T come." },
+      { "text": "O'tmish haqidagi taxmin qanday tuziladi?", "options": ["must be", "must have + V3", "must was", "must to be"], "correctIndex": 1, "explanation": "can't have / might have + V3 ham shu qolipda." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "41-maxsus-persuading-negotiating",
+    "title": "Test — Ko'ndirish va muzokara",
+    "questions": [
+      { "text": "«I suggest you to come» — bu nega xato?", "options": ["suggest xato", "suggest + that we... yoki suggest + -ing; «to» ishlatilmaydi", "you xato", "Xato emas"], "correctIndex": 1, "explanation": "I suggest (that) we go / I suggest going." },
+      { "text": "«Let's meet in the middle» nimani anglatadi?", "options": ["Uchrashuv joyi", "Murosaga kelish", "Rad etish", "Kutish"], "correctIndex": 1, "explanation": "win-win + meet in the middle — professional muzokara tili." },
+      { "text": "«Is there any flexibility?» qachon ishlatiladi?", "options": ["Rad etganda", "Muzokarada shart yumshatilishini so'raganda", "Rozi bo'lganda", "Uzr so'raganda"], "correctIndex": 1, "explanation": "Would you consider...? What if I...? — muzokara qoliplari." },
+      { "text": "«on condition that» qanday guruhga kiradi?", "options": ["Xulosa", "Shart", "Rad etish", "Taklif"], "correctIndex": 1, "explanation": "provided (that), as long as, only if, in return for — shart qoliplari." },
+      { "text": "Yumshoq rad etish uchun eng yaxshi qolip qaysi?", "options": ["No", "I appreciate it, but... / I'm afraid that won't work", "Never", "It's bad"], "correctIndex": 1, "explanation": "«out of my range» ham muloyim rad etish usuli." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "42-maxsus-complaining-apologizing",
+    "title": "Test — Shikoyat va uzr",
+    "questions": [
+      { "text": "«I apologize ___ being late» — qaysi predlog?", "options": ["of", "for", "to", "about"], "correctIndex": 1, "explanation": "apologize/sorry FOR + -ing/ot; sorry TO + V1 (hozirgi harakat uchun)." },
+      { "text": "Rasmiy shikoyat xati qanday boshlanadi?", "options": ["I don't like", "I am writing to complain about...", "This is bad", "Fix it"], "correctIndex": 1, "explanation": "I wish to draw your attention to... — yanada rasmiy variant." },
+      { "text": "Muloyimlik darajasi to'g'ri tartibda qaysi?", "options": ["I was wondering < Can you < Could you", "Can you < Could you < Would you mind < I was wondering if you could", "Could you < Can you", "Hammasi teng"], "correctIndex": 1, "explanation": "Eng rasmiy: I would be grateful if you could..." },
+      { "text": "«To make matters worse» qanday vazifani bajaradi?", "options": ["Uzr so'rash", "Shikoyatni kuchaytirish", "Rozilik", "Xulosa"], "correctIndex": 1, "explanation": "«This is the second time» ham kuchaytirish vositasi." },
+      { "text": "Uzrdan keyin nima kelishi kerak?", "options": ["Hech narsa", "HARAKAT — I'll fix it / It won't happen again", "Yana uzr", "Shikoyat"], "correctIndex": 1, "explanation": "Uzr shkalasi: Sorry → I apologize for → Please accept my apologies." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "43-maxsus-describing-data-trends",
+    "title": "Test — Ma'lumot va tendensiyalarni tasvirlash",
+    "questions": [
+      { "text": "«plummet» qanday tendensiyani bildiradi?", "options": ["Keskin oshish", "Keskin tushish", "Barqarorlik", "Tebranish"], "correctIndex": 1, "explanation": "Oshish: rise/surge/soar; tushish: fall/decline/plummet." },
+      { "text": "«a sharp rise» — bu yerda «sharp» qanday so'z?", "options": ["Ravish", "SIFAT — ot bilan keladi", "Fe'l", "Predlog"], "correctIndex": 1, "explanation": "fe'l + RAVISH (rose sharply) ↔ ot + SIFAT (a sharp rise)." },
+      { "text": "«rise ___ 10%» (o'zgarish miqdori) — qaysi predlog?", "options": ["to", "by", "in", "at"], "correctIndex": 1, "explanation": "rise BY (o'zgarish) ↔ rise TO (yetgan daraja)." },
+      { "text": "«level off, plateau» nimani bildiradi?", "options": ["Oshish", "Barqarorlashish", "Tushish", "Tebranish"], "correctIndex": 1, "explanation": "fluctuate — tebranish; peak (at) — cho'qqiga chiqish." },
+      { "text": "Jarayonni tasvirlashda qaysi nisbat ishlatiladi?", "options": ["Aktiv", "Passiv — is collected, is processed", "Faqat buyruq", "Faqat kelasi zamon"], "correctIndex": 1, "explanation": "First/Then/Finally + passiv shakl." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "44-maxsus-comparing-evaluating",
+    "title": "Test — Taqqoslash va baholash",
+    "questions": [
+      { "text": "«superior ___ » — qaysi predlog?", "options": ["than", "to", "from", "of"], "correctIndex": 1, "explanation": "superior TO (than emas); different FROM." },
+      { "text": "«in terms of» qanday vazifani bajaradi?", "options": ["Xulosa", "Jihatni belgilash — ko'p o'lchovli baho", "Rad etish", "Misol"], "correctIndex": 1, "explanation": "when it comes to / with regard to / as far as ... is concerned." },
+      { "text": "«the benefits outweigh» qaysi guruhga kiradi?", "options": ["O'xshashlik", "Hukm/xulosa", "Farq", "Daraja"], "correctIndex": 1, "explanation": "on balance, X has the edge, it boils down to — hukm iboralari." },
+      { "text": "«whereas, unlike, in contrast» qaysi guruh?", "options": ["O'xshashlik", "Farq", "Daraja", "Hukm"], "correctIndex": 1, "explanation": "O'xshashlik: both, similarly, likewise, have in common, equally." },
+      { "text": "«it depends on» nima uchun professional javob hisoblanadi?", "options": ["Qochish uchun", "Bahoni shartga bog'laydi — nuanslarni ko'rsatadi", "Qisqa uchun", "Rasmiy uchun"], "correctIndex": 1, "explanation": "«trade-off» va «strengths and weaknesses» ham nuansli baho vositalari." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "45-maxsus-soz-mavzulari-fce",
+    "title": "Test — Mavzuli lug'at (FCE)",
+    "questions": [
+      { "text": "«be made redundant» nimani anglatadi?", "options": ["Lavozimi oshdi", "Ishdan qisqartirildi", "Ishga qabul qilindi", "Ta'tilga chiqdi"], "correctIndex": 1, "explanation": "Ish mavzusi: work-life balance, career progression, get promoted." },
+      { "text": "«a double-edged sword» qanday ma'no beradi?", "options": ["Juda foydali", "Ham foydasi, ham zarari bor", "Umuman zararli", "Yangi texnologiya"], "correctIndex": 1, "explanation": "Texnologiya va media mavzularida ko'p ishlatiladi." },
+      { "text": "«carbon footprint» nimani anglatadi?", "options": ["Ko'mir zaxirasi", "Uglerod izi — atrof-muhitga ta'sir", "Yoqilg'i narxi", "Zavod"], "correctIndex": 1, "explanation": "Ekologiya: climate change, renewable energy, sustainable, raise awareness." },
+      { "text": "«serve a sentence» nimani anglatadi?", "options": ["Gap tuzmoq", "Jazo muddatini o'tamoq", "Sud qilmoq", "Ovqat bermoq"], "correctIndex": 1, "explanation": "Jinoyat mavzusi: commit a crime, deterrent, law-abiding, crime rates." },
+      { "text": "«plays a vital role» qaysi maqsadda ishlatiladi?", "options": ["Rad etish", "Muhokamada ahamiyatni ta'kidlash", "Uzr so'rash", "Savol berish"], "correctIndex": 1, "explanation": "a growing concern / take steps to — muhokama chunklari." }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "46-yozish-essay",
+    "title": "Test — Esse yozish",
+    "questions": [
+      { "text": "Esse necha paragrafdan iborat?", "options": ["2", "3", "4: kirish, body 1, body 2, xulosa", "6"], "correctIndex": 2, "explanation": "Taxminan 250–280 so'z." },
+      { "text": "Kirish paragrafida nima bo'lishi kerak?", "options": ["Faqat misol", "Paraphrase + thesis (pozitsiya)", "Xulosa", "Dalil"], "correctIndex": 1, "explanation": "Savolni qayta ifodalash va o'z pozitsiyani aniq qo'yish." },
+      { "text": "Xulosada yangi g'oya keltirish mumkinmi?", "options": ["Ha", "Yo'q — faqat umumlashtirish va qayta tasdiq", "Bitta", "Faqat rasmiy essede"], "correctIndex": 1, "explanation": "Yangi g'oya xulosaning vazifasini buzadi." },
+      { "text": "Esseda «find out» o'rniga nima ishlatiladi?", "options": ["get", "discover", "look for", "check"], "correctIndex": 1, "explanation": "Rasmiy registrda phrasal verb o'rniga lotin ildizli fe'l afzal." },
+      { "text": "Esse turini qachon aniqlash kerak?", "options": ["Yozib bo'lgach", "Yozishdan OLDIN", "Xulosada", "Ahamiyati yo'q"], "correctIndex": 1, "explanation": "Turlar: opinion, discussion, for-and-against, problem-solution." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "47-yozish-formal-letter-email",
+    "title": "Test — Rasmiy xat va email",
+    "questions": [
+      { "text": "«Dear Sir or Madam» qanday yakunlanadi (BrE)?", "options": ["Yours sincerely", "Yours faithfully", "Best regards", "Cheers"], "correctIndex": 1, "explanation": "Ism ma'lum bo'lsa (Dear Mr Smith) → Yours sincerely." },
+      { "text": "«Dear John» qanday yakunlanadi?", "options": ["Yours faithfully", "Best / Kind regards", "Yours sincerely", "Cheers"], "correctIndex": 1, "explanation": "Yarim rasmiy daraja: Dear + ism → Best/Kind regards." },
+      { "text": "Xat tuzilishi qanday?", "options": ["Faqat matn", "Greeting → Opening (maqsad) → Body → Closing → Sign-off", "Sarlavha → matn", "Erkin"], "correctIndex": 1, "explanation": "Har blok o'z klishesiga ega." },
+      { "text": "«Further to / With reference to» qaysi qismda ishlatiladi?", "options": ["Yakunda", "Opening — maqsadni bildirishda", "Body", "Sign-off"], "correctIndex": 1, "explanation": "I am writing to apply for / enquire about / complain about." },
+      { "text": "AmE da «Dear...» qanday yakunlanadi?", "options": ["Yours faithfully", "Sincerely", "Cheers", "Best only"], "correctIndex": 1, "explanation": "AmE da «faithfully» ishlatilmaydi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "48-yozish-report-proposal",
+    "title": "Test — Report va proposal",
+    "questions": [
+      { "text": "Report tuzilishi qanday?", "options": ["Kirish → xulosa", "Introduction → Findings → Recommendations → Conclusion", "Proposal → Benefits", "Erkin"], "correctIndex": 1, "explanation": "Proposal esa: Introduction → Proposal → Benefits → Conclusion." },
+      { "text": "Report va proposal qaysi zamonlarda yoziladi?", "options": ["Ikkalasi kelajak", "Report — o'tmish/hozir; proposal — kelajak", "Report — kelajak", "Ikkalasi o'tmish"], "correctIndex": 1, "explanation": "Report bo'lgan holatni, proposal taklifni bayon qiladi." },
+      { "text": "«It is recommended that he ___ » — to'g'ri shakl?", "options": ["goes", "go (subjunctive)", "went", "will go"], "correctIndex": 1, "explanation": "recommend + that + V1 (asos shakl) — mandative subjunctive." },
+      { "text": "«recommend to do» — bu nega xato?", "options": ["recommend xato", "recommend + -ing yoki that + V1; «to» ishlatilmaydi", "do xato", "Xato emas"], "correctIndex": 1, "explanation": "I would recommend taking / It is recommended that steps be taken." },
+      { "text": "Reportda sarlavhalar shartmi?", "options": ["Yo'q", "Ha — sarlavhali tuzilma shart", "Faqat uzun reportda", "Faqat proposalda"], "correctIndex": 1, "explanation": "Register: qat'iy rasmiy, shaxssiz (passiv), sarlavhali." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "49-yozish-review-article",
+    "title": "Test — Review va article",
+    "questions": [
+      { "text": "Review tuzilishi qanday?", "options": ["Faqat baho", "Kirish → tasvir (spoilersiz) → baho → tavsiya", "Sarlavha → xulosa", "Erkin"], "correctIndex": 1, "explanation": "Balansli baho: yaxshi tomonlar + kamchiliklar." },
+      { "text": "«live up ___ expectations» — qaysi predlog?", "options": ["with", "to", "for", "of"], "correctIndex": 1, "explanation": "Kollokatsiyalar: stunning VISUALS, gripping PLOT." },
+      { "text": "«give it a miss» nimani anglatadi?", "options": ["Albatta ko'ring", "Ko'rmang, e'tibor bermang", "Sotib oling", "Kuting"], "correctIndex": 1, "explanation": "Ijobiy tavsiya: a must-see, highly recommend, well worth + -ing." },
+      { "text": "Article qanday boshlanishi kerak?", "options": ["Xulosa bilan", "Jozibali sarlavha va o'ziga tortuvchi kirish (savol/anekdot)", "Dalil bilan", "Ta'rif bilan"], "correctIndex": 1, "explanation": "Have you ever...? / Picture this... / Let's face it..." },
+      { "text": "Review va article qaysi registrda yoziladi?", "options": ["Qat'iy rasmiy", "Yarim-rasmiy — «you», ritorik savol, qisqartma mumkin", "Norasmiy, slang bilan", "Ilmiy"], "correctIndex": 1, "explanation": "Slang va qo'pol so'zlar bu registrda ham o'rinsiz." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "50-texnik-dasturchi-ingliz",
+    "title": "Test — Dasturchi ingliz tili",
+    "questions": [
+      { "text": "«make a deploy» — bu nega noto'g'ri?", "options": ["deploy xato", "deploy — fe'l: deploy it", "make xato", "Xato emas"], "correctIndex": 1, "explanation": "Texnik so'zlar fe'l sifatida ishlatiladi: refactor, debug, merge, roll back, scale." },
+      { "text": "Code reviewda qaysi ohang afzal?", "options": ["«You should...»", "«We» ohangi — Could we...? / I'd suggest...", "Buyruq", "Tanqid"], "correctIndex": 1, "explanation": "Yumshoq, jamoaviy ohang: nit:, Have you considered...?" },
+      { "text": "Standupda kechagi ish qaysi zamonda aytiladi?", "options": ["Present Perfect", "Past Simple — Yesterday I...", "Future", "Present Continuous"], "correctIndex": 1, "explanation": "Today I'm going to... (kelajak) · I'm blocked on... (to'siq)." },
+      { "text": "Dokumentatsiyada qaysi shakllar ishlatiladi?", "options": ["Faqat savol", "Imperative (Run, Install) + passiv (has been deprecated)", "Faqat o'tmish", "Faqat modal"], "correctIndex": 1, "explanation": "Buyruq ko'rsatma uchun, passiv holat bayoni uchun." },
+      { "text": "«explain ___ me» — qaysi predlog?", "options": ["hech narsa", "to", "for", "with"], "correctIndex": 1, "explanation": "explain sth TO sb; depend ON — predloglarni aniq yodlang." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "51-b2-checkpoint-test",
+    "title": "Test — B2 yakuniy nazorat",
+    "questions": [
+      { "text": "«If I had studied, I ___ passed» — to'g'ri shakl?", "options": ["would", "would have", "will have", "had"], "correctIndex": 1, "explanation": "Third conditional: If + had V3, would have + V3." },
+      { "text": "«Never ___ I seen such a thing» — bo'shliqqa nima?", "options": ["hech narsa", "have", "did", "was"], "correctIndex": 1, "explanation": "Inversiya: inkor ravish boshda → yordamchi + ega." },
+      { "text": "«I had my car ___ » — to'g'ri shakl?", "options": ["repair", "repaired", "repairing", "to repair"], "correctIndex": 1, "explanation": "Causative: have/get + obyekt + V3." },
+      { "text": "«It's essential that he ___ there» — to'g'ri shakl?", "options": ["is", "be", "was", "will be"], "correctIndex": 1, "explanation": "Mandative subjunctive: that + ega + V1." },
+      { "text": "B2 daraja qaysi imtihon darajasiga mos keladi?", "options": ["IELTS 4–5", "IELTS 6.5–7", "IELTS 8.5+", "A2"], "correctIndex": 1, "explanation": "B2 — «yaxshi va aniq ingliz», masofaviy ish darajasi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "52-maxsus-word-formation",
+    "title": "Test — So'z yasalishi",
+    "questions": [
+      { "text": "Prefiks va suffiks qanday farqlanadi?", "options": ["Farqi yo'q", "Prefiks — MA'NOni; suffiks — TURKUMni o'zgartiradi", "Suffiks ma'noni", "Ikkalasi turkumni"], "correctIndex": 1, "explanation": "un-/dis-/re-/over- (ma'no) ↔ -ness/-ly/-able (turkum)." },
+      { "text": "«___ possible» — qaysi inkor prefiks?", "options": ["un-", "im-", "il-", "ir-"], "correctIndex": 1, "explanation": "im- m/b/p oldidan; il- l oldidan; ir- r oldidan; in- qolganlar uchun." },
+      { "text": "«___ regular» — qaysi inkor prefiks?", "options": ["im-", "il-", "ir-", "in-"], "correctIndex": 2, "explanation": "irregular — «r» tovushidan oldin ir-." },
+      { "text": "«-ment, -ness, -ity» qaysi turkumni yasaydi?", "options": ["Sifat", "OT", "Fe'l", "Ravish"], "correctIndex": 1, "explanation": "Sifat: -ful, -less, -able, -ous, -ive; fe'l: -ise/-ize, -en, -ify, -ate." },
+      { "text": "«-ify, -en, -ate» qaysi turkumni yasaydi?", "options": ["Ot", "Sifat", "FE'L", "Ravish"], "correctIndex": 2, "explanation": "simplify, widen, activate — fe'l yasovchi suffikslar." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "53-maxsus-ame-vs-bre",
+    "title": "Test — AmE va BrE",
+    "questions": [
+      { "text": "«flat» qaysi variantga tegishli?", "options": ["AmE", "BrE (AmE: apartment)", "Ikkalasi", "Hech qaysi"], "correctIndex": 1, "explanation": "elevator/lift, vacation/holiday, gas/petrol, fall/autumn." },
+      { "text": "BrE da «first floor» qaysi qavat?", "options": ["Birinchi qavat", "Ikkinchi qavat (1-qavat = ground floor)", "Yerto'la", "Oxirgi qavat"], "correctIndex": 1, "explanation": "Bu farq amaliy chalkashlikka olib keladi." },
+      { "text": "«colour, organise» qaysi variant?", "options": ["AmE", "BrE", "Ikkalasi", "Xato"], "correctIndex": 1, "explanation": "AmE: color, organize, center, traveling." },
+      { "text": "Bir matnda ikki variantni aralashtirish mumkinmi?", "options": ["Ha", "Yo'q — bittasini IZCHIL ishlating", "Faqat imloda", "Faqat lug'atda"], "correctIndex": 1, "explanation": "color + organize YOKI colour + organise — aralashtirmang." },
+      { "text": "Kod va texnik hujjatda qaysi imlo afzal?", "options": ["BrE", "AmE (color, initialize)", "Farqi yo'q", "Ikkalasi"], "correctIndex": 1, "explanation": "Cambridge/IELTS uchun esa BrE tabiiyroq (AmE ham qabul qilinadi)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "54-maxsus-register",
+    "title": "Test — Register",
+    "questions": [
+      { "text": "Register necha darajaga bo'linadi?", "options": ["2", "3: rasmiy, neytral, norasmiy", "4", "5"], "correctIndex": 1, "explanation": "Vaziyat va munosabatga qarab tanlanadi." },
+      { "text": "«purchase, assist, obtain» qaysi registr?", "options": ["Norasmiy", "Rasmiy (lotin ildizli)", "Neytral", "Jargon"], "correctIndex": 1, "explanation": "Norasmiy juftlari: buy, help, get." },
+      { "text": "«put off» ning rasmiy muqobili qaysi?", "options": ["delay only", "postpone", "stop", "cancel"], "correctIndex": 1, "explanation": "find out → discover; but → however; start → commence." },
+      { "text": "Matn ichida register qanday bo'lishi kerak?", "options": ["Aralash", "IZCHIL — bir darajada", "Har paragrafda boshqa", "Ahamiyati yo'q"], "correctIndex": 1, "explanation": "Esseda «wanna», do'stga «I would be grateful» — ikkalasi ham nomutanosib." },
+      { "text": "Shubhalanganda qaysi register xavfsizroq?", "options": ["Norasmiy", "Rasmiyroq", "Jargon", "Farqi yo'q"], "correctIndex": 1, "explanation": "Zamonaviy ish emailida esa iliq-neytral ohang eng mos keladi." }
+    ]
+  }
+]

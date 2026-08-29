@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "11-ekspressiv-sintaksis",
+    "title": "Test — Ekspressiv sintaksis",
+    "questions": [
+      { "text": "«Он придёт. За́втра. Обяза́тельно» — bu qanday vosita?", "options": ["Inversiya", "Парцелля́ция — gapni mustaqil bo'laklarga uzish", "Anafora", "Gradatsiya"], "correctIndex": 1, "explanation": "Parselyatsiya har bo'lakka alohida urg'u va ritm beradi." },
+      { "text": "«пришёл, уви́дел, победи́л» — qaysi figura?", "options": ["Anafora", "Gradatsiya — kuchayish", "Antiteza", "Epifora"], "correctIndex": 1, "explanation": "Takror figuralari: anafora (boshda), epifora (oxirda), parallelizm, gradatsiya, antiteza." },
+      { "text": "«ты бога́т, я бе́ден» — qaysi figura?", "options": ["Gradatsiya", "Antíteza — zidlash", "Anafora", "Ellipsis"], "correctIndex": 1, "explanation": "Antiteza qarama-qarshi tushunchalarni yonma-yon qo'yadi." },
+      { "text": "«Кто не зна́ет Пу́шкина?» — bu qanday vosita?", "options": ["Haqiqiy savol", "Ritorik savol — javob kutmasdan ta'sir berish", "Murojaat", "Undov"], "correctIndex": 1, "explanation": "Ritorik vositalar: savol, undov, murojaat." },
+      { "text": "Ekspressiv figuralar qaysi uslubda o'rinsiz?", "options": ["Badiiy", "Publitsistik", "Ilmiy va rasmiy-ish", "Notiqlik"], "correctIndex": 2, "explanation": "Ilmiy va rasmiy uslubda ular nuqson hisoblanadi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "12-soz-tartibi-stilistik",
+    "title": "Test — So'z tartibi va matn kogeziyasi",
+    "questions": [
+      { "text": "Matn kogeziyasi so'z tartibi orqali qanday ta'minlanadi?", "options": ["Tasodifiy", "Bir gapning remasi keyingi gapning temasi bo'ladi", "Tema doim o'zgarmaydi", "Rema boshda turadi"], "correctIndex": 1, "explanation": "Тема-рема zanjiri butun abzasni bog'laydi." },
+      { "text": "Tavsif yoki biografiya uchun qaysi progressiya mos?", "options": ["Zanjirli", "Doimiy tema — bir tema, ko'p rema", "Tarmoqli", "Hech qaysi"], "correctIndex": 1, "explanation": "Zanjirli — bayon uchun; tarmoqli (gipertema) — tahlil uchun." },
+      { "text": "«то́лько, да́же, и́менно» qaysi so'zni urg'ulaydi?", "options": ["O'zidan oldingisini", "O'zidan keyingisini", "Gap egasini", "Kesimni"], "correctIndex": 1, "explanation": "Zarracha o'rnini ko'chirib, mantiqiy urg'uni ko'chirasiz." },
+      { "text": "«дом но́вый» (postpozitsiya) nima qiladi?", "options": ["Neytral", "Sifatni remaga chiqaradi — ta'kid/baholovchi", "Xato", "Ma'noni o'zgartirmaydi"], "correctIndex": 1, "explanation": "«но́вый дом» (prepozitsiya) — neytral tartib." },
+      { "text": "Ilmiy va rasmiy uslub qanday tartibga tayanadi?", "options": ["Inversiyaga", "Qat'iy neytral tartibga", "Erkin tartibga", "Emfatik tartibga"], "correctIndex": 1, "explanation": "Badiiy/og'zaki — erkinlikka, she'riyat — inversiyaga tayanadi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "13-register-adabiy-troplar",
+    "title": "Test — Troplar",
+    "questions": [
+      { "text": "«съел таре́лку» — bu qaysi trop?", "options": ["Metafora", "Metonimiya — real yaqinlik", "Epitet", "Giperbola"], "correctIndex": 1, "explanation": "Metafora — yashirin o'xshashlik; metonimiya — real yaqinlik (idish ↔ ovqat)." },
+      { "text": "«ли́шний рот» — bu qaysi trop?", "options": ["Metafora", "Sinekdoxa — bo'lak butun o'rnida", "Epitet", "Ironiya"], "correctIndex": 1, "explanation": "Sinekdoxa — metonimiyaning turi: bo'lak ↔ butun." },
+      { "text": "«мужичо́к с ного́ток» — bu qaysi trop?", "options": ["Giperbola", "Litota — kamaytirish", "Metafora", "Perifraza"], "correctIndex": 1, "explanation": "Giperbola bo'rttiradi (мо́ре слёз), litota kamaytiradi." },
+      { "text": "Metafora va taqqoslashni qanday ajratamiz?", "options": ["Uzunligi bilan", "«как/сло́вно» bormi yoki yo'qmi", "Urg'u bilan", "Ajratib bo'lmaydi"], "correctIndex": 1, "explanation": "глаза́ как звёзды — taqqoslash; звёзды глаз — metafora." },
+      { "text": "«царь звере́й» — bu qaysi trop?", "options": ["Metafora", "Перифра́з — tasviriy nom", "Epitet", "Ironiya"], "correctIndex": 1, "explanation": "Perifraza predmetni to'g'ridan nomlamay, tasvirlab ataydi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "14-register-sozlashuv-nozik",
+    "title": "Test — So'zlashuv registri nozikliklari",
+    "questions": [
+      { "text": "Register vertikali qanday tuzilgan?", "options": ["Ikki qavat", "Высок. → neytral → разг. → прост. → жарг.", "Faqat neytral", "Uch qavat"], "correctIndex": 1, "explanation": "C1 mahorati — butun vertikalni his qilish va har so'zni o'z qavatiga joylash." },
+      { "text": "«и́хний, ло́жить, зво́нит» — bular qayerda turadi?", "options": ["Adabiy me'yor ichida", "Chegaradan tashqarida — просторе́чие, xato", "Yuqori uslub", "Jargon"], "correctIndex": 1, "explanation": "Разговорная leksika (па́рень, ла́дно, обалде́ть) esa chegaradan ichkarida — adabiy." },
+      { "text": "«ста́рый → пожило́й» — bu qanday hodisa?", "options": ["Jargon", "Эвфеми́зм — registrni yuqoriga ko'tarish", "Arxaizm", "Neologizm"], "correctIndex": 1, "explanation": "Motam, ish, diplomatiya kabi nozik vaziyatlarda — madaniyat belgisi." },
+      { "text": "«па́ра, хвост, автома́т, шпо́ра» — qaysi jargon?", "options": ["Yoshlar", "Talaba jargoni", "Kasbiy", "Internet"], "correctIndex": 1, "explanation": "Kasbiy: комп, ви́нда, баг, фи́ча. Internet: лол, имхо, гу́глить." },
+      { "text": "Bu qatlamlarga munosabat qanday bo'lishi kerak?", "options": ["Hammasini faol ishlatish", "Asimmetriya: tushunish uchun o'rganamiz, ishlatishda ehtiyot bo'lamiz", "Umuman o'rganmaslik", "Faqat jargon ishlatish"], "correctIndex": 1, "explanation": "Разг. — do'st bilan xavfsiz; жарг. — faqat «o'z» muhit; прост. — hech qachon." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "15-register-arxaizm-kitobiy",
+    "title": "Test — Arxaizm va kitobiy leksika",
+    "questions": [
+      { "text": "Arxaizm va historizm qanday farqlanadi?", "options": ["Farqi yo'q", "Arxaizmning zamonaviy sinonimi bor, historizmniki yo'q", "Historizmning sinonimi bor", "Arxaizm yangiroq"], "correctIndex": 1, "explanation": "о́чи → глаза́ (arxaizm); боя́рин, кольчу́га (historizm — narsa yo'qolgan)." },
+      { "text": "«град → го́род, зла́то → зо́лото» — bu qanday qatlam?", "options": ["Historizm", "Старославянизмы — «неполногласие» belgisi bilan", "Neologizm", "Jargon"], "correctIndex": 1, "explanation": "Cherkov-slavyan qatlami: глас → го́лос, брег → бе́рег." },
+      { "text": "«лазу́рный, не́га, ди́вный, ли́ра» — qaysi guruh?", "options": ["Historizm", "Poetizmlar — faqat she'riy", "Arxaizm", "Neologizm"], "correctIndex": 1, "explanation": "Yuqori leksika esa tantanavor: сверше́ние, воздви́гнуть, отчи́зна, до́блесть." },
+      { "text": "Eskirgan so'zni ko'rganda qaysi ikki savol beriladi?", "options": ["Urg'usi? Imlosi?", "Qaysi guruh? Qanday funksiya?", "Rodi? Soni?", "Kelishigi? Zamoni?"], "correctIndex": 1, "explanation": "Bu ikki savol XIX asr klassikasi va tarixiy romanning «ikkinchi qatlami»ni ochadi." },
+      { "text": "Yuqori so'zni past kontekstda ishlatish qanday effekt beradi?", "options": ["Tantana", "Ironiya", "Rasmiylik", "Aniqlik"], "correctIndex": 1, "explanation": "Beshta funksiyadan biri: klassikani tushunish, tarixiy kolorit, pafos, diniy uslub, ironiya." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "16-frazeologiya-chuqur",
+    "title": "Test — Frazeologiya (chuqur)",
+    "questions": [
+      { "text": "«бить баклу́ши» Vinogradov tasnifida qaysi tur?", "options": ["Еди́нство", "Сраще́ние — motivsiz, obraz yo'q", "Сочета́ние", "Крылатое слово"], "correctIndex": 1, "explanation": "Еди́нство — obraz tirik (плыть по тече́нию); сочета́ние — bir so'z bog'langan (закады́чный друг)." },
+      { "text": "«игра́ет значе́ние» — bu nima?", "options": ["To'g'ri ibora", "Kontaminatsiya — ikki iborani qorishtirish, xato", "Variant", "Transformatsiya"], "correctIndex": 1, "explanation": "To'g'risi: игра́ет роль yoki име́ет значе́ние. Variant ≠ xato." },
+      { "text": "«ахилле́сова пята́, дамо́клов меч» — manba qaysi?", "options": ["Bibliya", "Mifologiya", "Tarix", "Kasb-hunar"], "correctIndex": 1, "explanation": "Manba iboraning uslubini belgilaydi: mif/Bibliya → kitobiy, yozma matnga mos." },
+      { "text": "«ко́зёл отпуще́ния, умы́ть ру́ки» qayerdan kelgan?", "options": ["Mifologiya", "Bibliya", "Tarix", "Kasb"], "correctIndex": 1, "explanation": "Bibliyadan: ма́нна небе́сная, блу́дный сын." },
+      { "text": "Frazeologizmni nechta o'lchamda nazorat qilish kerak?", "options": ["2", "4: shakl, ma'no, uslub, o'rin", "1", "6"], "correctIndex": 1, "explanation": "Buzilgan yoki o'rinsiz ibora aksincha zarar keltiradi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "17-kollokatsiya-ilgor",
+    "title": "Test — Ilg'or kollokatsiyalar",
+    "questions": [
+      { "text": "«кроме́шная тьма, гробова́я тишина́» — bu qanday so'zlar?", "options": ["Oddiy sifatlar", "Интенсифика́торы — «asl» ma'nosini yo'qotib kuchaytirgichga aylangan", "Epitetlar", "Arxaizmlar"], "correctIndex": 1, "explanation": "Universal «си́льный / по́лный» ular o'rniga mos kelmaydi." },
+      { "text": "«___ наде́жду» — qaysi fe'l?", "options": ["де́лать", "пита́ть", "дать", "брать"], "correctIndex": 1, "explanation": "Funksional (bo'sh) fe'llar: пита́ть наде́жду, испы́тывать тру́дности, вноси́ть вклад." },
+      { "text": "«___ догово́р» — qaysi fe'l to'g'ri?", "options": ["сде́лать", "заключи́ть", "дать", "поста́вить"], "correctIndex": 1, "explanation": "Rasmiy klishe: заключи́ть догово́р, вы́нести пригово́р, вступи́ть в си́лу. «Сде́лать догово́р» — tipik xato." },
+      { "text": "«ка́рие» qaysi so'z bilan birikadi?", "options": ["во́лосы", "глаза́", "конь", "друг"], "correctIndex": 1, "explanation": "Cheklangan moslik: ка́рие — ko'z, кашта́новые — soch, вороно́й — ot." },
+      { "text": "«кра́йне» qanday ottenkada ishlatiladi?", "options": ["Neytral", "Kitobiy-rasmiy, ko'proq salbiy belgi bilan", "So'zlashuv", "Faqat ijobiy"], "correctIndex": 1, "explanation": "Shkala: о́чень (neytral), весьма́/кра́йне/чрезвыча́йно (kitobiy), донельзя́ (ekspressiv)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "18-paronimiya-leksik-qiyinliklar",
+    "title": "Test — Paronimiya va leksik qiyinliklar",
+    "questions": [
+      { "text": "«-ический» va «-ичный» suffikslari qanday farqlanadi?", "options": ["Farqi yo'q", "-ический — sohaga oid; -ичный — shu sifatga ega (odam, xislat)", "-ичный — sohaga oid", "Faqat urg'u farqi"], "correctIndex": 1, "explanation": "дипломати́ческий (soha) ↔ дипломати́чный (odam); практи́ческий ↔ практи́чный." },
+      { "text": "C1 da paronim necha qavatda o'rganiladi?", "options": ["1", "3: ma'nosi, leksik moslik, boshqaruv", "2", "5"], "correctIndex": 1, "explanation": "Moslik — eng ishonchli farqlash kaliti." },
+      { "text": "«___ роль» — qaysi fe'l to'g'ri?", "options": ["име́ть", "игра́ть", "оказа́ть", "удели́ть"], "correctIndex": 1, "explanation": "игра́ть роль, име́ть значе́ние, оказа́ть по́мощь, удели́ть внима́ние, одержа́ть побе́ду." },
+      { "text": "«свобо́дная вака́нсия» — bu qanday xato?", "options": ["Tavtologiya", "Pleonazm — ortiqcha takror ma'no", "Paronim", "Kontaminatsiya"], "correctIndex": 1, "explanation": "Pleonazm: пе́рвый дебю́т, свобо́дная вака́нсия. Tavtologiya: спроси́ть вопро́с." },
+      { "text": "C1 xatosi ko'pincha qayerda bo'ladi?", "options": ["So'zning o'zida", "Birikmada — «bu so'z shu so'z bilan birika oladimi?»", "Urg'uda", "Imloda"], "correctIndex": 1, "explanation": "Moslikni bilish — savodli nutqning eng aniq belgisi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "19-soz-yasash-okkazionalizm-neologizm",
+    "title": "Test — Neologizm va okkazionalizm",
+    "questions": [
+      { "text": "«громáдьё, прозаседáвшиеся» — bular nima?", "options": ["Neologizm", "Okkazionalizm — muallif bir matn uchun yaratgan", "Potensial so'z", "Arxaizm"], "correctIndex": 1, "explanation": "Lug'atga kirmaydi, badiiy/satirik maqsadda yaratiladi." },
+      { "text": "«смартфóн, цифровиза́ция» — bular nima?", "options": ["Okkazionalizm", "Neologizm — jamiyat yaratgan, lug'atga kiryapti", "Potensial so'z", "Jargon"], "correctIndex": 1, "explanation": "Davr talab qilgan yangi so'zlar." },
+      { "text": "«перепры́гиваемость» kabi so'zlar qanday ataladi?", "options": ["Neologizm", "Potensial so'z — model bo'yicha yasaladi, lug'atda yo'q, lekin tushunarli", "Okkazionalizm", "Arxaizm"], "correctIndex": 1, "explanation": "Uch tushuncha: neologizm, okkazionalizm, potensial so'z." },
+      { "text": "«блóгер, айти́шник» qaysi model bilan yasalgan?", "options": ["-иза́ция", "-ер/-щик/-ник (yangi kasb)", "анти-/пост-", "Qisqartma"], "correctIndex": 1, "explanation": "Faol modellar — yangi so'z «fabrikasi»: -иза́ция, -ер/-щик/-ник, анти-/пост-/супер-/кибер-/эко-." },
+      { "text": "«руне́т, смог» qanday yasalgan?", "options": ["Abbreviatsiya", "Kontaminatsiya/blending", "Kesib olish", "Prefiks"], "correctIndex": 1, "explanation": "вуз, ЕГЭ, СМИ — abbreviatsiya; блог — kesib olish; руне́т — blending." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "20-omonimiya-polisemiya",
+    "title": "Test — Omonimiya va polisemiya",
+    "questions": [
+      { "text": "Polisemiya va omonimiyani qanday ajratamiz?", "options": ["Uzunligi bilan", "«Ma'nolar bog'liqmi?» HA → polisemiya, YO'Q → omonimiya", "Urg'u bilan", "Rod bilan"], "correctIndex": 1, "explanation": "Uch mezon: ma'no ipi, lug'at maqolasi, so'z yasash uyasi." },
+      { "text": "«за́мок / замо́к» — bu qanday omonim?", "options": ["Омо́фон", "Омо́граф — bir xil yoziladi, urg'u farq qiladi", "Омофо́рма", "To'liq omonim"], "correctIndex": 1, "explanation": "му́ка/мука́, о́рган/орга́н. Noto'g'ri urg'u — boshqa so'z." },
+      { "text": "«луг / лук» — bu qanday omonim?", "options": ["Омо́граф", "Омо́фон — bir xil aytiladi, boshqacha yoziladi", "Омофо́рма", "Polisemiya"], "correctIndex": 1, "explanation": "плод/плот ham shunday. Омофо́рма esa faqat bitta shaklda mos keladi (три)." },
+      { "text": "«пи́во, по́рох» ma'nosining tarixiy o'zgarishi qanday?", "options": ["Kengayish", "Суже́ние — torayish", "Metafora", "Metonimiya"], "correctIndex": 1, "explanation": "To'rt qonuniyat: metafora, metonimiya, расшире́ние (па́лец), суже́ние." },
+      { "text": "Каламбу́р nimaga asoslanadi?", "options": ["Grammatikaga", "Omonimiya/polisemiyaga — ikki ma'no to'qnashuvi", "Urg'uga", "Sintaksisga"], "correctIndex": 1, "explanation": "Kalamburni tushunish — til his qilishning yuqori belgisi." }
+    ]
+  }
+]

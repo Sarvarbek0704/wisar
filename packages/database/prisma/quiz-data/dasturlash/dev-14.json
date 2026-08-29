@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "01-web-xavfsizligi-owasp-top-10",
+    "title": "Test — Web xavfsizligi va OWASP Top 10",
+    "questions": [
+      { "text": "«CIA» triadasi nima?", "options": ["Kompaniya", "Confidentiality, Integrity, Availability", "Cache, Index, Auth", "Client, Internet, API"], "correctIndex": 1, "explanation": "Axborot xavfsizligining uch asosiy maqsadi." },
+      { "text": "«Defense in depth» nima?", "options": ["Bitta kuchli himoya", "Ko'p qatlamli himoya — bir qatlam buzilsa boshqasi ushlaydi", "Firewall", "Shifrlash"], "correctIndex": 1, "explanation": "Least privilege bilan birga asosiy tamoyil." },
+      { "text": "OWASP Top 10 nima?", "options": ["Vosita", "Eng keng tarqalgan 10 ta web zaiflik ro'yxati", "Standart", "Kutubxona"], "correctIndex": 1, "explanation": "ASVS esa batafsil tekshiruv standarti (L1–L3)." },
+      { "text": "«Hujum yuzasi» (attack surface) nima?", "options": ["Server", "Tizimning tashqi kirish nuqtalari yig'indisi", "Kod", "Baza"], "correctIndex": 1, "explanation": "Uni kamaytirish — xavfsizlikning asosiy strategiyasi." },
+      { "text": "Xavfsizlik SDLC'da qachon ko'rib chiqilishi kerak?", "options": ["Deploy'dan oldin", "Boshidan — dizayn bosqichidan", "Test'da", "Incident'dan keyin"], "correctIndex": 1, "explanation": "Kech topilgan zaiflik qimmatga tushadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "02-xss-cross-site-scripting",
+    "title": "Test — XSS",
+    "questions": [
+      { "text": "XSS ning uch turi qaysi?", "options": ["SQL, NoSQL, command", "Stored, Reflected, DOM-based", "CSRF, SSRF, XSS", "Local, remote, hybrid"], "correctIndex": 1, "explanation": "Stored eng xavfli — ma'lumot bazada saqlanadi." },
+      { "text": "React XSS'dan qanday himoya qiladi?", "options": ["Himoya qilmaydi", "JSX qiymatlarni avtomatik escape qiladi", "CSP bilan", "Sanitizer bilan"], "correctIndex": 1, "explanation": "dangerouslySetInnerHTML bu himoyani chetlab o'tadi." },
+      { "text": "«CSP» nima beradi?", "options": ["Shifrlash", "Qaysi manbalardan skript yuklanishini cheklaydi", "Auth", "Cache"], "correctIndex": 1, "explanation": "nonce yoki hash bilan inline skript boshqariladi." },
+      { "text": "Rich text kiritishda nima ishlatiladi?", "options": ["Blacklist", "Allowlist asosidagi sanitizatsiya (DOMPurify)", "Escape faqat", "Hech narsa"], "correctIndex": 1, "explanation": "Blacklist doim chetlab o'tiladi." },
+      { "text": "«Trusted Types» nima beradi?", "options": ["Auth", "DOM'ga xavfli qiymat yozishni brauzer darajasida taqiqlaydi", "CSP alternativasi", "Cache"], "correctIndex": 1, "explanation": "DOM-based XSS'ga qarshi kuchli qatlam." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "03-injection-sql-nosql-command",
+    "title": "Test — Injection hujumlari",
+    "questions": [
+      { "text": "Injection'ning mohiyati nima?", "options": ["Xato", "Ma'lumot kod sifatida talqin qilinishi", "Sekinlik", "Ruxsat"], "correctIndex": 1, "explanation": "Yechim — ma'lumot va kodni qat'iy ajratish." },
+      { "text": "SQL injection'ga qarshi asosiy himoya qaysi?", "options": ["Escape", "Parametrli (prepared) so'rovlar", "Uzunlikni cheklash", "WAF"], "correctIndex": 1, "explanation": "WAF — qo'shimcha qatlam, asosiy himoya emas." },
+      { "text": "NoSQL injection qanday yuz beradi?", "options": ["SQL bilan", "Obyekt operatorlari ($gt, $ne) foydalanuvchi kiritmasidan kelganda", "Fayl bilan", "Yuz bermaydi"], "correctIndex": 1, "explanation": "Kirish turini qat'iy tekshirish kerak." },
+      { "text": "Prisma'da qaysi metod xavfli?", "options": ["$queryRaw (teglangan)", "$queryRawUnsafe", "findMany", "create"], "correctIndex": 1, "explanation": "Teglangan shablon avtomatik parametrlashtiradi." },
+      { "text": "«Second-order injection» nima?", "options": ["Ikkinchi so'rov", "Saqlangan zararli ma'lumot keyinroq so'rovda ishlatilishi", "Blind injection", "Stacked query"], "correctIndex": 1, "explanation": "Faqat kirishda emas, ishlatishda ham parametrlash kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "04-csrf-va-ssrf",
+    "title": "Test — CSRF va SSRF",
+    "questions": [
+      { "text": "CSRF hujumi nima qiladi?", "options": ["Skript kiritadi", "Foydalanuvchi nomidan uning xohishisiz so'rov yuboradi", "Serverga so'rov", "Ma'lumot o'qiydi"], "correctIndex": 1, "explanation": "Brauzer cookie'ni avtomatik yuborishiga tayanadi." },
+      { "text": "CSRF'ga qarshi asosiy himoya qaysi?", "options": ["CSP", "SameSite cookie va CSRF token", "CORS", "HTTPS faqat"], "correctIndex": 1, "explanation": "SameSite=Lax standart holatda ko'p hujumni to'sadi." },
+      { "text": "SSRF nima?", "options": ["Mijoz hujumi", "Server hujumchi ko'rsatgan manzilga so'rov yuborishi", "XSS turi", "CSRF turi"], "correctIndex": 1, "explanation": "Ichki tarmoq va metadata endpointlariga kirish xavfi." },
+      { "text": "SSRF'ga qarshi eng ishonchli himoya qaysi?", "options": ["Blacklist", "Allowlist — faqat ruxsat etilgan domenlar", "Regex", "Timeout"], "correctIndex": 1, "explanation": "Ichki IP diapazonlarini bloklash ham zarur." },
+      { "text": "Clickjacking'dan nima himoya qiladi?", "options": ["CORS", "X-Frame-Options yoki CSP frame-ancestors", "CSRF token", "HTTPS"], "correctIndex": 1, "explanation": "Sahifani boshqa saytga iframe qilishni taqiqlaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "05-autentifikatsiya-va-parol-xavfsizligi",
+    "title": "Test — Parol xavfsizligi",
+    "questions": [
+      { "text": "Parol uchun qaysi algoritmlar tavsiya etiladi?", "options": ["MD5, SHA1", "bcrypt, argon2, scrypt", "Base64", "AES"], "correctIndex": 1, "explanation": "Ular ataylab sekin — brute-force qiyinlashadi." },
+      { "text": "«Pepper» «salt» dan nimasi bilan farq qiladi?", "options": ["Farqi yo'q", "Pepper — barcha uchun umumiy, DB'dan tashqarida saqlanadi", "Salt umumiy", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Baza sizsa ham pepper hujumchida bo'lmaydi." },
+      { "text": "NIST parol siyosati nimani tavsiya qiladi?", "options": ["Majburiy murakkablik va tez-tez almashtirish", "Uzunlikka urg'u, majburiy davriy almashtirishdan voz kechish", "4 belgi", "Faqat raqam"], "correctIndex": 1, "explanation": "Tez-tez almashtirish odamlarni zaif parolga majbur qiladi." },
+      { "text": "«alg: none» JWT hujumi nima?", "options": ["Shifrlash", "Imzo algoritmini o'chirib, soxta token yasash", "Expiry", "Refresh"], "correctIndex": 1, "explanation": "Algoritmni serverda qat'iy majburlash kerak." },
+      { "text": "2FA nima beradi?", "options": ["Tezlik", "Ikkinchi omil — parol o'g'irlansa ham kirish bloklanadi", "Shifrlash", "Cache"], "correctIndex": 1, "explanation": "TOTP yoki passkey ko'rinishida bo'ladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "06-token-va-secrets-xavfsizligi",
+    "title": "Test — Token va secrets xavfsizligi",
+    "questions": [
+      { "text": "HS256 va RS256 qanday farqlanadi?", "options": ["Farqi yo'q", "HS256 — simmetrik (bitta kalit); RS256 — asimmetrik (private/public)", "RS256 simmetrik", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Ko'p xizmat token tekshirsa RS256 qulay." },
+      { "text": "Hash, shifrlash va kodlash qanday farqlanadi?", "options": ["Bir xil", "Hash — bir tomonlama; shifr — qaytariladigan (kalit bilan); kodlash — xavfsizlik emas", "Base64 — shifrlash", "Hash qaytariladi"], "correctIndex": 1, "explanation": "Base64 — faqat format, himoya emas." },
+      { "text": "Solishtirishda nima uchun «timing-safe» taqqoslash kerak?", "options": ["Tezlik", "Vaqt farqi orqali sirni fosh qilishning oldini olish", "Format", "Xotira"], "correctIndex": 1, "explanation": "crypto.timingSafeEqual ishlatiladi." },
+      { "text": "«Envelope encryption» nima?", "options": ["Email", "Ma'lumot kaliti bilan shifrlanadi, kalit esa master kalit bilan", "TLS", "Hash"], "correctIndex": 1, "explanation": "Kalit rotatsiyasini soddalashtiradi." },
+      { "text": "Webhook imzosi qanday tekshiriladi?", "options": ["Token bilan", "HMAC va timing-safe solishtirish bilan", "IP bilan", "Header bilan"], "correctIndex": 1, "explanation": "Raw body ishlatilishi shart." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "07-https-cors-xavfsizlik-headerlari",
+    "title": "Test — HTTPS, CORS va xavfsizlik headerlari",
+    "questions": [
+      { "text": "HSTS nima beradi?", "options": ["Shifrlash", "Brauzer saytga faqat HTTPS orqali murojaat qilishini majburlaydi", "CORS", "Cache"], "correctIndex": 1, "explanation": "Downgrade hujumlarining oldini oladi." },
+      { "text": "CORS preflight qachon yuboriladi?", "options": ["Har doim", "Murakkab so'rovlarda (maxsus header, PUT/DELETE)", "Hech qachon", "GET'da"], "correctIndex": 1, "explanation": "OPTIONS metodi bilan yuboriladi." },
+      { "text": "«credentials: include» bilan CORS'da nima taqiqlanadi?", "options": ["Hech narsa", "Access-Control-Allow-Origin: * ishlatish", "POST", "Header"], "correctIndex": 1, "explanation": "Aniq origin ko'rsatilishi shart." },
+      { "text": "«Mixed content» nima?", "options": ["Aralash til", "HTTPS sahifada HTTP resurs yuklash", "CORS xatosi", "Cache"], "correctIndex": 1, "explanation": "Brauzer bunday resurslarni bloklaydi." },
+      { "text": "«SRI» (Subresource Integrity) nima beradi?", "options": ["Cache", "CDN'dan yuklangan fayl o'zgartirilmaganini tekshiradi", "CORS", "HSTS"], "correctIndex": 1, "explanation": "Hash integrity atributi orqali tekshiriladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "08-rate-limiting-va-dos-himoyasi",
+    "title": "Test — Rate limiting va DoS himoyasi",
+    "questions": [
+      { "text": "«Sliding window» algoritmi «fixed window» dan nimasi bilan afzal?", "options": ["Sodda", "Chegara chetidagi burst muammosini kamaytiradi", "Tez", "Kam xotira"], "correctIndex": 1, "explanation": "Token bucket esa qisqa burst'ga ruxsat beradi." },
+      { "text": "Rate limit qaysi darajalarda qo'llanadi?", "options": ["Faqat IP", "IP, foydalanuvchi, API kalit, endpoint va global", "Faqat global", "Faqat endpoint"], "correctIndex": 1, "explanation": "Auth endpointlariga alohida qattiq chegara qo'yiladi." },
+      { "text": "«Circuit breaker» nima beradi?", "options": ["Rate limit", "Nosoz bog'liqlikka so'rovni to'xtatib, kaskad qulashning oldini olish", "Cache", "Retry"], "correctIndex": 1, "explanation": "Graceful degradation bilan birga chidamlilik naqshi." },
+      { "text": "GraphQL'da resurs himoyasi qanday amalga oshiriladi?", "options": ["Rate limit faqat", "Query depth va complexity cheklovi", "CORS", "CSP"], "correctIndex": 1, "explanation": "Chuqur ichma-ich so'rov serverni bo'g'ib qo'yishi mumkin." },
+      { "text": "DDoS'ga qarshi asosiy qatlam qaysi?", "options": ["Ilova kodi", "CDN va WAF (Anycast tarmoq)", "Rate limit faqat", "Firewall faqat"], "correctIndex": 1, "explanation": "Hajmli hujumlar ilovaga yetguncha to'silishi kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "14-qism-xavfsizlik", "article": "09-xavfsizlik-auditi-va-yakuniy-amaliyot",
+    "title": "Test — Xavfsizlik auditi",
+    "questions": [
+      { "text": "SAST va DAST qanday farqlanadi?", "options": ["Farqi yo'q", "SAST — kodni statik tahlil; DAST — ishlayotgan ilovani test qilish", "DAST statik", "Ikkalasi statik"], "correctIndex": 1, "explanation": "Ikkalasi birga to'liqroq qamrov beradi." },
+      { "text": "«A06 — Vulnerable Components» qanday hal qilinadi?", "options": ["Qo'lda tekshirish", "Dependency skanerlash va muntazam yangilash (Dependabot)", "E'tiborsiz", "Faqat audit"], "correctIndex": 1, "explanation": "Bog'liqliklar zanjiri ham tekshiriladi." },
+      { "text": "«Threat modeling» nima?", "options": ["Test", "Tizimga qanday hujum bo'lishi mumkinligini oldindan tahlil qilish", "Audit", "Skanerlash"], "correctIndex": 1, "explanation": "STRIDE — keng tarqalgan metodologiya." },
+      { "text": "CI/CD'da xavfsizlik qanday qo'shiladi?", "options": ["Qo'lda", "Avtomatik skanerlash: secrets, dependency, SAST", "Deploy'dan keyin", "Qo'shilmaydi"], "correctIndex": 1, "explanation": "DevSecOps — xavfsizlikni quvurga singdirish." },
+      { "text": "«Incident response» nima uchun kerak?", "options": ["Oldini olish", "Hodisa yuz berganda tez va tartibli javob berish rejasi", "Audit", "Test"], "correctIndex": 1, "explanation": "Aniqlash → izolyatsiya → tiklash → post-mortem." }
+    ]
+  }
+]

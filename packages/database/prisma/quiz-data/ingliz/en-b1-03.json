@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "16-reported-speech-questions-commands",
+    "title": "Test — O'zlashtirma savol va buyruq",
+    "questions": [
+      { "text": "«He asked: “Where do you live?”» ni o'zlashtirmaga aylantiring", "options": ["He asked where do I live", "He asked where I lived", "He asked where did I live", "He asked where I live?"], "correctIndex": 1, "explanation": "O'zlashtirma savolda oddiy so'z tartibi: do/does/did va savol belgisi tushadi." },
+      { "text": "«She asked: “Do you like it?”» ni o'zlashtirmaga aylantiring", "options": ["She asked do I like it", "She asked if I liked it", "She asked that I liked it", "She asked I liked it"], "correctIndex": 1, "explanation": "Yes/No savol → ask + if/whether + ega + fe'l." },
+      { "text": "«He said: “Sit down!”» ni o'zlashtirmaga aylantiring", "options": ["He told me sit down", "He told me to sit down", "He said me to sit down", "He told to me sit down"], "correctIndex": 1, "explanation": "Buyruq → tell + odam + TO + V1." },
+      { "text": "«Don't go» ni o'zlashtirmada qanday beramiz?", "options": ["He told me don't go", "He told me not to go", "He told me to not go", "He told me no go"], "correctIndex": 1, "explanation": "Inkor buyruq: ... NOT TO + V1." },
+      { "text": "Iltimosni yetkazish uchun qaysi fe'l ishlatiladi?", "options": ["tell", "ask + odam + to + V1", "say", "suggest"], "correctIndex": 1, "explanation": "She asked me to wait. Buyruq uchun esa tell/order/warn." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "16b-reporting-verbs-patterns",
+    "title": "Test — Reporting fe'llar naqshlari",
+    "questions": [
+      { "text": "«suggest» dan keyin qaysi shakl keladi?", "options": ["to + V1", "-ing yoki that + gap", "obyekt + to", "V3"], "correctIndex": 1, "explanation": "«suggest to» va «suggest me to» — xato. To'g'risi: suggest going / suggest that we go." },
+      { "text": "«advise, remind, warn» qaysi naqsh bilan keladi?", "options": ["+ -ing", "+ OBYEKT + to V1", "+ that only", "+ prep + -ing"], "correctIndex": 1, "explanation": "He advised me to rest. Inkor: not to V1." },
+      { "text": "«admit, deny» dan keyin qaysi shakl?", "options": ["to + V1", "-ing", "obyekt + to", "for + V1"], "correctIndex": 1, "explanation": "He admitted stealing it. He denied knowing her." },
+      { "text": "«apologize» qaysi predlog bilan?", "options": ["on", "for + -ing", "of", "to only"], "correctIndex": 1, "explanation": "apologize FOR, insist ON, accuse OF, congratulate ON." },
+      { "text": "«promise, offer, agree, refuse» qaysi naqsh bilan?", "options": ["-ing", "to + V1", "obyekt + -ing", "for + -ing"], "correctIndex": 1, "explanation": "He promised to help. She refused to answer." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "17-modals-of-deduction",
+    "title": "Test — Xulosa modallari",
+    "questions": [
+      { "text": "«U albatta charchagan» qanday aytiladi?", "options": ["He should be tired", "He must be tired", "He can be tired", "He has to be tired"], "correctIndex": 1, "explanation": "must be — aniq ishonch bilan chiqarilgan xulosa (majburiyat emas)." },
+      { "text": "«Bu bo'lishi mumkin emas» qanday aytiladi?", "options": ["It mustn't be true", "It can't be true", "It shouldn't be true", "It doesn't must be"], "correctIndex": 1, "explanation": "Salbiy xulosa — CAN'T; mustn't esa TA'QIQ ma'nosini beradi." },
+      { "text": "O'tmish haqidagi xulosa qanday tuziladi?", "options": ["must was", "must have + V3", "must had", "must be"], "correctIndex": 1, "explanation": "He must have forgotten. can't have + V3, might have + V3." },
+      { "text": "«must of» — bu nega xato?", "options": ["must xato", "«of» emas, «have» bo'lishi kerak", "V3 xato", "Xato emas"], "correctIndex": 1, "explanation": "must've talaffuzi «must of» ga o'xshaydi, lekin yozilishi «must have»." },
+      { "text": "Ehtimolni bildirish uchun qaysi modal ishlatiladi?", "options": ["can", "might / may / could", "must", "should"], "correctIndex": 1, "explanation": "«can be» ehtimol uchun ishlatilmaydi. Inkor ehtimol: might not." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "18-had-better-would-rather-ought-supposed",
+    "title": "Test — Had better, would rather, ought to",
+    "questions": [
+      { "text": "«had better» dan keyin qanday fe'l keladi?", "options": ["to + V1", "Sof V1 (to YO'Q)", "V-ing", "V3"], "correctIndex": 1, "explanation": "You'd better hurry. Inkor: You'd better not go." },
+      { "text": "«would rather» qanday ma'no beradi?", "options": ["Majburiyat", "Afzallik — «...ganim ma'qul»", "Ta'qiq", "Ehtimol"], "correctIndex": 1, "explanation": "I'd rather stay. rather X than Y." },
+      { "text": "«I'd rather you ___ » — bo'shliqqa qaysi shakl?", "options": ["go", "went (Past)", "to go", "going"], "correctIndex": 1, "explanation": "Boshqa odam haqida gapirganda: I'd rather you went now." },
+      { "text": "«ought to» va «had better» qanday farqlanadi?", "options": ["Farqi yo'q", "ought to — «to» bilan; had better — «to» siz", "had better — to bilan", "Ikkalasi to bilan"], "correctIndex": 1, "explanation": "ought to = should muqobili: You ought to rest." },
+      { "text": "«I was supposed to call» nimani anglatadi?", "options": ["Qo'ng'iroq qildim", "Qo'ng'iroq qilishim kerak edi, lekin qilmadim", "Qo'ng'iroq qilaman", "Qo'ng'iroq qilmaslik kerak edi"], "correctIndex": 1, "explanation": "be supposed to: qoida, bajarilmagan reja yoki mish-mish (It's supposed to be good)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "19-modal-perfects",
+    "title": "Test — Modal perfectlar",
+    "questions": [
+      { "text": "Modal perfect formulasi qanday?", "options": ["modal + V3", "modal + HAVE + V3", "modal + had + V3", "modal + been"], "correctIndex": 1, "explanation": "O'tmishga qarash: should have called, could have told." },
+      { "text": "«I should have called» qanday ma'no beradi?", "options": ["Qo'ng'iroq qildim", "Afsus — qo'ng'iroq qilishim kerak edi, qilmadim", "Qo'ng'iroq qilaman", "Qilmasligim kerak edi"], "correctIndex": 1, "explanation": "shouldn't have + V3 esa: noto'g'ri ish qildim." },
+      { "text": "«You could have told me!» qanday ma'no beradi?", "options": ["Ayta olasan", "Imkon bor edi, lekin ishlatilmadi", "Aytding", "Aytmasliging kerak edi"], "correctIndex": 1, "explanation": "Ko'pincha norozilik ohangi bilan aytiladi." },
+      { "text": "«You needn't have paid» nimani anglatadi?", "options": ["To'lash kerak edi", "To'ladingiz, lekin kerak emas edi", "To'lamadingiz", "To'lamang"], "correctIndex": 1, "explanation": "Keraksiz bajarilgan ish haqida." },
+      { "text": "«should of» — bu nega xato?", "options": ["should xato", "«of» emas, «have»: should've = should have", "V3 xato", "Xato emas"], "correctIndex": 1, "explanation": "Talaffuz o'xshashligi tufayli keng tarqalgan imlo xatosi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "20-relative-clauses-defining",
+    "title": "Test — Defining relative clauses",
+    "questions": [
+      { "text": "Defining relative clause vergul oladimi?", "options": ["Ha, doim", "Yo'q — vergulsiz", "Faqat boshida", "Faqat oxirida"], "correctIndex": 1, "explanation": "U otni aniqlaydi va gapdan ajratilmaydi." },
+      { "text": "«the book ___ I read» — olmoshni tushirish mumkinmi?", "options": ["Yo'q", "Ha — object olmosh tushadi", "Faqat who bilan", "Faqat where bilan"], "correctIndex": 1, "explanation": "Ega olmoshi tushmaydi (the man who called), object olmoshi tushadi." },
+      { "text": "«the book that I read it» — bu nega xato?", "options": ["that xato", "Takror olmosh (it) tushishi kerak", "read xato", "Xato emas"], "correctIndex": 1, "explanation": "Relative olmoshi allaqachon obyekt vazifasini bajaradi." },
+      { "text": "«whose» nimani bildiradi?", "options": ["Kim", "Egalik", "Joy", "Vaqt"], "correctIndex": 1, "explanation": "whose (egalik) ≠ who's (who is) — imlo tuzog'i." },
+      { "text": "«the house I live ___ » — predlog qayerda turadi?", "options": ["Boshida", "Oxirida: the house I live in", "Tushib qoladi", "O'rtada"], "correctIndex": 1, "explanation": "Norasmiy uslubda predlog gap oxirida keladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "21-relative-clauses-non-defining-reduced",
+    "title": "Test — Non-defining va qisqartirilgan clauselar",
+    "questions": [
+      { "text": "Non-defining relative clause qanday ajratiladi?", "options": ["Vergulsiz", "Vergul bilan", "Tire bilan", "Qavs bilan"], "correctIndex": 1, "explanation": "My brother, who lives in London, is a doctor — qo'shimcha ma'lumot." },
+      { "text": "Non-defining clauseda «that» ishlatiladimi?", "options": ["Ha", "Yo'q — faqat who/which/whose/where", "Faqat narsalar uchun", "Faqat odamlar uchun"], "correctIndex": 1, "explanation": "Bundan tashqari olmosh tushirilmaydi — majburiy." },
+      { "text": "«He was late, ___ annoyed me» — bo'shliqqa nima?", "options": ["what", "which", "that", "who"], "correctIndex": 1, "explanation": "«which» butun gapga izoh berishi mumkin; «what» bu yerda xato." },
+      { "text": "«the man who is waiting» ni qanday qisqartiramiz?", "options": ["the man waited", "the man waiting", "the man to wait", "the man waits"], "correctIndex": 1, "explanation": "Active reduced: who/which + be + V-ing → V-ing." },
+      { "text": "«a book which was written in 1990» ni qanday qisqartiramiz?", "options": ["a book writing in 1990", "a book written in 1990", "a book to write in 1990", "a book wrote in 1990"], "correctIndex": 1, "explanation": "Passive reduced: who/which + be + V3 → V3." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "22-gerunds-infinitives-extended",
+    "title": "Test — Gerund va infinitive (kengaytirilgan)",
+    "questions": [
+      { "text": "«I went ___ bread» (non olish uchun) — to'g'ri shakl?", "options": ["for buy", "to buy", "buying", "for buying"], "correctIndex": 1, "explanation": "Maqsad doim «to + V1» bilan beriladi." },
+      { "text": "«Swimming is fun» — nega gerund?", "options": ["Xato", "Gerund ega vazifasini bajaradi", "Infinitive kerak", "Sifat"], "correctIndex": 1, "explanation": "My hobby is reading — kesim o'rnida ham gerund." },
+      { "text": "«I want you ___ go» — bo'shliqqa nima?", "options": ["hech narsa", "to", "for", "that"], "correctIndex": 1, "explanation": "verb + OBJECT + to: want/tell/ask/allow/expect + odam + to." },
+      { "text": "«look forward to ___ » — bo'shliqqa qaysi shakl?", "options": ["see", "seeing", "to see", "saw"], "correctIndex": 1, "explanation": "Predlogdan keyin har doim -ing; bu yerda «to» — predlog." },
+      { "text": "«remember to call» va «remember calling» qanday farqlanadi?", "options": ["Farqi yo'q", "to — kelajak vazifa; -ing — o'tmish tajribasi", "-ing — kelajak", "Ikkalasi o'tmish"], "correctIndex": 1, "explanation": "Xuddi shunday: forget, stop, try, mean, go on." }
+    ]
+  }
+]

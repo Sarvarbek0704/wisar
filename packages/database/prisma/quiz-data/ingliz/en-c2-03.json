@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "17-murakkab-oqish",
+    "title": "Test — Murakkab o'qish",
+    "questions": [
+      { "text": "O'qishning uch darajasi qaysi?", "options": ["Tez, sekin, o'rtacha", "Literal, inferential, critical", "Skim, scan, close", "Ovozli, ichda, tahlil"], "correctIndex": 1, "explanation": "Faqat yuzaki o'qish ma'noning yarmini yo'qotadi." },
+      { "text": "«so-called, allegedly, claims» qanday signal?", "options": ["Ishonch", "Muallif shubhasi yoki masofasi", "Neytral", "Maqtov"], "correctIndex": 1, "explanation": "«Scare quotes» ham ironiya yoki shubha belgisi." },
+      { "text": "«Unreliable narrator» nima?", "options": ["Yomon yozuvchi", "Hikoyachi ishonchsiz — o'quvchi uning so'ziga tanqidiy qaraydi", "Uchinchi shaxs", "Muallif"], "correctIndex": 1, "explanation": "Adabiy o'qishda POV, ironiya va subtekstni ko'rish muhim." },
+      { "text": "IELTS Readingda «Not Given» nimani anglatadi?", "options": ["Matnga zid", "Matnda umuman aytilmagan", "Noto'g'ri", "Qisman to'g'ri"], "correctIndex": 1, "explanation": "O'z bilimingiz asosida «False» deb belgilash — tipik xato." },
+      { "text": "O'sishning eng kuchli manbai nima?", "options": ["Grammatika mashqi", "Ko'p, qiyinroq va faol o'qish", "Faqat test yechish", "Lug'at yodlash"], "correctIndex": 1, "explanation": "Reading effect: lug'at, uslub va bilim bir vaqtda o'sadi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "18-madaniy-savodxonlik",
+    "title": "Test — Madaniy savodxonlik",
+    "questions": [
+      { "text": "Madaniy savodxonlik nima?", "options": ["Adabiyot bilish", "Til TAXMIN qilgan umumiy bilim (Hirsch)", "Tarix fani", "Grammatika"], "correctIndex": 1, "explanation": "Til mukammal, lekin bilim yo'q bo'lsa — odam baribir «tashqarida» qoladi." },
+      { "text": "Small talk nima uchun muhim?", "options": ["Vaqt o'tkazish", "Rapport va «belonging» hissi — umumiy bilim talab qiladi", "Rasmiy talab", "Grammatika mashqi"], "correctIndex": 1, "explanation": "Ob-havo, sport, TV, yangiliklar — umumiy zamin." },
+      { "text": "«Downing Street» nimani anglatadi?", "options": ["Ko'cha nomi", "Britaniya hukumati (institut metonimiyasi)", "Muzey", "Bozor"], "correctIndex": 1, "explanation": "White House ham shu tarzda ishlatiladi." },
+      { "text": "Reference tushunilmaganda nima qilish kerak?", "options": ["Tushungandek qilish", "SO'RASH — «what's that?» qiziqish belgisi", "Mavzuni o'zgartirish", "Jim qolish"], "correctIndex": 1, "explanation": "«Fake qilish» keyinchalik noqulay vaziyatga olib keladi." },
+      { "text": "«Ingliz dunyosi» bittami?", "options": ["Ha", "Yo'q — US va UK madaniyati, hazili, sporti farq qiladi", "Faqat til farq qiladi", "Faqat imlo"], "correctIndex": 1, "explanation": "BrE quruq/ironik hazil ↔ AmE to'g'ridan-to'g'ri hazil." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "19-yumor-ironiya-satira",
+    "title": "Test — Yumor, ironiya, satira",
+    "questions": [
+      { "text": "Yumorning asosiy mexanizmi nima?", "options": ["Takror", "Incongruity — kutilmagan nomuvofiqlik + timing", "Uzunlik", "Ovoz"], "correctIndex": 1, "explanation": "Setup → kutilgan natijaning buzilishi (subverted expectation)." },
+      { "text": "«Deadpan» yumor nima?", "options": ["Baland kulgi", "Jiddiy yuz bilan aytilgan hazil", "Yozma hazil", "Satira"], "correctIndex": 1, "explanation": "Absurdist (Monty Python), banter, observational — boshqa turlar." },
+      { "text": "BrE yumorining o'ziga xosligi qaysi?", "options": ["To'g'ridan-to'g'ri", "Quruq, ironik, self-deprecating, understated", "Setup-punchline", "Iliq"], "correctIndex": 1, "explanation": "AmE — to'g'ridan, iliq, observational, setup-punchline." },
+      { "text": "Yumorning ijtimoiy funksiyasi nima?", "options": ["Faqat kulgi", "Bonding, in-group signali, tarangliкni yumshatish", "Tanqid", "Bezak"], "correctIndex": 1, "explanation": "Satira esa xavfsiz tanqid vositasi bo'lib xizmat qiladi." },
+      { "text": "Yumorni yaratishda qayerdan boshlash xavfsiz?", "options": ["Sarkazm", "Self-deprecation va observational", "Dark humour", "Sezgir mavzular"], "correctIndex": 1, "explanation": "Tushunish universal; yaratish esa ehtiyot bilan qo'shiladigan bonus." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "20-mintaqaviy-farqlar",
+    "title": "Test — Mintaqaviy farqlar",
+    "questions": [
+      { "text": "Ingliz tili qanday til hisoblanadi?", "options": ["Monotsentrik", "Pluricentric — bitta «to'g'ri» varianti yo'q", "Faqat AmE", "Faqat BrE"], "correctIndex": 1, "explanation": "Tamoyil: understand all, produce one, respect every." },
+      { "text": "BrE da «pants» nimani anglatadi?", "options": ["Shim", "Ich kiyim", "Ko'ylak", "Kurtka"], "correctIndex": 1, "explanation": "BrE da shim — trousers. Bu chalkashlik noqulay vaziyat tug'diradi." },
+      { "text": "Sana yozuvida qanday farq bor?", "options": ["Farqi yo'q", "AmE: MM/DD, BrE: DD/MM", "AmE: DD/MM", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "03/04 — ikki mamlakatda ikki xil sana." },
+      { "text": "AAVE, Scots, Cockney — bular nima?", "options": ["Xato nutq", "Tizimli va valid dialektlar", "Slang", "Aksentlar"], "correctIndex": 1, "explanation": "Standart variant — prestij olgan dialekt, «to'g'riroq» emas." },
+      { "text": "ELF (English as a Lingua Franca) maqsadi nima?", "options": ["Native aksent", "Intelligibility — tushunarli bo'lish", "BrE o'rganish", "Aksentni yo'qotish"], "correctIndex": 1, "explanation": "Muloqotning ko'p qismi non-native'lar orasida kechadi — bu ozodlik beradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "21-pragmatika",
+    "title": "Test — Pragmatika",
+    "questions": [
+      { "text": "Pragmatikaning asosiy tamoyili nima?", "options": ["Grammatika to'g'riligi", "Aytilgan ≠ nazarda tutilgan — ma'no kontekstda", "Lug'at boyligi", "Talaffuz"], "correctIndex": 1, "explanation": "Bu — tilning «ijtimoiy aqli», eng chuqur qatlam." },
+      { "text": "«Can you pass the salt?» qanday speech act?", "options": ["Savol", "Iltimos — form ≠ function", "Buyruq", "Taklif"], "correctIndex": 1, "explanation": "Illokutsiya — gapning haqiqiy vazifasini o'qish." },
+      { "text": "«Some passed» nimani implikatsiya qiladi?", "options": ["Hammasi o'tdi", "Hammasi emas (not all)", "Hech kim o'tmadi", "Noaniq"], "correctIndex": 1, "explanation": "Grice maksimlari: Quantity, Quality, Relation, Manner." },
+      { "text": "Nega odamlar bilvosita gapiradi?", "options": ["Vaqt uchun", "FACE saqlash uchun — to'g'ridan FTA qo'pol", "Chalg'itish uchun", "Odat"], "correctIndex": 1, "explanation": "Brown & Levinson: positive va negative face; FTA yumshatiladi." },
+      { "text": "«Pragmatic transfer» nima?", "options": ["Tarjima", "Ona tili normasini ingliz tiliga ko'chirish — grammatika to'g'ri, ohang g'alati", "Aksent", "Kod-almashish"], "correctIndex": 1, "explanation": "Eng nozik xato turi: high-context ↔ low-context madaniyat farqi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "22-immersiya-osish-rejasi",
+    "title": "Test — Immersiya va o'sish rejasi",
+    "questions": [
+      { "text": "C2 dan keyingi asosiy o'zgarish nima?", "options": ["Ko'proq dars", "Bilishdan YASHASHGA — immersiya va qo'llash", "Ko'proq test", "Yangi grammatika"], "correctIndex": 1, "explanation": "Ingliz tili kunlik vositaga aylanadi." },
+      { "text": "Kunlik «diet» nechta ko'nikmani qamrashi kerak?", "options": ["1", "2", "4: o'qish, tinglash, gapirish, yozish", "6"], "correctIndex": 2, "explanation": "Anki bilan takrorlash ham qo'shiladi." },
+      { "text": "Izchillik va intensivlik — qaysi biri muhimroq?", "options": ["Intensivlik", "IZCHILLIK — kunlik kichik doza", "Ikkalasi teng", "Hech qaysi"], "correctIndex": 1, "explanation": "Zavqli va «i+1» darajadagi material eng samarali." },
+      { "text": "«Deliberate practice» qanday ishlaydi?", "options": ["Ko'p mashq", "Zaif joyni aniqlash → maqsadli ishlash → feedback loop", "Tasodifiy mashq", "Faqat test"], "correctIndex": 1, "explanation": "Yozib olish, test va feedback — zaif nuqtani aniqlash vositalari." },
+      { "text": "IELTS 9 uchun «tayyor» degani nima?", "options": ["Kursni tugatish", "Mock testda 8.5–9 olish", "Lug'at yodlash", "Bir yil o'qish"], "correctIndex": 1, "explanation": "Til tayyor bo'lgach, format, vaqt va zaif modul ustida ishlanadi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "06-c2-mahorat", "article": "23-c2-checkpoint",
+    "title": "Test — C2 yakuniy nazorat",
+    "questions": [
+      { "text": "«slim» va «skinny» qanday farqlanadi?", "options": ["Darajada", "Konnotatsiyada: ijobiy ↔ salbiy", "Registrda", "Farqi yo'q"], "correctIndex": 1, "explanation": "C2-1: aniqlik va nyuans — le mot juste." },
+      { "text": "«back and forth» tartibini o'zgartirish mumkinmi?", "options": ["Ha", "Yo'q — binomial tartibi qat'iy", "Faqat og'zaki", "Faqat yozma"], "correctIndex": 1, "explanation": "C2-6: formulaic til — chunk yaxlit o'rganiladi." },
+      { "text": "Professional yozuvda xulosa qayerda turadi?", "options": ["Oxirida", "OLDINDA — BLUF tamoyili", "O'rtada", "Ilovada"], "correctIndex": 1, "explanation": "C2-14: akademik yozuvga teskari tuzilma." },
+      { "text": "«It's cold in here» ko'pincha nimani anglatadi?", "options": ["Harorat haqida fakt", "Implikatura — «derazani yoping»", "Shikoyat emas", "Savol"], "correctIndex": 1, "explanation": "C2-21: pragmatika — aytilgan ≠ nazarda tutilgan." },
+      { "text": "C2 dan keyingi eng muhim qadam qaysi?", "options": ["Yangi kurs", "Kunlik immersiya va real qo'llash (portfolio, ariza, mock test)", "Faqat grammatika", "Kutish"], "correctIndex": 1, "explanation": "«Mukammal bo'lishini kutish» — eng katta to'siq." }
+    ]
+  }
+]

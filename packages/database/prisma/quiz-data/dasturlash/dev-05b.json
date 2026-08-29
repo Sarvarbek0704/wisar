@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "09-validatsiya-zod-joi-express-validator",
+    "title": "Test — Validatsiya",
+    "questions": [
+      { "text": "Backend validatsiyasi majburiymi?", "options": ["Yo'q, frontend yetarli", "HA — «foydalanuvchiga ishonma» tamoyili", "Faqat production'da", "Faqat formada"], "correctIndex": 1, "explanation": "Frontend validatsiyasi — faqat qulaylik (UX)." },
+      { "text": "Zod'da «.strict()» nima beradi?", "options": ["Tezlik", "Ortiqcha maydonlarni rad etadi — mass assignment himoyasi", "Tur tekshiruvi", "Xato formati"], "correctIndex": 1, "explanation": "Kutilmagan maydonlar orqali huquq oshirishning oldini oladi." },
+      { "text": "Validatsiya qayerda amalga oshirilishi kerak?", "options": ["Controller ichida", "Middleware sifatida — route'dan oldin", "Service'da", "Database'da"], "correctIndex": 1, "explanation": "DRY tamoyiliga mos va kod tozaligini saqlaydi." },
+      { "text": "Nima validatsiya qilinishi kerak?", "options": ["Faqat body", "Barcha kirish: body, query, params, fayl", "Faqat query", "Faqat forma"], "correctIndex": 1, "explanation": "Har qanday tashqi kirish nuqtasi — potensial xavf." },
+      { "text": "Zod'ning asosiy afzalligi qaysi?", "options": ["Eng tez", "TypeScript-first — sxemadan tur chiqariladi (infer)", "Eng eski", "Eng kichik"], "correctIndex": 1, "explanation": "Bir sxema frontend va backendda ishlatilishi mumkin." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "10-error-handling-middleware-global",
+    "title": "Test — Xatolarni markazlashtirilgan boshqarish",
+    "questions": [
+      { "text": "«Operational» va «programmer» xatolar qanday farqlanadi?", "options": ["Farqi yo'q", "Operational — kutilgan (javob beriladi); programmer — bug (log + ehtiyot)", "Programmer — kutilgan", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "isOperational bayrog'i bilan ajratiladi." },
+      { "text": "Production'da xato javobida nima bo'lmasligi kerak?", "options": ["Status kod", "Stack trace va texnik tafsilotlar", "Xabar", "Kod"], "correctIndex": 1, "explanation": "Ular hujumchiga tizim haqida ma'lumot beradi." },
+      { "text": "Async route'dagi xato qanday ushlanadi?", "options": ["Avtomatik", "catchAsync wrapper yoki express-async-errors bilan", "try/catch shart emas", "Ushlanmaydi"], "correctIndex": 1, "explanation": "Express 4'da async xatolar avtomatik next()'ga o'tmaydi." },
+      { "text": "«uncaughtException» handleridan keyin nima qilish kerak?", "options": ["Davom etish", "Log yozib, graceful shutdown qilish", "E'tiborsiz qoldirish", "Qayta urinish"], "correctIndex": 1, "explanation": "Process nomuvofiq holatda qolgan bo'lishi mumkin — PM2 qayta ishga tushiradi." },
+      { "text": "Global error handler qayerda ro'yxatdan o'tkaziladi?", "options": ["Eng boshida", "Barcha route'lardan KEYIN, eng oxirida", "O'rtada", "Farqi yo'q"], "correctIndex": 1, "explanation": "U 4 argumentli bo'lishi shart: (err, req, res, next)." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "11-file-upload-multer",
+    "title": "Test — Fayl yuklash (Multer)",
+    "questions": [
+      { "text": "Fayl yuklash uchun qaysi format ishlatiladi?", "options": ["application/json", "multipart/form-data", "text/plain", "x-www-form-urlencoded"], "correctIndex": 1, "explanation": "express.json() uni parse qila olmaydi — Multer kerak." },
+      { "text": "«diskStorage» va «memoryStorage» qanday farqlanadi?", "options": ["Farqi yo'q", "diskStorage — diskka; memoryStorage — Buffer'ga (cloud uchun)", "memoryStorage — diskka", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Katta fayllar uchun diskStorage xotirani himoya qiladi." },
+      { "text": "MIME turini tekshirishda nimaga ishonish kerak?", "options": ["Content-Type headerga", "Magic bytes (fayl imzosi) ga", "Fayl kengaytmasiga", "Fayl nomiga"], "correctIndex": 1, "explanation": "Header va kengaytma osongina soxtalashtiriladi." },
+      { "text": "«limits» sozlamasi nima uchun kerak?", "options": ["Tezlik", "DoS hujumlarining oldini olish — hajm va son chegarasi", "Format", "Nom"], "correctIndex": 1, "explanation": "Cheklovsiz yuklash serverni to'ldirishi mumkin." },
+      { "text": "Ma'lumotlar bazasiga nima saqlanadi?", "options": ["Faylning o'zi", "Faqat yo'l yoki URL", "Base64", "Buffer"], "correctIndex": 1, "explanation": "Production'da fayllar S3 yoki Cloudinary'da saqlanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "12-logger-winston-pino",
+    "title": "Test — Logging",
+    "questions": [
+      { "text": "Production'da nega «console.log» yetarli emas?", "options": ["Sekin", "Daraja, struktura, timestamp va transport yo'q", "Ishlamaydi", "Xato beradi"], "correctIndex": 1, "explanation": "Loglar qidiriladigan va filtrlanadigan bo'lishi kerak." },
+      { "text": "Production'da qaysi log formati afzal?", "options": ["Pretty matn", "Strukturali JSON", "CSV", "XML"], "correctIndex": 1, "explanation": "Dev'da pretty, prod'da JSON — aggregatsiya tizimlari uchun." },
+      { "text": "Winston va Pino qanday farqlanadi?", "options": ["Farqi yo'q", "Winston — moslashuvchan; Pino — juda tez", "Pino sekinroq", "Winston tezroq"], "correctIndex": 1, "explanation": "Pino minimal overhead bilan JSON yozadi." },
+      { "text": "«Correlation ID» nima uchun kerak?", "options": ["Xavfsizlik", "Bitta so'rovni barcha loglar bo'ylab kuzatish", "Tezlik", "Format"], "correctIndex": 1, "explanation": "Child logger bilan har logga avtomatik qo'shiladi." },
+      { "text": "Logda nima bo'lmasligi kerak?", "options": ["Timestamp", "Parol, token va maxfiy ma'lumot", "Status kod", "URL"], "correctIndex": 1, "explanation": "Pino'da redact sozlamasi bilan avtomatik yashiriladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "13-realtime-websocket-socketio",
+    "title": "Test — WebSocket va Socket.io",
+    "questions": [
+      { "text": "WebSocket handshake qaysi status kod bilan yakunlanadi?", "options": ["200", "101 Switching Protocols", "201", "301"], "correctIndex": 1, "explanation": "HTTP ulanishi doimiy ikki tomonlama kanalga aylanadi." },
+      { "text": "Socket.io WebSocket'dan nimasi bilan farq qiladi?", "options": ["Sekinroq", "Qayta ulanish, fallback, rooms, namespaces qo'shadi", "Faqat brauzerda", "Xavfsizroq emas"], "correctIndex": 1, "explanation": "U WebSocket ustiga qurilgan qulaylik qatlami." },
+      { "text": "«Rooms» nima uchun ishlatiladi?", "options": ["Xavfsizlik", "Ulanishlarni guruhlab, guruhga xabar yuborish", "Cache", "Log"], "correctIndex": 1, "explanation": "Namespaces esa mantiqiy bo'linish uchun." },
+      { "text": "Ko'p serverli Socket.io uchun nima kerak?", "options": ["Ko'proq RAM", "Redis adapter va sticky session", "Ko'proq CPU", "Hech narsa"], "correctIndex": 1, "explanation": "Aks holda bir serverdagi xabar boshqasidagi mijozga yetmaydi." },
+      { "text": "Socket.io'da autentifikatsiya qanday qilinadi?", "options": ["Qilinmaydi", "Middleware orqali JWT tekshirish", "Faqat cookie", "URL'da token"], "correctIndex": 1, "explanation": "CORS va kirish validatsiyasi ham majburiy." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "14-telegram-bot-telegraf",
+    "title": "Test — Telegram bot (Telegraf)",
+    "questions": [
+      { "text": "Production'da update'ni olishning qaysi usuli afzal?", "options": ["Polling", "Webhook", "Ikkalasi teng", "Hech qaysi"], "correctIndex": 1, "explanation": "Polling — development uchun qulay, lekin resurs sarflaydi." },
+      { "text": "Telegraf'da «ctx» nima?", "options": ["Konfiguratsiya", "Context — update va javob metodlarini o'z ichiga oladi", "Kanal", "Xato"], "correctIndex": 1, "explanation": "Telegraf Express ruhida middleware bilan ishlaydi." },
+      { "text": "Inline keyboard bosilgach nima chaqirilishi kerak?", "options": ["reply", "answerCbQuery", "sendMessage", "deleteMessage"], "correctIndex": 1, "explanation": "Aks holda tugmada «soat» aylanaverib turadi." },
+      { "text": "Ko'p qadamli forma uchun Telegraf'da nima ishlatiladi?", "options": ["Middleware", "Scenes (Wizard/Base)", "Rooms", "Cache"], "correctIndex": 1, "explanation": "Sessiya holatini saqlash uchun production'da Redis ishlatiladi." },
+      { "text": "Bot tokeni bilan bog'liq asosiy qoida qaysi?", "options": ["Kodda saqlash", "Env'da saqlash va hech qachon commit qilmaslik", "Logda chiqarish", "URL'da uzatish"], "correctIndex": 1, "explanation": "Token qo'lga tushsa, bot to'liq boshqa qo'lga o'tadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "15-autentifikatsiya-session-cookie-jwt-bcrypt",
+    "title": "Test — Autentifikatsiya",
+    "questions": [
+      { "text": "Authentication va authorization qanday farqlanadi?", "options": ["Farqi yo'q", "Authentication — kim siz; authorization — nimaga haqlisiz", "Authorization — kim siz", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Avval kimligingiz aniqlanadi, keyin huquqingiz tekshiriladi." },
+      { "text": "Nega bcrypt ataylab sekin ishlaydi?", "options": ["Bug", "Brute-force hujumini qiyinlashtirish uchun", "Xotira uchun", "Standart"], "correctIndex": 1, "explanation": "Cost 10–12 tavsiya etiladi; salt hash ichida saqlanadi." },
+      { "text": "«Salt» nima uchun kerak?", "options": ["Tezlik", "Rainbow table hujumidan himoya — bir xil parol har xil hash", "Xotira", "Format"], "correctIndex": 1, "explanation": "Har foydalanuvchi uchun noyob tasodifiy qiymat." },
+      { "text": "JWT payload'i shifrlanganmi?", "options": ["Ha", "Yo'q — u OCHIQ, faqat imzolangan", "Qisman", "Kalitga bog'liq"], "correctIndex": 1, "explanation": "Maxfiy ma'lumotni payload'ga qo'ymang — imzo faqat yaxlitlikni himoya qiladi." },
+      { "text": "Token qayerda saqlanishi xavfsizroq?", "options": ["localStorage", "httpOnly + Secure + SameSite cookie", "sessionStorage", "URL'da"], "correctIndex": 1, "explanation": "httpOnly cookie'ni JavaScript o'qiy olmaydi — XSS'dan himoya." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "16-access-refresh-tokens-strategiya",
+    "title": "Test — Access va refresh tokenlar",
+    "questions": [
+      { "text": "Nega ikki token ishlatiladi?", "options": ["Chiroyli", "Qisqa access (xavfsizlik) + uzoq refresh (UX) muvozanati", "Tezlik", "Standart"], "correctIndex": 1, "explanation": "Bitta token: uzoq bo'lsa xavfli, qisqa bo'lsa noqulay." },
+      { "text": "«Refresh token rotation» nima?", "options": ["Tokenni o'chirish", "Har refresh'da yangi refresh token berish", "Tokenni uzaytirish", "Ikkita token berish"], "correctIndex": 1, "explanation": "RFC 9700 bo'yicha majburiy amaliyot." },
+      { "text": "«Reuse detection» nima qiladi?", "options": ["Tezlashtiradi", "Eski token qayta ishlatilsa — o'g'irlikni aniqlab, butun oilani bekor qiladi", "Log yozadi", "Uzaytiradi"], "correctIndex": 1, "explanation": "Bu o'g'irlangan tokenni fosh qilishning asosiy mexanizmi." },
+      { "text": "Access token muddati odatda qancha?", "options": ["7 kun", "15–60 daqiqa", "30 kun", "1 yil"], "correctIndex": 1, "explanation": "Refresh token esa 7–30 kun." },
+      { "text": "Refresh token qayerda saqlanadi?", "options": ["localStorage'da ochiq", "httpOnly cookie + DB'da hash qilingan holda", "URL'da", "Kodda"], "correctIndex": 1, "explanation": "Access token esa xotirada (JS o'zgaruvchisida) saqlanadi." }
+    ]
+  }
+]

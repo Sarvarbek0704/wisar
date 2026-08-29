@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "01-russkiy-alifbo-tovushlar",
+    "title": "Test — Kirill alifbosi va tovushlar",
+    "questions": [
+      { "text": "«ъ» va «ь» harflarining tovushi bormi?", "options": ["Ikkalasining ham tovushi bor", "Tovushi yo'q — ь oldingi undoshni yumshatadi", "Faqat ъ ning tovushi bor", "Ikkalasi ham unli"], "correctIndex": 1, "explanation": "ъ va ь — tovushsiz belgilar. ь oldingi undoshni yumshatadi (брат ≠ брать), ъ ajratuvchi vazifa bajaradi." },
+      { "text": "Urg'usiz «о» harfi qanday o'qiladi?", "options": ["«o» — o'zgarmaydi", "«a» ga yaqin", "«u» ga yaqin", "Umuman o'qilmaydi"], "correctIndex": 1, "explanation": "Bu — reduksiya. Urg'usiz «о» → [a]: молоко́ «malakó» deb o'qiladi." },
+      { "text": "Rus alifbosida nechta harf bor?", "options": ["26", "30", "33", "36"], "correctIndex": 2, "explanation": "Kirill alifbosida 33 harf: 10 unli, 21 undosh va 2 ta tovushsiz belgi (ъ, ь)." },
+      { "text": "Qaysi juftlikda urg'u ma'noni o'zgartiradi?", "options": ["за́мок — замо́к", "дом — дома", "стол — стул", "кни́га — кни́ги"], "correctIndex": 0, "explanation": "за́мok (qulf) va замо́k (qal'a) — bir xil yoziladi, urg'u ma'noni butunlay o'zgartiradi. Shuning uchun so'zni doim urg'usi bilan yodlang." },
+      { "text": "«В» harfi qaysi tovushni beradi?", "options": ["ingliz «b»", "«v»", "«u»", "«f» doim"], "correctIndex": 1, "explanation": "Kirill «В» — [v] tovushi (лотин «B» emas!). Bu — o'zbek o'quvchisi uchun eng ko'p adashtiradigan harflardan biri." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "02-talaffuz-urgu-reduksiya",
+    "title": "Test — Talaffuz, urg'u va reduksiya",
+    "questions": [
+      { "text": "«друг» so'zi qanday o'qiladi?", "options": ["«drug»", "«druk»", "«drus»", "«durug»"], "correctIndex": 1, "explanation": "So'z oxirida jarangli undosh jarangsizlashadi: г → [k]. Shuning uchun друг «druk» deb o'qiladi." },
+      { "text": "Urg'usiz «е» yoki «я» qanday tovushga yaqinlashadi?", "options": ["«a»", "«и»", "«o»", "«ы»"], "correctIndex": 1, "explanation": "Urg'usiz е/я → [и] ga yaqin o'qiladi: язы́к «izık», сестра́ «sistrá»." },
+      { "text": "«брат» va «брать» — farqi nimada?", "options": ["Farqi yo'q", "ь oxirgi undoshni yumshatadi va ma'no o'zgaradi", "Faqat urg'u farq qiladi", "Ikkinchisi ko'plik"], "correctIndex": 1, "explanation": "брат = aka/uka (ot), брать = olmoq (fe'l). Yumshoq belgi ь ma'noni butunlay o'zgartiradi." },
+      { "text": "«ы» tovushi o'zbek tilida bormi?", "options": ["Ha, «i» bilan bir xil", "Yo'q — til orqaga tortilgan maxsus tovush", "Ha, «u» bilan bir xil", "Bu tovushsiz belgi"], "correctIndex": 1, "explanation": "«ы» o'zbekchada yo'q. U «и» dan farqli: til orqaga tortiladi. мы, ты, вы, был — mashq qilish shart." },
+      { "text": "Rus tilida urg'u qayerga tushishini qoida bilan bilib bo'ladimi?", "options": ["Ha, doim birinchi bo'g'inga", "Ha, doim oxirgi bo'g'inga", "Yo'q — har so'z bilan birga yodlanadi", "Faqat unli sonidan bilinadi"], "correctIndex": 2, "explanation": "Rus urg'usi harakatchan va oldindan aytib bo'lmaydi. Shuning uchun har yangi so'zni urg'u belgisi bilan yodlash kerak." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "03-salomlashish-tanishish",
+    "title": "Test — Salomlashish va tanishish",
+    "questions": [
+      { "text": "Notanish katta yoshli odamga qanday salom berasiz?", "options": ["Приве́т!", "Здра́вствуйте!", "Здоро́во!", "Пока́!"], "correctIndex": 1, "explanation": "Здра́вствуйте — rasmiy salom (notanish, katta yoshli, boshliq, ustoz). Приве́т — faqat do'st/tengdosh bilan." },
+      { "text": "«Как вас зову́т?» savoliga qanday javob beriladi?", "options": ["Мне хорошо́", "Меня́ зову́т Али́", "Я студе́нт", "До свида́ния"], "correctIndex": 1, "explanation": "«Как вас зову́т?» = ismingiz nima? Javob: «Меня́ зову́т …». Tanishgach «Очень прия́тно!» (juda yoqimli) deyish odat." },
+      { "text": "Shubha bo'lsa — «ты» yoki «вы»?", "options": ["Doim ты", "Doim вы", "Farqi yo'q", "Yoshga qarab tashlab ketiladi"], "correctIndex": 1, "explanation": "Shubha bo'lsa DOIM вы. «ты» faqat do'st, tengdosh, oila va bolalarga. Notanishga «ты» deyish — qo'pollik." },
+      { "text": "Kechqurun qanday salomlashiladi?", "options": ["До́брое у́тро", "До́брый день", "До́брый ве́чер", "Споко́йной но́чи"], "correctIndex": 2, "explanation": "До́брый ве́чер — kechqurun. До́брое у́тро — ertalab, До́брый день — kunduzi. Споко́йной но́чи — uyquga yotishdan oldin (xayrlashuv)." },
+      { "text": "Qaysi ibora NORASMIY xayrlashuv?", "options": ["До свида́ния", "Пока́", "Здра́вствуйте", "Очень прия́тно"], "correctIndex": 1, "explanation": "Пока́ — norasmiy («xayr»). До свида́ния — rasmiy xayrlashuv." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "04-shaxs-olmoshlari-byt",
+    "title": "Test — Shaxs olmoshlari va быть",
+    "questions": [
+      { "text": "«Men talabaman» rus tilida qanday bo'ladi?", "options": ["Я есть студе́нт", "Я студе́нт", "Я быть студе́нт", "Мне студе́нт"], "correctIndex": 1, "explanation": "быть fe'li hozirgi zamonda TUSHIB QOLADI. Shuning uchun «Я студе́нт» — «есть» yozilmaydi. Bu — darsning eng muhim qoidasi." },
+      { "text": "«она́» olmoshi qaysi otlarni almashtiradi?", "options": ["Faqat ayol kishilarni", "Же́нский rod barcha otlarni (кни́га ham)", "Faqat jonli otlarni", "O'rta rod otlarni"], "correctIndex": 1, "explanation": "она́ — же́нский rodning barcha otlari uchun, jonli-jonsizidan qat'i nazar: кни́га → она́, ла́мпа → она́." },
+      { "text": "«Bu — mening kitobim» gapini boshlash uchun qaysi so'z ishlatiladi?", "options": ["Э́то", "Э́тот", "Тот", "Так"], "correctIndex": 0, "explanation": "«Э́то» — universal ko'rsatish so'zi: Э́то моя́ кни́га. U o'zgarmaydi." },
+      { "text": "Qaysi qatorda olmoshlar to'g'ri berilgan?", "options": ["я, ты, он, она́, оно́, мы, вы, они́", "я, ты, он, она́, мы, вы", "я, ты, вы, они́", "мне, тебе́, ему́"], "correctIndex": 0, "explanation": "Rus tilida 8 ta shaxs olmoshi bor. «мне, тебе́, ему́» — bu jo'nalish kelishigidagi shakllar, bosh shakl emas." },
+      { "text": "«Он был до́ма» gapida нега «был» ishlatilgan?", "options": ["Hozirgi zamon uchun", "O'tgan zamonda быть QAYTADI", "Bu xato", "Kelasi zamon uchun"], "correctIndex": 1, "explanation": "быть hozirgi zamonda tushadi, lekin o'tgan zamonda qaytadi: был / была́ / бы́ло / бы́ли." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "06-eto-etot-eta",
+    "title": "Test — Это va ko'rsatish olmoshlari",
+    "questions": [
+      { "text": "«Э́то» so'zi otning rodiga qarab o'zgaradimi?", "options": ["Ha, о'zgaradi", "Yo'q — o'zgarmaydi", "Faqat ko'plikda o'zgaradi", "Faqat ayol rodda"], "correctIndex": 1, "explanation": "«Э́то» universal va O'ZGARMAS: Э́то стол. Э́то кни́га. Э́то окно́. Э́то столы́." },
+      { "text": "To'g'ri variantni tanlang: «___ кни́га но́вая» (bu kitob yangi)", "options": ["Э́тот", "Э́та", "Э́то", "Э́ти"], "correctIndex": 1, "explanation": "кни́га — же́нский rod, shuning uchun ko'rsatish olmoshi э́та. Bu — aniqlash (qaysi kitob), nomlash emas." },
+      { "text": "«Э́то кни́га» va «Э́та кни́га но́вая» — farqi nimada?", "options": ["Farqi yo'q", "Birinchisi nomlaydi (bu — kitob), ikkinchisi aniqlaydi (bu kitob)", "Birinchisi ko'plik", "Ikkinchisi xato"], "correctIndex": 1, "explanation": "Э́то кни́га = «Bu — kitob» (nima ekanini aytamiz). Э́та кни́га но́вая = «Bu kitob yangi» (qaysi kitob ekanini ko'rsatamiz)." },
+      { "text": "«___ окно́» (bu deraza) — qaysi shakl?", "options": ["Э́тот", "Э́та", "Э́то", "Э́ти"], "correctIndex": 2, "explanation": "окно́ — сре́дний rod → э́то окно́. Diqqat: «Э́то окно́» ikki xil o'qilishi mumkin — «Bu — deraza» yoki «bu deraza»." },
+      { "text": "Ko'plik uchun qaysi ko'rsatish olmoshi ishlatiladi?", "options": ["э́тот", "э́та", "э́то", "э́ти"], "correctIndex": 3, "explanation": "э́ти — ko'plik uchun: э́ти столы́, э́ти кни́ги, э́ти о́кна." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "08-egalik-olmoshlari",
+    "title": "Test — Egalik olmoshlari",
+    "questions": [
+      { "text": "«___ кни́га» (mening kitobim) — to'g'ri shakl?", "options": ["мой", "моя́", "моё", "мои́"], "correctIndex": 1, "explanation": "кни́га — же́нский rod → моя́. Egalik olmoshi otning rodiga moslashadi." },
+      { "text": "«его́» olmoshi otning rodiga moslashadimi?", "options": ["Ha, его́/егa/егo bo'ladi", "Yo'q — hech qachon o'zgarmaydi", "Faqat ko'plikda", "Faqat jonli otlar bilan"], "correctIndex": 1, "explanation": "его́, её, их — HECH QACHON o'zgarmaydi: его́ дом, его́ кни́га, его́ о́кна. Faqat мой/твой/наш/ваш moslashadi." },
+      { "text": "«его́» qanday o'qiladi?", "options": ["«yego»", "«yevo»", "«ego»", "«iхo»"], "correctIndex": 1, "explanation": "«-его́» dagi «г» → [v] deb o'qiladi: «yevó». Xuddi shunday: сего́дня → «sivódnya»." },
+      { "text": "«Чья э́то кни́га?» savoli nimani so'raydi?", "options": ["Qanaqa kitob?", "Kimning kitobi?", "Qaysi kitob?", "Nechta kitob?"], "correctIndex": 1, "explanation": "Чей/Чья/Чьё/Чьи = «kimniki?». U ham otning rodiga moslashadi: Чья кни́га? (f), Чей дом? (m)." },
+      { "text": "«___ о́кна» (mening derazalarim) — to'g'ri shakl?", "options": ["мой", "моя́", "моё", "мои́"], "correctIndex": 3, "explanation": "о́кна — ko'plik → мои́. Ko'plikda rod farqi yo'qoladi, hamma uchun мои́." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "09-sonlar-narx-telefon",
+    "title": "Test — Sonlar, narx va yosh",
+    "questions": [
+      { "text": "«два ___» (2 yil) — to'g'ri shakl?", "options": ["год", "го́да", "лет", "года́ми"], "correctIndex": 1, "explanation": "2–4 sonlari bilan ot birlik qaratqichda: два го́да, три го́да, четы́ре го́да." },
+      { "text": "«пять ___» (5 yil) — to'g'ri shakl?", "options": ["год", "го́да", "лет", "го́ды"], "correctIndex": 2, "explanation": "5 va undan katta sonlar bilan ko'plik qaratqich: пять лет, де́сять лет. «год» so'zining bu shakli — лет (istisno)." },
+      { "text": "«Ско́лько тебе́ лет?» savolida «тебе́» nega shu shaklda?", "options": ["Bu bosh kelishik", "Yosh jo'nalish kelishigi bilan aytiladi", "Bu xato", "Bu ko'plik"], "correctIndex": 1, "explanation": "Yosh DATIV (jo'nalish) bilan: Мне 20 лет, Тебе́ 18 лет, Ему́ 30 лет." },
+      { "text": "11–14 sonlari bilan qaysi shakl ishlatiladi?", "options": ["год", "го́да", "лет", "Har xil"], "correctIndex": 2, "explanation": "11–14 — istisno: oxiri 1–4 bo'lsa ham, DOIM лет/рубле́й: оди́ннадцать лет, двена́дцать лет." },
+      { "text": "Bir nechta narsaning narxini so'rash uchun qaysi shakl?", "options": ["Ско́лько сто́ит?", "Ско́лько сто́ят?", "Ско́лько лет?", "Ско́лько есть?"], "correctIndex": 1, "explanation": "Bitta narsa — Ско́лько сто́ит? Bir nechta — Ско́лько сто́ят? (fe'l ko'plikka moslashadi)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "10-hozirgi-zamon-1-tuslanish",
+    "title": "Test — Hozirgi zamon, I tuslanish",
+    "questions": [
+      { "text": "«чита́ть» fe'lining «я» shakli qaysi?", "options": ["чита́ю", "чита́ешь", "чита́ет", "чита́ем"], "correctIndex": 0, "explanation": "I tuslanish: o'zak чита- + qo'shimcha -ю → чита́ю (men o'qiyman)." },
+      { "text": "I tuslanish qo'shimchalarida qaysi unli asosiy?", "options": ["-и-", "-е-", "-а-", "-у-"], "correctIndex": 1, "explanation": "I tuslanishda -е- unlisi: чита́ешь, чита́ет, чита́ем, чита́ете. II tuslanishda esa -и- (говори́шь, говори́т)." },
+      { "text": "Fe'l o'zagini qanday topamiz?", "options": ["Boshidagi harfni olib tashlaymiz", "Oxiridagi -ть ni olib tashlaymiz", "Urg'uni ko'chiramiz", "Hech qanday o'zgarish yo'q"], "correctIndex": 1, "explanation": "Infinitivdan -ть ni olib tashlaymiz: чита́ть → чита-, рабо́тать → работа-. Keyin qo'shimcha qo'shiladi." },
+      { "text": "«Я кни́гу» — bu to'g'ri gapmi?", "options": ["Ha, to'g'ri", "Yo'q — fe'l tushib qolgan", "Ha, быть tushgan", "Faqat og'zaki nutqda to'g'ri"], "correctIndex": 1, "explanation": "быть tushadi, lekin BOSHQA fe'llar tushmaydi! To'g'risi: «Я чита́ю кни́гу». Olmosh ham, fe'l ham saqlanadi." },
+      { "text": "«они́» shakli uchun qaysi qo'shimcha?", "options": ["-ут / -ют", "-ат / -ят", "-ем", "-ешь"], "correctIndex": 0, "explanation": "I tuslanish «они́»: -ут/-ют → чита́ют, рабо́тают. II tuslanishda esa -ат/-ят (говоря́т)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "11-hozirgi-zamon-2-tuslanish",
+    "title": "Test — Hozirgi zamon, II tuslanish",
+    "questions": [
+      { "text": "Qaysi tugash odatda II tuslanishni bildiradi?", "options": ["-ать", "-ить", "-уть", "-ыть"], "correctIndex": 1, "explanation": "-ить bilan tugagan fe'llar deyarli har doim II tuslanish: говори́ть, люби́ть, учи́ть." },
+      { "text": "«люби́ть» fe'lining «я» shakli qaysi?", "options": ["люби́ю", "люблю́", "лю́бю", "любю́"], "correctIndex": 1, "explanation": "Чередова́ние: lab undoshidan keyin «л» qo'shiladi — люби́ть → люблю́. Bu FAQAT «я» shaklida bo'ladi." },
+      { "text": "«ви́деть» fe'lining «я» shakli?", "options": ["ви́дею", "ви́дю", "ви́жу", "виде́ю"], "correctIndex": 2, "explanation": "д → ж almashinuvi: ви́деть → ви́жу. Qolgan shakllar o'zgarmaydi: ви́дишь, ви́дит." },
+      { "text": "Чередова́ние (undosh almashinuvi) qaysi shaklda bo'ladi?", "options": ["Barcha shakllarda", "Faqat «я» shaklida", "Faqat «они́» shaklida", "Faqat ko'plikda"], "correctIndex": 1, "explanation": "Almashinish FAQAT «я» shaklida: люблю́ (lekin лю́бишь, лю́бит). Bu — eng ko'p adashtiradigan joy." },
+      { "text": "«смотре́ть» fe'li qaysi tuslanishga kiradi?", "options": ["I — chunki -еть bilan tugaydi", "II — yodlanadigan istisno", "Ikkalasiga ham", "Tuslanmaydi"], "correctIndex": 1, "explanation": "смотре́ть, ви́деть, слы́шать — -еть/-ать bilan tugasa ham II tuslanishga kiradi. Yodlash kerak." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "12-savol-sozlar",
+    "title": "Test — Savol so'zlar",
+    "questions": [
+      { "text": "«Qayerga ketyapsiz?» — qaysi savol so'zi?", "options": ["где́", "куда́", "отку́да", "когда́"], "correctIndex": 1, "explanation": "Uchlik: где́ (qayerda — joy), куда́ (qayerga — yo'nalish), отку́да (qayerdan — manba). Bu yerda yo'nalish → куда́." },
+      { "text": "«почему́» va «заче́м» farqi nimada?", "options": ["Farqi yo'q", "почему́ — sabab, заче́м — maqsad", "почему́ — maqsad, заче́м — sabab", "Biri savol, biri javob"], "correctIndex": 1, "explanation": "почему́ = nega (sabab, javobi потому́ что). заче́м = nima maqsadda (javobi что́бы)." },
+      { "text": "«како́й» savol so'zi otning rodiga moslashadimi?", "options": ["Yo'q, o'zgarmaydi", "Ha: како́й / кака́я / како́е", "Faqat ko'plikda", "Faqat jonli otlar bilan"], "correctIndex": 1, "explanation": "како́й (m) / кака́я (f) / како́е (n) / каки́е (ko'plik) — sifat kabi moslashadi." },
+      { "text": "Rus tilida «ha/yo'q» savolini nima hosil qiladi?", "options": ["Yordamchi fe'l (do/does kabi)", "Intonatsiya (ИК-3)", "Gap oxiridagi «ли» majburiy", "So'z tartibini teskari qilish"], "correctIndex": 1, "explanation": "Rus tilida yordamchi fe'l YO'Q. «Вы студе́нт?» — faqat intonatsiya (ИК-3) savolga aylantiradi." },
+      { "text": "«Kimniki?» savoli qaysi?", "options": ["кто", "чей", "како́й", "кому́"], "correctIndex": 1, "explanation": "чей/чья/чьё/чьи = kimniki. кто = kim, како́й = qanaqa." }
+    ]
+  }
+]

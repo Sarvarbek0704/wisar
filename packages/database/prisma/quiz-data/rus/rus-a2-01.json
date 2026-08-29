@@ -1,0 +1,167 @@
+[
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "01-a1-takror-a2-kirish",
+    "title": "Test — A2 ga kirish: kelishiklar xaritasi",
+    "questions": [
+      { "text": "Rus tilida kelishik qo'shimchasi nimaga bog'liq?", "options": ["Faqat so'z ma'nosiga", "Otning rodi va soniga", "Urg'u o'rniga", "Hech narsaga — bir xil"], "correctIndex": 1, "explanation": "O'zbekchada qo'shimcha bir xil (kitob-ni, uy-ni), rus tilida esa rod va songa bog'liq. Shuning uchun A1 dagi rod bilimi A2 ning poydevori." },
+      { "text": "Rus tilida nechta kelishik bor?", "options": ["4", "5", "6", "8"], "correctIndex": 2, "explanation": "6 kelishik: Имени́тельный, Роди́тельный, Да́тельный, Вини́тельный, Твори́тельный, Предло́жный." },
+      { "text": "A1 da qaysi kelishiklarni allaqachon ishlatgansiz?", "options": ["Faqat bosh kelishik", "Tushum, qaratqich, o'rin", "Barcha oltitasi", "Hech qaysisi"], "correctIndex": 1, "explanation": "A1 da tushum (чита́ю кни́гу), qaratqich (нет вре́мени) va o'rin (в го́роде) ishlatilgan. A2 da faqat 2 tasi yangi: jo'nalish va vosita." },
+      { "text": "Bosh kelishik (Имени́тельный) qanday shakl?", "options": ["Maxsus shakl", "Lug'atdagi shakl — gapning egasi", "Faqat ko'plikda", "Faqat predlog bilan"], "correctIndex": 1, "explanation": "Имени́тельный — lug'at shakli, gapning egasi: кто? что? Boshqa kelishiklar shundan yasaladi." },
+      { "text": "Kelishiklarni o'rganishning to'g'ri usuli qaysi?", "options": ["Hammasini bir kunda yodlash", "Bittalab, har birini ishlatib", "Faqat jadvalni yodlash", "Umuman o'rganmaslik"], "correctIndex": 1, "explanation": "Kelishiklar bittalab, misollar va mashqlar bilan o'rganiladi. Bir kunda 6 tasini yodlash — samarasiz." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "02-tushum-kelishigi-jonli",
+    "title": "Test — Tushum kelishigi: jonli otlar",
+    "questions": [
+      { "text": "«Я ви́жу ___» (брат) — to'g'ri shakl?", "options": ["брат", "бра́та", "бра́ту", "бра́том"], "correctIndex": 1, "explanation": "брат — JONLI erkak rod → tushum kelishigida -а qo'shiladi: бра́та. Shakl qaratqich bilan bir xil ko'rinadi." },
+      { "text": "«Я ви́жу ___» (дом) — to'g'ri shakl?", "options": ["дом", "до́ма", "до́му", "до́мом"], "correctIndex": 0, "explanation": "дом — JONSIZ erkak rod → tushum kelishigida O'ZGARMAYDI. Bu — jonli/jonsiz farqi." },
+      { "text": "Ayol rod otlar tushum kelishigida jonli/jonsizga bog'liqmi?", "options": ["Ha, jonli boshqacha", "Yo'q — doim -у/-ю", "Faqat ko'plikda", "Hech qachon o'zgarmaydi"], "correctIndex": 1, "explanation": "Ayol rod uchun farq YO'Q: ма́ма → ма́му, кни́га → кни́гу, тётя → тётю. Har doim -а→-у, -я→-ю." },
+      { "text": "Jonli otlar uchun tushum kelishigi savoli qaysi?", "options": ["что?", "кого́?", "кому́?", "кем?"], "correctIndex": 1, "explanation": "Jonli — кого́? (kimni?), jonsiz — что? (nimani?)." },
+      { "text": "«учи́тель» tushum kelishigida qanday?", "options": ["учи́тель", "учи́теля", "учи́телю", "учи́телем"], "correctIndex": 1, "explanation": "Jonli erkak rod, -ь bilan tugagan → -я: учи́тель → учи́теля." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "03-qaratqich-kelishigi",
+    "title": "Test — Qaratqich kelishigi (Родительный)",
+    "questions": [
+      { "text": "Qaysi holatda DOIM qaratqich ishlatiladi?", "options": ["Ega bo'lganda", "Yo'qlik (нет / не́ было / не бу́дет)", "Buyruq maylida", "Fe'ldan oldin"], "correctIndex": 1, "explanation": "Yo'qlik har doim qaratqich talab qiladi: нет вре́мени, не́ было дене́г, не бу́дет уро́ка." },
+      { "text": "«из» va «от» farqi nimada?", "options": ["Farqi yo'q", "из — ichidan, от — kishidan/yonidan", "из — kishidan, от — ichidan", "от faqat vaqt uchun"], "correctIndex": 1, "explanation": "из Москвы́ (shahar ichidan), но от врача́ (shifokordan — kishidan). Ikkalasi ham qaratqich talab qiladi." },
+      { "text": "«мно́го» so'zidan keyin ot qaysi shaklda?", "options": ["Bosh kelishik", "Qaratqich", "Tushum", "Vosita"], "correctIndex": 1, "explanation": "Miqdor so'zlaridan keyin qaratqich: мно́го рабо́ты, ма́ло вре́мени, стака́н ча́я." },
+      { "text": "«центр го́рода» iborasida «го́рода» nega qaratqichda?", "options": ["Bu ega", "Egalik/qarashlilikni bildiradi («shaharning markazi»)", "Bu tushum kelishigi", "Xato yozilgan"], "correctIndex": 1, "explanation": "Qaratqichning ikkinchi vazifasi — egalik: центр го́рода (shahar markazi), кни́га бра́та (akaning kitobi)." },
+      { "text": "5 va undan katta sonlardan keyin ot qanday shaklda?", "options": ["Bosh kelishik birlik", "Qaratqich birlik", "Qaratqich ko'plik", "Tushum ko'plik"], "correctIndex": 2, "explanation": "2–4 → qaratqich birlik (два стола́), 5+ → qaratqich ko'plik (пять столо́в)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "04-jonalish-kelishigi",
+    "title": "Test — Jo'nalish kelishigi (Дательный)",
+    "questions": [
+      { "text": "Jo'nalish kelishigi qaysi savolga javob beradi?", "options": ["кого?", "кому́?", "кем?", "о ком?"], "correctIndex": 1, "explanation": "Да́тельный — кому́? (kimga?), чему́? (nimaga?). O'zbekcha -ga qo'shimchasiga to'g'ri keladi." },
+      { "text": "«Я пишу́ ___» (ма́ма) — to'g'ri shakl?", "options": ["ма́ма", "ма́му", "ма́ме", "ма́мой"], "correctIndex": 2, "explanation": "Adresat jo'nalish kelishigida; ayol rod -а → -е: ма́ма → ма́ме." },
+      { "text": "«Menga bu kitob yoqadi» — to'g'ri shakl?", "options": ["Я нра́влюсь э́ту кни́гу", "Мне нра́вится э́та кни́га", "Мне нра́вится э́ту кни́гу", "Я нра́вится кни́га"], "correctIndex": 1, "explanation": "нра́виться bilan: kishi DATIVDA (мне), narsa BOSH kelishikda (кни́га). Fe'l narsaga moslashadi." },
+      { "text": "«Мне нра́вятся э́ти кни́ги» — nega «нра́вятся»?", "options": ["Xato, «нра́вится» kerak", "Fe'l ko'plikdagi narsaga moslashgan", "«мне» ko'plik", "Bu o'tgan zamon"], "correctIndex": 1, "explanation": "Fe'l DATIVDAGI kishiga emas, bosh kelishikdagi narsaga moslashadi: кни́ги (ko'plik) → нра́вятся." },
+      { "text": "Qaysi predloglar jo'nalish kelishigini talab qiladi?", "options": ["у, из, от", "к, по", "с, над, под", "о, при"], "correctIndex": 1, "explanation": "к (иду́ к врачу́) va по (иду́ по у́лице, по телефо́ну) — jo'nalish kelishigi bilan." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "05-vosita-kelishigi",
+    "title": "Test — Vosita kelishigi (Творительный)",
+    "questions": [
+      { "text": "«Ruchka bilan yozaman» — to'g'ri shakl?", "options": ["пишу́ ру́чка", "пишу́ ру́чку", "пишу́ ру́чкой", "пишу́ с ру́чкой"], "correctIndex": 2, "explanation": "Asbob (чем?) PREDLOGSIZ vosita kelishigida: пишу́ ру́чкой, ем ло́жкой, ре́жу ножо́м." },
+      { "text": "«Do'stim bilan» qanday aytiladi?", "options": ["дру́гом", "с дру́гом", "к дру́гу", "о дру́ге"], "correctIndex": 1, "explanation": "Hamrohlik (с кем?) — «с» predlogi bilan: с дру́гом, с семьёй. Asbobdan farqi: asbobda predlog yo'q." },
+      { "text": "Erkak rod vosita kelishigida qanday tugaydi?", "options": ["-у/-ю", "-ом/-ем", "-ой/-ей", "-е"], "correctIndex": 1, "explanation": "m: -ом/-ем (столо́м, музе́ем); f: -ой/-ей (ру́чкой); n: -ом/-ем (окно́м)." },
+      { "text": "«ко́фе с молоко́м» — nega «молоко́м»?", "options": ["Bu ega", "«с» predlogi vosita kelishigini talab qiladi", "Bu qaratqich", "Xato"], "correctIndex": 1, "explanation": "«с» (bilan) doim vosita kelishigi bilan: с молоко́м, с са́харом, с дру́гом." },
+      { "text": "Ko'plikda vosita kelishigi qanday tugaydi?", "options": ["-ов/-ей", "-ам/-ям", "-ами/-ями", "-ах/-ях"], "correctIndex": 2, "explanation": "Vosita ko'plik: -ами/-ями (стола́ми, друзья́ми). -ам/-ям — jo'nalish, -ах/-ях — o'rin." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "06-orin-kelishigi",
+    "title": "Test — O'rin kelishigi (Предложный)",
+    "questions": [
+      { "text": "O'rin kelishigining uch vazifasi qaysilar?", "options": ["Faqat joy", "Joy, «haqida», vaqt (oy/yil)", "Faqat egalik", "Faqat asbob"], "correctIndex": 1, "explanation": "где? (в го́роде), о чём? (о рабо́те), когда́? (в ма́е) — uch vazifa, bitta shakl." },
+      { "text": "«Росси́я» o'rin kelishigida qanday?", "options": ["в Росси́е", "в Росси́и", "в Росси́ю", "в Росси́ей"], "correctIndex": 1, "explanation": "-ия bilan tugagan so'zlar -ии oladi: Росси́я → в Росси́и, ле́кция → на ле́кции, зда́ние → в зда́нии." },
+      { "text": "«Anna haqida» — to'g'ri shakl?", "options": ["о Анне", "об Анне", "обо Анне", "о Анна"], "correctIndex": 1, "explanation": "Unli oldidan «об»: об Анне, об окне́. Undosh oldidan «о»: о ма́ме. Maxsus: обо мне́, обо всём." },
+      { "text": "«тетра́дь» (ayol rod, -ь) o'rin kelishigida?", "options": ["в тетра́де", "в тетра́ди", "в тетра́дь", "в тетра́дью"], "correctIndex": 1, "explanation": "-ь bilan tugagan ayol rod → -и: в тетра́ди, на пло́щади." },
+      { "text": "«men haqimda» qanday aytiladi?", "options": ["о мне", "обо мне́", "о меня́", "о я"], "correctIndex": 1, "explanation": "Maxsus shakl: обо мне́ (о мне emas). Qolganlari: о тебе́, о нём, о ней, о нас, о вас, о них." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "07-olti-kelishik-jamlash",
+    "title": "Test — Olti kelishik jamlash",
+    "questions": [
+      { "text": "«у, из, от, до, без, для» qaysi kelishikni talab qiladi?", "options": ["Qaratqich (Р.)", "Jo'nalish (Д.)", "Vosita (Т.)", "O'rin (П.)"], "correctIndex": 0, "explanation": "Bu predloglar guruhi doim qaratqich bilan: у врача́, из до́ма, без са́хара, для тебя́." },
+      { "text": "«в» va «на» qaysi ikki kelishik bilan ishlatiladi?", "options": ["Faqat o'rin", "Tushum (qayerga?) yoki O'rin (qayerda?)", "Qaratqich yoki vosita", "Faqat tushum"], "correctIndex": 1, "explanation": "Yo'nalish (куда́?) → tushum: иду́ в шко́лу. Joy (где?) → o'rin: я в шко́ле. Savolga qarab tanlanadi." },
+      { "text": "«но́вого» qanday o'qiladi?", "options": ["«novogo»", "«novovo»", "«novoyo»", "«novox»"], "correctIndex": 1, "explanation": "-ого/-его doim «-ovo/-evo» o'qiladi: но́вого «novovo», его́ «yevo», сего́дня «sivodnya»." },
+      { "text": "Jonli/jonsiz farqi qaysi holatda muhim?", "options": ["Barcha kelishiklarda", "Faqat erkak rodda, faqat tushum kelishigida", "Faqat ayol rodda", "Faqat ko'plikda"], "correctIndex": 1, "explanation": "Faqat erkak rod + tushum kelishigi: jonli → qaratqichdek (студе́нта), jonsiz → boshdek (стол)." },
+      { "text": "«с, над, под, пе́ред» qaysi kelishikni talab qiladi?", "options": ["Qaratqich", "Jo'nalish", "Vosita", "O'rin"], "correctIndex": 2, "explanation": "Bu predloglar vosita kelishigi bilan: с дру́гом, над столо́м, под окно́м, пе́ред до́мом." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "08-koplik-kelishiklar",
+    "title": "Test — Ko'plik kelishiklar",
+    "questions": [
+      { "text": "Ko'plikda jo'nalish, vosita va o'rin kelishiklari rodga bog'liqmi?", "options": ["Ha, har rod uchun boshqacha", "Yo'q — barcha rod uchun bir xil", "Faqat erkak rodda farq", "Faqat ayol rodda farq"], "correctIndex": 1, "explanation": "Ko'plikda oson: Д. -ам/-ям, Т. -ами/-ями, П. -ах/-ях — barcha rod uchun bir xil." },
+      { "text": "Ko'plikda eng qiyin kelishik qaysi?", "options": ["Jo'nalish", "Qaratqich", "Vosita", "O'rin"], "correctIndex": 1, "explanation": "Qaratqich ko'plik: erkak -ов/-ей (столо́в, словаре́й), ayol/o'rta nol tugash (книг, о́кон) — ba'zan unli yuguradi." },
+      { "text": "«мно́го студе́нт___» — to'g'ri shakl?", "options": ["студе́нты", "студе́нтов", "студе́нтам", "студе́нта"], "correctIndex": 1, "explanation": "мно́го / ма́ло / нет / 5+ dan keyin qaratqich KO'PLIK: мно́го студе́нтов, нет книг, пять столо́в." },
+      { "text": "«Я ви́жу столы́» va «Я ви́жу студе́нтов» — nega farq?", "options": ["Xato bor", "Jonsiz = bosh shakl, jonli = qaratqich shakli", "Birinchisi ko'plik emas", "Tasodifiy"], "correctIndex": 1, "explanation": "Tushum ko'plik nusxa oladi: jonsiz → bosh kelishik (столы́), jonli → qaratqich (студе́нтов)." },
+      { "text": "«окно́» qaratqich ko'plikda qanday?", "options": ["окно́в", "о́кон", "о́кнам", "о́кнами"], "correctIndex": 1, "explanation": "O'rta rod qaratqich ko'plikda nol tugash + yuguruvchi unli: о́кна → о́кон." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "09-kelasi-zamon",
+    "title": "Test — Kelasi zamon",
+    "questions": [
+      { "text": "«Ertaga ishlayman» (davomiy) — to'g'ri shakl?", "options": ["За́втра рабо́таю", "За́втра бу́ду рабо́тать", "За́втра порабо́таю", "За́втра бу́ду порабо́тать"], "correctIndex": 1, "explanation": "Murakkab kelasi: быть ning kelasi shakli + infinitiv → бу́ду рабо́тать." },
+      { "text": "«бу́ду сде́лать» — bu to'g'rimi?", "options": ["Ha, to'g'ri", "Yo'q — бу́ду faqat davomiy fe'l bilan", "Faqat og'zaki nutqda", "Faqat inkorda"], "correctIndex": 1, "explanation": "ENG KATTA XATO. бу́ду faqat НЕСОВ (davomiy) bilan: бу́ду де́лать. СОВ o'zi kelajakni beradi: сде́лаю." },
+      { "text": "«прочита́ю» qaysi zamonni bildiradi?", "options": ["Hozirgi", "O'tgan", "Kelasi (bir martalik natija)", "Hech qaysi"], "correctIndex": 2, "explanation": "СОВ fe'lda hozirgi zamon YO'Q. Hozirgidek tuslansa ham, ma'nosi kelajak: прочита́ю = «o'qib bo'laman»." },
+      { "text": "быть fe'lining kelasi zamon shakllari qaysi qatorda?", "options": ["был, была́, бы́ли", "бу́ду, бу́дешь, бу́дет, бу́дем, бу́дете, бу́дут", "есть, суть", "бы, бы́ло"], "correctIndex": 1, "explanation": "быть kelasi zamonda to'liq tuslanadi: бу́ду, бу́дешь, бу́дет, бу́дем, бу́дете, бу́дут." },
+      { "text": "Murakkab kelasida infinitiv o'zgaradimi?", "options": ["Ha, u ham tuslanadi", "Yo'q — faqat быть tuslanadi", "Ikkalasi ham o'zgarmaydi", "Faqat ko'plikda"], "correctIndex": 1, "explanation": "Faqat быть tuslanadi: я бу́ду чита́ть, ты бу́дешь чита́ть — infinitiv o'zgarmaydi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "10-fel-aspektlari-kirish",
+    "title": "Test — Fe'l aspektlari (вид)",
+    "questions": [
+      { "text": "«Har kuni kitob o'qirdim» — qaysi aspekt?", "options": ["НСВ (davomiy) — takror", "СВ (natijali)", "Ikkalasi ham", "Aspekt yo'q"], "correctIndex": 0, "explanation": "Takror, odat, jarayon → НЕСОВЕРШЕННЫЙ вид: Ка́ждый день я чита́л кни́гу." },
+      { "text": "Qaysi so'zlar odatda СВ (natijali) bilan keladi?", "options": ["обы́чно, ча́сто, всегда́", "вдруг, уже́, наконе́ц", "ка́ждый день", "до́лго"], "correctIndex": 1, "explanation": "вдруг, уже́, бы́стро, наконе́ц, за час → СВ. обы́чно, ча́сто, всегда́, до́лго → НСВ." },
+      { "text": "«де́лать → сде́лать» — juftlik qanday yasalgan?", "options": ["Suffiks bilan", "Prefiks bilan", "Boshqa o'zak", "Urg'u bilan"], "correctIndex": 1, "explanation": "Uch usul: prefiks (де́лать→сде́лать), suffiks (покупа́ть→купи́ть), boshqa o'zak (говори́ть→сказа́ть)." },
+      { "text": "СВ (natijali) fe'lning hozirgi zamoni bormi?", "options": ["Ha, bor", "Yo'q — faqat o'tgan va kelasi", "Faqat inkorda", "Faqat buyruqda"], "correctIndex": 1, "explanation": "СВ da hozirgi zamon YO'Q. «прочита́ю» hozirgi emas, kelasi zamon." },
+      { "text": "«говори́ть → сказа́ть» qanday juftlik?", "options": ["Prefiksli", "Suffiksli", "Supletiv (butunlay boshqa o'zak)", "Juftlik emas"], "correctIndex": 2, "explanation": "Ba'zi juftliklar butunlay boshqa o'zakdan: говори́ть/сказа́ть, брать/взять, класть/положи́ть." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "11-aspekt-otgan-zamonda",
+    "title": "Test — Aspekt o'tgan zamonda",
+    "questions": [
+      { "text": "«Я чита́л кни́гу» va «Я прочита́л кни́гу» — farqi nimada?", "options": ["Farqi yo'q", "Birinchisi jarayon, ikkinchisi tugatilgan natija", "Birinchisi kelasi zamon", "Ikkinchisi ko'plik"], "correctIndex": 1, "explanation": "чита́л — o'qiyotgan edim (jarayon/takror), прочита́л — o'qib TUGATDIM (natija)." },
+      { "text": "«Я чита́л, когда́ вдруг зазвони́л телефо́н» — nega ikki xil aspekt?", "options": ["Xato", "чита́л — fon (НСВ), зазвони́л — voqea (СВ)", "Tasodifiy", "Ikkalasi ham СВ"], "correctIndex": 1, "explanation": "Fon (nima kechayotgan edi) → НСВ; voqea (nima sodir bo'ldi) → СВ. Bu — hikoyaning asosiy naqshi." },
+      { "text": "«Вы чита́ли Толсто́го?» — nega НСВ?", "options": ["Xato, СВ kerak", "Umumiy fakt/tajriba so'ralyapti", "Bu kelasi zamon", "Toлstoy — ko'plik"], "correctIndex": 1, "explanation": "НСВ ning maxsus ma'nosi: umumiy fakt/tajriba («umuman o'qiganmisiz?»), natija muhim emas." },
+      { "text": "«Он до́лго писа́л письмо́» — nega «писа́л»?", "options": ["Xato", "«до́лго» davomiylikni bildiradi → НСВ", "«письмо́» ko'plik", "Bu buyruq"], "correctIndex": 1, "explanation": "до́лго (uzoq) — davomiylik signali → НСВ. Agar «за час написа́л» bo'lsa — natija, СВ." },
+      { "text": "«Пришёл, уви́дел, победи́л» — nega hammasi СВ?", "options": ["Tasodifiy", "Ketma-ket tugallangan harakatlar", "Bular НСВ", "Bu hozirgi zamon"], "correctIndex": 1, "explanation": "Ketma-ket sodir bo'lgan tugallangan harakatlar zanjiri → СВ. Har biri tugab, keyingisi boshlanadi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "12-aspekt-kelasi-zamonda",
+    "title": "Test — Aspekt kelasi zamonda",
+    "questions": [
+      { "text": "«Ertaga kun bo'yi o'qiyman» — to'g'ri shakl?", "options": ["За́втра прочита́ю весь день", "За́втра бу́ду чита́ть весь день", "За́втра бу́ду прочита́ть", "За́втра чита́ю"], "correctIndex": 1, "explanation": "«весь день» — davomiylik → НСВ → бу́ду чита́ть." },
+      { "text": "«Bu kitobni ertagacha o'qib tugataman» — to'g'ri shakl?", "options": ["бу́ду чита́ть", "прочита́ю", "бу́ду прочита́ть", "чита́ю"], "correctIndex": 1, "explanation": "Natija/tugatish → СВ oddiy kelasi: прочита́ю. Ikkinchi «бу́ду» qo'shilmaydi." },
+      { "text": "Qaysi so'zlar НСВ kelasi bilan keladi?", "options": ["за час, ско́ро, наконе́ц", "весь день, всегда́, ка́ждый день", "вдруг", "уже́"], "correctIndex": 1, "explanation": "весь день / всегда́ / ка́ждый день → НСВ (бу́ду + inf). за час / ско́ро / наконе́ц → СВ." },
+      { "text": "«Приду́, пое́м и отдохну́» — nega hammasi oddiy kelasi?", "options": ["Xato", "Ketma-ket tugallanadigan harakatlar → СВ", "Bular hozirgi zamon", "бу́ду tushib qolgan"], "correctIndex": 1, "explanation": "Kelajakda ketma-ket bajariladigan tugallangan harakatlar → СВ oddiy kelasi." },
+      { "text": "«бу́ду» qaysi fe'llar bilan ishlatiladi?", "options": ["Faqat НСВ (davomiy)", "Faqat СВ", "Ikkalasi bilan", "Hech qaysi bilan"], "correctIndex": 0, "explanation": "бу́ду faqat НСВ infinitiv bilan. «бу́ду сде́лать» — xato, chunki сде́лать — СВ." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "13-harakat-fellari-idti-xodit",
+    "title": "Test — идти va ходить",
+    "questions": [
+      { "text": "«Hozir maktabga ketyapman» — to'g'ri fe'l?", "options": ["Я хожу́ в шко́лу", "Я иду́ в шко́лу", "Я шёл в шко́лу", "Я ходи́л в шко́лу"], "correctIndex": 1, "explanation": "идти́ — ayni damda, bir yo'nalishda: Я иду́ в шко́лу (hozir ketyapman)." },
+      { "text": "«Men maktabga qatnayman» — to'g'ri fe'l?", "options": ["Я иду́ в шко́лу", "Я хожу́ в шко́лу", "Я шёл в шко́лу", "Я пойду́ в шко́лу"], "correctIndex": 1, "explanation": "ходи́ть — takror, odat, oldinga-orqaga: Я хожу́ в шко́лу (har kuni qatnayman)." },
+      { "text": "«ходи́ть» fe'lining «я» shakli?", "options": ["ходю́", "хожу́", "хо́жу", "ходи́ю"], "correctIndex": 1, "explanation": "д → ж almashinuvi va urg'u oxirda: хожу́. Qolganlari: хо́дишь, хо́дит (urg'u boshda)." },
+      { "text": "«Я ходи́л в теа́тр» nima degani?", "options": ["Teatrga ketayotgan edim", "Teatrga borib keldim", "Teatrga boraman", "Teatrda edim"], "correctIndex": 1, "explanation": "ходи́л = «borib keldim» (tashrif tugagan, qaytib kelgan). шёл = «ketayotgan edim» (jarayon)." },
+      { "text": "«шёл» qaysi fe'lning o'tgan zamon shakli?", "options": ["ходи́ть", "идти́", "е́хать", "пойти́"], "correctIndex": 1, "explanation": "идти́ → шёл / шла / шло / шли (istisno shakl). ходи́ть → ходи́л / ходи́ла / ходи́ли." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "14-harakat-fellari-exat-ezdit",
+    "title": "Test — ехать va ездить",
+    "questions": [
+      { "text": "«Moskvaga ketyapman» (poyezdda) — to'g'ri fe'l?", "options": ["Я иду́ в Москву́", "Я е́ду в Москву́", "Я хожу́ в Москву́", "Я е́зжу в Москву́"], "correctIndex": 1, "explanation": "Uzoq masofa + transport → е́хать: Я е́ду в Москву́. идти́ — faqat piyoda va yaqin." },
+      { "text": "«е́здить» fe'lining «я» shakli?", "options": ["е́здю", "е́зжу", "е́ду", "езди́ю"], "correctIndex": 1, "explanation": "д → ж almashinuvi: е́зжу. Qolganlari: е́здишь, е́здит, е́здим, е́здите, е́здят." },
+      { "text": "«по-» prefiksi harakat fe'liga nima qo'shadi?", "options": ["Takror ma'nosi", "Boshlanish — kelajakda bir marta", "Inkor", "O'tgan zamon"], "correctIndex": 1, "explanation": "пойти́ → пойду́, пое́хать → пое́ду: «jo'nab ketaman». За́втра пойду́ в кино́." },
+      { "text": "«Я е́здил в Москву́» nima degani?", "options": ["Yo'lda edim", "Moskvaga borib keldim", "Moskvaga boraman", "Moskvada yashayman"], "correctIndex": 1, "explanation": "е́здил = borib keldim (tashrif tugagan). е́хал = yo'lda edim (jarayon)." },
+      { "text": "«пешко́м» qaysi fe'l bilan ishlatiladi?", "options": ["е́хать / е́здить", "идти́ / ходи́ть", "Ikkalasi bilan", "Hech qaysi bilan"], "correctIndex": 1, "explanation": "пешко́м (piyoda) — идти́/ходи́ть bilan. Transport uchun: на маши́не, на по́езде + е́хать/е́здить." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "02-a2-elementar", "article": "15-qaytim-fellar-sya",
+    "title": "Test — Qaytim fe'llar (-ся)",
+    "questions": [
+      { "text": "«-ся» qo'shimchasi qayerdan kelib chiqqan?", "options": ["«себя́» (o'zini) so'zidan", "«есть» fe'lidan", "«с» predlogidan", "Chet tildan"], "correctIndex": 0, "explanation": "-ся aslida себя́ («o'zini») dan qisqargan. Shuning uchun ko'p qaytim fe'llar «o'ziga qaytuvchi» ma'noda." },
+      { "text": "Unlidan keyin qaysi shakl ishlatiladi?", "options": ["-ся", "-сь", "Ikkalasi ham", "Hech qaysi"], "correctIndex": 1, "explanation": "Unlidan keyin -сь (занима́юсь), undoshdan va -ь dan keyin -ся (занима́ется, занима́ться)." },
+      { "text": "«учи́ть» va «учи́ться» farqi nimada?", "options": ["Farqi yo'q", "учи́ть — yodlamoq (obyekt bilan), учи́ться — o'qimoq (joyda)", "учи́ться — o'tgan zamon", "учи́ть — ko'plik"], "correctIndex": 1, "explanation": "Я учу́ слова́ (so'zlarni yodlayman) ≠ Я учу́сь в университе́те (universitetda o'qiyman)." },
+      { "text": "«занима́ться» fe'lining «я» shakli?", "options": ["занима́ю", "занима́юсь", "занима́ется", "занима́ся"], "correctIndex": 1, "explanation": "Avval oddiy tuslash (занима́ю), keyin qo'shimcha: unlidan keyin -сь → занима́юсь." },
+      { "text": "Qaytim fe'l tushum kelishigidagi obyekt olishi mumkinmi?", "options": ["Ha, doim", "Yo'q — «-ся» allaqachon obyekt o'rnida", "Faqat ko'plikda", "Faqat o'tgan zamonda"], "correctIndex": 1, "explanation": "Qaytim fe'l vositasiz obyekt olmaydi. «Я занима́юсь спорт» — xato; to'g'risi: занима́юсь спо́ртом (vosita kelishigi)." }
+    ]
+  }
+]

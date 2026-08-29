@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "18-badiiy-tarjima",
+    "title": "Test — Badiiy tarjima",
+    "questions": [
+      { "text": "«Адеква́тный перево́д» nima?", "options": ["So'zma-so'z", "Erkin", "Mos, to'laqonli — ikki qutb o'rtasidagi oltin o'rta", "Qisqartilgan"], "correctIndex": 2, "explanation": "«Aniqlik» — bu so'z emas, ta'sir muvofiqligi. Буква́льный ko'pincha xato, во́льный mustaqil ijodga yaqin." },
+      { "text": "Komissarov shkalasida eng yuqori ekvivalentlik darajasi doim eng yaxshimi?", "options": ["Ha", "Yo'q — tarjimon «qaysi darajada ekvivalentlik yetarli» degan savolni yechadi", "Har doim so'z darajasi kerak", "Faqat gap tuzilishi muhim"], "correctIndex": 1, "explanation": "Darajalar: aloqa maqsadi → vaziyat → xabar → gap tuzilishi → so'z." },
+      { "text": "Marshak va Pasternak maktablari qanday farqlanadi?", "options": ["Farqi yo'q", "Marshak — aniq shakl; Pasternak — erkin ruh", "Marshak — erkin ruh", "Ikkalasi shaklga tayanadi"], "correctIndex": 1, "explanation": "She'r tarjimasida hammasini saqlab bo'lmaydi — tarjimon ustuvorlik belgilaydi." },
+      { "text": "Nasr tarjimasida nima saqlanishi kerak?", "options": ["Faqat mazmun", "Идиости́ль, sintaktik ritm, register, personaj nutqi", "Faqat so'zlar", "Faqat syujet"], "correctIndex": 1, "explanation": "Uslubni tekislash — muallifni o'ldirish." },
+      { "text": "«Форенизация» nima?", "options": ["Tarjimonning ko'rinmasligi", "Asl matn koloritini saqlash", "So'zma-so'z tarjima", "Erkin tarjima"], "correctIndex": 1, "explanation": "Qarshi qutb — доместикация (tarjimon «ko'rinmasligi», matnni o'quvchiga yaqinlashtirish)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "19-razgovornaya-virtuoznost",
+    "title": "Test — Suhbat virtuozligi",
+    "questions": [
+      { "text": "Suhbat virtuozligi nima?", "options": ["Yangi grammatika", "Eski vositalarni avtomatga chiqarish — bilim refleksga aylanadi", "Ko'p gapirish", "Tez gapirish"], "correctIndex": 1, "explanation": "Jonli nutqni real vaqtda boshqarish: tezlik ostida ham erkin, aniq va topqir qolish." },
+      { "text": "Jonli suhbatning birinchi oltin qoidasi qaysi?", "options": ["Aniqlik ravonlikdan muhim", "Ravonlik aniqlikdan muhimroq — oqimni ushlab turing", "Sekin gapirish", "Ko'p pauza qilish"], "correctIndex": 1, "explanation": "Kichik nokamillikdan qo'rqmang — oqim uzilmasin." },
+      { "text": "Topqirlik va parirovanie qanday ohangda ishlaydi?", "options": ["Baland va keskin", "Sokin, xotirjam", "Tez", "Baqiriq bilan"], "correctIndex": 1, "explanation": "Xotirjamlik = kuch; asabiylashish — yutqazish." },
+      { "text": "Hazil qanday chegara bilan ishlatiladi?", "options": ["Chegarasiz", "O'ziga (samoironiya) yoki xavfsiz mavzuga — suhbatdoshni yaralamang", "Faqat raqibga", "Faqat rasmiy"], "correctIndex": 1, "explanation": "Til o'yini va frazeologizm — ziravor: oz bo'lsa o'tkir, ko'p bo'lsa charchatadi." },
+      { "text": "Haqiqiy virtuoz suhbatni qanday boshqaradi?", "options": ["Raqibni yakson qiladi", "Shunday boshqaradiki, hamma yutadi", "Ko'p gapirmaydi", "Faqat tinglaydi"], "correctIndex": 1, "explanation": "Virtuozlik = topqirlik + nozik muomala. Zukko, lekin qo'pol odam — virtuoz emas." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "20-professional-podyazyki",
+    "title": "Test — Kasbiy tillar",
+    "questions": [
+      { "text": "«Подъязы́к» nima?", "options": ["Boshqa til", "Umumiy tilning ichidagi ixtisoslashgan qatlam", "Dialekt", "Jargon"], "correctIndex": 1, "explanation": "Grammatika bir xil, leksika/kollokatsiya/registr sohaga qarab o'zgaradi." },
+      { "text": "Термин, профессионали́зм va жарго́н qanday farqlanadi?", "options": ["Farqi yo'q", "Termin — rasmiy va ta'rifli; professionalizm — kasbiy so'zlashuv; jargon — norasmiy, ekspressiv", "Jargon — rasmiy", "Termin — norasmiy"], "correctIndex": 1, "explanation": "Chegara harakatchan: jargon vaqt o'tib terminga aylanishi mumkin." },
+      { "text": "IT tili asosan qaysi manbaga tayanadi?", "options": ["Grekolatin", "Ingliz tili (anglitsizm + rus qo'shimchasi)", "Fransuz", "Turkiy"], "correctIndex": 1, "explanation": "Tibbiyot/huquq/fan — grekolatinga; IT — inglizchaga." },
+      { "text": "Notanish terminni «ochish»ning kaliti nima?", "options": ["Yodlash", "O'zakni tanish (latin/grek/ingliz)", "Lug'at", "Kontekst"], "correctIndex": 1, "explanation": "Strategiya: soha → o'zak → yasalish → kontekst → antonim → «ishchi ma'no»." },
+      { "text": "Registrni nima belgilaydi?", "options": ["Soha", "Adressat va janr", "Uzunlik", "Urg'u"], "correctIndex": 1, "explanation": "Hujjatda termin, hamkasblar suhbatida professionalizm, norasmiy chatda jargon." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "21-territorial-sotsial-variantlar",
+    "title": "Test — Hududiy va ijtimoiy variantlar",
+    "questions": [
+      { "text": "«О́канье» qaysi shevaning belgisi?", "options": ["Janubiy", "Shimoliy наречие", "O'rta rus", "Adabiy til"], "correctIndex": 1, "explanation": "Janubiy: а́канье kuchli + frikativ г + fe'l идёть. O'rta rus говоры — adabiy tilning asosi." },
+      { "text": "«бордю́р / поре́брик, шаурма́ / шаве́рма» — bu nima?", "options": ["Dialekt", "Региоле́кт — leksik farq, fonetika adabiy", "Просторечие", "Jargon"], "correctIndex": 1, "explanation": "Moskva ↔ Piter farqlari: подъе́зд/пара́дная, гре́чка/гре́ча." },
+      { "text": "«ло́жить, зво́нит» qaysi toifaga kiradi?", "options": ["Dialekt", "Городско́е просторе́чие — ijtimoiy, hududsiz", "Regionalizm", "Sotsiolekt"], "correctIndex": 1, "explanation": "Diagnostika: grammatik/urg'u xatosi → просторечие." },
+      { "text": "«взять трейн, сде́лать аппо́йнтмент» — bu qanday hodisa?", "options": ["Jargon", "Diaspora tili — interferensiya va kalka", "Dialekt", "Termin"], "correctIndex": 1, "explanation": "Diagnostika: boshqa til kalkasi → diaspora." },
+      { "text": "Variantlarni o'rganishdan maqsad nima?", "options": ["Ularni ishlatish", "Diagnostika — tanib olish; faol nutq adabiy me'yorda qoladi", "Me'yorni almashtirish", "Ularni tanqid qilish"], "correctIndex": 1, "explanation": "C2 ustasi bir og'iz nutqdan речево́й портре́т o'qiy oladi, lekin variantni «xato» emas, «boshqacha» deb qadrlaydi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "22-til-tarixi",
+    "title": "Test — Rus tili tarixi",
+    "questions": [
+      { "text": "«град / го́род, глава́ / голова́» juftliklari qayerdan kelgan?", "options": ["Dialektdan", "Старославя́нский ta'siridan — неполногла́сие belgisi bilan", "Turkiy tildan", "Fransuzchadan"], "correctIndex": 1, "explanation": "Slavyan shakli — kitobiy/she'riy; rus shakli — kundalik." },
+      { "text": "«сон → сна, день → дня» dagi qochuvchi unli nimadan kelib chiqqan?", "options": ["Tasodif", "Паде́ние реду́цированных (XI–XII asr)", "Chet til ta'siri", "Islohot"], "correctIndex": 1, "explanation": "Shu jarayon so'z oxiridagi jarangsizlanishni ham izohlaydi: дуб → «dup»." },
+      { "text": "1918 islohotida qaysi harflar yo'qoldi?", "options": ["ё va й", "Ять ѣ, фита ѳ, i десятеричное і, so'z oxiridagi ъ", "щ va ц", "ъ va ь butunlay"], "correctIndex": 1, "explanation": "Shu bilan bog'liq: миръ/міръ farqi va «Война и мир» bahsi." },
+      { "text": "«деньги, товар, сундук, карандаш» qaysi manbadan?", "options": ["Yunon", "Turkiy tillardan", "Nemis", "Fransuz"], "correctIndex": 1, "explanation": "O'zbek tilida so'zlashuvchi uchun bu qatlam ayniqsa tanish." },
+      { "text": "«два стола́, три часа́» qolipida nimaning izi saqlangan?", "options": ["Chet til ta'siri", "Yo'qolgan двойственное число", "Dialekt", "Islohot"], "correctIndex": 1, "explanation": "Shuning uchun 2, 3, 4 dan keyin qaratqich birlik keladi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "23-til-meyori-va-buzilishi",
+    "title": "Test — Til me'yori va uning buzilishi",
+    "questions": [
+      { "text": "Til me'yori nimaga tayanadi?", "options": ["Statistikaga — ko'pchilik shunday aytadi", "Obro'ga — ma'lumotli nutq va kodifikatsiyaga", "Tasodifga", "Faqat lug'atga"], "correctIndex": 1, "explanation": "Uch ustuni: barqarorlik, variativlik, tarixiylik." },
+      { "text": "«творо́г / тво́рог» — bu qanday norma?", "options": ["Imperativ", "Dispozitiv — ikki shakl ham to'g'ri", "Xato", "Uzus"], "correctIndex": 1, "explanation": "Imperativ norma — bitta shakl (звони́т)." },
+      { "text": "Kodifikatsiyaning zaif tomoni nima?", "options": ["Juda tez", "Normadan orqada qoladi va eskiradi", "Noaniq", "Rasmiy emas"], "correctIndex": 1, "explanation": "Shuning uchun eng yangi, obro'li manbaga tayanish kerak." },
+      { "text": "Xato va ijodiy norma buzilishini nima ajratadi?", "options": ["Uzunlik", "Niyat va bilim — «tuzatadimi yoki ataylab shundaymi?»", "Registr", "Janr"], "correctIndex": 1, "explanation": "ложить — bilmaslikdan; прихватиза́ция, гро́мадьё — normani bilib, badiiy maqsad bilan." },
+      { "text": "«Пури́зм» nima?", "options": ["Til rivoji", "Tilni chet so'zlardan «tozalash» harakati", "Kodifikatsiya", "Jargon"], "correctIndex": 1, "explanation": "Klassik misol: мокросту́пы (галоши o'rniga). Til madaniyati — nazorat emas, o'ziga talabchanlik." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "24-mavzuli-lugat-ekspert",
+    "title": "Test — Ekspert darajadagi leksika",
+    "questions": [
+      { "text": "«трансценде́нтный» va «имане́нтный» qanday juftlik?", "options": ["Sinonim", "Falsafiy antonim juftlik", "Paronim", "Omonim"], "correctIndex": 1, "explanation": "C2 ekspert leksikada terminologik aniqlik hal qiladi." },
+      { "text": "«фа́була» va «сюже́т» qanday farqlanadi?", "options": ["Farqi yo'q", "Ular teng emas — adabiyotshunoslikda ajratiladi", "Sinonim", "Bir soha emas"], "correctIndex": 1, "explanation": "Juftlik-farqlari: денота́т ≠ коннота́ция, су́щность ≠ явле́ние, легити́мность ≠ лега́льность." },
+      { "text": "«легити́мность» va «лега́льность» farqi nimada?", "options": ["Farqi yo'q", "Biri — qonuniylik, ikkinchisi — tan olinganlik/haqqoniylik", "Ikkalasi qonuniylik", "Bir soha emas"], "correctIndex": 1, "explanation": "Ijtimoiy nazariya lug'ati: идеоло́гия, гегемо́ния, стратифика́ция, конфо́рмизм." },
+      { "text": "«размышля́ть о бытии́» — qaysi kelishik?", "options": ["Tushum", "O'rin (Предложный)", "Qaratqich", "Vosita"], "correctIndex": 1, "explanation": "размышля́ть О чём. Yana: пости́чь су́щность (В.), дости́чь ка́тарсиса (Р.)." },
+      { "text": "«ка́тарсис» so'zida urg'u qayerda?", "options": ["Oxirida", "Birinchi bo'g'inda: ка́-", "O'rtada", "Farqi yo'q"], "correctIndex": 1, "explanation": "Har atamani aniq urg'u, soha va juftlik-farqi bilan yodlang: феноме́н, легити́мность." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "25-c2-yakuniy-checkpoint-kurs-xulosasi",
+    "title": "Test — C2 yakuniy nazorat va kurs xulosasi",
+    "questions": [
+      { "text": "Kalambur va paronomaziyani ajratuvchi test qaysi?", "options": ["Uzunligi", "«Bir so'zmi yoki ikki so'z?»", "Registr", "Urg'u"], "correctIndex": 1, "explanation": "Kalambur — bir so'zning ikki ma'nosi; paronomaziya — ikki o'xshash so'z (5-dars)." },
+      { "text": "«ЖИЗНЬ — ПУТЬ» kabi tuzilma nima deb ataladi?", "options": ["Frazeologizm", "Konseptual metafora", "Allyuziya", "Epitet"], "correctIndex": 1, "explanation": "Modelni tuting — iboralar tizim bo'lib keladi (6-dars)." },
+      { "text": "Ta'sir va manipulyatsiyani ajratuvchi savol qaysi?", "options": ["Matn uzunmi?", "«O'quvchi hamma narsani bilsa ham shu xulosaga kelarmidi?»", "Dalil ko'pmi?", "Uslub chiroylimi?"], "correctIndex": 1, "explanation": "Publitsistik mahoratning etik cho'qqisi (17-dars)." },
+      { "text": "Ilmiy polemikaning oltin qoidasi qaysi?", "options": ["Raqibni yengish", "Tezisga e'tiroz, shaxsga emas", "Tanqid qilmaslik", "Faqat o'z fikrini aytish"], "correctIndex": 1, "explanation": "Polemika halqasi: xolis bayon → dalilli e'tiroz → o'z muqobil (16-dars)." },
+      { "text": "C2 da til nima deb qaraladi?", "options": ["Asbob", "San'at", "Fan", "Qoidalar to'plami"], "correctIndex": 1, "explanation": "C2 yangi til o'rgatmaydi — bor til bilan san'at yaratishni o'rgatadi (1-dars)." }
+    ]
+  }
+]

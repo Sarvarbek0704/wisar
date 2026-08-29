@@ -1,0 +1,57 @@
+[
+  {
+    "topic": "dasturlash", "section": "04-qism-git", "article": "01-git-asoslari",
+    "title": "Test — Git asoslari",
+    "questions": [
+      { "text": "Git'ning uch hududi qaysi?", "options": ["Local, remote, cloud", "Working Directory → Staging Area → Repository", "Branch, commit, merge", "Add, commit, push"], "correctIndex": 1, "explanation": "git add — staging'ga, git commit — repository'ga o'tkazadi." },
+      { "text": "Commit nima?", "options": ["Fayl nusxasi", "Snapshot + metadata, noyob hash bilan", "Farq (diff)", "Branch"], "correctIndex": 1, "explanation": "Commitlar zanjir hosil qilib, loyiha tarixini tashkil etadi." },
+      { "text": "«HEAD» nimani anglatadi?", "options": ["Birinchi commit", "Joriy commit ko'rsatkichi — qayerda turganimiz", "Oxirgi branch", "Remote"], "correctIndex": 1, "explanation": ".git ichida blob/tree/commit obyektlari SHA-1 hash bilan saqlanadi." },
+      { "text": "«git commit --amend» nima qiladi?", "options": ["Yangi commit", "Oxirgi commitni tuzatadi", "Commitni o'chiradi", "Branch yaratadi"], "correctIndex": 1, "explanation": "Push qilingan commitni amend qilish tarixni o'zgartiradi — ehtiyot bo'ling." },
+      { "text": "Git qanday tizim?", "options": ["Markazlashgan", "Taqsimlangan — har kimda to'liq nusxa", "Bulut xizmati", "Fayl serveri"], "correctIndex": 1, "explanation": "GitHub — Git ustidagi bulut xizmati, Git'ning o'zi emas." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "04-qism-git", "article": "02-branch-merge-rebase",
+    "title": "Test — Branch, merge, rebase",
+    "questions": [
+      { "text": "Branch nima?", "options": ["Fayllar nusxasi", "Commit zanjiriga ko'rsatkich — juda arzon", "Alohida repo", "Papka"], "correctIndex": 1, "explanation": "Shuning uchun branch yaratish deyarli bepul amal." },
+      { "text": "Rebase'ni qachon qilish MUMKIN EMAS?", "options": ["Lokal branchda", "Public (boshqalar ishlatayotgan) branchda", "Yangi branchda", "Hech qachon"], "correctIndex": 1, "explanation": "Rebase tarixni qayta yozadi — boshqalarning ishini buzadi." },
+      { "text": "«Fast-forward» merge qachon bo'ladi?", "options": ["Har doim", "Maqsad branchda yangi commit bo'lmaganda — chiziqli", "Konflikt bo'lganda", "Rebase'dan keyin"], "correctIndex": 1, "explanation": "Aks holda 3-way merge va merge commit hosil bo'ladi." },
+      { "text": "Konflikt qanday hal qilinadi?", "options": ["Avtomatik", "<<<<< va >>>>> belgilarini qo'lda yechib, git add + commit", "Branch o'chirib", "Reset bilan"], "correctIndex": 1, "explanation": "Ikki branch bir qatorni o'zgartirganda konflikt yuz beradi." },
+      { "text": "«Interaktiv rebase» nima uchun ishlatiladi?", "options": ["Merge uchun", "Push'dan OLDIN commitlarni tozalash (squash/reword/drop)", "Branch yaratish", "Konflikt uchun"], "correctIndex": 1, "explanation": "Cherry-pick esa bitta commitni boshqa branchga nusxalaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "04-qism-git", "article": "03-github-remote-push-pull-pr",
+    "title": "Test — GitHub, remote va PR",
+    "questions": [
+      { "text": "«pull» va «fetch» qanday farqlanadi?", "options": ["Farqi yo'q", "fetch — faqat oladi; pull — oladi va merge qiladi", "pull — faqat oladi", "fetch — push qiladi"], "correctIndex": 1, "explanation": "fetch xavfsizroq — o'zgarishlarni avval ko'rib chiqish imkonini beradi." },
+      { "text": "Pull Request nima uchun kerak?", "options": ["Kodni yuklash", "O'zgarishni taklif qilish — code review va CI nuqtasi", "Branch yaratish", "Merge qilish"], "correctIndex": 1, "explanation": "main branchga doim PR orqali o'tish tavsiya etiladi." },
+      { "text": "«Fork» nima?", "options": ["Branch", "Boshqaning repo'sini o'z akkauntingizga nusxalash", "Merge", "Clone"], "correctIndex": 1, "explanation": "Ochiq kodga hissa qo'shishning standart yo'li." },
+      { "text": "«origin» nima?", "options": ["Birinchi commit", "Remote repo'ning standart nomi", "Asosiy branch", "Foydalanuvchi"], "correctIndex": 1, "explanation": "SSH yoki HTTPS orqali ulanadi." },
+      { "text": "Git bilan ishlashda eng muhim xavfsizlik qoidasi qaysi?", "options": ["Ko'p commit qilish", "Secrets (.env, kalitlar) ni hech qachon push qilmaslik", "Katta fayl yubormaslik", "Ko'p branch"], "correctIndex": 1, "explanation": "Push qilingan kalitni darhol bekor qilish kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "04-qism-git", "article": "04-git-workflowlar",
+    "title": "Test — Git workflowlar",
+    "questions": [
+      { "text": "GitHub Flow qanday ishlaydi?", "options": ["Ko'p branch turlari", "main barqaror + qisqa feature branch → PR → merge → deploy", "Faqat main", "Release branchlar"], "correctIndex": 1, "explanation": "Web loyihalar uchun standart, sodda yondashuv." },
+      { "text": "Gitflow qanday branchlardan iborat?", "options": ["Faqat main", "main + develop + feature/release/hotfix", "main + feature", "develop only"], "correctIndex": 1, "explanation": "Rejali, versiyalangan relizlar uchun mos." },
+      { "text": "Trunk-based development nimaga tayanadi?", "options": ["Uzoq branchlarga", "Juda qisqa branch + feature flags + kuchli test", "Release branchlarga", "Fork'ga"], "correctIndex": 1, "explanation": "CI/CD va kunlik deploy amaliyoti uchun mo'ljallangan." },
+      { "text": "«Protected main» nima beradi?", "options": ["Tezlik", "PR, review va CI'ni majburiy qiladi", "Xotira", "Branch yaratadi"], "correctIndex": 1, "explanation": "main branchga to'g'ridan-to'g'ri push qilishni bloklaydi." },
+      { "text": "Branch nomlashda qanday konvensiya tavsiya etiladi?", "options": ["Tasodifiy", "tur/tavsif — feature/login, fix/header", "Faqat raqam", "Ism"], "correctIndex": 1, "explanation": "Jamoa uchun tushunarli va qidiriladigan bo'ladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "04-qism-git", "article": "05-conventional-commits-gitignore",
+    "title": "Test — Conventional commits va .gitignore",
+    "questions": [
+      { "text": "Conventional Commit formati qanday?", "options": ["tavsif", "tur(scope): tavsif", "scope: tur", "[tur] tavsif"], "correctIndex": 1, "explanation": "Turlar: feat, fix, docs, style, refactor, test, chore, perf." },
+      { "text": "«!» belgisi commit turida nimani anglatadi?", "options": ["Muhim", "Breaking change — semver MAJOR", "Xato", "Tez"], "correctIndex": 1, "explanation": "Avtomatik changelog va versiya generatsiyasi shunga tayanadi." },
+      { "text": ".gitignore'dagi eng muhim yozuv qaysi?", "options": ["node_modules", ".env — maxfiy ma'lumot", "dist", "*.log"], "correctIndex": 1, "explanation": "node_modules ham kerak, lekin u qayta tiklanadi; .env esa sirlarni oshkor qiladi." },
+      { "text": "Allaqachon track qilingan faylni ignore qilish uchun nima kerak?", "options": ["Faqat .gitignore", "git rm --cached bilan indeksdan chiqarish", "Faylni o'chirish", "Commit qilish"], "correctIndex": 1, "explanation": ".gitignore faqat hali track qilinmagan fayllarga ta'sir qiladi." },
+      { "text": "«.env.example» nima uchun kerak?", "options": ["Maxfiy ma'lumot", "Kerakli o'zgaruvchilar ro'yxati — u kuzatiladi", "Backup", "Test"], "correctIndex": 1, "explanation": ".gitignore'da «!» bilan istisno qilinadi." }
+    ]
+  }
+]

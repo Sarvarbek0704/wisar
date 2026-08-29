@@ -1,0 +1,134 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "13-sana-kunlar-oylar-vaqt",
+    "title": "Test — Sana, kunlar, oylar, vaqt",
+    "questions": [
+      { "text": "Hafta kunlari va oylar qanday yoziladi?", "options": ["Kichik harf bilan", "Har doim katta harf bilan", "Kontekstga qarab", "Tirnoq ichida"], "correctIndex": 1, "explanation": "Monday, January — ingliz tilida doim katta harf." },
+      { "text": "«5-may» sanasi qanday o'qiladi?", "options": ["five May", "the fifth of May", "May five", "fifth May five"], "correctIndex": 1, "explanation": "Sana doim tartib son bilan o'qiladi." },
+      { "text": "«___ Monday» — qaysi predlog?", "options": ["at", "on", "in", "to"], "correctIndex": 1, "explanation": "at (soat), on (kun/sana), in (oy/yil/fasl)." },
+      { "text": "«___ 7 o'clock» — qaysi predlog?", "options": ["at", "on", "in", "for"], "correctIndex": 0, "explanation": "Aniq soat bilan «at» ishlatiladi." },
+      { "text": "«7:20» ni oddiy usulda qanday aytamiz?", "options": ["twenty past seven yoki seven twenty", "seven and twenty", "twenty to seven", "seven o'clock twenty"], "correctIndex": 0, "explanation": "past (o'tdi) / to (qoldi) yoki oddiygina raqamlab." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "14-present-simple-kundalik-ish",
+    "title": "Test — Present Simple",
+    "questions": [
+      { "text": "«He ___ (work) every day» — to'g'ri shakl?", "options": ["work", "works", "working", "is work"], "correctIndex": 1, "explanation": "he/she/it → fe'l + s — Present Simple ning eng muhim qoidasi." },
+      { "text": "Present Simple qachon ishlatiladi?", "options": ["Hozir sodir bo'layotgan ish", "Takroriy ish, odat, doimiy haqiqat", "O'tgan voqea", "Kelasi reja"], "correctIndex": 1, "explanation": "I work every day. The sun rises in the east." },
+      { "text": "«go» ning 3-shaxs shakli qanday?", "options": ["gos", "goes", "goies", "going"], "correctIndex": 1, "explanation": "have → has, go → goes, do → does." },
+      { "text": "«She is works» — bu nega xato?", "options": ["-s ortiqcha", "to be va oddiy fe'l aralashtirilgan", "Olmosh xato", "Xato emas"], "correctIndex": 1, "explanation": "Yo «She is a teacher», yo «She works» — ikkalasi birga kelmaydi." },
+      { "text": "«I ___ English every day» — to'g'ri shakl?", "options": ["studies", "study", "am study", "studying"], "correctIndex": 1, "explanation": "-s faqat he/she/it uchun; I/you/we/they bilan sof fe'l." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "15-present-simple-inkor-savol",
+    "title": "Test — Present Simple: inkor va savol",
+    "questions": [
+      { "text": "«___ he work here?» — bo'shliqqa nima?", "options": ["Do", "Does", "Is", "Are"], "correctIndex": 1, "explanation": "he/she/it uchun Does; I/you/we/they uchun Do." },
+      { "text": "«Does he works?» — bu nega xato?", "options": ["Does xato", "-s does ga ko'chgan, asosiy fe'l sof bo'lishi kerak", "Tartib xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: Does he work?" },
+      { "text": "«She ___ like coffee» (inkor) — to'g'ri shakl?", "options": ["don't", "doesn't", "isn't", "not"], "correctIndex": 1, "explanation": "he/she/it → doesn't + sof fe'l." },
+      { "text": "«Do you speak English?» ga qisqa javob qanday?", "options": ["Yes, I speak", "Yes, I do", "Yes, I am", "Yes, I does"], "correctIndex": 1, "explanation": "Yordamchi fe'l takrorlanadi: Yes, I do / No, he doesn't." },
+      { "text": "«Are you work?» — bu nega xato?", "options": ["Are xato — oddiy fe'l bilan Do ishlatiladi", "work xato", "you xato", "Xato emas"], "correctIndex": 0, "explanation": "to be (Are you a student?) va oddiy fe'l (Do you work?) aralashmaydi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "16-soroq-sozlar",
+    "title": "Test — So'roq so'zlar",
+    "questions": [
+      { "text": "So'roq so'z gapda qayerda turadi?", "options": ["Oxirida", "Boshida", "O'rtada", "Fe'ldan keyin"], "correctIndex": 1, "explanation": "So'roq so'z + do/does (yoki to be) + ega + fe'l." },
+      { "text": "«Where ___ he live?» — bo'shliqqa nima?", "options": ["is", "does", "do", "are"], "correctIndex": 1, "explanation": "So'roq so'z qo'shilsa ham do/does saqlanadi." },
+      { "text": "«Who lives here?» — nega «does» yo'q?", "options": ["Xato", "who ega bo'lgani uchun — fe'l +s bilan keladi", "who bilan hech qachon does bo'lmaydi", "Ko'plik uchun"], "correctIndex": 1, "explanation": "who/what ega bo'lsa, yordamchi fe'l tushadi va fe'l +s oladi." },
+      { "text": "«Necha yoshdasiz?» qanday so'raladi?", "options": ["How much are you?", "How old are you?", "What age you?", "How many years you?"], "correctIndex": 1, "explanation": "how boshqa so'z bilan birikadi: how old / how many / how much." },
+      { "text": "«Why» savoliga qaysi so'z bilan javob beriladi?", "options": ["Yes", "Because", "So", "When"], "correctIndex": 1, "explanation": "Why → Because jufti." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "17-there-is-there-are",
+    "title": "Test — There is / there are",
+    "questions": [
+      { "text": "«___ a book on the table» — to'g'ri shakl?", "options": ["There is", "There are", "It is", "They are"], "correctIndex": 0, "explanation": "there is — birlik; there are — ko'plik." },
+      { "text": "«There ___ five students» — to'g'ri shakl?", "options": ["is", "are", "am", "be"], "correctIndex": 1, "explanation": "Otga qarab tanlanadi — bu yerda ko'plik." },
+      { "text": "«There ___ any milk» (inkor) — to'g'ri shakl?", "options": ["isn't", "aren't", "not is", "doesn't"], "correctIndex": 0, "explanation": "Inkorda isn't/aren't + any." },
+      { "text": "«there is» va «it is» qanday farqlanadi?", "options": ["Farqi yo'q", "there is — «bor» (mavjudlik); it is — «o'sha narsa»", "it is — mavjudlik", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "There is a pen. — It's my pen." },
+      { "text": "«Xonada stol bormi?» qanday so'raladi?", "options": ["Is there a table in the room?", "There is a table?", "Does there a table?", "It is a table?"], "correctIndex": 0, "explanation": "Savolda is/are oldinga chiqadi: Is there...? Are there...?" }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "18-predloglar-joy-vaqt",
+    "title": "Test — Joy va vaqt predloglari",
+    "questions": [
+      { "text": "«___ the table» (stol ustida) — qaysi predlog?", "options": ["in", "on", "at", "under"], "correctIndex": 1, "explanation": "in (ichkari) / on (sirt) / at (nuqta)." },
+      { "text": "«___ the box» (quti ichida) — qaysi predlog?", "options": ["on", "in", "at", "next to"], "correctIndex": 1, "explanation": "in — yopiq makon ichida." },
+      { "text": "«___ the bus stop» — qaysi predlog?", "options": ["in", "on", "at", "under"], "correctIndex": 2, "explanation": "at — aniq nuqta yoki joy." },
+      { "text": "«I go ___ home» — bo'shliqqa nima?", "options": ["to", "at", "in", "hech narsa"], "correctIndex": 3, "explanation": "go home — predlogsiz. Lekin: go to school, go to work." },
+      { "text": "O'zbekcha «-da» qo'shimchasi ingliz tilida qanday beriladi?", "options": ["Doim «in»", "in/on/at — kontekstga qarab", "Doim «at»", "Predlogsiz"], "correctIndex": 1, "explanation": "Bitta o'zbek qo'shimchasi uchta ingliz predlogiga bo'linadi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "19-sifatlar-va-ot-tartibi",
+    "title": "Test — Sifatlar va so'z tartibi",
+    "questions": [
+      { "text": "«reds cars» — bu nega xato?", "options": ["Tartib xato", "Sifat o'zgarmaydi — ko'plikda -s olmaydi", "car xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: red cars." },
+      { "text": "Sifat gapda qayerda turadi?", "options": ["Faqat otdan keyin", "Otdan oldin yoki to be dan keyin", "Faqat gap oxirida", "Fe'ldan keyin"], "correctIndex": 1, "explanation": "a red car / The car is red." },
+      { "text": "Bir necha sifat ketma-ket kelganda tartib qanday?", "options": ["Erkin", "Baho → o'lcham → yosh → rang", "Rang → yosh → o'lcham", "Alifbo bo'yicha"], "correctIndex": 1, "explanation": "Rang otga eng yaqin turadi: a nice big old red car." },
+      { "text": "«very» nimani kuchaytiradi?", "options": ["Fe'lni", "Sifatni", "Otni", "Predlogni"], "correctIndex": 1, "explanation": "very/really sifat va ravishni kuchaytiradi, fe'lni emas." },
+      { "text": "«a big red house» da qaysi sifat otga yaqinroq?", "options": ["big", "red", "Farqi yo'q", "a"], "correctIndex": 1, "explanation": "Rang doim otga eng yaqin joylashadi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "20-can-cant",
+    "title": "Test — Can / can't",
+    "questions": [
+      { "text": "«He can ___ » — bo'shliqqa qaysi shakl?", "options": ["to swim", "swims", "swim", "swimming"], "correctIndex": 2, "explanation": "can + sof fe'l (to'siz, -s siz)." },
+      { "text": "«She cans speak English» — bu nega xato?", "options": ["speak xato", "can o'zgarmaydi — -s olmaydi", "she xato", "Xato emas"], "correctIndex": 1, "explanation": "Modal fe'llar shaxsga qarab o'zgarmaydi." },
+      { "text": "«Can you help me?» savolida do/does kerakmi?", "options": ["Ha", "Yo'q — can o'zi yordamchi fe'l", "Faqat inkorda", "Faqat 3-shaxsda"], "correctIndex": 1, "explanation": "Inkor: can't; savol: Can...? — qo'shimcha yordamchi kerak emas." },
+      { "text": "«could» qanday ma'no beradi?", "options": ["Faqat kelasi zamon", "can ning o'tmishi va muloyim varianti", "Faqat inkor", "Buyruq"], "correctIndex": 1, "explanation": "Could you help me? — muloyim iltimos. U ham modal: sof fe'l, -s yo'q." },
+      { "text": "«can» qanday ma'nolarda ishlatiladi?", "options": ["Faqat qobiliyat", "Qobiliyat, imkoniyat, ruxsat, iltimos, taklif", "Faqat ruxsat", "Faqat iltimos"], "correctIndex": 1, "explanation": "Talaffuz: can /kən/ (zaif) ↔ can't /kɑːnt/ — ajratish muhim." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "21-buyruq-gaplar-imperatives",
+    "title": "Test — Buyruq gaplar",
+    "questions": [
+      { "text": "Buyruq gapda ega bo'ladimi?", "options": ["Ha, doim", "Yo'q — egasiz, sof fe'l boshda", "Faqat ko'plikda", "Faqat inkorda"], "correctIndex": 1, "explanation": "Open the door. Sit down." },
+      { "text": "«Eshikni ochmang» qanday aytiladi?", "options": ["Not open the door", "Don't open the door", "No open the door", "Doesn't open the door"], "correctIndex": 1, "explanation": "Inkor buyruq: Don't + sof fe'l." },
+      { "text": "«Qo'rqmang» qanday aytiladi?", "options": ["Don't afraid", "Don't be afraid", "Not be afraid", "No be afraid"], "correctIndex": 1, "explanation": "to be bilan: Be careful / Don't be late." },
+      { "text": "«Let's go» nimani bildiradi?", "options": ["Buyruq", "Birgalikda taklif — «keting»", "Inkor", "Savol"], "correctIndex": 1, "explanation": "Let's = let us — «keling, ...aylik»." },
+      { "text": "Iltimos qilish uchun eng muloyim yo'l qaysi?", "options": ["Buyruq + please", "Can/Could you...?", "Don't...", "Let's..."], "correctIndex": 1, "explanation": "please yumshatadi, lekin can/could bilan iltimos yanada muloyim." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "22-have-have-got",
+    "title": "Test — Have / have got",
+    "questions": [
+      { "text": "«have» va «have got» qanday farqlanadi?", "options": ["Ma'nosi boshqa", "Bir ma'no, ikki yo'l (savol/inkor tuzilishi farq qiladi)", "have got o'tgan zamon", "have kelasi zamon"], "correctIndex": 1, "explanation": "have — do/does bilan; have got — got bilan." },
+      { "text": "«He ___ got a car» — to'g'ri shakl?", "options": ["have", "has", "is", "does"], "correctIndex": 1, "explanation": "3-shaxsda: has / has got." },
+      { "text": "«___ you have a pen?» — bo'shliqqa nima?", "options": ["Are", "Do", "Is", "Have"], "correctIndex": 1, "explanation": "have bilan savol: Do you have...? yoki Have you got...?" },
+      { "text": "«Does he has a car?» — bu nega xato?", "options": ["Does xato", "Savolda have sof shaklda bo'ladi: Does he have...?", "car xato", "Xato emas"], "correctIndex": 1, "explanation": "-s does ga ko'chgan, asosiy fe'l sof qoladi." },
+      { "text": "«I have breakfast at 8» — bu yerda «have got» ishlatish mumkinmi?", "options": ["Ha", "Yo'q — «qilmoq» ma'nosidagi iboralarda got ishlatilmaydi", "Faqat savolda", "Faqat inkorda"], "correctIndex": 1, "explanation": "have a shower, have lunch — bu yerda have «qilmoq» ma'nosida." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "23-soz-mavzulari-tematik-lugat",
+    "title": "Test — Tematik lug'at (A1)",
+    "questions": [
+      { "text": "«Ob-havo yaxshi» qanday aytiladi?", "options": ["Weather is good", "It's nice", "There is nice", "Have nice weather"], "correctIndex": 1, "explanation": "Ob-havo haqida doim «It's...»: It's cold. It's raining." },
+      { "text": "«Men shifokorman» qanday aytiladi?", "options": ["I doctor", "I'm a doctor", "I have doctor", "I'm doctor"], "correctIndex": 1, "explanation": "Kasb bilan «a/an» artikli shart." },
+      { "text": "«Akam» (katta aka) qanday aytiladi?", "options": ["brother", "older brother", "younger brother", "big brother only"], "correctIndex": 1, "explanation": "Ingliz tilida aka/uka farqi yo'q — older/younger brother bilan aniqlanadi." },
+      { "text": "Oila a'zolari haqida qaysi fe'l ishlatiladi?", "options": ["there is", "have / have got", "it is", "can"], "correctIndex": 1, "explanation": "I have two sisters. / I've got two sisters." },
+      { "text": "Lug'atni qanday yodlash tavsiya etiladi?", "options": ["Bir marta o'qish", "Anki bilan tizimli takrorlash", "Faqat yozish", "Faqat tinglash"], "correctIndex": 1, "explanation": "14 mavzu — kundalik suhbatning asosiy so'z bazasi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "24-a1-takror-checkpoint-test",
+    "title": "Test — A1 yakuniy nazorat",
+    "questions": [
+      { "text": "«She ___ a student» — to'g'ri shakl?", "options": ["am", "is", "are", "be"], "correctIndex": 1, "explanation": "to be: I → am, he/she/it → is, you/we/they → are." },
+      { "text": "«He ___ (go) to school every day» — to'g'ri shakl?", "options": ["go", "goes", "going", "is go"], "correctIndex": 1, "explanation": "Present Simple, 3-shaxs: go → goes." },
+      { "text": "«___ she like tea?» — bo'shliqqa nima?", "options": ["Do", "Does", "Is", "Are"], "correctIndex": 1, "explanation": "Oddiy fe'l savolida he/she/it uchun Does." },
+      { "text": "«___ an hour» — qaysi artikl to'g'ri?", "options": ["a", "an", "the", "artiklsiz"], "correctIndex": 1, "explanation": "«h» jim — unli tovush bilan boshlanadi." },
+      { "text": "«There ___ many books» — to'g'ri shakl?", "options": ["is", "are", "am", "has"], "correctIndex": 1, "explanation": "Ko'plik ot bilan there are." }
+    ]
+  }
+]

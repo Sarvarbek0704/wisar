@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "37-emotsional-ekspressiv-leksika",
+    "title": "Test — Emotsional-ekspressiv leksika",
+    "questions": [
+      { "text": "So'zning «konnotatsiya» qatlami nima?", "options": ["Nimani nomlashi", "Qanday his berishi (hissiy-baholovchi bo'yoq)", "Urg'usi", "Kelishigi"], "correctIndex": 1, "explanation": "Har so'zda ikki qatlam bor: nominativ (nimani nomlaydi) va konnotativ (qanday his beradi)." },
+      { "text": "«лик — лицо́ — ро́жа» qatori nimani ko'rsatadi?", "options": ["Kelishik farqini", "Uch registr o'qi: yuqori ↔ neytral ↔ past", "Zamon farqini", "Rod farqini"], "correctIndex": 1, "explanation": "Xuddi shunday: вкуша́ть — есть — жрать. Neytral hamma joyga xavfsiz." },
+      { "text": "«доми́шко, стате́йка» qanday ottenka beradi?", "options": ["Erkalash", "Mensitmaslik", "Hurmat", "Neytral"], "correctIndex": 1, "explanation": "Kichraytma ikki xil: erkalash (до́мик, сыно́к) yoki mensitmaslik (доми́шко, деньжо́нки)." },
+      { "text": "Lug'atdagi «прост.» belgisi nimani bildiradi?", "options": ["Oddiy so'z", "Dag'al (просторечие)", "Kitobiy", "Erkalash"], "correctIndex": 1, "explanation": "Belgilar: разг. (so'zlashuv), прост. (dag'al), книжн. (kitobiy), высок., неодобр., ласк." },
+      { "text": "So'z tanlashda qaysi ikki savolni berish kerak?", "options": ["Rodi? Soni?", "Qanday his beraman? Qaysi registr?", "Zamoni? Aspekti?", "Imlosi? Urg'usi?"], "correctIndex": 1, "explanation": "To'g'ri javob nutqni «quruq to'g'ri»dan «jonli va ta'sirli»ga ko'taradi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "38-munozara-bahs-ilgor",
+    "title": "Test — Ilg'or munozara va bahs",
+    "questions": [
+      { "text": "Rasmiy bahs B1 muhokamasidan nimasi bilan farq qiladi?", "options": ["Uzunroq", "Ikki tomonli — opponentga munosabat ko'rsatiladi", "Faqat yozma", "Faqat rasmiy"], "correctIndex": 1, "explanation": "Siz pozitsiya bildirasiz, argumentlaysiz VA opponentga javob berasiz." },
+      { "text": "Argument tuzilishi qanday?", "options": ["Da'vo → takror", "Tezis → dalil → misol → xulosa", "Misol → tezis", "Faqat dalil"], "correctIndex": 1, "explanation": "Dalil — takroriy da'vo emas, yangi ma'lumot: sabab, statistika, misol." },
+      { "text": "«Позво́льте не согласи́ться» — bu qanday e'tiroz?", "options": ["Qat'iy", "Muloyim", "Rad etish", "To'liq rozilik"], "correctIndex": 1, "explanation": "Qat'iy variant: Я вы́нужден возрази́ть. Rasmiy munozarada muloyim shakl ustun." },
+      { "text": "«в ко́рне неве́рно» ni qachon ishlatish mumkin?", "options": ["Har doim", "Faqat qat'iy ishonch va kuchli dalil bilan", "Suhbat boshida", "Hech qachon"], "correctIndex": 1, "explanation": "Bu eng kuchli rad etish shakli — asossiz ishlatilsa qo'pol eshitiladi." },
+      { "text": "Bahs odobining asosiy qoidasi qaysi?", "options": ["Har doim yutish", "Argumentni rad eting, shaxsni emas", "Hech qachon rozi bo'lmaslik", "Baland ovozda gapirish"], "correctIndex": 1, "explanation": "Qisman rozilikni tan olish — kuchsizlik emas, yetuklik. Kelishmasa: Остаёмся ка́ждый при своём мне́нии." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "39-taqdimot-nutq",
+    "title": "Test — Taqdimot va publik nutq",
+    "questions": [
+      { "text": "Publik nutqning mohiyati nima?", "options": ["Ko'p gapirish", "Tinglovchini bosqichma-bosqich kerakli xulosaga olib borish", "Slaydni o'qish", "Tez gapirish"], "correctIndex": 1, "explanation": "Havaskor «shunchaki gapiradi», professional tuzilgan nutq yasaydi." },
+      { "text": "«я останов­лю́сь на трёх вопро́сах» — qaysi bosqich?", "options": ["Salomlashish", "Rejani e'lon qilish", "Yakun", "Savol-javob"], "correctIndex": 1, "explanation": "Yetti bosqich: boshlash → reja → asosiy qism → misol → ta'kid → yakun → savol-javob." },
+      { "text": "«дава́йте рассмо́трим» qanday vosita?", "options": ["Klishe", "Birgalik olmoshi — tinglovchini sherikka aylantiradi", "Ritorik savol", "Ta'kid"], "correctIndex": 1, "explanation": "Auditoriya bilan aloqa: ritorik savol, to'g'ridan-to'g'ri murojaat, birgalik olmoshi." },
+      { "text": "Slayd bilan qanday ishlash kerak?", "options": ["So'zma-so'z o'qish", "Izohlash — slaydda qisqa ibora, og'izda to'liq izoh", "Slaydsiz gapirish", "Slaydni yashirish"], "correctIndex": 1, "explanation": "Slaydni o'qish emas, izohlash kerak." },
+      { "text": "Klishening asosiy foydasi nimada?", "options": ["Chiroyli eshitiladi", "Tayyor «g'isht» — o'ylab o'tirmasdan qo'yasiz, nutq avtomatik tuzilgan bo'ladi", "Uzunlik beradi", "Rasmiylik beradi"], "correctIndex": 1, "explanation": "Nutq qo'rquvi normal: boshlanishni yodlang, sekin gapiring, pauza qiling." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "40-rasmiy-suhbat-intervyu",
+    "title": "Test — Ish intervyusi",
+    "questions": [
+      { "text": "«Я специализи́руюсь на...» — qaysi kelishik?", "options": ["Tushum", "O'rin (Предложный)", "Qaratqich", "Jo'nalish"], "correctIndex": 1, "explanation": "специализи́роваться НА + П. Solishtiring: претендова́ть НА до́лжность (+ В.)." },
+      { "text": "«Я отвеча́л за...» — qaysi kelishik?", "options": ["Qaratqich", "Tushum (В.)", "Vosita", "O'rin"], "correctIndex": 1, "explanation": "отвеча́ть ЗА + В. Yana: Я дости́г... (+ Род.)." },
+      { "text": "Kuchsiz tomon haqida qanday gapirish kerak?", "options": ["Umuman aytmaslik", "O'sish nuqtasi sifatida ko'rsatish", "Ko'p sanash", "Boshqalarni ayblash"], "correctIndex": 1, "explanation": "Kuchli tomonlar: отве́тственный, целеустремлённый, стрессоусто́йчивый." },
+      { "text": "Motivatsiya haqida gapirganda nima qilmaslik kerak?", "options": ["Ijobiy gapirish", "Oldingi ish joyini yomonlash", "O'sish imkoniyatini eslatish", "Kompaniyani maqtash"], "correctIndex": 1, "explanation": "Меня́ привлека́ет..., Я ви́жу возмо́жность ро́ста — doim ijobiy ohangda." },
+      { "text": "Tajriba haqida gapirganda nima muhim?", "options": ["Uzoq gapirish", "Aniq raqamlar keltirish", "Umumiy iboralar", "Faqat lavozim nomi"], "correctIndex": 1, "explanation": "В мои́ обя́занности входи́ло..., Я дости́г... — natijani raqamda ko'rsating." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "41-akademik-yozuv-esse",
+    "title": "Test — Akademik esse",
+    "questions": [
+      { "text": "Argumentli essening to'rt bosqichi qaysi?", "options": ["Kirish → matn → xulosa", "Введе́ние → аргумента́ция → контраргуме́нт va опроверже́ние → заключе́ние", "Reja → dalil → misol", "Tezis → misol"], "correctIndex": 1, "explanation": "B1 inshodan farqi: bu yerda siz isbotlaysiz va qarshi fikrni rad etasiz." },
+      { "text": "Har argumentning to'liq zanjiri qanday?", "options": ["Da'vo → xulosa", "Da'vo → asos → misol → mikroxulosa", "Misol → da'vo", "Faqat da'vo"], "correctIndex": 1, "explanation": "Во-пе́рвых → Э́то объясня́ется тем, что → Наприме́р → Сле́довательно." },
+      { "text": "Kontrargument nima uchun kerak?", "options": ["Uzunlik uchun", "B2 essening yetukligi — qarshi fikrni tan olib rad etish", "Kirish uchun", "Kerak emas"], "correctIndex": 1, "explanation": "Qarshi fikrni halol keltiring, so'ng rad eting (Тем не ме́нее...) — oxirgi so'z sizniki bo'lsin." },
+      { "text": "Akademik uslubda qaysi vositalar ishlatiladi?", "options": ["Og'zaki so'zlar", "Sifatdosh/ravishdosh oborotlar va mavhum otlar", "Jargon", "Undov gaplar"], "correctIndex": 1, "explanation": "Bog'lovchilar matnni bog'laydi, abzatslar tuzilishni ko'rsatadi." },
+      { "text": "ТРКИ-2 essesi nechta mezon bo'yicha baholanadi?", "options": ["3", "5: vazifa/tezis, tuzilish, bog'lanish, uslub, savodxonlik", "7", "2"], "correctIndex": 1, "explanation": "Har esseyingizni shu besh mezon bo'yicha o'zingiz tekshiring." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "42-rasmiy-hujjatlar-rezyume",
+    "title": "Test — Rezyume va rasmiy hujjatlar",
+    "questions": [
+      { "text": "Rezyume nechta blokdan iborat?", "options": ["3", "4", "6", "8"], "correctIndex": 2, "explanation": "Ли́чные да́нные, цель, образова́ние, о́пыт рабо́ты, на́выки, ли́чные ка́чества." },
+      { "text": "Rezyumeda yutuq qanday ko'rsatiladi?", "options": ["Sifat bilan", "Raqamda", "Uzun jumlada", "Umumiy iborada"], "correctIndex": 1, "explanation": "Rezyume tili — otlashgan, quruq; yutuq esa aniq raqam bilan." },
+      { "text": "Характери́стика qaysi shaxsda yoziladi?", "options": ["1-shaxs", "3-shaxs", "2-shaxs", "Shaxssiz"], "correctIndex": 1, "explanation": "Tashkilot xodim haqida yozadi: зарекомендова́л себя́ как..., облада́ет..., нарека́ний не име́ет." },
+      { "text": "«прете́нзия» qanday ohangdagi xat?", "options": ["Muloyim", "Neytral", "Qat'iy", "Erkalovchi"], "correctIndex": 2, "explanation": "Ish xatining to'rt turi: сопроводи́тельное (muloyim), запро́с/отве́т (neytral), прете́нзия (qat'iy)." },
+      { "text": "Автобиогра́фия qaysi shaxsda va qanday tartibda yoziladi?", "options": ["3-shaxs, erkin", "1-shaxs, xronologik, aniq sanalar bilan", "Shaxssiz", "2-shaxs"], "correctIndex": 1, "explanation": "Роди́лся, око́нчил, рабо́таю — qisqa, aniq jumlalar." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "43-mavzuli-lugat-siyosat-iqtisod-fan-sanat",
+    "title": "Test — Mavzuli lug'at: siyosat, iqtisod, fan, san'at",
+    "questions": [
+      { "text": "«прийти́ ___ вла́сти» — qaysi predlog va kelishik?", "options": ["в + tushum", "к + jo'nalish", "на + tushum", "с + vosita"], "correctIndex": 1, "explanation": "прийти́ К вла́сти. Solishtiring: приня́ть зако́н (tushum), провести́ вы́боры." },
+      { "text": "«___ иссле́дование» — qaysi fe'l to'g'ri?", "options": ["сде́лать", "провести́", "дать", "взять"], "correctIndex": 1, "explanation": "провести́ иссле́дование ≠ сде́лать иссле́дование. Qat'iy kollokatsiya." },
+      { "text": "«___ гипо́тезу» — qaysi fe'l?", "options": ["сде́лать", "вы́двинуть", "дать", "поста́вить"], "correctIndex": 1, "explanation": "вы́двинуть гипо́тезу; сде́лать откры́тие; провести́ экспериме́нт." },
+      { "text": "«спрос и предложе́ние» qaysi sohaga tegishli?", "options": ["Siyosat", "Iqtisod", "Fan", "San'at"], "correctIndex": 1, "explanation": "Iqtisod lug'ati: ры́нок, инфля́ция, бюдже́т, нало́г, при́быль, конкуре́нция." },
+      { "text": "«худо́жественный» qaysi sohaning sifati?", "options": ["Siyosat", "Iqtisod", "Fan", "San'at"], "correctIndex": 3, "explanation": "Sifatlar: полити́ческий, экономи́ческий, нау́чный, худо́жественный." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "44-mavzuli-lugat-psixologiya-falsafa-huquq-tibbiyot",
+    "title": "Test — Mavzuli lug'at: psixologiya, falsafa, huquq, tibbiyot",
+    "questions": [
+      { "text": "«справля́ться ___ стре́ссом» — qaysi predlog?", "options": ["от", "с (+ vosita)", "к", "о"], "correctIndex": 1, "explanation": "справля́ться СО стре́ссом / с эмо́циями — vosita kelishigi." },
+      { "text": "«поста́вить диа́гноз» da bemor qaysi kelishikda turadi?", "options": ["Tushum", "Jo'nalish (Д.)", "Qaratqich", "Vosita"], "correctIndex": 1, "explanation": "поста́вить диа́гноз пацие́нту. Yana: обрати́ться К врачу́ (Д.)." },
+      { "text": "«нести́ отве́тственность ___ » — qaysi predlog va kelishik?", "options": ["о + o'rin", "за + tushum", "к + jo'nalish", "с + vosita"], "correctIndex": 1, "explanation": "нести́ отве́тственность ЗА + В. Yana: пода́ть в суд НА... (+ В.)." },
+      { "text": "«боле́ть гри́ппом» — qaysi kelishik?", "options": ["Tushum", "Vosita (Т.)", "Qaratqich", "O'rin"], "correctIndex": 1, "explanation": "Kasallik nomi vosita kelishigida: боле́ть гри́ппом, анги́ной." },
+      { "text": "«бытие́, и́стина, мировоззре́ние» qaysi sohaga tegishli?", "options": ["Psixologiya", "Falsafa", "Huquq", "Tibbiyot"], "correctIndex": 1, "explanation": "Falsafa: смысл жи́зни, по́иск и́стины, нра́вственный вы́бор." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "45-b2-takror-checkpoint-test",
+    "title": "Test — B2 yakuniy nazorat",
+    "questions": [
+      { "text": "«Нельзя́ кури́ть» va «нельзя́ откры́ть» — aspekt qanday ma'no beradi?", "options": ["Farqi yo'q", "NSV = taqiq, SV = imkonsizlik", "NSV = imkonsizlik", "Ikkalasi taqiq"], "correctIndex": 1, "explanation": "Aspektning nozik holatlari (2-dars)." },
+      { "text": "«Кни́га, лежа́щая на столе́, — моя́» — vergul nega qo'yilgan?", "options": ["Har doim qo'yiladi", "Oborot otdan KEYIN kelgan", "Oborot otdan oldin", "Xato"], "correctIndex": 1, "explanation": "Sifatdosh oboroti: otdan keyin — vergul, otdan oldin — vergulsiz (6-dars)." },
+      { "text": "«Он лю́бит свою́ жену́» va «его́ жену́» farqi nimada?", "options": ["Farqi yo'q", "свою́ — o'z xotini; его́ — begonaning xotini", "свою́ — begonaning", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "3-shaxsdagi kontrast majburiy (14-dars)." },
+      { "text": "«Я никого́ ___ ви́жу» — bo'shliqqa nima?", "options": ["Hech narsa", "не", "ни", "нет"], "correctIndex": 1, "explanation": "Ikki karra inkor — temir qonun (15-dars)." },
+      { "text": "«приня́ть реше́ние» — nega «сде́лать» emas?", "options": ["Farqi yo'q", "Kollokatsiya — har mavhum ot o'z sherik fe'lini talab qiladi", "«сде́лать» rasmiy", "Xato savol"], "correctIndex": 1, "explanation": "оказа́ть влия́ние, одержа́ть побе́ду, провести́ иссле́дование (36-dars)." }
+    ]
+  }
+]

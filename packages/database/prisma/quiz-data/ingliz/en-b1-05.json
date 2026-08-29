@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "31-adjectives-adverbs-degree-order",
+    "title": "Test — Sifat, ravish va daraja",
+    "questions": [
+      { "text": "«absolutely freezing» — nega «very» emas?", "options": ["Xato", "freezing — extreme sifat; extreme sifatlar absolutely/completely bilan keladi", "very ham to'g'ri", "freezing gradable"], "correctIndex": 1, "explanation": "gradable: very cold ↔ extreme: absolutely freezing/exhausted/amazing." },
+      { "text": "Daraja ravishlarining o'sish tartibi qaysi?", "options": ["very < quite < a bit", "a bit < quite/fairly < very/really < extremely", "extremely < very < a bit", "Hammasi teng"], "correctIndex": 1, "explanation": "Bu shkala gradable sifatlar uchun amal qiladi." },
+      { "text": "Sifat tartibi to'g'ri berilgan qatorni toping", "options": ["black old small beautiful bag", "beautiful small old black bag", "small beautiful black old bag", "old black beautiful small bag"], "correctIndex": 1, "explanation": "Fikr → o'lcham → yosh → shakl → rang → kelib chiqish → material + ot." },
+      { "text": "«friendly, lovely» qaysi turkumga kiradi?", "options": ["Ravish", "SIFAT (-ly bilan tugasa ham)", "Fe'l", "Ot"], "correctIndex": 1, "explanation": "«in a friendly way» deb ravish yasaladi." },
+      { "text": "«quite» extreme sifat bilan qanday ma'no beradi?", "options": ["Ancha", "Butunlay", "Ozgina", "Umuman emas"], "correctIndex": 1, "explanation": "quite + gradable = ancha; quite + extreme = butunlay." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "32-phrasal-verbs-extended",
+    "title": "Test — Phrasal verbs (kengaytirilgan)",
+    "questions": [
+      { "text": "«turn on it» — bu nega xato?", "options": ["turn xato", "Separable phrasal verbda olmosh doim o'rtada: turn it on", "on xato", "Xato emas"], "correctIndex": 1, "explanation": "Ajraladigan phrasal verbning asosiy qoidasi." },
+      { "text": "«look after» qaysi turga kiradi?", "options": ["Separable", "Inseparable — ajralmaydi", "Intransitive", "Three-word"], "correctIndex": 1, "explanation": "look after them (look them after — xato). deal with ham shunday." },
+      { "text": "«put up with» qaysi turga kiradi?", "options": ["Separable", "Three-word — ajralmaydi", "Intransitive", "Modal"], "correctIndex": 1, "explanation": "Uch so'zli phrasal verblar: look forward to, run out of, put up with." },
+      { "text": "«break down, get up» qaysi turga kiradi?", "options": ["Separable", "Intransitive — obyektsiz", "Inseparable", "Three-word"], "correctIndex": 1, "explanation": "Bu fe'llar to'ldiruvchi olmaydi." },
+      { "text": "«look forward to» dan keyin qaysi shakl keladi?", "options": ["V1", "-ing", "V3", "to + V1"], "correctIndex": 1, "explanation": "Bu yerdagi «to» — predlog, shuning uchun -ing keladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "33-verb-adjective-preposition",
+    "title": "Test — Fe'l va sifat + predlog",
+    "questions": [
+      { "text": "«depend ___ » — qaysi predlog?", "options": ["from", "on", "of", "at"], "correctIndex": 1, "explanation": "«depend from» — o'zbek/rus mantiqidan kelgan kalka xatosi." },
+      { "text": "«good ___ swimming» — qaysi predlog?", "options": ["in", "at", "on", "for"], "correctIndex": 1, "explanation": "good/bad AT; interested IN; keen ON." },
+      { "text": "«angry ___ someone» — qaysi predlog?", "options": ["about", "with", "for", "at"], "correctIndex": 1, "explanation": "angry WITH (odam) ↔ angry ABOUT (narsa)." },
+      { "text": "«different ___ » — qaysi predlog?", "options": ["to", "from", "than", "of"], "correctIndex": 1, "explanation": "similar TO, married TO, responsible FOR, famous FOR, different FROM." },
+      { "text": "«listen ___ music» — bo'shliqqa nima?", "options": ["hech narsa", "to", "at", "for"], "correctIndex": 1, "explanation": "Predlogni tushirib qoldirmang — «listen music» xato." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "33b-maxsus-opinions-agreeing",
+    "title": "Test — Fikr bildirish va rozilik",
+    "questions": [
+      { "text": "«___ my opinion» — qaysi predlog?", "options": ["To", "In", "At", "For"], "correctIndex": 1, "explanation": "IN my opinion — «to my opinion» xato." },
+      { "text": "«I couldn't agree more» nimani anglatadi?", "options": ["Rozi emasman", "To'liq roziman", "Ikkilanaman", "Bilmayman"], "correctIndex": 1, "explanation": "Rozilik: I agree / Absolutely / Exactly / So do I." },
+      { "text": "Muloyim e'tiroz uchun eng yaxshi qolip qaysi?", "options": ["You're wrong", "I see your point, but...", "No", "That's stupid"], "correctIndex": 1, "explanation": "«Sandvich» usuli: rozilik + but + o'z fikr." },
+      { "text": "«How about ___ » — bo'shliqqa qaysi shakl?", "options": ["go", "going", "to go", "went"], "correctIndex": 1, "explanation": "How about + -ing. Why don't we + V1; Shall we + V1." },
+      { "text": "Muloyim shikoyat uchun qaysi ibora ishlatiladi?", "options": ["This is bad", "I'm afraid there seems to be a problem with...", "Fix it", "I hate this"], "correctIndex": 1, "explanation": "I'm sorry to bother you, but... — muloyimlik yumshatgichlari." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "33c-maxsus-feelings-relationships",
+    "title": "Test — His-tuyg'ular va munosabatlar",
+    "questions": [
+      { "text": "«I'm boring» va «I'm bored» qanday farqlanadi?", "options": ["Farqi yo'q", "boring — zerikarli odamman; bored — zerikkanman", "bored — zerikarli", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "-ed — men his qilaman; -ing — narsa sabab bo'ladi." },
+      { "text": "«tired» ning kuchaytirilgan shakli qaysi?", "options": ["very tired", "exhausted", "a bit tired", "sleepy"], "correctIndex": 1, "explanation": "Shkalalar: sad → upset → depressed; annoyed → furious; nervous → terrified." },
+      { "text": "«over the moon» nimani anglatadi?", "options": ["Xafa", "Juda xursand", "Charchagan", "Asabiy"], "correctIndex": 1, "explanation": "happy → delighted → thrilled → over the moon." },
+      { "text": "«get on ___ someone» — qaysi predlog?", "options": ["to", "with", "for", "at"], "correctIndex": 1, "explanation": "get on WITH; fall in love WITH; fall out WITH; break up WITH." },
+      { "text": "«fed up» nimani anglatadi?", "options": ["To'yib ovqatlangan", "Bezor bo'lgan, jonidan to'ygan", "Xursand", "Charchagan"], "correctIndex": 1, "explanation": "I'm fed up with waiting — predlog «with» bilan." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "33d-maxsus-email-writing",
+    "title": "Test — Email yozish",
+    "questions": [
+      { "text": "«Dear Sir/Madam» bilan boshlangan xat qanday tugaydi?", "options": ["Yours sincerely", "Yours faithfully", "Best wishes", "Cheers"], "correctIndex": 1, "explanation": "Ism noma'lum → faithfully; ism ma'lum (Dear Mr X) → sincerely." },
+      { "text": "Rasmiy emailda qisqartma ishlatiladimi?", "options": ["Ha", "Yo'q — to'liq shakl (I am, would)", "Faqat oxirida", "Faqat salomlashuvda"], "correctIndex": 1, "explanation": "Norasmiy emailda esa qisqartma odatiy (I'm, don't)." },
+      { "text": "Email tuzilishi qanday?", "options": ["Faqat matn", "Greeting + opening + body + closing + sign-off", "Sarlavha + matn", "Erkin"], "correctIndex": 1, "explanation": "Har bloк o'z klishesiga ega." },
+      { "text": "«I look forward to hearing from you» qanday xatga mos?", "options": ["Norasmiy", "Rasmiy", "Do'stona", "Har qanday"], "correctIndex": 1, "explanation": "Norasmiy variant: Let me know / Hope to hear from you." },
+      { "text": "«Dear Mr John» — bu nega noto'g'ri?", "options": ["Dear xato", "Rasmiy murojaatda FAMILIYA ishlatiladi: Dear Mr Smith", "Mr xato", "Xato emas"], "correctIndex": 1, "explanation": "Ism bilan murojaat norasmiy: Hi John." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "33e-maxsus-opinion-essay",
+    "title": "Test — Opinion essay",
+    "questions": [
+      { "text": "Opinion essay tuzilishi qanday?", "options": ["Faqat fikr", "Kirish (mavzu + fikr) → 2 sabab → xulosa (fikr takrori)", "Sabab → kirish", "Erkin"], "correctIndex": 1, "explanation": "For-and-against esse esa: kirish → for → against → muvozanatli xulosa." },
+      { "text": "Xulosada yangi g'oya keltirish mumkinmi?", "options": ["Ha", "Yo'q — xulosa faqat umumlashtiradi", "Faqat bitta", "Faqat rasmiy essede"], "correctIndex": 1, "explanation": "In conclusion / To sum up — takrorlash va yakunlash uchun." },
+      { "text": "«However» gapda qanday ishlatiladi?", "options": ["Vergulsiz o'rtada", "Gap boshida vergul bilan", "Gap oxirida", "but o'rniga xuddi shunday"], "correctIndex": 1, "explanation": "However, some people disagree. — rasmiy qarama-qarshilik bog'lovchisi." },
+      { "text": "«Moreover, In addition» qaysi guruh bog'lovchilari?", "options": ["Qarama-qarshi", "Qo'shish", "Natija", "Misol"], "correctIndex": 1, "explanation": "Ketma-ketlik: Firstly/Secondly/Finally; natija: Therefore/As a result." },
+      { "text": "Essede qaysi uslub talab qilinadi?", "options": ["Og'zaki", "Rasmiy — to'liq shakl, neytral lug'at, paragraflar", "Badiiy", "Jargon"], "correctIndex": 1, "explanation": "Qisqartma va so'zlashuv so'zlari esse uslubiga mos kelmaydi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "34-technical-english-intro",
+    "title": "Test — Texnik ingliz tili (kirish)",
+    "questions": [
+      { "text": "«___ a bug» — qaysi fe'l to'g'ri?", "options": ["make", "fix", "do", "take"], "correctIndex": 1, "explanation": "Kollokatsiyalar: fix a bug, make a commit, run a test, open a PR, review code." },
+      { "text": "Hujjat matnida qaysi zamon va nisbat ustunlik qiladi?", "options": ["Past Simple, aktiv", "Present Simple va passive", "Future", "Continuous"], "correctIndex": 1, "explanation": "«X returns Y», «it throws an error», «X is stored in...»." },
+      { "text": "«LGTM» nimani anglatadi?", "options": ["Xato bor", "Looks good to me — tasdiq", "Kutish", "Bekor qilish"], "correctIndex": 1, "explanation": "Jamoa tili: I'm working on..., I'm blocked by..., ready for review." },
+      { "text": "Rasmiy uslubda «use» o'rniga nima ishlatiladi?", "options": ["do", "utilise", "make", "get"], "correctIndex": 1, "explanation": "get→obtain, help→facilitate, a lot of→many, enough→sufficient." },
+      { "text": "Grafik tasvirlashda «sharply» nimani bildiradi?", "options": ["Sekin", "Keskin o'zgarish", "Barqaror", "Cho'qqi"], "correctIndex": 1, "explanation": "increase/rise, decrease/fall, remain stable, peak (+ slightly/sharply)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "34b-maxsus-soz-mavzulari",
+    "title": "Test — Mavzuli lug'at (B1)",
+    "questions": [
+      { "text": "«___ an exam» — qaysi fe'l to'g'ri?", "options": ["make", "take", "do only", "give"], "correctIndex": 1, "explanation": "take an exam (make an exam — xato); pass/fail an exam." },
+      { "text": "«job» va «work» qanday farqlanadi?", "options": ["Farqi yo'q", "job — sanaladigan; work — umumiy, sanalmaydigan", "work — sanaladigan", "Ikkalasi sanaladigan"], "correctIndex": 1, "explanation": "I have a job ↔ I have a lot of work." },
+      { "text": "«recipe» va «receipt» qanday farqlanadi?", "options": ["Farqi yo'q", "recipe — retsept (taom); receipt — chek", "receipt — retsept", "Ikkalasi chek"], "correctIndex": 1, "explanation": "receipt da «p» jim: «risi:t»." },
+      { "text": "«___ football» — qaysi fe'l?", "options": ["do", "play", "go", "make"], "correctIndex": 1, "explanation": "play football, go swimming, do yoga — sport fe'llari mavzuga qarab tanlanadi." },
+      { "text": "«a travel» — bu nega xato?", "options": ["travel xato", "travel sanalmaydigan; sanaladigan shakli — a trip", "a xato", "Xato emas"], "correctIndex": 1, "explanation": "media/information ham sanalmaydigan — ko'plik shakli yo'q." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "35-b1-checkpoint-test",
+    "title": "Test — B1 yakuniy nazorat",
+    "questions": [
+      { "text": "«I ___ here since 2019» — to'g'ri shakl?", "options": ["work", "have worked", "worked", "am working"], "correctIndex": 1, "explanation": "since bilan Present Perfect (yoki PPC)." },
+      { "text": "«If I were you, I ___ apologise» — to'g'ri shakl?", "options": ["will", "would", "am", "did"], "correctIndex": 1, "explanation": "Second conditional: If + Past Simple, would + V1." },
+      { "text": "«The car ___ yesterday» (o'g'irlandi) — to'g'ri shakl?", "options": ["was stole", "was stolen", "is stolen", "stolen"], "correctIndex": 1, "explanation": "Past passive: was/were + V3." },
+      { "text": "«He said he ___ tired» — to'g'ri shakl?", "options": ["is", "was", "has been", "will be"], "correctIndex": 1, "explanation": "Reported speech backshift: is → was." },
+      { "text": "B1 daraja qaysi imtihonga taxminan mos keladi?", "options": ["IELTS 8+", "Cambridge PET, IELTS 4–5", "CPE", "Faqat A2"], "correctIndex": 1, "explanation": "B1 — mustaqil foydalanuvchi (independent user)." }
+    ]
+  }
+]

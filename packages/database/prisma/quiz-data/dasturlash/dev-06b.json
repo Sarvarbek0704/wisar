@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "09-normalizatsiya-acid-izolyatsiya",
+    "title": "Test — Normalizatsiya va izolyatsiya",
+    "questions": [
+      { "text": "1NF talabi qanday?", "options": ["Tranzitiv bog'liqlik yo'q", "Har katakda ATOMIK (bo'linmas) qiymat", "To'liq bog'liqlik", "Indeks bor"], "correctIndex": 1, "explanation": "2NF — to'liq funksional bog'liqlik; 3NF — tranzitiv bog'liqlik yo'q." },
+      { "text": "«Dirty read» nima?", "options": ["O'chirilgan qator", "Commit qilinmagan ma'lumotni o'qish", "Bir xil so'rov har xil natija", "Yangi qator paydo bo'lishi"], "correctIndex": 1, "explanation": "Non-repeatable read va phantom read — boshqa parallel muammolar." },
+      { "text": "Pessimistik va optimistik lock qanday farqlanadi?", "options": ["Farqi yo'q", "Pessimistik — oldindan bloklaydi (FOR UPDATE); optimistik — version bilan tekshiradi", "Optimistik bloklaydi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Optimistik konflikt kam bo'lgan holatlar uchun samaraliroq." },
+      { "text": "Deadlock yuz berganda nima qilish kerak?", "options": ["Serverni qayta ishga tushirish", "Retry mexanizmi qo'yish", "E'tiborsiz qoldirish", "Lock'ni o'chirish"], "correctIndex": 1, "explanation": "DB bir tranzaksiyani bekor qiladi — uni qayta urinish kerak." },
+      { "text": "Denormalizatsiya qachon oqlanadi?", "options": ["Har doim", "O'qish tezligi kritik bo'lganda — tanlab", "Hech qachon", "Faqat kichik bazada"], "correctIndex": 1, "explanation": "U yaxlitlikni saqlash mas'uliyatini ilovaga yuklaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "10-indekslar-query-optimization-explain",
+    "title": "Test — Indekslar va so'rov optimizatsiyasi",
+    "questions": [
+      { "text": "Indekssiz so'rov qanday ishlaydi?", "options": ["O(log n)", "Full scan — O(n)", "O(1)", "Ishlamaydi"], "correctIndex": 1, "explanation": "B-tree indeks bilan O(log n) ga tushadi." },
+      { "text": "«Covering index» nima beradi?", "options": ["Kam joy", "So'rov faqat indeksdan o'qiydi — jadvalga murojaat qilmaydi", "Tezroq yozish", "Unique"], "correctIndex": 1, "explanation": "PostgreSQL'da INCLUDE bilan yaratiladi." },
+      { "text": "EXPLAIN ANALYZE nima ko'rsatadi?", "options": ["Xatolarni", "So'rov rejasi va haqiqiy bajarilish statistikasi", "Indeks ro'yxati", "Jadval hajmi"], "correctIndex": 1, "explanation": "Seq Scan ko'rinsa — indeks ishlatilmayapti degani." },
+      { "text": "«N+1» muammosi qanday hal qilinadi?", "options": ["Ko'proq so'rov", "JOIN yoki IN bilan bitta so'rovga birlashtirish", "Cache bilan faqat", "Index bilan"], "correctIndex": 1, "explanation": "ORM'larda eager loading (include) shu vazifani bajaradi." },
+      { "text": "Katta jadvalda pagination uchun nima afzal?", "options": ["OFFSET", "Keyset (cursor) pagination", "LIMIT only", "Random"], "correctIndex": 1, "explanation": "Katta OFFSET har safar oldingi qatorlarni ham skan qiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "11-orm-sequelize",
+    "title": "Test — Sequelize",
+    "questions": [
+      { "text": "ORM SQL bilimini almashtiradimi?", "options": ["Ha", "Yo'q — SQL bilish baribir shart", "Qisman", "Faqat oddiy loyihada"], "correctIndex": 1, "explanation": "ORM SQL'ni yashiradi, lekin muammolar SQL darajasida chiqadi." },
+      { "text": "Sequelize'da «include» nima qiladi?", "options": ["Fayl qo'shadi", "Eager loading — bog'langan modelni JOIN bilan yuklaydi", "Validatsiya", "Migration"], "correctIndex": 1, "explanation": "N+1 muammosining asosiy yechimi." },
+      { "text": "M:N bog'lanish qanday e'lon qilinadi?", "options": ["hasMany", "belongsToMany", "belongsTo", "hasOne"], "correctIndex": 1, "explanation": "Junction (oraliq) jadval orqali amalga oshadi." },
+      { "text": "Migration nima uchun kerak?", "options": ["Tezlik", "Schema o'zgarishlarini versiyalash va nazorat qilish", "Validatsiya", "Cache"], "correctIndex": 1, "explanation": "up/down funksiyalari bilan oldinga va orqaga qadam qo'yiladi." },
+      { "text": "«Managed transaction» nima beradi?", "options": ["Tezlik", "commit/rollback avtomatik boshqariladi", "Index", "Validatsiya"], "correctIndex": 1, "explanation": "Xato yuz bersa avtomatik rollback qilinadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "12-orm-prisma",
+    "title": "Test — Prisma",
+    "questions": [
+      { "text": "Prisma'ning asosiy afzalligi nima?", "options": ["Tezlik", "Type-safety — kompilyatsiya vaqtida xato va autocompletion", "Kichik hajm", "Eski loyihalar"], "correctIndex": 1, "explanation": "schema.prisma'dan client generatsiya qilinadi." },
+      { "text": "«prisma generate» nima qiladi?", "options": ["Migration yaratadi", "Type-safe client kodini generatsiya qiladi", "Bazani yaratadi", "Seed qiladi"], "correctIndex": 1, "explanation": "Schema o'zgargach uni qayta ishga tushirish kerak." },
+      { "text": "Prisma'da m:n bog'lanish qanday ishlaydi?", "options": ["Qo'lda junction", "Avtomatik junction jadval yaratiladi", "Ishlamaydi", "JSON bilan"], "correctIndex": 1, "explanation": "Kerak bo'lsa aniq junction modelini ham yozish mumkin." },
+      { "text": "«Nested write» nima beradi?", "options": ["Tezlik", "Bog'liq yozuvlarni bitta atomik amalda yaratish", "Validatsiya", "Index"], "correctIndex": 1, "explanation": "Bir necha so'rov o'rniga bitta tranzaksion amal." },
+      { "text": "PrismaClient qanday yaratilishi kerak?", "options": ["Har so'rovda yangi", "Singleton — bitta instansiya", "Har modul uchun", "Global o'zgaruvchisiz"], "correctIndex": 1, "explanation": "Aks holda ulanishlar soni tez tugaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "13-orm-typeorm",
+    "title": "Test — TypeORM",
+    "questions": [
+      { "text": "TypeORM'da qaysi naqsh afzal ko'riladi?", "options": ["Active Record", "Data Mapper (Repository)", "Farqi yo'q", "Query Builder faqat"], "correctIndex": 1, "explanation": "Repository mantiqni entity'dan ajratadi — testga qulay." },
+      { "text": "Entity qanday e'lon qilinadi?", "options": ["JSON bilan", "@Entity va @Column dekoratorlari bilan", "Funksiya bilan", "Schema fayl bilan"], "correctIndex": 1, "explanation": "TypeScript dekoratorlari TypeORM'ning asosi." },
+      { "text": "Production'da «synchronize» qanday bo'lishi kerak?", "options": ["true", "false — migration ishlatiladi", "Farqi yo'q", "auto"], "correctIndex": 1, "explanation": "synchronize: true ma'lumotni yo'qotishi mumkin." },
+      { "text": "Murakkab so'rovlar uchun nima ishlatiladi?", "options": ["find()", "Query Builder", "save()", "remove()"], "correctIndex": 1, "explanation": "Repository oddiy CRUD uchun yetarli." },
+      { "text": "M:N bog'lanish uchun qaysi dekorator kerak?", "options": ["@JoinColumn", "@ManyToMany + @JoinTable", "@OneToMany", "@Column"], "correctIndex": 1, "explanation": "@JoinColumn esa 1:1 va N:1 uchun ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "14-migration-seeding-strategiyalari",
+    "title": "Test — Migration va seeding",
+    "questions": [
+      { "text": "Nega qo'lda ALTER TABLE qilinmaydi?", "options": ["Sekin", "Versiyalanmaydi — jamoada va muhitlarda mos kelmaydi", "Xato beradi", "Ruxsat yo'q"], "correctIndex": 1, "explanation": "Migration fayllari git'da saqlanadi va ketma-ket qo'llanadi." },
+      { "text": "«Expand-contract» naqshi qanday ishlaydi?", "options": ["Darhol o'zgartirish", "Qo'sh → ma'lumotni ko'chir → eskisini o'chir", "Faqat qo'shish", "Faqat o'chirish"], "correctIndex": 1, "explanation": "Zero-downtime migratsiyaning asosiy usuli." },
+      { "text": "Buzuvchi (breaking) migratsiya qaysi?", "options": ["Ustun qo'shish", "Ustunni o'chirish yoki nomini o'zgartirish", "Index qo'shish", "Default berish"], "correctIndex": 1, "explanation": "Eski kod hali ishlab turgan bo'lishi mumkin." },
+      { "text": "Seeding «idempotent» bo'lishi nimani anglatadi?", "options": ["Tez ishlaydi", "Bir necha marta ishga tushsa ham dublikat yaratmaydi", "Faqat bir marta", "Xato bermaydi"], "correctIndex": 1, "explanation": "findOrCreate yoki upsert bilan amalga oshiriladi." },
+      { "text": "Rollback uchun eng ishonchli himoya qaysi?", "options": ["down migratsiya", "DB backup", "Log", "Test"], "correctIndex": 1, "explanation": "down migratsiya har doim ham ma'lumotni tiklay olmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "15-connection-pooling-er-modeling",
+    "title": "Test — Connection pooling va ER modeling",
+    "questions": [
+      { "text": "Pool hajmi qanday tanlanadi?", "options": ["Iloji boricha katta", "Taxminan CPU × 2 — juda katta bo'lmasligi kerak", "Har doim 100", "Cheklovsiz"], "correctIndex": 1, "explanation": "Juda katta pool DB'ni bo'g'ib qo'yadi." },
+      { "text": "Ko'p instansiyali ilovada pool hisobi qanday?", "options": ["Har instansiya alohida", "Umumiy: instansiya soni × pool hajmi — DB limitidan oshmasligi kerak", "Farqi yo'q", "Faqat bittasi hisoblanadi"], "correctIndex": 1, "explanation": "Aks holda «too many connections» xatosi chiqadi." },
+      { "text": "PgBouncer nima uchun kerak?", "options": ["Cache", "Ulkan masshtabda ulanishlarni tashqi pooler bilan boshqarish", "Backup", "Migration"], "correctIndex": 1, "explanation": "Minglab ulanishni yuzta DB ulanishiga jamlaydi." },
+      { "text": "M:N bog'lanish jadvalga qanday o'giriladi?", "options": ["To'g'ridan-to'g'ri", "Junction (oraliq) jadval orqali", "JSON bilan", "O'girilmaydi"], "correctIndex": 1, "explanation": "Oraliq jadval ikkala tomonning foreign key'ini saqlaydi." },
+      { "text": "ER modelda entity qanday aniqlanadi?", "options": ["Fe'llardan", "Talab matnidagi OTLARDAN", "Sifatlardan", "Raqamlardan"], "correctIndex": 1, "explanation": "Fe'llar esa ko'pincha relationshiplarni ko'rsatadi." }
+    ]
+  }
+]

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ChevronRight, BookOpen } from "lucide-react";
 import { getTopics } from "@/lib/api";
 import { topicIcon } from "@/lib/icon-map";
+import { PlacementBanner } from "@/components/PlacementBanner";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +15,8 @@ export default async function KurslarPage() {
         <h1 className="font-display text-3xl font-bold text-ink">Kurslar</h1>
         <p className="mt-1 text-soft">Mavzuni tanlab, o'qishni boshlang.</p>
       </div>
+
+      <PlacementBanner />
 
       {topics.length === 0 ? (
         <div className="rounded-2xl border border-line bg-page p-12 text-center">

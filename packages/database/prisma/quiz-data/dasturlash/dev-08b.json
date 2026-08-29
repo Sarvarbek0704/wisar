@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "09-auth-jwt-passport-cookie-refresh",
+    "title": "Test — Auth: JWT va Passport",
+    "questions": [
+      { "text": "Passport'da «strategy» nima?", "options": ["Route", "Foydalanuvchini tekshirish usuli (local, jwt, oauth)", "Guard", "Filter"], "correctIndex": 1, "explanation": "LocalStrategy — login; JwtStrategy — himoyalangan endpointlar." },
+      { "text": "Global guard bilan ochiq endpointlar qanday belgilanadi?", "options": ["Guard olib tashlanadi", "@Public() custom dekoratori bilan", "Route o'chiriladi", "Middleware bilan"], "correctIndex": 1, "explanation": "Guard Reflector orqali metadata'ni tekshiradi." },
+      { "text": "Refresh token qanday saqlanishi kerak?", "options": ["Ochiq DB'da", "httpOnly cookie + DB'da hash qilingan holda", "localStorage", "URL'da"], "correctIndex": 1, "explanation": "Rotatsiya va reuse detection bilan birga ishlatiladi." },
+      { "text": "JwtModule qanday sozlanadi?", "options": ["Qattiq kod bilan", "registerAsync — ConfigService orqali env'dan", "JSON fayl", "Global"], "correctIndex": 1, "explanation": "Secret hech qachon kodda saqlanmasligi kerak." },
+      { "text": "Signup'da parol bilan nima qilinadi?", "options": ["Ochiq saqlanadi", "bcrypt bilan hash qilinadi", "Base64", "Shifrlanadi"], "correctIndex": 1, "explanation": "Hash bir tomonlama — parolni tiklab bo'lmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "10-email-guard-token-amaliyot",
+    "title": "Test — Email tasdiqlash va parol tiklash",
+    "questions": [
+      { "text": "Email tasdiqlash oqimi qanday?", "options": ["Darhol tasdiqlangan", "Signup → token yuborish → verify", "Faqat login", "Admin tasdiqlaydi"], "correctIndex": 1, "explanation": "EmailVerifiedGuard tasdiqlanmagan foydalanuvchini cheklaydi." },
+      { "text": "Parol tiklashda «foydalanuvchi topilmadi» deyish mumkinmi?", "options": ["Ha", "Yo'q — mavjudlikni oshkor qilmaslik kerak", "Faqat adminга", "Log'da"], "correctIndex": 1, "explanation": "Aks holda email bazasini aniqlash mumkin bo'ladi." },
+      { "text": "Reset token qanday saqlanadi?", "options": ["Ochiq", "Hash qilinib", "Base64", "Cookie'da"], "correctIndex": 1, "explanation": "Baza sizsa ham tokenlar ishlatib bo'lmaydi." },
+      { "text": "Parol o'zgargach nima qilish kerak?", "options": ["Hech narsa", "Barcha refresh tokenlarni bekor qilish", "Email yuborish faqat", "Logout"], "correctIndex": 1, "explanation": "O'g'irlangan sessiyalar ham shu bilan tugatiladi." },
+      { "text": "Og'ir email yuborish qayerda bajariladi?", "options": ["So'rov ichida", "Navbatda (background job)", "Cron'da faqat", "Frontendda"], "correctIndex": 1, "explanation": "Foydalanuvchi javobni kutmasligi kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "11-testing-jest-unit-e2e",
+    "title": "Test — Testing (Jest, e2e)",
+    "questions": [
+      { "text": "Test piramidasi nimani anglatadi?", "options": ["Ko'p e2e, kam unit", "Ko'p unit, o'rtacha integration, kam e2e", "Faqat e2e", "Teng"], "correctIndex": 1, "explanation": "Unit testlar tez va arzon, e2e sekin va qimmat." },
+      { "text": "NestJS unit testida DI qanday almashtiriladi?", "options": ["Real provider", "Test.createTestingModule + useValue/useFactory mock", "Global mock", "Almashtirilmaydi"], "correctIndex": 1, "explanation": "overrideProvider va overrideGuard ham ishlatiladi." },
+      { "text": "e2e test uchun qaysi kutubxona ishlatiladi?", "options": ["Jest faqat", "Supertest", "Axios", "Cypress"], "correctIndex": 1, "explanation": "U to'liq HTTP oqimini test qiladi." },
+      { "text": "«AAA» naqshi nima?", "options": ["Auth", "Arrange → Act → Assert", "Async", "API"], "correctIndex": 1, "explanation": "Test tuzilishini o'qishli qiladi." },
+      { "text": "Testlar bir-biriga bog'liq bo'lishi mumkinmi?", "options": ["Ha", "Yo'q — har test izolyatsiyalangan bo'lishi kerak", "Faqat e2e'da", "Faqat unit'da"], "correctIndex": 1, "explanation": "Aks holda tartib o'zgarganda testlar buziladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "12-telegram-bot-telegraf",
+    "title": "Test — Telegram bot (NestJS)",
+    "questions": [
+      { "text": "NestJS'da Telegraf qanday ulanadi?", "options": ["Qo'lda", "TelegrafModule va @Update dekoratori bilan", "Controller bilan", "Guard bilan"], "correctIndex": 1, "explanation": "@Ctx() dekoratori context'ni inject qiladi." },
+      { "text": "Inline tugma bosilishi qaysi dekorator bilan ushlanadi?", "options": ["@On", "@Action", "@Hears", "@Command"], "correctIndex": 1, "explanation": "callback_data qiymati bo'yicha moslashtiriladi." },
+      { "text": "Bosqichma-bosqich forma uchun nima ishlatiladi?", "options": ["Session faqat", "Wizard Scene", "Middleware", "Guard"], "correctIndex": 1, "explanation": "Base Scene esa erkin dialog uchun mos." },
+      { "text": "«Broadcast» yuborishda nimaga e'tibor berish kerak?", "options": ["Tezlik", "Telegram rate limitiga — navbat bilan yuborish", "Format", "Til"], "correctIndex": 1, "explanation": "Ko'p xabar bir vaqtda yuborilsa bot bloklanadi." },
+      { "text": "Telegram Web App nima beradi?", "options": ["Yangi bot", "Bot ichida to'liq web ilova ochish", "Kanal", "Guruh"], "correctIndex": 1, "explanation": "Murakkab interfeys va to'lov oqimlari uchun qulay." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "13-nestjs-mongodb-mongoose",
+    "title": "Test — NestJS va MongoDB",
+    "questions": [
+      { "text": "NestJS'da Mongoose schema qanday e'lon qilinadi?", "options": ["JSON bilan", "@Schema va @Prop dekoratorlari bilan", "Interface bilan", "Class-validator bilan"], "correctIndex": 1, "explanation": "SchemaFactory.createForClass bilan schema yaratiladi." },
+      { "text": "Model qanday inject qilinadi?", "options": ["@InjectRepository", "@InjectModel", "@Inject", "constructor"], "correctIndex": 1, "explanation": "MongooseModule.forFeature bilan ro'yxatdan o'tkaziladi." },
+      { "text": "«Virtual» maydon nima beradi?", "options": ["DB'da saqlanadi", "Hisoblanadigan maydon va teskari populate", "Index", "Validatsiya"], "correctIndex": 1, "explanation": "DB'da saqlanmaydi — faqat hujjat ustida hisoblanadi." },
+      { "text": "Mongoose hook nima uchun ishlatiladi?", "options": ["Route", "Saqlashdan oldin/keyin avtomatik amal (hash, audit)", "Cache", "Log faqat"], "correctIndex": 1, "explanation": "pre('save') — parolni hash qilishning tipik joyi." },
+      { "text": "«discriminator» nima beradi?", "options": ["Index", "Bitta collectionda bir necha schema turi (meros)", "Cache", "Validatsiya"], "correctIndex": 1, "explanation": "Masalan Event turlari uchun ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "14-config-moduli-env-validatsiya",
+    "title": "Test — Config moduli",
+    "questions": [
+      { "text": "«isGlobal: true» nima beradi?", "options": ["Xavfsizlik", "ConfigModule'ni har modulda import qilish shart emas", "Tezlik", "Validatsiya"], "correctIndex": 1, "explanation": "ConfigService istalgan joyda inject qilinadi." },
+      { "text": "Env validatsiyasi nima uchun eng muhim?", "options": ["Format", "Fail-fast — noto'g'ri konfiguratsiyada ilova darhol to'xtaydi", "Tezlik", "Log"], "correctIndex": 1, "explanation": "Joi yoki Zod sxemasi bilan amalga oshiriladi." },
+      { "text": "«registerAs» nima beradi?", "options": ["Global modul", "Namespace — configni mantiqiy guruhlarga bo'lish", "Validatsiya", "Cache"], "correctIndex": 1, "explanation": "ConfigType bilan birga to'liq tur xavfsizligi beradi." },
+      { "text": "Modulni env'ga qarab sozlash uchun nima ishlatiladi?", "options": ["forRoot", "forRootAsync + useFactory (ConfigService inject)", "register", "forFeature"], "correctIndex": 1, "explanation": "Async sozlash DI'dan foydalanish imkonini beradi." },
+      { "text": "Production'da sirlar qayerda saqlanadi?", "options": [".env faylda", "Platforma secrets manager'ida", "Kodda", "Git'da"], "correctIndex": 1, "explanation": "12-Factor tamoyili: config env'da, kodda emas." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "15-caching-redis-logger-error-handling",
+    "title": "Test — Caching, logger, error handling",
+    "questions": [
+      { "text": "«CacheInterceptor» nima qiladi?", "options": ["Qo'lda kesh", "GET javoblarini avtomatik keshlaydi", "Log yozadi", "Xato ushlaydi"], "correctIndex": 1, "explanation": "Murakkab holatlarda qo'lda cache-aside ishlatiladi." },
+      { "text": "Cache invalidatsiya qachon kerak?", "options": ["Hech qachon", "Ma'lumot o'zgarganda — eski keshni o'chirish", "Har kuni", "Faqat TTL"], "correctIndex": 1, "explanation": "Aks holda foydalanuvchi eskirgan ma'lumot ko'radi." },
+      { "text": "Production logger qanday format ishlatadi?", "options": ["Pretty matn", "Strukturali JSON (Pino/Winston) + redact", "CSV", "Plain"], "correctIndex": 1, "explanation": "redact bilan parol va tokenlar avtomatik yashiriladi." },
+      { "text": "Global exception filter nima beradi?", "options": ["Tezlik", "Barcha xatolar uchun yagona, izchil javob formati", "Validatsiya", "Cache"], "correctIndex": 1, "explanation": "Har controllerda try/catch yozish zaruratini yo'qotadi." },
+      { "text": "«Health check» nima uchun kerak?", "options": ["Log", "Ilova va bog'liqliklar holatini monitoring uchun ko'rsatish", "Cache", "Test"], "correctIndex": 1, "explanation": "Kubernetes va load balancer shu endpointga tayanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "16-microservices-mikroservislar",
+    "title": "Test — Mikroservislar",
+    "questions": [
+      { "text": "«Monolith first» tamoyili nimani anglatadi?", "options": ["Doim monolit", "Monolitdan boshlab, zarurat tug'ilganda bo'lish", "Doim mikroservis", "Ikkalasi birga"], "correctIndex": 1, "explanation": "Erta mikroservis murakkablikni asossiz oshiradi." },
+      { "text": "«Message pattern» va «Event pattern» qanday farqlanadi?", "options": ["Farqi yo'q", "Message — so'rov-javob; Event — fire-and-forget", "Event javob kutadi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "send() — message; emit() — event." },
+      { "text": "Kafka'ning asosiy afzalligi qaysi?", "options": ["Eng tez", "Event streaming va replay imkoniyati", "Eng sodda", "Eng kichik"], "correctIndex": 1, "explanation": "NATS — yengil pub/sub; RabbitMQ — an'anaviy navbat." },
+      { "text": "API Gateway nima beradi?", "options": ["DB", "Yagona kirish nuqtasi — routing, auth, rate limit", "Cache faqat", "Log"], "correctIndex": 1, "explanation": "Mijoz ichki xizmatlar tuzilmasini bilmaydi." },
+      { "text": "«Saga» naqshi nima uchun kerak?", "options": ["Cache", "Taqsimlangan tranzaksiya — kompensatsiya orqali izchillik", "Log", "Test"], "correctIndex": 1, "explanation": "Mikroservislarda ACID tranzaksiya mumkin emas." }
+    ]
+  }
+]

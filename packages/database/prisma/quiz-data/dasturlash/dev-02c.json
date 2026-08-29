@@ -1,0 +1,68 @@
+[
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "13-regular-expressions",
+    "title": "Test — Regular expressions",
+    "questions": [
+      { "text": "Validatsiya uchun nima majburiy?", "options": ["g flag", "^ va $ langarlari", "i flag", "Guruh"], "correctIndex": 1, "explanation": "Ularsiz naqsh matnning istalgan qismida mos kelib qoladi." },
+      { "text": "«\\d» nimani anglatadi?", "options": ["Harf", "Raqam", "Bo'shliq", "Nuqta"], "correctIndex": 1, "explanation": "\\w — harf/raqam/pastki chiziq; \\s — bo'shliq; . — har qanday belgi." },
+      { "text": "«.+?» qanday kvantor?", "options": ["Ochko'z", "Dangasa (lazy) — minimal mos keladi", "Aniq son", "Ixtiyoriy"], "correctIndex": 1, "explanation": "Standart kvantorlar ochko'z (greedy) bo'ladi." },
+      { "text": "«match» hech narsa topmasa nima qaytaradi?", "options": ["Bo'sh massiv", "null", "undefined", "false"], "correctIndex": 1, "explanation": "Shuning uchun natijani tekshirmasdan indekslash xato beradi." },
+      { "text": "«ReDoS» nima?", "options": ["Regex sintaksis xatosi", "Yomon regex tufayli xizmatni buzish hujumi", "Yangi flag", "Kutubxona"], "correctIndex": 1, "explanation": "Ichma-ich kvantorlar katastrofik backtracking'ga olib keladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "14-modullar-esm-commonjs",
+    "title": "Test — Modullar: ESM va CommonJS",
+    "questions": [
+      { "text": "ESM va CommonJS qanday farqlanadi?", "options": ["Farqi yo'q", "ESM — import/export, static; CJS — require/module.exports, sinxron", "CJS zamonaviy", "ESM faqat Node'da"], "correctIndex": 1, "explanation": "ESM brauzer va Node'da ishlaydi — zamonaviy tanlov." },
+      { "text": "Named va default export qanday farqlanadi?", "options": ["Farqi yo'q", "Named — {} bilan import; default — {} siz", "default — {} bilan", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Named export refactoring va IDE uchun qulayroq." },
+      { "text": "Dynamic import «import()» nima uchun ishlatiladi?", "options": ["Tezroq yuklash", "Kerak bo'lganda yuklash — code splitting", "Xavfsizlik", "Sintaksis"], "correctIndex": 1, "explanation": "Bundle hajmini kamaytiradi va boshlang'ich yuklashni tezlashtiradi." },
+      { "text": "Modul necha marta bajariladi?", "options": ["Har importda", "Bir marta — keyin cache'lanadi", "Hech qachon", "Ikki marta"], "correctIndex": 1, "explanation": "Har modulning o'z scope'i bor — global ifloslanish yo'q." },
+      { "text": "Modullar bo'yicha eng yaxshi amaliyot qaysi?", "options": ["Hamma narsani bitta faylda", "Bitta mas'uliyat, named export afzal, ESM/CJS aralashtirmaslik", "Faqat default export", "require ishlatish"], "correctIndex": 1, "explanation": "To'g'ri path va aniq tuzilma — kelajakdagi refactoring uchun asos." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "15-functional-programming",
+    "title": "Test — Funksional dasturlash",
+    "questions": [
+      { "text": "FP ning uch ustuni qaysi?", "options": ["Class, object, method", "Pure functions, immutability, higher-order functions", "Loop, condition, function", "Map, filter, reduce"], "correctIndex": 1, "explanation": "Ular birgalikda bashoratli va test qilinadigan kod beradi." },
+      { "text": "«Composition» (pipe) nima beradi?", "options": ["Tezlik", "Kichik toza funksiyalarni birlashtirib murakkab natija", "Xotira", "Xavfsizlik"], "correctIndex": 1, "explanation": "Har bo'lak alohida test qilinadi va qayta ishlatiladi." },
+      { "text": "Deklarativ va imperativ yondashuv qanday farqlanadi?", "options": ["Farqi yo'q", "Deklarativ — nima kerakligini (filter/map); imperativ — qanday qilishni (tsikl)", "Imperativ qisqaroq", "Deklarativ sekinroq"], "correctIndex": 1, "explanation": "Deklarativ kod qisqa, o'qishli va kamroq xatoli bo'ladi." },
+      { "text": "«Currying» nima?", "options": ["Nusxa olish", "f(a)(b) — qisman qo'llash orqali sozlangan funksiya yaratish", "Xato ushlash", "Async qilish"], "correctIndex": 1, "explanation": "Qayta ishlatiladigan, oldindan sozlangan funksiyalar yaratadi." },
+      { "text": "Side effect'lar qayerda bo'lishi kerak?", "options": ["Hamma joyda", "Chetda — mantiq toza qoladi (React useEffect)", "Faqat pure funksiyada", "Bo'lmasligi kerak"], "correctIndex": 1, "explanation": "Amalda FP va OOP muvozanatda ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "16-dom-manipulyatsiya-events",
+    "title": "Test — DOM va hodisalar",
+    "questions": [
+      { "text": "«textContent» va «innerHTML» qanday farqlanadi?", "options": ["Farqi yo'q", "textContent xavfsiz; innerHTML XSS xavfini tug'diradi", "innerHTML xavfsiz", "Ikkalasi xavfsiz"], "correctIndex": 1, "explanation": "Foydalanuvchi kiritgan ma'lumotni hech qachon innerHTML'ga qo'ymang." },
+      { "text": "«Event delegation» nima?", "options": ["Har elementga listener", "Bitta listener ota elementda — bubbling orqali", "Listener'siz ishlash", "Event o'chirish"], "correctIndex": 1, "explanation": "Ko'p yoki dinamik elementlar uchun samarali yechim." },
+      { "text": "«Bubbling» qanday ishlaydi?", "options": ["Yuqoridan pastga", "Elementdan yuqoriga — ota elementlar tomon", "Yon tomonga", "Tarqalmaydi"], "correctIndex": 1, "explanation": "e.target — haqiqiy manba elementni beradi." },
+      { "text": "«querySelectorAll» nima qaytaradi?", "options": ["Massiv", "NodeList — massiv emas, lekin iteratsiya qilinadi", "Bitta element", "null"], "correctIndex": 1, "explanation": "Array metodlari uchun [...nodeList] bilan aylantiriladi." },
+      { "text": "DOM o'zgartirishda nimaga e'tibor berish kerak?", "options": ["Rangga", "Reflow'ni kamaytirish — ko'p o'zgarishni birlashtirish", "Fayl hajmiga", "Nomga"], "correctIndex": 1, "explanation": "Har DOM o'zgarishi layout qayta hisoblanishiga olib kelishi mumkin." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "17-browser-apis",
+    "title": "Test — Browser API'lari",
+    "questions": [
+      { "text": "«localStorage» va «sessionStorage» qanday farqlanadi?", "options": ["Farqi yo'q", "localStorage doimiy; sessionStorage tab yopilguncha", "sessionStorage doimiy", "Ikkalasi vaqtinchalik"], "correctIndex": 1, "explanation": "Ikkalasi ham faqat MATN saqlaydi — JSON.stringify kerak." },
+      { "text": "Web Storage'da maxfiy ma'lumot saqlash mumkinmi?", "options": ["Ha", "Yo'q — XSS orqali o'g'irlanishi mumkin", "Faqat shifrlangan", "Faqat kichik"], "correctIndex": 1, "explanation": "Token uchun httpOnly cookie xavfsizroq." },
+      { "text": "«httpOnly» cookie nima beradi?", "options": ["Tezlik", "JavaScript o'qiy olmaydi — XSS'dan himoya", "Kattaroq hajm", "Shifrlash"], "correctIndex": 1, "explanation": "Cookie serverga avtomatik yuboriladi — auth uchun qulay." },
+      { "text": "«Intersection Observer» nima uchun ishlatiladi?", "options": ["Tarmoq so'rovi", "Element ko'rinishini samarali kuzatish (lazy load, infinite scroll)", "Xato ushlash", "Saqlash"], "correctIndex": 1, "explanation": "Scroll event'idan ancha samarali — u har piksel harakatda ishlamaydi." },
+      { "text": "«AbortController» nima uchun kerak?", "options": ["Xato ushlash", "Fetch so'rovini bekor qilish", "Saqlash", "Yo'naltirish"], "correctIndex": 1, "explanation": "Komponent unmount bo'lganda ortiqcha so'rovni to'xtatadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "18-axios",
+    "title": "Test — Axios",
+    "questions": [
+      { "text": "Axios fetch'dan nimasi bilan farq qiladi?", "options": ["Sekinroq", "Avtomatik JSON, 4xx/5xx da avtomatik xato, interceptor", "Faqat GET", "Brauzerda ishlamaydi"], "correctIndex": 1, "explanation": "res.data — javob to'g'ridan-to'g'ri olinadi." },
+      { "text": "«err.response» va «err.request» qanday farqlanadi?", "options": ["Farqi yo'q", "response — server xato qaytardi; request — javob umuman kelmadi", "request — server xato", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Ularni ajratib boshqarish foydalanuvchiga aniq xabar berish imkonini beradi." },
+      { "text": "Interceptor nima uchun eng kuchli imkoniyat?", "options": ["Tezlik", "Token qo'shish va 401 → logout ni bir joyda hal qiladi", "Xotira", "Formatlash"], "correctIndex": 1, "explanation": "Takrorlanuvchi mantiqni har so'rovda yozish shart emas." },
+      { "text": "«axios.create()» nima beradi?", "options": ["Yangi so'rov", "Instance — baseURL, timeout va header bir marta sozlanadi", "Xato", "Cache"], "correctIndex": 1, "explanation": "Butun loyihada bitta sozlangan klient ishlatiladi." },
+      { "text": "Axios'da POST body qanday yuboriladi?", "options": ["JSON.stringify qilib", "Obyekt sifatida — avtomatik JSON qilinadi", "FormData bilan majburiy", "Query string bilan"], "correctIndex": 1, "explanation": "Content-Type header ham avtomatik qo'yiladi." }
+    ]
+  }
+]

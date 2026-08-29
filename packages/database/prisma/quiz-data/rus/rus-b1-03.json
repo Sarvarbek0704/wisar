@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "19-payt-ergash-gaplar",
+    "title": "Test — Payt ergash gaplari",
+    "questions": [
+      { "text": "«пока́» va «пока́ не» farqi nimada?", "options": ["Farqi yo'q", "пока́ — parallel davomiylik; пока́ не — chegaraga qadar («...guncha»)", "пока́ не — inkor ma'nosi", "пока́ — kelasi zamon"], "correctIndex": 1, "explanation": "Жди, пока́ я рабо́таю (men ishlagancha) ≠ Жди, пока́ я не приду́ (men kelguncha). Bu yerda «не» «emas» deb tarjima qilinmaydi." },
+      { "text": "«Когда́ он прочита́л письмо́, он позвони́л» — aspekt nimani bildiradi?", "options": ["Bir vaqtda o'qib turgan", "O'qib TUGATGACH qo'ng'iroq qildi", "Hech qachon o'qimagan", "Doim o'qiydi"], "correctIndex": 1, "explanation": "когда́ da aspekt hal qiladi: nesov (чита́л) = jarayon/fon, sov (прочита́л) = tugagach, keyin." },
+      { "text": "«...ishi bilanoq, darrov keyin» ma'nosidagi bog'lovchi qaysi?", "options": ["пока́", "как то́лько", "с тех пор как", "до того́ как"], "correctIndex": 1, "explanation": "как то́лько — darhol ketma-ketlik: Как то́лько он пришёл, мы на́чали." },
+      { "text": "«...dan beri» (boshlanish nuqtasi) qaysi bog'lovchi bilan beriladi?", "options": ["по́сле того́ как", "с тех пор как", "пе́ред тем как", "пока́"], "correctIndex": 1, "explanation": "с тех пор как — boshlanish nuqtasi: С тех пор как он уе́хал, я его́ не ви́дел." },
+      { "text": "Egalar bir xil bo'lganda «по́сле того́ как ...tugagach» ni qanday ixchamlash mumkin?", "options": ["Sifatdosh bilan", "Sov ravishdosh bilan (Прочита́в…)", "Nesov ravishdosh bilan (Чита́я…)", "Ixchamlab bo'lmaydi"], "correctIndex": 1, "explanation": "Egalar bir xil bo'lsa: по́сле того́ как → sov ravishdosh (Прочита́в…); когда́ …ayotib → nesov (Идя́…)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "20-zid-yon-berish-ergash-gaplar",
+    "title": "Test — Zidlik va yon berish",
+    "questions": [
+      { "text": "Yon berish ergash gapi nimani ifodalaydi?", "options": ["Sababdan kelib chiqqan natija", "Kutilgan natijaga ZID holat — «...sa ham, baribir»", "Vaqt munosabati", "Maqsad"], "correctIndex": 1, "explanation": "To'siq bor edi, lekin natija undan kelib chiqmadi. Sabab «shuning uchun», yon berish «shunga qaramay» bilan tugaydi." },
+      { "text": "«несмотря́ на» qaysi kelishik bilan ishlatiladi?", "options": ["Qaratqich (Р.)", "Tushum (В.)", "Jo'nalish (Д.)", "Vosita (Т.)"], "correctIndex": 1, "explanation": "несмотря́ на + ВИНИТЕЛЬНЫЙ: несмотря́ на дождь." },
+      { "text": "«вопреки́» qaysi kelishik bilan ishlatiladi?", "options": ["Tushum (В.)", "Jo'nalish (Д.)", "Qaratqich (Р.)", "O'rin (П.)"], "correctIndex": 1, "explanation": "вопреки́ прогно́зу — «bashoratga zid». Bu ikki predlogni chalkashtirmaslik B1 ning tipik xatosi." },
+      { "text": "«зато́» qanday zidlikni bildiradi?", "options": ["Oddiy zid", "Kompensatsiya — «yomon-u, evaziga yaxshi»", "Rasmiy zid", "Sabab"], "correctIndex": 1, "explanation": "но (oddiy) / зато́ (kompensatsiya) / одна́ко (rasmiy) / всё же, тем не ме́нее (baribir)." },
+      { "text": "«хотя́» va «е́сли» ni qanday farqlaymiz?", "options": ["Farqi yo'q", "хотя́ — faktik zid («...sa ham»); е́сли — noaniq shart («agar»)", "хотя́ — kelasi zamon uchun", "е́сли — rasmiyroq"], "correctIndex": 1, "explanation": "хотя́ — bo'lgan fakt, natija zid. е́сли — hali noaniq shart. Ikkinchi kalit farq: хотя́ (zid) ↔ потому́ что (sabab)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "21-toldiruvchi-ergash-gaplar",
+    "title": "Test — To'ldiruvchi ergash gaplar",
+    "questions": [
+      { "text": "To'ldiruvchi ergash gap qaysi savolga javob beradi?", "options": ["Почему́?", "Что? О чём? (nimani? nima haqida?)", "Когда́?", "Како́й?"], "correctIndex": 1, "explanation": "U bosh gapdagi fe'l yoki ot ma'nosini to'ldiradi: Я зна́ю (nimani?), что он придёт." },
+      { "text": "«Я зна́ю, ___ он придёт» — qaysi bog'lovchi kerak?", "options": ["что", "что́бы", "ли", "е́сли"], "correctIndex": 0, "explanation": "что — FAKT. Bilish, fikr, nutq, idrok fe'llaridan keyin: знать, ду́мать, сказа́ть, ви́деть." },
+      { "text": "«Я прошу́, ___ он пришёл» — qaysi bog'lovchi kerak?", "options": ["что", "что́бы", "ли", "когда́"], "correctIndex": 1, "explanation": "что́бы — ISTAK. Istak/iltimos/talab/buyruq fe'llaridan keyin, doim o'tgan shakl bilan." },
+      { "text": "«Я не зна́ю, придёт ___ он» — bo'shliqqa nima qo'yiladi?", "options": ["что", "что́бы", "ли", "е́сли"], "correctIndex": 2, "explanation": "ли — noaniqlik, bilvosita savol. Diqqat: ли so'zdan KEYIN turadi, gap boshida emas." },
+      { "text": "«Я не зна́ю, где он живёт» — bu yerda «ли» kerakmi?", "options": ["Ha, doim kerak", "Yo'q — savol so'zi (где) bo'lsa ли kerak emas", "Faqat rasmiy uslubda", "Faqat o'tgan zamonda"], "correctIndex": 1, "explanation": "Savol so'zi (где, кто, когда́, как) o'zi bog'lovchi vazifasini bajaradi — ли qo'shilmaydi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "22-kochirma-ozlashtirma-gap",
+    "title": "Test — Ko'chirma va o'zlashtirma gap",
+    "questions": [
+      { "text": "Rus tilida o'zlashtirma gapga o'tganda zamon o'zgaradimi?", "options": ["Ha, ingliz backshift kabi", "Yo'q — asl zamon saqlanadi, faqat olmosh va shaxs o'zgaradi", "Faqat o'tgan zamonda o'zgaradi", "Faqat kelasi zamonda o'zgaradi"], "correctIndex": 1, "explanation": "Eng muhim qoida: Он сказа́л: «Я приду́» → Он сказа́л, что придёт. Zamon MOSLASHMAYDI." },
+      { "text": "Buyruq gap o'zlashtirmaga qanday o'tadi?", "options": ["что + buyruq shakli", "что́бы + o'tgan zamon shakli", "ли + infinitiv", "Faqat tirnoq bilan"], "correctIndex": 1, "explanation": "Он сказа́л: «Приди́!» → Он сказа́л, что́бы я пришёл." },
+      { "text": "«Он спроси́л: “Где ты живёшь?”» ni o'zlashtirmaga aylantiring", "options": ["Он спроси́л, что я живу́", "Он спроси́л, где я живу́", "Он спроси́л, живу́ ли я", "Он спроси́л, что́бы я жил"], "correctIndex": 1, "explanation": "So'roq so'zli savolda — so'roq so'zning O'ZI bog'lovchi bo'ladi." },
+      { "text": "«Он спроси́л: “Ты придёшь?”» ni o'zlashtirmaga aylantiring", "options": ["Он спроси́л, что я приду́", "Он спроси́л, приду́ ли я", "Он спроси́л, что́бы я пришёл", "Он спроси́л, когда́ я приду́"], "correctIndex": 1, "explanation": "HA/YO'Q savolida — ли, va u fe'ldan keyin turadi." },
+      { "text": "O'zlashtirma gapda aynan nima o'zgaradi?", "options": ["Zamon", "Olmosh va shaxs (я→он, мой→его́)", "Kelishik tizimi", "Hech narsa"], "correctIndex": 1, "explanation": "Faqat nuqtai nazar o'zgaradi: я→он, мой→его́, ты→я. Zamon esa saqlanadi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "23-murakkab-kelishik-roditelniy",
+    "title": "Test — Qaratqich kelishigi (chuqur)",
+    "questions": [
+      { "text": "«Я зна́ю пра́вду» ni inkorga aylantirganda nima bo'ladi?", "options": ["Я не зна́ю пра́вду", "Я не зна́ю пра́вды (В → Р)", "Я не зна́ю пра́вде", "Я не зна́ю пра́вдой"], "correctIndex": 1, "explanation": "Inkor obyekti: Винительный → Родительный. Bu o'zbek tilida analogsiz — alohida diqqat talab qiladi." },
+      { "text": "«большинство́ студе́нтов» — nega qaratqich kelishigi?", "options": ["Predlog tufayli", "Miqdor bildiruvchi so'zdan keyin", "Inkor tufayli", "Egalik tufayli"], "correctIndex": 1, "explanation": "Miqdor: большинство́ студе́нтов, не́сколько дней, стака́н ча́я — hammasi qaratqichda." },
+      { "text": "Qaratqichda erkak va o'rta rod sifat tugashi qaysi?", "options": ["-ый/-ий", "-ого/-его", "-ой/-ей", "-ым/-им"], "correctIndex": 1, "explanation": "m/n → -ого/-его, f → -ой/-ей, ko'plik → -ых/-их." },
+      { "text": "Sifatdagi «-ого» tugashi qanday o'qiladi?", "options": ["-ogo", "-ova", "-oho", "-ogu"], "correctIndex": 1, "explanation": "Sifat -ого/-его → «-ova / -eva»: большо́го → «balshóva»." },
+      { "text": "«ста́рше меня́» — bu qaratqichning qaysi vazifasi?", "options": ["Egalik", "Taqqoslash («mendan katta»)", "Miqdor", "Inkor"], "correctIndex": 1, "explanation": "Taqqoslash: ста́рше меня́, бо́льше тебя́. O'zbekchada -dan qo'shimchasiga to'g'ri keladi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "24-murakkab-kelishik-tvoritelniy-datelniy",
+    "title": "Test — Vosita va jo'nalish kelishiklari",
+    "questions": [
+      { "text": "«занима́ться спо́ртом» — qaysi kelishik va predlog?", "options": ["Vosita (Т.), predlogsiz", "Vosita (Т.), «с» bilan", "Jo'nalish (Д.), predlogsiz", "Tushum (В.), predlogsiz"], "correctIndex": 0, "explanation": "занима́ться + ТВОРИТЕЛЬНЫЙ, predlogsiz. Xato: занима́юсь со спо́ртом." },
+      { "text": "«гото́виться ___ экза́мену» — bo'shliqqa qaysi predlog?", "options": ["для", "к", "с", "о"], "correctIndex": 1, "explanation": "гото́виться К + ДАТЕЛЬНЫЙ: гото́виться к экза́мену." },
+      { "text": "«интересова́ться исто́рией» — nega predlog yo'q?", "options": ["Xato, «с» kerak", "Fe'l vosita kelishigini predlogsiz boshqaradi", "Faqat og'zaki nutqda shunday", "Qaratqich talab qiladi"], "correctIndex": 1, "explanation": "Xato: интересу́юсь с исто́рией. Boshqaruvchi fe'llarga predlog qo'shmang." },
+      { "text": "«скуча́ть по до́му» — qaysi kelishik?", "options": ["Vosita (Т.)", "Jo'nalish (Д.), по bilan", "Qaratqich (Р.)", "O'rin (П.)"], "correctIndex": 1, "explanation": "скуча́ть ПО + ДАТЕЛЬНЫЙ. принадлежа́ть esa predlogsiz jo'nalish: принадлежа́ть мне." },
+      { "text": "Impersonal gapda «menimcha ko'rinadi» qanday aytiladi?", "options": ["Я ка́жется", "Мне ка́жется", "Меня́ ка́жется", "Мной ка́жется"], "correctIndex": 1, "explanation": "Impersonal qurilmalarda odam DATIVda: мне ка́жется, мне ну́жно. Xato: Я ка́жется." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "25-soz-yasash-kirish",
+    "title": "Test — So'z yasalishi",
+    "questions": [
+      { "text": "Rus so'zi qaysi qismlardan tuziladi?", "options": ["Faqat o'zak va tugallanma", "Prefiks + o'zak + suffiks + tugallanma", "Faqat prefiks va o'zak", "Tugallanma va o'zak"], "correctIndex": 1, "explanation": "Notanish so'zni yodlamasdan qismlarga bo'lib tushunish — B1 ning muhim ko'nikmasi." },
+      { "text": "«-тель» va «-ник» suffikslari nimani yasaydi?", "options": ["Mavhum belgi", "Shaxs (учи́тель, рабо́тник)", "Jarayon", "Ravish"], "correctIndex": 1, "explanation": "Shaxs: учи́тель, писа́тель, рабо́тник. O'zbekcha -chi qo'shimchasiga mos keladi." },
+      { "text": "«мо́лодость, ско́рость» — qaysi suffiks va qaysi ma'no?", "options": ["-ость, mavhum belgi", "-ость, shaxs", "-ение, jarayon", "-ство, joy"], "correctIndex": 0, "explanation": "-ость/-ность — mavhum belgi. O'zbekcha -lik ga mos: yoshlik, tezlik." },
+      { "text": "«чте́ние, зна́ние» qaysi ma'noni bildiradi?", "options": ["Shaxs", "Jarayon", "Sifat", "Joy"], "correctIndex": 1, "explanation": "-ение/-ание — jarayon: чте́ние (o'qish), зна́ние (bilish)." },
+      { "text": "«без-…-н-ый» modeli qanday ma'no beradi?", "options": ["«...li»", "«...siz» (безрабо́тный)", "«...chi»", "«...lik»"], "correctIndex": 1, "explanation": "Prefiks va suffiks birga ishlaydi: безрабо́тный (ishsiz). O'zbekcha -siz ga mos." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "26-kochma-mano-frazeologizm",
+    "title": "Test — Ko'chma ma'no va frazeologizm",
+    "questions": [
+      { "text": "«золоты́е ру́ки» — qaysi ma'no?", "options": ["To'g'ri ma'no — oltindan yasalgan qo'l", "Ko'chma ma'no — mohir usta", "Xato ibora", "Rasmiy atama"], "correctIndex": 1, "explanation": "So'z ikki ma'noda yashaydi: золото́е кольцо́ (to'g'ri) ↔ золоты́е ру́ки (ko'chma)." },
+      { "text": "Фразеологи́зм nima?", "options": ["Har qanday ibora", "So'zma-so'z tarjima qilinmaydigan o'zgarmas turg'un birikma", "Yangi yasalgan so'z", "Rasmiy atama"], "correctIndex": 1, "explanation": "бить баклу́ши, води́ть за́ нос, как ры́ба в воде́ — yaxlit, o'zgarmas birikmalar." },
+      { "text": "«вре́мя лети́т» nimani anglatadi?", "options": ["Vaqt uchmoqda", "Vaqt tez o'tadi", "Vaqt to'xtadi", "Kech qoldim"], "correctIndex": 1, "explanation": "Ko'chma ma'noli fe'llar: вре́мя лети́т, дела́ иду́т, па́дать ду́хом." },
+      { "text": "«спустя́ рукава́» qanday ma'noda ishlatiladi?", "options": ["Juda tez", "Sifatsiz, e'tiborsiz ishlash", "Juda yaxshi", "Charchagan holda"], "correctIndex": 1, "explanation": "Yengil-elpi, sifatsiz ishlash. Qarama-qarshisi: засучи́в рукава́ (jon-jahdi bilan)." },
+      { "text": "Iboralar qaysi uslubda o'rinli?", "options": ["Rasmiy hujjatda", "Og'zaki va norasmiy nutqda", "Faqat ilmiy matnda", "Har qanday joyda"], "correctIndex": 1, "explanation": "Rasmiy matnda ibora o'rniga oddiy so'zni ishlating." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "27-modal-manolar",
+    "title": "Test — Modal ma'nolar (до́лжен, ну́жно)",
+    "questions": [
+      { "text": "«Мне ___ рабо́тать» — qaysi shakl to'g'ri?", "options": ["до́лжен", "ну́жно", "обя́зан", "вы́нужден"], "correctIndex": 1, "explanation": "Мне (jo'nalish) → SHAXSSIZ so'z: ну́жно/на́до. Xato: Мне до́лжен." },
+      { "text": "«Я ___ рабо́тать» — qaysi shakl to'g'ri?", "options": ["ну́жно", "до́лжен", "на́до", "необходи́мо"], "correctIndex": 1, "explanation": "Я (bosh kelishik) → SHAXSLI so'z: до́лжен/должна́/должны́. Xato: Я ну́жно." },
+      { "text": "«вы́нужден» qanday majburiyatni bildiradi?", "options": ["Kuchli burch", "Noiloj, istaksiz majburiyat", "Rasmiy talab", "Yengil maslahat"], "correctIndex": 1, "explanation": "до́лжен (kuchli burch), обя́зан (rasmiy va qat'iy), вы́нужден (noiloj)." },
+      { "text": "«прихо́дится / придётся» nimani bildiradi?", "options": ["Xohish", "Vaziyat taqozosi — «to'g'ri keladi»", "Ruxsat", "Taqiq"], "correctIndex": 1, "explanation": "Мне прихо́дится рабо́тать по ноча́м — sharoit majbur qiladi." },
+      { "text": "Zaruriyat darajalari to'g'ri tartibda qaysi?", "options": ["необходи́мо < ну́жно < на́до", "на́до < ну́жно < необходи́мо", "ну́жно < на́до < необходи́мо", "Hammasi teng"], "correctIndex": 1, "explanation": "на́до (yengil) < ну́жно (neytral) < необходи́мо (shart, rasmiy)." }
+    ]
+  }
+]

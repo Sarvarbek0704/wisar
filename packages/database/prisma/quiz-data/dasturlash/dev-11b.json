@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "10-formalar-react-hook-form-zod",
+    "title": "Test — Formalar (RHF + Zod)",
+    "questions": [
+      { "text": "React Hook Form qanday yondashuvga tayanadi?", "options": ["Controlled", "Uncontrolled — ref orqali, kam re-render", "Context", "Redux"], "correctIndex": 1, "explanation": "Har harf kiritishda butun forma qayta render bo'lmaydi." },
+      { "text": "«zodResolver» nima qiladi?", "options": ["Forma yaratadi", "Zod sxemasini RHF validatsiyasiga ulaydi", "State saqlaydi", "Xato ko'rsatadi"], "correctIndex": 1, "explanation": "Bir sxemadan ham validatsiya, ham TypeScript turi olinadi." },
+      { "text": "UI kutubxona komponentini RHF'ga qanday ulanadi?", "options": ["register bilan", "Controller yoki useController bilan", "watch bilan", "reset bilan"], "correctIndex": 1, "explanation": "Ular ref'ni to'g'ridan qabul qilmaydigan komponentlar uchun." },
+      { "text": "«useFieldArray» nima uchun ishlatiladi?", "options": ["Validatsiya", "Dinamik maydonlar ro'yxati (qo'shish/o'chirish)", "Reset", "Watch"], "correctIndex": 1, "explanation": "Masalan bir necha telefon raqami kiritish." },
+      { "text": "Server validatsiya xatosi formada qanday ko'rsatiladi?", "options": ["Alert bilan", "setError bilan mos maydonga qo'yiladi", "Console", "Toast faqat"], "correctIndex": 1, "explanation": "Foydalanuvchi xato qaysi maydonda ekanini ko'radi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "11-performance-optimizatsiya-memo-rerender",
+    "title": "Test — React performance",
+    "questions": [
+      { "text": "«Render» va «DOM update» bir xilmi?", "options": ["Ha", "Yo'q — render funksiyani chaqirish, DOM faqat farq bo'lsa yangilanadi", "Ba'zan", "DOM avval"], "correctIndex": 1, "explanation": "Ortiqcha render har doim ham qimmat emas." },
+      { "text": "Optimizatsiyani qayerdan boshlash kerak?", "options": ["memo qo'shish", "Profiler bilan o'lchash", "useCallback", "Virtualization"], "correctIndex": 1, "explanation": "O'lchamasdan optimallashtirish — premature optimization." },
+      { "text": "«Colocation» nima beradi?", "options": ["Cache", "State'ni ishlatiladigan joyga yaqinlashtirish — render doirasi qisqaradi", "Memo", "Context"], "correctIndex": 1, "explanation": "Yuqorida turgan state butun daraxtni qayta render qiladi." },
+      { "text": "Uzun ro'yxat uchun nima ishlatiladi?", "options": ["memo", "Virtualization — faqat ko'rinadigan qismni render qilish", "useCallback", "Context"], "correctIndex": 1, "explanation": "Minglab qator uchun yagona amaliy yechim." },
+      { "text": "«useDeferredValue» nima beradi?", "options": ["Cache", "Og'ir hisobni kechiktirib, UI javobgarligini saqlash", "Debounce", "Throttle"], "correctIndex": 1, "explanation": "Concurrent React imkoniyatlaridan biri." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "12-error-boundaries-portals-refs",
+    "title": "Test — Error boundary, portal, ref",
+    "questions": [
+      { "text": "Error boundary nimani USHLAMAYDI?", "options": ["Render xatosi", "Event handler, async kod va SSR xatolari", "Lifecycle xatosi", "Bola komponent xatosi"], "correctIndex": 1, "explanation": "Ular uchun try/catch yoki .catch ishlatiladi." },
+      { "text": "«createPortal» nima qiladi?", "options": ["Yangi oyna", "Komponentni DOM'ning boshqa joyiga render qiladi", "Route", "Cache"], "correctIndex": 1, "explanation": "Modal va tooltip uchun ideal — overflow muammosi yo'q." },
+      { "text": "Portal'da event bubbling qanday ishlaydi?", "options": ["DOM daraxti bo'ylab", "REACT daraxti bo'ylab", "Ishlamaydi", "Faqat pastga"], "correctIndex": 1, "explanation": "Portal DOM'da boshqa joyda bo'lsa ham, React ierarxiyasi saqlanadi." },
+      { "text": "React 19'da «forwardRef» bilan nima o'zgardi?", "options": ["Olib tashlandi", "ref oddiy prop sifatida uzatiladi", "Majburiy bo'ldi", "O'zgarmadi"], "correctIndex": 1, "explanation": "forwardRef deprecatsiya yo'liga chiqdi." },
+      { "text": "«useImperativeHandle» nima uchun kerak?", "options": ["State", "Ref orqali komponentning maxsus metodlarini ochish", "Portal", "Context"], "correctIndex": 1, "explanation": "Masalan focus() yoki reset() metodini tashqariga berish." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "13-react-patternlar-hoc-render-props-compound",
+    "title": "Test — React naqshlari",
+    "questions": [
+      { "text": "HOC ning asosiy muammosi nima?", "options": ["Sekin", "Wrapper hell, props kolliziyasi va ref uzatish", "Xavfsizlik", "Hajm"], "correctIndex": 1, "explanation": "Ko'p holatda custom hook bu muammolarni yo'q qiladi." },
+      { "text": "«Compound components» nima beradi?", "options": ["Tezlik", "Bog'liq komponentlar Context orqali holatni ulashadi (Tabs.Tab)", "Cache", "Routing"], "correctIndex": 1, "explanation": "Foydalanuvchiga moslashuvchan, deklarativ API beradi." },
+      { "text": "«Polymorphic komponent» nima?", "options": ["Ko'p prop", "«as» prop orqali render qilinadigan elementni o'zgartirish", "Generic", "HOC"], "correctIndex": 1, "explanation": "Button as=\"a\" — bir komponent, har xil teg." },
+      { "text": "«Control props» naqshi nima beradi?", "options": ["Cache", "Komponent holatini tashqaridan boshqarish imkoni", "Memo", "Portal"], "correctIndex": 1, "explanation": "State reducer esa mantiqni tashqaridan o'zgartirishga ruxsat beradi." },
+      { "text": "Render props va hooklar qanday munosabatda?", "options": ["Bir xil", "Hooklar ko'p holatda render props'ni almashtirdi", "Render props zamonaviy", "Bog'liq emas"], "correctIndex": 1, "explanation": "Lekin render props hali ham ba'zi UI holatlarida foydali." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "14-typescript-bilan-react",
+    "title": "Test — TypeScript bilan React",
+    "questions": [
+      { "text": "«children» uchun qaysi tur ishlatiladi?", "options": ["string", "React.ReactNode", "JSX.Element", "any"], "correctIndex": 1, "explanation": "ReactNode matn, element, massiv va null'ni qamraydi." },
+      { "text": "«React.FC» haqida zamonaviy tavsiya qanday?", "options": ["Har doim ishlatish", "Odatda kerak emas — props turini to'g'ridan e'lon qilish afzal", "Taqiqlangan", "Faqat TS'da"], "correctIndex": 1, "explanation": "U implicit children va generic bilan muammolar keltirgan edi." },
+      { "text": "«ComponentProps<typeof Button>» nima beradi?", "options": ["State", "Mavjud komponent props turini olish", "Ref", "Context"], "correctIndex": 1, "explanation": "Wrapper komponent yozishda juda qulay." },
+      { "text": "useReducer'da action turi qanday e'lon qilinadi?", "options": ["any", "Discriminated union", "string", "object"], "correctIndex": 1, "explanation": "type maydoni bo'yicha switch to'liq tur xavfsizligi beradi." },
+      { "text": "Event handler turi qayerdan olinadi?", "options": ["any", "React.ChangeEvent<HTMLInputElement> kabi maxsus turlar", "Event", "object"], "correctIndex": 1, "explanation": "Element turi ham ko'rsatilishi kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "15-dashboard-loyiha-layout-auth",
+    "title": "Test — Dashboard loyihasi",
+    "questions": [
+      { "text": "Ma'lumot yuklashda nechta holat qamralishi kerak?", "options": ["2", "4: loading, error, empty, data", "3", "1"], "correctIndex": 1, "explanation": "«Empty» holatini unutish — keng tarqalgan kamchilik." },
+      { "text": "Token saqlashda qaysi variant xavfsizroq?", "options": ["localStorage", "httpOnly cookie", "sessionStorage", "URL"], "correctIndex": 1, "explanation": "localStorage XSS orqali o'qilishi mumkin." },
+      { "text": "«Refresh queue» nima uchun kerak?", "options": ["Tezlik", "Bir vaqtda ko'p 401 kelganda faqat bitta refresh so'rovi yuborish", "Cache", "Log"], "correctIndex": 1, "explanation": "Aks holda bir necha parallel refresh tokenni buzadi." },
+      { "text": "Server state uchun nima tavsiya etiladi?", "options": ["useState", "TanStack Query — kesh, invalidate, optimistic update", "Redux faqat", "Context"], "correctIndex": 1, "explanation": "Server state client state'dan tubdan farq qiladi." },
+      { "text": "Role-based UI qanday amalga oshiriladi?", "options": ["CSS bilan", "Rolga qarab UI ko'rsatish + serverda haqiqiy tekshiruv", "Faqat frontendda", "Route bilan faqat"], "correctIndex": 1, "explanation": "Frontend tekshiruvi faqat qulaylik — himoya serverda." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "16-swiper-animatsiya-framer-motion",
+    "title": "Test — Animatsiya (Swiper, Framer Motion)",
+    "questions": [
+      { "text": "Animatsiya uchun qaysi CSS xususiyatlari samarali?", "options": ["width va height", "transform va opacity", "margin", "top va left"], "correctIndex": 1, "explanation": "Ular layout va paint bosqichlarini chetlab o'tadi." },
+      { "text": "«AnimatePresence» nima uchun kerak?", "options": ["Kirish animatsiyasi", "Komponent DOM'dan olib tashlanishida chiqish animatsiyasi", "Scroll", "Gesture"], "correctIndex": 1, "explanation": "React o'zi unmount'ni kutmaydi — bu komponent kutadi." },
+      { "text": "«variants» nima beradi?", "options": ["Rang", "Nomlangan animatsiya holatlari — ota-bola orkestratsiyasi", "Gesture", "Scroll"], "correctIndex": 1, "explanation": "stagger bilan ketma-ket animatsiya qilinadi." },
+      { "text": "«prefers-reduced-motion» nima uchun hurmat qilinadi?", "options": ["Tezlik", "Accessibility — ba'zi foydalanuvchilar uchun animatsiya noqulaylik tug'diradi", "Bundle", "SEO"], "correctIndex": 1, "explanation": "Vestibulyar buzilishi bo'lgan odamlar uchun muhim." },
+      { "text": "«Skeleton» ekran nima beradi?", "options": ["Haqiqiy tezlik", "Idrok etiladigan (perceived) tezlikni oshiradi", "Cache", "SEO"], "correctIndex": 1, "explanation": "Bo'sh ekran kutish hissini kuchaytiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "17-testing-vitest-rtl-playwright",
+    "title": "Test — React testing",
+    "questions": [
+      { "text": "React Testing Library falsafasi qanday?", "options": ["Implementatsiyani test qilish", "Foydalanuvchi kabi test qilish", "Snapshot", "Coverage"], "correctIndex": 1, "explanation": "Ichki holat emas, ko'rinadigan xulq tekshiriladi." },
+      { "text": "Qaysi query prioriteti eng yuqori?", "options": ["getByTestId", "getByRole", "getByClassName", "querySelector"], "correctIndex": 1, "explanation": "U accessibility bilan mos keladi — real foydalanuvchi tajribasi." },
+      { "text": "Async natijani kutish uchun nima ishlatiladi?", "options": ["getBy", "findBy yoki waitFor", "queryBy", "setTimeout"], "correctIndex": 1, "explanation": "getBy darhol xato beradi — element hali yo'q." },
+      { "text": "API so'rovlarini mock qilish uchun nima tavsiya etiladi?", "options": ["vi.fn faqat", "MSW (Mock Service Worker)", "Real API", "Snapshot"], "correctIndex": 1, "explanation": "Tarmoq darajasida ushlaydi — kod o'zgartirilmaydi." },
+      { "text": "Playwright nima uchun ishlatiladi?", "options": ["Unit test", "E2E — real brauzerda to'liq oqim testi", "Snapshot", "Lint"], "correctIndex": 1, "explanation": "Eng qimmat, lekin eng ishonchli test darajasi." }
+    ]
+  }
+]

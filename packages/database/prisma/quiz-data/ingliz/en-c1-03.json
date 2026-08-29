@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "21-ilgor-modallar-nyuans",
+    "title": "Test — Ilg'or modal nuanslari",
+    "questions": [
+      { "text": "«might as well» qanday ma'no beradi?", "options": ["Yuqori ehtimol", "Iloji yo'q, boshqa variant yo'q", "Ta'qiq", "Majburiyat"], "correctIndex": 1, "explanation": "may/might well esa yuqori ehtimolni bildiradi." },
+      { "text": "«be to» qanday ottenka beradi?", "options": ["Ehtimol", "Rasmiy buyruq yoki belgilangan reja", "Afsus", "Taxmin"], "correctIndex": 1, "explanation": "be supposed to — kutilgan; be bound to — muqarrar." },
+      { "text": "«must» ning o'tmish majburiyat shakli qaysi?", "options": ["musted", "had to", "must have", "should have"], "correctIndex": 1, "explanation": "must have + V3 esa o'tmish TAXMINI — majburiyat emas." },
+      { "text": "«needn't have done» va «didn't need to do» qanday farqlanadi?", "options": ["Farqi yo'q", "Birinchisi qildi (behuda), ikkinchisi kerak emas edi", "Birinchisi qilmadi", "Ikkalasi qildi"], "correctIndex": 1, "explanation": "Bu C1 ning klassik nozik farqlaridan biri." },
+      { "text": "«Oil will float» — «will» bu yerda nima?", "options": ["Kelajak", "Xususiyat/qonuniyat", "Va'da", "Iltimos"], "correctIndex": 1, "explanation": "He'll sit for hours — odat; g'ashlik ma'nosi ham bor." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "22-relative-participle-clauses",
+    "title": "Test — Relative va participle clauselar",
+    "questions": [
+      { "text": "«the basis ___ which» — qaysi predlog rasmiy?", "options": ["in", "on", "at", "for"], "correctIndex": 1, "explanation": "Predlog + whom/which — rasmiy akademik qolip." },
+      { "text": "«many of whom» qaysi holatda ishlatiladi?", "options": ["Narsa uchun", "Odam uchun, rasmiy", "Joy uchun", "Vaqt uchun"], "correctIndex": 1, "explanation": "all of which, none of whom — miqdor + of which/whom." },
+      { "text": "«He left, which upset me» — «which» nimaga ishora qiladi?", "options": ["He", "Butun gapga", "me", "left"], "correctIndex": 1, "explanation": "«what» bu vazifada ishlatilmaydi." },
+      { "text": "«the data collected» — bu qanday reduced clause?", "options": ["Active (V-ing)", "Passive (V3)", "To-infinitive", "Nominal"], "correctIndex": 1, "explanation": "Active: the man waiting; passive: the data collected." },
+      { "text": "«Faced with X, ...» — bu qanday participle?", "options": ["Present (-ing)", "Past (V3, passiv)", "Perfect", "Nominal"], "correctIndex": 1, "explanation": "Seen from above, ... — passiv participle clause." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "23-passive-impersonal-ilgor",
+    "title": "Test — Shaxssiz passiv (ilg'or)",
+    "questions": [
+      { "text": "«It is said that he is rich» ning zichroq varianti qaysi?", "options": ["He said to be rich", "He is said to be rich", "He is saying rich", "It said him rich"], "correctIndex": 1, "explanation": "It is said THAT... = X is said TO BE... — ikki naqsh." },
+      { "text": "«is thought to have done» qanday vaqtni bildiradi?", "options": ["Bir vaqtda", "Reportingdan oldingi vaqt", "Kelajak", "Doimiy"], "correctIndex": 1, "explanation": "to be (bir vaqt) ↔ to have + V3 (oldingi vaqt)." },
+      { "text": "«get fired, got caught» qanday passiv?", "options": ["Rasmiy", "Og'zaki get-passive — salbiy/kutilmagan", "Modal passiv", "Kausativ"], "correctIndex": 1, "explanation": "got promoted — ijobiy holat o'zgarishi uchun ham ishlatiladi." },
+      { "text": "«make someone do» va «get someone to do» qanday farqlanadi?", "options": ["Farqi yo'q", "make — majburlash (to siz); get — ko'ndirish (to bilan)", "get — majburlash", "Ikkalasi to bilan"], "correctIndex": 1, "explanation": "have someone do — uyushtirish, neytral." },
+      { "text": "«needs washing» nimaga teng?", "options": ["needs to wash", "needs to be washed", "is washing", "washed"], "correctIndex": 1, "explanation": "There is believed to be... — «there» bilan shaxssiz passiv." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "24-nominalizatsiya-soz-tartibi",
+    "title": "Test — Nominalizatsiya va so'z tartibi",
+    "questions": [
+      { "text": "Nominalizatsiya nima?", "options": ["Otni fe'lga aylantirish", "Fe'l yoki sifatni OTGA aylantirish — akademik zichlik", "Passiv yasash", "Inversiya"], "correctIndex": 1, "explanation": "decide→decision, difficult→difficulty, grow→growth." },
+      { "text": "«Prices rose» ni nominal iboraga aylantiring", "options": ["prices rising", "the rise in prices", "the risen prices", "to rise prices"], "correctIndex": 1, "explanation": "Gap → ot iborasi → keyin ega yoki obyekt bo'la oladi." },
+      { "text": "«climate change, data analysis» — bu qanday shakl?", "options": ["Fe'l", "Compound ot — eng zich shakl", "Sifat", "Ravish"], "correctIndex": 1, "explanation": "Akademik matnda ma'lumot zichligini oshiradi." },
+      { "text": "«Such was his anger that...» — bu qanday tartib?", "options": ["Neytral", "Fronting — ta'kid uchun", "End-weight", "Passiv"], "correctIndex": 1, "explanation": "His arrogance, I can't stand — ta'kid uchun oldinga chiqarish." },
+      { "text": "«It is clear that he lied» — bu qanday tamoyil?", "options": ["Fronting", "End-weight (it-extraposition) — og'ir clause oxirda", "Inversiya", "Cleft"], "correctIndex": 1, "explanation": "Og'ir tuzilmalar gap oxiriga suriladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "25-diplomatiya-nozik-fikr",
+    "title": "Test — Diplomatik til",
+    "questions": [
+      { "text": "Diplomatik tilning asosiy tamoyili qaysi?", "options": ["Fikrni yashirish", "Qat'iy mazmun + yumshoq forma", "Hech narsa aytmaslik", "Rasmiy so'z ishlatish"], "correctIndex": 1, "explanation": "«Qanday aytish» «nima aytish» dan muhimroq bo'lib qoladi." },
+      { "text": "Kelishmovchilikni bildirishning eng yaxshi yo'li qaysi?", "options": ["You're wrong", "I'm not entirely convinced / I see your point, but...", "That's false", "No"], "correctIndex": 1, "explanation": "Formula: tan oling → yumshating → o'z fikringiz." },
+      { "text": "«room for improvement» qanday vosita?", "options": ["Maqtov", "Understatement — yumshatilgan tanqid", "Giperbola", "Savol"], "correctIndex": 1, "explanation": "«not ideal» ham shu guruhga kiradi." },
+      { "text": "Tanqid uchun «sandwich» usuli qanday?", "options": ["Tanqid-tanqid-tanqid", "Ijobiy → tanqid → ijobiy", "Faqat tanqid", "Savol → tanqid"], "correctIndex": 1, "explanation": "It might be worth... / Have you considered...? — yumshoq tanqid qoliplari." },
+      { "text": "«We'll see» ko'pincha nimani anglatadi?", "options": ["Ha", "Yo'q (yumshoq rad)", "Balki", "Bilmayman"], "correctIndex": 1, "explanation": "Implikatura: «interesting» ko'pincha «yoqmadi» ma'nosini beradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "26-yumor-ironiya-understatement",
+    "title": "Test — Yumor, ironiya, understatement",
+    "questions": [
+      { "text": "Yomg'irda «Lovely weather!» deyish qanday vosita?", "options": ["Maqtov", "Ironiya — so'zning teskarisi", "Giperbola", "Understatement"], "correctIndex": 1, "explanation": "Ohang va kontekst zid bo'lsa — ma'no teskari." },
+      { "text": "«not bad» britancha understatementda nimani anglatadi?", "options": ["O'rtacha", "A'lo — kamaytirib aytilgan maqtov", "Yomon", "Neytral"], "correctIndex": 1, "explanation": "«a bit of a problem» = falokat. Understatementni ko'paytirib tushuning." },
+      { "text": "«I'm starving, for ages, a million times» — bu qanday vosita?", "options": ["Understatement", "Giperbola — oshirib aytish", "Ironiya", "Sarkazm"], "correctIndex": 1, "explanation": "His va ta'kid uchun ishlatiladi." },
+      { "text": "Sarkazm qachon o'rinli?", "options": ["Har doim", "Faqat yaqin, ishonchli munosabatda", "Rasmiy uchrashuvda", "Yozma matnda"], "correctIndex": 1, "explanation": "Banter ham faqat yaqinlar orasida ishlatiladi." },
+      { "text": "Yumorni o'rganishda asosiy maqsad nima?", "options": ["Ishlatish", "TUSHUNISH — ishlatish ikkinchi darajali", "Yozish", "Tarjima qilish"], "correctIndex": 1, "explanation": "Sitkom va panel show — tabiiy input manbalari." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "27-c1-checkpoint-test",
+    "title": "Test — C1 yakuniy nazorat",
+    "questions": [
+      { "text": "«Never ___ I seen anything like it» — bo'shliqqa nima?", "options": ["hech narsa", "have", "did", "was"], "correctIndex": 1, "explanation": "Inkor ravish boshda → inversiya (C1-2)." },
+      { "text": "«It is essential that he ___ informed» — to'g'ri shakl?", "options": ["is", "be", "was", "will be"], "correctIndex": 1, "explanation": "Mandative subjunctive, passiv shaklda (C1-4)." },
+      { "text": "Akademik yozuvda «proves» o'rniga nima ishlatiladi?", "options": ["confirms", "suggests / indicates", "shows clearly", "means"], "correctIndex": 1, "explanation": "Hedging — da'voni yumshatish (C1-6)." },
+      { "text": "C2 C1 dan nimasi bilan farq qiladi?", "options": ["Ko'proq grammatika", "Ona tili darajasidagi nozikliklar, stilistika, madaniy kontekst", "Ko'proq lug'at", "Tezroq gapirish"], "correctIndex": 1, "explanation": "Deyarli xatosiz, ravon, nozik va ta'sirchan til." },
+      { "text": "C1 dan keyin qaysi odat eng muhim?", "options": ["Faqat grammatika mashqi", "Kunlik o'qish, tinglash va gapirish immersiyasi", "Faqat test yechish", "Faqat lug'at yodlash"], "correctIndex": 1, "explanation": "Kitob, sifatli matbuot, podkast va real muloqot." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "28-maxsus-punktuatsiya",
+    "title": "Test — Punktuatsiya",
+    "questions": [
+      { "text": "«Comma splice» nima?", "options": ["Ro'yxatdagi vergul", "Ikki mustaqil gapni faqat vergul bilan ulash — xato", "Kirish iborasi", "Non-defining vergul"], "correctIndex": 1, "explanation": "Yechim: nuqta, nuqtali vergul yoki bog'lovchi qo'shish." },
+      { "text": "«its» va «it's» qanday farqlanadi?", "options": ["Farqi yo'q", "its — egalik; it's — it is", "it's — egalik", "Ikkalasi qisqartma"], "correctIndex": 1, "explanation": "Shunga o'xshash: your/you're, their/they're, whose/who's." },
+      { "text": "Apostrof ko'plik uchun ishlatiladimi?", "options": ["Ha", "Yo'q — CDs, 1990s (CD's xato)", "Faqat qisqartmada", "Faqat atoqli otda"], "correctIndex": 1, "explanation": "Apostrof egalik va qisqartma uchun." },
+      { "text": "Ikki nuqtadan (:) oldin nima bo'lishi kerak?", "options": ["Ot", "To'liq gap", "Sifat", "Bog'lovchi"], "correctIndex": 1, "explanation": "Ikki nuqta ro'yxat yoki tushuntirish kiritadi." },
+      { "text": "Fasl nomlari qanday yoziladi?", "options": ["Katta harf bilan", "Kichik harf bilan", "Tirnoq ichida", "Kursivda"], "correctIndex": 1, "explanation": "Kun, oy, til va millat nomlari katta harf; fasl kichik." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "29-maxsus-chalkash-sozlar",
+    "title": "Test — Chalkash so'zlar",
+    "questions": [
+      { "text": "«affect» va «effect» qanday farqlanadi?", "options": ["Farqi yo'q", "affect — fe'l (Action); effect — ot (End result)", "affect — ot", "Ikkalasi fe'l"], "correctIndex": 1, "explanation": "Yodlash kaliti: Affect = Action, Effect = End result." },
+      { "text": "«then» va «than» qanday farqlanadi?", "options": ["Farqi yo'q", "then — vaqt; than — taqqoslash", "then — taqqoslash", "Ikkalasi vaqt"], "correctIndex": 1, "explanation": "Omofonlar yozuvda alohida diqqat talab qiladi." },
+      { "text": "«raise» va «rise» qanday farqlanadi?", "options": ["Farqi yo'q", "raise — obyekt bilan (o'timli); rise — obyektsiz", "rise — o'timli", "Ikkalasi o'timli"], "correctIndex": 1, "explanation": "He raised his hand ↔ The sun rises." },
+      { "text": "«economic» va «economical» qanday farqlanadi?", "options": ["Farqi yo'q", "economic — iqtisodiy (soha); economical — tejamkor", "economical — soha", "Ikkalasi soha"], "correctIndex": 1, "explanation": "historic/historical, classic/classical ham shu guruhda." },
+      { "text": "«lose» va «loose» qanday farqlanadi?", "options": ["Farqi yo'q", "lose — yo'qotmoq (fe'l); loose — bo'sh (sifat)", "loose — yo'qotmoq", "Ikkalasi sifat"], "correctIndex": 1, "explanation": "accept (qabul qilmoq) / except (tashqari) — yana bir juftlik." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "30-maxsus-ilgor-talaffuz-intonatsiya",
+    "title": "Test — Ilg'or talaffuz va intonatsiya",
+    "questions": [
+      { "text": "Talaffuzning maqsadi nima?", "options": ["Mukammal aksent", "Tushunarlilik, tabiiylik, ifodalilik", "Tez gapirish", "Aksentni yo'qotish"], "correctIndex": 1, "explanation": "O'zbek aksenti bilan ham band 8 olish mumkin." },
+      { "text": "«PREsent» va «preSENT» qanday farqlanadi?", "options": ["Farqi yo'q", "Urg'u so'z turkumini o'zgartiradi: ot ↔ fe'l", "Faqat ohang", "Imlo farqi"], "correctIndex": 1, "explanation": "-tion/-ity suffikslari urg'uni oldingi bo'g'inga siljitadi." },
+      { "text": "Ingliz tili qanday ritmga ega?", "options": ["Syllable-timed", "Stress-timed — content urg'uli, function siqilgan", "Tone-timed", "Ritmsiz"], "correctIndex": 1, "explanation": "Weak forms: to→tə, and→ən. Har so'zni teng talaffuz qilish g'ayritabiiy." },
+      { "text": "Yes/no savolida intonatsiya qanday?", "options": ["Tushuvchi ↘", "Ko'tariluvchi ↗", "Tekis", "Farqi yo'q"], "correctIndex": 1, "explanation": "Tasdiq va wh-savolda tushuvchi ↘; ishora yoki «lekin» ma'nosida ↘↗." },
+      { "text": "IELTS da Pronunciation mezoni necha foizni tashkil qiladi?", "options": ["10%", "25%", "50%", "Baholanmaydi"], "correctIndex": 1, "explanation": "Monoton ohang va so'z urg'usidagi xatolar ballni tushiradi." }
+    ]
+  }
+]

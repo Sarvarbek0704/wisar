@@ -1,0 +1,123 @@
+[
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "01-linux-server-asoslari-ssh",
+    "title": "Test — Linux server va SSH",
+    "questions": [
+      { "text": "«chmod 644» nima anglatadi?", "options": ["Hammaga to'liq", "Egasi o'qish/yozish, qolganlar faqat o'qish", "Faqat bajarish", "Hech qanday ruxsat"], "correctIndex": 1, "explanation": "755 esa egasi rwx, qolganlar r-x." },
+      { "text": "Loglar odatda qaysi papkada saqlanadi?", "options": ["/etc", "/var/log", "/home", "/tmp"], "correctIndex": 1, "explanation": "/etc — konfiguratsiya fayllari uchun." },
+      { "text": "SSH hardening'da nima qilinadi?", "options": ["Parolni murakkablashtirish", "Parol autentifikatsiyasini o'chirib, faqat kalit qoldirish", "Portni ochish", "Root'ni yoqish"], "correctIndex": 1, "explanation": "Root login ham odatda o'chiriladi." },
+      { "text": "«systemctl» nima uchun ishlatiladi?", "options": ["Fayl ko'chirish", "Xizmatlarni boshqarish (start/stop/status/enable)", "Paket o'rnatish", "Tarmoq"], "correctIndex": 1, "explanation": "journalctl esa systemd loglarini ko'rsatadi." },
+      { "text": "«rsync» «scp» dan nimasi bilan afzal?", "options": ["Sodda", "Faqat o'zgargan qismini uzatadi — tez va uzilishga chidamli", "Xavfsizroq", "Yangi"], "correctIndex": 1, "explanation": "Katta papkalarni sinxronlash uchun ideal." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "02-nginx-reverse-proxy-load-balancer",
+    "title": "Test — Nginx",
+    "questions": [
+      { "text": "Reverse proxy nima qiladi?", "options": ["Mijoz o'rniga so'rov yuboradi", "Server oldida turib, so'rovlarni ichki ilovaga uzatadi", "DNS", "Cache faqat"], "correctIndex": 1, "explanation": "Forward proxy esa mijoz tomonda turadi." },
+      { "text": "Nginx nega tez ishlaydi?", "options": ["C tilida", "Event-driven, master/worker arxitekturasi", "Kichik", "Cache"], "correctIndex": 1, "explanation": "Har ulanish uchun alohida thread ochmaydi." },
+      { "text": "«X-Forwarded-For» headeri nima uchun kerak?", "options": ["Cache", "Haqiqiy mijoz IP manzilini ilovaga yetkazish", "Auth", "Format"], "correctIndex": 1, "explanation": "Proxy ortida ilova faqat proxy IP'sini ko'radi." },
+      { "text": "«least_conn» load balancing algoritmi nima qiladi?", "options": ["Navbat bilan", "Eng kam faol ulanishga ega serverga yuboradi", "Tasodifiy", "IP bo'yicha"], "correctIndex": 1, "explanation": "ip_hash esa bir mijozni doim bir serverga yo'naltiradi." },
+      { "text": "«limit_req» nima beradi?", "options": ["Cache", "Rate limiting — so'rov chastotasini cheklash", "Gzip", "SSL"], "correctIndex": 1, "explanation": "Brute-force va DoS hujumlarini yumshatadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "03-docker-image-container-dockerfile",
+    "title": "Test — Docker asoslari",
+    "questions": [
+      { "text": "Image va container qanday farqlanadi?", "options": ["Farqi yo'q", "Image — shablon (klass); container — ishlayotgan nusxa (obyekt)", "Container — shablon", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Bitta image'dan ko'p container ishga tushiriladi." },
+      { "text": "Dockerfile'da direktivalar tartibi nima uchun muhim?", "options": ["Sintaksis", "Layer cache — kam o'zgaradiganlar yuqorida bo'lishi kerak", "Xavfsizlik", "Hajm"], "correctIndex": 1, "explanation": "package.json'ni kod'dan oldin COPY qilish — klassik optimizatsiya." },
+      { "text": "«CMD» va «ENTRYPOINT» qanday farqlanadi?", "options": ["Farqi yo'q", "ENTRYPOINT — asosiy buyruq; CMD — standart argument (almashtirilishi mumkin)", "CMD asosiy", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Exec form (JSON massiv) tavsiya etiladi." },
+      { "text": "Konteynerda foydalanuvchi qanday bo'lishi kerak?", "options": ["root", "non-root", "Farqi yo'q", "admin"], "correctIndex": 1, "explanation": "Root konteynerdan chiqish xavfini oshiradi." },
+      { "text": "Konteyner VM'dan nimasi bilan yengil?", "options": ["Kichik disk", "OS yadrosini host bilan ulashadi — alohida OS yuklamaydi", "Kam RAM faqat", "Tezroq disk"], "correctIndex": 1, "explanation": "Shuning uchun soniyalarda ishga tushadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "04-docker-compose-multi-stage-build",
+    "title": "Test — Docker Compose va multi-stage build",
+    "questions": [
+      { "text": "Compose'da xizmatlar bir-birini qanday topadi?", "options": ["IP orqali", "Xizmat nomi = hostname (avtomatik DNS)", "Port orqali", "Volume orqali"], "correctIndex": 1, "explanation": "Bitta tarmoqdagi konteynerlar nom bilan murojaat qiladi." },
+      { "text": "DB tayyorligini kutish uchun nima ishlatiladi?", "options": ["sleep", "depends_on + healthcheck (condition: service_healthy)", "restart", "volume"], "correctIndex": 1, "explanation": "Oddiy depends_on faqat ishga tushish tartibini belgilaydi." },
+      { "text": "Multi-stage build nima beradi?", "options": ["Tezlik faqat", "Kichik yakuniy image — build vositalari qolmaydi", "Xavfsizlik faqat", "Cache"], "correctIndex": 1, "explanation": "Build bosqichidan faqat kerakli artefakt ko'chiriladi." },
+      { "text": "DB ma'lumoti qanday saqlanadi?", "options": ["Konteyner ichida", "Named volume'da", "Bind mount majburiy", "Saqlanmaydi"], "correctIndex": 1, "explanation": "Konteyner o'chsa ham ma'lumot qoladi." },
+      { "text": "«profiles» nima uchun ishlatiladi?", "options": ["Foydalanuvchi", "Shartli xizmatlar — faqat kerakli profilda ishga tushadi", "Tarmoq", "Volume"], "correctIndex": 1, "explanation": "Masalan faqat dev muhitida kerakli vositalar." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "05-cicd-github-actions",
+    "title": "Test — CI/CD (GitHub Actions)",
+    "questions": [
+      { "text": "Continuous Delivery va Deployment qanday farqlanadi?", "options": ["Farqi yo'q", "Delivery — deploy'ga tayyor; Deployment — avtomatik deploy qilinadi", "Deployment — tayyor", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Delivery'da odatda qo'lda tasdiq bosqichi bo'ladi." },
+      { "text": "Workflow ierarxiyasi qanday?", "options": ["Step → job → workflow", "Workflow → job → step → action", "Action → workflow", "Job → workflow"], "correctIndex": 1, "explanation": "Joblar parallel ishlaydi; needs bilan bog'lanadi." },
+      { "text": "«concurrency» nima beradi?", "options": ["Parallel job", "Bir branchda eski, tugallanmagan run'larni bekor qiladi", "Cache", "Secret"], "correctIndex": 1, "explanation": "Resurs tejaydi va noto'g'ri deploy tartibini oldini oladi." },
+      { "text": "OIDC nima uchun ishlatiladi?", "options": ["Login", "Parolsiz bulut autentifikatsiyasi — uzoq muddatli kalit kerak emas", "Cache", "Test"], "correctIndex": 1, "explanation": "Uzoq yashovchi AWS kalitlarini saqlash zaruratini yo'qotadi." },
+      { "text": "«Canary» deploy nima?", "options": ["Hammasi birdan", "Yangi versiyani kichik foizdagi trafikka berish", "Eski versiya", "Rollback"], "correctIndex": 1, "explanation": "Blue-green — ikki muhit almashtiriladi; rolling — bosqichma-bosqich." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "06-cloud-aws-ec2-s3-rds-lightsail",
+    "title": "Test — Cloud (AWS)",
+    "questions": [
+      { "text": "IaaS, PaaS, SaaS qanday farqlanadi?", "options": ["Narx", "Boshqaruv darajasi: infratuzilma → platforma → tayyor dastur", "Tezlik", "Hajm"], "correctIndex": 1, "explanation": "EC2 — IaaS; Lightsail — soddalashtirilgan; RDS — managed DB." },
+      { "text": "«Security Group» nima?", "options": ["Foydalanuvchi guruhi", "Virtual firewall — instance darajasidagi kirish nazorati", "IAM rol", "VPC"], "correctIndex": 1, "explanation": "Server ichidagi ufw bilan birga ikki qatlam himoya beradi." },
+      { "text": "«Presigned URL» nima beradi?", "options": ["Doimiy havola", "Vaqtinchalik, imzolangan S3 kirish havolasi", "Public bucket", "CDN"], "correctIndex": 1, "explanation": "Bucket'ni ochiq qilmasdan fayl ulashish imkonini beradi." },
+      { "text": "IAM'da qaysi tamoyil asosiy?", "options": ["Hammaga admin", "Least privilege — minimal zarur huquq", "Bitta user", "Root ishlatish"], "correctIndex": 1, "explanation": "Rol va policy orqali aniq ruxsatlar beriladi." },
+      { "text": "«Multi-AZ» RDS nima beradi?", "options": ["Tezlik", "Yuqori mavjudlik — boshqa zonada standby nusxa", "Arzonlik", "Backup faqat"], "correctIndex": 1, "explanation": "Read replica esa o'qish yukini taqsimlaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "07-deployment-pm2-domen-ssl",
+    "title": "Test — Deployment, PM2, SSL",
+    "questions": [
+      { "text": "PM2 nima uchun kerak?", "options": ["Build", "Jarayonni doimiy ishlatish, qulasa qayta tiklash, cluster rejimi", "Test", "Cache"], "correctIndex": 1, "explanation": "pm2 startup + save bilan boot'da avtomatik ishga tushadi." },
+      { "text": "«pm2 reload» nima beradi?", "options": ["To'liq to'xtatish", "Zero-downtime qayta yuklash", "Log tozalash", "O'chirish"], "correctIndex": 1, "explanation": "restart esa qisqa uzilish keltirib chiqaradi." },
+      { "text": "A record va CNAME qanday farqlanadi?", "options": ["Farqi yo'q", "A — IP manzilga; CNAME — boshqa domen nomiga", "CNAME — IP'ga", "Ikkalasi IP'ga"], "correctIndex": 1, "explanation": "TTL o'zgarish tarqalish tezligini belgilaydi." },
+      { "text": "Let's Encrypt sertifikati qanday yangilanadi?", "options": ["Qo'lda", "Certbot orqali avtomatik (auto-renew)", "Yangilanmaydi", "Har yili sotib olinadi"], "correctIndex": 1, "explanation": "Sertifikat muddati 90 kun." },
+      { "text": "«Graceful shutdown» nima uchun kerak?", "options": ["Tezlik", "Faol so'rovlarni yakunlab, keyin to'xtash — uzilishsiz deploy", "Log", "Cache"], "correctIndex": 1, "explanation": "SIGTERM signalini ushlab, serverni to'g'ri yopish kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "08-kubernetes-asoslari",
+    "title": "Test — Kubernetes asoslari",
+    "questions": [
+      { "text": "Kubernetes'ning eng kichik birligi qaysi?", "options": ["Container", "Pod", "Node", "Deployment"], "correctIndex": 1, "explanation": "Pod bir yoki bir necha konteynerni o'z ichiga oladi." },
+      { "text": "Deployment nima beradi?", "options": ["Tarmoq", "Deklarativ boshqaruv — rolling update va rollback", "Saqlash", "Secret"], "correctIndex": 1, "explanation": "U ReplicaSet orqali pod sonini ta'minlaydi." },
+      { "text": "Service nima uchun kerak?", "options": ["Saqlash", "Pod'lar uchun barqaror manzil va discovery", "Log", "Build"], "correctIndex": 1, "explanation": "Pod IP'lari o'zgaruvchan — Service doimiy nom beradi." },
+      { "text": "Ingress nima qiladi?", "options": ["Pod yaratadi", "HTTP routing, domen va TLS terminatsiyasi", "Volume ulaydi", "Secret saqlaydi"], "correctIndex": 1, "explanation": "Klasterga tashqi kirish nuqtasi vazifasini bajaradi." },
+      { "text": "«HPA» nima?", "options": ["Health check", "Horizontal Pod Autoscaler — yukka qarab pod sonini o'zgartiradi", "Storage", "Network policy"], "correctIndex": 1, "explanation": "Metrikalar (CPU/memory) asosida ishlaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "09-monitoring-logging-prometheus-grafana-sentry",
+    "title": "Test — Monitoring va logging",
+    "questions": [
+      { "text": "Observability'ning uch ustuni qaysi?", "options": ["CPU, RAM, disk", "Metrics, logs, traces", "Alert, dashboard, log", "SLI, SLO, SLA"], "correctIndex": 1, "explanation": "Uchalasi birga to'liq manzara beradi." },
+      { "text": "Prometheus qanday model ishlatadi?", "options": ["Push", "Pull — o'zi scrape qiladi", "Stream", "Batch"], "correctIndex": 1, "explanation": "Exporter'lar metrikalarni HTTP orqali taqdim etadi." },
+      { "text": "«Counter» va «Gauge» qanday farqlanadi?", "options": ["Farqi yo'q", "Counter faqat o'sadi; Gauge ko'tarilib-tushadi", "Gauge faqat o'sadi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Histogram — taqsimot (masalan javob vaqti) uchun." },
+      { "text": "Sentry nima uchun ishlatiladi?", "options": ["Metrika", "Error tracking — stack trace va kontekst bilan", "Log agregatsiya", "Alert"], "correctIndex": 1, "explanation": "Release bilan bog'lab, qaysi deploy xato keltirganini ko'rsatadi." },
+      { "text": "«Error budget» nima?", "options": ["Xarajat", "SLO doirasida ruxsat etilgan nosozlik miqdori", "Xatolar soni", "Alert"], "correctIndex": 1, "explanation": "U yangi funksiya va barqarorlik o'rtasida muvozanat beradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "10-infrastructure-as-code-terraform",
+    "title": "Test — Terraform va IaC",
+    "questions": [
+      { "text": "Terraform qanday yondashuvga asoslangan?", "options": ["Imperative", "Declarative — kerakli holat tavsiflanadi", "Skript", "GUI"], "correctIndex": 1, "explanation": "Terraform joriy va kerakli holat farqini o'zi hisoblaydi." },
+      { "text": "«tfstate» fayli nima uchun kritik?", "options": ["Log", "Haqiqiy infratuzilma holatini saqlaydi va sirlar bo'lishi mumkin", "Cache", "Config"], "correctIndex": 1, "explanation": "Remote backend (S3 + lock) bilan saqlanishi kerak." },
+      { "text": "«terraform plan» nima qiladi?", "options": ["Yaratadi", "O'zgarishlarni oldindan ko'rsatadi — hech narsa o'zgartirmaydi", "O'chiradi", "State yangilaydi"], "correctIndex": 1, "explanation": "CI/CD'da plan PR'da, apply merge'dan keyin bajariladi." },
+      { "text": "«Drift» nima?", "options": ["Xato", "Haqiqiy infratuzilma state'dan farq qilib qolishi", "Migration", "Rollback"], "correctIndex": 1, "explanation": "Qo'lda (ClickOps) o'zgartirish drift keltirib chiqaradi." },
+      { "text": "«module» nima beradi?", "options": ["Tezlik", "Qayta ishlatiladigan infratuzilma bloki", "State", "Provider"], "correctIndex": 1, "explanation": "Takrorlanuvchi resurs to'plamini parametrlab ishlatadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "10-qism-devops", "article": "11-environment-secrets-boshqaruvi",
+    "title": "Test — Environment va secrets boshqaruvi",
+    "questions": [
+      { "text": "Config va secret qanday farqlanadi?", "options": ["Farqi yo'q", "Secret — oshkor bo'lsa zarar keltiradigan maxfiy qiymat", "Config maxfiy", "Ikkalasi ochiq"], "correctIndex": 1, "explanation": "12-factor: ikkalasi ham kodda emas, environment'da." },
+      { "text": "«Open-source testi» nima?", "options": ["Litsenziya", "«Kodni ochiq qilsam, xavfsiz qoladimi?» savoli", "Test turi", "Audit"], "correctIndex": 1, "explanation": "Agar yo'q bo'lsa — kodda sir bor degani." },
+      { "text": "Git'ga tushib qolgan kalit bilan nima qilinadi?", "options": ["Commit o'chiriladi", "Kalit darhol BEKOR qilinadi va yangisi yaratiladi", "E'tiborsiz", "Faylni o'chirish"], "correctIndex": 1, "explanation": "Git tarixi abadiy — faqat o'chirish yetarli emas." },
+      { "text": "«Secret rotation» nima?", "options": ["Shifrlash", "Kalitlarni muntazam almashtirish", "Backup", "Audit"], "correctIndex": 1, "explanation": "Sizib chiqqan kalitning zarar oynasini qisqartiradi." },
+      { "text": "Sirlarni skanerlash uchun qaysi vosita ishlatiladi?", "options": ["ESLint", "gitleaks", "Prettier", "Jest"], "correctIndex": 1, "explanation": "CI'da ishga tushirilsa, sir push bo'lishining oldi olinadi." }
+    ]
+  }
+]

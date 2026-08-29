@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "01-html-tuzilma-semantika-formalar",
+    "title": "Test — HTML tuzilma va semantika",
+    "questions": [
+      { "text": "HTML qanday til?", "options": ["Dasturlash tili", "Belgilash (markup) tili", "Skript tili", "Ma'lumotlar bazasi tili"], "correctIndex": 1, "explanation": "Teg + element + atributdan iborat; mantiq va shart yo'q." },
+      { "text": "Semantik teglar nima uchun «div» dan ustun?", "options": ["Tezroq", "Accessibility, SEO va o'qishlilik uchun", "Kamroq kod", "Yangi"], "correctIndex": 1, "explanation": "header, nav, main, article, section, aside, footer." },
+      { "text": "HTML daraxti brauzerda nimaga aylanadi?", "options": ["CSSOM", "DOM", "AST", "Render tree"], "correctIndex": 1, "explanation": "DOM — JavaScript o'zgartira oladigan jonli daraxt." },
+      { "text": "«label» tegining vazifasi nima?", "options": ["Bezak", "Input bilan bog'lanib, accessibility va bosish sohasini beradi", "Validatsiya", "Yuborish"], "correctIndex": 1, "explanation": "Forma elementlari: form, input, label, select, textarea, button." },
+      { "text": "«img» tegida «alt» nima uchun kerak?", "options": ["Bezak", "Rasm yuklanmasa va screen reader uchun matn", "Hajm belgilash", "Havola"], "correctIndex": 1, "explanation": "Accessibility talabi va SEO uchun ham muhim." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "02-css-asoslari-selektorlar-box-model",
+    "title": "Test — CSS asoslari va box model",
+    "questions": [
+      { "text": "«box-sizing: border-box» nima qiladi?", "options": ["Hech narsa", "Padding va border kenglikka KIRADI", "Marginni qo'shadi", "Elementni yashiradi"], "correctIndex": 1, "explanation": "Bu — deyarli har loyihada majburiy reset." },
+      { "text": "Specificity tartibi qanday?", "options": ["class > id > inline", "inline > id > class > element", "element > class", "Hammasi teng"], "correctIndex": 1, "explanation": "Specificity'ni past tuting va «!important» dan qoching." },
+      { "text": "Box model qanday qatlamlardan iborat?", "options": ["Content + border", "Content + padding + border + margin", "Padding + margin", "Faqat content"], "correctIndex": 1, "explanation": "Har element — «quti»; qatlamlar ichkaridan tashqariga." },
+      { "text": "«rem» qanday birlik?", "options": ["Qat'iy", "Nisbiy — root font-size ga bog'liq", "Foiz", "Piksel"], "correctIndex": 1, "explanation": "px — qat'iy; rem/%/vw — nisbiy va moslashuvchan." },
+      { "text": "Qaysi selektor kundalik ishda eng ko'p ishlatiladi?", "options": ["id", "class", "element", "inline style"], "correctIndex": 1, "explanation": "id kam ishlatiladi — u specificity'ni keskin oshiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "03-flexbox-chuqur",
+    "title": "Test — Flexbox",
+    "questions": [
+      { "text": "Flexbox necha o'lchamli layout?", "options": ["Bir o'lchamli", "Ikki o'lchamli", "Uch o'lchamli", "O'lchamsiz"], "correctIndex": 0, "explanation": "Ikki o'lchamli layout uchun Grid ishlatiladi." },
+      { "text": "«justify-content» qaysi o'q bo'ylab ishlaydi?", "options": ["Cross axis", "Main axis", "Ikkalasi", "Hech qaysi"], "correctIndex": 1, "explanation": "align-items — cross axis bo'ylab. O'qlar flex-direction bilan aylanadi." },
+      { "text": "Elementni to'liq markazlash uchun nima kerak?", "options": ["margin: auto only", "justify-content: center + align-items: center", "text-align: center", "position: absolute"], "correctIndex": 1, "explanation": "Flexbox markazlashning eng oddiy usuli." },
+      { "text": "«flex: 1» nima qiladi?", "options": ["Yashiradi", "Elementlarni teng kengaytiradi", "Kichiklashtiradi", "Aylantiradi"], "correctIndex": 1, "explanation": "flex — grow, shrink va basis ning qisqartmasi." },
+      { "text": "Elementlar orasidagi oraliq uchun nima ishlatiladi?", "options": ["margin only", "gap", "padding", "border"], "correctIndex": 1, "explanation": "flex-wrap bilan birga toza va boshqariladigan layout beradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "04-css-grid-positions-chuqur",
+    "title": "Test — CSS Grid va position",
+    "questions": [
+      { "text": "«fr» birligi nimani anglatadi?", "options": ["Piksel", "Egiluvchan ulush (fraction)", "Foiz", "Font size"], "correctIndex": 1, "explanation": "1fr 2fr — bo'sh joyni 1:2 nisbatda taqsimlaydi." },
+      { "text": "«auto-fit» va «minmax()» birgalikda nima beradi?", "options": ["Qat'iy to'r", "Media query'siz responsive to'r", "Animatsiya", "Rang"], "correctIndex": 1, "explanation": "repeat(auto-fit, minmax(200px, 1fr)) — klassik naqsh." },
+      { "text": "«grid-template-areas» nima uchun foydali?", "options": ["Tezlik", "Nomli, o'qishli sahifa skeleti", "Rang", "Animatsiya"], "correctIndex": 1, "explanation": "Layout kodda vizual ko'rinadi." },
+      { "text": "«position: sticky» qanday ishlaydi?", "options": ["Doim qotib turadi", "Scroll paytida belgilangan nuqtada yopishadi", "Oqimdan chiqadi", "Yashiradi"], "correctIndex": 1, "explanation": "relative/absolute/fixed/sticky — har biri oqimga boshqacha ta'sir qiladi." },
+      { "text": "Container naqshi qanday tuziladi?", "options": ["width: 100%", "max-width + margin: auto", "position: fixed", "display: flex"], "correctIndex": 1, "explanation": "Kontent kengligini boshqarishning standart usuli." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "05-responsive-dizayn-media-queries",
+    "title": "Test — Responsive dizayn",
+    "questions": [
+      { "text": "Responsive dizaynning birinchi majburiy qadami qaysi?", "options": ["Media query", "Viewport meta teg", "Flexbox", "Grid"], "correctIndex": 1, "explanation": "Usiz mobil brauzer sahifani kichraytirib ko'rsatadi." },
+      { "text": "«Mobile-first» yondashuvda qaysi media query ishlatiladi?", "options": ["max-width", "min-width", "Ikkalasi", "Hech qaysi"], "correctIndex": 1, "explanation": "Kamroq override va tozaroq kod beradi." },
+      { "text": "Breakpoint qanday tanlanadi?", "options": ["Qurilma modeliga qarab", "KONTENTGA qarab", "Tasodifiy", "Faqat 768px"], "correctIndex": 1, "explanation": "Umumiy qiymatlar: 576/768/992/1200px — lekin ular qat'iy qoida emas." },
+      { "text": "«clamp()» nima uchun ishlatiladi?", "options": ["Rang", "Fluid typography — media query'siz moslashuvchan o'lcham", "Animatsiya", "Grid"], "correctIndex": 1, "explanation": "clamp(min, ideal, max) — o'lchamni chegaralar ichida suzadi." },
+      { "text": "«prefers-reduced-motion» nimani tekshiradi?", "options": ["Ekran o'lchami", "Foydalanuvchi animatsiyani kamaytirishni so'raganini", "Rang rejimi", "Qurilma turi"], "correctIndex": 1, "explanation": "Accessibility talabi — animatsiyani hurmat bilan kamaytirish." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "06-scss-sass",
+    "title": "Test — SCSS / Sass",
+    "questions": [
+      { "text": "Sass nima?", "options": ["Framework", "Preprocessor — CSS'ga kompilyatsiya qilinadi", "Kutubxona", "Brauzer"], "correctIndex": 1, "explanation": "SCSS sintaksisi — CSS ning superseti." },
+      { "text": "«@mixin» va «@function» qanday farqlanadi?", "options": ["Farqi yo'q", "mixin — e'lonlar bloki; function — qiymat qaytaradi", "function — bloklar", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "@include bilan mixin chaqiriladi; @content bloк uzatadi." },
+      { "text": "«_fayl.scss» nomidagi pastki chiziq nimani anglatadi?", "options": ["Yashirin fayl", "Partial — alohida CSS'ga kompilyatsiya qilinmaydi", "Xato", "Test fayli"], "correctIndex": 1, "explanation": "@use bilan modullarga bo'lishning zamonaviy usuli." },
+      { "text": "Sass'da bo'lish uchun nima ishlatiladi?", "options": ["/ operatori", "math.div (@use 'sass:math')", "% operatori", "divide()"], "correctIndex": 1, "explanation": "Built-in modullar: sass:math, sass:map, sass:color." },
+      { "text": "Nesting bilan bog'liq asosiy maslahat qaysi?", "options": ["Chuqurroq qiling", "Chuqur qilmang — specificity oshib ketadi", "Ishlatmang", "Faqat 5 daraja"], "correctIndex": 1, "explanation": "«&» bilan ierarxiyani aks ettirish qulay, lekin me'yorida." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "07-tailwind-css",
+    "title": "Test — Tailwind CSS",
+    "questions": [
+      { "text": "Tailwind qanday yondashuvga asoslangan?", "options": ["Component-first", "Utility-first — kichik, bitta vazifali class'lar", "Semantic-first", "BEM"], "correctIndex": 1, "explanation": "flex, p-4, bg-blue-500 — HTML'da birlashtiriladi." },
+      { "text": "Tailwind'ning «izchil shkala»si nimani hal qiladi?", "options": ["Tezlikni", "Sehrli raqamlarni — spacing va rang tizimlashtiriladi", "Xavfsizlikni", "SEO ni"], "correctIndex": 1, "explanation": "p-1..p-12, rang 50..950 — dizayn tizimi tayyor keladi." },
+      { "text": "«md:» prefiksi nimani bildiradi?", "options": ["Rang", "Responsive breakpoint (mobile-first)", "Holat", "Animatsiya"], "correctIndex": 1, "explanation": "hover:, dark: kabi variantlar bilan stacklanadi." },
+      { "text": "«@apply» ni qanday ishlatish tavsiya etiladi?", "options": ["Har joyda", "KAM — takrorlanishni komponent hal qiladi", "Umuman ishlatmaslik", "Faqat rang uchun"], "correctIndex": 1, "explanation": "@apply ni ortiqcha ishlatish Tailwind foydasini yo'qotadi." },
+      { "text": "«Iflos HTML» muammosi qanday hal qilinadi?", "options": ["CSS faylga o'tkazish", "Komponent, IntelliSense va Prettier plugin", "Class'larni qisqartirish", "Hal qilib bo'lmaydi"], "correctIndex": 1, "explanation": "Takrorlanuvchi bloklar komponentga chiqariladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "08-figma-asoslari",
+    "title": "Test — Figma asoslari",
+    "questions": [
+      { "text": "Dasturchi Figmada nima qiladi?", "options": ["Chizadi", "O'qiydi va kodga tarjima qiladi", "Faqat eksport qiladi", "Hech narsa"], "correctIndex": 1, "explanation": "Dev Mode dasturchi uchun o'lcham, rang, shrift va masofani beradi." },
+      { "text": "Figmadagi «Auto Layout» CSS'da nimaga mos keladi?", "options": ["Grid", "Flexbox", "Position", "Float"], "correctIndex": 1, "explanation": "Constraints = responsive; Component = React komponent; Variables = tokenlar." },
+      { "text": "Figma tuzilmasi qanday?", "options": ["File → Page → Frame → Layer", "Layer → Frame → Page → File", "Frame → File", "Faqat Layer"], "correctIndex": 1, "explanation": "Layer eng kichik birlik, File eng katta konteyner." },
+      { "text": "Masofani aniqlash uchun nima qilinadi?", "options": ["Taxmin qilinadi", "Alt bilan o'lchanadi va nusxalanadi", "Ko'z bilan chamalanadi", "Dizaynerdan so'raladi"], "correctIndex": 1, "explanation": "Qiymatlarni taxmin qilish pixel-perfect natijani buzadi." },
+      { "text": "Figmadan kodga o'tish jarayoni qanday?", "options": ["Darhol kod", "Kuzat → tuzilma → layout → o'lcha → kod → solishtir", "Eksport → kod", "Faqat rang olish"], "correctIndex": 1, "explanation": "Kod mobile-first yoziladi va oxirida solishtiriladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "01-qism-html-css", "article": "09-css-arxitektura-bem-accessibility",
+    "title": "Test — CSS arxitektura, BEM va accessibility",
+    "questions": [
+      { "text": "BEM nomlash sxemasi qanday?", "options": ["block-element-modifier", "block__element--modifier", "block.element.modifier", "block_element_modifier"], "correctIndex": 1, "explanation": "Har selektor bitta class → tekis specificity, konflikt yo'q." },
+      { "text": "Accessibility'ning eng katta ulushini nima beradi?", "options": ["ARIA", "Semantik HTML (~80%)", "JavaScript", "CSS"], "correctIndex": 1, "explanation": "Uch ustun: semantik HTML, klaviatura, rang kontrasti." },
+      { "text": "AA darajasi uchun minimal rang kontrasti qancha?", "options": ["2:1", "3:1", "4.5:1", "7:1"], "correctIndex": 2, "explanation": "Katta matn uchun 3:1 ham yetarli bo'lishi mumkin." },
+      { "text": "ARIA semantik HTMLning o'rnini bosadimi?", "options": ["Ha", "Yo'q — to'ldiradi, faqat zarurda ishlatiladi", "Faqat formada", "Har doim afzal"], "correctIndex": 1, "explanation": "aria-label, role, aria-live — semantik teg yetmaganda." },
+      { "text": "Accessibility auditi uchun qaysi vosita ishlatiladi?", "options": ["Prettier", "Lighthouse / axe DevTools", "ESLint", "Webpack"], "correctIndex": 1, "explanation": "Klaviatura sinovini ham qo'lda o'tkazish kerak." }
+    ]
+  }
+]

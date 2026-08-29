@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "01-zamonlar-tizimi-review",
+    "title": "Test — Zamonlar tizimi",
+    "questions": [
+      { "text": "Perfect Continuous aspektining formulasi qanday?", "options": ["BE + V-ing", "HAVE + V3", "HAVE BEEN + V-ing", "V + s"], "correctIndex": 2, "explanation": "Aspekt formulasi har zamonda bir xil: Simple / BE+V-ing / HAVE+V3 / HAVE BEEN+V-ing." },
+      { "text": "«since, for, ever, just, yet» qaysi zamonning kalitlari?", "options": ["Past Simple", "Present Perfect", "Present Continuous", "Future"], "correctIndex": 1, "explanation": "yesterday/ago/last → Past Simple; hozir/vaqtincha → Present Continuous." },
+      { "text": "«by + kelajak vaqt» qaysi zamonni talab qiladi?", "options": ["Future Simple", "Future Perfect", "Present Simple", "Future Continuous"], "correctIndex": 1, "explanation": "I'll have finished by Friday." },
+      { "text": "O'tmishdan oldingi voqea qaysi zamonda beriladi?", "options": ["Past Simple", "Past Perfect", "Present Perfect", "Past Continuous"], "correctIndex": 1, "explanation": "had + V3 — «o'tmishdan oldingi o'tmish»." },
+      { "text": "Zamon tanlashda birinchi navbatda nimaga qaraladi?", "options": ["Fe'l turiga", "Signal so'z va kontekstga", "Ega shakliga", "Gap uzunligiga"], "correctIndex": 1, "explanation": "Signal so'zlar zamon tanlashning eng ishonchli kaliti." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "02-narrative-tenses-used-to",
+    "title": "Test — Hikoya zamonlari va used to",
+    "questions": [
+      { "text": "Hikoyaning necha qatlami bor?", "options": ["2", "3", "4", "5"], "correctIndex": 2, "explanation": "Asosiy voqealar, fon, flashback, flashbackdan oldingi davomiylik." },
+      { "text": "«be used to + V-ing» qanday ma'no beradi?", "options": ["O'tmish odati", "O'rganib qolgan (holat)", "O'rganib borish", "Kelajak reja"], "correctIndex": 1, "explanation": "get used to + V-ing — o'rganib borish jarayoni." },
+      { "text": "«would» o'tmish odati sifatida qaysi holatda ishlatilmaydi?", "options": ["Takroriy harakat", "Holat fe'llari bilan", "Ko'plikda", "Inkorda"], "correctIndex": 1, "explanation": "Holat uchun faqat used to: I used to be shy (I would be — xato)." },
+      { "text": "Flashbackdan oldingi davomiylik qaysi zamonda beriladi?", "options": ["Past Simple", "Past Continuous", "Past Perfect Continuous", "Present Perfect"], "correctIndex": 2, "explanation": "had been + V-ing — o'sha nuqtagacha qancha vaqt davom etganini ko'rsatadi." },
+      { "text": "Fon va davom etayotgan harakat qaysi zamonda beriladi?", "options": ["Past Simple", "Past Continuous", "Past Perfect", "Present Perfect"], "correctIndex": 1, "explanation": "was/were + V-ing — sahna va uzilgan harakat uchun." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "03-future-forms-toliq",
+    "title": "Test — Kelajak shakllari (to'liq)",
+    "questions": [
+      { "text": "«be due to» qanday ma'no beradi?", "options": ["Spontan qaror", "Belgilangan, rasmiy reja", "Bashorat", "Odat"], "correctIndex": 1, "explanation": "be to / be due to — rasmiy yoki belgilangan reja." },
+      { "text": "«will have been V-ing» nimani bildiradi?", "options": ["Muddatgacha tugaydi", "Muddatgacha davom etgan bo'ladi", "Hozir davom etyapti", "Yaqin payt"], "correctIndex": 1, "explanation": "will have + V3 — tugaydi; will have been V-ing — davom etgan bo'ladi." },
+      { "text": "«be bound to» qanday ma'no beradi?", "options": ["Ehtimol", "Muqarrar", "Rejalashtirilgan", "Bekor qilingan"], "correctIndex": 1, "explanation": "be likely to — ehtimol; be bound to — muqarrar." },
+      { "text": "«I'll call you as soon as I ___ » — to'g'ri shakl?", "options": ["will arrive", "arrive", "am arriving", "will have arrived"], "correctIndex": 1, "explanation": "when/if/as soon as/until/before/after dan keyin PRESENT." },
+      { "text": "Dalilga asoslangan bashorat uchun qaysi shakl ishlatiladi?", "options": ["will", "going to", "Present Simple", "be about to"], "correctIndex": 1, "explanation": "will — fikrga asoslangan bashorat; going to — dalilga asoslangan." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "04-future-in-the-past",
+    "title": "Test — Future in the past",
+    "questions": [
+      { "text": "«will» o'tmishdan kelajakda nimaga aylanadi?", "options": ["was going to", "would", "was to", "had"], "correctIndex": 1, "explanation": "Reported speech: «I will» → he said he WOULD." },
+      { "text": "«was/were going to» ko'pincha qanday ottenka beradi?", "options": ["Reja bajarildi", "Reja bajarilmadi", "Reja hali ham bor", "Rasmiy reja"], "correctIndex": 1, "explanation": "I was going to call, but I forgot." },
+      { "text": "«was/were about to» qanday ma'no beradi?", "options": ["Uzoq kelajak", "Shu zahoti bo'lay deb turgan edi (...when... burilishi bilan)", "Odat", "Majburiyat"], "correctIndex": 1, "explanation": "I was about to leave when the phone rang." },
+      { "text": "«was to have + V3» nimani bildiradi?", "options": ["Bajarilgan reja", "Belgilangan, lekin bajarilmagan reja", "Odat", "Ehtimol"], "correctIndex": 1, "explanation": "He was to have arrived yesterday — kelishi kerak edi, kelmadi." },
+      { "text": "«would» ning nechta asosiy ma'nosi bor?", "options": ["1", "2", "3 — o'tmish odati, conditional, o'tmishdan kelajak", "4"], "correctIndex": 2, "explanation": "Ma'noni faqat kontekst ajratadi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "05-third-conditional",
+    "title": "Test — Third conditional",
+    "questions": [
+      { "text": "Third conditional formulasi qanday?", "options": ["If + Past, would V1", "If + had V3, would have V3", "If + Present, will V1", "If + would, had V3"], "correctIndex": 1, "explanation": "O'tmish noreal: If I had studied, I would have passed." },
+      { "text": "«If I would have known...» — bu nega xato?", "options": ["known xato", "if-qismda would ishlatilmaydi — faqat had + V3", "have xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: If I had known..." },
+      { "text": "«would of» — bu nega xato?", "options": ["would xato", "«of» emas, «have»: would've = would have", "V3 xato", "Xato emas"], "correctIndex": 1, "explanation": "Talaffuz o'xshashligidan kelib chiqqan imlo xatosi." },
+      { "text": "«could have + V3» natija qismida qanday ottenka beradi?", "options": ["Aniq natija", "Imkon bor edi", "Ehtimol", "Majburiyat"], "correctIndex": 1, "explanation": "would have (aniq) / could have (imkon) / might have (ehtimol)." },
+      { "text": "2-shart va 3-shart qanday farqlanadi?", "options": ["Farqi yo'q", "2-shart hozir noreal, 3-shart o'tmish noreal", "3-shart hozir", "Ikkalasi o'tmish"], "correctIndex": 1, "explanation": "If + Past, would V1 ↔ If + Past Perfect, would have V3." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "06-mixed-conditionals",
+    "title": "Test — Mixed conditionals",
+    "questions": [
+      { "text": "«If I had saved, I would be rich now» — bu qanday aralash shart?", "options": ["O'tmish shart → hozirgi natija", "Hozirgi shart → o'tmish natija", "Ikkalasi hozir", "Ikkalasi o'tmish"], "correctIndex": 0, "explanation": "Mixed 1 — eng ko'p uchraydigan turi; now/today/still bilan keladi." },
+      { "text": "«If I were braver, I would have asked» — bu qanday aralash shart?", "options": ["O'tmish shart → hozirgi natija", "Hozirgi xususiyat → o'tmishdagi natija", "Ikkalasi hozir", "Ikkalasi kelajak"], "correctIndex": 1, "explanation": "Mixed 2: If + Past Simple, would have + V3." },
+      { "text": "Aralash shartni tuzishning birinchi qadami qaysi?", "options": ["Fe'lni tanlash", "Shart qachon sodir bo'lganini aniqlash", "Natijani yozish", "Vergul qo'yish"], "correctIndex": 1, "explanation": "1) Shart qachon? 2) Natija qachon? 3) Birlashtir." },
+      { "text": "Hozirgi shart uchun qaysi shakl ishlatiladi?", "options": ["had + V3", "Past Simple", "would have", "will"], "correctIndex": 1, "explanation": "O'tmish shart uchun esa had + V3." },
+      { "text": "O'tmishdagi natija uchun qaysi shakl ishlatiladi?", "options": ["would + V1", "would have + V3", "will + V1", "had + V3"], "correctIndex": 1, "explanation": "Hozirgi natija uchun would + V1." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "07-conditional-inversion-alternatives",
+    "title": "Test — Shart inversiyasi va muqobillari",
+    "questions": [
+      { "text": "«If I had known» ni inversiya bilan qanday beramiz?", "options": ["Did I know", "Had I known", "Have I known", "Would I know"], "correctIndex": 1, "explanation": "Rasmiy uslubda «if» tushadi, yordamchi fe'l oldinga chiqadi." },
+      { "text": "«If I were you» ning inversiyasi qanday?", "options": ["Was I you", "Were I you", "Am I you", "Should I be you"], "correctIndex": 1, "explanation": "«If you should need» → «Should you need»." },
+      { "text": "Inversiyada inkor qanday beriladi?", "options": ["Hadn't I known", "Had I NOT known — qisqarmaydi", "Not had I known", "Inkor bo'lmaydi"], "correctIndex": 1, "explanation": "Inversiyada qisqartma shakl ishlatilmaydi." },
+      { "text": "«but for + ot» nimani anglatadi?", "options": ["...uchun", "...bo'lmaganida (= if it weren't for)", "...ga qaramay", "...dan keyin"], "correctIndex": 1, "explanation": "But for your help, I would have failed." },
+      { "text": "«otherwise» qanday ma'no beradi?", "options": ["Shuning uchun", "Aks holda (= if not)", "Chunki", "Garchi"], "correctIndex": 1, "explanation": "Hurry up, otherwise we'll be late." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "08-wish-it-is-time-would-rather",
+    "title": "Test — Wish, it's time, would rather",
+    "questions": [
+      { "text": "«I wish I ___ fly» (qobiliyat) — to'g'ri shakl?", "options": ["can", "could", "will", "would"], "correctIndex": 1, "explanation": "Qobiliyat haqidagi orzu uchun wish + could." },
+      { "text": "«I wish I would be taller» — bu nega xato?", "options": ["taller xato", "O'zi haqida wish + would ishlatilmaydi: I wish I were taller", "wish xato", "Xato emas"], "correctIndex": 1, "explanation": "wish + would faqat boshqa odamning harakati haqida ishlatiladi." },
+      { "text": "«It's time we ___ » — to'g'ri shakl?", "options": ["leave", "left (Past Simple)", "will leave", "have left"], "correctIndex": 1, "explanation": "It's (high/about) time + Past Simple — vaqti keldi, lekin hali bajarilmadi." },
+      { "text": "«wish» va «hope» qanday farqlanadi?", "options": ["Farqi yo'q", "wish — noreal; hope — real kelajak", "hope — noreal", "Ikkalasi real"], "correctIndex": 1, "explanation": "I wish I were rich ↔ I hope you pass the exam." },
+      { "text": "«I wish I had known» qanday afsusni bildiradi?", "options": ["Hozirgi", "O'tmishdagi", "Kelajakdagi", "Doimiy"], "correctIndex": 1, "explanation": "wish + Past Perfect — o'tmishdagi ishdan afsus." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "09-modals-deduction",
+    "title": "Test — Xulosa modallari (B2)",
+    "questions": [
+      { "text": "100% inkor xulosa uchun qaysi modal ishlatiladi?", "options": ["mustn't", "can't / couldn't", "shouldn't", "won't"], "correctIndex": 1, "explanation": "mustn't — TA'QIQ, xulosa emas." },
+      { "text": "«He must have forgotten» qaysi zamonga tegishli?", "options": ["Hozirgi", "O'tmishdagi xulosa", "Kelajak", "Doimiy"], "correctIndex": 1, "explanation": "Hozir: must be / must be doing; o'tmish: must have + V3." },
+      { "text": "~50% ishonch uchun qaysi modallar ishlatiladi?", "options": ["must", "might / may / could", "can't", "will"], "correctIndex": 1, "explanation": "Ular hozir ham, o'tmish ham (might have + V3) shaklida keladi." },
+      { "text": "«should» xulosa sifatida qanday ma'no beradi?", "options": ["100% ishonch", "Kutilyapti — must dan kamroq ishonch", "Ta'qiq", "Imkonsizlik"], "correctIndex": 1, "explanation": "The train should be here soon — kutilgan holat." },
+      { "text": "«must be doing» qanday ma'no beradi?", "options": ["Majburiyat", "Hozir davom etayotgan harakat haqidagi xulosa", "O'tmish xulosa", "Kelajak"], "correctIndex": 1, "explanation": "He must be sleeping — hozir uxlayotgan bo'lsa kerak." }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "28-passiv-konstruksiyalar",
+    "title": "Test — Passiv konstruksiyalar",
+    "questions": [
+      { "text": "«Дом стро́ится рабо́чими» — bajaruvchi qaysi kelishikda?", "options": ["Bosh kelishik", "Vosita (Творительный)", "Qaratqich", "Jo'nalish"], "correctIndex": 1, "explanation": "Passivda bajaruvchi ikkinchi darajali va ТВОРИТЕЛЬНЫЙ kelishikda turadi: рабо́чими." },
+      { "text": "Jarayon va natijani qanday farqlaymiz?", "options": ["Farqi yo'q", "Jarayon → -ся (стро́ится); natija → qisqa sifatdosh (постро́ен)", "Jarayon → qisqa sifatdosh", "Faqat zamon bilan"], "correctIndex": 1, "explanation": "«Hali qilinyaptimi?» → -ся (qurilmoqda). «Qilib bo'lindimi?» → qisqa sifatdosh (qurilgan)." },
+      { "text": "Aktivdan passivga o'tishning uchinchi qadami qanday?", "options": ["Egani qaratqichga qo'yish", "Egani (И.) vosita kelishigiga qo'yish", "Egani o'chirish", "Fe'lni o'zgartirmaslik"], "correctIndex": 1, "explanation": "3 qadam: obyekt (В.) → ega (И.); fe'l → passiv shakl; ega (И.) → Творительный." },
+      { "text": "«Ма́ма мо́ется» va «Дом стро́ится» farqi nimada?", "options": ["Farqi yo'q, ikkalasi passiv", "Birinchisi o'zlik (qaytim), ikkinchisi passiv — ega jonsiz", "Birinchisi passiv", "Ikkalasi ham o'zlik"], "correctIndex": 1, "explanation": "Passiv -ся ni jonsiz ega va Творительный kelishikka qarab qaytim fe'ldan farqlang." },
+      { "text": "Passiv qaysi uslubda ko'proq ishlatiladi?", "options": ["Bolalar tilida", "Rasmiy, ilmiy va yangilik tilida", "Faqat she'rda", "Faqat suhbatda"], "correctIndex": 1, "explanation": "Bajaruvchi noma'lum yoki muhim bo'lmaganda passiv ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "29-funksional-fikr-bildirish",
+    "title": "Test — Fikr bildirish",
+    "questions": [
+      { "text": "«по-мо́ему» dan keyin «что» kerakmi?", "options": ["Ha, doim", "Yo'q — «что» siz ishlatiladi", "Faqat rasmiy uslubda", "Faqat inkorda"], "correctIndex": 1, "explanation": "по-мо́ему, э́то пра́вда — что siz. Lekin я ду́маю/счита́ю — что bilan." },
+      { "text": "«согла́сен» qaysi predlog va kelishik bilan?", "options": ["с + vosita kelishigi", "о + o'rin kelishigi", "к + jo'nalish", "predlogsiz"], "correctIndex": 0, "explanation": "Я согла́сен С ва́ми / с э́тим. Bundan tashqari согла́сен/согла́сна rodga moslashadi." },
+      { "text": "Ishonch darajasi bo'yicha eng past qaysi?", "options": ["я уве́рен", "скоре́е всего́", "возмо́жно", "вряд ли"], "correctIndex": 3, "explanation": "я уве́рен (100%) → скоре́е всего́ (80%) → наве́рное (70%) → возмо́жно (50%) → вряд ли (20%)." },
+      { "text": "«вряд ли» dan keyin fe'l qanday bo'ladi?", "options": ["Inkor bilan", "Inkorsiz", "Faqat infinitiv", "Faqat o'tgan zamon"], "correctIndex": 1, "explanation": "Вряд ли он придёт — «kelmasa kerak». Fe'l inkorsiz turadi." },
+      { "text": "Fikr bildirishning to'liq formulasi qaysi?", "options": ["Faqat fikr", "Kirish + fikr + asos", "Fikr + rad", "Asos + rad"], "correctIndex": 1, "explanation": "Fikr yolg'iz kelmaydi: потому́ что yoki де́ло в том, что bilan sababni qo'shing." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "30-funksional-his-tuygu",
+    "title": "Test — His-tuyg'u ifodalash",
+    "questions": [
+      { "text": "«боя́ться» qaysi kelishik bilan?", "options": ["Qaratqich (Р.) — кого́/чего́", "Jo'nalish (Д.)", "Vosita (Т.)", "Tushum (В.)"], "correctIndex": 0, "explanation": "боя́ться + Р. His fe'llarining kelishigini yaxlit yodlang: ра́доваться + Д, наде́яться на + В, беспоко́иться о + П." },
+      { "text": "«ра́доваться» qaysi kelishik bilan?", "options": ["Qaratqich", "Jo'nalish (Д.) — кому́/чему́", "Vosita", "O'rin"], "correctIndex": 1, "explanation": "ра́доваться успе́ху (Д.). Bu kelishik fe'l bilan birga yodlanadi." },
+      { "text": "«Мне гру́стно» — bu qanday qurilma?", "options": ["Shaxsli", "Impersonal: [Д] + qisqa shakl", "Passiv", "Buyruq"], "correctIndex": 1, "explanation": "мне гру́стно / оби́дно / ра́достно / стра́шно — rus tilining eng hissiy qurilmasi." },
+      { "text": "«К сожале́нию» dan keyin nima qo'yiladi?", "options": ["Hech narsa", "Vergul — bu kirish so'z", "Ikki nuqta", "Tire"], "correctIndex": 1, "explanation": "К сча́стью / К сожале́нию — kirish so'zlar, vergul bilan ajratiladi, kesim emas." },
+      { "text": "«сча́стлив» dagi «сч» qanday o'qiladi?", "options": ["s-ch", "[щ] — «sháslif»", "s-k", "ts"], "correctIndex": 1, "explanation": "сча́стлив / к сча́стью — «сч» = [щ], «т» tushib qoladi: «sháslif», «k-shástyu»." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "31-funksional-muhokama-bahs",
+    "title": "Test — Muhokama va bog'lovchi so'zlar",
+    "questions": [
+      { "text": "«во-пе́рвых, во-вторы́х» qaysi vazifani bajaradi?", "options": ["Xulosa", "Ketma-ketlik", "Qarama-qarshilik", "Misol"], "correctIndex": 1, "explanation": "Olti quti: ketma-ketlik, qo'shish, qarama-qarshilik, misol, xulosa, kuchaytirish/sabab." },
+      { "text": "«кро́ме того́» va «бо́лее того́» farqi nimada?", "options": ["Farqi yo'q", "кро́ме того́ — teng dalil; бо́лее того́ — kuchayuvchi", "бо́лее того́ — xulosa", "кро́ме того́ — misol"], "correctIndex": 1, "explanation": "бо́лее того́ oldingi fikrni kuchaytiradi, кро́ме того́ esa yangi teng dalil qo'shadi." },
+      { "text": "«таки́м о́бразом» va «в ито́ге» farqi nimada?", "options": ["Farqi yo'q", "таки́м о́бразом — fikrlarni umumlashtirish; в ито́ге — voqealar natijasi", "в ито́ге — misol", "таки́м о́бразом — sabab"], "correctIndex": 1, "explanation": "Birinchisi mantiqiy xulosa, ikkinchisi haqiqiy natija." },
+      { "text": "«с одно́й стороны́…» dan keyin nima kelishi shart?", "options": ["Hech narsa", "с друго́й стороны́ — juftini ham ishlating", "наприме́р", "сле́довательно"], "correctIndex": 1, "explanation": "Bu juft konstruksiya munozarali mavzuning yuragi — har doim ikkala yarmini ishlating." },
+      { "text": "«кро́ме того́» ichidagi «того́» qanday o'qiladi?", "options": ["togo", "tavó — «g» → «v»", "toho", "tagu"], "correctIndex": 1, "explanation": "кро́ме того́ → «króme-tavó». Uzun bog'lovchilarni bir nafasda tekis ayting." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "32-yozma-rasmiy-email-ariza",
+    "title": "Test — Rasmiy xat va ariza",
+    "questions": [
+      { "text": "Ish xatining birinchi bloki qaysi?", "options": ["Asosiy qism", "Murojaat (Уважа́емый... !)", "Imzo", "Yakun"], "correctIndex": 1, "explanation": "Besh blok qat'iy tartibda: murojaat → kirish → asosiy qism → yakun → imzo." },
+      { "text": "Arizada «kimga» va «kimdan» qaysi kelishiklarda yoziladi?", "options": ["Ikkalasi bosh kelishikda", "Кому́ — jo'nalish (Д.), от кого́ — qaratqich (Р.)", "Ikkalasi qaratqichda", "Кому́ — tushum, от кого́ — vosita"], "correctIndex": 1, "explanation": "Arizaning «shapka»si: кому — Д.п., от кого — Р.п." },
+      { "text": "«в связи́ с» qaysi kelishik bilan?", "options": ["Qaratqich (Р.)", "Vosita (Т.)", "Jo'nalish (Д.)", "Tushum (В.)"], "correctIndex": 1, "explanation": "в связи́ с + Т.п. Boshqalari: по причи́не + Р., в соотве́тствии с + Т., согла́сно + Д." },
+      { "text": "«согла́сно» qaysi kelishik bilan?", "options": ["Qaratqich", "Jo'nalish (Д.)", "Vosita", "O'rin"], "correctIndex": 1, "explanation": "согла́сно + ДАТЕЛЬНЫЙ: согла́сно прика́зу. Bu rasmiy uslubning tipik klishesi." },
+      { "text": "Rasmiy xatda «из-за» o'rniga nima ishlatiladi?", "options": ["потому́ что", "в связи́ с", "так как", "поэ́тому"], "correctIndex": 1, "explanation": "Rasmiy leksika: напра́вить > отпра́вить, в связи́ с > из-за, необходи́мо > на́до, сообщи́ть > сказа́ть." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "33-yozma-insho-matn-tuzish",
+    "title": "Test — Insho tuzish",
+    "questions": [
+      { "text": "Inshoning uch qismi qaysilar?", "options": ["Kirish, misol, xulosa", "Введе́ние, основна́я часть, заключе́ние", "Reja, matn, imzo", "Sarlavha, dalil, sana"], "correctIndex": 1, "explanation": "Kirish — mavzuni qo'yadi; asosiy qism — argumentlar; xulosa — umumlashtiradi." },
+      { "text": "Xulosada yangi argument keltirish mumkinmi?", "options": ["Ha, albatta", "Yo'q — xulosa faqat umumlashtiradi", "Faqat bitta", "Faqat rasmiy inshoda"], "correctIndex": 1, "explanation": "Заключе́ние — Таки́м о́бразом…; Я счита́ю, что… Yangi argument yo'q." },
+      { "text": "Yozishdan oldingi zaruriy qadam qaysi?", "options": ["Lug'at o'qish", "План tuzish", "Xulosani yozish", "Sarlavha tanlash"], "correctIndex": 1, "explanation": "Reja qaysi qismda nima yozishingizni belgilaydi va matnni tartiblaydi." },
+      { "text": "Imtihon inshosida qaysi uslub talab qilinadi?", "options": ["Og'zaki, jonli", "Neytral — og'zaki so'zlarsiz", "Badiiy, she'riy", "Jargon aralash"], "correctIndex": 1, "explanation": "Neytral uslub — imtihon talabi. Iboralar va og'zaki so'zlar mos kelmaydi." },
+      { "text": "Insho nechta mezon bo'yicha baholanadi?", "options": ["3 ta", "5 ta: tuzilish, mazmun, bog'lanish, uslub, grammatika", "7 ta", "2 ta"], "correctIndex": 1, "explanation": "Har inshoni shu besh mezon bo'yicha o'zingiz tekshiring." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "34-mavzuli-lugat-jamiyat-texnologiya-tabiat-madaniyat",
+    "title": "Test — Mavzuli lug'at (B1)",
+    "questions": [
+      { "text": "«по́льзоваться» qaysi kelishik bilan?", "options": ["Tushum (В.)", "Vosita (Т.)", "Qaratqich (Р.)", "Jo'nalish (Д.)"], "correctIndex": 1, "explanation": "по́льзоваться интерне́том — vosita kelishigi, predlogsiz." },
+      { "text": "«зави́симость от» qaysi kelishik bilan?", "options": ["Vosita", "Qaratqich (Р.)", "Jo'nalish", "O'rin"], "correctIndex": 1, "explanation": "зави́симость от интерне́та — от + qaratqich." },
+      { "text": "«окружа́ющая среда́» nimani anglatadi?", "options": ["Chorshanba kuni", "Atrof-muhit", "O'rtacha ko'rsatkich", "Muhit harorati"], "correctIndex": 1, "explanation": "Ekologiya lug'ati: окружа́ющая среда́, загрязне́ние, кли́мат, отхо́ды, ресу́рсы." },
+      { "text": "«защища́ть приро́ду» — obyekt qaysi kelishikda?", "options": ["Bosh kelishik", "Tushum (В.)", "Qaratqich", "Vosita"], "correctIndex": 1, "explanation": "защища́ть / загрязня́ть + ВИНИТЕЛЬНЫЙ. Har fe'lni kelishigi bilan yodlang." },
+      { "text": "«теа́тр» va «вы́ставка» bilan qaysi predloglar ishlatiladi?", "options": ["Ikkalasi «в»", "в теа́тр, lekin на вы́ставку", "Ikkalasi «на»", "в теа́тр, к вы́ставке"], "correctIndex": 1, "explanation": "в теа́тр / в музе́й, ammo на вы́ставку — bu juftlik yodlanadi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "35-b1-takror-checkpoint-test",
+    "title": "Test — B1 yakuniy nazorat",
+    "questions": [
+      { "text": "«Я хочу́, что́бы ты ___» — to'g'ri shakl qaysi?", "options": ["прийти́", "пришёл", "придёшь", "придёт"], "correctIndex": 1, "explanation": "Har xil ega → что́бы + o'tgan shakl. Bir ega bo'lganda esa infinitiv: хочу́ прийти́." },
+      { "text": "«Он не зна́ет ___» (пра́вда) — inkor obyekti qaysi kelishikda?", "options": ["пра́вду", "пра́вды", "пра́вде", "пра́вдой"], "correctIndex": 1, "explanation": "Inkorda obyekt В. → Р. ga o'tadi: не зна́ет пра́вды." },
+      { "text": "«Прочита́в письмо́, он позвони́л» — ravishdosh qanday munosabatni bildiradi?", "options": ["Bir vaqtda", "Avval tugagan harakat", "Kelasi zamon", "Shart"], "correctIndex": 1, "explanation": "Sov ravishdosh (-в) — asosiy harakatdan oldin tugagan." },
+      { "text": "«Е́сли бы у меня́ бы́ло вре́мя, я ___ пришёл» — bo'shliqqa nima?", "options": ["не", "бы", "то", "же"], "correctIndex": 1, "explanation": "Noreal shartda «бы» ikkala qismda ham turadi." },
+      { "text": "«Дом ___ рабо́чими» — passiv jarayon uchun to'g'ri shakl?", "options": ["стро́ит", "стро́ится", "стро́ил", "стро́ить"], "correctIndex": 1, "explanation": "Jarayon → -ся (стро́ится). Natija bo'lsa qisqa sifatdosh: постро́ен." }
+    ]
+  }
+]

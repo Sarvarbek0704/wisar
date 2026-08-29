@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "01-nestjs-kirish-arxitektura-modules-controllers-providers",
+    "title": "Test — NestJS arxitekturasi",
+    "questions": [
+      { "text": "NestJS ning asosiy uchligi qaysi?", "options": ["Router, model, view", "Module, Controller, Provider (Service)", "Entity, DTO, Pipe", "Guard, Pipe, Filter"], "correctIndex": 1, "explanation": "Controller yupqa, service qalin bo'lishi kerak." },
+      { "text": "NestJS nima ustiga qurilgan?", "options": ["Faqat o'zi", "Express (yoki Fastify) adapteri ustiga", "Koa", "Hapi"], "correctIndex": 1, "explanation": "Adapter almashtirilishi mumkin — arxitektura o'zgarmaydi." },
+      { "text": "Controller vazifasi nima?", "options": ["Biznes mantiq", "HTTP so'rovni qabul qilib service'ga uzatish", "DB bilan ishlash", "Validatsiya"], "correctIndex": 1, "explanation": "Biznes mantiq service qatlamiga tegishli." },
+      { "text": "«nest g resource» nima yaratadi?", "options": ["Faqat controller", "Modul, controller, service, DTO va test fayllarini", "Faqat modul", "Entity"], "correctIndex": 1, "explanation": "CLI feature-based tuzilmani avtomatik hosil qiladi." },
+      { "text": "NestJS falsafasining asosiy tamoyillari qaysi?", "options": ["Tezlik va kichiklik", "Consistency, scalability, testability, extensibility", "Faqat DI", "Faqat TypeScript"], "correctIndex": 1, "explanation": "Angular ilhomida qurilgan izchil arxitektura." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "02-dependency-injection-chuqur",
+    "title": "Test — Dependency Injection",
+    "questions": [
+      { "text": "DI qanday muammoni hal qiladi?", "options": ["Tezlik", "Qattiq bog'lanish — bog'liqlik tashqaridan beriladi", "Xotira", "Validatsiya"], "correctIndex": 1, "explanation": "Bu testlanadigan va DIP tamoyiliga mos kod beradi." },
+      { "text": "«useFactory» qachon ishlatiladi?", "options": ["Oddiy class uchun", "Dinamik yoki async provider yaratish uchun", "Qiymat uchun", "Alias uchun"], "correctIndex": 1, "explanation": "useClass — almashtirish; useValue — qiymat; useExisting — alias." },
+      { "text": "Provider'ning standart scope'i qaysi?", "options": ["Request", "Singleton", "Transient", "Global"], "correctIndex": 1, "explanation": "Request scope har so'rovda yangi instansiya yaratadi — qimmatroq." },
+      { "text": "Circular dependency qanday hal qilinadi?", "options": ["Import olib tashlash", "forwardRef() bilan", "any bilan", "Global modul bilan"], "correctIndex": 1, "explanation": "Lekin eng yaxshisi — arxitekturani qayta ko'rib chiqish." },
+      { "text": "NestJS DI qanday mexanizmga tayanadi?", "options": ["Nom bo'yicha", "reflect-metadata va design:paramtypes", "JSON config", "Qo'lda ro'yxat"], "correctIndex": 1, "explanation": "TypeScript dekoratorlari metama'lumot chiqaradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "03-db-ulanish-typeorm-prisma-mongoose",
+    "title": "Test — DB ulanish (NestJS)",
+    "questions": [
+      { "text": "NestJS'da DB integratsiya naqshi qanday?", "options": ["Faqat forRoot", "forRoot → entity/schema → forFeature → inject", "Faqat inject", "Global provider"], "correctIndex": 1, "explanation": "forRootAsync ConfigService bilan env'dan sozlash imkonini beradi." },
+      { "text": "TypeORM repository qanday inject qilinadi?", "options": ["@Inject()", "@InjectRepository(Entity)", "@InjectModel()", "constructor"], "correctIndex": 1, "explanation": "Mongoose'da esa @InjectModel ishlatiladi." },
+      { "text": "Prisma NestJS'da qanday ishlatiladi?", "options": ["Maxsus modul bilan", "PrismaService yozib — rasmiy wrapper shart emas", "forRoot bilan", "Ishlamaydi"], "correctIndex": 1, "explanation": "Odatda global modul sifatida e'lon qilinadi." },
+      { "text": "«Graceful shutdown» DB uchun nima uchun kerak?", "options": ["Tezlik", "Ulanishlarni to'g'ri yopish — ma'lumot yo'qolmasligi uchun", "Log", "Cache"], "correctIndex": 1, "explanation": "enableShutdownHooks bilan lifecycle hook'lar ishlaydi." },
+      { "text": "Testda DB qanday almashtiriladi?", "options": ["Real baza", "Mock provider (useValue/useClass)", "O'chiriladi", "Hech qanday"], "correctIndex": 1, "explanation": "DI aynan shu sababdan testni osonlashtiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "04-relations-1-1-1-n-n-m",
+    "title": "Test — Relations (NestJS/TypeORM)",
+    "questions": [
+      { "text": "1:N bog'lanishda FK qayerda turadi?", "options": ["«Bir» tomonda", "«Ko'p» tomonda (@ManyToOne — owning side)", "Junction jadvalda", "Ikkalasida"], "correctIndex": 1, "explanation": "Owning side FK ustunini saqlaydigan tomon." },
+      { "text": "Bog'langan ma'lumotni yuklashning eng yaxshi usuli qaysi?", "options": ["eager: true", "relations opsiyasi — kerak bo'lganda", "lazy", "Alohida so'rov"], "correctIndex": 1, "explanation": "eager har so'rovda JOIN qiladi — ortiqcha yuk." },
+      { "text": "N+1 muammosi qanday hal qilinadi?", "options": ["Ko'proq so'rov", "relations/JOIN yoki DataLoader (batching)", "Cache", "Index"], "correctIndex": 1, "explanation": "GraphQL'da DataLoader ayniqsa muhim." },
+      { "text": "Junction jadvalga qo'shimcha maydon kerak bo'lsa nima qilinadi?", "options": ["@JoinTable", "Alohida junction entity yaratiladi", "JSON", "Mumkin emas"], "correctIndex": 1, "explanation": "Masalan «qo'shilgan sana» yoki «rol» maydoni." },
+      { "text": "«Self-relation» nima uchun ishlatiladi?", "options": ["Nusxa olish", "Ierarxiya va daraxt tuzilmalari uchun (parent/children)", "Cache", "Index"], "correctIndex": 1, "explanation": "Masalan kategoriyalar daraxti yoki kommentariy javoblari." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "05-dto-validation-pipes",
+    "title": "Test — DTO, validatsiya, pipes",
+    "questions": [
+      { "text": "DTO nima uchun entity'dan alohida bo'lishi kerak?", "options": ["Chiroyli", "Kirish/chiqish shakli DB modelidan farq qiladi", "Tezlik", "Majburiy emas"], "correctIndex": 1, "explanation": "Entity ichki model, DTO esa API kontrakti." },
+      { "text": "«whitelist: true» nima qiladi?", "options": ["Ruxsat beradi", "DTO'da e'lon qilinmagan maydonlarni olib tashlaydi", "Xato beradi", "Log yozadi"], "correctIndex": 1, "explanation": "forbidNonWhitelisted esa ular uchun xato qaytaradi." },
+      { "text": "«PartialType» nima beradi?", "options": ["Yangi DTO", "Mavjud DTO maydonlarini ixtiyoriy qiladi — update uchun", "Validatsiya", "Transform"], "correctIndex": 1, "explanation": "Pick va Omit ham DRY uchun ishlatiladi." },
+      { "text": "Response'dan parolni yashirish uchun nima ishlatiladi?", "options": ["delete", "@Exclude() va ClassSerializerInterceptor", "select: false faqat", "Comment"], "correctIndex": 1, "explanation": "Response DTO ham xavfsiz yondashuv hisoblanadi." },
+      { "text": "Pipe'ning ikki vazifasi qaysi?", "options": ["Log va cache", "Transform va validate", "Guard va filter", "Route va middleware"], "correctIndex": 1, "explanation": "ParseIntPipe — built-in transform pipe misoli." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "06-guards-interceptors-middleware-filters",
+    "title": "Test — Guards, interceptors, filters",
+    "questions": [
+      { "text": "Request lifecycle tartibi qanday?", "options": ["Guard → Middleware → Pipe", "Middleware → Guard → Interceptor → Pipe → Handler → Interceptor → Filter", "Pipe → Guard", "Filter → Guard"], "correctIndex": 1, "explanation": "Har mexanizm o'z bosqichida ishlaydi." },
+      { "text": "Guard nima uchun ishlatiladi?", "options": ["Xato ushlash", "Ruxsatni tekshirish (CanActivate)", "Javobni o'zgartirish", "Log"], "correctIndex": 1, "explanation": "true qaytarsa so'rov davom etadi, aks holda 403." },
+      { "text": "Interceptor nima qila oladi?", "options": ["Faqat bloklash", "So'rov va javobni o'rash — RxJS map/tap bilan", "Faqat validatsiya", "Faqat log"], "correctIndex": 1, "explanation": "Javob formatini birxillashtirish uchun ideal." },
+      { "text": "«Reflector» nima uchun kerak?", "options": ["Cache", "Custom dekorator metadata'sini o'qish (@Roles kabi)", "Log", "DI"], "correctIndex": 1, "explanation": "ExecutionContext bilan birga guard ichida ishlatiladi." },
+      { "text": "«APP_GUARD» tokeni nima beradi?", "options": ["Tezlik", "Global guard'ni DI bilan ro'yxatdan o'tkazish", "Xavfsizlik faqat", "Log"], "correctIndex": 1, "explanation": "useGlobalGuards'dan farqli — DI ishlaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "07-user-role-auth-rbac",
+    "title": "Test — User, Role va RBAC",
+    "questions": [
+      { "text": "@Roles dekoratori qanday ishlaydi?", "options": ["O'zi tekshiradi", "Metadata qo'yadi — RolesGuard uni Reflector bilan o'qiydi", "Route yaratadi", "Validatsiya qiladi"], "correctIndex": 1, "explanation": "Dekorator + guard juftligi NestJS'ning tipik naqshi." },
+      { "text": "«Ownership» tekshiruvi qanday himoya beradi?", "options": ["XSS", "IDOR — boshqaning resursiga kirishning oldini oladi", "CSRF", "SQL injection"], "correctIndex": 1, "explanation": "Rol to'g'ri bo'lsa ham resurs egasi tekshiriladi." },
+      { "text": "CASL nima beradi?", "options": ["Validatsiya", "Dinamik, atribut-asoslangan ruxsat (ability)", "Cache", "Log"], "correctIndex": 1, "explanation": "«O'z postini tahrirlashi mumkin» kabi qoidalarni ifodalaydi." },
+      { "text": "«@CurrentUser» qanday dekorator?", "options": ["Class dekorator", "Parametr dekoratori — request'dan foydalanuvchini oladi", "Metod dekoratori", "Property"], "correctIndex": 1, "explanation": "createParamDecorator bilan yaratiladi." },
+      { "text": "Rol iyerarxiyasi nima beradi?", "options": ["Tezlik", "Yuqori rol quyi rol huquqlarini avtomatik oladi", "Xavfsizlik faqat", "Log"], "correctIndex": 1, "explanation": "@MinRole kabi dekorator bilan amalga oshiriladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "08-file-upload-swagger",
+    "title": "Test — Fayl yuklash va Swagger (NestJS)",
+    "questions": [
+      { "text": "NestJS'da fayl yuklash uchun nima ishlatiladi?", "options": ["Multer to'g'ridan", "FileInterceptor (Multer ustida)", "Pipe", "Guard"], "correctIndex": 1, "explanation": "FilesInterceptor va FileFieldsInterceptor — ko'p fayl uchun." },
+      { "text": "«ParseFilePipe» nima qiladi?", "options": ["Faylni saqlaydi", "Fayl hajmi va turini validatsiya qiladi", "Yuklaydi", "O'chiradi"], "correctIndex": 1, "explanation": "Magic bytes tekshiruvi qo'shimcha xavfsizlik qatlami beradi." },
+      { "text": "Katta faylni qaytarish uchun nima ishlatiladi?", "options": ["res.send", "StreamableFile", "JSON", "Buffer"], "correctIndex": 1, "explanation": "Butun faylni xotiraga yuklamaydi." },
+      { "text": "Swagger'da DTO qanday hujjatlanadi?", "options": ["Qo'lda YAML", "@ApiProperty va validatsiya dekoratorlari — bir manba", "Alohida fayl", "Comment"], "correctIndex": 1, "explanation": "CLI plugin ko'p narsani avtomatik chiqaradi." },
+      { "text": "Fayl yuklash endpointi Swagger'da qanday belgilanadi?", "options": ["@ApiBody faqat", "@ApiConsumes('multipart/form-data') + @ApiBody", "@ApiParam", "Belgilanmaydi"], "correctIndex": 1, "explanation": "Aks holda Swagger UI fayl tanlash maydonini ko'rsatmaydi." }
+    ]
+  }
+]

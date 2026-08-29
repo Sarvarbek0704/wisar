@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "dasturlash", "section": "00-qism-tayyorgarlik", "article": "01-kompyuter-qanday-ishlaydi",
+    "title": "Test — Kompyuter qanday ishlaydi",
+    "questions": [
+      { "text": "1 bayt necha bitdan iborat?", "options": ["4", "8", "16", "32"], "correctIndex": 1, "explanation": "Bit — eng kichik birlik; 8 bit = 1 bayt. Hex (0x) baytlarni qisqa yozish usuli." },
+      { "text": "Manfiy sonlar kompyuterda qanday saqlanadi?", "options": ["Alohida belgi biti bilan", "Ikkilik to'ldiruvchi (two's complement) bilan", "Matn sifatida", "Saqlanmaydi"], "correctIndex": 1, "explanation": "Bu usul qo'shish va ayirish amallarini bir xil sxemada bajarishga imkon beradi." },
+      { "text": "CPU qanday tsiklni takrorlaydi?", "options": ["read-write", "fetch–decode–execute", "input-output", "load-store"], "correctIndex": 1, "explanation": "Bu tsikl sekundiga milliard marta takrorlanadi." },
+      { "text": "Xotira ierarxiyasining to'g'ri tartibi qaysi?", "options": ["RAM → registr → cache → disk", "Registr → cache → RAM → disk → tarmoq", "Disk → RAM → cache", "Cache → registr → RAM"], "correctIndex": 1, "explanation": "Yuqoriga chiqqan sari tezroq, kichikroq va qimmatroq bo'ladi." },
+      { "text": "Nega massiv linked listdan tezroq ishlaydi (bir xil Big-O da)?", "options": ["Kamroq xotira", "Cache va lokallik — ketma-ket xotira cache-friendly", "Kamroq kod", "Farqi yo'q"], "correctIndex": 1, "explanation": "Amaliy tezlik nafaqat murakkablikka, balki xotira joylashuviga ham bog'liq." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "00-qism-tayyorgarlik", "article": "02-operatsion-tizimlar-va-fayl-tizimi",
+    "title": "Test — Operatsion tizimlar va fayl tizimi",
+    "questions": [
+      { "text": "Dastur temirga qanday murojaat qiladi?", "options": ["To'g'ridan-to'g'ri", "System call orqali (mode switch bilan)", "Drayver yozib", "Murojaat qila olmaydi"], "correctIndex": 1, "explanation": "Kernel space / user space ajratmasi xavfsizlik va barqarorlik uchun." },
+      { "text": "Process va thread qanday farqlanadi?", "options": ["Farqi yo'q", "Process — o'z xotirali; thread — xotirani baham ko'radi", "Thread — o'z xotirali", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Node.js — bitta asosiy thread; bu event loop'ning asosi." },
+      { "text": "Unix ruxsatlarida 755 nimani anglatadi?", "options": ["Faqat o'qish", "Egasi rwx, guruh va boshqalar r-x", "Hamma uchun to'liq ruxsat", "Hech qanday ruxsat"], "correctIndex": 1, "explanation": "Octal shakl: 7=rwx, 5=r-x, 4=r--, 6=rw-." },
+      { "text": "FAT32 ning asosiy cheklovi qaysi?", "options": ["Fayl nomi uzunligi", "4 GB fayl hajmi chegarasi", "Papka soni", "Disk hajmi 1 TB"], "correctIndex": 1, "explanation": "Shuning uchun katta fayllar uchun exFAT, NTFS yoki ext4 ishlatiladi." },
+      { "text": "«Windows'da yozasiz, Linux'da ishlaydi» — nimaga e'tibor berish kerak?", "options": ["Fayl hajmiga", "Path ajratgichi va harf registriga", "Ranglarga", "Shriftga"], "correctIndex": 1, "explanation": "Linux path'da harf registri muhim; Windows'da esa yo'q." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "00-qism-tayyorgarlik", "article": "03-terminal-buyruq-qatori",
+    "title": "Test — Terminal va buyruq qatori",
+    "questions": [
+      { "text": "Terminal, shell va prompt qanday farqlanadi?", "options": ["Bir xil narsa", "Terminal — oyna, shell — buyruqni tushunadi, prompt — kutish matni", "Shell — oyna", "Prompt — dastur"], "correctIndex": 1, "explanation": "Shell REPL tsikli bo'yicha ishlaydi: buyruqni o'qib, process qilib ishga tushiradi." },
+      { "text": "Nega «cd» builtin buyruq bo'lishi shart?", "options": ["Tez ishlashi uchun", "U shell'ning joriy katalogini o'zgartiradi — alohida process buni qila olmaydi", "Kichik bo'lgani uchun", "Xavfsizlik uchun"], "correctIndex": 1, "explanation": "Alohida process o'z cwd'sini o'zgartirsa ham, ota-shellga ta'sir qilmaydi." },
+      { "text": "Uchta standart oqim qaysi?", "options": ["input, output, error (0, 1, 2)", "read, write, append", "in, out, log", "pipe, redirect, filter"], "correctIndex": 0, "explanation": "stdin (0), stdout (1), stderr (2)." },
+      { "text": "«2>» nimani qayta yo'naltiradi?", "options": ["stdout", "stderr", "stdin", "Ikkalasini"], "correctIndex": 1, "explanation": "> va >> stdout uchun; 2> stderr uchun." },
+      { "text": "«rm -rf» nima uchun xavfli?", "options": ["Sekin", "Savatchasiz, qaytarib bo'lmaydigan o'chirish", "Ruxsat talab qiladi", "Faqat papka o'chiradi"], "correctIndex": 1, "explanation": "Doim avval pwd va ls bilan qayerda ekaningizni tekshiring." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "00-qism-tayyorgarlik", "article": "04-internet-va-web-qanday-ishlaydi",
+    "title": "Test — Internet va web",
+    "questions": [
+      { "text": "TCP ulanishi qanday boshlanadi?", "options": ["Bitta paket bilan", "3 bosqichli qo'l berish: SYN → SYN+ACK → ACK", "DNS so'rovi bilan", "TLS bilan"], "correctIndex": 1, "explanation": "Bu ishonchli ulanishni o'rnatish uchun zarur." },
+      { "text": "Qaysi HTTP metod idempotent EMAS?", "options": ["GET", "PUT", "DELETE", "POST"], "correctIndex": 3, "explanation": "POST har chaqiruvda yangi resurs yaratishi mumkin." },
+      { "text": "4xx status kodlari nimani bildiradi?", "options": ["Muvaffaqiyat", "Yo'naltirish", "Mijoz xatosi", "Server xatosi"], "correctIndex": 2, "explanation": "2xx — muvaffaqiyat, 3xx — yo'naltirish, 4xx — mijoz, 5xx — server xatosi." },
+      { "text": "HTTPS qanday ishlaydi?", "options": ["Faqat parol bilan", "Asimmetrik bilan kelishib, simmetrik bilan shifrlaydi", "Faqat simmetrik", "Shifrlamaydi"], "correctIndex": 1, "explanation": "Sertifikat server haqiqiyligini isbotlaydi." },
+      { "text": "HTTP/2 ning HTTP/1.1 dan asosiy afzalligi qaysi?", "options": ["Yangi metodlar", "Multiplexing — navbat muammosini hal qiladi", "Yangi status kodlar", "Shifrlash"], "correctIndex": 1, "explanation": "HTTP/3 esa QUIC (UDP) ustiga qurilgan." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "00-qism-tayyorgarlik", "article": "05-brauzer-qanday-ishlaydi",
+    "title": "Test — Brauzer qanday ishlaydi",
+    "questions": [
+      { "text": "V8 JavaScriptni qanday bajaradi?", "options": ["To'g'ridan-to'g'ri", "Parser→AST, Ignition→bytecode, TurboFan→mashina kodi", "Faqat interpretatsiya", "Kompilyatsiya qilmaydi"], "correctIndex": 1, "explanation": "JIT tufayli JS «sekin til» emas. Node ham V8 ustiga qurilgan." },
+      { "text": "Critical Rendering Path bosqichlari qanday?", "options": ["HTML→Paint", "DOM + CSSOM → Render Tree → Layout → Paint → Composite", "CSS→JS→HTML", "Layout→DOM"], "correctIndex": 1, "explanation": "CSS render-blocking hisoblanadi." },
+      { "text": "JS rendering'ni bloklashini qanday hal qilamiz?", "options": ["Skriptni o'chirish", "defer yoki async atributi", "CSS qo'shish", "Hal qilib bo'lmaydi"], "correctIndex": 1, "explanation": "JS bir thread'li — og'ir kod sahifani qotiradi." },
+      { "text": "Reflow va repaint qanday farqlanadi?", "options": ["Farqi yo'q", "Reflow — o'lcham/joylashuv (qimmat); repaint — rang (arzonroq)", "Repaint qimmatroq", "Ikkalasi bir xil narx"], "correctIndex": 1, "explanation": "Animatsiya uchun transform va opacity ishlatiladi — ular composite bosqichida." },
+      { "text": "Brauzer nechta asosiy moduldan iborat?", "options": ["Faqat rendering engine", "Rendering engine + JS engine + tarmoq + saqlash", "Faqat JS engine", "Bitta modul"], "correctIndex": 1, "explanation": "Blink/WebKit/Gecko — rendering; V8/SpiderMonkey — JS." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "00-qism-tayyorgarlik", "article": "06-algoritmik-fikrlash-va-pseudokod",
+    "title": "Test — Algoritmik fikrlash",
+    "questions": [
+      { "text": "Algoritmning majburiy xususiyati qaysi?", "options": ["Qisqa bo'lishi", "Aniq, tartibli va TUGAYDIGAN qadamlar", "Tez bo'lishi", "Kodda yozilishi"], "correctIndex": 1, "explanation": "Tugamaydigan qadamlar ketma-ketligi algoritm hisoblanmaydi." },
+      { "text": "Computational thinking nechta komponentdan iborat?", "options": ["2", "3", "4: decomposition, pattern recognition, abstraction, algorithm design", "5"], "correctIndex": 2, "explanation": "Bu — muammoni yechishning universal ramkasi." },
+      { "text": "Har bir dastur qaysi «uch g'isht»dan quriladi?", "options": ["Funksiya, klass, modul", "Ketma-ketlik, shart, takror", "Input, process, output", "Ot, fe'l, sifat"], "correctIndex": 1, "explanation": "Barcha murakkab mantiq shu uchtasining kombinatsiyasi." },
+      { "text": "Pseudokod nima uchun kerak?", "options": ["Kodni almashtirish", "Mantiqni tildan ajratib yozish — xatoni arzon tutish", "Hujjat uchun", "Test uchun"], "correctIndex": 1, "explanation": "Kod yozishdan oldin mantiqni tekshirish eng arzon usul." },
+      { "text": "Muammoga yondashuv ketma-ketligi qanday?", "options": ["Kod → test", "Tushun → misol → bo'lakla → pseudokod → kod → test → yaxshila", "Pseudokod → kod", "Test → kod"], "correctIndex": 1, "explanation": "Vaqtning ~70% fikrlash va debug'ga ketadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "00-qism-tayyorgarlik", "article": "07-dasturchi-asboblari-vscode-node-npm",
+    "title": "Test — Dasturchi asboblari",
+    "questions": [
+      { "text": "Node.js nima?", "options": ["Brauzer", "V8'ni brauzerdan chiqargan runtime", "Kutubxona", "Framework"], "correctIndex": 1, "explanation": "JS endi fayl, server va OS bilan ishlaydi — full-stack imkoniyati." },
+      { "text": "«package.json» nima vazifani bajaradi?", "options": ["Kod saqlaydi", "Loyiha pasporti: nom, versiya, dependencies, scripts", "Testlarni saqlaydi", "Ma'lumotlar bazasi"], "correctIndex": 1, "explanation": "scripts — buyruqlarni nomlash imkonini beradi." },
+      { "text": "«node_modules» git'ga qo'shiladimi?", "options": ["Ha", "Yo'q — .gitignore ga kiritiladi", "Faqat production'da", "Faqat kichik loyihada"], "correctIndex": 1, "explanation": "package-lock.json esa git'ga QO'SHILADI." },
+      { "text": "Semverda «^1.2.3» nimani anglatadi?", "options": ["Faqat 1.2.3", "1.x.x ichida yangilanish (major o'zgarmaydi)", "Har qanday versiya", "Faqat patch"], "correctIndex": 1, "explanation": "~1.2.3 esa faqat patch yangilanishlarga ruxsat beradi." },
+      { "text": "npm nima?", "options": ["Faqat CLI", "Paket menejeri (CLI) + registry (ombor)", "Faqat registry", "Runtime"], "correctIndex": 1, "explanation": "npm install bilan tayyor kutubxona yuklab olinadi." }
+    ]
+  }
+]

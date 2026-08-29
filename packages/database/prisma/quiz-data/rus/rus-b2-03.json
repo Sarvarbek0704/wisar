@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "19-kirish-sozlar-konstruksiyalar",
+    "title": "Test — Kirish so'zlar",
+    "questions": [
+      { "text": "Kirish so'zni aniqlashning asosiy testi qanday?", "options": ["Urg'uga qarash", "Olib tashlansa gap buzilmaydi", "Rodini aniqlash", "Kelishigini aniqlash"], "correctIndex": 1, "explanation": "Kirish so'z gapga grammatik bog'lanmagan, savolga javob bermaydi, so'zlovchining munosabatini bildiradi." },
+      { "text": "Gap o'rtasidagi kirish so'z qanday ajratiladi?", "options": ["Vergulsiz", "Ikki tomondan vergul bilan", "Faqat oldidan vergul", "Tire bilan"], "correctIndex": 1, "explanation": "Kirish so'z DOIM vergul bilan: boshda — keyin, o'rtada — ikki tomondan, oxirida — oldin." },
+      { "text": "«Э́то зна́чит мно́гое» — «зна́чит» bu yerda kirish so'zmi?", "options": ["Ha, vergul kerak", "Yo'q — kesim, vergul qo'yilmaydi", "Faqat og'zaki nutqda", "Har doim kirish so'z"], "correctIndex": 1, "explanation": "Omonimlar: зна́чит (demak — kirish) ↔ (bildiradi — kesim). Test: olib tashlasa gap buziladimi?" },
+      { "text": "Qaysi so'z kirish so'z EMAS?", "options": ["коне́чно", "наве́рное", "вдруг", "ка́жется"], "correctIndex": 2, "explanation": "Kirish so'z emas (vergulsiz): вдруг, ведь, да́же, и́менно, почти́, бу́дто." },
+      { "text": "«коне́чно» qanday o'qiladi?", "options": ["kanechno", "kanyéshna — «чн» → «shn»", "kanyéchna", "kanesno"], "correctIndex": 1, "explanation": "Bu — rus tilidagi klassik talaffuz istisnolaridan biri." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "20-soz-tartibi",
+    "title": "Test — So'z tartibi",
+    "questions": [
+      { "text": "Rus tilida so'z rolini nima belgilaydi?", "options": ["So'z tartibi", "Kelishik", "Urg'u", "Intonatsiya"], "correctIndex": 1, "explanation": "Shuning uchun tartib erkin. Lekin erkin — «befarq» degani emas: tartib ma'no urg'usini boshqaradi." },
+      { "text": "Rus tilida eng muhim, yangi so'z qayerda turadi?", "options": ["Gap boshida", "Gap oxirida (rema)", "O'rtada", "Farqi yo'q"], "correctIndex": 1, "explanation": "Aktual bo'linish: tema (ma'lum, boshda) + rema (yangi, muhim, oxirda)." },
+      { "text": "O'zbek va rus tilining neytral tartibi qanday farqlanadi?", "options": ["Ikkalasi SVO", "O'zbekcha SOV (kesim oxirda), rus SVO (kesim o'rtada)", "Ikkalasi SOV", "Rus tilida kesim oxirda"], "correctIndex": 1, "explanation": "Fe'lni o'zbekchadek oxirga qo'yish — eng ko'p uchraydigan xato." },
+      { "text": "Savolga javob berganda so'ralgan narsa qayerda turishi kerak?", "options": ["Boshida", "Javobning oxirida", "O'rtada", "Farqi yo'q"], "correctIndex": 1, "explanation": "So'ralgan narsa — yangi ma'lumot, ya'ni rema. Rema esa oxirida." },
+      { "text": "Neytral tartibda aniqlovchi qayerda turadi?", "options": ["Otdan keyin", "Otdan oldin", "Gap oxirida", "Kesimdan keyin"], "correctIndex": 1, "explanation": "Neytral tartib: ega + kesim + to'ldiruvchi; aniqlovchi otdan oldin; ravish fe'ldan oldin." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "21-bir-jinsli-bolaklar",
+    "title": "Test — Bir jinsli bo'laklar",
+    "questions": [
+      { "text": "«хлеб и молоко́» — vergul kerakmi?", "options": ["Ha", "Yo'q — bitta «и» vergulsiz", "Faqat rasmiy matnda", "Ikki vergul"], "correctIndex": 1, "explanation": "Bitta «и» — vergulsiz; takroriy «и…и…и» — vergul: и хлеб, и молоко́, и ма́сло." },
+      { "text": "«не кра́сный, а си́ний» — nega vergul?", "options": ["Sanoq uchun", "А va НО zidlashda doim vergul", "Takroriy bog'lovchi", "Xato"], "correctIndex": 1, "explanation": "Zidlash = vergul, istisnosiz: ма́ленький, но си́льный." },
+      { "text": "«не то́лько…но и» — vergul qayerda?", "options": ["Birinchi qism oldida", "Ikkinchi qism oldida", "Vergul yo'q", "Ikkalasida"], "correctIndex": 1, "explanation": "Juft bog'lovchilar (как…так и, ли́бо…ли́бо, то…то) — vergul ikkinchi qism oldida." },
+      { "text": "«большо́й кру́глый стол» — nega vergul yo'q?", "options": ["Xato, vergul kerak", "Aniqlovchilar bir jinsli emas — turli tomondan tavsiflaydi", "Bir jinsli", "Bog'lovchi bor"], "correctIndex": 1, "explanation": "Sinov: orasiga «и» qo'yib bo'lsa — bir jinsli (vergul); bo'lmasa — vergulsiz." },
+      { "text": "Umumlashtiruvchi so'z sanoqdan OLDIN kelsa qanday belgi qo'yiladi?", "options": ["Tire", "Ikki nuqta", "Vergul", "Nuqtali vergul"], "correctIndex": 1, "explanation": "Oldin → ikki nuqta (Всё гото́во: …); keyin → tire (… — всё гото́во)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "22-ajratilgan-bolaklar",
+    "title": "Test — Ajratilgan bo'laklar",
+    "questions": [
+      { "text": "Обособле́ние nima?", "options": ["So'z yasash", "Gap bo'lagini vergul/tire va pauza bilan ajratish", "Urg'u qo'yish", "Kelishik almashtirish"], "correctIndex": 1, "explanation": "Ajratilgan bo'lak — qo'shimcha, ta'kidlangan ma'lumot; olib tashlasa gap buzilmaydi." },
+      { "text": "Shaxs olmoshiga tegishli aniqlovchi qanday ajratiladi?", "options": ["Vergulsiz", "Doim vergul bilan", "Faqat oldindan", "Tire bilan"], "correctIndex": 1, "explanation": "Olmoshga tegishli aniqlovchi o'rnidan qat'i nazar ajratiladi." },
+      { "text": "Ravishdosh oboroti va «несмотря́ на» qanday ajratiladi?", "options": ["Faqat gap boshida vergul", "O'rnidan qat'i nazar doim vergul", "Vergulsiz", "Tire bilan"], "correctIndex": 1, "explanation": "Прочита́в кни́гу, …; Несмотря́ на дождь, … — istisnosiz." },
+      { "text": "«Мой друг — врач» — nega tire?", "options": ["Xato", "Izoh gap oxirida yoki ta'kidli bo'lsa tire qo'yiladi", "Har doim tire", "Vergul kerak"], "correctIndex": 1, "explanation": "Gap ichida bo'lsa vergul: Москва́, столи́ца Росси́и, …" },
+      { "text": "«Он рабо́тает как вол» — nega vergul yo'q?", "options": ["Xato", "Turg'un ibora / «sifatida» ma'nosi — vergulsiz", "Taqqoslash", "Kirish so'z"], "correctIndex": 1, "explanation": "как taqqoslash/kirish bo'lsa vergul (Он, как всегда́, опозда́л); «sifatida» yoki turg'un ibora bo'lsa — vergulsiz." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "23-soz-yasash-ot",
+    "title": "Test — Ot yasalishi",
+    "questions": [
+      { "text": "«реше́ние, зна́ние» qaysi turkumdan yasalgan va nimani bildiradi?", "options": ["Sifatdan, belgi", "Fe'ldan, mavhum harakat/jarayon", "Otdan, joy", "Fe'ldan, shaxs"], "correctIndex": 1, "explanation": "Fe'ldan: -ение/-ание, -тие (разви́тие), -ка (прове́рка), -ба (борьба́)." },
+      { "text": "«доброта́, красота́» qaysi suffiks va qaysi manba?", "options": ["-ота, sifatdan mavhum belgi", "-ота, fe'ldan harakat", "-ость, otdan", "-ство, fe'ldan"], "correctIndex": 0, "explanation": "Sifatdan mavhum belgi: -ость/-есть, -ота, -изна, -ство." },
+      { "text": "«лётчик, продаве́ц» — qaysi guruh?", "options": ["Mavhum belgi", "Shaxs oti", "Joy oti", "Jarayon"], "correctIndex": 1, "explanation": "Shaxs: -тель, -ник/-ница, -ец/-анин, -ист, -щик/-чик." },
+      { "text": "«са́харница» dagi «-ница» nimani bildiradi?", "options": ["Ayol shaxs", "Idish", "Joy", "Jarayon"], "correctIndex": 1, "explanation": "-ница idish ma'nosida ham keladi: са́харница, су́пница." },
+      { "text": "«-ость» suffiksi urg'uni qayerga tortadi?", "options": ["O'ziga", "O'zak boshiga (мо́лодость)", "Oxirga", "O'zgartirmaydi"], "correctIndex": 1, "explanation": "-ость → мо́лодость; ammo -ота́/-изна́/-изм/-ция urg'uni o'ziga tortadi: красота́, реали́зм." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "24-soz-yasash-sifat-fel-ravish",
+    "title": "Test — Sifat, fe'l, ravish yasalishi",
+    "questions": [
+      { "text": "«белова́тый» dagi «-оват-» nimani bildiradi?", "options": ["Kuchaytirish", "Belgi ozligi — «oqishroq»", "Inkor", "Ko'plik"], "correctIndex": 1, "explanation": "-оват- belgining ozligini bildiradi va urg'uni o'ziga tortadi." },
+      { "text": "«беле́ть» va «бели́ть» farqi nimada?", "options": ["Farqi yo'q", "-е-ть holat (oqarmoq), -и-ть ta'sir (oqlamoq)", "-е-ть ta'sir", "Ikkalasi holat"], "correctIndex": 1, "explanation": "Otdan/sifatdan fe'l yasashning asosiy juftligi." },
+      { "text": "«кри́кнуть» dagi «-ну-» nimani bildiradi?", "options": ["Takroriy harakat", "Bir martalik harakat", "Holat", "Inkor"], "correctIndex": 1, "explanation": "-ну- bir martalik; -ыва-/-ива- esa takroriy: расска́зывать." },
+      { "text": "«по-ру́сски» qanday yasalgan?", "options": ["-о qo'shimchasi bilan", "по-…-ски modeli bilan, defis orqali", "-ый bilan", "Prefikssiz"], "correctIndex": 1, "explanation": "Ravish modellari: -о/-е (бы́стро), по-…-ому, по-…-ски, во-…-ых (во-пе́рвых)." },
+      { "text": "Notanish so'zni ochishning uch qadami qaysi?", "options": ["O'zak → urg'u → tarjima", "Tugallanmadan turkum → suffiksdan ma'no → o'zakdan mavzu", "Faqat lug'at", "Prefiks → tugallanma"], "correctIndex": 1, "explanation": "-ый → sifat, -ть → fe'l, -о → ravish; keyin suffiks ma'no rangini beradi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "25-soz-yasash-murakkab-sozlar",
+    "title": "Test — Murakkab so'zlar",
+    "questions": [
+      { "text": "«пылесо́с» da nega «-е-» ulovchi unli?", "options": ["Tasodifiy", "Birinchi o'zak yumshoq undoshda tugagani uchun", "Qattiq undosh uchun", "Xato"], "correctIndex": 1, "explanation": "Qattiq undosh → -о- (парохо́д); yumshoq yoki ж/ш/ц/ч/щ dan keyin → -е- (пылесо́с, пешехо́д)." },
+      { "text": "«двухко́мнатный» da son qaysi shaklda?", "options": ["Bosh kelishik (два)", "Qaratqich o'zagi (двух-)", "Jo'nalish", "Vosita"], "correctIndex": 1, "explanation": "Son murakkab sifatga qaratqich o'zagi bilan kiradi: два → двух-, пять → пяти-." },
+      { "text": "«вуз, МИД» qanday qisqartma?", "options": ["Harfli", "Tovushli", "Bo'g'inli", "Defisli"], "correctIndex": 1, "explanation": "Harfli — США, МГУ; tovushli — вуз, МИД; bo'g'inli — зарпла́та, физкульту́ра." },
+      { "text": "«пол-я́блока» da nega defis?", "options": ["Har doim defis", "Keyingi so'z unli bilan boshlangani uchun", "Xato", "Katta harf uchun"], "correctIndex": 1, "explanation": "пол- uch holatda defis bilan: unli, «л» yoki katta harf oldida. Aks holda qo'shib: полдня́." },
+      { "text": "Murakkab so'zni yechishning kaliti nima?", "options": ["Urg'u", "Ulovchi unlini topib, ikki o'zakka bo'lish", "Tugallanma", "Prefiks"], "correctIndex": 1, "explanation": "Birinchi o'zak «nima», ikkinchisi «nima qiladi/qanday» — ularni mantiq bilan qo'shing." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "26-prefiks-suffiks-semantika",
+    "title": "Test — Prefiks va suffiks semantikasi",
+    "questions": [
+      { "text": "«пересоли́ть» va «недосоли́ть» qanday qarama-qarshilik?", "options": ["Zamon", "Haddan oshish ↔ kamlik", "Aspekt", "Rod"], "correctIndex": 1, "explanation": "пере- (ortiqcha) ↔ недо- (kam). Xuddi shunday: под- (biroz, yutuq) ↔ про- (o'tkazib, yo'qotish)." },
+      { "text": "«доми́ще» va «доми́шко» qanday munosabatni bildiradi?", "options": ["Ikkalasi mehr", "-ищ- kattalik/hayrat, -ишк- nafrat/mensimaslik", "Ikkalasi nafrat", "Farqi yo'q"], "correctIndex": 1, "explanation": "Bir o'zak, uch munosabat: до́мик (mehr) / доми́ще (katta) / доми́шко (nafrat)." },
+      { "text": "«сверх-» va «пре-» qanday ma'no beradi?", "options": ["Inkor", "Kuchaytirish — «o'ta, juda»", "Kamlik", "Takror"], "correctIndex": 1, "explanation": "сверхчелове́к, прекра́сный. Yana: раз-/рас- (расхва́ливать — rosa)." },
+      { "text": "«контр-» qanday ma'no beradi?", "options": ["Yo'qlik", "Javob zarbasi — контрата́ка", "Kuchaytirish", "Kamlik"], "correctIndex": 1, "explanation": "Inkor/yo'qlik guruhida: не-, без-/бес-, анти- (qarshi), контр- (javob)." },
+      { "text": "«-ищ-» suffiksi urg'uga qanday ta'sir qiladi?", "options": ["Ta'sir qilmaydi", "Urg'uni o'ziga tortadi (доми́ще)", "O'zak boshiga tortadi", "Oxirga tortadi"], "correctIndex": 1, "explanation": "Prefiks odatda urg'usiz (несча́стье, пересоли́ть), ammo -ищ- urg'uli." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "27-paronimlar",
+    "title": "Test — Paronimlar",
+    "questions": [
+      { "text": "«наде́ть» va «оде́ть» qanday farqlanadi?", "options": ["Farqi yo'q", "наде́ть — narsani kiymoq; оде́ть — odamni kiydirmoq", "наде́ть — odamni", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Yodlash formulasi: «Наде́ть оде́жду, оде́ть Наде́жду»." },
+      { "text": "«предоста́вить» nimani anglatadi?", "options": ["Tanishtirmoq", "Bermoq, ta'minlamoq", "Tasavvur qilmoq", "Taqdim etmoq (tanishtirish)"], "correctIndex": 1, "explanation": "предста́вить — tanishtirmoq/tasavvur; предоста́вить — bermoq (предо = дать)." },
+      { "text": "«эконо́мный», «экономи́ческий», «экономи́чный» — qaysi biri odamga nisbatan?", "options": ["эконо́мный", "экономи́ческий", "экономи́чный", "Uchalasi ham"], "correctIndex": 0, "explanation": "эконо́мный — odam (tejamkor); экономи́ческий — soha; экономи́чный — buyum." },
+      { "text": "«адреса́т» kim?", "options": ["Yuboruvchi", "Qabul qiluvchi", "Pochtachi", "Kuryer"], "correctIndex": 1, "explanation": "адреса́т — qabul qiluvchi; адреса́нт — yuboruvchi." },
+      { "text": "Paronimni yodlashning uch savoli qaysi?", "options": ["Rodi, soni, kelishigi", "Ma'nosi? Odam yoki narsa? Qaysi predlog/kelishik?", "Urg'u, imlo, talaffuz", "Aspekt, zamon, shaxs"], "correctIndex": 1, "explanation": "Paronimni har doim juftlik bilan, shu uch savol orqali yodlang." }
+    ]
+  }
+]

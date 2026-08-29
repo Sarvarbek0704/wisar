@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "01-present-perfect-tushuncha",
+    "title": "Test — Present Perfect: tushuncha",
+    "questions": [
+      { "text": "Present Perfect formulasi qanday?", "options": ["had + V3", "have/has + V3", "have + V-ing", "did + V1"], "correctIndex": 1, "explanation": "O'tmish + HOZIR bog'lanishi. Inkor: haven't/hasn't + V3." },
+      { "text": "«I have seen him yesterday» — bu nega xato?", "options": ["seen xato", "Aniq o'tgan vaqt bilan Present Perfect ishlatilmaydi", "have xato", "Xato emas"], "correctIndex": 1, "explanation": "yesterday/last/ago → Past Simple: I saw him yesterday." },
+      { "text": "«been» va «gone» qanday farqlanadi?", "options": ["Farqi yo'q", "been — borib qaytgan; gone — hali u yerda", "gone — qaytgan", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "He's been to Paris (qaytgan) ≠ He's gone to Paris (hali u yerda)." },
+      { "text": "«I've lost my keys» qaysi ma'noni bildiradi?", "options": ["Hayotiy tajriba", "Hozirgi natija — kalitlar hozir yo'q", "Tugamagan davr", "Odat"], "correctIndex": 1, "explanation": "Uch ma'no: hayotiy tajriba, hozirgi natija, tugamagan davr." },
+      { "text": "«he's gone» dagi «'s» nima?", "options": ["is", "has", "was", "does"], "correctIndex": 1, "explanation": "V3 oldida 's = has; sifat oldida 's = is." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "02-present-perfect-for-since",
+    "title": "Test — Present Perfect: for va since",
+    "questions": [
+      { "text": "«for» va «since» qanday farqlanadi?", "options": ["Farqi yo'q", "for + DAVR (uzunlik); since + NUQTA (boshlanish)", "since + davr", "Ikkalasi nuqta"], "correctIndex": 1, "explanation": "for 5 years ↔ since 2019." },
+      { "text": "«5 yildan beri shu yerda yashayman» qanday aytiladi?", "options": ["I live here for 5 years", "I've lived here for 5 years", "I am living here for 5 years", "I lived here for 5 years"], "correctIndex": 1, "explanation": "O'zbekcha hozirgi zamon inglizchada Present Perfect bo'ladi." },
+      { "text": "«How long...?» savoliga qanday javob beriladi?", "options": ["Aniq sana bilan", "For... yoki Since... bilan", "Yes/No bilan", "ago bilan"], "correctIndex": 1, "explanation": "«When...?» savoli esa aniq vaqt va Past Simple talab qiladi." },
+      { "text": "«3 years ago» qaysi zamon bilan ishlatiladi?", "options": ["Present Perfect", "Past Simple", "Present Continuous", "Past Perfect"], "correctIndex": 1, "explanation": "ago — aniq o'tgan vaqt belgisi, for/since dan farq qiladi." },
+      { "text": "«since I started» — «started» nega Past Simple?", "options": ["Xato", "since + gap ichida Past Simple ishlatiladi", "Present Perfect kerak", "Continuous kerak"], "correctIndex": 1, "explanation": "I've known him since we started school." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "03-present-perfect-just-already-yet",
+    "title": "Test — Just, already, yet, still",
+    "questions": [
+      { "text": "«yet» gapda qayerda turadi?", "options": ["O'rtada", "OXIRDA — savol va inkorda", "Boshida", "Fe'ldan oldin"], "correctIndex": 1, "explanation": "Have you done it yet? / I haven't done it yet." },
+      { "text": "«already» qaysi gap turida ishlatiladi?", "options": ["Inkor", "Ijobiy — o'rtada", "Savol", "Faqat oxirida"], "correctIndex": 1, "explanation": "I've already done it. already ↔ yet (ijobiy ↔ savol/inkor)." },
+      { "text": "«still» qayerda turadi?", "options": ["Gap oxirida", "Ega va yordamchi fe'l orasida", "Fe'ldan keyin", "Boshida"], "correctIndex": 1, "explanation": "I still haven't finished — sabrsizlik ohangi bilan." },
+      { "text": "«just» qanday ma'no beradi?", "options": ["Allaqachon", "Endigina", "Hali", "Hech qachon"], "correctIndex": 1, "explanation": "I've just finished — o'rtada, have va V3 orasida." },
+      { "text": "«So far, so good» dagi «so far» nimani anglatadi?", "options": ["Juda uzoq", "Shu paytgacha", "Yaqinda", "Hali"], "correctIndex": 1, "explanation": "recently/lately (yaqinda), so far (shu paytgacha) — hammasi PP bilan." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "04-present-perfect-vs-past-simple",
+    "title": "Test — Present Perfect va Past Simple",
+    "questions": [
+      { "text": "Ikki zamonni ajratishning eng ishonchli qoidasi qaysi?", "options": ["Fe'l turiga qarash", "Aniq o'tgan vaqt bor → Past Simple; yo'q → Present Perfect", "Uzunlikka qarash", "Egaga qarash"], "correctIndex": 1, "explanation": "Signal so'z eng ishonchli ko'rsatkich." },
+      { "text": "«When...?» savoli qaysi zamonni talab qiladi?", "options": ["Present Perfect", "DOIM Past Simple", "Present Continuous", "Ikkalasi"], "correctIndex": 1, "explanation": "«When did you go?» — «When have you gone?» xato." },
+      { "text": "Yangilik e'lon qilishda zamonlar qanday ketma-ketlikda keladi?", "options": ["Past → PP", "PP (e'lon) → Past Simple (tafsilot)", "Faqat PP", "Faqat Past"], "correctIndex": 1, "explanation": "He's hurt his leg. He fell down the stairs." },
+      { "text": "«ever, never, just, already, yet» qaysi zamonning signali?", "options": ["Past Simple", "Present Perfect", "Past Perfect", "Future"], "correctIndex": 1, "explanation": "Past Simple signallari: yesterday, last..., ...ago, in 2010, then." },
+      { "text": "«this morning» qaysi zamon bilan ishlatiladi?", "options": ["Doim Past", "Doim PP", "Davom etayotgan bo'lsa PP, tugagan bo'lsa Past", "Hech qaysi"], "correctIndex": 2, "explanation": "Ertalab hali davom etsa PP; tush bo'lgan bo'lsa Past Simple." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "05-present-perfect-vs-past-mustahkamlash",
+    "title": "Test — PP va Past: mustahkamlash",
+    "questions": [
+      { "text": "«This is the first time I ___ here» — to'g'ri shakl?", "options": ["am", "have been", "was", "will be"], "correctIndex": 1, "explanation": "«This is the first time I've + V3» — hozirgi zamon emas, Present Perfect." },
+      { "text": "«the best film I ___ seen» — to'g'ri shakl?", "options": ["ever", "have ever", "did ever", "was ever"], "correctIndex": 1, "explanation": "Superlative + ever → Present Perfect: the best/worst ... I've ever + V3." },
+      { "text": "«How long ago did you...?» savoliga qanday javob beriladi?", "options": ["for 5 years", "5 years ago (Past)", "since 2019", "yet"], "correctIndex": 1, "explanation": "«How long have you...?» esa for/since bilan javob oladi." },
+      { "text": "«been in» qanday ma'no beradi?", "options": ["Borib qaytgan", "Qancha vaqt turgan", "Hali u yerda", "Ketgan"], "correctIndex": 1, "explanation": "been to (qaytgan) / gone to (hali u yerda) / been in (qancha vaqt)." },
+      { "text": "«the other day» qaysi zamon bilan keladi?", "options": ["Present Perfect", "Past Simple", "Present Continuous", "Past Perfect"], "correctIndex": 1, "explanation": "recently/lately/so far/up to now → PP; the other day → Past." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "06-present-perfect-continuous",
+    "title": "Test — Present Perfect Continuous",
+    "questions": [
+      { "text": "Present Perfect Continuous formulasi qanday?", "options": ["have + V-ing", "have/has been + V-ing", "had been + V-ing", "have + V3"], "correctIndex": 1, "explanation": "«been» tushib qolmasligi kerak." },
+      { "text": "«I've been reading» va «I've read 3 books» qanday farqlanadi?", "options": ["Farqi yo'q", "Continuous — jarayon; Simple — natija/miqdor", "Simple — jarayon", "Ikkalasi natija"], "correctIndex": 1, "explanation": "How long have you been...? (vaqt) ↔ How much have you...? (natija)." },
+      { "text": "«I'm tired — I've been running» qaysi ma'no?", "options": ["Davomiylik", "Yaqingi harakatning hozirgi izi", "Odat", "Kelajak"], "correctIndex": 1, "explanation": "Ikki asosiy ma'no: davomiylik (for/since) va hozirgi iz." },
+      { "text": "«I've been knowing him» — bu nega xato?", "options": ["been xato", "know — stative fe'l, Continuous da ishlatilmaydi", "him xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: I've known him for years." },
+      { "text": "«5 yildan beri shu yerda ishlayman» (jarayonga urg'u) qanday aytiladi?", "options": ["I work here for 5 years", "I've been working here for 5 years", "I am working here for 5 years", "I worked here for 5 years"], "correctIndex": 1, "explanation": "for/since bilan davomiylikni ta'kidlash uchun PPC ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "07-past-perfect",
+    "title": "Test — Past Perfect",
+    "questions": [
+      { "text": "Past Perfect formulasi qanday?", "options": ["have + V3", "had + V3 (hamma shaxsda)", "was + V3", "did + V3"], "correctIndex": 1, "explanation": "O'tmishdan oldingi o'tmish. Inkor: hadn't + V3." },
+      { "text": "«When I arrived, the train had left» nimani anglatadi?", "options": ["Men kelgach ketdi", "Men kelgunimcha allaqachon ketgan edi", "Birga ketdik", "Hali ketmagan"], "correctIndex": 1, "explanation": "«...the train left» esa: men kelganimdan keyin ketdi." },
+      { "text": "«'d» qachon «had», qachon «would» bo'ladi?", "options": ["Doim had", "'d + V3 = had; 'd + V1 = would", "'d + V1 = had", "Farqi yo'q"], "correctIndex": 1, "explanation": "I'd finished (had) ↔ I'd go (would)." },
+      { "text": "Bitta o'tmish voqeasi haqida gapirganda qaysi zamon kerak?", "options": ["Past Perfect", "Past Simple — Past Perfect shart emas", "Present Perfect", "Ikkalasi"], "correctIndex": 1, "explanation": "Past Perfect faqat ikki voqea tartibini aniqlash uchun kerak." },
+      { "text": "«by the time» qaysi zamon signali?", "options": ["Present Perfect", "Past Perfect", "Present Simple", "Future"], "correctIndex": 1, "explanation": "Signal so'zlar: already/just/never (o'rtada), by the time, before, after." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "08-past-perfect-continuous",
+    "title": "Test — Past Perfect Continuous",
+    "questions": [
+      { "text": "Past Perfect Continuous formulasi qanday?", "options": ["had + V-ing", "had been + V-ing", "have been + V-ing", "was being + V-ing"], "correctIndex": 1, "explanation": "Hamma shaxsda «had been» — o'zgarmaydi." },
+      { "text": "«When she came, I'd been waiting for an hour» nimani anglatadi?", "options": ["U kelgach kuta boshladim", "U kelgunimcha bir soat kutgan edim", "Kutmadim", "Hali kutyapman"], "correctIndex": 1, "explanation": "O'tmishdagi nuqtagacha davom etgan harakat." },
+      { "text": "«I was tired because I'd been working» qaysi ma'no?", "options": ["Davomiylik", "O'tmishdagi natija/iz", "Kelajak", "Odat"], "correctIndex": 1, "explanation": "Ikki asosiy ma'no: nuqtagacha davomiylik va o'tmishdagi iz." },
+      { "text": "«I'd been knowing him» — bu nega xato?", "options": ["been xato", "know — stative fe'l; to'g'risi: I'd known him", "had xato", "Xato emas"], "correctIndex": 1, "explanation": "Stative fe'llar (know/have/be) Continuous da ishlatilmaydi." },
+      { "text": "Uch davomiylik shaklining to'g'ri ketma-ketligi qaysi?", "options": ["have been / was / had been", "was working / have been working / had been working", "had been / was / have been", "Farqi yo'q"], "correctIndex": 1, "explanation": "O'tmish davomiyligi → hozirgacha davomiylik → o'tmishdagi nuqtagacha davomiylik." }
+    ]
+  }
+]

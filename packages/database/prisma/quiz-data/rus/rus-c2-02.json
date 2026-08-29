@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "10-sheriy-til",
+    "title": "Test — She'riy til",
+    "questions": [
+      { "text": "«Метр» va «разме́р» qanday farqlanadi?", "options": ["Farqi yo'q", "Metr — turoq turi; razmer — metr + turoq soni", "Razmer — turoq turi", "Metr — qofiya"], "correctIndex": 1, "explanation": "Masalan: ямб — metr; четырёхсто́пный ямб — razmer." },
+      { "text": "«Бу́ря мгло́ю не́бо кро́ет» — qaysi o'lchov?", "options": ["Ямб", "Хоре́й (—u)", "Да́ктиль", "Ана́пест"], "correctIndex": 1, "explanation": "Ikki bo'g'inli o'lchovlar: ямб (u—), хоре́й (—u)." },
+      { "text": "«Ту́чки небе́сные» — qaysi uch bo'g'inli o'lchov?", "options": ["Да́ктиль (—uu)", "Амфибра́хий (u—u)", "Ана́пест (uu—)", "Ямб"], "correctIndex": 0, "explanation": "Уч bo'g'inli: да́ктиль, амфибра́хий (Не ве́тер бушу́ет), ана́пест (О, весна́)." },
+      { "text": "ABAB qofiya sxemasi qanday ataladi?", "options": ["Сме́жная", "Перекрёстная", "Кольцева́я", "Дактили́ческая"], "correctIndex": 1, "explanation": "AABB — сме́жная; ABAB — перекрёстная; ABBA — кольцева́я." },
+      { "text": "«Бе́лый стих» va «верли́бр» qanday farqlanadi?", "options": ["Farqi yo'q", "Oq she'r — o'lchovli, qofiyasiz; verlibr — o'lchovsiz ham, qofiyasiz ham", "Verlibr qofiyali", "Oq she'r qofiyali"], "correctIndex": 1, "explanation": "Сканди́рование — o'lchovni aniqlash usuli (bo'g'inlab, urg'uni ta'kidlab o'qish)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "11-intertekstuallik",
+    "title": "Test — Intertekstuallik",
+    "questions": [
+      { "text": "Intertekstuallik nima?", "options": ["Matn ichidagi bog'lanish", "Matnlararo dialog — hech bir matn bo'shliqda yashamaydi", "Tarjima usuli", "Janr"], "correctIndex": 1, "explanation": "Kristeva: «matn — iqtiboslar mozaikasi»." },
+      { "text": "Iqtibos va allyuziya qanday farqlanadi?", "options": ["Farqi yo'q", "Iqtibosda so'zlar keltiriladi, allyuziyada — faqat ishora", "Allyuziyada so'zlar keltiriladi", "Iqtibos yashirin"], "correctIndex": 1, "explanation": "«гамле́товский вопро́с», «ахилле́сова пята́» — allyuziya." },
+      { "text": "«Реминисце́нция» nima?", "options": ["Aniq iqtibos", "Ongsiz, xira aks-sado — ohang, ritm, motiv «eshitiladi»", "Epigraf", "Parodiya"], "correctIndex": 1, "explanation": "Intertekstning eng nozik, subyektiv qutbi." },
+      { "text": "«Эпи́граф» ning vazifasi nima?", "options": ["Bezak", "Butun matnning kaliti — muallif bergan «o'qish ko'rsatmasi»", "Xulosa", "Sarlavha"], "correctIndex": 1, "explanation": "«Береги́ честь смо́лоду», «Мне отмще́ние, и Аз возда́м» — klassik misollar." },
+      { "text": "Baxtin nazariyasidagi «полифони́я» nimani anglatadi?", "options": ["Musiqiylik", "Ko'povozlilik — har so'zda «o'zga ovoz» yashiringan", "Qofiya", "Ritm"], "correctIndex": 1, "explanation": "Dostoyevskiy romani — polifonik roman namunasi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "12-stilizatsiya-parodiya",
+    "title": "Test — Stilizatsiya va parodiya",
+    "questions": [
+      { "text": "Stilizatsiya va parodiya qanday farqlanadi?", "options": ["Farqi yo'q", "Stilizatsiya — hurmat bilan qayta yaratish; parodiya — bo'rttirib kulgili taqlid", "Parodiya hurmatli", "Stilizatsiya masxara"], "correctIndex": 1, "explanation": "Stilizatsiya kaliti — «ovozni kiyish»; parodiya quroli — giperbolizatsiya va nomutanosiblik." },
+      { "text": "«Козьма́ Прутко́в» nimaning etaloni?", "options": ["Stilizatsiya", "Soxta hikmat (parodiya)", "Skaz", "Pastish"], "correctIndex": 1, "explanation": "Parodiya uslubning xarakterli belgisini bo'rttiradi." },
+      { "text": "«Пасти́ш» nima?", "options": ["Parodiya turi", "Bir necha uslubning o'yinli, postmodern aralashmasi", "Stilizatsiya turi", "Skaz turi"], "correctIndex": 1, "explanation": "Na to'liq hurmat, na to'liq masxara — oraliq, o'yinli shakl." },
+      { "text": "«Сказ» ning ikki qatlami qaysi?", "options": ["Nasr va she'r", "Hikoyachi ovozi + yashirin muallif ironiyasi", "Kirish va xulosa", "Fakt va baho"], "correctIndex": 1, "explanation": "Leskov («Левша́», xalq etimologiyasi) va Zoshchenko — skaz ustalari." },
+      { "text": "Stilizatsiya va plagiat qanday farqlanadi?", "options": ["Farqi yo'q", "Ijodiy taqlid begona USULni oladi; plagiat begona MATNni o'g'irlaydi", "Stilizatsiya matnni oladi", "Plagiat usulni oladi"], "correctIndex": 1, "explanation": "Til-o'yin janrlari (буриме́, липогра́мма, палиндро́м, акрости́х) esa cheklov orqali ijodni kuchaytiradi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "13-otsenochnost-tonallik",
+    "title": "Test — Baho va tonallik",
+    "questions": [
+      { "text": "«до́мик / доми́шко / доми́ще» — bu qanday baho vositasi?", "options": ["Leksik", "So'z yasovchi suffiks", "Kontekstual", "Kirish so'z"], "correctIndex": 1, "explanation": "Eng ruscha baho vositasi: iliq ↔ kamsituvchi ↔ ulkan." },
+      { "text": "Matn ohangi qaysi uch vositadan tug'iladi?", "options": ["Imlo, urg'u, tinish", "Leksika + sintaksis + ritm", "Rod, son, kelishik", "Zamon, aspekt, mayl"], "correctIndex": 1, "explanation": "Uchalasi bir yo'nalishga burilishi shart; biri zid bo'lsa — ohang buziladi." },
+      { "text": "«Мода́льная ра́мка» nima?", "options": ["Gap qolipi", "Muallif munosabatining matn bo'ylab izchil saqlanishi", "Kirish so'z", "Sarlavha"], "correctIndex": 1, "explanation": "Ramka — matnning «umurtqa pog'onasi». Kaliti — izchillik." },
+      { "text": "Evfemizm, litota va ironiya nimasi bilan o'xshash?", "options": ["Hammasi kuchaytiradi", "Uchtasi ham yashirin baho — «yumshoq» ko'rinadi, maqsadi boshqa", "Hammasi rasmiy", "Hammasi ochiq baho"], "correctIndex": 1, "explanation": "Evfemizm yumshatadi, litota kamtarona qiladi, ironiya teskariga buradi." },
+      { "text": "Ohang o'zgarishi qachon mahorat hisoblanadi?", "options": ["Har doim", "Faqat motivlangan bo'lsa — mazmun burilishi bilan", "Hech qachon", "Faqat she'rda"], "correctIndex": 1, "explanation": "Motivsiz o'zgarish — xato. Har janrning o'z ohangi bor: ilmiy — neytral, marsiya — elegik." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "14-ekspressiv-fonetika-grafika",
+    "title": "Test — Ekspressiv fonetika va grafika",
+    "questions": [
+      { "text": "Alliteratsiya va assonans qanday farqlanadi?", "options": ["Farqi yo'q", "Alliteratsiya — undosh takrori; assonans — unli takrori", "Assonans — undosh", "Alliteratsiya — unli"], "correctIndex": 1, "explanation": "Test: «takrorlanayotgan tovush unlimi yoki undoshmi?» «Шипе́нье пе́нистых» — alliteratsiya." },
+      { "text": "«шурша́ть, журча́ть, жужжа́ть» — bu qanday leksika?", "options": ["Arxaik", "Onomatopeyadan yasalgan (звукоподража́ние)", "Jargon", "Terminologik"], "correctIndex": 1, "explanation": "Obraz kerak bo'lganda neytral so'z (течь) o'rniga onomatopeik so'z (журча́ть) tanlanadi." },
+      { "text": "Zhuravlyov tizimida «р/гр» tovushlari qanday ma'no beradi?", "options": ["Yumshoqlik", "Qattiqlik, g'azab, kuch", "Shivir", "Chuqurlik"], "correctIndex": 1, "explanation": "л/м/н — yumshoqlik; с/ш/щ — shivir; у — qorong'i; а/о — keng, tantana." },
+      { "text": "«Разря́дка» (harflarni ajratib yozish) qanday effekt beradi?", "options": ["Baqiriq", "Sekinlik va tantana", "Tezlik", "Kulgi"], "correctIndex": 1, "explanation": "Register muhim: разря́дка/kursiv — badiiy; capslock/emoji — norasmiy/reklama." },
+      { "text": "Zvukopisning asosiy sharti nima?", "options": ["Iloji boricha ko'p takror", "Tovush mazmunga MOS (motivlangan) bo'lishi", "Faqat unlilar", "Faqat she'rda"], "correctIndex": 1, "explanation": "Ziravor kabi: oz bo'lsa nozik, ko'p bo'lsa sun'iy karikatura." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "15-notiqlik-choqqi",
+    "title": "Test — Notiqlik cho'qqisi",
+    "questions": [
+      { "text": "Klassik ritorika kanonining besh bosqichi qaysi?", "options": ["Kirish, dalil, xulosa", "Инве́нция → диспози́ция → элоку́ция → мемо́рия → а́кция", "Etos, logos, pafos", "Tezis, argument, misol"], "correctIndex": 1, "explanation": "Yaxshi nutq oyoqda emas, «stolda» tug'iladi." },
+      { "text": "Nutq dramaturgiyasi qanday quriladi?", "options": ["Tekis ohangda", "Зачи́н (qarmoq) → кульмина́ция → zarbali концо́вка", "Faqat xulosa", "Erkin"], "correctIndex": 1, "explanation": "Nutq — to'lqin, egri chiziq; kontrast unga kuch beradi." },
+      { "text": "Ritorik figura qachon ishlatilishi kerak?", "options": ["Har gapda", "Zanjirlab, me'yor bilan — faqat kulminatsiyada «portlaydi»", "Faqat kirishda", "Umuman ishlatilmaydi"], "correctIndex": 1, "explanation": "Ана́фора, града́ция, анти́теза, хиа́зм, оксю́морон — ustalik bilan." },
+      { "text": "Nutq texnikasida eng kuchli fikr qanday aytiladi?", "options": ["Baland va tez", "Sekin, past, pauza bilan", "Baqirib", "Shivirlab"], "correctIndex": 1, "explanation": "Ovoz — asbob; pauza — eng kuchli qurol." },
+      { "text": "«Ekspromt» qanday erishiladi?", "options": ["Tayyorgarliksiz", "Tayyorlangan improvizatsiya: universal «g'ishtlar» + PREP formulasi", "Yodlash bilan", "Tasodifan"], "correctIndex": 1, "explanation": "Erkinlik tayyorgarlikdan tug'iladi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "16-akademik-yozuv-choqqi",
+    "title": "Test — Akademik yozuv cho'qqisi",
+    "questions": [
+      { "text": "Monografiya maqoladan nimasi bilan farq qiladi?", "options": ["Faqat uzunligi", "Miqyos va mantiq — «yopiq halqa» kitob, bob, paragraf darajasida takrorlanadi", "Uslubi", "Havolalari"], "correctIndex": 1, "explanation": "Гипо́теза → доказа́тельство → вы́вод har qavatda qayta quriladi." },
+      { "text": "Ilmiy polemikaning oltin qoidasi qaysi?", "options": ["Raqibni yengish", "Tezisga e'tiroz bildirish, shaxsga emas", "Tanqid qilmaslik", "Faqat maqtash"], "correctIndex": 1, "explanation": "Klishelar: Представля́ется спо́рным...; Тру́дно согласи́ться...; нужда́ется в уточне́нии." },
+      { "text": "«Polemika halqasi» necha qadamdan iborat?", "options": ["2", "3: xolis bayon → dalilli muloyim e'tiroz → o'z muqobil", "4", "5"], "correctIndex": 1, "explanation": "Raqibni eng kuchli shaklida ko'rsatib, so'ng aynan shunga e'tiroz bildirish — ilmiy odob belgisi." },
+      { "text": "Ilmiy apparatning ikki cho'qqi talabi qaysi?", "options": ["Uzunlik va murakkablik", "Ilmiy halollik (har fikr — havola bilan) va terminologik izchillik", "Ko'p atama va uzun gap", "Passiv va nominalizatsiya"], "correctIndex": 1, "explanation": "Bir tushuncha — bir atama; har o'zga fikr — havola bilan." },
+      { "text": "«Мета-язы́к» nima?", "options": ["Chet tili", "Matnni boshqaruvchi klishelar — o'quvchining «kompasi»", "Atamalar", "Havolalar"], "correctIndex": 1, "explanation": "Как бы́ло пока́зано вы́ше...; Обрати́мся к...; Резюми́руя ска́занное..." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "17-publitsistik-mahorat",
+    "title": "Test — Publitsistik mahorat",
+    "questions": [
+      { "text": "C1 va C2 publitsistikasi qanday farq qiladi?", "options": ["Farqi yo'q", "C1 da janrlarni farqlaysiz; C2 da ularni o'z ovozingizga bo'ysundirasiz", "C2 da janr yo'q", "C1 da ovoz bor"], "correctIndex": 1, "explanation": "Havaskor janrni ijro etadi, mahorat egasi uni o'z asbobiga aylantiradi." },
+      { "text": "Kolonka va esse qanday temperamentlar?", "options": ["Ikkalasi introvert", "Kolonka — ekstravert (dolzarb, puant); esse — introvert (abadiy mavzu, ochiq yakun)", "Kolonka — introvert", "Ikkalasi ekstravert"], "correctIndex": 1, "explanation": "Ikkovida ham muallif «men»i markazda turadi." },
+      { "text": "Ta'sir san'atining bosh sabog'i nima?", "options": ["Iloji boricha ko'p vosita", "Чу́вство ме́ры — eng kuchli ta'sir bosimda emas, aniqlikda", "Baland ohang", "Uzun matn"], "correctIndex": 1, "explanation": "Arsenal + o'lchov: barcha vosita bir maqsadga birlashadi." },
+      { "text": "Ta'sir va manipulyatsiyani ajratuvchi savol qaysi?", "options": ["O'quvchi rozi bo'ldimi?", "«O'quvchi men bergan hamma narsani bilsa, u baribir shu xulosaga kelarmidi?»", "Matn uzunmi?", "Dalil ko'pmi?"], "correctIndex": 1, "explanation": "Agar u faqat men bir narsani yashirganim uchun rozi bo'lsa — bu manipulyatsiya." },
+      { "text": "Professional publitsistning eng katta boyligi nima?", "options": ["Uslub", "O'quvchining ishonchi", "Auditoriya soni", "Sarlavha"], "correctIndex": 1, "explanation": "Va u ta'sir bilan manipulyatsiya orasidagi chiziqni hech qachon kesib o'tmaydi." }
+    ]
+  }
+]

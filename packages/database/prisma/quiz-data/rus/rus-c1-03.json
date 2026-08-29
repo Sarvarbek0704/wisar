@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "21-matn-boglanishi-kogeziya",
+    "title": "Test — Matn bog'lanishi (kogeziya)",
+    "questions": [
+      { "text": "«Связность» va «цельность» qanday farqlanadi?", "options": ["Farqi yo'q", "Yuzaki (til vositalari) ↔ chuqur (mavzuviy-mantiqiy) bog'lanish", "Biri imlo, biri urg'u", "Biri og'zaki, biri yozma"], "correctIndex": 1, "explanation": "Ikkalasi ham zarur: til vositalari matnni ulaydi, mantiq esa uni butun qiladi." },
+      { "text": "«учёный → иссле́дователь → он» — bu qanday bog'lanish?", "options": ["Grammatik", "Leksik — sinonim, giperonim, olmosh orqali", "Ellipsis", "Konnektor"], "correctIndex": 1, "explanation": "Bir tushunchani takrorlamay atash. Ilmiy matnda takrorning o'zi ham norma." },
+      { "text": "«да́нный, вышеупомя́нутый» qaysi registrga tegishli anafora?", "options": ["Neytral", "Rasmiy", "So'zlashuv", "Badiiy"], "correctIndex": 1, "explanation": "Neytral: он, э́то, тот, тако́й. Anafora har doim aniq bo'lishi kerak." },
+      { "text": "Abzas arxitekturasi qanday?", "options": ["Faqat tezis", "Тезис + разви́тие + вы́вод", "Kirish + xulosa", "Erkin"], "correctIndex": 1, "explanation": "Заголовок va подзаголовок esa matn xaritasini beradi." },
+      { "text": "«таки́м о́бразом, сле́довательно» qaysi konnektor guruhi?", "options": ["Qo'shish", "Sabab-natija", "Qarshilik", "Havola"], "correctIndex": 1, "explanation": "Guruhlar: qo'shish (кро́ме того́), qarshilik (одна́ко), sabab-natija, ketma-ketlik, izohlash, havola (в свою́ о́чередь)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "22-akademik-yozuv-ilmiy-maqola",
+    "title": "Test — Ilmiy maqola",
+    "questions": [
+      { "text": "IMRAD karkasining oltita amaliy bo'limi qaysi?", "options": ["Kirish → xulosa", "Аннота́ция → введе́ние → методоло́гия → результа́ты → вы́воды → список литерату́ры", "Reja → matn", "Tezis → dalil"], "correctIndex": 1, "explanation": "Har bo'lim o'z savoli va o'z klishesi bilan." },
+      { "text": "Аннота́ция qachon yoziladi?", "options": ["Birinchi", "Eng oxirida", "Metoddan keyin", "Kirish bilan birga"], "correctIndex": 1, "explanation": "4–6 jumlada butun maqolani siqadi: predmet + maqsad + metod + natija + ahamiyat." },
+      { "text": "Kirishda «цель» nechta bo'lishi kerak?", "options": ["Bir necha", "Bitta (зада́чи esa bir necha)", "Uchta", "Kerak emas"], "correctIndex": 1, "explanation": "Kirish to'rt bo'g'in: актуа́льность → степень изу́ченности → цель и зада́чи → нови́зна." },
+      { "text": "«Результа́ты» bo'limida nima bo'lmasligi kerak?", "options": ["Raqamlar", "Talqin — faqat faktlar keltiriladi", "Jadval", "Faktlar"], "correctIndex": 1, "explanation": "Talqin «вы́воды» bo'limiga tegishli." },
+      { "text": "«Yopiq halqa» tamoyili nimani anglatadi?", "options": ["Maqola aylana shaklda", "Kirishdagi «цель» va xulosadagi natija aynan mos bo'lishi", "Havolalar takrorlanishi", "Annotatsiya takrorlanishi"], "correctIndex": 1, "explanation": "Maqola — savol qo'yib, aynan shu savolga javob beradigan tuzilma." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "23-akademik-yozuv-sharh-taqriz-referat",
+    "title": "Test — Konspekt, referat, retsenziya",
+    "questions": [
+      { "text": "Qaysi janrda o'z bahoyingizni berish mumkin?", "options": ["Konspekt", "Referat", "Реце́нзия", "Аннота́ция"], "correctIndex": 2, "explanation": "Konspekt, tezis, annotatsiya va referatda baho yo'q — faqat manba mazmuni." },
+      { "text": "«Аннота́ция» va «рефера́т» qanday farqlanadi?", "options": ["Farqi yo'q", "Annotatsiya — nima haqida (vitrina); referat — nima aytilgan (mazmun bayoni)", "Referat qisqaroq", "Annotatsiya baho beradi"], "correctIndex": 1, "explanation": "O'q: конспе́кт → те́зисы → аннота́ция → рефера́т → реце́нзия." },
+      { "text": "«ста́вит под сомне́ние» qanday bayon fe'li?", "options": ["Neytral", "Shubha", "Ta'kid", "Xulosa"], "correctIndex": 1, "explanation": "Neytral (отмеча́ет), ta'kid (подчёркивает), da'vo (утвержда́ет), tahlil (анализи́рует), xulosa (прихо́дит к вы́воду)." },
+      { "text": "Egri gapga o'tkazganda rus tilida zamon o'zgaradimi?", "options": ["Ha", "Yo'q — faqat 1-shaxs olmoshi 3-shaxsga o'zgaradi", "Faqat o'tgan zamonda", "Faqat kelasi zamonda"], "correctIndex": 1, "explanation": "«Сон ва́жен» → Автор утвержда́ет, что сон ва́жен." },
+      { "text": "Retsenziya muvozanati qanday quriladi?", "options": ["Faqat tanqid", "Yutuq → одна́ко/вме́сте с тем bilan kamchilik → umumiy ijobiy xulosa", "Faqat maqtov", "Kamchilik → yutuq"], "correctIndex": 1, "explanation": "Tanqid ishga qaratiladi, shaxsga emas." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "24-rasmiy-murakkab-hujjatlar",
+    "title": "Test — Murakkab rasmiy hujjatlar",
+    "questions": [
+      { "text": "«впра́ве» dan keyin nima keladi?", "options": ["Fe'lning tuslangan shakli", "Infinitiv", "Ot", "Sifat"], "correctIndex": 1, "explanation": "обязу́ется + infinitiv, впра́ве + infinitiv — fe'l emas." },
+      { "text": "«в лице́» qaysi kelishik bilan?", "options": ["Vosita (Т.)", "Qaratqich (Р.)", "Jo'nalish (Д.)", "Tushum (В.)"], "correctIndex": 1, "explanation": "в лице́ + Р.; в соотве́тствии с + Т.; нести́ отве́тственность за + В." },
+      { "text": "Bayonnomada «ПОСТАНОВИ́ЛИ» dan keyin nima keladi?", "options": ["Ot bosh kelishikda", "Infinitiv-buyruq", "Sifat", "Qaratqich"], "correctIndex": 1, "explanation": "СЛУ́ШАЛИ + Р.п. (kimni), ПОСТАНОВИ́ЛИ + infinitiv, keyin ovoz berish natijalari." },
+      { "text": "Shartnomaning birinchi bloki qaysi?", "options": ["Предме́т", "Сто́роны", "Отве́тственность", "Реквизи́ты"], "correctIndex": 1, "explanation": "Сто́роны → Предме́т → Права́ и обя́занности → Отве́тственность → Форс-мажо́р → Срок → Реквизи́ты." },
+      { "text": "Hisobot tili qanday quriladi?", "options": ["Aktiv va hissiy", "Passiv va raqam (проде́лана рабо́та, вы́полнено на ... %)", "So'zlashuv", "Badiiy"], "correctIndex": 1, "explanation": "Rasmiy uslubning shaxssizlik tamoyili hisobotda ham amal qiladi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "25-publitsistika-tahliliy-janrlar",
+    "title": "Test — Tahliliy publitsistika",
+    "questions": [
+      { "text": "Informativ va tahliliy janr qanday farqlanadi?", "options": ["Uzunligi bilan", "Informativ «nima bo'ldi?», tahliliy «nega? nima qilish kerak?» degan savolga javob beradi", "Tahliliy qisqaroq", "Farqi yo'q"], "correctIndex": 1, "explanation": "Tahliliy janrda gap faktdan ko'ra fakt haqidagi fikrda, bahoda, obrazda." },
+      { "text": "Esse va analitik maqola qanday qutblar?", "options": ["Ikkalasi obyektiv", "Esse subyektiv («Я» — janr talabi), maqola obyektiv (dalil, mantiq)", "Ikkalasi subyektiv", "Esse obyektiv"], "correctIndex": 1, "explanation": "Maqolada «Я» dalilsiz ishlatilsa — kamchilik." },
+      { "text": "«Коло́нка» kompozitsiyasi qanday?", "options": ["Muammo → sabab → yechim", "Ilinch → mulohaza → puant", "Kirish → dalil → xulosa", "Erkin oqim"], "correctIndex": 1, "explanation": "Maqola — mantiqiy zanjir; kolonka — ilinch/puant; esse — erkin oqim." },
+      { "text": "«Фельето́н» ning maqsadi nima?", "options": ["Xabar berish", "Kinoya bilan qoralash", "Tendensiya ko'rsatish", "Obraz yaratish"], "correctIndex": 1, "explanation": "Olti janr: о́черк, эссе́, коло́нка, аналити́ческая статья́, обзо́р, фельето́н." },
+      { "text": "Tahliliy janrlarni nima birlashtiradi?", "options": ["Uzunlik", "А́вторский го́лос — muallif ovozi", "Rasmiy uslub", "Betaraflik"], "correctIndex": 1, "explanation": "Betaraf, «hech kimning» matni — tahliliy janr emas." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "26-notiqlik-sanati",
+    "title": "Test — Notiqlik san'ati",
+    "questions": [
+      { "text": "Ishontirishning uch usuli qaysi?", "options": ["Ovoz, tana, pauza", "Э́тос, ло́гос, па́фос", "Kirish, dalil, xulosa", "Tezis, argument, misol"], "correctIndex": 1, "explanation": "Etos — obro', logos — mantiq, pafos — his. Kuch uchalasining muvozanatida." },
+      { "text": "Argumentlarni qanday tartibda joylash kerak?", "options": ["Eng kuchli birinchi", "Kuchli – kuchsiz – eng kuchli", "Tasodifiy", "Eng kuchli o'rtada"], "correctIndex": 1, "explanation": "Eng kuchli dalil oxirga qoldiriladi — u esda qoladi." },
+      { "text": "«Подме́на те́зиса» nima?", "options": ["Ritorik vosita", "Mantiqiy xato", "Kompozitsiya turi", "Pafos turi"], "correctIndex": 1, "explanation": "Mantiqiy xatolar: подме́на те́зиса, поро́чный круг, ло́жная причи́на, ло́жная дилемма." },
+      { "text": "Kutilgan e'tiroz bilan qanday ishlanadi?", "options": ["E'tiborsiz qoldirish", "Oldindan aytib, bartaraf qilish (Мне мо́гут возрази́ть… На э́то отве́чу…)", "Rad etish", "Mavzuni o'zgartirish"], "correctIndex": 1, "explanation": "Bu ishonchni oshiradi — notiq e'tirozdan qochmaydi." },
+      { "text": "Nutq texnikasining eng kuchli quroli qaysi?", "options": ["Baland ovoz", "Pauza", "Tez temp", "Imo-ishora"], "correctIndex": 1, "explanation": "Ishontirish ≠ manipulyatsiya: dalilga tayaning, tinglovchini o'ylashga chorlang." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "27-tarjima-muammolari",
+    "title": "Test — Tarjima muammolari",
+    "questions": [
+      { "text": "«тоска́, аво́сь, просто́р» — bular qanday leksika?", "options": ["Arxaizm", "Безэквивалентная — tayyor muqobili yo'q", "Neologizm", "Jargon"], "correctIndex": 1, "explanation": "Yechim: transkripsiya, tavsif yoki analog. O'zbekchada: palov, mahalla, hashar." },
+      { "text": "«интеллиге́нтный» nimani anglatadi?", "options": ["Aqlli", "Ziyoli, madaniyatli", "Tushunarli", "Zukko"], "correctIndex": 1, "explanation": "Ложный друг переводчика. Yana: симпати́чный = chiroyli, «hamdard» emas." },
+      { "text": "«скуча́ю тебя́» — bu qanday xato?", "options": ["Imlo", "Kalka — fe'l boshqaruvining so'zma-so'z ko'chirilishi", "Paronim", "Pleonazm"], "correctIndex": 1, "explanation": "To'g'risi: скуча́ю по тебе́. Mezon: ona tili sohibi shunday deydimi?" },
+      { "text": "O'zbekcha «bormoq» rus tilida qanday beriladi?", "options": ["Bitta fe'l bilan", "иду́ / е́ду / хожу́ — kontekstga qarab", "Faqat идти́", "Faqat е́хать"], "correctIndex": 1, "explanation": "Grammatik farq so'z bilan emas, qayta qurish bilan yechiladi." },
+      { "text": "Tarjima muammosi oldida nechta usul bor?", "options": ["3", "5: транскри́пция, ка́лька, ана́лог, описа́тельный перево́д, компенса́ция", "2", "7"], "correctIndex": 1, "explanation": "Usulni matn maqsadi aytadi. Tarjima — so'zni emas, ma'noni ko'chirish." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "28-madaniy-lingvistik-kompetensiya",
+    "title": "Test — Madaniy-lingvistik kompetensiya",
+    "questions": [
+      { "text": "«Обло́мов» qanday obraz-ramz?", "options": ["Ziqnalik", "Dangasalik", "Maqtanchoqlik", "Xayolparastlik"], "correctIndex": 1, "explanation": "Прецеде́нтные имена́: Плю́шкин (ziqnalik), Хлестако́в (maqtanchoq), Дон Кихо́т (xayolparast)." },
+      { "text": "«его́ ли́чное Ватерло́о» — bu qanday hodisa?", "options": ["Metafora", "Аллю́зия — yashirin havola", "Epitet", "Perifraza"], "correctIndex": 1, "explanation": "Uni sezish uchun manbani avvaldan bilish shart: умы́л ру́ки, ветряны́е ме́льницы." },
+      { "text": "«ни пу́ха ни пера́» ga qanday javob beriladi?", "options": ["Спаси́бо", "К чёрту!", "Пожа́луйста", "И вам того́ же"], "correctIndex": 1, "explanation": "Табу va эвфеми́зм: omadni to'g'ridan tilash «ko'z tegishi» mumkin deb qaraladi." },
+      { "text": "Ruxsatsiz «ты» ga o'tish nimani anglatadi?", "options": ["Do'stlik", "Qo'pollik — nutq odobi buzilishi", "Hurmat", "Rasmiylik"], "correctIndex": 1, "explanation": "Речево́й этике́т: имя-о́тчество (hurmat), ты/Вы chegarasi, тост an'anasi." },
+      { "text": "«душа́, судьба́, аво́сь» — bular nima?", "options": ["Arxaizm", "Национа́льно-культу́рные конце́пты", "Neologizm", "Jargon"], "correctIndex": 1, "explanation": "Bir so'zda butun dunyoqarash. Ularni tarjima emas, tushuntirib uzatish kerak." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "29-mavzuli-lugat-ilgor-mavhum",
+    "title": "Test — Ilg'or mavhum leksika",
+    "questions": [
+      { "text": "«свиде́тельствовать» qaysi predlog va kelishik bilan?", "options": ["о + o'rin (П.)", "за + tushum", "к + jo'nalish", "с + vosita"], "correctIndex": 0, "explanation": "свиде́тельствовать О чём. C1 mavhum leksikada boshqaruv hal qiladi." },
+      { "text": "«обусло́влен» qaysi kelishik bilan?", "options": ["Tushum (В.)", "Vosita (Т.)", "Qaratqich (Р.)", "Jo'nalish (Д.)"], "correctIndex": 1, "explanation": "обусло́вливать ЧТО (В.) ↔ обусло́влен ЧЕМ (Т.) — juftlikni birga yodlang." },
+      { "text": "«взаимосвя́зь ___ явле́ниями» — qaysi predlog?", "options": ["в", "ме́жду (+ vosita)", "на", "о"], "correctIndex": 1, "explanation": "противоре́чие / взаимосвя́зь МЕ́ЖДУ чем — vosita kelishigi." },
+      { "text": "«исходи́ть из» qaysi kelishik bilan?", "options": ["Vosita", "Qaratqich (Р.)", "Tushum", "O'rin"], "correctIndex": 1, "explanation": "исходи́ть / сле́довать ИЗ чего — qaratqich kelishigi." },
+      { "text": "«су́щность» va «явле́ние» qanday juftlik?", "options": ["Sinonim", "Falsafiy qarama-qarshi juftlik: mohiyat ↔ hodisa", "Paronim", "Omonim"], "correctIndex": 1, "explanation": "Yana farqlang: менталите́т ≠ мировоззре́ние, подразумева́ть ≠ име́ть в виду́." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "30-c1-takror-checkpoint-test",
+    "title": "Test — C1 yakuniy nazorat",
+    "questions": [
+      { "text": "«Быва́ло, придёт и ся́дет» — SV bu yerda nimani bildiradi?", "options": ["Bir martalik harakat", "Namoyish-namunaviy takror", "Kelasi zamon", "Buyruq"], "correctIndex": 1, "explanation": "Aspektning C1 nozikliklari (2-dars)." },
+      { "text": "«в лесу́» va «о ле́се» farqi qanday?", "options": ["Uslub farqi", "-у́ = joy, -е = mavzu", "Zamon farqi", "Farqi yo'q"], "correctIndex": 1, "explanation": "Kelishikning nozik variantlari (5-dars)." },
+      { "text": "«съел таре́лку» qaysi trop?", "options": ["Metafora", "Metonimiya", "Epitet", "Giperbola"], "correctIndex": 1, "explanation": "Metafora — o'xshashlik, metonimiya — real yaqinlik (13-dars)." },
+      { "text": "«за́мок / замо́к» — bu qanday omonim?", "options": ["Омо́фон", "Омо́граф", "Омофо́рма", "Polisemiya"], "correctIndex": 1, "explanation": "Bir xil yoziladi, urg'u farq qiladi (20-dars)." },
+      { "text": "«заключи́ть догово́р» — nega «сде́лать» emas?", "options": ["Farqi yo'q", "Rasmiy klishe — yaxlit, o'zgarmas kollokatsiya", "«сде́лать» eskirgan", "Xato savol"], "correctIndex": 1, "explanation": "So'zma-so'z tarjima tipik xatoga olib keladi (17-dars)." }
+    ]
+  }
+]

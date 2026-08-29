@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "23-so-such-too-enough",
+    "title": "Test — So, such, too, enough",
+    "questions": [
+      { "text": "«so» va «such» qanday farqlanadi?", "options": ["Farqi yo'q", "so — otsiz (so tired); such — ot bilan (such a good film)", "such — otsiz", "Ikkalasi ot bilan"], "correctIndex": 1, "explanation": "Ot bor → such; otsiz → so." },
+      { "text": "«___ a good film» — to'g'ri shakl?", "options": ["so", "such", "too", "very"], "correctIndex": 1, "explanation": "such + (a) + sifat + OT." },
+      { "text": "«too» va «very» qanday farqlanadi?", "options": ["Farqi yo'q", "too — ortiqcha (salbiy, muammo); very — neytral kuchaytirgich", "very — salbiy", "Ikkalasi salbiy"], "correctIndex": 1, "explanation": "It's too hot to drink ≠ It's very hot." },
+      { "text": "«enough» sifat bilan qayerda turadi?", "options": ["Oldin", "KEYIN: old enough", "Gap oxirida", "Fe'ldan oldin"], "correctIndex": 1, "explanation": "Ot bilan esa OLDIN: enough money." },
+      { "text": "«He was so tired ___ he slept» — bo'shliqqa nima?", "options": ["for", "that", "to", "which"], "correctIndex": 1, "explanation": "so/such ... that — natija bildiruvchi qurilma." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "24-question-tags",
+    "title": "Test — Question tags",
+    "questions": [
+      { "text": "«You're tired, ___ ?» — to'g'ri tag qaysi?", "options": ["are you", "aren't you", "do you", "don't you"], "correctIndex": 1, "explanation": "Ijobiy gap → inkor tag; inkor gap → ijobiy tag." },
+      { "text": "«I am late, ___ ?» — to'g'ri tag qaysi?", "options": ["am not I", "aren't I", "amn't I", "is not I"], "correctIndex": 1, "explanation": "Maxsus holat: I am → aren't I." },
+      { "text": "«Let's go, ___ ?» — to'g'ri tag qaysi?", "options": ["don't we", "shall we", "will we", "aren't we"], "correctIndex": 1, "explanation": "Let's → shall we; buyruq → will you; there is → isn't there." },
+      { "text": "«You never call, ___ ?» — to'g'ri tag qaysi?", "options": ["don't you", "do you", "did you", "aren't you"], "correctIndex": 1, "explanation": "never/nobody/hardly inkor hisoblanadi → IJOBIY tag." },
+      { "text": "Tag ohangi tushuvchi bo'lsa (↘) nima anglatiladi?", "options": ["Haqiqiy savol", "Rozilik kutish (small talk)", "Shubha", "Norozilik"], "correctIndex": 1, "explanation": "Ko'tariluvchi ohang (↗) esa haqiqiy savolni bildiradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "25-indirect-embedded-questions",
+    "title": "Test — Bilvosita savollar",
+    "questions": [
+      { "text": "«Could you tell me where ___ ?» — to'g'ri shakl?", "options": ["is it", "it is", "does it be", "is it?"], "correctIndex": 1, "explanation": "Embedded savolda oddiy so'z tartibi: ega + fe'l." },
+      { "text": "«Do you know ___ it's open?» — bo'shliqqa nima?", "options": ["that", "if / whether", "what", "hech narsa"], "correctIndex": 1, "explanation": "Yes/No savol embedded bo'lganda if/whether ishlatiladi." },
+      { "text": "«I wonder where he lives» oxirida savol belgisi kerakmi?", "options": ["Ha", "Yo'q — bu darak gap", "Faqat rasmiy uslubda", "Har doim"], "correctIndex": 1, "explanation": "Could you tell me...? — savol (?); I wonder... — darak gap (nuqta)." },
+      { "text": "«Do you know who called?» — nega so'z tartibi o'zgarmagan?", "options": ["Xato", "who ega bo'lgani uchun", "who doim shunday", "Qisqa gap uchun"], "correctIndex": 1, "explanation": "who/what ega bo'lsa, tartib o'zgarmaydi." },
+      { "text": "Embedded savolda do/does/did ishlatiladimi?", "options": ["Ha", "Yo'q", "Faqat o'tmishda", "Faqat inkorda"], "correctIndex": 1, "explanation": "«Could you tell me where does he live» — xato." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "26-used-to-would-past-habits",
+    "title": "Test — Used to va would",
+    "questions": [
+      { "text": "«would» o'tmish odati sifatida qaysi holatda ishlatilmaydi?", "options": ["Harakat bilan", "Holat fe'llari bilan (be/have/like)", "Ko'plikda", "Inkorda"], "correctIndex": 1, "explanation": "Holat uchun faqat used to: I used to have a car (I would have — xato)." },
+      { "text": "«used to» ning savol shakli qanday?", "options": ["Did you used to...?", "Did you use to...?", "Do you used to...?", "Used you to...?"], "correctIndex": 1, "explanation": "Inkorda ham: didn't USE to — «d» tushadi." },
+      { "text": "«I'm used to waking up early» nimani anglatadi?", "options": ["Ilgari erta turardim", "Erta turishga o'rganib qolganman", "Erta turaman", "Erta turmoqchiman"], "correctIndex": 1, "explanation": "be/get used to + -ing — o'rganib qolgan; used to + V1 — o'tmish odati." },
+      { "text": "«I went there twice» — bu yerda used to ishlatish mumkinmi?", "options": ["Ha", "Yo'q — aniq son/muddat bo'lsa Past Simple", "Faqat inkorda", "Faqat savolda"], "correctIndex": 1, "explanation": "used to takroriy, davomli odat uchun; bir martalik ish uchun Past Simple." },
+      { "text": "«used to» qanday o'qiladi?", "options": ["yu:zd tu", "yu:s-tə — /s/ bilan", "yu:zd tə", "yust tu:"], "correctIndex": 1, "explanation": "«z» emas, «s» tovushi bilan o'qiladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "27-make-let-be-allowed-to",
+    "title": "Test — Make, let, be allowed to",
+    "questions": [
+      { "text": "«My boss makes me ___ » — to'g'ri shakl?", "options": ["to work", "work", "working", "worked"], "correctIndex": 1, "explanation": "make + odam + V1 (to SIZ) = majburlamoq." },
+      { "text": "«Let me ___ » — to'g'ri shakl?", "options": ["to go", "go", "going", "went"], "correctIndex": 1, "explanation": "let + odam + V1 (to siz) = ruxsat bermoq." },
+      { "text": "«We're allowed ___ stay» — bo'shliqqa nima?", "options": ["hech narsa", "to", "for", "that"], "correctIndex": 1, "explanation": "be allowed TO + V1 — «to» bilan." },
+      { "text": "«make» passivda qanday o'zgaradi?", "options": ["be made + V1", "be made TO + V1", "be make to", "made + V1"], "correctIndex": 1, "explanation": "I was made to wait — passivda «to» qaytadi." },
+      { "text": "«let» ning passiv shakli bormi?", "options": ["Ha, be let", "Yo'q — o'rniga be allowed to", "Faqat inkorda", "Faqat savolda"], "correctIndex": 1, "explanation": "«I was let to go» — xato. To'g'risi: I was allowed to go." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "28-comparatives-review-as-as",
+    "title": "Test — Taqqoslash: as ... as",
+    "questions": [
+      { "text": "«as tall as» nimani bildiradi?", "options": ["Balandroq", "Tenglik — «...dek baland»", "Pastroq", "Eng baland"], "correctIndex": 1, "explanation": "not as ... as = kamroq (= comparative bilan teng ma'no)." },
+      { "text": "«not as good as» nimaga teng?", "options": ["better than", "worse than", "the best", "as bad as"], "correctIndex": 1, "explanation": "Inkor tenglik qiyosiy darajaga aylanadi." },
+      { "text": "Katta farqni ta'kidlash uchun qaysi so'z ishlatiladi?", "options": ["very", "much / far / a lot", "a bit", "so"], "correctIndex": 1, "explanation": "«very + comparative» xato; «much better» to'g'ri." },
+      { "text": "«the more, the better» qanday ma'no beradi?", "options": ["Eng yaxshi", "Qancha ko'p bo'lsa, shuncha yaxshi", "Kamroq yaxshi", "Bir xil"], "correctIndex": 1, "explanation": "the + comparative..., the + comparative... qolipi." },
+      { "text": "«colder and colder» qanday ma'no beradi?", "options": ["Juda sovuq", "Tobora sovuqlashmoqda", "Eng sovuq", "Sovuq emas"], "correctIndex": 1, "explanation": "...er and ...er / more and more — o'sib boruvchi o'zgarish." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "29-articles-deep",
+    "title": "Test — Artikllar (chuqur)",
+    "questions": [
+      { "text": "«I like coffee» va «The coffee here is good» qanday farqlanadi?", "options": ["Farqi yo'q", "Birinchisi umuman, ikkinchisi aniq", "Birinchisi aniq", "Ikkalasi umumiy"], "correctIndex": 1, "explanation": "Umumiy ma'no → artiklsiz; aniq ma'no → the." },
+      { "text": "«___ USA» — qaysi artikl?", "options": ["a", "an", "the", "artiklsiz"], "correctIndex": 2, "explanation": "the USA / the Nile / the Alps; lekin Japan / Paris / Everest — artiklsiz." },
+      { "text": "«go to ___ bed» — qaysi artikl?", "options": ["a", "the", "artiklsiz", "an"], "correctIndex": 2, "explanation": "Qat'iy iboralar: go to bed/work/home, at night, by bus — artiklsiz." },
+      { "text": "«___ morning» (ertalab) — qaysi artikl?", "options": ["artiklsiz", "the — in the morning", "a", "an"], "correctIndex": 1, "explanation": "at night (artiklsiz) ↔ in the morning (the bilan)." },
+      { "text": "O'zbek tilida so'zlashuvchilarning artikl bilan bog'liq eng katta xatosi qaysi?", "options": ["Ortiqcha artikl qo'yish", "Artiklni umuman tushirib qoldirish", "the o'rniga a ishlatish", "Xato qilmaydilar"], "correctIndex": 1, "explanation": "O'zbek tilida artikl yo'q — shuning uchun ongli mashq kerak." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "30-quantifiers-review",
+    "title": "Test — Miqdor so'zlari (takrorlash)",
+    "questions": [
+      { "text": "«Each student ___ a book» — to'g'ri shakl?", "options": ["have", "has", "are having", "were"], "correctIndex": 1, "explanation": "each/every → BIRLIK ot va BIRLIK fe'l." },
+      { "text": "«each» va «every» qanday farqlanadi?", "options": ["Farqi yo'q", "each — alohida-alohida; every — butun guruh sifatida", "every — alohida", "Ikkalasi ko'plik"], "correctIndex": 1, "explanation": "Ikkalasi ham birlik fe'l oladi." },
+      { "text": "«all ___ us» — bo'shliqqa nima?", "options": ["hech narsa", "of", "from", "for"], "correctIndex": 1, "explanation": "Olmosh oldidan «of» shart: all of us, both of them, none of us." },
+      { "text": "«the whole day» nimaga teng?", "options": ["some of the day", "all day", "each day", "every day"], "correctIndex": 1, "explanation": "the whole + birlik = all (of) — butun." },
+      { "text": "«None of them ___ here» — odatda qaysi shakl?", "options": ["are", "was/is (birlik)", "were", "have"], "correctIndex": 1, "explanation": "none odatda birlik fe'l oladi; both esa ko'plik." }
+    ]
+  }
+]

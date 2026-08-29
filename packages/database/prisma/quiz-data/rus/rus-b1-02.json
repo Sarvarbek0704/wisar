@@ -1,0 +1,68 @@
+[
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "13-ravishdosh-nesov",
+    "title": "Test — Nesov ravishdosh (читая)",
+    "questions": [
+      { "text": "«Чита́я, он де́лал заме́тки» — ikki harakat qanday bog'langan?", "options": ["Biri boshqasidan oldin", "Bir vaqtda ketyapti", "Sabab-natija", "Zid"], "correctIndex": 1, "explanation": "Nesov ravishdosh — asosiy harakat bilan BIR VAQTDA: o'qib turib belgi qildi." },
+      { "text": "«чита́я» qanday yasalgan?", "options": ["Infinitiv + -я", "Hozirgi zamon o'zagi («они́») + -я", "O'tgan zamon + -я", "Buyruq + -я"], "correctIndex": 1, "explanation": "они́ чита́ют → o'zak чита- + -я → чита́я. говоря́т → говоря́." },
+      { "text": "ж/ш/ч/щ dan keyin qaysi qo'shimcha?", "options": ["-я", "-а", "-в", "-ясь"], "correctIndex": 1, "explanation": "Shivirlovchi undoshlardan keyin -а: держа́ть → держа́, спеши́ть → спеша́." },
+      { "text": "Qaytim fe'ldan ravishdosh qanday yasaladi?", "options": ["-я", "-ясь", "-в", "-вшись"], "correctIndex": 1, "explanation": "Nesov qaytim: -ясь → улыба́ться → улыба́ясь (jilmayib turib)." },
+      { "text": "«Подъезжа́я к ста́нции, у меня́ слете́ла шля́па» — bu gapda nima xato?", "options": ["Xato yo'q", "Ravishdosh va asosiy fe'l EGASI har xil", "Ravishdosh shakli noto'g'ri", "Kelishik xato"], "correctIndex": 1, "explanation": "Chexovning mashhur misoli. Ravishdosh harakati va asosiy fe'l BIR EGAGA tegishli bo'lishi SHART (shlyapa yaqinlashmaydi!)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "14-ravishdosh-sov",
+    "title": "Test — Sov ravishdosh (прочитав)",
+    "questions": [
+      { "text": "«Прочита́в кни́гу, я лёг спать» — ikki harakat munosabati?", "options": ["Bir vaqtda", "Avval o'qib tugatdi, keyin yotdi", "Sabab-natija", "Zid"], "correctIndex": 1, "explanation": "Sov ravishdosh — asosiy harakatdan OLDIN tugallangan: «o'qib bo'lgach, yotdim»." },
+      { "text": "«прочита́в» qanday yasalgan?", "options": ["Hozirgi o'zak + -в", "O'tgan zamon o'zagi + -в", "Infinitiv + -в", "Buyruq + -в"], "correctIndex": 1, "explanation": "O'tgan zamondan: прочита́л → прочита́- + -в → прочита́в." },
+      { "text": "«верну́ться» dan sov ravishdosh qanday?", "options": ["верну́в", "верну́вшись", "возвраща́ясь", "верну́вши"], "correctIndex": 1, "explanation": "Qaytim fe'llarda -вшись: верну́ться → верну́вшись, умы́ться → умы́вшись." },
+      { "text": "«прийти́» dan ravishdosh qaysi?", "options": ["прийдя́", "придя́", "прише́дши", "приходя́"], "correctIndex": 1, "explanation": "Harakat fe'llarida -я: прийти́ → придя́, войти́ → войдя́, уйти́ → уйдя́, найти́ → найдя́." },
+      { "text": "«чита́я» va «прочита́в» asosiy farqi nimada?", "options": ["Farqi yo'q", "чита́я — bir vaqtda; прочита́в — avval tugagan", "прочита́в — kelasi zamon", "чита́я — ko'plik"], "correctIndex": 1, "explanation": "Savol bering: birgami yoki avval-keyinmi? Bir vaqtda → nesov (-я), avval tugagan → sov (-в)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "15-sifatdosh-ravishdosh-ergash-gapga",
+    "title": "Test — Oborotni ergash gapga aylantirish",
+    "questions": [
+      { "text": "«чита́ющий» ni «кото́рый» bilan qanday aytamiz?", "options": ["кото́рый чита́л", "кото́рый чита́ет", "кото́рого чита́ют", "кото́рому чита́ют"], "correctIndex": 1, "explanation": "Aktiv sifatdosh → кото́рый EGA + o'sha zamon: чита́ющий = кото́рый чита́ет (hozirgi)." },
+      { "text": "«письмо́, напи́санное дру́гом» ni ergash gapga aylantiring", "options": ["кото́рое написа́л друг", "кото́рое написа́ло дру́гом", "кото́рый написа́л дру́га", "кото́рым написа́л друг"], "correctIndex": 0, "explanation": "Passiv sifatdoshda bajaruvchi (Творительный) EGA bo'ladi: дру́гом → друг, письмо́ → кото́рое (obyekt)." },
+      { "text": "«Чита́я, я де́лал заме́тки» ni ergash gapga aylantiring", "options": ["Так как я чита́л…", "Когда́ я чита́л, я де́лал заме́тки", "Что́бы я чита́л…", "Е́сли я чита́л…"], "correctIndex": 1, "explanation": "Nesov ravishdosh (bir vaqtda) → когда́: Чита́я = Когда́ я чита́л." },
+      { "text": "«Прочита́в, я лёг спать» ni ergash gapga aylantiring", "options": ["Когда́ я чита́л…", "По́сле того́ как я прочита́л, я лёг спать", "Что́бы прочита́ть…", "Хотя́ я прочита́л…"], "correctIndex": 1, "explanation": "Sov ravishdosh (avval tugagan) → по́сле того́ как." },
+      { "text": "Qaysi uslubda oborot (sifatdosh/ravishdosh) afzal?", "options": ["Og'zaki suhbatda", "Yozma, rasmiy, ilmiy matnda", "Faqat she'rda", "Farqi yo'q"], "correctIndex": 1, "explanation": "Oborot — ixcham, kitobiy (yozma/rasmiy). Og'zaki nutqda кото́рый/когда́ bilan ergash gap tabiiyroq." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "16-sabab-ergash-gaplar",
+    "title": "Test — Sabab ergash gaplari",
+    "questions": [
+      { "text": "Sabab ergash gapi qaysi savolga javob beradi?", "options": ["Заче́м?", "Почему́?", "Когда́?", "Как?"], "correctIndex": 1, "explanation": "Почему́? (nega?) — sabab. Заче́м? (nima maqsadda?) — maqsad ergash gapi." },
+      { "text": "«так как» va «потому́ что» farqi nimada?", "options": ["Ma'nosi boshqa", "так как rasmiyroq va sabab oldinda ham kela oladi", "потому́ что faqat yozma", "Farqi yo'q"], "correctIndex": 1, "explanation": "потому́ что — universal, sabab faqat keyin. так как — rasmiyroq, sabab oldinda ham: Так как шёл дождь, мы оста́лись." },
+      { "text": "«из-за» qanday sababni bildiradi?", "options": ["Ijobiy", "Salbiy (yomon natija)", "Neytral", "Maqsad"], "correctIndex": 1, "explanation": "из-за — salbiy sabab: из-за дождя́ (yomg'ir tufayli — yomon oqibat). Ijobiy uchun — благодаря́." },
+      { "text": "«благодаря́» qaysi kelishik bilan?", "options": ["Qaratqich", "Jo'nalish (Д.)", "Vosita", "Tushum"], "correctIndex": 1, "explanation": "благодаря́ + ДАТЕЛЬНЫЙ: благодаря́ по́мощи. из-за esa + РОДИТЕЛЬНЫЙ: из-за дождя́." },
+      { "text": "«поско́льку» qaysi uslubga tegishli?", "options": ["Og'zaki", "Kitobiy, eng rasmiy", "Bolalar tili", "Jargon"], "correctIndex": 1, "explanation": "Uslub shkalasi: потому́ что (og'zaki) → так как (rasmiyroq) → поско́льку (kitobiy)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "17-maqsad-ergash-gaplar",
+    "title": "Test — Maqsad ergash gaplari",
+    "questions": [
+      { "text": "«Я учу́сь, что́бы ___» (bilmoq) — to'g'ri shakl?", "options": ["знать", "знал", "зна́ю", "бу́ду знать"], "correctIndex": 0, "explanation": "Bir ega (men o'qiyman, men bilaman) → INFINITIV: что́бы знать." },
+      { "text": "«Я хочу́, что́бы ты ___» (bilmoq) — to'g'ri shakl?", "options": ["знать", "знал", "зна́ешь", "бу́дешь знать"], "correctIndex": 1, "explanation": "Har xil ega (men xohlayman / sen bilasan) → O'TGAN shakl: что́бы ты знал. Bu qoida istisnosiz." },
+      { "text": "Maqsad ergash gapi qaysi savolga javob beradi?", "options": ["Почему́?", "Заче́м? С како́й це́лью?", "Когда́?", "Где?"], "correctIndex": 1, "explanation": "Заче́м? (nima maqsadda?) — maqsad. Почему́? — sabab." },
+      { "text": "«с це́лью» qaysi uslubga tegishli?", "options": ["Og'zaki", "Kitobiy/rasmiy", "Bolalar tili", "She'riy"], "correctIndex": 1, "explanation": "Shkala: что́бы (og'zaki, universal) → для того́ что́бы (rasmiyroq) → с це́лью (kitobiy)." },
+      { "text": "«что́бы» dan keyin hozirgi zamon shakli kela oladimi?", "options": ["Ha", "Yo'q — faqat infinitiv yoki o'tgan shakl", "Faqat savolda", "Faqat inkorda"], "correctIndex": 1, "explanation": "«что́бы ты зна́ешь» — XATO. Faqat infinitiv (bir ega) yoki o'tgan shakl (har xil ega)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "18-shart-ergash-gaplar",
+    "title": "Test — Shart ergash gaplari",
+    "questions": [
+      { "text": "«Е́сли бу́дет вре́мя, я приду́» — qaysi turdagi shart?", "options": ["Noreal", "Real — bajarilishi mumkin", "O'tgan zamon", "Buyruq"], "correctIndex": 1, "explanation": "REAL shart: е́сли (бы YO'Q), ikkala qismda kelasi zamon. Bajarilishi mumkin." },
+      { "text": "Noreal shart formulasi qaysi?", "options": ["Е́сли + kelasi zamon", "Е́сли бы + o'tgan shakl, o'tgan shakl + бы", "Е́сли + hozirgi zamon", "Что́бы + infinitiv"], "correctIndex": 1, "explanation": "Е́сли бы у меня́ бы́ло вре́мя, я бы пришёл — бы IKKI MARTA, ikkala fe'l o'tgan shaklda." },
+      { "text": "Noreal shartda «бы» necha marta ishlatiladi?", "options": ["Bir marta", "Ikki marta — ikkala qismda", "Uch marta", "Umuman ishlatilmaydi"], "correctIndex": 1, "explanation": "Ikkala qismda ham: Е́сли БЫ …, … БЫ. Bu — noreal shartning belgisi." },
+      { "text": "«Е́сли хо́чешь, звони́» — qaysi tur?", "options": ["Noreal", "Real — umumiy haqiqat, hozirgi zamon", "O'tgan zamon", "Maqsad"], "correctIndex": 1, "explanation": "Real shart umumiy holat uchun hozirgi zamon bilan ham keladi: Е́сли хо́чешь, звони́." },
+      { "text": "«то» bog'lovchisi qanday ishlatiladi?", "options": ["Sabab uchun", "Е́сли…, то… — «agar…, unda…»", "Maqsad uchun", "Zidlik uchun"], "correctIndex": 1, "explanation": "Е́сли бу́дет вре́мя, ТО я приду́ — «то» shart natijasini ta'kidlaydi (ixtiyoriy)." }
+    ]
+  }
+]

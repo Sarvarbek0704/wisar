@@ -1,0 +1,68 @@
+[
+  {
+    "topic": "dasturlash", "section": "12-qism-state-management", "article": "01-context-api-chuqur",
+    "title": "Test — Context API",
+    "questions": [
+      { "text": "Context value o'zgarganda nima bo'ladi?", "options": ["Faqat ishlatgan komponent", "Barcha consumer komponentlar qayta render bo'ladi", "Hech narsa", "Provider faqat"], "correctIndex": 1, "explanation": "Shuning uchun value barqarorligi (useMemo) muhim." },
+      { "text": "Context'ni nima uchun ikkiga bo'lish tavsiya etiladi?", "options": ["Chiroyli", "State va dispatch alohida — dispatch ishlatuvchilar qayta render bo'lmaydi", "Tezlik faqat", "Sintaksis"], "correctIndex": 1, "explanation": "Dispatch havolasi barqaror bo'ladi." },
+      { "text": "Context qaysi holat uchun mos?", "options": ["Tez-tez o'zgaradigan ma'lumot", "Kam o'zgaradigan global qiymat (mavzu, til, auth)", "Server state", "Katta ro'yxat"], "correctIndex": 1, "explanation": "Tez-tez o'zgarish uchun Zustand yoki Redux afzal." },
+      { "text": "Context + useReducer kombinatsiyasi nima beradi?", "options": ["Server state", "Mini-Redux — markazlashtirilgan holat boshqaruvi", "Cache", "Routing"], "correctIndex": 1, "explanation": "Qo'shimcha kutubxonasiz o'rta murakkablikdagi yechim." },
+      { "text": "Server state uchun nima ishlatilishi kerak?", "options": ["Context", "TanStack Query yoki RTK Query", "useState", "Redux faqat"], "correctIndex": 1, "explanation": "Server state kesh, staleness va invalidatsiyani talab qiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "12-qism-state-management", "article": "02-redux-toolkit",
+    "title": "Test — Redux Toolkit",
+    "questions": [
+      { "text": "«createSlice» nima beradi?", "options": ["Store", "Action va reducerlarni birga, kam boilerplate bilan", "Selector", "Middleware"], "correctIndex": 1, "explanation": "Action type'lar avtomatik generatsiya qilinadi." },
+      { "text": "RTK'da state'ni «o'zgartirish» qanday ishlaydi?", "options": ["Mutatsiya", "Immer — mutatsiya kabi yoziladi, ichida immutable nusxa yasaladi", "Spread majburiy", "Object.assign"], "correctIndex": 1, "explanation": "Kod soddalashadi, lekin immutability saqlanadi." },
+      { "text": "«createSelector» nima uchun kerak?", "options": ["Action", "Memoized selektor — ortiqcha hisob va renderni kamaytiradi", "Middleware", "Thunk"], "correctIndex": 1, "explanation": "Hosila (derived) ma'lumot uchun ishlatiladi." },
+      { "text": "«createEntityAdapter» nima beradi?", "options": ["Async", "Normalizatsiya — ma'lumotni id bo'yicha tekis saqlash", "Cache", "Selector"], "correctIndex": 1, "explanation": "CRUD reducerlari va selektorlar tayyor keladi." },
+      { "text": "«createAsyncThunk» nima uchun ishlatiladi?", "options": ["Sinxron", "Async amallar — pending/fulfilled/rejected holatlari bilan", "Selector", "Middleware"], "correctIndex": 1, "explanation": "Server state uchun esa RTK Query afzalroq." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "12-qism-state-management", "article": "03-rtk-query",
+    "title": "Test — RTK Query",
+    "questions": [
+      { "text": "RTK Query qanday muammoni hal qiladi?", "options": ["Routing", "Server state — kesh, sinxronizatsiya va loading holatlari", "Styling", "Testing"], "correctIndex": 1, "explanation": "Client state va server state tubdan farq qiladi." },
+      { "text": "«tags» mexanizmi nima beradi?", "options": ["Stil", "Mutation'dan keyin bog'liq keshni avtomatik invalidate qilish", "Log", "Auth"], "correctIndex": 1, "explanation": "LIST tag naqshi aniqroq invalidatsiya beradi." },
+      { "text": "«isLoading» va «isFetching» qanday farqlanadi?", "options": ["Farqi yo'q", "isLoading — birinchi yuklash; isFetching — har qanday so'rov (refetch ham)", "isFetching birinchi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Skeleton va spinner uchun turli holatlar." },
+      { "text": "Token yangilash qayerda amalga oshiriladi?", "options": ["Har endpointda", "baseQuery wrapper ichida (401 → refresh → retry)", "Component'da", "Middleware'da faqat"], "correctIndex": 1, "explanation": "Bir joyda yozilib, barcha so'rovlarga qo'llanadi." },
+      { "text": "«skipToken» nima uchun ishlatiladi?", "options": ["Cache", "Shart bajarilmaguncha so'rovni yubormaslik", "Retry", "Prefetch"], "correctIndex": 1, "explanation": "Dependent query holatlarida ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "12-qism-state-management", "article": "04-tanstack-query",
+    "title": "Test — TanStack Query",
+    "questions": [
+      { "text": "«staleTime» va «gcTime» qanday farqlanadi?", "options": ["Farqi yo'q", "staleTime — ma'lumot «yangi» hisoblanadigan muddat; gcTime — keshda saqlanish muddati", "gcTime — yangilik", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "staleTime 0 bo'lsa har mount'da refetch bo'ladi." },
+      { "text": "«queryKey» nima uchun muhim?", "options": ["Nom", "Kesh identifikatori — parametrlar ham unga kiradi", "Stil", "Tartib"], "correctIndex": 1, "explanation": "Key factory naqshi izchillikni ta'minlaydi." },
+      { "text": "«Optimistic update» nima beradi?", "options": ["Cache", "Server javobini kutmasdan UI'ni darhol yangilash", "Retry", "Prefetch"], "correctIndex": 1, "explanation": "Xato bo'lsa rollback qilinadi." },
+      { "text": "«select» opsiyasi nima qiladi?", "options": ["Filtr", "Kesh ma'lumotini transformatsiya qilib, kerakli qismini olish", "Sort", "Cache"], "correctIndex": 1, "explanation": "Ortiqcha renderni ham kamaytiradi." },
+      { "text": "So'rovni bekor qilish uchun nima ishlatiladi?", "options": ["clearTimeout", "AbortSignal (queryFn ichida)", "cancel()", "reset()"], "correctIndex": 1, "explanation": "TanStack Query signalni avtomatik uzatadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "12-qism-state-management", "article": "05-zustand",
+    "title": "Test — Zustand",
+    "questions": [
+      { "text": "Zustand'da re-renderni qanday kamaytiramiz?", "options": ["memo bilan", "Selektor bilan — faqat kerakli qismga obuna bo'lish", "Context bilan", "Ref bilan"], "correctIndex": 1, "explanation": "Butun store'ni olish har o'zgarishda render qiladi." },
+      { "text": "«useShallow» nima uchun kerak?", "options": ["Deep copy", "Bir necha qiymat olganda yuzaki solishtirish — ortiqcha render yo'q", "Cache", "Persist"], "correctIndex": 1, "explanation": "Obyekt qaytaradigan selektorlar uchun zarur." },
+      { "text": "«persist» middleware nima beradi?", "options": ["DevTools", "Store'ni localStorage kabi joyga saqlash", "Immer", "Async"], "correctIndex": 1, "explanation": "Sahifa yangilanganda holat saqlanib qoladi." },
+      { "text": "Zustand Provider talab qiladimi?", "options": ["Ha", "Yo'q — store modul darajasida yaratiladi", "Faqat SSR'da", "Faqat TS'da"], "correctIndex": 1, "explanation": "SSR/Next.js'da esa fabrika + Context naqshi ishlatiladi." },
+      { "text": "«Transient update» nima beradi?", "options": ["Persist", "subscribe orqali render'siz yangilanish (animatsiya, kursor)", "Cache", "DevTools"], "correctIndex": 1, "explanation": "Juda tez-tez o'zgaradigan qiymatlar uchun." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "12-qism-state-management", "article": "06-ui-kutubxonalar-shadcn-mui-antdesign",
+    "title": "Test — UI kutubxonalar",
+    "questions": [
+      { "text": "«Headless» UI kutubxona nima beradi?", "options": ["Tayyor dizayn", "Xulq va accessibility — stil sizniki", "Tema", "Ikonka"], "correctIndex": 1, "explanation": "Radix va React Aria — tipik misollar." },
+      { "text": "shadcn/ui qanday tarqatiladi?", "options": ["npm paket", "Kod nusxalash — komponent loyihangizga ko'chiriladi", "CDN", "Plugin"], "correctIndex": 1, "explanation": "To'liq nazorat beradi: Radix + Tailwind asosida." },
+      { "text": "Ant Design qaysi holatga mos?", "options": ["Landing sahifa", "Enterprise admin panel — ko'p tayyor komponent", "O'yin", "Blog"], "correctIndex": 1, "explanation": "MUI esa Material Design tizimiga tayanadi." },
+      { "text": "CSS-in-JS ning RSC bilan muammosi nima?", "options": ["Sekin", "Runtime'ga tayanadi — server komponentlarda ishlamaydi", "Katta", "Eskirgan"], "correctIndex": 1, "explanation": "Tailwind va vanilla-extract bu muammodan xoli." },
+      { "text": "«CVA» (class variance authority) nima uchun ishlatiladi?", "options": ["Cache", "Komponent variantlarini (size, color) tipli boshqarish", "Routing", "Test"], "correctIndex": 1, "explanation": "Dizayn tizimi tokenlari bilan birga ishlatiladi." }
+    ]
+  }
+]

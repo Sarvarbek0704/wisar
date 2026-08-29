@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "11-sofistikatsiyalangan-lugat",
+    "title": "Test — Sofistikatsiyalangan lug'at",
+    "questions": [
+      { "text": "«bad» ning akademik muqobili qaysi?", "options": ["not good", "detrimental / adverse", "very bad", "awful"], "correctIndex": 1, "explanation": "good → beneficial/advantageous/favourable." },
+      { "text": "«solve» ning akademik muqobillari qaysi?", "options": ["fix, do", "address / tackle / mitigate / alleviate", "make, take", "see, look"], "correctIndex": 1, "explanation": "cause → trigger/generate/give rise to." },
+      { "text": "Task 1 da «keskin kamayish» qanday beriladi?", "options": ["go down", "plummet / decline / dwindle", "get less", "fall down"], "correctIndex": 1, "explanation": "Oshish uchun: surge/soar/escalate." },
+      { "text": "«AWL» nima?", "options": ["Grammatik qoida", "Academic Word List — akademik so'zlar ro'yxati", "Imtihon turi", "Talaffuz belgisi"], "correctIndex": 1, "explanation": "significant, establish, factor, acquire, facilitate, framework, derive." },
+      { "text": "Sofistikatsiyaning asosiy tamoyili qaysi?", "options": ["Eng noyob so'zni ishlatish", "ANIQLIK — to'g'ri so'z, ko'rsatish emas", "Uzun so'z ishlatish", "Ko'p idiom qo'shish"], "correctIndex": 1, "explanation": "Notanish so'zni sinab ko'rish xatoga va band tushishiga olib keladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "12-cohesion-coherence",
+    "title": "Test — Cohesion va coherence",
+    "questions": [
+      { "text": "Cohesion va coherence qanday farqlanadi?", "options": ["Farqi yo'q", "Cohesion — yuza ulanishlar; coherence — chuqur mantiqiy oqim", "Coherence — yuza", "Ikkalasi grammatika"], "correctIndex": 1, "explanation": "IELTS da CC mezoni ballning 25%ini tashkil qiladi." },
+      { "text": "«this trend, the former/latter» qaysi cohesion turi?", "options": ["Substitution", "Reference", "Ellipsis", "Conjunction"], "correctIndex": 1, "explanation": "Reference — band 9 ning kaliti: it, this + ot, such." },
+      { "text": "«one/ones, do, so» qaysi cohesion turi?", "options": ["Reference", "Substitution", "Ellipsis", "Lexical"], "correctIndex": 1, "explanation": "Ellipsis esa takrorlanuvchi so'zni tushirib qoldiradi." },
+      { "text": "Paragraf tuzilishi qanday?", "options": ["Erkin", "Topic sentence → support → example → link", "Faqat misol", "Xulosa → dalil"], "correctIndex": 1, "explanation": "Bir paragraf = bir g'oya." },
+      { "text": "Bog'lovchilarni qanday ishlatish kerak?", "options": ["Har gapda", "Kam, lekin to'g'ri", "Faqat boshda", "Umuman ishlatmaslik"], "correctIndex": 1, "explanation": "Ortiqcha bog'lovchi sun'iy ko'rinadi va ballni tushiradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "13-akademik-esse-ielts-task2",
+    "title": "Test — IELTS Writing Task 2",
+    "questions": [
+      { "text": "Task 2 Writing ballining qanchasini tashkil qiladi?", "options": ["1/3", "2/3", "1/2", "Hammasi"], "correctIndex": 1, "explanation": "250 so'z, 40 daqiqa, 4 mezon × 25%." },
+      { "text": "PEEL nimani anglatadi?", "options": ["Paraphrase-Example-End-Link", "Point → Explain → Example → Link", "Plan-Edit-Extend-Learn", "Purpose-Evidence-Effect-Line"], "correctIndex": 1, "explanation": "Har asosiy paragraf bitta g'oyani to'liq ochadi." },
+      { "text": "Kirishda savolni ko'chirish mumkinmi?", "options": ["Ha", "Yo'q — paraphrase qilish shart", "Faqat qisman", "Faqat uzun savolda"], "correctIndex": 1, "explanation": "Ko'chirilgan so'zlar so'z hisobiga kirmaydi." },
+      { "text": "Xulosada nima bo'lmasligi kerak?", "options": ["Pozitsiya takrori", "YANGI g'oya", "Jamlash", "Bog'lovchi"], "correctIndex": 1, "explanation": "Xulosa faqat mavjud fikrlarni jamlaydi." },
+      { "text": "Task 2 savol turlari qaysilar?", "options": ["Faqat opinion", "Opinion, discussion, problem-solution, advantages-disadvantages, two-part", "Faqat discussion", "Faqat grafik"], "correctIndex": 1, "explanation": "Turni aniqlash — birinchi qadam, chunki tuzilma shunga bog'liq." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "14-ielts-writing-task1",
+    "title": "Test — IELTS Writing Task 1",
+    "questions": [
+      { "text": "Task 1 da o'z fikringizni bildirish mumkinmi?", "options": ["Ha", "Yo'q — faqat tasvirlash", "Faqat xulosada", "Faqat kirishda"], "correctIndex": 1, "explanation": "150 so'z, 20 daqiqa, Writing ballining 1/3 qismi." },
+      { "text": "Overview bo'limida raqam keltiriladimi?", "options": ["Ha, ko'p", "Yo'q — faqat asosiy tendensiyalar", "Faqat bitta", "Farqi yo'q"], "correctIndex": 1, "explanation": "Overview — band 9 ning kaliti; aniq raqamlar tana paragraflarida beriladi." },
+      { "text": "«rise ___ 50» (yetgan daraja) — qaysi predlog?", "options": ["by", "to", "from", "at"], "correctIndex": 1, "explanation": "rise TO (daraja) ↔ rise BY (o'zgarish miqdori); stand AT 50%." },
+      { "text": "Process (jarayon) diagrammasi qaysi nisbatda tasvirlanadi?", "options": ["Aktiv", "Passiv", "Buyruq", "Modal"], "correctIndex": 1, "explanation": "The material is collected, then it is processed." },
+      { "text": "«level off» nimani bildiradi?", "options": ["Keskin oshish", "Barqarorlashish", "Keskin tushish", "Cho'qqi"], "correctIndex": 1, "explanation": "peak at (cho'qqi), hit a low (eng past nuqta)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "15-professional-yozish-email-hisobot",
+    "title": "Test — Professional yozuv",
+    "questions": [
+      { "text": "Professional emailda maqsad qayerda bayon qilinadi?", "options": ["Oxirida", "Birinchi paragrafda, darhol", "O'rtada", "Sarlavhada"], "correctIndex": 1, "explanation": "Subject → salom → maqsad → tana → CTA → yopilish → sign-off." },
+      { "text": "«CTA» nima?", "options": ["Sarlavha", "Call to action — keyingi qadam", "Xulosa", "Imzo"], "correctIndex": 1, "explanation": "O'quvchi nima qilishi kerakligini aniq ko'rsatadi." },
+      { "text": "Boshliq yoki mijozga qaysi register mos?", "options": ["Norasmiy", "Rasmiy — I would be grateful", "Jargon", "Qisqartmali"], "correctIndex": 1, "explanation": "Hamkasb — neytral (Could you...); jamoa — iliq." },
+      { "text": "Hisobot tuzilishi qanday?", "options": ["Faqat xulosa", "Title → purpose → findings → conclusion → recommendations", "Kirish → matn", "Erkin"], "correctIndex": 1, "explanation": "It is recommended that + V1 — subjunctive shakl." },
+      { "text": "«Hi Tom» qanday sign-off bilan yakunlanadi?", "options": ["Yours faithfully", "Kind/Best regards", "Yours sincerely", "Respectfully"], "correctIndex": 1, "explanation": "Sign-off doim salomlashuv darajasiga mos bo'lishi kerak." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "16-ielts-speaking",
+    "title": "Test — IELTS Speaking",
+    "questions": [
+      { "text": "IELTS Speaking necha qismdan iborat?", "options": ["2", "3", "4", "5"], "correctIndex": 1, "explanation": "11–14 daqiqa, yuzma-yuz, 4 mezon × 25%." },
+      { "text": "Part 2 da tayyorgarlik uchun qancha vaqt beriladi?", "options": ["30 soniya", "1 daqiqa", "2 daqiqa", "Berilmaydi"], "correctIndex": 1, "explanation": "Keyin 2 daqiqa monolog; bulletlar — skelet, uni to'ldirish kerak." },
+      { "text": "Part 3 qanday javob talab qiladi?", "options": ["Bir so'zli", "Og'zaki mini-esse: pozitsiya + sabab + misol + hedging", "Faqat ha/yo'q", "Hikoya"], "correctIndex": 1, "explanation": "Abstrakt munozara qismi — eng yuqori daraja talab qiladi." },
+      { "text": "So'z esga tushmasa nima qilish kerak?", "options": ["Jim qolish", "Paraphrase qilish — aylanib tushuntirish", "Ona tilida aytish", "Mavzuni o'zgartirish"], "correctIndex": 1, "explanation": "Self-correction ham tabiiy hisoblanadi." },
+      { "text": "«That's an interesting question...» nima uchun ishlatiladi?", "options": ["Maqtash", "Vaqt sotib olish — jim qolmaslik", "Savol berish", "Rad etish"], "correctIndex": 1, "explanation": "Well, let me think... / Actually,... / I mean,..." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "17-taqdimot-munozara",
+    "title": "Test — Taqdimot va munozara",
+    "questions": [
+      { "text": "Taqdimot ochilishida nima bo'lishi kerak?", "options": ["Faqat salom", "Salom + hook + outline (yo'l xaritasi)", "Xulosa", "Savol-javob"], "correctIndex": 1, "explanation": "Hook: savol, fakt yoki qisqa hikoya." },
+      { "text": "«Rule of three» nima?", "options": ["Uch daqiqa qoidasi", "Uchta element ritmik ta'sir beradi: faster, cheaper, better", "Uch slayd", "Uch savol"], "correctIndex": 1, "explanation": "Klassik ritorik vosita — esda qolishni oshiradi." },
+      { "text": "«Moving on... This brings me to...» qanday vosita?", "options": ["Hook", "Signposting — bo'limlar orasidagi ko'rsatkich", "Xulosa", "Savol"], "correctIndex": 1, "explanation": "Auditoriyaga qayerda ekanini bildiradi." },
+      { "text": "Ethos, pathos, logos nimani anglatadi?", "options": ["Uch slayd", "Ishonch, his, mantiq — ishontirishning uch usuli", "Uch bo'lim", "Uch savol"], "correctIndex": 1, "explanation": "Kuchli taqdimot uchalasini muvozanatda ishlatadi." },
+      { "text": "Taqdimot xulosasida nima bo'lishi kerak?", "options": ["Yangi ma'lumot", "Jamlash + call to action", "Faqat rahmat", "Savol"], "correctIndex": 1, "explanation": "Q&A: I'd be happy to take questions." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "18-murakkab-oqish-tinglash",
+    "title": "Test — O'qish va tinglash strategiyalari",
+    "questions": [
+      { "text": "«Not Given» javobi nimani anglatadi?", "options": ["Matnga zid", "Matnda umuman aytilmagan", "Noto'g'ri", "Qisman to'g'ri"], "correctIndex": 1, "explanation": "TRUE = tasdiq; FALSE = ZID; NOT GIVEN = matnda yo'q (o'z bilimingiz emas!)." },
+      { "text": "Reading da har matn uchun qancha vaqt ajratiladi?", "options": ["10 daqiqa", "20 daqiqa", "30 daqiqa", "Cheklov yo'q"], "correctIndex": 1, "explanation": "3 matn, 40 savol, 60 daqiqa; transfer vaqti berilmaydi." },
+      { "text": "Listening necha marta eshittiriladi?", "options": ["Ikki marta", "BIR marta", "Uch marta", "Talabga ko'ra"], "correctIndex": 1, "explanation": "Shuning uchun orqada qolmaslik va oldindan savolni o'qish muhim." },
+      { "text": "«Actually, no...» eshitilsa nima qilish kerak?", "options": ["Birinchi javobni yozish", "Distractor — yakuniy javobni kutish", "Savolni tashlab ketish", "Ikkalasini yozish"], "correctIndex": 1, "explanation": "So'zlovchi o'zini tuzatadi — yakuniy variant to'g'ri javob bo'ladi." },
+      { "text": "«claims, so-called» qanday ohangni bildiradi?", "options": ["Ishonch", "Shubha", "Xursandchilik", "Neytral"], "correctIndex": 1, "explanation": "clearly/demonstrates — ishonch; unfortunately — salbiy ohang." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "19-texnik-professional-ingliz",
+    "title": "Test — Texnik professional ingliz",
+    "questions": [
+      { "text": "Commit xabari qaysi shaklda yoziladi?", "options": ["Added login", "BUYRUQ mayli: Add login", "Adding login", "Login added"], "correctIndex": 1, "explanation": "«feat: add login» — konvensional commit uslubi." },
+      { "text": "Code reviewda e'tiroz kimga qaratiladi?", "options": ["Muallifga", "KODGA — shaxsga emas", "Jamoaga", "Menejerga"], "correctIndex": 1, "explanation": "Darajalar: Blocking / Suggestion / Nit / Question — va maqtov ham kerak." },
+      { "text": "«Nit:» nimani anglatadi?", "options": ["Bloklovchi xato", "Kichik, ixtiyoriy izoh", "Savol", "Maqtov"], "correctIndex": 1, "explanation": "Qisqartmalar: TIL, LGTM, PR, WIP, PTAL, TL;DR." },
+      { "text": "Bug report nimalarni o'z ichiga olishi kerak?", "options": ["Faqat xato matni", "What + steps to reproduce + expected vs actual + error + environment", "Faqat skrinshot", "Faqat sana"], "correctIndex": 1, "explanation": "Takrorlash qadamlari eng muhim qism." },
+      { "text": "«I see your point, but...» qanday vosita?", "options": ["Rozilik", "Nazokatli e'tiroz", "Savol", "Buyruq"], "correctIndex": 1, "explanation": "Texnik ingliz: aniqlik + hamkorlik + iliq professional ohang." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "05-c1-ilgor", "article": "20-ish-intervyusi",
+    "title": "Test — Ish intervyusi",
+    "questions": [
+      { "text": "«Tell me about yourself» ga qanday javob beriladi?", "options": ["Tug'ilgandan boshlab", "HOZIR (rol+skill) → O'TMISH (yutuq) → KELAJAK (nega bu rol)", "Faqat ta'lim", "Faqat oila"], "correctIndex": 1, "explanation": "Kasbiy «treyler» — 60–90 soniya." },
+      { "text": "STAR nimani anglatadi?", "options": ["Skill-Task-Answer-Result", "Situation → Task → Action → Result", "Story-Time-Act-Review", "Start-Talk-Ask-Reply"], "correctIndex": 1, "explanation": "Actionda «I» ishlatiladi, Resultda raqam keltiriladi." },
+      { "text": "Nechta STAR hikoyasi tayyorlash tavsiya etiladi?", "options": ["1", "2", "5–6", "10+"], "correctIndex": 2, "explanation": "challenge, conflict, failure, leadership, deadline mavzularida." },
+      { "text": "Texnik intervyuda nima qilish kerak?", "options": ["Jim ishlash", "Ovoz chiqarib fikrlash va aniqlashtirish savollari berish", "Tez javob berish", "Faqat kod yozish"], "correctIndex": 1, "explanation": "Trade-off va edge case haqida gapirish ham kuchli signal." },
+      { "text": "«What's your weakness?» ga qanday javob beriladi?", "options": ["Inkor qilish", "Haqiqiy kamchilik + uni rivojlantirish yo'li", "Klishe javob", "Boshqa mavzuga o'tish"], "correctIndex": 1, "explanation": "«Why you» uchun cleft qurilma kuchli: What sets me apart is..." }
+    ]
+  }
+]

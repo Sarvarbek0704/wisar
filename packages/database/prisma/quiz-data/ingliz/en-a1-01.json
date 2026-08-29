@@ -1,0 +1,134 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "01-ingliz-alifbosi-tovushlar-phonics",
+    "title": "Test — Alifbo va tovushlar",
+    "questions": [
+      { "text": "Ingliz alifbosida nechta harf bor?", "options": ["24", "26", "28", "33"], "correctIndex": 1, "explanation": "26 harf; har birining nomi ham, tovushi ham bor." },
+      { "text": "Qaysi harflar unli hisoblanadi?", "options": ["A, E, I, O, U", "A, B, C, D, E", "Faqat A va E", "Y, W, R"], "correctIndex": 0, "explanation": "A, E, I, O, U — unli; qolgan 21 harf undosh." },
+      { "text": "«name, bite, hope» so'zlaridagi oxirgi «e» qanday o'qiladi?", "options": ["/e/ deb", "O'qilmaydi — jim «e», oldingi unlini uzaytiradi", "/i/ deb", "/a/ deb"], "correctIndex": 1, "explanation": "Jim «e» qoidasi: cat → cate, sit → site kabi unli o'zgaradi." },
+      { "text": "Ingliz tilida harf nomi va tovushi qanday munosabatda?", "options": ["Doim bir xil", "Nomi ≠ tovushi; yozuv ≠ o'qish", "Faqat unlilarda farq qiladi", "Faqat undoshlarda farq qiladi"], "correctIndex": 1, "explanation": "Shuning uchun har so'zni talaffuzi bilan birga yodlash kerak." },
+      { "text": "Qaysi tovush o'zbek tilida yo'q va alohida mashq talab qiladi?", "options": ["/k/", "/th/ — /θ ð/", "/m/", "/s/"], "correctIndex": 1, "explanation": "Yangi tovushlar: th /θ ð/, w (v emas), schwa /ə/." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "02-ipa-va-qiyin-tovushlar",
+    "title": "Test — IPA va qiyin tovushlar",
+    "questions": [
+      { "text": "IPA nima uchun kerak?", "options": ["Grammatika uchun", "Har tovushga bitta belgi — lug'at o'qish va to'g'ri talaffuz uchun", "Imlo uchun", "Tarjima uchun"], "correctIndex": 1, "explanation": "IPA yozuv bilan talaffuz orasidagi tafovutni yechadi." },
+      { "text": "Ingliz tilida taxminan nechta unli TOVUSH bor?", "options": ["5", "10", "20", "26"], "correctIndex": 2, "explanation": "5 ta unli HARF, lekin ~20 unli TOVUSH: qisqa, cho'ziq va diftonglar." },
+      { "text": "«ship» va «sheep» qanday farqlanadi?", "options": ["Urg'u bilan", "Qisqa /ɪ/ va cho'ziq /iː/ bilan", "Undosh bilan", "Farqi yo'q"], "correctIndex": 1, "explanation": "Qisqa va cho'ziq unli farqi — o'zbeklar uchun eng muhim mashq." },
+      { "text": "«Schwa» /ə/ qanday tovush?", "options": ["Urg'uli tovush", "Urg'usiz bo'g'indagi zaif, betaraf tovush", "Cho'ziq unli", "Diftong"], "correctIndex": 1, "explanation": "Ingliz tilidagi eng ko'p uchraydigan tovush — urg'usiz bo'g'inlarda." },
+      { "text": "So'z urg'usi noto'g'ri qo'yilsa nima bo'ladi?", "options": ["Hech narsa", "So'zni tanib bo'lmay qoladi", "Faqat ohang o'zgaradi", "Ma'no kuchayadi"], "correctIndex": 1, "explanation": "Bitta bo'g'in kuchli, qolgani schwa — bu inglizcha ritmning asosi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "03-salomlashish-va-tanishish",
+    "title": "Test — Salomlashish va tanishish",
+    "questions": [
+      { "text": "«How are you?» ga eng tabiiy javob qaysi?", "options": ["Yes, I am", "I'm fine, thanks. And you?", "I am good boy", "Nice to meet you"], "correctIndex": 1, "explanation": "Javob + rahmat + savolni qaytarish — suhbat odobi." },
+      { "text": "Soat 14:00 da qanday salomlashiladi?", "options": ["Good morning", "Good afternoon", "Good evening", "Good night"], "correctIndex": 1, "explanation": "Good morning (ertalab), afternoon (tushdan keyin), evening (kechqurun)." },
+      { "text": "«Nice to meet you» qachon aytiladi?", "options": ["Xayrlashganda", "Birinchi marta tanishganda", "Har kuni", "Rahmat aytganda"], "correctIndex": 1, "explanation": "Tanishish: What's your name? — I'm Ali. Nice to meet you!" },
+      { "text": "«Hi» va «Hello» qanday farqlanadi?", "options": ["Farqi yo'q", "Hi — norasmiy, Hello — universal", "Hi — rasmiy", "Hello — faqat telefonda"], "correctIndex": 1, "explanation": "Rasmiy vaziyatda Hello yoki Good morning xavfsizroq." },
+      { "text": "Qaysi ibora xayrlashuv EMAS?", "options": ["See you", "Take care", "Goodbye", "How are you"], "correctIndex": 3, "explanation": "Xayrlashuv: Goodbye, Bye, See you, Take care." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "04-shaxs-olmoshlari",
+    "title": "Test — Shaxs olmoshlari",
+    "questions": [
+      { "text": "O'zbekcha «u» ingliz tilida nechta olmoshga bo'linadi?", "options": ["Bitta", "Uchta: he, she, it", "Ikkita", "To'rtta"], "correctIndex": 1, "explanation": "he (erkak), she (ayol), it (narsa/hayvon)." },
+      { "text": "«I» qanday yoziladi?", "options": ["Faqat gap boshida katta", "Har doim katta harf bilan", "Har doim kichik", "Kontekstga qarab"], "correctIndex": 1, "explanation": "«I» ingliz tilida gap o'rtasida ham doim katta harf bilan yoziladi." },
+      { "text": "«you» qanday ma'noda ishlatiladi?", "options": ["Faqat «sen»", "Faqat «siz»", "«sen» va «siz» — ikkalasi uchun", "Faqat ko'plik"], "correctIndex": 2, "explanation": "Birlik va ko'plik uchun ham bir xil shakl." },
+      { "text": "Stol haqida gapirganda qaysi olmosh ishlatiladi?", "options": ["he", "she", "it", "they"], "correctIndex": 2, "explanation": "it — jonsiz narsalar uchun." },
+      { "text": "«ular» (kitoblar) qaysi olmosh bilan beriladi?", "options": ["we", "they", "it", "those"], "correctIndex": 1, "explanation": "they — odam ham, narsa ham bo'lishi mumkin." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "05-to-be-am-is-are",
+    "title": "Test — To be (am/is/are)",
+    "questions": [
+      { "text": "«She ___ a teacher» — to'g'ri shakl qaysi?", "options": ["am", "is", "are", "be"], "correctIndex": 1, "explanation": "I → am, he/she/it → is, you/we/they → are." },
+      { "text": "«I student» — bu nega xato?", "options": ["Artikl yo'q", "Fe'l tushib qolgan: I AM a student", "Olmosh xato", "Ko'plik kerak"], "correctIndex": 1, "explanation": "Ingliz tilida har gapda fe'l shart — to be ni hech qachon tushirmang." },
+      { "text": "«Are you a doctor?» ga qisqa javob qanday?", "options": ["Yes, I do", "Yes, I am", "Yes, I is", "Yes, am I"], "correctIndex": 1, "explanation": "Qisqa javobda to be takrorlanadi: Yes, I am / No, I'm not." },
+      { "text": "Savol tuzishda «to be» qayerga qo'yiladi?", "options": ["Oxiriga", "Oldinga — Are you...? Is she...?", "O'rtaga", "Qo'yilmaydi"], "correctIndex": 1, "explanation": "Wh-savolda: so'roq so'zi + to be (Where is she?)." },
+      { "text": "«Stolda kitoblar bor» qanday aytiladi?", "options": ["There is books on the table", "There are books on the table", "It is books", "Have books"], "correctIndex": 1, "explanation": "There is (birlik) / There are (ko'plik) — «bor» ma'nosi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "06-ozini-tanishtirish",
+    "title": "Test — O'zini tanishtirish",
+    "questions": [
+      { "text": "«Men 19 yoshdaman» qanday aytiladi?", "options": ["I have 19 years", "I'm 19", "I 19 years old", "My age 19"], "correctIndex": 1, "explanation": "Ingliz tilida yosh «to be» bilan: I'm nineteen (years old)." },
+      { "text": "«Uzbekistan» va «Uzbek» qanday farqlanadi?", "options": ["Farqi yo'q", "Uzbekistan — mamlakat, Uzbek — millat", "Uzbek — mamlakat", "Ikkalasi millat"], "correctIndex": 1, "explanation": "I'm from Uzbekistan. I'm Uzbek." },
+      { "text": "Millat nomi qanday yoziladi?", "options": ["Kichik harf bilan", "Katta harf bilan — Uzbek, English", "Kontekstga qarab", "Tirnoq ichida"], "correctIndex": 1, "explanation": "Millat, til va mamlakat nomlari doim katta harf bilan." },
+      { "text": "«Men dasturchiman» qanday aytiladi?", "options": ["I'm developer", "I'm a developer", "I developer", "I am the developer"], "correctIndex": 1, "explanation": "Kasb oldida «a/an» artikli shart." },
+      { "text": "«thirteen» va «thirty» ni nima ajratadi?", "options": ["Imlo", "Urg'u — thirTEEN / THIRty", "Ma'no yo'q", "Undosh"], "correctIndex": 1, "explanation": "-teen (13–19) va -ty (o'nlik) farqi — eng keng tarqalgan xato." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "07-artikllar-a-an",
+    "title": "Test — Artikllar a / an",
+    "questions": [
+      { "text": "«___ hour» — qaysi artikl?", "options": ["a", "an", "the", "artiklsiz"], "correctIndex": 1, "explanation": "«h» jim — so'z unli TOVUSH bilan boshlanadi, shuning uchun an hour." },
+      { "text": "«___ university» — qaysi artikl?", "options": ["a", "an", "the", "artiklsiz"], "correctIndex": 0, "explanation": "«u» bu yerda /juː/ deb o'qiladi — undosh tovush, shuning uchun a university." },
+      { "text": "a/an tanlashda nimaga qaraladi?", "options": ["Harfga", "Tovushga", "So'z uzunligiga", "Ma'noga"], "correctIndex": 1, "explanation": "HARF emas, TOVUSH: an hour, a university." },
+      { "text": "a/an qaysi otlar bilan ishlatilmaydi?", "options": ["Sanaladigan birlik", "Ko'plik, sanalmaydigan va atoqli otlar", "Faqat atoqli ot", "Hamma ot bilan ishlatiladi"], "correctIndex": 1, "explanation": "a/an faqat sanaladigan birlik ot bilan keladi." },
+      { "text": "«a/an» qanday ma'no beradi?", "options": ["O'sha, ma'lum", "Biror, bitta (noaniq)", "Hamma", "Hech qanday"], "correctIndex": 1, "explanation": "Aniq artikl «the» esa «o'sha, ma'lum» ma'nosini beradi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "08-artikl-the-umumiy-qoidalar",
+    "title": "Test — Artikl the",
+    "questions": [
+      { "text": "«the» qachon ishlatiladi?", "options": ["Birinchi marta eslatganda", "Ikkinchi marta, kontekstdan aniq bo'lganda", "Har doim", "Hech qachon"], "correctIndex": 1, "explanation": "a/an (noaniq — biror) ↔ the (aniq — o'sha)." },
+      { "text": "«___ sun» — qaysi artikl?", "options": ["a", "an", "the", "artiklsiz"], "correctIndex": 2, "explanation": "Yagona narsalar bilan the: the sun, the moon, the sky." },
+      { "text": "«I like ___ dogs» (umuman itlarni yoqtiraman) — qaysi variant?", "options": ["the", "a", "artiklsiz (zero)", "an"], "correctIndex": 2, "explanation": "Umumiy ma'nodagi ko'plik ot artiklsiz keladi." },
+      { "text": "«I speak ___ English» — qaysi variant?", "options": ["the", "an", "artiklsiz", "a"], "correctIndex": 2, "explanation": "Til va sport nomlari artiklsiz: English, football." },
+      { "text": "Atoqli ot (Ali, Tashkent) bilan qaysi artikl?", "options": ["the", "a", "an", "artiklsiz"], "correctIndex": 3, "explanation": "Zero artikl: atoqli otlar artiklsiz ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "09-otlar-birlik-koplik",
+    "title": "Test — Otlarning ko'pligi",
+    "questions": [
+      { "text": "«city» ning ko'pligi qanday?", "options": ["citys", "cities", "cityes", "city"], "correctIndex": 1, "explanation": "Undosh + y → -ies: city → cities, baby → babies." },
+      { "text": "«child» ning ko'pligi qanday?", "options": ["childs", "childes", "children", "child"], "correctIndex": 2, "explanation": "Noto'g'ri ko'plik: man→men, woman→women, foot→feet, tooth→teeth." },
+      { "text": "«box» ning ko'pligi qanday?", "options": ["boxs", "boxes", "boxies", "box"], "correctIndex": 1, "explanation": "s/x/ch/sh/o dan keyin -es qo'shiladi." },
+      { "text": "«trousers, glasses, scissors» qanday sanaladi?", "options": ["Oddiy son bilan", "a pair of bilan", "much bilan", "Sanalmaydi"], "correctIndex": 1, "explanation": "Doim ko'plikda turadigan otlar: a pair of trousers." },
+      { "text": "«two book» — bu nega xato?", "options": ["Artikl kerak", "Ikkidan boshlab ot ham ko'plikda: two books", "Son xato", "Xato emas"], "correctIndex": 1, "explanation": "-s talaffuzi: /s/ (books), /z/ (dogs), /ɪz/ (buses)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "10-egalik-my-your-his",
+    "title": "Test — Egalik olmoshlari",
+    "questions": [
+      { "text": "«its» va «it's» qanday farqlanadi?", "options": ["Farqi yo'q", "its — egalik; it's — it is", "it's — egalik", "Ikkalasi ham egalik"], "correctIndex": 1, "explanation": "Bu — ingliz tilidagi eng keng tarqalgan imlo xatosi." },
+      { "text": "«Ali's book» — apostrof nimani bildiradi?", "options": ["Ko'plikni", "Egalikni", "Qisqartmani", "Savolni"], "correctIndex": 1, "explanation": "'s egalikni bildiradi: Ali's book — Alining kitobi." },
+      { "text": "«students» so'zida egalik qanday ko'rsatiladi?", "options": ["students's", "students'", "student's", "students"], "correctIndex": 1, "explanation": "Ko'plik -s da faqat apostrof qo'yiladi. Noto'g'ri ko'plikda esa: children's." },
+      { "text": "«Uning kitobi» (ayol egasi) qanday aytiladi?", "options": ["his book", "her book", "its book", "their book"], "correctIndex": 1, "explanation": "his (erkak egasi) ↔ her (ayol egasi) — jinsga qarab tanlanadi." },
+      { "text": "«Mashinaning eshigi» qanday aytiladi?", "options": ["the car's door (odatiy emas)", "the door of the car", "the car door's", "door the car"], "correctIndex": 1, "explanation": "Jonsiz narsalar uchun ko'pincha «of» ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "11-this-that-these-those",
+    "title": "Test — This / that / these / those",
+    "questions": [
+      { "text": "«Bular» (yaqin, ko'plik) qaysi so'z?", "options": ["this", "that", "these", "those"], "correctIndex": 2, "explanation": "this (yaqin, birlik), these (yaqin, ko'plik), that (uzoq, birlik), those (uzoq, ko'plik)." },
+      { "text": "«These ___ my books» — qaysi fe'l?", "options": ["is", "are", "am", "be"], "correctIndex": 1, "explanation": "these/those + are; this/that + is." },
+      { "text": "«What's this?» ga javobda qaysi olmosh ishlatiladi?", "options": ["This is", "It's", "That's", "These are"], "correctIndex": 1, "explanation": "Javobda it/they: What's this? — It's a pen." },
+      { "text": "«Anavi mashinalar» qanday aytiladi?", "options": ["these cars", "those cars", "this cars", "that cars"], "correctIndex": 1, "explanation": "Uzoq + ko'plik = those." },
+      { "text": "«this/that» sifat sifatida qanday ishlatiladi?", "options": ["Faqat yolg'iz", "Otdan oldin: this book, that car", "Otdan keyin", "Fe'l bilan"], "correctIndex": 1, "explanation": "Ular ham olmosh, ham aniqlovchi bo'la oladi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "01-a1-boshlangich", "article": "12-sonlar-narx-telefon",
+    "title": "Test — Sonlar, narx, telefon",
+    "questions": [
+      { "text": "40 ingliz tilida qanday yoziladi?", "options": ["fourty", "forty", "fourthy", "fortie"], "correctIndex": 1, "explanation": "forty — «u» harfi tushadi (four → forty)." },
+      { "text": "«200» qanday aytiladi?", "options": ["two hundreds", "two hundred", "two hundreds of", "twos hundred"], "correctIndex": 1, "explanation": "Aniq son bilan hundred/thousand/million ga -s qo'shilmaydi." },
+      { "text": "«$5.99» qanday o'qiladi?", "options": ["five point ninety-nine", "five ninety-nine", "five dollars ninety-nine cents (rasmiy)", "five comma ninety-nine"], "correctIndex": 1, "explanation": "Kundalik nutqda: «five ninety-nine». £3.50 → «three pounds fifty»." },
+      { "text": "Telefon raqami qanday o'qiladi?", "options": ["Yaxlit son sifatida", "Raqamlab: one two three", "Faqat o'nlab", "Harflab"], "correctIndex": 1, "explanation": "0 → «oh» yoki «zero»; takror raqam → double/triple." },
+      { "text": "«Beshinchi» qanday aytiladi?", "options": ["five", "fifth", "fiveth", "fifteen"], "correctIndex": 1, "explanation": "Tartib son: first, second, third, keyin -th (fourth, fifth)." }
+    ]
+  }
+]

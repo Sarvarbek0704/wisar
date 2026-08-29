@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "01-solid-prinsiplari",
+    "title": "Test — SOLID prinsiplari",
+    "questions": [
+      { "text": "SRP nimani anglatadi?", "options": ["Ko'p vazifa", "Bir klass — bir vazifa, bir o'zgarish sababi", "Interfeys ajratish", "Meros"], "correctIndex": 1, "explanation": "Single Responsibility Principle — SOLID ning birinchi harfi." },
+      { "text": "OCP nimani talab qiladi?", "options": ["Kodni o'zgartirish", "Kengaytirishga ochiq, o'zgartirishga yopiq", "Interfeysni kattalashtirish", "Merosni taqiqlash"], "correctIndex": 1, "explanation": "Yangi xulq mavjud kodni o'zgartirmasdan qo'shiladi." },
+      { "text": "LSP nimani anglatadi?", "options": ["Meros taqiqlanadi", "Bola klass ota o'rniga muammosiz ishlashi kerak", "Interfeys kichik bo'lsin", "DI kerak"], "correctIndex": 1, "explanation": "Liskov Substitution Principle — merosning to'g'riligi mezoni." },
+      { "text": "DIP nimani talab qiladi?", "options": ["Konkret klassga tayanish", "Abstraksiyaga tayanish — konkret implementatsiyaga emas", "Merosdan qochish", "Interfeyssiz ishlash"], "correctIndex": 1, "explanation": "NestJS DI aynan shu tamoyilni amalga oshiradi." },
+      { "text": "SOLID bilan qanday balans saqlanadi?", "options": ["Har doim to'liq qo'llash", "YAGNI va KISS bilan muvozanat — ortiqcha abstraksiyadan qochish", "Umuman ishlatmaslik", "Faqat katta loyihada"], "correctIndex": 1, "explanation": "Erta abstraksiya keraksiz murakkablik keltiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "02-design-patterns",
+    "title": "Test — Design Patterns",
+    "questions": [
+      { "text": "Design pattern'lar necha turga bo'linadi?", "options": ["2", "3: Creational, Structural, Behavioral", "4", "5"], "correctIndex": 1, "explanation": "Gang of Four kitobida 23 klassik pattern tavsiflangan." },
+      { "text": "«Strategy» pattern nima beradi?", "options": ["Obyekt yaratish", "Algoritmni ish vaqtida almashtirish imkoni", "Interfeys moslash", "Kuzatish"], "correctIndex": 1, "explanation": "To'lov usullari yoki saralash algoritmlari uchun ideal." },
+      { "text": "«Adapter» pattern qaysi guruhga kiradi?", "options": ["Creational", "Structural", "Behavioral", "Anti-pattern"], "correctIndex": 1, "explanation": "Mos kelmaydigan interfeyslarni birlashtiradi." },
+      { "text": "«Observer» pattern nima uchun ishlatiladi?", "options": ["Obyekt yaratish", "Holat o'zgarganda kuzatuvchilarni xabardor qilish", "Interfeys yashirish", "Nusxa olish"], "correctIndex": 1, "explanation": "EventEmitter va RxJS shu naqshga asoslangan." },
+      { "text": "«Repository» pattern nima beradi?", "options": ["Cache", "Ma'lumot manbaini abstraksiyalash — biznes mantiq DB'ga bog'lanmaydi", "Validatsiya", "Log"], "correctIndex": 1, "explanation": "DB almashtirilsa biznes qatlam o'zgarmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "03-clean-architecture-layered-hexagonal",
+    "title": "Test — Clean Architecture",
+    "questions": [
+      { "text": "«Dependency Rule» nimani talab qiladi?", "options": ["Tashqariga bog'lanish", "Bog'liqlik faqat ICHKARIGA yo'nalgan bo'lishi", "Bog'liqlik yo'q", "Ikki tomonlama"], "correctIndex": 1, "explanation": "Clean Architecture'ning eng muhim qoidasi." },
+      { "text": "Hexagonal arxitekturaning boshqa nomi qaysi?", "options": ["Layered", "Ports & Adapters", "Onion", "MVC"], "correctIndex": 1, "explanation": "Driving (kirish) va driven (chiqish) adapterlar ajratiladi." },
+      { "text": "Clean Architecture qatlamlari qaysi?", "options": ["Controller, service, model", "Entity → Use Case → Interface Adapter → Framework", "MVC", "Router, DB"], "correctIndex": 1, "explanation": "Framework — eng tashqi, almashtiriladigan «detal»." },
+      { "text": "Entity, DTO va ORM modeli bir xilmi?", "options": ["Ha", "Yo'q — har biri o'z qatlamiga tegishli", "Ikkitasi bir xil", "Kontekstga bog'liq"], "correctIndex": 1, "explanation": "Ularni aralashtirish qatlamlar chegarasini buzadi." },
+      { "text": "«Screaming Architecture» nima?", "options": ["Xato", "Papka tuzilmasi framework emas, BIZNES sohasini ko'rsatishi", "Log", "Test"], "correctIndex": 1, "explanation": "«orders», «billing» — «controllers», «services» emas." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "04-domain-driven-design",
+    "title": "Test — Domain-Driven Design",
+    "questions": [
+      { "text": "«Ubiquitous Language» nima?", "options": ["Dasturlash tili", "Kod va biznes bir xil atamalarni ishlatishi", "Ingliz tili", "SQL"], "correctIndex": 1, "explanation": "Tarjima qatlami yo'qoladi — tushunmovchilik kamayadi." },
+      { "text": "«Bounded Context» nima beradi?", "options": ["Cache", "Domen chegarasi — har kontekstda atamalar o'z ma'nosiga ega", "Index", "Test"], "correctIndex": 1, "explanation": "«Customer» sotuvda va qo'llab-quvvatlashda har xil model bo'lishi mumkin." },
+      { "text": "Entity va Value Object qanday farqlanadi?", "options": ["Farqi yo'q", "Entity — identity'ga ega; Value Object — qiymat bilan aniqlanadi, immutable", "VO identity'ga ega", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Pul, manzil, sana oralig'i — tipik Value Object'lar." },
+      { "text": "«Aggregate root» nima uchun kerak?", "options": ["Tezlik", "Yaxlitlikni saqlash — tashqi kod faqat root orqali murojaat qiladi", "Cache", "Index"], "correctIndex": 1, "explanation": "Aggregate — tranzaksiya chegarasi; kichik bo'lgani yaxshi." },
+      { "text": "«Anemic domain model» nima?", "options": ["Yaxshi model", "Faqat maydonlardan iborat, mantiqsiz model — DDD anti-naqshi", "Rich model", "Value Object"], "correctIndex": 1, "explanation": "Biznes mantiq entity ichida bo'lishi kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "05-monolith-vs-microservices",
+    "title": "Test — Monolit va mikroservislar",
+    "questions": [
+      { "text": "2026 yilda ko'p loyiha uchun tavsiya etiladigan yondashuv qaysi?", "options": ["Mikroservis", "Modular monolith", "Nanoservis", "Distributed monolith"], "correctIndex": 1, "explanation": "Monolit soddaligi + modul chegaralari birga." },
+      { "text": "«Conway qonuni» nimani aytadi?", "options": ["Kod hajmi", "Tizim arxitekturasi jamoa tuzilmasini aks ettiradi", "Tezlik", "Xarajat"], "correctIndex": 1, "explanation": "Jamoa tuzilmasi arxitekturaga bevosita ta'sir qiladi." },
+      { "text": "«Distributed monolith» nima?", "options": ["Yaxshi arxitektura", "Anti-naqsh — bo'lingan, lekin qattiq bog'langan xizmatlar", "Modular monolith", "Mikroservis"], "correctIndex": 1, "explanation": "Mikroservis narxi bor, lekin foydasi yo'q." },
+      { "text": "«Strangler Fig» naqshi nima uchun ishlatiladi?", "options": ["Test", "Monolitdan bosqichma-bosqich migratsiya", "Deploy", "Cache"], "correctIndex": 1, "explanation": "Eski tizim asta-sekin yangisi bilan almashtiriladi." },
+      { "text": "Nega 2PC (two-phase commit) mikroservislarda yomon?", "options": ["Murakkab", "Bloklaydi va mavjudlikni pasaytiradi — o'rniga Saga ishlatiladi", "Eskirgan", "Qimmat"], "correctIndex": 1, "explanation": "Saga choreography yoki orchestration ko'rinishida bo'ladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "06-service-communication-grpc-queues",
+    "title": "Test — Xizmatlararo aloqa",
+    "questions": [
+      { "text": "gRPC nimaga asoslangan?", "options": ["JSON va HTTP/1.1", "Protobuf va HTTP/2", "XML", "WebSocket"], "correctIndex": 1, "explanation": "Tipli kontrakt va streaming imkoniyatlari beradi." },
+      { "text": "RabbitMQ va Kafka qanday farqlanadi?", "options": ["Farqi yo'q", "RabbitMQ — vazifa navbati; Kafka — event stream va replay", "Kafka navbat", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Kafka'da xabar o'qilgandan keyin ham saqlanadi." },
+      { "text": "«Circuit breaker» nima qiladi?", "options": ["Tezlashtiradi", "Nosoz xizmatga so'rov yuborishni to'xtatib, kaskad qulashning oldini oladi", "Cache", "Log"], "correctIndex": 1, "explanation": "Ochiq holatda so'rovlar darhol rad etiladi." },
+      { "text": "Ishonchli aloqa uchun nima kerak?", "options": ["Faqat retry", "Retry + timeout + idempotency + fallback", "Faqat timeout", "Hech narsa"], "correctIndex": 1, "explanation": "Idempotencysiz retry ma'lumotni takrorlab yuboradi." },
+      { "text": "Sinxron va asinxron aloqa qanday farqlanadi?", "options": ["Tezlik", "Sinxron javob kutadi va bog'liqlik yaratadi; asinxron esa ajratadi", "Asinxron javob kutadi", "Farqi yo'q"], "correctIndex": 1, "explanation": "Hybrid yondashuv ko'p loyihada eng amaliy." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "07-event-driven-cqrs-event-sourcing",
+    "title": "Test — Event-driven, CQRS, Event Sourcing",
+    "questions": [
+      { "text": "CQRS nima?", "options": ["Cache", "O'qish va yozish modellarini ajratish", "Event bus", "Saga"], "correctIndex": 1, "explanation": "Har biri o'z talablariga qarab optimallashtiriladi." },
+      { "text": "Event Sourcing'da holat qanday saqlanadi?", "options": ["Joriy holat", "Voqealar tarixi — holat ulardan tiklanadi", "Snapshot faqat", "Cache'da"], "correctIndex": 1, "explanation": "To'liq audit tarix avtomatik hosil bo'ladi." },
+      { "text": "«Outbox» naqshi nima uchun kerak?", "options": ["Cache", "DB yozuvi va event yuborishni ishonchli qilish", "Log", "Test"], "correctIndex": 1, "explanation": "Ikkalasi bir tranzaksiyada bajarilib, keyin event uzatiladi." },
+      { "text": "«Eventual consistency» nima?", "options": ["Darhol izchillik", "Ma'lumot vaqt o'tib izchil bo'ladi", "Izchillik yo'q", "Strong consistency"], "correctIndex": 1, "explanation": "Taqsimlangan tizimlarda tabiiy holat." },
+      { "text": "«Idempotent consumer» nima uchun kerak?", "options": ["Tezlik", "Bir xil event ikki marta kelsa ham natija o'zgarmasligi uchun", "Cache", "Log"], "correctIndex": 1, "explanation": "At-least-once yetkazib berish takrorlanishni keltirib chiqaradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "08-api-gateway-service-discovery",
+    "title": "Test — API Gateway va service discovery",
+    "questions": [
+      { "text": "API Gateway qanday vazifalarni bajaradi?", "options": ["Faqat routing", "Routing, auth, rate limit, aggregation", "Faqat auth", "DB"], "correctIndex": 1, "explanation": "Lekin biznes mantiq Gateway'da bo'lmasligi kerak." },
+      { "text": "«BFF» nima?", "options": ["Backend framework", "Backend for Frontend — har mijoz turi uchun alohida gateway", "Cache", "Queue"], "correctIndex": 1, "explanation": "Mobil va web turli ma'lumot shakliga muhtoj." },
+      { "text": "Service discovery nima uchun kerak?", "options": ["Tezlik", "Xizmat IP manzillari dinamik o'zgaradi", "Xavfsizlik", "Log"], "correctIndex": 1, "explanation": "Consul, Eureka yoki Kubernetes Service registry vazifasini bajaradi." },
+      { "text": "Kubernetes'da discovery qanday ishlaydi?", "options": ["Qo'lda", "Service va kube-dns (CoreDNS) orqali", "Consul bilan", "Ishlamaydi"], "correctIndex": 1, "explanation": "Xizmat nomi DNS orqali hal qilinadi." },
+      { "text": "API Gateway'ning asosiy xavfi qaysi?", "options": ["Sekinlik", "Single point of failure — HA majburiy", "Xotira", "Narx"], "correctIndex": 1, "explanation": "U yiqilsa butun tizim kirish nuqtasini yo'qotadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "09-caching-scalability-load-balancing",
+    "title": "Test — Caching, masshtab, load balancing",
+    "questions": [
+      { "text": "«Cache stampede» nima?", "options": ["Cache to'lishi", "Kesh muddati tugagach ko'p so'rov bir vaqtda DB'ga urilishi", "Cache yo'qolishi", "Sekinlik"], "correctIndex": 1, "explanation": "Lock yoki refresh-ahead bilan hal qilinadi." },
+      { "text": "Gorizontal masshtablash uchun nima shart?", "options": ["Katta RAM", "Ilova stateless bo'lishi", "Bitta server", "Sticky session"], "correctIndex": 1, "explanation": "Holat Redis yoki DB'da saqlanishi kerak." },
+      { "text": "«p95» nima anglatadi?", "options": ["O'rtacha", "So'rovlarning 95 foizi shu vaqtdan tez bajarilgan", "Eng tez", "Eng sekin"], "correctIndex": 1, "explanation": "O'rtacha qiymat sekin so'rovlarni yashiradi." },
+      { "text": "L4 va L7 load balancer qanday farqlanadi?", "options": ["Farqi yo'q", "L4 — transport darajasi; L7 — ilova darajasi (URL, header bo'yicha)", "L7 tezroq", "L4 aqlliroq"], "correctIndex": 1, "explanation": "L7 kontentga qarab marshrutlash imkonini beradi." },
+      { "text": "Masshtablash tartibi qanday bo'lishi kerak?", "options": ["Darhol sharding", "Arzondan qimmatga: cache → replica → sharding", "Faqat server qo'shish", "Faqat cache"], "correctIndex": 1, "explanation": "Avval o'lchang — keyin optimallashtiring." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "09-qism-arxitektura", "article": "10-distributed-systems-cap",
+    "title": "Test — Taqsimlangan tizimlar va CAP",
+    "questions": [
+      { "text": "CAP teoremasi nimani aytadi?", "options": ["Uchtasini olish mumkin", "Tarmoq bo'linishida izchillik yoki mavjudlikdan birini tanlash kerak", "Faqat tezlik", "Hech narsa"], "correctIndex": 1, "explanation": "Partition tolerance real tizimda majburiy — tanlov C va A orasida." },
+      { "text": "«PACELC» CAP'ga nimani qo'shadi?", "options": ["Xavfsizlik", "Bo'linish bo'lmaganda ham latency va consistency savdosi borligini", "Narx", "Hajm"], "correctIndex": 1, "explanation": "Else: Latency yoki Consistency." },
+      { "text": "«Fallacies of distributed computing» nima?", "options": ["Xatolar ro'yxati", "Tarmoq haqidagi noto'g'ri taxminlar (ishonchli, tez, xavfsiz...)", "Algoritmlar", "Pattern'lar"], "correctIndex": 1, "explanation": "Bu taxminlar ko'p tizim nosozliklarining ildizi." },
+      { "text": "«Raft» nima uchun ishlatiladi?", "options": ["Cache", "Consensus — taqsimlangan tugunlar kelishuvi", "Load balancing", "Log"], "correctIndex": 1, "explanation": "Quorum asosida yetakchi saylanadi." },
+      { "text": "«Tunable consistency» nima beradi?", "options": ["Doim strong", "So'rov darajasida izchillik darajasini tanlash", "Doim eventual", "Izchillik yo'q"], "correctIndex": 1, "explanation": "Zamonaviy bazalar bu moslashuvchanlikni beradi." }
+    ]
+  }
+]

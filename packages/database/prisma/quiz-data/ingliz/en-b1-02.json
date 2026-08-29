@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "08b-maxsus-narrative-tenses",
+    "title": "Test — Hikoya zamonlari",
+    "questions": [
+      { "text": "Hikoyada asosiy voqealar ketma-ketligi qaysi zamonda beriladi?", "options": ["Past Continuous", "Past Simple", "Past Perfect", "Present Perfect"], "correctIndex": 1, "explanation": "I woke up, got dressed and left — ketma-ket voqealar." },
+      { "text": "Orqa fon va sahna qaysi zamonda tasvirlanadi?", "options": ["Past Simple", "Past Continuous", "Past Perfect", "Future"], "correctIndex": 1, "explanation": "It was raining when the phone rang — fon + uzilish." },
+      { "text": "Flashback (oldinroq bo'lgan voqea) qaysi zamonda beriladi?", "options": ["Past Simple", "Past Continuous", "Past Perfect", "Present Perfect"], "correctIndex": 2, "explanation": "He had left before I arrived." },
+      { "text": "«while/as» qaysi zamon bilan keladi?", "options": ["Past Simple", "Past Continuous (uzun fon)", "Past Perfect", "Present"], "correctIndex": 1, "explanation": "when + Past Simple (qisqa) ↔ while/as + Past Continuous (fon)." },
+      { "text": "Ketma-ket voqealarda Past Perfect kerakmi?", "options": ["Ha, doim", "Yo'q — Past Simple yetarli", "Faqat uzun hikoyada", "Faqat boshida"], "correctIndex": 1, "explanation": "Past Perfect faqat tartibni buzib, oldingi voqeaga qaytganda kerak." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "09-future-forms-review-continuous-perfect",
+    "title": "Test — Kelajak shakllari",
+    "questions": [
+      { "text": "«I'll call you when I ___ » — to'g'ri shakl?", "options": ["will arrive", "arrive", "arrived", "am arriving"], "correctIndex": 1, "explanation": "when/as soon as/before/until/if dan keyin PRESENT — will emas." },
+      { "text": "Future Continuous formulasi qanday?", "options": ["will + V-ing", "will be + V-ing", "will have + V-ing", "going to be"], "correctIndex": 1, "explanation": "This time tomorrow I'll be flying to London." },
+      { "text": "Future Perfect qanday ma'no beradi?", "options": ["Kelajakda davom etadi", "Kelajakdagi nuqtaga qadar tugallanadi", "Hozirgi natija", "Yaqin payt"], "correctIndex": 1, "explanation": "I'll have finished by Friday — «...gacha tugallangan bo'ladi»." },
+      { "text": "«be about to» qanday ma'no beradi?", "options": ["Uzoq kelajak", "Juda yaqin payt — hozir sodir bo'ladi", "O'tmish", "Odat"], "correctIndex": 1, "explanation": "The bus is about to leave." },
+      { "text": "Kelishilgan uchrashuv uchun qaysi shakl ishlatiladi?", "options": ["will", "going to", "Present Continuous", "Present Simple"], "correctIndex": 2, "explanation": "I'm meeting Tom at 6. Jadval uchun esa Present Simple: The train leaves at 9." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "10-second-conditional",
+    "title": "Test — Second conditional",
+    "questions": [
+      { "text": "Second conditional formulasi qanday?", "options": ["If + Present, will + V1", "If + Past Simple, would + V1", "If + Past Perfect, would have", "If + Present, Present"], "correctIndex": 1, "explanation": "Xayoliy/noreal hozir yoki kelajak: If I had money, I'd buy a car." },
+      { "text": "«If I ___ you, I'd apologise» — to'g'ri shakl?", "options": ["am", "was", "were", "will be"], "correctIndex": 2, "explanation": "«If I were you» — maslahat berishning eng ko'p ishlatiladigan qolipi." },
+      { "text": "«If I would have money...» — bu nega xato?", "options": ["have xato", "if-qismda would ishlatilmaydi — faqat Past Simple", "money xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: If I had money, I would..." },
+      { "text": "First va Second conditional qanday farqlanadi?", "options": ["Farqi yo'q", "First — real kelajak; Second — xayoliy", "Second — real", "Ikkalasi xayoliy"], "correctIndex": 1, "explanation": "If it rains, I'll stay (real) ↔ If I won the lottery, I'd travel (xayoliy)." },
+      { "text": "Natija qismida «would» o'rniga nima kelishi mumkin?", "options": ["will", "could / might", "did", "have"], "correctIndex": 1, "explanation": "If I had time, I could help you — imkoniyat yoki ehtimol ottenkasi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "11-conditionals-review-unless",
+    "title": "Test — Shart gaplar va unless",
+    "questions": [
+      { "text": "«unless» nimani anglatadi?", "options": ["agar", "if ... not (...masa)", "chunki", "garchi"], "correctIndex": 1, "explanation": "I won't go unless you come — «unless» ichida allaqachon inkor bor." },
+      { "text": "«I won't go unless you don't come» — bu nega xato?", "options": ["go xato", "unless ichida inkor bor — qo'sh inkor bo'lib qoladi", "you xato", "Xato emas"], "correctIndex": 1, "explanation": "To'g'risi: unless you come." },
+      { "text": "«in case» va «if» qanday farqlanadi?", "options": ["Farqi yo'q", "in case — ehtiyot uchun, OLDIN qilinadi; if — shart yuz bersa", "if — ehtiyot uchun", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Take an umbrella in case it rains (oldindan) ≠ if it rains (yog'sa)." },
+      { "text": "«as long as / provided that» qanday ma'no beradi?", "options": ["Vaqt", "Faqat shu shart bilan", "Sabab", "Zid"], "correctIndex": 1, "explanation": "Ular ham Present zamon bilan keladi." },
+      { "text": "«in case» dan keyin «will» ishlatiladimi?", "options": ["Ha", "Yo'q — Present zamon", "Faqat savolda", "Faqat inkorda"], "correctIndex": 1, "explanation": "if/in case/unless dan keyin will ishlatilmaydi." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "12-i-wish-if-only",
+    "title": "Test — I wish / if only",
+    "questions": [
+      { "text": "«I wish I ___ the answer» (hozir bilmayman) — to'g'ri shakl?", "options": ["know", "knew", "have known", "will know"], "correctIndex": 1, "explanation": "I wish + Past Simple — hozirgi holatdan afsus." },
+      { "text": "«I wish I ___ harder» (o'tmishda o'qimadim) — to'g'ri shakl?", "options": ["studied", "had studied", "study", "would study"], "correctIndex": 1, "explanation": "I wish + Past Perfect — o'tmishdagi ishdan afsus." },
+      { "text": "«I wish you would stop» qanday ma'no beradi?", "options": ["Hozirgi holatdan afsus", "Boshqaning xulqidan shikoyat", "O'tmishdan afsus", "Kelajak orzu"], "correctIndex": 1, "explanation": "wish + would — boshqa odamning harakati haqida shikoyat." },
+      { "text": "«wish» va «hope» qanday farqlanadi?", "options": ["Farqi yo'q", "wish + Past (noreal); hope + Present/will (real)", "hope + Past", "Ikkalasi noreal"], "correctIndex": 1, "explanation": "I wish I were rich (noreal) ↔ I hope you pass the exam (real)." },
+      { "text": "«I wish I am rich» — bu nega xato?", "options": ["rich xato", "wish dan keyin Present ishlatilmaydi: I wish I were rich", "I xato", "Xato emas"], "correctIndex": 1, "explanation": "if only — kuchliroq, hissiy variant: If only I had known!" }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "13-passive-present-past-simple",
+    "title": "Test — Majhul nisbat (Present va Past Simple)",
+    "questions": [
+      { "text": "Passive formulasi qanday?", "options": ["have + V3", "be + V3", "do + V3", "will + V1"], "correctIndex": 1, "explanation": "Zamon «be» da ko'rsatiladi, V3 o'zgarmaydi." },
+      { "text": "«The house ___ in 1990» — to'g'ri shakl?", "options": ["was built", "was build", "were built", "is built"], "correctIndex": 0, "explanation": "Past passive: was/were + V3. V2 emas, V3 ishlatiladi." },
+      { "text": "«Men 2000-yilda tug'ilganman» qanday aytiladi?", "options": ["I born in 2000", "I was born in 2000", "I have born in 2000", "I did born"], "correctIndex": 1, "explanation": "«be born» doim passive shaklda ishlatiladi." },
+      { "text": "Passive qachon ishlatiladi?", "options": ["Har doim", "Bajaruvchi noma'lum, muhim emas yoki ayon bo'lganda", "Faqat savolda", "Faqat o'tmishda"], "correctIndex": 1, "explanation": "English is spoken here. Cars are made in Japan." },
+      { "text": "«by» va «with» qanday farqlanadi?", "options": ["Farqi yo'q", "by — bajaruvchi; with — vosita/asbob", "with — bajaruvchi", "Ikkalasi asbob"], "correctIndex": 1, "explanation": "written by Shakespeare ↔ cut with a knife." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "14-passive-other-tenses-get",
+    "title": "Test — Passive: boshqa zamonlar va get",
+    "questions": [
+      { "text": "«The car ___ repaired now» (hozir ta'mirlanyapti) — to'g'ri shakl?", "options": ["is been", "is being", "has been", "was being"], "correctIndex": 1, "explanation": "Present Continuous passive: is/are BEING + V3." },
+      { "text": "«being» va «been» qanday farqlanadi?", "options": ["Farqi yo'q", "being — Continuous; been — Perfect", "been — Continuous", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "is being repaired (hozir) ↔ has been repaired (tugagan)." },
+      { "text": "«It must ___ done today» — to'g'ri shakl?", "options": ["be", "been", "being", "is"], "correctIndex": 0, "explanation": "Modal va will dan keyin BE + V3: must be done, will be finished." },
+      { "text": "«I had my hair cut» — bu qanday qurilma?", "options": ["Oddiy passive", "Kausativ — birov men uchun qildi", "Aktiv", "Get-passive"], "correctIndex": 1, "explanation": "have/get + narsa + V3 — xizmatni boshqa kishi bajaradi." },
+      { "text": "«got stolen, got fired» — bu qanday passive?", "options": ["Rasmiy", "get-passive — norasmiy, kutilmagan hodisa uchun", "Kausativ", "Impersonal"], "correctIndex": 1, "explanation": "Impersonal passive esa: It is said that... / He is said to be..." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "03-b1-orta", "article": "15-reported-speech-statements",
+    "title": "Test — O'zlashtirma gap: darak gaplar",
+    "questions": [
+      { "text": "«say» va «tell» qanday farqlanadi?", "options": ["Farqi yo'q", "tell + ODAM (tell me); say — odamsiz", "say + odam", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "He said (that) he was tired. / He told me he was tired." },
+      { "text": "«will» backshift da nimaga aylanadi?", "options": ["will", "would", "was", "had"], "correctIndex": 1, "explanation": "will→would, can→could, may→might, must→had to." },
+      { "text": "«He said: “I am tired”» ni o'zlashtirmaga aylantiring", "options": ["He said he is tired", "He said he was tired", "He said he has been tired", "He said I am tired"], "correctIndex": 1, "explanation": "is/are → was/were — bir qadam orqaga." },
+      { "text": "«tomorrow» backshift da nimaga aylanadi?", "options": ["tomorrow", "the next day", "yesterday", "today"], "correctIndex": 1, "explanation": "Vaqt so'zlari ham o'zgaradi: now → then, tomorrow → the next day." },
+      { "text": "Gap hali rost bo'lsa backshift shartmi?", "options": ["Ha, doim", "Yo'q — ixtiyoriy", "Faqat savolda", "Hech qachon"], "correctIndex": 1, "explanation": "would/could/should/might esa umuman o'zgarmaydi." }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "01-brauzer-dom-api-crud",
+    "title": "Test — Brauzer va DOM API",
+    "questions": [
+      { "text": "Imperativ DOM manipulyatsiyasining tub muammosi nima?", "options": ["Sekinlik", "State va UI ni qo'lda sinxronlash kerak", "Kod uzunligi", "Xavfsizlik"], "correctIndex": 1, "explanation": "React deklarativ yondashuv beradi: UI = f(state)." },
+      { "text": "«DocumentFragment» nima uchun ishlatiladi?", "options": ["Xavfsizlik", "Ko'p DOM o'zgarishini bir marta qo'llash (batching)", "Stil", "Event"], "correctIndex": 1, "explanation": "Har qo'shishda reflow bo'lishining oldini oladi." },
+      { "text": "Reflow va repaint qanday farqlanadi?", "options": ["Farqi yo'q", "Reflow — layout qayta hisoblanadi (qimmat); repaint — faqat piksel bo'yaladi", "Repaint qimmatroq", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "transform va opacity ikkalasini ham chetlab o'tadi." },
+      { "text": "«dataset» nima beradi?", "options": ["Ma'lumot bazasi", "data-* atributlariga qulay kirish", "Stil", "Event"], "correctIndex": 1, "explanation": "element.dataset.userId — data-user-id atributiga mos keladi." },
+      { "text": "Event delegation nima uchun samarali?", "options": ["Tez kod", "Bitta listener ko'p va dinamik elementni qamraydi", "Xotira faqat", "Xavfsizlik"], "correctIndex": 1, "explanation": "Bubbling mexanizmiga tayanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "02-react-kirish-jsx-komponentlar-props",
+    "title": "Test — React asoslari va JSX",
+    "questions": [
+      { "text": "Virtual DOM nima beradi?", "options": ["Tezroq JS", "Diffing orqali eng kam DOM o'zgarishini hisoblaydi", "Xavfsizlik", "Routing"], "correctIndex": 1, "explanation": "React'da «render» — funksiyani qayta chaqirish demakdir." },
+      { "text": "JSX aslida nima?", "options": ["HTML", "JavaScript — createElement chaqiruvlariga aylanadi", "Shablon tili", "CSS"], "correctIndex": 1, "explanation": "Shuning uchun JSX ichida {} bilan ifoda yoziladi." },
+      { "text": "Props qanday xususiyatga ega?", "options": ["O'zgartiriladigan", "Read-only — pastga bir tomonlama oqadi", "Ikki tomonlama", "Global"], "correctIndex": 1, "explanation": "«Data down, events up» tamoyili." },
+      { "text": "Nega «class» emas, «className» yoziladi?", "options": ["Chiroyli", "class — JavaScript'ning zaxiralangan so'zi", "React talabi", "CSS uchun"], "correctIndex": 1, "explanation": "JSX — JavaScript, shuning uchun JS cheklovlari amal qiladi." },
+      { "text": "JSX XSS'dan qanday himoya qiladi?", "options": ["Himoya qilmaydi", "Qiymatlarni avtomatik escape qiladi", "CSP bilan", "Sanitizer bilan"], "correctIndex": 1, "explanation": "dangerouslySetInnerHTML esa bu himoyani o'chiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "03-react-app-tuzilishi-vite",
+    "title": "Test — Vite va loyiha tuzilishi",
+    "questions": [
+      { "text": "Build tool nima uchun kerak?", "options": ["Faqat minifikatsiya", "JSX transpile, bundle va dev server", "Test", "Deploy"], "correctIndex": 1, "explanation": "Brauzer JSX'ni to'g'ridan-to'g'ri tushunmaydi." },
+      { "text": "«HMR» nima beradi?", "options": ["Build", "Kod o'zgarganda sahifani to'liq yangilamasdan yangilash", "Test", "Deploy"], "correctIndex": 1, "explanation": "State saqlanib qoladi — development tezlashadi." },
+      { "text": "Vite'da env o'zgaruvchisi qanday nomlanadi?", "options": ["REACT_APP_", "VITE_ prefiksi bilan", "NEXT_", "ENV_"], "correctIndex": 1, "explanation": "Faqat shu prefiksli o'zgaruvchilar mijoz kodiga uzatiladi." },
+      { "text": "Bootstrap zanjiri qanday?", "options": ["App → main", "index.html#root → main.jsx (createRoot) → App", "main → index", "App → root"], "correctIndex": 1, "explanation": "createRoot React 18+ da ishlatiladigan API." },
+      { "text": "«Feature-based» arxitektura nima beradi?", "options": ["Kam fayl", "Bog'liq kod bir joyda — kengaytirish oson", "Tezlik", "Kichik bundle"], "correctIndex": 1, "explanation": "Type-based (components/, hooks/) kichik loyihalar uchun qulay." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "04-state-hodisalar-shartli-render-royxatlar-keys",
+    "title": "Test — State va hodisalar",
+    "questions": [
+      { "text": "State «snapshot» degani nima?", "options": ["Rasm", "Har render o'z state qiymatiga ega — o'zgarish keyingi renderda ko'rinadi", "Cache", "Ref"], "correctIndex": 1, "explanation": "Shuning uchun setState'dan keyin darhol yangi qiymat o'qilmaydi." },
+      { "text": "Ketma-ket bir necha yangilanishda nima ishlatiladi?", "options": ["setState(x+1)", "Updater funksiya: setState(prev => prev + 1)", "useRef", "useEffect"], "correctIndex": 1, "explanation": "Batching tufayli oddiy qiymat eskirgan bo'lishi mumkin." },
+      { "text": "Massivga element qo'shishning to'g'ri usuli qaysi?", "options": ["arr.push(x)", "setArr([...arr, x])", "arr[arr.length] = x", "arr.splice"], "correctIndex": 1, "explanation": "Immutability — React o'zgarishni havola orqali aniqlaydi." },
+      { "text": "Ro'yxatda «key» nima uchun kerak?", "options": ["Stil", "React elementlarni aniqlashi va to'g'ri qayta ishlatishi uchun", "Tartib", "Validatsiya"], "correctIndex": 1, "explanation": "Index'ni key qilish tartib o'zgarganda xatoga olib keladi." },
+      { "text": "«Lifting state up» nima?", "options": ["State o'chirish", "Umumiy state'ni eng yaqin umumiy otaga ko'chirish", "Context", "Ref"], "correctIndex": 1, "explanation": "Ikki komponent bir ma'lumotni ulashganda ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "05-hooks-usestate-useeffect-usecontext-useref",
+    "title": "Test — Asosiy hooklar",
+    "questions": [
+      { "text": "Hooklar nima uchun komponent tepasida chaqirilishi kerak?", "options": ["Chiroyli", "React ularni CHAQIRUV TARTIBI bo'yicha aniqlaydi", "Tezlik", "Sintaksis"], "correctIndex": 1, "explanation": "Shart yoki tsikl ichida chaqirish tartibni buzadi." },
+      { "text": "useEffect'da dependency array bo'lmasa nima bo'ladi?", "options": ["Bir marta ishlaydi", "HAR renderda ishlaydi", "Ishlamaydi", "Xato"], "correctIndex": 1, "explanation": "[] — faqat mount'da; [deps] — deps o'zgarganda." },
+      { "text": "«Cleanup» funksiyasi nima uchun kerak?", "options": ["Tezlik", "Obuna, timer va resurslarni bo'shatish", "State tozalash", "Render"], "correctIndex": 1, "explanation": "Effekt qayta ishlashdan oldin va unmount'da chaqiriladi." },
+      { "text": "«Stale closure» muammosi nima?", "options": ["Sintaksis xato", "Effekt eski render qiymatini «yodda saqlab» qolishi", "Xotira leak", "Render sekinligi"], "correctIndex": 1, "explanation": "Dependency array'ni to'g'ri to'ldirish yoki ref ishlatish kerak." },
+      { "text": "«useRef» qanday qiymat uchun ishlatiladi?", "options": ["Renderga ta'sir qiladigan", "Render'ga ta'sir qilmaydigan qiymat va DOM havolasi", "Global state", "Context"], "correctIndex": 1, "explanation": "ref.current o'zgarganda re-render bo'lmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "06-usememo-usecallback-usereducer",
+    "title": "Test — useMemo, useCallback, useReducer",
+    "questions": [
+      { "text": "Reducer funksiyasi qanday bo'lishi kerak?", "options": ["Async", "Sof (pure): (state, action) => newState", "Side effect bilan", "Global"], "correctIndex": 1, "explanation": "Bu testlanadigan va bashoratli mantiq beradi." },
+      { "text": "«useCallback» nima keshlaydi?", "options": ["Qiymatni", "Funksiya havolasini", "Komponentni", "State'ni"], "correctIndex": 1, "explanation": "useMemo esa hisoblangan qiymatni keshlaydi." },
+      { "text": "«Referential equality» nima uchun muhim?", "options": ["Tezlik", "Har renderda yangi obyekt/funksiya yangi havola — memo buziladi", "Xotira", "Sintaksis"], "correctIndex": 1, "explanation": "React.memo props havolasini solishtiradi." },
+      { "text": "Optimallashtirish qachon qilinadi?", "options": ["Darhol", "O'lchagandan keyin — premature optimization emas", "Har komponentda", "Hech qachon"], "correctIndex": 1, "explanation": "Ortiqcha memoizatsiya o'zi ham xarajat keltiradi." },
+      { "text": "React Compiler nima beradi?", "options": ["Tezroq build", "Avtomatik memoizatsiya — qo'lda useMemo/useCallback kamayadi", "Yangi hook", "Bundle"], "correctIndex": 1, "explanation": "Kelajakda qo'lda optimallashtirish zarurati kamayadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "07-custom-hooks",
+    "title": "Test — Custom hooks",
+    "questions": [
+      { "text": "Custom hook nima ulashadi?", "options": ["State'ni", "LOGIKANI — har chaqiruv o'z izolyatsiyalangan state'iga ega", "Komponentni", "Context'ni"], "correctIndex": 1, "explanation": "Bu — custom hook haqidagi eng ko'p chalkashtiriladigan nuqta." },
+      { "text": "Custom hook nomi qanday boshlanishi kerak?", "options": ["get", "use", "hook", "with"], "correctIndex": 1, "explanation": "React lint qoidalari shu prefiksga tayanadi." },
+      { "text": "Hook va oddiy util funksiya qanday farqlanadi?", "options": ["Farqi yo'q", "Hook boshqa hooklarni chaqiradi; util — sof funksiya", "Util hook chaqiradi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Hook kerak bo'lmasa, oddiy funksiya afzal." },
+      { "text": "«useDebounce» nima uchun ishlatiladi?", "options": ["Cache", "Tez-tez o'zgaruvchi qiymatni kechiktirib uzatish (qidiruv maydoni)", "Xato", "Routing"], "correctIndex": 1, "explanation": "Ortiqcha API so'rovlarini keskin kamaytiradi." },
+      { "text": "«useFetch» hookida nima muhim?", "options": ["Faqat data", "AbortController bilan bekor qilish va cleanup", "Faqat loading", "Cache"], "correctIndex": 1, "explanation": "Komponent unmount bo'lganda so'rov bekor qilinishi kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "08-react-lazy-suspense-code-splitting",
+    "title": "Test — Lazy loading va code splitting",
+    "questions": [
+      { "text": "Code splitting nima beradi?", "options": ["Kichik kod", "Bundle chunklarga bo'linadi — faqat kerakli qism yuklanadi", "Tez build", "Xavfsizlik"], "correctIndex": 1, "explanation": "Boshlang'ich yuklash vaqti sezilarli qisqaradi." },
+      { "text": "«React.lazy» nima bilan birga ishlatiladi?", "options": ["useEffect", "<Suspense> va fallback UI", "useMemo", "Context"], "correctIndex": 1, "explanation": "Suspense yuklanish davomida fallback ko'rsatadi." },
+      { "text": "Eng samarali splitting turi qaysi?", "options": ["Har komponent", "Route-based — sahifa bo'yicha", "Har funksiya", "Splitting kerak emas"], "correctIndex": 1, "explanation": "Foydalanuvchi faqat ochgan sahifa kodini yuklaydi." },
+      { "text": "Lazy komponent yuklanmasa nima kerak?", "options": ["Hech narsa", "Error boundary", "useEffect", "Retry"], "correctIndex": 1, "explanation": "Tarmoq xatosi holatida foydalanuvchiga xabar berish uchun." },
+      { "text": "«useTransition» nima beradi?", "options": ["Animatsiya", "Og'ir yangilanishni past ustuvorlikda bajarish — UI qotmaydi", "Cache", "Routing"], "correctIndex": 1, "explanation": "Sahifa almashishda sakrashni kamaytiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "11-qism-react", "article": "09-routing-react-router",
+    "title": "Test — React Router",
+    "questions": [
+      { "text": "Client-side routing qanday ishlaydi?", "options": ["Sahifa qayta yuklanadi", "History API orqali URL o'zgaradi, sahifa yangilanmaydi", "Server render", "iframe"], "correctIndex": 1, "explanation": "SPA tajribasining asosi." },
+      { "text": "Nested route'da bola komponent qayerda ko'rsatiladi?", "options": ["Avtomatik", "<Outlet /> komponenti o'rnida", "children", "Portal"], "correctIndex": 1, "explanation": "Layout komponentlari shu tarzda quriladi." },
+      { "text": "URL parametrini olish uchun qaysi hook?", "options": ["useLocation", "useParams", "useNavigate", "useSearchParams"], "correctIndex": 1, "explanation": "useSearchParams esa query string uchun." },
+      { "text": "Protected route qanday amalga oshiriladi?", "options": ["Route o'chirish", "Auth tekshiruvi va Navigate bilan yo'naltirish", "CSS bilan", "Server bilan"], "correctIndex": 1, "explanation": "Wrapper komponent yoki loader ichida tekshiriladi." },
+      { "text": "«errorElement» nima beradi?", "options": ["404", "Route ichidagi xatolarni ushlab, UI ko'rsatish", "Loading", "Redirect"], "correctIndex": 1, "explanation": "useRouteError bilan xato tafsilotlari olinadi." }
+    ]
+  }
+]

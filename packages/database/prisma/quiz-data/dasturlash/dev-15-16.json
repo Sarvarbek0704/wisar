@@ -1,0 +1,134 @@
+[
+  {
+    "topic": "dasturlash", "section": "15-qism-kasbiy-konikmalar", "article": "01-toza-kod-va-refactoring",
+    "title": "Test — Toza kod va refactoring",
+    "questions": [
+      { "text": "«YAGNI» nimani anglatadi?", "options": ["Takrorlama", "Kerak bo'lmagan narsani oldindan yozma", "Sodda tut", "Test yoz"], "correctIndex": 1, "explanation": "DRY — takrorlama; KISS — sodda tut." },
+      { "text": "Yaxshi izoh qanday bo'ladi?", "options": ["Kod nima qilishini tushuntiradi", "NEGA shunday qilinganini tushuntiradi", "Har qatorda", "Uzun"], "correctIndex": 1, "explanation": "«Nima» ni kodning o'zi aytishi kerak." },
+      { "text": "«Kod hidi» (code smell) nima?", "options": ["Xato", "Chuqurroq muammoga ishora qiluvchi belgi", "Sintaksis", "Test"], "correctIndex": 1, "explanation": "Uzun funksiya, ko'p parametr, dublikat kod — tipik hidlar." },
+      { "text": "«Boy scout rule» nima?", "options": ["Test yozish", "Kodni topgan holatingizdan tozaroq qoldirish", "Refactor qilmaslik", "Commit qilish"], "correctIndex": 1, "explanation": "Kichik, muntazam yaxshilanishlar to'planadi." },
+      { "text": "«Texnik qarz» nima?", "options": ["Pul", "Tez yechim uchun to'lanadigan kelajakdagi narx", "Bug", "Test"], "correctIndex": 1, "explanation": "Ongli olingan qarz yomon emas — uni qaytarish rejasi bo'lishi kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "15-qism-kasbiy-konikmalar", "article": "02-code-review-madaniyati",
+    "title": "Test — Code review madaniyati",
+    "questions": [
+      { "text": "Yaxshi PR qanday bo'ladi?", "options": ["Katta va to'liq", "Kichik, bitta maqsadga qaratilgan va tavsifli", "Tavsifsiz", "Ko'p fayl"], "correctIndex": 1, "explanation": "Kichik PR tez va sifatli review olinadi." },
+      { "text": "Review fikri qanday yozilishi kerak?", "options": ["Qisqa va qat'iy", "Konstruktiv — kodga qaratilgan, shaxsga emas", "Faqat tanqid", "Faqat maqtov"], "correctIndex": 1, "explanation": "«Nega» ni tushuntirish o'rganishga yordam beradi." },
+      { "text": "«nit:» prefiksi nima uchun ishlatiladi?", "options": ["Bloklovchi", "Kichik, ixtiyoriy taklif ekanini bildirish", "Xato", "Savol"], "correctIndex": 1, "explanation": "Conventional Comments belgilaridan biri." },
+      { "text": "Review'ning qaysi qismini avtomatlashtirish kerak?", "options": ["Mantiq", "Format va lint — inson mantiqqa e'tibor bersin", "Hammasi", "Hech narsa"], "correctIndex": 1, "explanation": "Prettier va ESLint bahslarni yo'q qiladi." },
+      { "text": "«Atomik commit» nima?", "options": ["Katta commit", "Bitta mantiqiy o'zgarishni qamragan commit", "Kunlik commit", "Bir fayl"], "correctIndex": 1, "explanation": "Tarixni o'qishli va revert qilishni oson qiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "15-qism-kasbiy-konikmalar", "article": "03-eslint-prettier-husky-lint-staged",
+    "title": "Test — ESLint, Prettier, Husky",
+    "questions": [
+      { "text": "ESLint va Prettier qanday farqlanadi?", "options": ["Farqi yo'q", "ESLint — kod sifati va xatolar; Prettier — formatlash", "Prettier — sifat", "Ikkalasi format"], "correctIndex": 1, "explanation": "eslint-config-prettier ular orasidagi konfliktni o'chiradi." },
+      { "text": "«lint-staged» nima beradi?", "options": ["Butun loyihani tekshiradi", "Faqat staged fayllarni tekshiradi — tez", "Test", "Build"], "correctIndex": 1, "explanation": "Husky pre-commit hook bilan birga ishlatiladi." },
+      { "text": "«commitlint» nima qiladi?", "options": ["Kod tekshiradi", "Commit xabari konvensiyaga mosligini tekshiradi", "Format", "Test"], "correctIndex": 1, "explanation": "Conventional Commits standarti bilan birga ishlatiladi." },
+      { "text": "Flat config (eslint.config.js) nima?", "options": ["Eski format", "ESLint'ning yangi konfiguratsiya formati", "Prettier config", "Husky"], "correctIndex": 1, "explanation": ".eslintrc formatidan asta-sekin o'tilmoqda." },
+      { "text": "Git hook yetarlimi yoki CI ham kerakmi?", "options": ["Hook yetarli", "CI ham kerak — hook chetlab o'tilishi mumkin (--no-verify)", "Faqat CI", "Ikkalasi keraksiz"], "correctIndex": 1, "explanation": "Hook — tez qaytarish; CI — yakuniy kafolat." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "15-qism-kasbiy-konikmalar", "article": "04-monorepo-turborepo-nx",
+    "title": "Test — Monorepo (Turborepo, Nx)",
+    "questions": [
+      { "text": "Monorepo nima beradi?", "options": ["Kichik repo", "Kod ulashish, atomik o'zgarish va yagona tooling", "Tezlik", "Xavfsizlik"], "correctIndex": 1, "explanation": "Polyrepo esa mustaqillik beradi, lekin ulashish qiyinlashadi." },
+      { "text": "Turborepo'ning asosiy imkoniyati qaysi?", "options": ["Bundling", "Task cache (local va remote)", "Linting", "Testing"], "correctIndex": 1, "explanation": "O'zgarmagan paketlar qayta build qilinmaydi." },
+      { "text": "«nx affected» nima qiladi?", "options": ["Hammasini ishga tushiradi", "Faqat o'zgarishdan ta'sirlangan loyihalarni ishga tushiradi", "Cache", "Generate"], "correctIndex": 1, "explanation": "CI vaqtini sezilarli qisqartiradi." },
+      { "text": "pnpm workspace'ning afzalligi qaysi?", "options": ["Tez o'rnatish faqat", "Izolyatsiyalangan node_modules — phantom dependency yo'q", "Kichik", "Yangi"], "correctIndex": 1, "explanation": "Content-addressable store disk joyini tejaydi." },
+      { "text": "«Changesets» nima uchun ishlatiladi?", "options": ["Build", "Paketlarni versiyalash va changelog generatsiya qilish", "Test", "Lint"], "correctIndex": 1, "explanation": "Monorepo'da ko'p paketni birga relizga chiqarish uchun." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "15-qism-kasbiy-konikmalar", "article": "05-debugging-metodologiyasi",
+    "title": "Test — Debugging metodologiyasi",
+    "questions": [
+      { "text": "Debugging'ning to'g'ri yondashuvi qanday?", "options": ["Tasodifan o'zgartirish", "Tizimli: takrorlash → gipoteza → tekshirish", "Qayta yozish", "So'rash"], "correctIndex": 1, "explanation": "Muammoni ishonchli takrorlash — birinchi qadam." },
+      { "text": "«Binary search» debugging nima?", "options": ["Algoritm", "Kodni yarmiga bo'lib, muammo qaysi yarmda ekanini aniqlash", "Log", "Test"], "correctIndex": 1, "explanation": "git bisect ham shu tamoyilga asoslangan." },
+      { "text": "«Rubber duck debugging» nima?", "options": ["Vosita", "Muammoni ovoz chiqarib tushuntirish orqali yechim topish", "Test", "Log"], "correctIndex": 1, "explanation": "Tushuntirish jarayonida mantiq bo'shliqlari ko'rinadi." },
+      { "text": "«Heisenbug» nima?", "options": ["Sintaksis xato", "Kuzatishga urinilganda yo'qoladigan xato", "Flaky test", "Race condition"], "correctIndex": 1, "explanation": "Ko'pincha timing yoki race condition bilan bog'liq." },
+      { "text": "Production xatolarini kuzatish uchun nima ishlatiladi?", "options": ["console.log", "Sentry kabi error tracking", "Debugger", "Test"], "correctIndex": 1, "explanation": "Stack trace, release va foydalanuvchi konteksti bilan keladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "15-qism-kasbiy-konikmalar", "article": "06-hujjat-oqish-va-texnik-kommunikatsiya",
+    "title": "Test — Hujjat o'qish va texnik muloqot",
+    "questions": [
+      { "text": "Yangi kutubxonani o'rganish qayerdan boshlanadi?", "options": ["YouTube", "Rasmiy hujjat — Getting Started", "Stack Overflow", "Blog"], "correctIndex": 1, "explanation": "Changelog va versiya farqlariga ham e'tibor berish kerak." },
+      { "text": "«ADR» nima?", "options": ["API hujjati", "Architecture Decision Record — qaror va uning sababini yozib qo'yish", "Test", "Log"], "correctIndex": 1, "explanation": "Kelajakda «nega shunday qilingan?» savoliga javob beradi." },
+      { "text": "Yaxshi savol qanday bo'ladi?", "options": ["Qisqa", "Kontekst, urinishlar, kutilgan va haqiqiy natija bilan", "Faqat kod", "Faqat xato"], "correctIndex": 1, "explanation": "«XY problem» — asl muammo o'rniga yechimini so'rash xatosi." },
+      { "text": "Asinxron muloqotda nima muhim?", "options": ["Tezlik", "To'liq kontekst — javob kutmasdan tushunarli bo'lishi", "Qisqalik faqat", "Emoji"], "correctIndex": 1, "explanation": "Bu masofaviy jamoalarda hal qiluvchi ko'nikma." },
+      { "text": "AI vositalaridan qanday foydalanish to'g'ri?", "options": ["Ko'r-ko'rona ishonish", "Javobni tekshirish va rasmiy hujjat bilan solishtirish", "Umuman ishlatmaslik", "Faqat kod nusxalash"], "correctIndex": 1, "explanation": "AI tez yo'l ko'rsatadi, lekin mas'uliyat sizda qoladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "15-qism-kasbiy-konikmalar", "article": "07-system-design-intervyu",
+    "title": "Test — System design intervyu",
+    "questions": [
+      { "text": "System design intervyusi qayerdan boshlanadi?", "options": ["Diagramma chizish", "Talablarni aniqlashtiruvchi savollar berish", "DB tanlash", "Kod yozish"], "correctIndex": 1, "explanation": "Funksional va nofunksional talablar aniqlanadi." },
+      { "text": "«Estimation» bosqichida nima hisoblanadi?", "options": ["Narx", "QPS, saqlash hajmi va latency talablari", "Kod qatorlari", "Jamoa"], "correctIndex": 1, "explanation": "Bu keyingi arxitektura qarorlarini asoslaydi." },
+      { "text": "Intervyuda eng muhim narsa nima?", "options": ["To'g'ri javob", "Trade-off'larni ovoz chiqarib muhokama qilish", "Tezlik", "Diagramma"], "correctIndex": 1, "explanation": "Yagona «to'g'ri» javob yo'q — fikrlash jarayoni baholanadi." },
+      { "text": "Junior va senior kutilmasi qanday farqlanadi?", "options": ["Farqi yo'q", "Senior'dan trade-off, miqyos va nosozlik holatlari kutiladi", "Junior'dan ko'proq", "Faqat kod"], "correctIndex": 1, "explanation": "Junior'dan asosiy komponentlarni to'g'ri joylash kutiladi." },
+      { "text": "Vaqtni qanday taqsimlash kerak?", "options": ["Hammasi dizaynga", "Talab → yuqori daraja dizayn → chuqurlashtirish → trade-off", "Faqat detal", "Faqat diagramma"], "correctIndex": 1, "explanation": "Bir qismda tiqilib qolmaslik muhim." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "15-qism-kasbiy-konikmalar", "article": "08-portfolio-github-open-source",
+    "title": "Test — Portfolio va GitHub",
+    "questions": [
+      { "text": "Portfolio loyihasida eng muhim narsa nima?", "options": ["Loyihalar soni", "Sifat: README, jonli demo, toza kod", "Yulduzlar", "Til"], "correctIndex": 1, "explanation": "Bitta sifatli loyiha o'nta chalasidan yaxshiroq." },
+      { "text": "GitHub profil README nima beradi?", "options": ["Yulduz", "O'zingizni va asosiy loyihalarni taqdim etish", "Cache", "CI"], "correctIndex": 1, "explanation": "Pinned repositories bilan birga birinchi taassurot yaratadi." },
+      { "text": "Open source'ga hissa qanday boshlanadi?", "options": ["Katta feature", "Hujjat tuzatish yoki «good first issue»", "Yangi loyiha", "Fork faqat"], "correctIndex": 1, "explanation": "Kichik hissa jarayonni o'rganishning eng yaxshi yo'li." },
+      { "text": "Rezyume «ATS» uchun qanday bo'lishi kerak?", "options": ["Chiroyli dizayn", "Sodda tuzilma va kalit so'zlar bilan — mashina o'qiy olsin", "Rasmli", "Ko'p ustunli"], "correctIndex": 1, "explanation": "Murakkab formatlar avtomatik tizimda buziladi." },
+      { "text": "Intervyuga tayyorgarlik nechta yo'nalishni qamraydi?", "options": ["Faqat algoritm", "Algoritm + system design + behavioral", "Faqat kod", "Faqat portfolio"], "correctIndex": 1, "explanation": "Behavioral qism ko'pincha e'tibordan chetda qoladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "16-qism-capstone-loyihalar", "article": "01-toliq-production-saas",
+    "title": "Test — Production SaaS loyihasi",
+    "questions": [
+      { "text": "SaaS loyihasida multi-tenancy nima uchun kerak?", "options": ["Tezlik", "Bir ilova ko'p mijoz (tenant) ga xizmat qiladi", "Cache", "SEO"], "correctIndex": 1, "explanation": "Ma'lumot izolyatsiyasi eng kritik talab." },
+      { "text": "SaaS stack'ida to'lov uchun nima ishlatiladi?", "options": ["Qo'lda", "Stripe Billing (subscription + webhook)", "Faqat karta", "Bank"], "correctIndex": 1, "explanation": "Webhook orqali obuna holati sinxronlanadi." },
+      { "text": "Production checklist'ga nima kiradi?", "options": ["Faqat deploy", "Monitoring, backup, secrets, rate limit, error tracking", "Faqat test", "Faqat CI"], "correctIndex": 1, "explanation": "Ishga tushirishdan oldin har bandi tekshiriladi." },
+      { "text": "Loyihani qanday bosqichlarda qurish tavsiya etiladi?", "options": ["Hammasi birdan", "Poydevor → asosiy funksiya → kengaytirish → sayqal", "Dizayndan", "Deploy'dan"], "correctIndex": 1, "explanation": "Har bosqich ishlaydigan mahsulot beradi." },
+      { "text": "Monolit yoki mikroservis — SaaS uchun qaysi?", "options": ["Doim mikroservis", "Modular monolitdan boshlash", "Doim mikroservis", "Farqi yo'q"], "correctIndex": 1, "explanation": "Zarurat tug'ilganda ajratish mumkin." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "16-qism-capstone-loyihalar", "article": "02-mikroservis-arxitekturasidagi-loyiha",
+    "title": "Test — Mikroservis loyihasi",
+    "questions": [
+      { "text": "Xizmatlarni qanday chegaralash kerak?", "options": ["Texnik qatlam bo'yicha", "DDD bounded context — biznes sohasi bo'yicha", "Fayl soni bo'yicha", "Jamoa xohishi"], "correctIndex": 1, "explanation": "Texnik bo'linish distributed monolith keltirib chiqaradi." },
+      { "text": "«Database-per-service» nima uchun muhim?", "options": ["Tezlik", "Xizmatlar mustaqilligini ta'minlaydi", "Arzonlik", "Backup"], "correctIndex": 1, "explanation": "Umumiy baza qattiq bog'lanish yaratadi." },
+      { "text": "Taqsimlangan tranzaksiya qanday amalga oshiriladi?", "options": ["2PC", "Saga — choreography yoki orchestration", "ACID", "Lock"], "correctIndex": 1, "explanation": "Kompensatsiya amallari bilan izchillik ta'minlanadi." },
+      { "text": "Kuzatuvchanlik uchun nima kerak?", "options": ["Log faqat", "Distributed tracing va correlation ID", "Metrika faqat", "Hech narsa"], "correctIndex": 1, "explanation": "Bir so'rov ko'p xizmatdan o'tadi — uni kuzatish kerak." },
+      { "text": "Mikroservisga o'tishdan oldin nima bo'lishi kerak?", "options": ["Yangi loyiha", "Aniq ehtiyoj va tayyor DevOps madaniyati", "Katta jamoa faqat", "Cloud"], "correctIndex": 1, "explanation": "Aks holda murakkablik foydadan ustun keladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "16-qism-capstone-loyihalar", "article": "03-real-time-ilova-chat-notifications",
+    "title": "Test — Real-time chat loyihasi",
+    "questions": [
+      { "text": "Chat uchun qaysi texnologiya asos bo'ladi?", "options": ["Polling", "WebSocket (Socket.io)", "SSE faqat", "REST"], "correctIndex": 1, "explanation": "Ikki tomonlama, doimiy kanal talab qilinadi." },
+      { "text": "WebSocket ulanishida auth qanday amalga oshiriladi?", "options": ["Amalga oshirilmaydi", "Handshake paytida JWT tekshiriladi", "URL'da parol", "Cookie faqat"], "correctIndex": 1, "explanation": "NestJS'da gateway middleware yoki guard ishlatiladi." },
+      { "text": "Ko'p serverli chat uchun nima kerak?", "options": ["Ko'proq RAM", "Redis adapter va sticky session", "Cache", "Cron"], "correctIndex": 1, "explanation": "Aks holda xabarlar barcha mijozlarga yetmaydi." },
+      { "text": "Offline foydalanuvchi uchun nima qilinadi?", "options": ["Xabar yo'qoladi", "Xabar bazada saqlanib, push bildirishnoma yuboriladi", "Kutiladi", "Bloklanadi"], "correctIndex": 1, "explanation": "Ulanganda o'qilmagan xabarlar yetkaziladi." },
+      { "text": "Video qo'ng'iroq qo'shish uchun nima ishlatiladi?", "options": ["WebSocket", "WebRTC", "HTTP", "gRPC"], "correctIndex": 1, "explanation": "Signalizatsiya uchun WebSocket, media uchun WebRTC." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "16-qism-capstone-loyihalar", "article": "04-kitob-yakuni-bitiruv-va-keyingi-yol",
+    "title": "Test — Kitob yakuni va keyingi yo'l",
+    "questions": [
+      { "text": "Kitobdan keyin arxitektura yo'nalishida nimani chuqurlashtirish mumkin?", "options": ["HTML", "Distributed systems va system design", "CSS", "Git"], "correctIndex": 1, "explanation": "Event-driven va message queue mavzulari ham davom etadi." },
+      { "text": "Cloud yo'nalishida qaysi sertifikat tilga olinadi?", "options": ["Frontend", "AWS Solutions Architect", "Scrum", "PMP"], "correctIndex": 1, "explanation": "Kubernetes va Terraform ham shu yo'nalishga kiradi." },
+      { "text": "O'rganishning eng samarali usuli qaysi?", "options": ["Faqat o'qish", "Real loyiha qurish va uni oxirigacha yetkazish", "Faqat video", "Faqat kurs"], "correctIndex": 1, "explanation": "Portfolio ham shu tarzda tabiiy shakllanadi." },
+      { "text": "Karyera o'sishida nima muhim?", "options": ["Faqat texnik bilim", "Texnik bilim + muloqot va hamkorlik ko'nikmalari", "Faqat sertifikat", "Faqat tajriba"], "correctIndex": 1, "explanation": "Senior daraja ko'pincha aynan shu ikkinchi qism bilan farq qiladi." },
+      { "text": "Doimiy o'rganish nima uchun zarur?", "options": ["Moda", "Texnologiyalar tez o'zgaradi — asoslar qoladi, vositalar almashadi", "Sertifikat uchun", "Ish uchun faqat"], "correctIndex": 1, "explanation": "Shuning uchun kitob asoslarga alohida urg'u beradi." }
+    ]
+  }
+]

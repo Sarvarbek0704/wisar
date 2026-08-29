@@ -12,6 +12,7 @@ import {
   type CardHint,
 } from "@/lib/flashcards-api";
 import { isLoggedIn } from "@/lib/auth";
+import { queueReview, pendingCount, syncPendingReviews } from "@/lib/pending-reviews";
 import { ActivityHeartbeat } from "@/components/ActivityHeartbeat";
 
 export default function FlashcardStudyPage() {
@@ -34,6 +35,8 @@ export default function FlashcardStudyPage() {
       .then(setData)
       .catch(() => setErr("Dasta yuklanmadi"))
       .finally(() => setLoading(false));
+    // Anonim holatda yig'ilgan baholar bo'lsa — kirgandan keyin ko'chiramiz.
+    if (isLoggedIn()) syncPendingReviews().catch(() => {});
   }, [level]);
 
   if (loading) {
@@ -62,6 +65,23 @@ export default function FlashcardStudyPage() {
         <Trophy size={52} className="mb-4 mx-auto text-amber-500" />
         <h1 className="mb-2 text-2xl font-bold text-ink">Seans tugadi!</h1>
         <p className="mb-6 text-soft">{sessionCount} ta karta ko'rib chiqildi.</p>
+
+        {!isLoggedIn() && pendingCount() > 0 && (
+          <div className="mb-6 w-full rounded-xl border border-amber-300 bg-amber-50 p-4 text-left dark:border-amber-700 dark:bg-amber-950/30">
+            <p className="text-sm text-ink">
+              <strong>{pendingCount()} ta natija</strong> shu qurilmada saqlanmoqda.
+              Kiring — takrorlash jadvali (interval) yuritilib, keyingi safar aynan
+              qiynalgan kartalaringiz chiqadi.
+            </p>
+            <Link
+              href="/login"
+              className="mt-3 inline-block rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+            >
+              Kirish va saqlash
+            </Link>
+          </div>
+        )}
+
         <div className="flex flex-col gap-3 w-full">
           <button
             onClick={() => { setCardIndex(0); setFlipped(false); setDone(false); setSessionCount(0); }}
@@ -83,8 +103,12 @@ export default function FlashcardStudyPage() {
   const card = cards[cardIndex];
 
   async function handleQuality(q: 0 | 1 | 2 | 3 | 4 | 5) {
+    // Kirgan bo'lsa — darhol serverga; anonim bo'lsa — localStorage navbatiga,
+    // kirgandan keyin ko'chiriladi (progress yo'qolmaydi).
     if (isLoggedIn()) {
-      reviewCard(card.id, q).catch(() => {});
+      reviewCard(card.id, q).catch(() => queueReview(card.id, q));
+    } else {
+      queueReview(card.id, q);
     }
     setSessionCount((n) => n + 1);
     setHint(null);

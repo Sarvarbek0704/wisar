@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "01-db-asoslari-sql-vs-nosql",
+    "title": "Test — DB asoslari: SQL va NoSQL",
+    "questions": [
+      { "text": "ACID nimani kafolatlaydi?", "options": ["Tezlik", "Tranzaksiya yaxlitligi (atomiclik, izchillik, izolyatsiya, doimiylik)", "Masshtab", "Xotira"], "correctIndex": 1, "explanation": "NoSQL dunyosida esa BASE — mavjudlikka urg'u beradi." },
+      { "text": "CAP teoremasi nimani aytadi?", "options": ["Hammasini olish mumkin", "Tarmoq bo'linishida izchillik yoki mavjudlikdan birini tanlash kerak", "Faqat tezlik muhim", "Baza doim ishlaydi"], "correctIndex": 1, "explanation": "Consistency, Availability, Partition tolerance — uchtasidan ikkitasi." },
+      { "text": "Vertikal va gorizontal masshtablash qanday farqlanadi?", "options": ["Farqi yo'q", "Vertikal — bitta serverni kuchaytirish; gorizontal — server qo'shish", "Gorizontal — kuchaytirish", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "NoSQL odatda gorizontal masshtablashga moslashgan." },
+      { "text": "Normalizatsiya nima beradi?", "options": ["Tezlik", "Takrorlanishni kamaytirish va yaxlitlikni saqlash", "Kam joy faqat", "Sodda so'rov"], "correctIndex": 1, "explanation": "Denormalizatsiya esa o'qish tezligi uchun takrorlanishga yo'l qo'yadi." },
+      { "text": "«Polyglot persistence» nima?", "options": ["Ko'p til", "Bir loyihada bir necha xil baza turini birga ishlatish", "Bitta baza", "Migratsiya"], "correctIndex": 1, "explanation": "Masalan: PostgreSQL + Redis + Elasticsearch." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "02-mongodb-mongoose-crud",
+    "title": "Test — MongoDB va Mongoose",
+    "questions": [
+      { "text": "MongoDB tuzilishi qanday?", "options": ["Database → jadval → qator", "Database → collection → document", "Schema → table", "Index → key"], "correctIndex": 1, "explanation": "_id maydoni ObjectId turida avtomatik yaratiladi." },
+      { "text": "«lean()» nima beradi?", "options": ["Validatsiya", "Oddiy JS obyekt qaytaradi — tezroq va yengilroq", "Populate", "Index"], "correctIndex": 1, "explanation": "Mongoose document metodlari kerak bo'lmaganda ishlatiladi." },
+      { "text": "«populate» nima qiladi?", "options": ["Yangi hujjat", "Reference orqali bog'langan hujjatni yuklaydi (JOIN o'rni)", "Index yaratadi", "O'chiradi"], "correctIndex": 1, "explanation": "MongoDB'da haqiqiy JOIN yo'q — bu ilova darajasidagi yechim." },
+      { "text": "«update» da validatsiya ishlashi uchun nima kerak?", "options": ["Hech narsa", "runValidators: true", "strict: true", "lean()"], "correctIndex": 1, "explanation": "Standart holatda update validatsiyani o'tkazib yuboradi." },
+      { "text": "11000 xato kodi nimani anglatadi?", "options": ["Validatsiya xatosi", "Duplicate key — unique cheklov buzilgan", "Ulanish xatosi", "Timeout"], "correctIndex": 1, "explanation": "Uni ushlab, foydalanuvchiga aniq xabar berish kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "03-mongodb-chuqur-aggregation-indeks-relations",
+    "title": "Test — MongoDB: aggregation va indekslar",
+    "questions": [
+      { "text": "Aggregation pipeline'da «$match» qayerda turishi kerak?", "options": ["Oxirida", "Iloji boricha OLDINDA", "O'rtada", "Farqi yo'q"], "correctIndex": 1, "explanation": "Erta filtrlash keyingi bosqichlar hajmini keskin kamaytiradi." },
+      { "text": "«$lookup» nima qiladi?", "options": ["Guruhlaydi", "JOIN vazifasini bajaradi", "Shakl o'zgartiradi", "Saralaydi"], "correctIndex": 1, "explanation": "$group — guruhlash, $project — natija shaklini o'zgartirish." },
+      { "text": "«ESR» qoidasi nimani anglatadi?", "options": ["Xato kodi", "Birikma indeksda tartib: Equality → Sort → Range", "Index turi", "Query operator"], "correctIndex": 1, "explanation": "To'g'ri tartib indeksdan maksimal foyda beradi." },
+      { "text": "Indeksning narxi nimada?", "options": ["Bepul", "Yozish sekinlashadi va disk joyi sarflanadi", "Faqat xotira", "Narxi yo'q"], "correctIndex": 1, "explanation": "Shuning uchun faqat kerakli indekslar yaratiladi." },
+      { "text": "«Embed» qachon afzal?", "options": ["Katta va mustaqil ma'lumotda", "Kichik, doim birga o'qiladigan ma'lumotda", "Har doim", "Hech qachon"], "correctIndex": 1, "explanation": "Katta yoki mustaqil o'sadigan ma'lumot uchun reference ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "04-sql-asoslari-crud",
+    "title": "Test — SQL asoslari",
+    "questions": [
+      { "text": "Pul qiymatlari uchun qaysi tur ishlatilishi kerak?", "options": ["FLOAT", "DECIMAL", "INT", "REAL"], "correctIndex": 1, "explanation": "Floating point yaxlitlash xatolari moliyada qabul qilinmaydi." },
+      { "text": "SQL injection'dan himoyaning asosiy usuli qaysi?", "options": ["Escape qilish", "Parametrli (prepared) so'rovlar", "Regex", "Uzunlikni cheklash"], "correctIndex": 1, "explanation": "So'rovga foydalanuvchi kiritmasini hech qachon yopishtirmang." },
+      { "text": "UPDATE va DELETE'da nima majburiy?", "options": ["ORDER BY", "WHERE sharti", "LIMIT", "JOIN"], "correctIndex": 1, "explanation": "WHERE'siz butun jadval o'zgaradi yoki o'chadi." },
+      { "text": "NULL qiymatni qanday tekshiriladi?", "options": ["= NULL", "IS NULL", "== NULL", "NULL()"], "correctIndex": 1, "explanation": "NULL — noma'lum qiymat; u hech narsaga teng emas, hatto o'ziga ham." },
+      { "text": "«HAVING» va «WHERE» qanday farqlanadi?", "options": ["Farqi yo'q", "WHERE — guruhlashdan oldin; HAVING — guruhlangandan keyin", "HAVING — oldin", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "HAVING agregat natijalarni filtrlaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "05-mysql-express-bilan",
+    "title": "Test — MySQL va Express",
+    "questions": [
+      { "text": "Connection pool nima uchun kerak?", "options": ["Xavfsizlik", "Ulanishlarni qayta ishlatish — production uchun majburiy", "Validatsiya", "Cache"], "correctIndex": 1, "explanation": "Har so'rovda yangi ulanish ochish juda qimmat." },
+      { "text": "mysql2'da «execute» va «query» qanday farqlanadi?", "options": ["Farqi yo'q", "execute — prepared statement, injection'dan himoya", "query xavfsizroq", "execute sekinroq"], "correctIndex": 1, "explanation": "«?» belgilari bilan parametrlar uzatiladi." },
+      { "text": "mysql2 natijasi qanday shaklda keladi?", "options": ["{ rows }", "[rows, fields] massiv", "rows", "JSON"], "correctIndex": 1, "explanation": "Shuning uchun odatda const [rows] = await ... yoziladi." },
+      { "text": "Tranzaksiyada connection bilan nima qilish kerak?", "options": ["Hech narsa", "Oxirida release() qilish", "Yopish", "Qayta ochish"], "correctIndex": 1, "explanation": "Aks holda pool ulanishlari tugab qoladi." },
+      { "text": "INSERT'dan keyin yangi ID qayerdan olinadi?", "options": ["rows[0].id", "result.insertId", "RETURNING", "lastId()"], "correctIndex": 1, "explanation": "affectedRows esa nechta qator o'zgarganini bildiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "06-postgresql-pg-foreign-keys",
+    "title": "Test — PostgreSQL va foreign keys",
+    "questions": [
+      { "text": "pg'da parametrlar qanday belgilanadi?", "options": ["?", "$1, $2", ":name", "%s"], "correctIndex": 1, "explanation": "Bu SQL injection'dan himoyaning asosiy mexanizmi." },
+      { "text": "«RETURNING» nima beradi?", "options": ["Xato", "INSERT/UPDATE natijasini bir so'rovda qaytaradi", "Tranzaksiya", "Index"], "correctIndex": 1, "explanation": "Qo'shimcha SELECT so'rovi zaruratini yo'qotadi." },
+      { "text": "«ON DELETE CASCADE» nima qiladi?", "options": ["Xato beradi", "Ota qator o'chsa, bog'liq qatorlar ham o'chadi", "NULL qo'yadi", "O'chirishni bloklaydi"], "correctIndex": 1, "explanation": "SET NULL — bog'lanishni bo'shatadi; RESTRICT — o'chirishni taqiqlaydi." },
+      { "text": "«JSONB» nima beradi?", "options": ["Matn saqlash", "SQL ichida moslashuvchan JSON — indekslanadigan", "Faqat validatsiya", "Cache"], "correctIndex": 1, "explanation": "GIN indeksi bilan tez qidiriladi." },
+      { "text": "PostgreSQL natijasi qanday shaklda keladi?", "options": ["[rows]", "{ rows }", "rows", "Array"], "correctIndex": 1, "explanation": "mysql2'dan farqli — bu ikki driverning tipik chalkashligi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "07-sql-chuqur-join-cte-window",
+    "title": "Test — SQL: JOIN, CTE, window funksiyalar",
+    "questions": [
+      { "text": "LEFT JOIN nima qaytaradi?", "options": ["Faqat mos qatorlar", "Chap jadvalning barcha qatorlari + mos kelganlar", "O'ng jadval to'liq", "Kesishma"], "correctIndex": 1, "explanation": "INNER JOIN esa faqat ikkalasida mos kelgan qatorlarni beradi." },
+      { "text": "CTE (WITH) nima beradi?", "options": ["Tezlik", "So'rovni nomlangan bloklarga bo'lib o'qishli qiladi", "Index", "Cache"], "correctIndex": 1, "explanation": "Rekursiv CTE esa iyerarxik ma'lumot bilan ishlaydi." },
+      { "text": "Window funksiya aggregate'dan nimasi bilan farq qiladi?", "options": ["Tezroq", "Qatorlarni yig'maydi — har qatorni saqlab hisoblaydi", "Faqat SUM", "Farqi yo'q"], "correctIndex": 1, "explanation": "GROUP BY qatorlarni birlashtiradi, window esa saqlaydi." },
+      { "text": "«PARTITION BY» nima uchun ishlatiladi?", "options": ["Jadval bo'lish", "Window funksiyani guruhlar ichida hisoblash (top-N-per-group)", "Index", "JOIN"], "correctIndex": 1, "explanation": "Har guruh uchun alohida oyna ochiladi." },
+      { "text": "ROW_NUMBER va RANK qanday farqlanadi?", "options": ["Farqi yo'q", "ROW_NUMBER — doim ketma-ket; RANK — teng qiymatlarga bir xil raqam", "RANK ketma-ket", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "DENSE_RANK esa teng qiymatdan keyin bo'shliq qoldirmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "06-qism-database", "article": "08-stored-procedures-functions-triggers-views",
+    "title": "Test — Procedure, function, trigger, view",
+    "questions": [
+      { "text": "VIEW natijani keshlaydimi?", "options": ["Ha", "Yo'q — u virtual jadval, har chaqirilganda hisoblanadi", "Ba'zan", "Faqat PostgreSQL'da"], "correctIndex": 1, "explanation": "Materialized view esa natijani saqlaydi va REFRESH talab qiladi." },
+      { "text": "FUNCTION va PROCEDURE qanday farqlanadi?", "options": ["Farqi yo'q", "Function qiymat qaytaradi (SELECT'da); procedure amal bajaradi (CALL)", "Procedure qiymat qaytaradi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Procedure ichida tranzaksiya boshqarish mumkin." },
+      { "text": "Trigger qachon ishga tushadi?", "options": ["Qo'lda chaqirilganda", "INSERT/UPDATE/DELETE'da avtomatik (BEFORE yoki AFTER)", "Har soatda", "Server ishga tushganda"], "correctIndex": 1, "explanation": "NEW va OLD orqali eski va yangi qiymatlarga murojaat qilinadi." },
+      { "text": "Triggerning asosiy kamchiligi nima?", "options": ["Sekin", "Yashirin mantiq — debug va test qilish qiyin", "Ishlamaydi", "Xavfsiz emas"], "correctIndex": 1, "explanation": "Kod o'qiyotgan dasturchi uni ko'rmaydi." },
+      { "text": "Zamonaviy yondashuv qanday?", "options": ["Hamma mantiq DB'da", "View va oddiy trigger DB'da, murakkab mantiq ilovada", "Hech narsa DB'da", "Faqat procedure"], "correctIndex": 1, "explanation": "Bu test qilish va versiyalashni osonlashtiradi." }
+    ]
+  }
+]

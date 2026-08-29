@@ -1,0 +1,68 @@
+[
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "07-array-va-metodlari",
+    "title": "Test — Array metodlari",
+    "questions": [
+      { "text": "Qaysi metod asl massivni O'ZGARTIRADI?", "options": ["map", "filter", "push", "slice"], "correctIndex": 2, "explanation": "Mutating: push, pop, splice, sort, reverse. Non-mutating: map, filter, slice, reduce." },
+      { "text": "«reduce» nima uchun ishlatiladi?", "options": ["Saralash", "Massivni bitta qiymatga jamlash", "Element qidirish", "Nusxa olish"], "correctIndex": 1, "explanation": "Yig'indi, guruhlash, obyektga aylantirish — hammasi reduce bilan." },
+      { "text": "«sort» sonlarni to'g'ri saralashi uchun nima kerak?", "options": ["Hech narsa", "Komparator: (a,b) => a-b", "reverse", "map"], "correctIndex": 1, "explanation": "Standart sort qiymatlarni matn sifatida taqqoslaydi." },
+      { "text": "«forEach» nima qaytaradi?", "options": ["Yangi massiv", "Hech narsa (undefined) — side effect uchun", "Boolean", "Son"], "correctIndex": 1, "explanation": "Natija kerak bo'lsa map yoki filter ishlatiladi." },
+      { "text": "«some» va «every» qanday farqlanadi?", "options": ["Farqi yo'q", "some — kamida bittasi; every — hammasi shartga mos", "every — kamida bittasi", "Ikkalasi massiv qaytaradi"], "correctIndex": 1, "explanation": "Ikkalasi ham boolean qaytaradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "08-object-destructuring-spread",
+    "title": "Test — Obyekt, destructuring, spread",
+    "questions": [
+      { "text": "Spread operatori qanday nusxa yaratadi?", "options": ["Deep copy", "Shallow (yuzaki) copy", "Havola", "Nusxa yaratmaydi"], "correctIndex": 1, "explanation": "Ichma-ich obyektlar uchun har darajani spread yoki structuredClone kerak." },
+      { "text": "«Object.entries()» nima qaytaradi?", "options": ["Kalitlar massivi", "[kalit, qiymat] juftliklari massivi", "Qiymatlar massivi", "Obyekt"], "correctIndex": 1, "explanation": "Array metodlaridan keyin Object.fromEntries bilan qaytariladi." },
+      { "text": "Immutable yangilash qanday qilinadi?", "options": ["obj.x = 1", "{...obj, x: 1}", "delete obj.x", "Object.freeze"], "correctIndex": 1, "explanation": "Bu React state yangilashning asosiy naqshi." },
+      { "text": "Destructuring funksiya parametrida nima uchun foydali?", "options": ["Tezroq", "React props kabi obyektdan kerakli maydonlarni darhol ajratish", "Xotira tejaydi", "Xato beradi"], "correctIndex": 1, "explanation": "Alias, standart qiymat va ichma-ich destructuring ham mumkin." },
+      { "text": "«JSON.stringify» va «JSON.parse» nima qiladi?", "options": ["Nusxa oladi", "Obyekt ↔ matn aylantiradi", "Validatsiya qiladi", "Shifrlaydi"], "correctIndex": 1, "explanation": "API bilan ishlashda asosiy vosita." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "09-map-set-date",
+    "title": "Test — Map, Set, Date",
+    "questions": [
+      { "text": "«Set» nima uchun ishlatiladi?", "options": ["Tartiblash", "Takrorlanmas qiymatlar to'plami", "Kalit-qiymat", "Sana"], "correctIndex": 1, "explanation": "[...new Set(arr)] — dublikatlarni tozalashning klassik usuli." },
+      { "text": "«Map» obyektdan qachon afzal?", "options": ["Har doim", "Har qanday kalit turi, tartib va tez-tez o'zgaradigan ma'lumot uchun", "Hech qachon", "Faqat kichik ma'lumotda"], "correctIndex": 1, "explanation": "Map kalitlari string bo'lishi shart emas va .size bilan sanaladi." },
+      { "text": "JavaScript Date'da oy qanday raqamlanadi?", "options": ["1 dan 12", "0 dan 11", "1 dan 31", "0 dan 12"], "correctIndex": 1, "explanation": "Bu — Date bilan ishlashdagi eng ko'p uchraydigan tuzoq." },
+      { "text": "Sanalarni taqqoslash uchun nima ishlatiladi?", "options": ["===", "getTime()", "toString()", "valueOf() only"], "correctIndex": 1, "explanation": "getTime() millisekundlarda son qaytaradi." },
+      { "text": "Set va Map'da qidiruv murakkabligi qanday?", "options": ["O(n)", "O(1)", "O(log n)", "O(n²)"], "correctIndex": 1, "explanation": "Katta ma'lumotda massivdan sezilarli tez ishlaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "10-oop-class",
+    "title": "Test — OOP va class",
+    "questions": [
+      { "text": "OOP ning 4 ustuni qaysi?", "options": ["Class, object, method, property", "Encapsulation, inheritance, polymorphism, abstraction", "Get, set, new, this", "Public, private, static, const"], "correctIndex": 1, "explanation": "Har biri kodni tartibli va kengaytiriladigan qiladi." },
+      { "text": "«#» belgisi klassda nimani anglatadi?", "options": ["Kommentariy", "Private maydon", "Static", "Getter"], "correctIndex": 1, "explanation": "Encapsulation — ichki holatni tashqi kirishdan himoyalash." },
+      { "text": "«static» metod kimga tegishli?", "options": ["Har obyektga", "Class'ning o'ziga", "Prototype'ga", "Global scope'ga"], "correctIndex": 1, "explanation": "Utility, factory va hisoblagichlar uchun ishlatiladi." },
+      { "text": "Polimorfizm nima beradi?", "options": ["Tezlik", "Bir metod nomi — har xil xulq (override)", "Xotira", "Xavfsizlik"], "correctIndex": 1, "explanation": "Ko'p if/else o'rniga polimorfizm ishlatish yaxshi amaliyot." },
+      { "text": "«Composition over inheritance» nimani anglatadi?", "options": ["Meros afzal", "Chuqur meros o'rniga tarkiblashni afzal ko'rish", "Klass ishlatmaslik", "Static ishlatish"], "correctIndex": 1, "explanation": "Chuqur meros zanjirlari mo'rt va qiyin bo'ladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "11-asinxron-js-promise-async-await",
+    "title": "Test — Asinxron JS",
+    "questions": [
+      { "text": "«async» funksiya nima qaytaradi?", "options": ["Qiymat", "Doim Promise", "undefined", "Callback"], "correctIndex": 1, "explanation": "await esa Promise hal bo'lishini kutadi." },
+      { "text": "Event loop'da qaysi navbat birinchi bajariladi?", "options": ["Macrotask (setTimeout)", "Microtask (Promise)", "Tasodifiy", "Ikkalasi birga"], "correctIndex": 1, "explanation": "Promise callback'lari setTimeout'dan oldin ishlaydi." },
+      { "text": "«Promise.all» va «Promise.allSettled» qanday farqlanadi?", "options": ["Farqi yo'q", "all — bittasi rad etilsa yiqiladi; allSettled — har natijani qaytaradi", "allSettled tezroq", "all faqat bittasini kutadi"], "correctIndex": 1, "explanation": "race — birinchi hal bo'lgani; any — birinchi muvaffaqiyatli." },
+      { "text": "«fetch» dan keyin nima tekshirilishi kerak?", "options": ["Hech narsa", "res.ok — HTTP xatolar reject qilmaydi", "res.body", "res.status only"], "correctIndex": 1, "explanation": "fetch faqat tarmoq xatosida reject qiladi; 404 ham «muvaffaqiyat»." },
+      { "text": "Callback hell muammosini nima hal qildi?", "options": ["Sinxron kod", "Promise va keyin async/await", "setTimeout", "Loop"], "correctIndex": 1, "explanation": "async/await eng o'qishli shakl hisoblanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "12-error-handling",
+    "title": "Test — Xatolarni boshqarish",
+    "questions": [
+      { "text": "«throw» bilan nima tashlash kerak?", "options": ["String", "new Error(...) obyekti", "Number", "Boolean"], "correctIndex": 1, "explanation": "Error obyekti name, message va stack ma'lumotini beradi." },
+      { "text": "«finally» bloki qachon bajariladi?", "options": ["Faqat xatoda", "Faqat muvaffaqiyatda", "DOIM — tozalash uchun", "Hech qachon"], "correctIndex": 2, "explanation": "Resurslarni yopish uchun ishonchli joy." },
+      { "text": "Custom error class qanday yaratiladi?", "options": ["new Error()", "class MyError extends Error + super + name", "throw {}", "Object.create"], "correctIndex": 1, "explanation": "instanceof bilan turli xatolarni ajratish imkonini beradi." },
+      { "text": "Bo'sh «catch» bloki nima uchun yomon?", "options": ["Sekin", "Xato yashiriladi — muammo topilmay qoladi", "Xotira sarflaydi", "Sintaksis xato"], "correctIndex": 1, "explanation": "Kamida log qiling yoki qayta throw qiling." },
+      { "text": "«UnhandledPromiseRejection» qanday oldini olinadi?", "options": ["try/catch yoki .catch bilan", "Hech qanday", "async olib tashlash", "await olib tashlash"], "correctIndex": 0, "explanation": "Har async operatsiya xatosi ushlanishi kerak." }
+    ]
+  }
+]

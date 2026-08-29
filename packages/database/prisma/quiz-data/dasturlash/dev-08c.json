@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "17-graphql",
+    "title": "Test — GraphQL",
+    "questions": [
+      { "text": "GraphQL REST'dan nimasi bilan farq qiladi?", "options": ["Tezroq", "Bitta endpoint — mijoz kerakli maydonlarni o'zi so'raydi", "Xavfsizroq", "Faqat GET"], "correctIndex": 1, "explanation": "Over-fetching va under-fetching muammosini hal qiladi." },
+      { "text": "«Code-first» yondashuv nima?", "options": ["Schema avval", "TypeScript class va dekoratorlardan schema generatsiya qilinadi", "Qo'lda yozish", "JSON"], "correctIndex": 1, "explanation": "@ObjectType va @Field dekoratorlari ishlatiladi." },
+      { "text": "GraphQL'da N+1 muammosi qanday hal qilinadi?", "options": ["Cache", "DataLoader — so'rovlarni batch qilish", "Index", "JOIN faqat"], "correctIndex": 1, "explanation": "Field resolver har element uchun alohida chaqiriladi." },
+      { "text": "Guard GraphQL'da qanday ishlaydi?", "options": ["Ishlamaydi", "GqlExecutionContext orqali context olinadi", "Middleware bilan", "Filter bilan"], "correctIndex": 1, "explanation": "HTTP context GraphQL'da boshqacha tuzilgan." },
+      { "text": "«Subscription» nima beradi?", "options": ["Query", "Real-time yangilanishlar (WebSocket ustida)", "Mutation", "Cache"], "correctIndex": 1, "explanation": "Query — o'qish, Mutation — o'zgartirish, Subscription — kuzatish." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "18-websockets-gateway-task-scheduling",
+    "title": "Test — WebSocket gateway va task scheduling",
+    "questions": [
+      { "text": "NestJS'da WebSocket qanday e'lon qilinadi?", "options": ["@Controller", "@WebSocketGateway va @SubscribeMessage", "@Injectable", "@Module"], "correctIndex": 1, "explanation": "Gateway — WebSocket uchun controller ekvivalenti." },
+      { "text": "Ko'p instansiyali WebSocket uchun nima kerak?", "options": ["Ko'proq RAM", "Redis adapter", "Cache", "Cron"], "correctIndex": 1, "explanation": "Aks holda xabarlar boshqa instansiyadagi mijozlarga yetmaydi." },
+      { "text": "«@Cron» dekoratori nima qiladi?", "options": ["Bir marta ishlaydi", "Belgilangan jadval bo'yicha takroriy vazifa bajaradi", "Interval", "Timeout"], "correctIndex": 1, "explanation": "@Interval va @Timeout — oddiy vaqt asosidagi variantlar." },
+      { "text": "Production'da cron vazifasida nima muhim?", "options": ["Tezlik", "Lock — ko'p instansiyada bir marta bajarilishi va idempotentlik", "Log faqat", "Format"], "correctIndex": 1, "explanation": "Aks holda vazifa har instansiyada takrorlanadi." },
+      { "text": "Faqat serverdan mijozga bir tomonlama oqim uchun nima yetarli?", "options": ["WebSocket", "SSE (Server-Sent Events)", "Polling", "GraphQL"], "correctIndex": 1, "explanation": "WebSocket ikki tomonlama aloqa kerak bo'lganda ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "19-payment-tolov-tizimlari",
+    "title": "Test — To'lov tizimlari",
+    "questions": [
+      { "text": "Pul summasi bazada qanday saqlanadi?", "options": ["Float", "Butun son — tiyinlarda", "String", "Decimal faqat"], "correctIndex": 1, "explanation": "Floating point yaxlitlash xatolari moliyada qabul qilinmaydi." },
+      { "text": "«Idempotency» to'lovda nima uchun kritik?", "options": ["Tezlik", "Takroriy so'rov ikki marta pul yechmasligi uchun", "Log", "Format"], "correctIndex": 1, "explanation": "Tarmoq xatosida mijoz so'rovni qayta yuborishi mumkin." },
+      { "text": "Webhook xavfsizligi qanday ta'minlanadi?", "options": ["IP filtri faqat", "HMAC imzo tekshiruvi", "HTTPS faqat", "Token URL'da"], "correctIndex": 1, "explanation": "Imzosiz webhook'ni istalgan odam soxtalashtira oladi." },
+      { "text": "Payme integratsiyasi qanday protokolga asoslangan?", "options": ["REST", "JSON-RPC — 5 ta majburiy metod", "GraphQL", "SOAP"], "correctIndex": 1, "explanation": "CheckPerformTransaction, CreateTransaction va boshqalar." },
+      { "text": "«Reconciliation» nima?", "options": ["Refund", "Provayder va o'z bazangizdagi tranzaksiyalarni solishtirish", "Test", "Log"], "correctIndex": 1, "explanation": "Nomuvofiqliklarni aniqlash uchun muntazam bajariladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "20-webhook-va-idempotency",
+    "title": "Test — Webhook va idempotency",
+    "questions": [
+      { "text": "Webhook polling'dan nimasi bilan afzal?", "options": ["Xavfsizroq", "Server o'zi xabar beradi — ortiqcha so'rov yo'q", "Sodda", "Tez"], "correctIndex": 1, "explanation": "Polling resurs isrof qiladi va kechikish beradi." },
+      { "text": "HMAC imzo tekshirishda nima muhim?", "options": ["Parse qilingan body", "RAW body ishlatish", "Header faqat", "Query"], "correctIndex": 1, "explanation": "JSON parse qilinsa bayt ketma-ketligi o'zgaradi va imzo mos kelmaydi." },
+      { "text": "Webhook handler qanday javob berishi kerak?", "options": ["Ishni tugatib javob", "Tez 200 qaytarib, ishni fonda bajarish", "Sekin javob", "Javob bermaslik"], "correctIndex": 1, "explanation": "Aks holda provayder timeout deb hisoblab qayta yuboradi." },
+      { "text": "«Dead-letter queue» nima uchun kerak?", "options": ["Tezlik", "Qayta-qayta muvaffaqiyatsiz joblarni alohida saqlash", "Cache", "Log"], "correctIndex": 1, "explanation": "Ular keyinchalik qo'lda tekshiriladi." },
+      { "text": "Retry qanday amalga oshirilishi kerak?", "options": ["Darhol takror", "Backoff va jitter bilan", "Bir marta", "Cheksiz"], "correctIndex": 1, "explanation": "Jitter bir vaqtda kelib qolgan retry to'lqinini tarqatadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "21-hujjat-pdf-excel-csv",
+    "title": "Test — Hujjat generatsiyasi",
+    "questions": [
+      { "text": "HTML shablondan PDF yasash uchun nima ishlatiladi?", "options": ["PDFKit", "Puppeteer", "ExcelJS", "CSV parser"], "correctIndex": 1, "explanation": "PDFKit esa dasturiy, element-element chizadi." },
+      { "text": "Excel fayl yaratish uchun qaysi kutubxona?", "options": ["PDFKit", "ExcelJS", "Puppeteer", "csv-parse"], "correctIndex": 1, "explanation": "Stil, formula va bir necha varaq bilan ishlaydi." },
+      { "text": "Katta hisobot generatsiyasida nima muhim?", "options": ["Tezlik", "Streaming — butun ma'lumotni xotiraga yuklamaslik", "Format", "Rang"], "correctIndex": 1, "explanation": "Aks holda katta eksportda xotira tugaydi." },
+      { "text": "Fayl importida nima qaytarilishi kerak?", "options": ["Faqat OK", "Validatsiya natijasi va qator-qator xato hisoboti", "Fayl", "Log"], "correctIndex": 1, "explanation": "Foydalanuvchi qaysi qatorda xato borligini bilishi kerak." },
+      { "text": "Og'ir hujjat generatsiyasi qayerda bajarilishi kerak?", "options": ["So'rov ichida", "Navbatda (background job)", "Frontendda", "Cron'da faqat"], "correctIndex": 1, "explanation": "Tayyor bo'lgach foydalanuvchiga havola yuboriladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "22-qidiruv-elasticsearch-meilisearch",
+    "title": "Test — Qidiruv tizimlari",
+    "questions": [
+      { "text": "«Typo tolerance» nima?", "options": ["Xato ushlash", "Imlo xatosi bo'lsa ham to'g'ri natija topish", "Validatsiya", "Cache"], "correctIndex": 1, "explanation": "Meilisearch buni standart holatda beradi." },
+      { "text": "«Faceting» nima beradi?", "options": ["Saralash", "Natijalarni kategoriya bo'yicha filtrlash va sanash", "Typo", "Index"], "correctIndex": 1, "explanation": "E-commerce filtrlarining asosi." },
+      { "text": "Ma'lumot allaqachon PostgreSQL'da bo'lsa va hajm katta bo'lmasa nima yetarli?", "options": ["Elasticsearch", "PostgreSQL full-text (tsvector)", "Meilisearch majburiy", "Redis"], "correctIndex": 1, "explanation": "Qo'shimcha infratuzilma kerak bo'lmaydi." },
+      { "text": "DB va qidiruv indeksi qanday sinxronlanadi?", "options": ["Avtomatik", "Navbat orqali indekslash va davriy reindex", "Qo'lda faqat", "Sinxronlanmaydi"], "correctIndex": 1, "explanation": "Yozuv o'zgarganda indeks yangilanishi kerak." },
+      { "text": "Elasticsearch qachon afzal?", "options": ["Kichik loyihada", "Juda katta hajm va analitika kerak bo'lganda", "Har doim", "Hech qachon"], "correctIndex": 1, "explanation": "Ko'p loyihalar uchun Meilisearch soddaroq va yetarli." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "23-push-bildirishnoma-fcm",
+    "title": "Test — Push bildirishnomalar (FCM)",
+    "questions": [
+      { "text": "FCM'da qurilma qanday aniqlanadi?", "options": ["IP orqali", "Device token orqali", "User ID orqali", "Cookie orqali"], "correctIndex": 1, "explanation": "Token qurilma va ilova o'rnatilishiga bog'liq." },
+      { "text": "Bir foydalanuvchida bir nechta token bo'lishi mumkinmi?", "options": ["Yo'q", "Ha — har qurilma uchun alohida", "Faqat ikkita", "Faqat mobil"], "correctIndex": 1, "explanation": "Shuning uchun tokenlar ro'yxat sifatida saqlanadi." },
+      { "text": "Eskirgan token bilan nima qilinadi?", "options": ["Saqlanadi", "Bazadan o'chiriladi", "Qayta ishlatiladi", "E'tiborsiz"], "correctIndex": 1, "explanation": "FCM javobida yaroqsiz tokenlar qaytariladi." },
+      { "text": "«notification» va «data» xabar qanday farqlanadi?", "options": ["Farqi yo'q", "notification — tizim ko'rsatadi; data — ilova o'zi ishlaydi (deep link)", "data ko'rsatiladi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Ko'pincha ikkalasi birga yuboriladi." },
+      { "text": "Ommaviy bildirishnoma uchun nima qulay?", "options": ["Har tokenga alohida", "Topic — obuna bo'yicha yuborish", "Email", "SMS"], "correctIndex": 1, "explanation": "Katta hajmda batch va navbat bilan yuboriladi." }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "10-modal-perfects",
+    "title": "Test — Modal perfectlar (B2)",
+    "questions": [
+      { "text": "«needn't have V3» va «didn't need to V1» qanday farqlanadi?", "options": ["Farqi yo'q", "needn't have — qildi, lekin keraksiz edi; didn't need to — kerak emas edi (qilmadi ham)", "Ikkalasi qildi", "Ikkalasi qilmadi"], "correctIndex": 1, "explanation": "Bu B2 ning eng nozik modal farqlaridan biri." },
+      { "text": "«You could have told me!» qanday ohang beradi?", "options": ["Maqtov", "Tanbeh — bajarilmagan imkon", "Iltimos", "Xulosa"], "correctIndex": 1, "explanation": "could have V3 — imkon bor edi, lekin ishlatilmadi." },
+      { "text": "«would have V3» qanday ma'no beradi?", "options": ["Xulosa", "Noreal o'tmish — qilardim, lekin...", "Majburiyat", "Ehtimol"], "correctIndex": 1, "explanation": "I would have come, but I was ill." },
+      { "text": "«should of» — bu nega xato?", "options": ["should xato", "«of» emas, «have» bo'lishi kerak", "V3 xato", "Xato emas"], "correctIndex": 1, "explanation": "should've = should have — talaffuz o'xshashligi chalg'itadi." },
+      { "text": "Modal perfectdan keyin qaysi shakl keladi?", "options": ["V2", "V3", "V-ing", "V1"], "correctIndex": 1, "explanation": "Doim have + V3: gone, done, come (went, did, came emas)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "11-semi-modals",
+    "title": "Test — Yarim-modallar",
+    "questions": [
+      { "text": "«be bound to» qanday ehtimolni bildiradi?", "options": ["~50%", "~70%", "~99% — muqarrar", "~20%"], "correctIndex": 2, "explanation": "be likely to ~70%; unlikely to — dargumon." },
+      { "text": "«had better» dan keyin qanday fe'l keladi?", "options": ["to + V1", "Sof V1 (to YO'Q)", "V-ing", "V3"], "correctIndex": 1, "explanation": "Inkor: 'd better NOT — «not» «better» dan keyin." },
+      { "text": "«I was supposed to call» nimani anglatadi?", "options": ["Qo'ng'iroq qildim", "Qo'ng'iroq qilishim kerak edi, lekin qilmadim", "Qo'ng'iroq qilaman", "Qo'ng'iroq qilmaslik kerak edi"], "correctIndex": 1, "explanation": "be supposed to — kutilgan yoki qoidaga ko'ra bo'lishi kerak bo'lgan narsa." },
+      { "text": "«needn't» dan keyin qanday fe'l keladi?", "options": ["to + V1", "Sof V1", "V-ing", "V3"], "correctIndex": 1, "explanation": "needn't go = don't need to go — ma'nosi bir xil, shakli boshqa." },
+      { "text": "«supposed/bound/likely» dan keyin nima keladi?", "options": ["Sof V1", "TO + V1", "V-ing", "V3"], "correctIndex": 1, "explanation": "had better va needn't esa «to» siz keladi — shu farqni yodda tuting." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "12-passive-toliq",
+    "title": "Test — Passiv (to'liq tizim)",
+    "questions": [
+      { "text": "Passiv formulasi qanday?", "options": ["have + V3", "be (mos zamon) + V3", "get + V-ing", "do + V3"], "correctIndex": 1, "explanation": "Zamon «be» da ko'rsatiladi, V3 o'zgarmaydi." },
+      { "text": "«The house ___ built now» (hozir qurilyapti) — to'g'ri shakl?", "options": ["is been", "is being", "has been", "was being"], "correctIndex": 1, "explanation": "Present Continuous passive: is/are being + V3." },
+      { "text": "«It ___ have been stolen» — modal perfect passiv qanday tuziladi?", "options": ["must", "must + have been + V3", "must be", "must been"], "correctIndex": 1, "explanation": "should have been done, must have been stolen." },
+      { "text": "Passiv qachon tanlanadi?", "options": ["Har doim", "Bajaruvchi noma'lum/muhim emas yoki xolis ohang kerak bo'lganda", "Faqat savolda", "Faqat o'tmishda"], "correctIndex": 1, "explanation": "Urg'uni natijaga yoki obyektga qaratish uchun ham." },
+      { "text": "«with» passivda nimani bildiradi?", "options": ["Bajaruvchini", "Asbob yoki vositani", "Materialni", "Vaqtni"], "correctIndex": 1, "explanation": "by — bajaruvchi; with — asbob; of — material." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "13-passive-ilgor",
+    "title": "Test — Ilg'or passiv shakllar",
+    "questions": [
+      { "text": "«hate ___ told» — bo'shliqqa qaysi shakl?", "options": ["to be", "being", "been", "be"], "correctIndex": 1, "explanation": "Gerund passiv: being + V3. Infinitiv passiv: to be + V3." },
+      { "text": "«He claims ___ robbed» — bo'shliqqa qaysi shakl?", "options": ["to be", "to have been", "having been", "being"], "correctIndex": 1, "explanation": "Perfekt infinitiv passiv: to have been + V3 — oldingi voqea uchun." },
+      { "text": "«Having been warned, he left» — bu qanday shakl?", "options": ["Gerund passiv", "Perfekt gerund passiv", "Infinitiv passiv", "Oddiy passiv"], "correctIndex": 1, "explanation": "having been + V3 — oldin sodir bo'lgan passiv harakat." },
+      { "text": "«needs washing» nimaga teng?", "options": ["needs to wash", "needs to be washed", "is washing", "washed"], "correctIndex": 1, "explanation": "needs + V-ing = needs to be + V3 — norasmiy passiv qolip." },
+      { "text": "«got married, got promoted» — bu qanday passiv?", "options": ["Rasmiy", "get-passiv (holat o'zgarishi)", "Perfekt", "Kausativ"], "correctIndex": 1, "explanation": "get-passiv: kutilmagan/yoqimsiz (got fired), holat o'zgarishi, refleksiv (get dressed)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "14-causative",
+    "title": "Test — Causative (have/get something done)",
+    "questions": [
+      { "text": "Causative formulasi qanday?", "options": ["have + V3 + obyekt", "have/get + OBYEKT + V3", "have + obyekt + V1", "get + V-ing"], "correctIndex": 1, "explanation": "I had my car repaired — tuzattirdim (o'zim tuzatmadim)." },
+      { "text": "«I cut my hair» va «I had my hair cut» qanday farqlanadi?", "options": ["Farqi yo'q", "Birinchisi o'zim kesdim; ikkinchisi sartaroshga oldirdim", "Ikkalasi bir xil", "Birinchisi sartaroshda"], "correctIndex": 1, "explanation": "Causative xizmatni boshqa kishi bajarganini ko'rsatadi." },
+      { "text": "«I had my bag stolen» qanday ma'no beradi?", "options": ["Sumkani o'g'irlatdim (ataylab)", "Sumkam o'g'irlandi — menga qilingan yoqimsiz hodisa", "Sumkani topdim", "Sumkani sotdim"], "correctIndex": 1, "explanation": "Causative yoqimsiz hodisani ham ifodalaydi." },
+      { "text": "«get + sb + ___ + V1» — bo'shliqqa nima?", "options": ["hech narsa", "to", "for", "that"], "correctIndex": 1, "explanation": "have + sb + V1 (rasmiy) ↔ get + sb + TO + V1 (ko'ndirish)." },
+      { "text": "«have» va «get» causativeda qanday farqlanadi?", "options": ["Farqi yo'q", "have — neytral/rasmiy; get — norasmiy, harakat ottenkasi bilan", "get — rasmiy", "Ikkalasi rasmiy"], "correctIndex": 1, "explanation": "I had it fixed (neytral) ↔ I got it fixed (norasmiy)." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "15-passive-reporting",
+    "title": "Test — Passiv reporting",
+    "questions": [
+      { "text": "«It is said that he is rich» — bu qaysi naqsh?", "options": ["Naqsh B", "Naqsh A: It + is/was + V3 + that + gap", "Aktiv", "Causative"], "correctIndex": 1, "explanation": "Naqsh B: EGA + is/was + V3 + to-infinitive (He is said to be rich)." },
+      { "text": "«He is said ___ rich» — bo'shliqqa qaysi shakl?", "options": ["being", "to be", "been", "is"], "correctIndex": 1, "explanation": "Bir vaqtdagi holat uchun to + V1 / to be." },
+      { "text": "Oldingi voqea haqida reporting qanday beriladi?", "options": ["to be", "to have + V3", "being", "to been"], "correctIndex": 1, "explanation": "He is said to have left — reportingdan oldin sodir bo'lgan." },
+      { "text": "«allege» qanday ottenka beradi?", "options": ["Tasdiqlangan", "Isbotsiz da'vo", "Rasmiy hisobot", "Taxmin"], "correctIndex": 1, "explanation": "Fe'llar: say, believe, think, know, report, expect, consider, allege, understand, estimate." },
+      { "text": "«rumour» fe'li qanday ishlatiladi?", "options": ["Faqat aktivda", "Faqat passivda", "Ikkalasida", "Fe'l emas"], "correctIndex": 1, "explanation": "It is rumoured that... / He is rumoured to be..." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "16-reported-speech-toliq",
+    "title": "Test — O'zlashtirma gap (to'liq)",
+    "questions": [
+      { "text": "Reported speechda nechta asosiy o'zgarish bo'ladi?", "options": ["2", "3", "4: zamon, olmosh, vaqt/joy, ko'rsatish olmoshi", "5"], "correctIndex": 2, "explanation": "this→that, these→those, here→there, now→then." },
+      { "text": "«must» (majburiyat) backshiftda nimaga aylanadi?", "options": ["must", "had to", "should", "would"], "correctIndex": 1, "explanation": "can→could, may→might, will→would; must (xulosa) esa o'zgarmaydi." },
+      { "text": "Qaysi modallar backshiftda o'zgarmaydi?", "options": ["can, will", "could, would, might, should", "must, may", "Hammasi o'zgaradi"], "correctIndex": 1, "explanation": "Ular allaqachon «orqaga surilgan» shakllar." },
+      { "text": "«say me» — bu nega xato?", "options": ["say xato", "say odam olmaydi — tell me yoki say to me", "me xato", "Xato emas"], "correctIndex": 1, "explanation": "tell + SB (odam shart) ↔ say (odamsiz yoki «to» bilan)." },
+      { "text": "Qachon backshift qilinmaydi?", "options": ["Har doim qilinadi", "Umumiy haqiqat, hozir rost, reporting fe'l hozirgi zamonda, conditional/wish", "Faqat savolda", "Faqat inkorda"], "correctIndex": 1, "explanation": "He said the Earth is round — hali ham rost." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "17-reported-questions-reporting-verbs",
+    "title": "Test — O'zlashtirma savol va reporting fe'llar",
+    "questions": [
+      { "text": "«He asked where did I live» — bu nega xato?", "options": ["asked xato", "O'zlashtirma savolda darak tartibi: where I lived", "where xato", "Xato emas"], "correctIndex": 1, "explanation": "do/does/did o'zlashtirma savolda ishlatilmaydi." },
+      { "text": "Yes/No savol o'zlashtirmada qanday beriladi?", "options": ["that bilan", "if / whether bilan", "what bilan", "Bog'lovchisiz"], "correctIndex": 1, "explanation": "She asked if I liked it." },
+      { "text": "«offer, promise, refuse, agree, threaten» qaysi naqsh bilan?", "options": ["-ing", "to + V1", "sb + to + V1", "that only"], "correctIndex": 1, "explanation": "He offered to help. She refused to answer." },
+      { "text": "«advise, warn, remind, persuade» qaysi naqsh bilan?", "options": ["to + V1", "sb + to + V1", "-ing", "that only"], "correctIndex": 1, "explanation": "He warned me not to go — inkor «not to» bilan." },
+      { "text": "«admit, claim, deny, insist» qaysi naqsh bilan?", "options": ["to + V1", "sb + to + V1", "that-clause", "-ing only"], "correctIndex": 2, "explanation": "say, admit, explain, claim, deny, insist + that + gap." }
+    ]
+  },
+  {
+    "topic": "ingliz-tili", "section": "04-b2-yuqori-orta", "article": "18-relative-clauses-review",
+    "title": "Test — Relative clauses (takrorlash)",
+    "questions": [
+      { "text": "Non-defining clauseda «that» ishlatiladimi?", "options": ["Ha", "Yo'q", "Faqat narsalar uchun", "Faqat odamlar uchun"], "correctIndex": 1, "explanation": "Defining — that mumkin; non-defining — faqat who/which/whose/where." },
+      { "text": "Vergul relative clauseda nimani o'zgartiradi?", "options": ["Hech narsa", "MA'NONI — qaysi biri (defining) ↔ qo'shimcha ma'lumot (non-defining)", "Faqat ohangni", "Faqat uzunlikni"], "correctIndex": 1, "explanation": "My brother who lives in London ≠ My brother, who lives in London," },
+      { "text": "«the man who I met him» — bu nega xato?", "options": ["who xato", "Obyekt olmoshi takrorlanmaydi — «him» ortiqcha", "met xato", "Xato emas"], "correctIndex": 1, "explanation": "Relative olmoshi allaqachon obyekt vazifasini bajaradi." },
+      { "text": "Defining clauseda obyekt olmoshini tushirish mumkinmi?", "options": ["Yo'q", "Ha — The book (that) I read", "Faqat who bilan", "Faqat rasmiy uslubda"], "correctIndex": 1, "explanation": "Ega olmoshi esa tushmaydi: the man who called." },
+      { "text": "«why» qaysi otdan keyin ishlatiladi?", "options": ["Odam", "Joy", "Sabab (the reason why)", "Vaqt"], "correctIndex": 2, "explanation": "where (joy), when (vaqt), why (sabab), whose (egalik)." }
+    ]
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "14-u-menya-est-qaratqich",
+    "title": "Test — У меня есть va qaratqich kelishigi",
+    "questions": [
+      { "text": "«Menda kitob bor» rus tilida qanday?", "options": ["Я име́ю кни́гу", "У меня́ есть кни́га", "Мне есть кни́га", "Я есть кни́га"], "correctIndex": 1, "explanation": "Rus tilida «have» fe'li yo'q. Egalik: у + qaratqich + есть → У меня́ есть кни́га." },
+      { "text": "«Menda vaqt yo'q» — to'g'ri shakl?", "options": ["У меня́ нет вре́мя", "У меня́ нет вре́мени", "У меня́ не вре́мя", "У меня́ нет вре́мем"], "correctIndex": 1, "explanation": "Yo'qlik DOIM qaratqich (Роди́тельный) talab qiladi: нет вре́мени, нет кни́ги, нет бра́та." },
+      { "text": "3-shaxs olmoshlari «у» dan keyin qanday o'zgaradi?", "options": ["O'zgarmaydi: у его́", "«н» oladi: у него́", "«м» oladi: у мего́", "Tushib qoladi"], "correctIndex": 1, "explanation": "Predlogdan keyin 3-shaxs «н» oladi: у него́, у неё, у них («nivó», «niyó»)." },
+      { "text": "«akaning kitobi» rus tilida qanday tuziladi?", "options": ["бра́та кни́га", "кни́га бра́та", "кни́гу брат", "брат кни́га"], "correctIndex": 1, "explanation": "Rus tilida avval narsa, keyin egasi qaratqichda: кни́га бра́та. O'zbekchadagidan teskari tartib." },
+      { "text": "Ayol rod (-а) qaratqichda qanday tugaydi?", "options": ["-у", "-и", "-е", "-ой"], "correctIndex": 1, "explanation": "Qaratqichda: f -а/-я → -и (кни́га → кни́ги). Tushum kelishigida esa -у/-ю bo'lardi — chalkashtirmang." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "15-joy-predloglari-orin-kelishigi",
+    "title": "Test — Joy predloglari va o'rin kelishigi",
+    "questions": [
+      { "text": "Предло́жный паде́ж qaysi savolga javob beradi?", "options": ["что?", "где?", "кого?", "кому?"], "correctIndex": 1, "explanation": "O'rin kelishigi «где?» (qayerda?) savoliga javob beradi va DOIM predlog bilan keladi." },
+      { "text": "«го́род» so'zi «qayerda?» shaklida qanday bo'ladi?", "options": ["в го́род", "в го́роде", "в го́рода", "в го́родом"], "correctIndex": 1, "explanation": "O'rin kelishigining asosiy tugashi -е: го́род → в го́роде, шко́ла → в шко́ле, Москва́ → в Москве́." },
+      { "text": "«ishda» — qaysi predlog bilan?", "options": ["в рабо́те", "на рабо́те", "у рабо́ты", "с рабо́той"], "correctIndex": 1, "explanation": "«на рабо́те» — an'anaviy istisno. Yodlash kerak: на рабо́те, на по́чте, на уро́ке, на ста́нции." },
+      { "text": "в va на farqini qanday eslaymiz?", "options": ["в — ochiq joy, на — yopiq", "в — yopiq/ichkari, на — ustki sirt yoki tadbir", "Farqi yo'q", "в — kelasi zamon uchun"], "correctIndex": 1, "explanation": "в — ichkari (в до́ме, в шко́ле); на — ustki sirt (на столе́) yoki tadbir/an'anaviy (на рабо́те, на конце́рте)." },
+      { "text": "«Kitob stol ustida» — to'g'ri variant?", "options": ["Кни́га в стол", "Кни́га на столе́", "Кни́га на стол", "Кни́га в столе́"], "correctIndex": 1, "explanation": "Ustki sirt → на + o'rin kelishigi: на столе́ (стол → столе́, urg'u oxirda)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "16-sifatlar-rod-moslik",
+    "title": "Test — Sifatlar va rod mosligi",
+    "questions": [
+      { "text": "Sifat qaysi savolga javob beradi?", "options": ["Кто?", "Како́й?", "Где?", "Чей?"], "correctIndex": 1, "explanation": "Sifat predmetning belgisini bildiradi: Како́й? (qanaqa?) — но́вый, большо́й, хоро́ший." },
+      { "text": "«___ кни́га» (yangi kitob) — to'g'ri shakl?", "options": ["но́вый", "но́вая", "но́вое", "но́вые"], "correctIndex": 1, "explanation": "кни́га — же́нский rod → но́вая. Sifat otning rodiga moslashadi va otdan OLDIN keladi." },
+      { "text": "«хоро́ший» nega «хоро́ший», «хоро́шый» emas?", "options": ["Bu istisno so'z", "ж, ш, ч, щ, г, к, х dan keyin -ий yoziladi", "Urg'u tufayli", "Xato yozilgan"], "correctIndex": 1, "explanation": "Imlo qoidasi: ж, ш, ч, щ, г, к, х dan keyin -ый emas, -ий; -ые emas, -ие: хоро́ший, ма́ленький." },
+      { "text": "Qaysi sifat tugashi DOIM urg'uli?", "options": ["-ый", "-ий", "-ой", "-ая"], "correctIndex": 2, "explanation": "-ой tugashi doim urg'uli: большо́й, молодо́й, плохо́й. Bu urg'uni topishga yordam beradi." },
+      { "text": "«___ окно́» (katta deraza) — to'g'ri shakl?", "options": ["большо́й", "больша́я", "большо́е", "больши́е"], "correctIndex": 2, "explanation": "окно́ — сре́дний rod → большо́е окно́." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "17-moch-xotet-nujno-nado",
+    "title": "Test — мочь, хотеть, нужно, можно",
+    "questions": [
+      { "text": "«мочь» fe'lining «я» shakli?", "options": ["мочу́", "могу́", "мо́жу", "мо́гу"], "correctIndex": 1, "explanation": "мочь noto'g'ri tuslanadi, г/ж almashadi: могу́, мо́жешь, мо́жет, мо́жем, мо́жете, мо́гут." },
+      { "text": "«хоте́ть» qanday tuslanadi?", "options": ["Faqat I tuslanish", "Faqat II tuslanish", "Aralash: birlikda ч, ko'plikda т", "Tuslanmaydi"], "correctIndex": 2, "explanation": "хоте́ть — aralash: хочу́, хо́чешь, хо́чет (ч) — lekin хоти́м, хоти́те, хотя́т (т)." },
+      { "text": "«Menga ketish kerak» — to'g'ri shakl?", "options": ["Я ну́жно идти́", "Мне ну́жно идти́", "Меня́ ну́жно идти́", "Мной ну́жно идти́"], "correctIndex": 1, "explanation": "ну́жно/на́до bilan kishi DATIVDA: мне, тебе́, ему́, ей, нам, вам, им." },
+      { "text": "«Mumkin emas» qanday aytiladi?", "options": ["не мо́жно", "нельзя́", "не на́до", "не могу́"], "correctIndex": 1, "explanation": "«не мо́жно» — YO'Q, bunday shakl mavjud emas. Faqat нельзя́: Здесь нельзя́ кури́ть." },
+      { "text": "ну́жно va на́до farqi nimada?", "options": ["Ma'nosi butunlay boshqa", "ну́жno rasmiyroq, на́до so'zlashuvroq", "на́до faqat o'tgan zamon", "ну́жно faqat inkorda"], "correctIndex": 1, "explanation": "Ma'nosi bir xil («kerak»), farq — uslubda: ну́жно biroz rasmiyroq, на́до so'zlashuvroq." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "18-buyruq-mayli",
+    "title": "Test — Buyruq mayli",
+    "questions": [
+      { "text": "Buyruq mayli qaysi shakldan yasaladi?", "options": ["Infinitivdan", "«они́» shaklining o'zagidan", "«я» shaklidan", "O'tgan zamondan"], "correctIndex": 1, "explanation": "«они́» shaklidan o'zak olinadi: чита́ют → чита- → чита́й; говоря́т → говор- → говори́." },
+      { "text": "«чита́ть» fe'lining «вы» uchun buyruq shakli?", "options": ["чита́й", "чита́йте", "чита́ешь", "чита́ем"], "correctIndex": 1, "explanation": "«вы» shakliga -те qo'shiladi: чита́й (ты) → чита́йте (вы). Hurmat va ko'plik uchun." },
+      { "text": "O'zak undoshga tugasa qaysi qo'shimcha?", "options": ["-й", "-и", "-те", "-ь"], "correctIndex": 1, "explanation": "O'zak unliga tugasa -й (чита́й), undoshga tugasa -и (говори́, смотри́)." },
+      { "text": "Notanish odamga muloyim iltimos qanday aytiladi?", "options": ["Скажи́!", "Скажи́те, пожа́луйста", "Ты скажи́", "Говори́"], "correctIndex": 1, "explanation": "Notanish va kattaga DOIM -те shakli + пожа́луйста: Скажи́те, пожа́луйста / Извини́те." },
+      { "text": "O'zbekchada buyruq mayli bormi?", "options": ["Yo'q, faqat rus tilida", "Ha: o'qi / o'qing", "Faqat inkor shaklda", "Faqat yozma nutqda"], "correctIndex": 1, "explanation": "O'zbekchada ham bor: «o'qi» (ты) va «o'qing» (вы) — rus tilidagi чита́й / чита́йте bilan bir xil mantiq." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "19-vaqt-soat-kun-tartibi",
+    "title": "Test — Vaqt, soat va kun tartibi",
+    "questions": [
+      { "text": "«Soat necha?» qanday so'raladi?", "options": ["Ско́лько лет?", "Кото́рый час?", "Когда́?", "Как до́лго?"], "correctIndex": 1, "explanation": "Кото́рый час? yoki Ско́лько вре́мени? — ikkalasi ham «soat necha?» degani." },
+      { "text": "«2 soat» — to'g'ri shakl?", "options": ["два час", "два часа́", "два часо́в", "два ча́сы"], "correctIndex": 1, "explanation": "9-darsdagi qoida: 2–4 → birlik qaratqich (часа́). 1 → час, 5–12 → часо́в." },
+      { "text": "«5 soat» qanday bo'ladi?", "options": ["пять час", "пять часа́", "пять часо́в", "пять ча́сы"], "correctIndex": 2, "explanation": "5 va undan katta → ko'plik qaratqich: пять часо́в, де́сять часо́в." },
+      { "text": "«ertalab» qanday aytiladi?", "options": ["у́тро", "у́тром", "в у́тро", "на у́тро"], "correctIndex": 1, "explanation": "Kun qismlari «qachon?» ma'nosida maxsus shaklda, predlogsiz: у́тром, днём, ве́чером, но́чью." },
+      { "text": "«Soat 3 da» — to'g'ri shakl?", "options": ["три часа́", "в три часа́", "на три часа́", "с три часа́"], "correctIndex": 1, "explanation": "«Во ско́лько?» (soat nechada) javobida в + son: в три часа́, в пять часо́в." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "20-sana-kunlar-oylar-fasllar",
+    "title": "Test — Sana, kunlar, oylar, fasllar",
+    "questions": [
+      { "text": "«qishda» qanday aytiladi?", "options": ["в зима́", "зимо́й", "в зиме́", "на зиму́"], "correctIndex": 1, "explanation": "Fasllar «qachon?» ma'nosida maxsus shaklda, predlogsiz: зимо́й, весно́й, ле́том, о́сенью." },
+      { "text": "«dushanbada» qanday aytiladi?", "options": ["понеде́льник", "в понеде́льник", "на понеде́льник", "понеде́льником"], "correctIndex": 1, "explanation": "Hafta kunlari: в + tushum kelishigi → в понеде́льник, во вто́рник." },
+      { "text": "«mayda» (oyda) qanday aytiladi?", "options": ["в май", "в ма́е", "ма́ем", "на май"], "correctIndex": 1, "explanation": "Oylar: в + o'rin kelishigi (-е) → в ма́е, в январе́, в ию́не." },
+      { "text": "«сего́дня» qanday o'qiladi?", "options": ["«sagodnya»", "«sivódnya»", "«sególnya»", "«sidónya»"], "correctIndex": 1, "explanation": "«-го-» → [vo]: сего́дня «sivódnya». Xuddi его́ → «yevó» kabi." },
+      { "text": "«Bugun qaysi sana?» savoliga javob shakli qanday?", "options": ["Сего́дня пять май", "Сего́дня пя́тое ма́я", "Сего́дня пя́тый май", "Сего́дня в пя́том ма́е"], "correctIndex": 1, "explanation": "Tartib son o'rta rodda (-ое) + oy qaratqichda: пя́тое ма́я, пе́рвое января́." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "21-oila-semya",
+    "title": "Test — Oila",
+    "questions": [
+      { "text": "«mening opam/singlim» — to'g'ri shakl?", "options": ["мой сестра́", "моя́ сестра́", "моё сестра́", "мои́ сестра́"], "correctIndex": 1, "explanation": "сестра́ — же́нский rod (-а) → моя́ сестра́. Solishtiring: мой брат (m)." },
+      { "text": "«мой па́па» nega «моя́ па́па» emas?", "options": ["Bu xato, «моя́» to'g'ri", "па́па erkak kishini anglatadi → мужско́й rod", "па́па — o'rta rod", "Farqi yo'q"], "correctIndex": 1, "explanation": "ISTISNO: oxiri -а bo'lsa ham, erkak kishini anglatgani uchun мужско́й rod: мой па́па, мой де́душка, мой дя́дя." },
+      { "text": "«Akamning yoshi 20 da» qanday aytiladi?", "options": ["Мой брат 20 лет", "Моему́ бра́ту 20 лет", "Моего́ бра́та 20 лет", "Мой брат есть 20"], "correctIndex": 1, "explanation": "Yosh DATIV bilan: Моему́ бра́ту … лет, Мое́й сестре́ … лет, Мне … лет." },
+      { "text": "«Dadam shifokor bo'lib ishlaydi» — to'g'ri shakl?", "options": ["рабо́тает врач", "рабо́тает врачо́м", "рабо́тает врача́", "рабо́тает о враче́"], "correctIndex": 1, "explanation": "рабо́тать fe'lidan keyin kasb VOSITA kelishigida: рабо́тает врачо́м, инжене́ром, учи́телем." },
+      { "text": "«роди́тели» va «де́ти» bilan qaysi egalik olmoshi?", "options": ["мой", "моя́", "моё", "мои́"], "correctIndex": 3, "explanation": "Ikkalasi ham ko'plik → мои́ роди́тели, мои́ де́ти." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "22-ovqat-dokon-restoran",
+    "title": "Test — Ovqat, do'kon, restoran",
+    "questions": [
+      { "text": "«Bu qancha turadi?» qanday so'raladi?", "options": ["Ско́лько лет?", "Ско́лько сто́ит?", "Како́й це́на?", "Что э́то?"], "correctIndex": 1, "explanation": "Ско́лько сто́ит? — bitta narsa uchun. Bir nechta bo'lsa — Ско́лько сто́ят?" },
+      { "text": "«Men suv xohlayman» — to'g'ri shakl?", "options": ["Я хочу́ вода́", "Я хочу́ во́ду", "Я хочу́ воды́", "Я хочу́ водо́й"], "correctIndex": 1, "explanation": "хочу́ tushum kelishigini talab qiladi. вода́ — ayol rod → во́ду (-а → -у)." },
+      { "text": "«Я хочу́ чай» — nega «чай» o'zgarmagan?", "options": ["Bu xato", "Erkak rod jonsiz ot tushum kelishigida o'zgarmaydi", "чай — ko'plik", "хочу́ kelishik talab qilmaydi"], "correctIndex": 1, "explanation": "Erkak (jonsiz) va o'rta rod tushum kelishigida o'zgarmaydi: хочу́ чай, хочу́ молоко́. Faqat ayol rod o'zgaradi." },
+      { "text": "«bir litr sut» qanday aytiladi?", "options": ["литр молоко́", "литр молока́", "литр молоко́м", "литр о молоке́"], "correctIndex": 1, "explanation": "O'lchov so'zidan keyin qaratqich: литр молока́, буты́лка воды́, килогра́мм хле́ба." },
+      { "text": "Restoranda buyurtma berish uchun qaysi ibora?", "options": ["Я бу́ду...", "Я есть...", "Мне нра́вится...", "Я име́ю..."], "correctIndex": 0, "explanation": "«Я бу́ду…» — restoranda buyurtma berishning tabiiy shakli: Я бу́ду суп. Hisob so'rash: Счёт, пожа́луйста." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "23-shahar-transport-yol-sorash",
+    "title": "Test — Shahar, transport, yo'l so'rash",
+    "questions": [
+      { "text": "«avtobusda» qanday aytiladi?", "options": ["в авто́бусе", "на авто́бусе", "с авто́бусом", "авто́бусом"], "correctIndex": 1, "explanation": "Transport vositasi: на + o'rin kelishigi → на авто́бусе, на метро́, на такси́, на по́езде." },
+      { "text": "«метро́» va «такси́» kelishikda o'zgaradimi?", "options": ["Ha, oddiy qoida bo'yicha", "Yo'q — o'zgarmaydi", "Faqat ko'plikda", "Faqat qaratqichda"], "correctIndex": 1, "explanation": "Chet so'zlar метро́, такси́, кино́, ко́фе — o'zgarmaydi: на метро́, в метро́, о метро́." },
+      { "text": "«Men parkka piyoda ketyapman» — qaysi fe'l?", "options": ["Я е́ду в парк", "Я иду́ в парк", "Я хожу́ в парк", "Я е́зжу в парк"], "correctIndex": 1, "explanation": "идти́ — piyoda, hozir bir yo'nalishda. е́хать — transportda. Я иду́ в парк." },
+      { "text": "«пло́щадь» so'zi qaysi rodda?", "options": ["мужско́й", "же́нский", "сре́дний", "Rodi yo'q"], "correctIndex": 1, "explanation": "пло́щадь -ь bilan tugaydi va же́нский rodda. -ь bilan tugagan so'zlar m yoki f bo'lishi mumkin — yodlash kerak." },
+      { "text": "Yo'l so'rashning eng muloyim boshlanishi qaysi?", "options": ["Эй, где...?", "Извини́те, где...?", "Ты зна́ешь, где...?", "Где!"], "correctIndex": 1, "explanation": "Извини́те, где…? yoki Скажи́те, пожа́луйста… — notanish odamga muloyim murojaat." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "24-otgan-zamon-kirish",
+    "title": "Test — O'tgan zamon",
+    "questions": [
+      { "text": "O'tgan zamon shakli nimaga qarab o'zgaradi?", "options": ["Shaxsga (я, ты, он...)", "Eganing rodi va soniga", "Faqat zamonga", "Hech narsaga"], "correctIndex": 1, "explanation": "Bu — ingliz va o'zbekchadan asosiy farq: o'tgan zamon SHAXSGA emas, EGANING RODIGA qarab o'zgaradi: чита́л / чита́ла / чита́ло / чита́ли." },
+      { "text": "Ayol kishi «Men o'qidim» deganda qaysi shakl?", "options": ["Я чита́л", "Я чита́ла", "Я чита́ло", "Я чита́ли"], "correctIndex": 1, "explanation": "Ayol → -ла: Я чита́ла. Erkak → Я чита́л. Ya'ni shakl gapiruvchining jinsiga bog'liq." },
+      { "text": "O'tgan zamon qanday yasaladi?", "options": ["-ть o'rniga -л/-ла/-ло/-ли", "-ть o'rniga -ю", "Oldiga «был» qo'shiladi", "O'zak takrorlanadi"], "correctIndex": 0, "explanation": "Infinitivdan -ть ni olib tashlab, -л/-ла/-ло/-ли qo'shiladi: чита́ть → чита́л." },
+      { "text": "быть fe'li o'tgan zamonda qanday?", "options": ["Tushib qoladi", "был / была́ / бы́ло / бы́ли", "есть", "бу́дет"], "correctIndex": 1, "explanation": "Hozirgi zamonda tushib qolgan быть o'tgan zamonda QAYTADI: У меня́ был брат. Diqqat: была́ — urg'u oxirda." },
+      { "text": "«идти́» fe'lining o'tgan zamon shakli?", "options": ["идти́л", "шёл / шла / шли", "и́дел", "ходи́л faqat"], "correctIndex": 1, "explanation": "идти́ — istisno: шёл (m), шла (f), шло (n), шли (ko'plik). Yana: мочь → мог/могла́, есть → ел/е́ла." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "25-mavzuli-lugat-tana-kiyim-obhavo-kasblar",
+    "title": "Test — Tana, kiyim, ob-havo, kasblar",
+    "questions": [
+      { "text": "«Boshim og'riyapti» qanday aytiladi?", "options": ["Я боли́т голова́", "У меня́ боли́т голова́", "Мне голова́ боли́т", "Меня́ боли́т голова́"], "correctIndex": 1, "explanation": "Og'riq: У меня́ боли́т + (nima og'riyotgani). Ko'plik bo'lsa — боля́т: У меня́ боля́т но́ги." },
+      { "text": "носи́ть va наде́ть farqi nimada?", "options": ["Farqi yo'q", "носи́ть — doimiy odat, наде́ть — hozir kiyib olmoq", "носи́ть — ayollar uchun", "наде́ть — faqat o'tgan zamon"], "correctIndex": 1, "explanation": "Он но́сит очки́ (doim ko'zoynak taqadi) ≠ Он наде́л ку́ртку (kurtka kiydi — bir marta)." },
+      { "text": "«Yomg'ir yog'yapti» qanday aytiladi?", "options": ["Дождь есть", "Идёт дождь", "Дождь па́дает", "Есть дождь"], "correctIndex": 1, "explanation": "Ob-havoda идти́ fe'li ko'chma ma'noda: идёт дождь, идёт снег. So'zma-so'z «yomg'ir ketyapti»." },
+      { "text": "«Bugun havo qanday?» qanday so'raladi?", "options": ["Кака́я сего́дня пого́да?", "Что сего́дня пого́да?", "Как пого́да есть?", "Где пого́да?"], "correctIndex": 0, "explanation": "Кака́я сего́дня пого́да? Javob: тепло́ / хо́лодно / жа́рко yoki идёт дождь." },
+      { "text": "«Men dasturchi bo'lib ishlayman» — to'g'ri shakl?", "options": ["Я рабо́таю программи́ст", "Я рабо́таю программи́стом", "Я рабо́таю программи́ста", "Я есть программи́ст"], "correctIndex": 1, "explanation": "рабо́тать + vosita kelishigi: рабо́таю программи́стом, врачо́м, учи́телем. Lekin sodda shakl ham bor: Я — программи́ст." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "01-a1-boshlangich", "article": "26-a1-takror-checkpoint-test",
+    "title": "Test — A1 yakuniy nazorat",
+    "questions": [
+      { "text": "«окно́» so'zining rodi va ko'pligi qaysi qatorda to'g'ri?", "options": ["m, окны́", "n, о́кна", "f, окни́", "n, окно́в"], "correctIndex": 1, "explanation": "окно́ -о bilan tugaydi → сре́дний rod; o'rta rod ko'pligi -о → -а: о́кна (urg'u boshiga ko'chadi)." },
+      { "text": "«Я чита́ю ___» (газе́та) — to'g'ri shakl?", "options": ["газе́та", "газе́ту", "газе́ты", "газе́те"], "correctIndex": 1, "explanation": "чита́ть → tushum kelishigi; ayol rod -а → -у: газе́ту." },
+      { "text": "«У меня́ нет ___» (вре́мя) — to'g'ri shakl?", "options": ["вре́мя", "вре́мени", "вре́менем", "вре́мю"], "correctIndex": 1, "explanation": "Yo'qlik qaratqich talab qiladi: нет вре́мени. вре́мя — maxsus turlanuvchi o'rta rod ot." },
+      { "text": "Ayol kishi o'zi haqida «Men uyda edim» desa?", "options": ["Я был до́ма", "Я была́ до́ма", "Я бы́ло до́ма", "Я бы́ли до́ма"], "correctIndex": 1, "explanation": "O'tgan zamon eganing rodiga moslashadi: ayol → была́ (urg'u oxirda)." },
+      { "text": "«Мне 25 ___» — to'g'ri shakl?", "options": ["год", "го́да", "лет", "года́"], "correctIndex": 2, "explanation": "25 ning oxiri 5 → ko'plik qaratqich: лет. (21 → год, 22–24 → го́да, 25–30 → лет.)" }
+    ]
+  }
+]

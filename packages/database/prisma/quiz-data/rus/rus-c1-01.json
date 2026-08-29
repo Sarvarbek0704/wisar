@@ -1,0 +1,112 @@
+[
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "01-b2-takror-c1-kirish",
+    "title": "Test — C1 ga kirish",
+    "questions": [
+      { "text": "C1 daraja qaysi rus standartiga mos keladi?", "options": ["ТРКИ-1", "ТРКИ-2", "ТРКИ-3", "ТРКИ-4"], "correctIndex": 2, "explanation": "C1 — «mahoratli, effektiv foydalanuvchi», ТРКИ-3 (taxminan IELTS 7–8)." },
+      { "text": "C1 ning «register mahorati» bloki nimani qamraydi?", "options": ["Faqat rasmiy uslubni", "Adabiy, so'zlashuv, kitobiy, rasmiy va arxaik registrlarni", "Faqat og'zaki nutqni", "Faqat imloni"], "correctIndex": 1, "explanation": "C1 da register — nafaqat to'g'ri, balki o'rinli gapirish masalasi." },
+      { "text": "«Troplar va badiiy vositalar» bloki nimani o'rgatadi?", "options": ["Grammatikani", "Metafora, metonimiya kabi obrazli vositalarni", "Kelishiklarni", "Talaffuzni"], "correctIndex": 1, "explanation": "C1 da til asbob emas, san'at darajasiga ko'tariladi." },
+      { "text": "C1 da eng muhim odat qaysi?", "options": ["Qoida yodlash", "Ko'p va xilma-xil o'qish, registr va ost-ma'noga e'tibor", "Faqat yozuv mashqi", "Faqat lug'at"], "correctIndex": 1, "explanation": "Grammatika endi to'liq avtomatlashgan; maqsad — aniq, obrazli, madaniyatga singgan nutq." },
+      { "text": "C1 ning 8 blokidan nechtasi B2 ning eng nozik davomi?", "options": ["1", "2", "4", "8"], "correctIndex": 2, "explanation": "Grammatika nozikliklari, frazeologiya, akademik yozuv, tarjima/madaniyat." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "02-aspekt-c1-nozikliklari",
+    "title": "Test — Aspektning C1 nozikliklari",
+    "questions": [
+      { "text": "«Быва́ло, придёт и ся́дет» — nega SV takror ma'noda?", "options": ["Xato", "Namoyish-namunaviy ma'no — jonli «namunaviy sahna»", "Kelasi zamon", "Bir martalik harakat"], "correctIndex": 1, "explanation": "O'zbekchada yo'q nuans. Belgisi: быва́ло va «как + SV»." },
+      { "text": "«Он реша́ет любы́е зада́чи» — NSV bu yerda nimani bildiradi?", "options": ["Hozir yechyapti", "Potensial ma'no — yecha oladi", "Bir marta yechdi", "Yechmaydi"], "correctIndex": 1, "explanation": "Qobiliyat/imkoniyat NSV bilan. Inkorda «chiqolmaslik» esa SV: не реши́т." },
+      { "text": "«Он уе́хал» — SV o'tmish qanday ma'no beradi?", "options": ["Faqat fakt", "Perfekt — hozirgi natija: ketdi, hozir yo'q", "Takror", "Kelasi"], "correctIndex": 1, "explanation": "NSV o'tmish (уезжа́л, приходи́л) faqat faktni beradi, natija haqida jim." },
+      { "text": "«Так и не пришёл» — inkorda SV qanday ma'no beradi?", "options": ["Umumiy inkor", "Afsusli natijasizlik", "Taqiq", "Odat"], "correctIndex": 1, "explanation": "не + NSV = umumiy inkor/doimiy taqiq; не + SV = ulgurmaslik, afsus yoki ogohlantirish (смотри́ не упади́)." },
+      { "text": "Hikoyada fon va voqealar zanjiri qanday ajratiladi?", "options": ["Fon SV, zanjir NSV", "Fon NSV, voqealar zanjiri SV", "Ikkalasi NSV", "Ikkalasi SV"], "correctIndex": 1, "explanation": "Bu — matnni «rusdek» ravon qiladigan asosiy vosita." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "03-fel-zamonlari-kochma",
+    "title": "Test — Zamonlarning ko'chma qo'llanishi",
+    "questions": [
+      { "text": "«Иду́ я вчера́... и вдруг ви́жу...» — bu qanday hodisa?", "options": ["Xato", "Настоя́щее истори́ческое — o'tmishni jonlantirish", "Kelasi zamon", "Buyruq"], "correctIndex": 1, "explanation": "Voqeani «ko'z oldida» qiladi. Ko'pincha вдруг, и тут, зна́чит bilan." },
+      { "text": "«За́втра е́ду в Москву́» — nega hozirgi zamon?", "options": ["Xato", "Aniq rejalashtirilgan kelasi, ayniqsa harakat fe'llarida", "O'tmish", "Takror"], "correctIndex": 1, "explanation": "Faqat NSV da bo'ladi — SV da hozirgi zamon shakli yo'q." },
+      { "text": "«Как аукне́тся, так и откли́кнется» — kelasi shakl nimani bildiradi?", "options": ["Kelasi voqea", "Takroriy, doimiy fakt (maqolda)", "O'tmish", "Buyruq"], "correctIndex": 1, "explanation": "SV kelasi shakli maqol va umumlashmalarda doimiy haqiqatni bildiradi." },
+      { "text": "«Он как закричи́т!» — bu qanday ma'no?", "options": ["Kelasi", "O'tmishdagi to'satdan, kutilmagan harakat", "Buyruq", "Shart"], "correctIndex": 1, "explanation": "«как + SV kelasi + undov» qolipi." },
+      { "text": "Bu ko'chma qo'llanishlar qaysi uslubda o'rinli?", "options": ["Rasmiy-ish", "Jonli so'zlashuv va badiiy nutq", "Ilmiy", "Har qanday"], "correctIndex": 1, "explanation": "Rasmiy va ilmiy uslubda oddiy, «to'g'ri» zamon ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "04-mayl-nozik",
+    "title": "Test — Mayllarning nozik ma'nolari",
+    "questions": [
+      { "text": "«Приди́ он во́время, всё бы́ло бы ина́че» — buyruq shakli nimani bildiradi?", "options": ["Buyruq", "Shart (= е́сли бы пришёл)", "Istak", "Taqiq"], "correctIndex": 1, "explanation": "Buyruq maylining ko'chma ma'nolaridan biri — shart." },
+      { "text": "«Проси́ не проси́» qanday ma'no beradi?", "options": ["Qat'iy buyruq", "Befoydalik — «so'rasang ham foydasi yo'q»", "Ruxsat", "Iltimos"], "correctIndex": 1, "explanation": "Buyruq shaklining to'rt ko'chma ma'nosi: shart, majburiyat, befoydalik, to'satdan harakat." },
+      { "text": "«Поспа́ть бы!» — bu qanday qurilma?", "options": ["Buyruq", "бы + infinitiv — orzu", "Shart", "Savol"], "correctIndex": 1, "explanation": "Shart maylining nozik holatlaridan: Мне бы отдохну́ть." },
+      { "text": "«Не могли́ бы вы...?» qanday vazifani bajaradi?", "options": ["Noreal shart", "Muloyim iltimos", "Orzu", "Taqiq"], "correctIndex": 1, "explanation": "Shart mayli muloyimlik vositasi sifatida: Я бы попроси́л, Я бы сказа́л, что..." },
+      { "text": "Bir shaklning to'rt ma'nosini nima ajratadi?", "options": ["Yozuv", "Butun gap konteksti va ohang", "Urg'u", "Kelishik"], "correctIndex": 1, "explanation": "Buyruqda qat'iy ↘, shartda ko'tarilib-pauza, majburiyatda achinuvchi, orzuda hasratli ohang." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "05-kelishik-nozik-variantlar",
+    "title": "Test — Kelishiklarning nozik variantlari",
+    "questions": [
+      { "text": "«вы́пить ча́ю» — «-у» tugashi qanday ma'no beradi?", "options": ["Ko'plik", "Partitiv — «bir oz, qism»", "Inkor", "Egalik"], "correctIndex": 1, "explanation": "Zamonaviy tilda susaymoqda; neytral matnda -а. Turg'un iborada qoladi: ни ша́гу, с гла́зу на глаз." },
+      { "text": "«в лесу́» va «о ле́се» — bu qanday farq?", "options": ["Uslub farqi", "Ma'no farqi: -у́ = JOY, -е = MAVZU", "Zamon farqi", "Son farqi"], "correctIndex": 1, "explanation": "«в Вишнёвом са́де» (asar nomi) → -е, chunki bu mavzu, joy emas." },
+      { "text": "«ви́жу короля́, ту́за» — nega jonli shaklda?", "options": ["Biologik jonli", "Jonlilik grammatik kategoriya, biologik emas", "Xato", "Ko'plik uchun"], "correctIndex": 1, "explanation": "Aksincha: труп, наро́д — grammatik jonsiz. Turg'un ibora: вы́йти в лю́ди." },
+      { "text": "«грамм» yoki «гра́ммов» — rasmiy matnda qaysi?", "options": ["Ø shakl (грамм)", "-ов shakli (гра́ммов)", "Farqi yo'q", "Ikkalasi xato"], "correctIndex": 1, "explanation": "Ikkilanishda rasmiy matnda -ов ni tanlang: помидо́ров, носко́в, узбе́ков." },
+      { "text": "«с Да́рвином» va «с госпожо́й Смит» — qoida qanday?", "options": ["Ikkalasi turlanadi", "Undoshga tugagan chet familiya: erkakniki turlanadi, ayolniki qotadi", "Ikkalasi qotadi", "Faqat ayolniki turlanadi"], "correctIndex": 1, "explanation": "Unli -о/-и/-ых/-ко → turlanmaydi (Дюма́, Шевче́нко); -а/-я → turlanadi (Окуджа́вы)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "06-predloglar-nozik",
+    "title": "Test — Predloglarning nozik ma'nolari",
+    "questions": [
+      { "text": "«по оконча́нии, по прие́зде» — «по» qaysi kelishik bilan?", "options": ["Jo'nalish (Д.)", "O'rin (П.) — kitobiy «…gach»", "Tushum", "Vosita"], "correctIndex": 1, "explanation": "по asosan Д. bilan, lekin kitobiy «…gach» ma'nosida П. bilan." },
+      { "text": "«за до́мом» va «за стол» farqi nimada?", "options": ["Farqi yo'q", "Т. — joy (harakatsiz), В. — yo'nalish", "Т. — yo'nalish", "Ikkalasi joy"], "correctIndex": 1, "explanation": "за + Т. = joy; за + В. = yo'nalish yoki vaqt/evaz ma'nolari." },
+      { "text": "«при жела́нии, при царе́, при мне» — «при» qaysi kelishik bilan?", "options": ["Faqat П.", "Т.", "Д.", "В."], "correctIndex": 0, "explanation": "при faqat Предложный bilan; ma'noni (shart/davr/yaqinlik/hozirlik) kontekst ajratadi." },
+      { "text": "«из / с / от» manba uchligi qanday ishlaydi?", "options": ["Farqi yo'q", "в→из, на→с, kishi→от", "в→с, на→из", "Hammasi bir xil"], "correctIndex": 1, "explanation": "из до́ма, с рабо́ты, от врача́ — «kirish» predlogining juftidir." },
+      { "text": "«о» va «про» qanday farqlanadi?", "options": ["Ma'no farqi", "Registr farqi: о — neytral, про — so'zlashuv", "Kelishik farqi", "Farqi yo'q"], "correctIndex": 1, "explanation": "Boshqa juftliklar: из-за (salbiy) ↔ благодаря́ (ijobiy) ↔ всле́дствие (rasmiy)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "07-sifatdosh-ravishdosh-stilistik",
+    "title": "Test — Oborotlarning stilistikasi",
+    "questions": [
+      { "text": "«блестя́щий ум» — bu qanday hodisa?", "options": ["Haqiqiy sifatdosh", "Adyektivatsiya — sifatdosh sifatga aylangan", "Substantivatsiya", "Adverbializatsiya"], "correctIndex": 1, "explanation": "Belgi: ma'no ko'chgan, fe'lga qaytmaydi, daraja oladi. Solishtiring: блестя́щий на со́лнце (haqiqiy sifatdosh)." },
+      { "text": "«уча́щиеся, бу́дущее» — bu qanday hodisa?", "options": ["Adyektivatsiya", "Substantivatsiya — sifatdosh otga aylangan", "Adverbializatsiya", "Frazeologizm"], "correctIndex": 1, "explanation": "Kelishikda turlanadi, aniqlanadigan ot kerak emas: трудя́щиеся, кома́ндующий." },
+      { "text": "«мо́лча, не спеша́, сто́я» — vergul kerakmi?", "options": ["Ha", "Yo'q — bular ravishga aylangan", "Faqat gap boshida", "Ikki vergul"], "correctIndex": 1, "explanation": "Adverbializatsiya: bularda «bir ega» va vergul qoidasi ishlamaydi." },
+      { "text": "«сломя́ го́лову, скрепя́ се́рдце» — bular qanday?", "options": ["Oddiy ravishdosh oboroti", "Frazeologik ravishdosh — turg'un, vergulsiz", "Sifatdosh", "Predlog"], "correctIndex": 1, "explanation": "Arxaik shakl va urg'uni saqlaydi: спустя́ рукава́, сложа́ ру́ки, не поклада́я рук." },
+      { "text": "Og'zaki nutqda oborotni ko'p ishlatish nima deb ataladi?", "options": ["Mahorat", "Giperkorreksiya — sun'iy eshitiladi", "Norma", "Arxaizm"], "correctIndex": 1, "explanation": "Og'zaki nutqda кото́рый/когда́ yoki ketma-ket fe'l tabiiyroq. Kontekstga qarab tanlash — C1 belgisi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "08-nominalizatsiya-analitik-konstruksiyalar",
+    "title": "Test — Nominalizatsiya",
+    "questions": [
+      { "text": "Nominalizatsiya nima qiladi?", "options": ["Otni fe'lga aylantiradi", "Fe'lni ot bilan ifodalaydi, zamon va shaxsni «o'chiradi»", "Kelishikni o'zgartiradi", "Urg'uni ko'chiradi"], "correctIndex": 1, "explanation": "реши́ть → реше́ние. Matnni obyektiv, mavhum, rasmiy qiladi." },
+      { "text": "«выполне́ние пла́на» — obyekt qaysi kelishik orqali bog'lanadi?", "options": ["Tushum (В.)", "Qaratqich (Р.)", "Jo'nalish", "Vosita"], "correctIndex": 1, "explanation": "Otlashgan fe'l obyektni Р.п. orqali oladi, В.п. orqali emas." },
+      { "text": "«приня́ть реше́ние» — bu qanday qurilma?", "options": ["Nominalizatsiya", "Расщеплённое сказу́емое — bo'lingan kesim", "Passiv", "Substantivatsiya"], "correctIndex": 1, "explanation": "Har ot o'z bo'sh fe'lini talab qiladi: по́мощь → оказа́ть, контро́ль → осуществи́ть." },
+      { "text": "Og'zaki yoki badiiy matnda nominalizatsiya ortiqcha bo'lsa nima deyiladi?", "options": ["Norma", "Канцеляри́т", "Arxaizm", "Metafora"], "correctIndex": 1, "explanation": "Rasmiy/ilmiy uslubda foydali, boshqa joyda uslubiy kasallik." },
+      { "text": "Nominal zanjir qachon xatoga aylanadi?", "options": ["Hech qachon", "Uch bo'g'indan oshganda (нани́зывание падеже́й)", "Ikkitadan oshganda", "Har doim xato"], "correctIndex": 1, "explanation": "«в це́лях повыше́ния эффекти́вности испо́льзования» — chegarada turgan misol." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "09-ergash-gap-nozik-boglovchilar",
+    "title": "Test — Bog'lovchilar va registr",
+    "questions": [
+      { "text": "Sabab bog'lovchilaridan qaysi biri arxaik-tantanavor?", "options": ["потому́ что", "и́бо", "так как", "ведь"], "correctIndex": 1, "explanation": "Shkala: и́бо (arxaik) → поско́льку (rasmiy) → так как (kitobiy) → потому́ что (neytral) → ведь, раз (og'zaki)." },
+      { "text": "«да́бы» qanday bog'lovchi?", "options": ["Neytral maqsad", "Arxaik maqsad bog'lovchisi", "Shart", "Zid"], "correctIndex": 1, "explanation": "Faqat klassik matnda yoki ataylab tantanavor/hazil ohangda. Neytral variant — что́бы." },
+      { "text": "«е́жели, коли́» qaysi guruhga kiradi?", "options": ["Rasmiy shart", "Arxaik-xalq shart bog'lovchilari", "Sabab", "Oqibat"], "correctIndex": 1, "explanation": "Shart shkalasi: бу́де (kanselyar-arxaik) · е́жели, коли́ · коль ско́ро (kitobiy) · е́сли (neytral) · раз (og'zaki)." },
+      { "text": "«всле́дствие чего́, в си́лу чего́» qaysi registr?", "options": ["So'zlashuv", "Rasmiy/ilmiy oqibat qoliplari", "Badiiy", "Arxaik"], "correctIndex": 1, "explanation": "So'zlashuvda oddiy: так что, поэ́тому." },
+      { "text": "«не сто́лько… ско́лько» nima qiladi?", "options": ["Inkor qiladi", "Urg'uni ko'chiradi", "Shart qo'yadi", "Sabab bildiradi"], "correctIndex": 1, "explanation": "Qo'sh bog'lovchilar nozik ohang beradi: не то что́бы… но (yumshatadi), е́сли не… то (ehtiyotkor qiladi)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "05-c1-ilgor", "article": "10-modallik-subyektiv",
+    "title": "Test — Subyektiv modallik",
+    "questions": [
+      { "text": "Subyektiv va obyektiv modallik qanday farqlanadi?", "options": ["Farqi yo'q", "Subyektiv — so'zlovchining munosabati; obyektiv — voqelikdagi zaruriyat/imkoniyat", "Subyektiv — rasmiy", "Obyektiv — hissiy"], "correctIndex": 1, "explanation": "до́лжен, ну́жно, мо́жно, нельзя́ — obyektiv modallik." },
+      { "text": "«наве́рное» qanday ishonch darajasini bildiradi?", "options": ["100% — aniq", "~70% — ehtimol, taxmin", "~20%", "0%"], "correctIndex": 1, "explanation": "Shkala: несомне́нно (100%) → наверняка́ (~85%) → наве́рное (~70%) → возмо́жно (~50%) → вряд ли (~20%)." },
+      { "text": "«разве, неужели» qanday zarrachalar?", "options": ["Ta'kid", "Hayrat/shubha", "Yumshatish", "Xalq zarrachasi"], "correctIndex": 1, "explanation": "ведь, же — ta'kid («axir»); -то, -ка — xoslash/yumshatish; авось, небось — xalq/tavakkal." },
+      { "text": "«мол, деска́ть, я́кобы» nimani bildiradi?", "options": ["Ishonch", "Manba modalligi — o'zganing so'zi, «emish, go'yoki»", "Taqiq", "Buyruq"], "correctIndex": 1, "explanation": "я́кобы — go'yoki + shubha. Evidensiallik: говоря́т, по слуха́м, по да́нным." },
+      { "text": "«в не́котором ро́де, так сказа́ть» — bu qanday vosita?", "options": ["Kuchaytirish", "Kitobiy yumshatish (hedging)", "Ta'kid", "Inkor"], "correctIndex": 1, "explanation": "Og'zaki variantlari: как бы, вро́де, ти́па." }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "10-fel-boshqaruvi",
+    "title": "Test — Fe'l boshqaruvi",
+    "questions": [
+      { "text": "«жени́ться» qaysi predlog bilan?", "options": ["на + o'rin kelishigi", "за + tushum", "с + vosita", "predlogsiz"], "correctIndex": 0, "explanation": "жени́ться НА ком — uylanmoq. Ayol tomondan esa: выходи́ть за́муж ЗА кого." },
+      { "text": "«игра́ть в футбо́л» va «игра́ть на гита́ре» — qoida qanday?", "options": ["Farqi yo'q", "O'yin → в + tushum; cholg'u → на + o'rin", "O'yin → на; cholg'u → в", "Ikkalasi predlogsiz"], "correctIndex": 1, "explanation": "Bu — rus tilining «ajraladigan» nuqtalaridan biri, yoddan bilish kerak." },
+      { "text": "«ве́рить кому́» va «ве́рить в кого́» farqi nimada?", "options": ["Farqi yo'q", "Birinchisi — aytganiga ishonish; ikkinchisi — qodirligiga ishonish", "Birinchisi rasmiy", "Ikkinchisi o'tgan zamon"], "correctIndex": 1, "explanation": "Bir fe'l — ikki boshqaruv, ikki ma'no. Shunga o'xshash: ду́мать о (mavzu) ↔ ду́мать над (yechishga urinish)." },
+      { "text": "«поздравля́ть» qaysi predlog bilan?", "options": ["о", "с (+ vosita)", "за", "на"], "correctIndex": 1, "explanation": "поздравля́ть С праздником. Yana: смея́ться НАД кем." },
+      { "text": "Fe'lni qanday yodlash kerak?", "options": ["Yolg'iz", "Boshqaruvi bilan bir «paket» qilib", "Faqat infinitivda", "Faqat o'tgan zamonda"], "correctIndex": 1, "explanation": "боя́ться темноты́, зави́сеть от пого́ды, наде́яться на успе́х — predlog va kelishik fe'lning ajralmas qismi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "11-ot-sifat-boshqaruvi",
+    "title": "Test — Ot va sifat boshqaruvi",
+    "questions": [
+      { "text": "«интересова́ться» vosita kelishigini boshqaradi. «интере́с» -chi?", "options": ["Vosita kelishigi", "к + jo'nalish", "от + qaratqich", "на + tushum"], "correctIndex": 1, "explanation": "Ot har doim fe'ldan meros olmaydi: интере́с К + Д. Xuddi shunday: любо́вь к, уваже́ние к." },
+      { "text": "«зави́симость» qaysi predlog bilan?", "options": ["к", "от (+ qaratqich)", "на", "о"], "correctIndex": 1, "explanation": "Bu holatda ot fe'ldan meros oladi: зави́сеть от → зави́симость от." },
+      { "text": "«похо́жий» qaysi predlog va kelishik bilan?", "options": ["к + jo'nalish", "на + tushum", "с + vosita", "о + o'rin"], "correctIndex": 1, "explanation": "похо́жий НА + В. Qisqa shaklda ham o'zgarmaydi: похо́ж на отца́." },
+      { "text": "«дово́лен» qaysi kelishik bilan?", "options": ["Qaratqich", "Vosita (Т.)", "Jo'nalish", "Tushum"], "correctIndex": 1, "explanation": "дово́лен + Т. Shu guruhda: бога́тый, го́рдый, изве́стный + Т." },
+      { "text": "Qisqa sifatga o'tganda boshqaruv o'zgaradimi?", "options": ["Ha, doim", "Yo'q — shakl qisqarsa ham boshqaruv o'zgarmaydi", "Faqat ko'plikda", "Faqat ayol rodda"], "correctIndex": 1, "explanation": "согла́сен с + Т, рад + Д, гото́в к + Д, спосо́бен к + Д / на + В." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "12-sonlar-murakkab",
+    "title": "Test — Murakkab sonlar",
+    "questions": [
+      { "text": "«пять рубле́й» — nega ot qaratqichda?", "options": ["Predlog tufayli", "Bosh/tushum kelishikda son otni boshqaradi", "Inkor tufayli", "Xato"], "correctIndex": 1, "explanation": "Ikki-holat qoidasi: И. va jonsiz В. da son boshqaradi; qolgan to'rt kelishikda ikkalasi birga turlanadi (пяти́ рубля́м)." },
+      { "text": "Murakkab sanoq sonda nechta so'z turlanadi?", "options": ["Faqat oxirgisi", "HAR BIR so'z (ты́сяче пятиста́м двадцати́ пяти́)", "Faqat birinchisi", "Hech biri"], "correctIndex": 1, "explanation": "Bu tartib sondan tubdan farq qiladi — tartib sonda faqat oxirgi so'z turlanadi." },
+      { "text": "«дво́е, тро́е» qanday holatlarda ishlatiladi?", "options": ["Har doim", "Erkak shaxs, bola/lyudi, faqat ko'plikdagi otlar", "Faqat ayol shaxsga", "Faqat narsalarga"], "correctIndex": 1, "explanation": "Ayol shaxsga ishlatilmaydi: дво́е сестёр emas, две сестры́." },
+      { "text": "«о́ба» va «о́бе» farqi nimada?", "options": ["Farqi yo'q", "о́ба — m/n, о́бе — ayol rod", "о́ба — ayol rod", "о́бе — ko'plik"], "correctIndex": 1, "explanation": "Rodga moslashadi va turlanadi: обо́их / обе́их. Shunga o'xshash: полтора́ (m/n) / полторы́ (f)." },
+      { "text": "«две це́лых пять деся́тых ме́тра» — nega «ме́тра» birlikda?", "options": ["Xato", "Kasrdan keyin ot birlik qaratqichda turadi", "Ko'plik bo'lishi kerak", "Bosh kelishik"], "correctIndex": 1, "explanation": "Kasr sonda ot doim birlik qaratqichda. Foizda esa odatdagi moslashuv: два проце́нта, пять проце́нтов." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "13-olmoshlar-chuqur",
+    "title": "Test — Olmoshlar (chuqur)",
+    "questions": [
+      { "text": "«сам» va «са́мый» qanday farqlanadi?", "options": ["Farqi yo'q", "сам — «o'zi, shaxsan»; са́мый — «eng» yoki «aynan»", "сам — «eng»", "са́мый — ko'plik"], "correctIndex": 1, "explanation": "Sinov: «eng» qo'ysa bo'lsa → са́мый; «yordamsiz/shaxsan» bo'lsa → сам." },
+      { "text": "«___ лю́ди пришли́» — «hamma odamlar» uchun to'g'ri shakl?", "options": ["Всё", "Все", "Вся", "Весь"], "correctIndex": 1, "explanation": "все — odamlar/ko'plik; всё — narsalar («hammasi»). «Всё лю́ди» tipik xato." },
+      { "text": "«ка́ждый», «любо́й», «вся́кий» — qaysi biri «istalgan, erkin tanlov»?", "options": ["ка́ждый", "любо́й", "вся́кий", "не́который"], "correctIndex": 1, "explanation": "ка́ждый — har bir (aniq to'plamdan bittalab); любо́й — istalgan; вся́кий — har qanday/turli (kitobiy)." },
+      { "text": "«никако́й» qanday ishlatiladi?", "options": ["Yolg'iz", "Doim не/нет bilan — ikki karra inkor", "Faqat savolda", "Faqat ko'plikda"], "correctIndex": 1, "explanation": "Xato: «есть никаки́х». To'g'ri: нет никаки́х." },
+      { "text": "«ины́ми слова́ми» — «ино́й» qaysi registrga tegishli?", "options": ["Kundalik", "Kitobiy, turg'un iboralarda", "Jargon", "Bolalar tili"], "correctIndex": 1, "explanation": "друго́й — kundalik «boshqa»; ино́й — kitobiy «o'zga»." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "14-svoy-vs-ego-eyo",
+    "title": "Test — свой va его́/её/их",
+    "questions": [
+      { "text": "«свой» kimga qaytadi?", "options": ["Gapdagi obyektga", "Doim GAP EGASIGA", "Oldingi gapga", "Har doim 3-shaxsga"], "correctIndex": 1, "explanation": "Kim harakat qilayotgan bo'lsa, narsa ham o'shaniki. Barcha shaxsda ishlaydi." },
+      { "text": "«Он лю́бит его́ жену́» nimani anglatadi?", "options": ["O'z xotinini sevadi", "Begonaning xotinini sevadi", "Farqi yo'q", "Xato gap"], "correctIndex": 1, "explanation": "3-shaxsdagi kontrast MAJBURIY: свою́ жену́ (o'z xotini) ↔ его́ жену́ (boshqaning xotini)." },
+      { "text": "«Свой брат рабо́тает» — bu nega xato?", "options": ["Kelishik xato", "свой EGA bo'la olmaydi", "Rod xato", "Fe'l xato"], "correctIndex": 1, "explanation": "To'g'risi: Мой/Его́ брат рабо́тает. свой faqat egaga tegishli bo'lgan narsani ko'rsatadi." },
+      { "text": "«в свою́ о́чередь» — bu qanday birikma?", "options": ["Xato", "Turg'un ibora", "Erkin birikma", "Savol"], "correctIndex": 1, "explanation": "Turg'un iboralar: в своё вре́мя, свои́ми слова́ми, в свою́ о́чередь." },
+      { "text": "Shubhalanganda qaysi variantni tanlash xavfsiz?", "options": ["его́/её", "свой — barcha shaxsda to'g'ri", "мой", "их"], "correctIndex": 1, "explanation": "Gapni o'zbekchaga o'girib tekshiring: «o'z» bo'lsa → свой." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "15-inkor-chuqur",
+    "title": "Test — Inkor (chuqur)",
+    "questions": [
+      { "text": "«Я никого́ ___ ви́жу» — bo'shliqqa nima?", "options": ["Hech narsa", "не — ikki karra inkor majburiy", "ни", "нет"], "correctIndex": 1, "explanation": "Inkor olmoshi bo'lsa, fe'l oldida «не» SHART. Ingliz «I see nobody» mantiqi ishlamaydi." },
+      { "text": "«ни у кого́» — predlog qayerda turadi?", "options": ["Oldinda: у никого́", "Ичida: ни У кого́ — uch so'z", "Oxirda", "Predlog qo'yilmaydi"], "correctIndex": 1, "explanation": "Predlog «ни» va o'zak orasiga kiradi: ни с кем, ни о чём. Hech qachon oldinda turmaydi." },
+      { "text": "«не́кого» va «никого́» qanday farqlanadi?", "options": ["Farqi yo'q", "не́кого — «…adigan kishi yo'q», urg'u не́ da; никого́ — inkor, urg'u oxirda", "не́кого — ko'plik", "никого́ — infinitiv bilan"], "correctIndex": 1, "explanation": "Мне не́кого спроси́ть — infinitiv bilan, shaxs Дательныйда. Urg'u farqning kaliti." },
+      { "text": "«не по́нял вопро́са» — nega qaratqich?", "options": ["Predlog tufayli", "Inkorda to'ldiruvchi qaratqichga o'tadi, ayniqsa mavhum otda", "Xato", "Miqdor tufayli"], "correctIndex": 1, "explanation": "не име́ет пра́ва, не по́нял вопро́са — inkorda Родительный." },
+      { "text": "«далеко́ не» qanday ohang beradi?", "options": ["Yumshoq", "Kuchaytirilgan inkor — «aslo, sira emas»", "Savol", "Taxmin"], "correctIndex": 1, "explanation": "во́все не (umuman), далеко́ не (aslo), отню́дь не (mutlaqo, kitobiy)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "16-aniqlik-noaniqlik",
+    "title": "Test — Aniqlik va noaniqlik (-то, -нибудь)",
+    "questions": [
+      { "text": "«-то» va «-нибудь» ni ajratuvchi oltin sinov qanday?", "options": ["Zamon bo'yicha", "«Obyekt allaqachon bormi?» HA → -то, YO'Q → -нибудь", "Rod bo'yicha", "Kelishik bo'yicha"], "correctIndex": 1, "explanation": "-то — o'tgan/hozirgi fakt; -нибудь — kelasi, savol, buyruq, shart." },
+      { "text": "«Кто-нибудь звони́л?» — nega -нибудь?", "options": ["O'tgan zamon", "Savol — obyekt hali tanlanmagan", "Rasmiy uslub", "Xato"], "correctIndex": 1, "explanation": "Savol, buyruq, shart va kelasi zamonda -нибудь ishlatiladi." },
+      { "text": "«кое-» qanday ma'no beradi?", "options": ["Istalgani", "Bilaman, lekin aytmayman", "Hech kim", "Hamma"], "correctIndex": 1, "explanation": "So'z oldiga defis bilan qo'shiladi: ко́е-кто, ко́е-что." },
+      { "text": "«кое-» da predlog qayerga qo'yiladi?", "options": ["Oldinga", "кое- va o'zak orasiga: ко́е с кем", "Oxirga", "Qo'yilmaydi"], "correctIndex": 1, "explanation": "ко́е с кем, ко́е о чём — predlog ichkariga kiradi." },
+      { "text": "Tuslashda nima o'zgaradi?", "options": ["Qo'shimcha", "Faqat o'zak (кого́-то, кому́-нибудь)", "Ikkalasi", "Hech narsa"], "correctIndex": 1, "explanation": "Qo'shimcha (-то, -нибудь) o'zgarmaydi, faqat olmosh o'zagi turlanadi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "17-murakkab-qoshma-gap",
+    "title": "Test — Murakkab qo'shma gap",
+    "questions": [
+      { "text": "«Я зна́ю, что он сказа́л, что придёт» — bu qanday bo'ysunish?", "options": ["Parallel bir jinsli", "Ketma-ket (zanjir, ichma-ich)", "Aralash", "Bo'ysunish yo'q"], "correctIndex": 1, "explanation": "Ketma-ket bo'ysunishda har ergash oldingisiga bog'lanadi." },
+      { "text": "«Я зна́ю, что он у́мён и что он че́стен» — «и» oldida vergul kerakmi?", "options": ["Ha, doim", "Yo'q — bitta «и» bir jinsli ergashlarni bog'laydi", "Faqat rasmiy matnda", "Faqat uzun gapda"], "correctIndex": 1, "explanation": "Bir jinsli bo'laklar qoidasi ergash gaplarga ham tegishli." },
+      { "text": "«что» va «кото́рый» ning asosiy farqi nimada?", "options": ["Farqi yo'q", "что — soyuz (faqat ulaydi, urg'usiz); кото́рый — bog'lovchi so'z (gap bo'lagi, urg'uli)", "кото́рый — soyuz", "что — bog'lovchi so'z"], "correctIndex": 1, "explanation": "что, что́бы, е́сли — soyuz; кото́рый, где, кто, како́й — bog'lovchi so'z. «Что» ikkalasi ham bo'la oladi." },
+      { "text": "«…, что е́сли … то …» — «что» va «е́сли» orasida vergul kerakmi?", "options": ["Ha, doim", "Yo'q — keyin «то» kelgani uchun vergul qo'yilmaydi", "Faqat og'zaki nutqda", "Ikki vergul kerak"], "correctIndex": 1, "explanation": "Odatda ikki bog'lovchi orasiga vergul qo'yiladi, LEKIN ichki ergashdan keyin то/так/но kelsa — vergulsiz." },
+      { "text": "Sxema (`[ ], (что (что …))`) nima uchun kerak?", "options": ["Bezak uchun", "Murakkab jumla tuzilishini ko'rish va vergulni to'g'ri qo'yish uchun", "Imlo uchun", "Urg'u uchun"], "correctIndex": 1, "explanation": "Sxema — murakkab sintaksisni tahlil qilishning eng foydali vositasi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "18-ergash-gap-orin-tarz-daraja-oqibat",
+    "title": "Test — O'rin, tarz, daraja, oqibat ergash gaplari",
+    "questions": [
+      { "text": "O'rin ergash gapi bosh gapda qaysi so'zlar bilan juft ishlaydi?", "options": ["так/такой", "там / туда́ / отту́да", "потому́/поэ́тому", "е́сли/то"], "correctIndex": 1, "explanation": "где — там, куда́ — туда́, отку́да — отту́да. Fe'lga qarab yo'nalish tanlanadi." },
+      { "text": "«сло́вно / бу́дто» qanday o'xshatishni bildiradi?", "options": ["Real", "Xayoliy, shartli — «go'yo, xuddi ...gandek»", "Sabab", "Vaqt"], "correctIndex": 1, "explanation": "как — real («...ganday») ↔ сло́вно/бу́дто/как бу́дто — xayoliy." },
+      { "text": "«Он так уста́л, что засну́л» — bu qanday ergash gap?", "options": ["Oqibat", "Daraja — «shunchalik ...ki»", "Sabab", "Tarz"], "correctIndex": 1, "explanation": "так/насто́лько/тако́й ...что — daraja. Vergul «что» dan oldin." },
+      { "text": "«так что» va «так, что» farqi nimada?", "options": ["Farqi yo'q", "так что — oqibat («shuning uchun»), vergul так oldida; так...что — daraja, vergul что oldida", "Ikkalasi ham daraja", "Ikkalasi ham oqibat"], "correctIndex": 1, "explanation": "Bitta vergul ma'noni butunlay o'zgartiradi — bu darsning eng nozik farqi." },
+      { "text": "«чем...тем» konstruksiyasi nimani bildiradi?", "options": ["Sabab", "«Qancha ...bo'lsa, shuncha ...»", "Shart", "Maqsad"], "correctIndex": 1, "explanation": "Ikki qismda ham qiyosiy daraja: Чем бо́льше, тем лу́чше. Orasida vergul." }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "01-c1-takror-c2-kirish",
+    "title": "Test — C2 ga kirish",
+    "questions": [
+      { "text": "C2 daraja qaysi rus standartiga mos keladi?", "options": ["ТРКИ-2", "ТРКИ-3", "ТРКИ-4", "ТРКИ-1"], "correctIndex": 2, "explanation": "C2 — «san'atkor» darajasi: filolog, tarjimon, muharrir va o'qituvchi darajasi." },
+      { "text": "C2 qanday yangilik beradi?", "options": ["Yangi til o'rgatadi", "Bor til bilan san'at yaratishni o'rgatadi", "Faqat grammatika", "Faqat lug'at"], "correctIndex": 1, "explanation": "8 blokning deyarli hammasi — C1 da tanish narsaning eng oliy, ijodiy darajasi." },
+      { "text": "«Интертекстуальность · stilizatsiya · parodiya» qaysi blok?", "options": ["Grammatik mahorat", "Oltinchi blok", "Til manzarasi", "Cho'qqi janrlar"], "correctIndex": 1, "explanation": "C2 ning sakkiz bloki grammatikadan til manzarasigacha yoyilgan." },
+      { "text": "C2 da eng muhim odat qaysi?", "options": ["Qoida yodlash", "Asl adabiyotni ko'p va sinchkovlik bilan o'qish, o'zi yozish/tarjima qilish", "Faqat tinglash", "Faqat gapirish"], "correctIndex": 1, "explanation": "Ohangga, konnotatsiyaga va tagma'noga quloq solish — C2 ning mashqi." },
+      { "text": "C2 da grammatikaning o'rni qanday?", "options": ["Asosiy maqsad", "Ko'rinmas darajada avtomatlashgan", "Hali o'rganilmagan", "Ahamiyatsiz"], "correctIndex": 1, "explanation": "Maqsad — erkin, ijodiy, tildan zavq oladigan tabiiy nutq." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "02-grammatik-mahorat-ziddiyatli",
+    "title": "Test — Me'yor, uzus va xato",
+    "questions": [
+      { "text": "«Но́рма», «у́зус» va «оши́бка» qanday farqlanadi?", "options": ["Farqi yo'q", "Norma — tavsiya (yozma), uzus — amaliyot (og'zaki), xato — savodsizlik", "Uzus — yozma", "Norma — og'zaki"], "correctIndex": 1, "explanation": "Oraliqda доп., разг., прост., проф. yorliqlari yotadi. Yozganda har doim norma tomonda turing." },
+      { "text": "«ко́фе» ning normativ rodi qaysi?", "options": ["O'rta rod", "Erkak rod (чёрный ко́фе)", "Ayol rod", "Rodi yo'q"], "correctIndex": 1, "explanation": "O'rta rod — доп. разг. Yozma matnda erkak rod." },
+      { "text": "«догово́ры» va «договора́» — qaysi biri norma?", "options": ["договора́", "догово́ры", "Ikkalasi", "Hech biri"], "correctIndex": 1, "explanation": "договора́ — разг.; инженера́ esa прост. (xato). O'rnashgan -а́: профессора́, директора́, паспорта́." },
+      { "text": "«ли́стья» va «листы́» qanday farqlanadi?", "options": ["Farqi yo'q", "ли́стья — barg, листы́ — qog'oz", "листы́ — barg", "Faqat uslub farqi"], "correctIndex": 1, "explanation": "Ma'no juftliklari: цвета́ (rang) ≠ цветы́ (gul), ко́рни ≠ коре́нья." },
+      { "text": "«бо́лее лу́чший» — bu qanday hodisa?", "options": ["Разг. variant", "Qat'iy xato — qo'sh daraja", "Norma", "Kitobiy shakl"], "correctIndex": 1, "explanation": "са́мый оптима́льнейший ham savodsizlik. Ikkilanishda: бо́лее + oddiy sifat." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "03-sintaktik-mahorat-period",
+    "title": "Test — Period va ritmik nasr",
+    "questions": [
+      { "text": "«Пери́од» qanday tuzilgan?", "options": ["Bir gap", "Повыше́ние → cho'qqi/pauza → пониже́ние", "Faqat sanoq", "Qisqa gaplar zanjiri"], "correctIndex": 1, "explanation": "Klassik qolip: «Когда́... когда́... когда́..., — тогда́...». Period — nasrning simfoniyasi." },
+      { "text": "«Ночь. У́лица. Фона́рь. Апте́ка» — bu qanday qurilma?", "options": ["Elliptik gaplar", "Назывны́е предложе́ния zanjiri — statik «kadr-kadr» tasvir", "Period", "Segmentatsiya"], "correctIndex": 1, "explanation": "Elliptik gapdan farqi: harakat yo'q, faqat borliq." },
+      { "text": "«Москва́... Как мно́го...» — bu qanday vosita?", "options": ["Period", "Сегмента́ция — mavzuni ajratib, olmosh bilan davom ettirish", "Parallelizm", "Anafora"], "correctIndex": 1, "explanation": "Mavzu oldinga chiqariladi, keyin olmosh bilan tiklanadi." },
+      { "text": "Tolstoy va Chexov ritmi qanday farqlanadi?", "options": ["Farqi yo'q", "Tolstoy — uzun davr (sekin, tantanavor); Chexov — qisqa gap (dinamik, keskin)", "Chexov uzun yozadi", "Ikkalasi qisqa"], "correctIndex": 1, "explanation": "Mahorat — kontrastda: uzun va qisqa gapni almashtirib, tempni boshqarish." },
+      { "text": "«Бессою́зие» va «многосою́зие» nimani boshqaradi?", "options": ["Imlo", "Ritm: tezlik ↔ tantanavorlik", "Kelishik", "Aspekt"], "correctIndex": 1, "explanation": "Bog'lovchini tashlash tezlashtiradi, takrorlash tantanavorlik beradi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "04-stilistik-nuanslar-soz-tanlash",
+    "title": "Test — So'z tanlash mahorati",
+    "questions": [
+      { "text": "«скупо́й / эконо́мный / бережли́вый» qanday farqlanadi?", "options": ["Ma'nosi butunlay boshqa", "Konnotatsiya: salbiy (–), neytral (0), ijobiy (+)", "Registr farqi", "Farqi yo'q"], "correctIndex": 1, "explanation": "So'z tanlashda birinchi savol — «qanday baho beryapman?»." },
+      { "text": "«идти́ / шага́ть / плести́сь / семени́ть» — bu qanday sinonimika?", "options": ["Daraja bo'yicha", "Obraz bo'yicha — har biri boshqa kadr, boshqa kayfiyat", "Registr bo'yicha", "Zamon bo'yicha"], "correctIndex": 1, "explanation": "So'z — bu kamera rakursi. Sinonimlar darajada emas, obrazda farqlanadi." },
+      { "text": "«ра́дость от чужо́го го́ря» → «злора́дство» — bu qanday xususiyat?", "options": ["Registr", "Semantik sig'im — bir aniq so'z uzun tavsifni yengadi", "Konnotatsiya", "Tavtologiya"], "correctIndex": 1, "explanation": "Aniqlik va ixchamlik C2 uslubining belgisi." },
+      { "text": "«пе́рвый дебю́т» — bu qanday nuqson?", "options": ["Tavtologiya", "Pleonazm — ortiqchalik", "Kalka", "Paronim"], "correctIndex": 1, "explanation": "Tavtologiya esa takror: масло масляное, спроси́ть вопро́с." },
+      { "text": "«Mot juste» nima?", "options": ["Frantsuz iborasi", "Vaziyatga aynan mos bitta so'zni tanlash", "Kalambur", "Metafora"], "correctIndex": 1, "explanation": "Usta besh savolni beradi: konnotatsiya? ottenka? register? sochetaemost? sig'im?" }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "05-soz-oyini-yazikovaya-igra",
+    "title": "Test — Til o'yini",
+    "questions": [
+      { "text": "Til o'yinining asosiy sharti nima?", "options": ["Kulgili bo'lishi", "Ikki ma'no bir vaqtda tirik yashaydi va to'qnashadi", "Uzun bo'lishi", "Rasmiy bo'lishi"], "correctIndex": 1, "explanation": "Til normasini ataylab buzib, ikki qatlamli ma'no hosil qilish." },
+      { "text": "Kalambur va paronomaziya qanday farqlanadi?", "options": ["Farqi yo'q", "Kalambur — bir so'zning ikki ma'nosi; paronomaziya — ikki ayri o'xshash so'z", "Kalambur — ikki so'z", "Paronomaziya uzunroq"], "correctIndex": 1, "explanation": "Test: «bir so'zmi yoki ikki so'z?». спорт/спирт — paronomaziya; замо́к/за́мок — kalambur." },
+      { "text": "«прихватиза́ция, катастро́йка» — bu qanday hodisa?", "options": ["Neologizm", "Satirik-siyosiy okkazionalizm (kontaminatsiya)", "Arxaizm", "Paronim"], "correctIndex": 1, "explanation": "Bir so'zga butun baho siqiladi. Badiiy okkazionalizm: гро́мадьё (Mayakovskiy)." },
+      { "text": "«Не всё коту́ ма́сленица, быва́ет и дие́та» — bu nima?", "options": ["Yangi maqol", "Frazeologizm transformatsiyasi", "Kalambur", "Anagramma"], "correctIndex": 1, "explanation": "Asl iborani xotirada «yoqishga» tayanadi — o'quvchi asl shaklni bilishi shart." },
+      { "text": "Til o'yinini qanday o'lchov bilan ishlatish kerak?", "options": ["Iloji boricha ko'p", "Ziravor kabi — oz bo'lsa o'tkir, ko'p bo'lsa charchatadi", "Har gapda", "Rasmiy hujjatda ham"], "correctIndex": 1, "explanation": "O'yin izohsiz «portlashi» kerak. Register: she'r, hazil, sarlavhaga — hujjatga emas." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "06-metafora-tizimi",
+    "title": "Test — Metafora tizimi",
+    "questions": [
+      { "text": "C2 darajada metafora nima deb qaraladi?", "options": ["Bezak", "Kognitiv struktura — tafakkur usuli", "Xato", "Faqat she'riy vosita"], "correctIndex": 1, "explanation": "Bir mavhum sohani (цель) aniq soha (исто́чник) orqali o'ylaymiz. Yo'nalish: aniqdan mavhumga." },
+      { "text": "«но́жка стола́» qaysi tiriklik qatlamiga tegishli?", "options": ["Jonli/muallif metaforasi", "O'lik (leksikalashgan) — obraz o'chgan", "So'ngan til metaforasi", "Metafora emas"], "correctIndex": 1, "explanation": "Uch qatlam: мёртвая → стёртая/языкова́я (тёплые отноше́ния) → жива́я/а́вторская." },
+      { "text": "«ЖИЗНЬ — ПУТЬ» qanday tushuncha?", "options": ["Bitta ibora", "Konseptual metafora — o'nlab iborani tug'diradi", "Maqol", "Frazeologizm"], "correctIndex": 1, "explanation": "СПОР — ВОЙНА́, ВРЕ́МЯ — ДЕ́НЬГИ, ИДЕ́И — ЕДА́. Modelni tuting — iboralar tizim bo'lib keladi." },
+      { "text": "OAV da metaforik model tanlash nimani anglatadi?", "options": ["Betaraf bezak", "Fikrni yo'naltiruvchi kuch", "Tasodif", "Grammatik talab"], "correctIndex": 1, "explanation": "ПОЛИ́ТИКА — ВОЙНА́ / ТЕА́ТР / СПОРТ / БОЛЕ́ЗНЬ. C2 mahorat — model orqasidagi niyatni ko'rish." },
+      { "text": "Metafora tahlili algoritmi nechta bosqichdan iborat?", "options": ["3", "6: manba → maqsad → o'xshashlik asosi → model → tiriklik qatlami → ko'lam", "4", "2"], "correctIndex": 1, "explanation": "Bu olti bosqich har qanday metaforani ochadigan kalit." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "07-ironiya-sarkazm-yumor",
+    "title": "Test — Ironiya, sarkazm, yumor",
+    "questions": [
+      { "text": "Yumor, ironiya va sarkazm qanday shkalada joylashadi?", "options": ["Uzunlik bo'yicha", "Achchiqlik shkalasi: mehr → piching → qahr", "Registr bo'yicha", "Zamon bo'yicha"], "correctIndex": 1, "explanation": "Yumor obyektni sevib kuladi; ironiya kesatadi; sarkazm yaralaydi." },
+      { "text": "«то́же мне, ага́ коне́чно» — bular nima?", "options": ["Kirish so'zlar", "Ironiyaning ohang markerlari", "Frazeologizm", "Jargon"], "correctIndex": 1, "explanation": "Yozma matnda ohang eshitilmaydi — faqat kontekst qoladi. Yozma ironiyani ushlash — C2 o'lchovi." },
+      { "text": "Komik effektning nechta mexanizmi bor?", "options": ["3", "6: kutilmaganlik, nomuvofiqlik, mubolag'a, kamaytirish, absurd, so'z o'yini", "4", "8"], "correctIndex": 1, "explanation": "Kuchli hazil ikki-uch mexanizmni birlashtiradi." },
+      { "text": "Gogol formulasi «смех сквозь слёзы» nimani bildiradi?", "options": ["Yumor", "Сати́ра — kulgi ijtimoiy tanqid quroli sifatida", "Sarkazm", "Anekdot"], "correctIndex": 1, "explanation": "Saltikov-Shchedrin, Gogol, Zoshchenko, Ilf-Petrov — satira an'anasi." },
+      { "text": "Anekdot arxitekturasi qanday?", "options": ["Kirish → xulosa", "Завя́зка → kuchlanish → пуа́нт (kutilmagan yakun)", "Tezis → dalil", "Erkin"], "correctIndex": 1, "explanation": "Punchline'ni oxirigacha yashiring — kutish yiqilishi kulgi chiqaradi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "08-podtekst-implikatura",
+    "title": "Test — Podtekst va implikatura",
+    "questions": [
+      { "text": "«Aysberg» printsipi nimani anglatadi?", "options": ["Sovuq uslub", "Yuzada arzimas gap, ostida asosiy dramma", "Uzun matn", "Qisqa gap"], "correctIndex": 1, "explanation": "Chexov maktabi va Xeminguey — podtekstning klassik manbalari." },
+      { "text": "«У вас есть часы́?» — bu qanday hodisa?", "options": ["Oddiy savol", "Импликату́ра — maksimni buzish orqali yashirin ma'no", "Presuppozitsiya", "Evfemizm"], "correctIndex": 1, "explanation": "Grice maksimlari: miqdor, sifat, aloqadorlik, uslub." },
+      { "text": "«Он переста́л кури́ть» gapida qanday yashirin da'vo bor?", "options": ["U hozir chekadi", "Ilgari chekkan", "U hech qachon chekmagan", "Da'vo yo'q"], "correctIndex": 1, "explanation": "Пресуппози́ция — gap strukturasiga singdirilgan da'vo; yuklamali savollar tuzog'i." },
+      { "text": "«Уже́ по́здно...» — bu qanday vosita?", "options": ["Fakt", "Намёк — «yuzni saqlash» vositasi", "Evfemizm", "Sarkazm"], "correctIndex": 1, "explanation": "Fikrni yumshoq ishora bilan yetkazish." },
+      { "text": "«Э́зопов язы́к» nima?", "options": ["Qadimgi til", "Senzura sharoitidagi allegorik yashirin fikr", "Bolalar tili", "Kasbiy til"], "correctIndex": 1, "explanation": "Умолча́ние va недоска́занность bilan bir qatorda — yashirin ma'no vositasi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "06-c2-mahorat", "article": "09-adabiy-til-nasr-tahlili",
+    "title": "Test — Nasr tahlili",
+    "questions": [
+      { "text": "«Идиости́ль» nima?", "options": ["Uslub xatosi", "Yozuvchining betakror til dunyosi", "Janr", "Registr"], "correctIndex": 1, "explanation": "Leksika + sintaksis + obraz + detal birga." },
+      { "text": "Chexov idiostilining belgisi qaysi?", "options": ["Uzun davr", "Ixchamlik, detal, podtekst", "Giperbola va grotesk", "Asabiy sintaksis"], "correctIndex": 1, "explanation": "Tolstoy — uzun davr; Dostoyevskiy — надры́в; Gogol — grotesk; Platonov — begonalashtirish." },
+      { "text": "«Сказ» nima?", "options": ["Ertak", "Og'zaki, xalq nutqi niqobidagi hikoya", "Muallif hikoyasi", "Ichki monolog"], "correctIndex": 1, "explanation": "Повествова́тель tizimi: muallif hikoyasi, rasskazchik-«я», skaz. Birinchi savol — «kim gapiryapti?»." },
+      { "text": "Badiiy detalning uch turi qaysi?", "options": ["Katta, o'rta, kichik", "Detal-simvol, detal-xarakteristika, psixologik detal", "Boshlanish, o'rta, yakun", "Rangli, tovushli, hidli"], "correctIndex": 1, "explanation": "Usta yozuvchida bejiz detal yo'q." },
+      { "text": "Tahlil algoritmi qanday?", "options": ["Vositalarni sanash", "Vositani topish → funksiyasini aniqlash → asar g'oyasi bilan bog'lash", "Faqat sitata keltirish", "Faqat mazmun aytish"], "correctIndex": 1, "explanation": "Vositani sanash — tahlil emas; funksiyani ko'rish va g'oyaga ulash — tahlil." }
+    ]
+  }
+]

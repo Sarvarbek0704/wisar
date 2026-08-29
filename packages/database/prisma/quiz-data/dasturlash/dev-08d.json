@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "24-rasm-qayta-ishlash-sharp",
+    "title": "Test — Rasm qayta ishlash (sharp)",
+    "questions": [
+      { "text": "Zamonaviy web uchun qaysi rasm formati afzal?", "options": ["BMP", "WebP yoki AVIF", "GIF", "TIFF"], "correctIndex": 1, "explanation": "Bir xil sifatda sezilarli kichikroq hajm beradi." },
+      { "text": "«EXIF tozalash» nima uchun kerak?", "options": ["Hajm", "Maxfiylik — GPS va qurilma ma'lumoti olib tashlanadi", "Sifat", "Format"], "correctIndex": 1, "explanation": "Foydalanuvchi rasmida joylashuv ma'lumoti bo'lishi mumkin." },
+      { "text": "«limitInputPixels» nima uchun sozlanadi?", "options": ["Sifat", "Decompression bomb (DoS) hujumidan himoya", "Format", "Tezlik"], "correctIndex": 1, "explanation": "Kichik fayl ochilganda ulkan rasmga aylanishi mumkin." },
+      { "text": "Responsive rasm uchun nima qilinadi?", "options": ["Bitta katta rasm", "Bir necha o'lchamda variant generatsiya qilish", "SVG", "Base64"], "correctIndex": 1, "explanation": "srcset bilan brauzer mos o'lchamni tanlaydi." },
+      { "text": "Og'ir rasm qayta ishlash qayerda bajarilishi kerak?", "options": ["So'rov ichida", "Navbatda (background job)", "Frontendda", "DB'da"], "correctIndex": 1, "explanation": "Aks holda yuklash so'rovi uzoq davom etadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "25-multi-tenancy-saas",
+    "title": "Test — Multi-tenancy (SaaS)",
+    "questions": [
+      { "text": "Multi-tenancy'ning uch strategiyasi qaysi?", "options": ["Faqat shared", "Shared schema, schema-per-tenant, database-per-tenant", "Faqat DB", "Ikki strategiya"], "correctIndex": 1, "explanation": "Izolyatsiya darajasi va narx o'rtasidagi savdo." },
+      { "text": "Shared schema'da tenant qanday ajratiladi?", "options": ["Alohida jadval", "tenant_id ustuni va avtomatik filtr", "Alohida baza", "Cache"], "correctIndex": 1, "explanation": "Filtrni unutish — eng xavfli xato." },
+      { "text": "PostgreSQL RLS nima beradi?", "options": ["Tezlik", "DB darajasida qator-qator kirish nazorati", "Index", "Cache"], "correctIndex": 1, "explanation": "Ilova xatosi bo'lsa ham ma'lumot oqib ketmaydi." },
+      { "text": "Tenant qanday aniqlanadi?", "options": ["Tasodifiy", "Subdomain yoki JWT claim orqali", "IP orqali", "Cookie faqat"], "correctIndex": 1, "explanation": "Middleware yoki guard tenant kontekstini o'rnatadi." },
+      { "text": "Multi-tenancy'da eng kritik masala qaysi?", "options": ["Tezlik", "Izolyatsiya — bir tenant boshqasining ma'lumotini ko'rmasligi", "Dizayn", "Log"], "correctIndex": 1, "explanation": "Ma'lumot oqishi SaaS uchun halokatli hodisa." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "26-audit-log-faoliyat-tarixi",
+    "title": "Test — Audit log",
+    "questions": [
+      { "text": "Audit log oddiy logdan nimasi bilan farq qiladi?", "options": ["Formati", "Kim, nima, qachon — biznes hodisalari va dalil sifatida saqlanadi", "Hajmi", "Joyi"], "correctIndex": 1, "explanation": "Texnik log debug uchun, audit log javobgarlik uchun." },
+      { "text": "Audit yozuvi qanday bo'lishi kerak?", "options": ["O'zgartiriladigan", "Immutable — o'zgarmas", "Vaqtinchalik", "Cache'da"], "correctIndex": 1, "explanation": "Aks holda u dalil sifatida qiymatini yo'qotadi." },
+      { "text": "Avtomatik audit qanday amalga oshiriladi?", "options": ["Qo'lda har joyda", "Interceptor yoki ORM subscriber orqali", "Cron bilan", "Trigger faqat"], "correctIndex": 1, "explanation": "Markazlashtirilgan yechim unutib qoldirishning oldini oladi." },
+      { "text": "«Diff» nima uchun saqlanadi?", "options": ["Hajm", "Eski va yangi qiymat — nima o'zgarganini ko'rsatish uchun", "Tezlik", "Index"], "correctIndex": 1, "explanation": "«Kim narxni qachon o'zgartirdi» kabi savollarga javob beradi." },
+      { "text": "Katta hajmli audit log bilan nima qilinadi?", "options": ["O'chiriladi", "Partition va arxivlash", "Cache'ga", "Hech narsa"], "correctIndex": 1, "explanation": "Compliance talablariga ko'ra saqlash muddati belgilanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "27-api-versioning",
+    "title": "Test — API versioning",
+    "questions": [
+      { "text": "Qaysi o'zgarish «breaking» hisoblanadi?", "options": ["Yangi ixtiyoriy maydon qo'shish", "Maydonni o'chirish yoki nomini o'zgartirish", "Yangi endpoint", "Hujjat yangilash"], "correctIndex": 1, "explanation": "Mavjud mijozlar kodi ishlamay qoladi." },
+      { "text": "NestJS qaysi versioning turlarini qo'llab-quvvatlaydi?", "options": ["Faqat URI", "URI, HEADER, MEDIA_TYPE, CUSTOM", "Faqat header", "Hech qaysi"], "correctIndex": 1, "explanation": "enableVersioning va @Version dekoratori bilan sozlanadi." },
+      { "text": "Versiyalar orasida kod qanday ulashiladi?", "options": ["Nusxalanadi", "Umumiy service va DTO'lar ishlatiladi", "Ulashilmaydi", "Copy-paste"], "correctIndex": 1, "explanation": "Faqat controller qatlami versiyaga xos bo'ladi." },
+      { "text": "«VERSION_NEUTRAL» nima beradi?", "options": ["Yangi versiya", "Endpoint barcha versiyalarda ishlaydi", "O'chiradi", "Deprecate qiladi"], "correctIndex": 1, "explanation": "Health check kabi umumiy endpointlar uchun qulay." },
+      { "text": "Eski versiyani to'xtatish qanday amalga oshiriladi?", "options": ["Darhol o'chirish", "Deprecation — ogohlantirish va bosqichma-bosqich", "Hech qachon", "Bir kunda"], "correctIndex": 1, "explanation": "Mijozlarga migratsiya uchun vaqt berish kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "28-geolokatsiya-xaritalar",
+    "title": "Test — Geolokatsiya",
+    "questions": [
+      { "text": "Ikki nuqta orasidagi masofa qanday hisoblanadi?", "options": ["Pifagor", "Haversine formulasi", "Manhattan", "Evklid"], "correctIndex": 1, "explanation": "Yer sharsimon — tekislik formulasi noto'g'ri natija beradi." },
+      { "text": "MongoDB'da geo-qidiruv uchun qaysi indeks kerak?", "options": ["B-tree", "2dsphere", "text", "hashed"], "correctIndex": 1, "explanation": "$near, $geoWithin va $geoNear shu indeksga tayanadi." },
+      { "text": "PostgreSQL'da geo uchun nima ishlatiladi?", "options": ["JSON", "PostGIS kengaytmasi", "Array", "Text"], "correctIndex": 1, "explanation": "ST_Distance, ST_DWithin va GiST indeks bilan ishlaydi." },
+      { "text": "«Geocoding» nima?", "options": ["Shifrlash", "Manzil ↔ koordinata aylantirish", "Masofa", "Indeks"], "correctIndex": 1, "explanation": "Teskari geocoding koordinatadan manzil beradi." },
+      { "text": "Real-time kuzatuv uchun nima ishlatiladi?", "options": ["Faqat DB", "Redis GEO + WebSocket", "Cron", "Email"], "correctIndex": 1, "explanation": "Tez-tez yangilanadigan joylashuv uchun DB yozuvi qimmat." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "29-subscription-davriy-tolov",
+    "title": "Test — Obuna va davriy to'lov",
+    "questions": [
+      { "text": "«MRR» nima?", "options": ["Xato kodi", "Oylik takroriy daromad — obuna biznesining asosiy ko'rsatkichi", "To'lov usuli", "Reja turi"], "correctIndex": 1, "explanation": "Bir martalik to'lovdan farqli — bashoratli daromad." },
+      { "text": "«Proration» nima?", "options": ["Chegirma", "Reja o'zgarganda qolgan davr uchun narxni qayta hisoblash", "Soliq", "Refund"], "correctIndex": 1, "explanation": "Upgrade va downgrade holatlarida ishlatiladi." },
+      { "text": "«Dunning» nima?", "options": ["Bekor qilish", "To'lov muvaffaqiyatsiz bo'lganda qayta urinish va xabar berish jarayoni", "Chegirma", "Trial"], "correctIndex": 1, "explanation": "Karta muddati tugagan holatlarda foydalanuvchini saqlab qoladi." },
+      { "text": "Obuna holati qanday sinxronlanadi?", "options": ["Cron bilan", "Webhook orqali", "Qo'lda", "Cache bilan"], "correctIndex": 1, "explanation": "Provayder holat o'zgarishlarini o'zi xabar qiladi." },
+      { "text": "«Entitlement» nima?", "options": ["To'lov", "Reja → foydalanuvchiga ochiladigan xizmatlar to'plami", "Chegirma", "Hisob"], "correctIndex": 1, "explanation": "Kod «bu foydalanuvchi bu funksiyaga haqlimi?» deb tekshiradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "08-qism-nestjs", "article": "30-i18n-kop-til-backend",
+    "title": "Test — Backend i18n",
+    "questions": [
+      { "text": "Nega backendda ham i18n kerak?", "options": ["Kerak emas", "Xato xabarlari, email va DB kontenti tilga bog'liq", "Faqat frontend", "Dizayn uchun"], "correctIndex": 1, "explanation": "Validatsiya xabarlari ham tarjima qilinishi kerak." },
+      { "text": "Til qanday aniqlanadi?", "options": ["Faqat IP", "Query parametr, foydalanuvchi profili yoki Accept-Language header", "Cookie faqat", "Tasodifiy"], "correctIndex": 1, "explanation": "nestjs-i18n turli resolverlarni ketma-ket sinaydi." },
+      { "text": "Dinamik kontent (mahsulot nomi) qanday tarjima qilinadi?", "options": ["Fayl bilan", "DB'da ko'p tilli maydonlar yoki tarjima jadvali bilan", "Frontendda", "Tarjima qilinmaydi"], "correctIndex": 1, "explanation": "Statik matnlar esa JSON fayllarda saqlanadi." },
+      { "text": "Sana va valyuta formatlash uchun nima ishlatiladi?", "options": ["toString", "Intl API", "moment", "Custom"], "correctIndex": 1, "explanation": "Intl.DateTimeFormat va Intl.NumberFormat — standart yechim." },
+      { "text": "«Fallback» til nima uchun kerak?", "options": ["Tezlik", "Tarjima topilmasa zaxira tilga qaytish", "Xavfsizlik", "Cache"], "correctIndex": 1, "explanation": "ICU plural qoidalari ham til bo'yicha farq qiladi." }
+    ]
+  }
+]

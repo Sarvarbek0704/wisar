@@ -1,0 +1,134 @@
+[
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "01-a2-takror-b1-kirish",
+    "title": "Test — B1 ga kirish",
+    "questions": [
+      { "text": "B1 darajasi nimani anglatadi?", "options": ["Boshlang'ich", "Mustaqil foydalanuvchi (ТРКИ-1)", "Ona tili darajasi", "Faqat o'qish"], "correctIndex": 1, "explanation": "B1 — mustaqil foydalanuvchi: o'zingiz, ishingiz, rejalaringiz haqida erkin gapira olasiz. ТРКИ-1 ga mos." },
+      { "text": "B1 ning yangi bloklaridan qaysi biri A2 da BO'LMAGAN?", "options": ["Aspekt", "Harakat fe'llari", "Sifatdosh (прича́стие)", "Ergash gaplar"], "correctIndex": 2, "explanation": "Sifatdosh va ravishdosh — B1 ning butunlay yangi mavzulari. Aspekt, harakat fe'llari, ergash gaplar A2 da boshlangan." },
+      { "text": "«прича́стие» o'zbekcha qaysi shaklga mos keladi?", "options": ["…b / …b turib", "…ayotgan / …adigan (sifatdosh)", "…gani uchun", "…moqchi"], "correctIndex": 1, "explanation": "прича́стие — sifatdosh: chitayotgan odam, o'qilgan kitob. дееприча́стие esa «…b turib»." },
+      { "text": "B1 da nechta asosiy blok bor?", "options": ["4", "6", "8", "12"], "correctIndex": 2, "explanation": "8 blok: aspekt nuanslari, prefiksli harakat fe'llari, sifatdosh, ravishdosh, murakkab ergash gaplar, passiv, so'z yasash, funksional/yozma til." },
+      { "text": "«зало́г» atamasi nimani bildiradi?", "options": ["Zamon", "Nisbat (aktiv/passiv)", "Kelishik", "Rod"], "correctIndex": 1, "explanation": "зало́г — nisbat: действи́тельный (aktiv) va страда́тельный (passiv). B1 da passiv o'rganiladi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "02-aspektlar-chuqur-nuanslar",
+    "title": "Test — Aspektlarning nozik ma'nolari",
+    "questions": [
+      { "text": "«Я откры́л окно́» va «Я открыва́л окно́» — farqi nimada?", "options": ["Farqi yo'q", "откры́л — hozir ochiq; открыва́л — ochib, yopdi", "открыва́л — kelasi zamon", "откры́л — takror"], "correctIndex": 1, "explanation": "СОВ da natija SAQLANADI (deraza hali ochiq). НЕСОВ — bekor qilingan harakat: ochdi, keyin yopdi." },
+      { "text": "«Он уе́хал» nima ma'noni beradi?", "options": ["Ketdi va qaytdi", "Ketdi va hali yo'q", "Ketmoqchi", "Ketayotgan edi"], "correctIndex": 1, "explanation": "СОВ natijasi saqlanadi: уе́хал = ketdi, hozir yo'q. уезжа́л = ketgan edi, lekin qaytib kelgan." },
+      { "text": "«Вы чита́ли «Войну́ и мир»?» — nega НСВ?", "options": ["Xato", "Umumiy tajriba so'ralyapti, natija muhim emas", "Bu takror harakat", "Bu kelasi zamon"], "correctIndex": 1, "explanation": "НСВ ning maxsus ma'nosi — umumiy fakt/tajriba: «umuman o'qiganmisiz?». Qachon va tugatganmi — muhim emas." },
+      { "text": "«Вдруг он по́нял» — nega СОВ?", "options": ["Takror uchun", "Kutilmagan, to'satdan sodir bo'lgan", "Jarayon uchun", "Bu НСВ"], "correctIndex": 1, "explanation": "СОВ ning ma'nolaridan biri — kutilmaganlik/to'satdanlik: вдруг, неожи́данно bilan keladi." },
+      { "text": "«Он приходи́л» nima degani?", "options": ["Keldi va shu yerda", "Keldi va ketdi", "Kelmoqchi", "Kelayotgan edi"], "correctIndex": 1, "explanation": "приходи́л (НСВ) — keldi-ketdi (bekor qilingan). пришёл (СОВ) — keldi va shu yerda." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "03-aspekt-va-infinitiv",
+    "title": "Test — Aspekt va infinitiv",
+    "questions": [
+      { "text": "«нача́ть» fe'lidan keyin qaysi aspekt keladi?", "options": ["Faqat НСВ", "Faqat СОВ", "Ikkalasi ham", "Infinitiv kelmaydi"], "correctIndex": 0, "explanation": "Boshlanish/davom/tugash fe'llari (нача́ть, продолжа́ть, ко́нчить, переста́ть) FAQAT НСВ oladi: на́чал чита́ть." },
+      { "text": "«Я успе́л ___ кни́гу» — to'g'ri shakl?", "options": ["чита́ть", "прочита́ть", "чита́я", "прочита́в"], "correctIndex": 1, "explanation": "успе́ть — natija/muvaffaqiyat fe'li → FAQAT СОВ: успе́л прочита́ть (o'qib ulgurdim)." },
+      { "text": "Nega «нача́ть» НСВ, «успе́ть» esa СОВ oladi?", "options": ["Tasodifiy", "нача́ть — jarayonga, успе́ть — natijaga ishora qiladi", "Urg'u tufayli", "Ikkalasi ham СОВ oladi"], "correctIndex": 1, "explanation": "Mantiq: boshlanish/davomiylik → jarayon → НСВ. Ulgurish/muvaffaqiyat → natija → СОВ." },
+      { "text": "«Я забы́л ___» (sotib olishni unutdim) — to'g'ri shakl?", "options": ["покупа́ть", "купи́ть", "куплю́", "покупа́я"], "correctIndex": 1, "explanation": "забы́ть natija ma'nosida → СОВ: забы́л купи́ть (sotib olmadim). Lekin «забы́л, как э́то де́лается» — ko'nikma, НСВ." },
+      { "text": "Qaysi fe'l FAQAT НСВ infinitiv oladi?", "options": ["успе́ть", "суме́ть", "привы́кнуть", "уда́ться"], "correctIndex": 2, "explanation": "привы́кнуть (odatlanmoq) — odat/takror → НСВ: привы́к встава́ть ра́но. Qolganlari natija fe'llari → СОВ." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "04-aspekt-buyruq-maylida",
+    "title": "Test — Aspekt buyruq maylida",
+    "questions": [
+      { "text": "«Не де́лай э́того!» — qaysi ma'no?", "options": ["Ogohlantirish", "Taqiq (umuman qilma)", "Iltimos", "Taklif"], "correctIndex": 1, "explanation": "INKOR buyruqda НСВ = TAQIQ: не де́лай, не опа́здывай (umuman qilma)." },
+      { "text": "«Не забу́дь!» — nega СОВ?", "options": ["Taqiq uchun", "Ogohlantirish — tasodifiy yomon natijadan", "Xato", "Takror uchun"], "correctIndex": 1, "explanation": "INKOR + СОВ = OGOHLANTIRISH: не забу́дь (unutib qo'yma), не упади́ (yiqilib tushma), не потеря́й." },
+      { "text": "«Заходи́те!» (mehmondo'stlik) — nega НСВ?", "options": ["Xato", "Taklif/mehmondo'stlik ma'nosi НСВ bilan", "Bu taqiq", "СОВ shakli yo'q"], "correctIndex": 1, "explanation": "TASDIQ buyruqda НСВ = taklif, mehmondo'stlik, davom: Заходи́те! Сади́сь! Чита́й дальше!" },
+      { "text": "«Прочита́й э́то письмо́» — qaysi ma'no?", "options": ["Umuman o'qib yur", "Aniq, bir martalik, natijaga yo'naltirilgan buyruq", "Taqiq", "Ogohlantirish"], "correctIndex": 1, "explanation": "TASDIQ + СОВ = aniq, bir martalik, tugatishga yo'naltirilgan: прочита́й, купи́, закро́й." },
+      { "text": "Inkor buyruqda mantiq qanday?", "options": ["Tasdiq bilan bir xil", "Teskari: НСВ = taqiq, СОВ = ogohlantirish", "Faqat НСВ ishlatiladi", "Faqat СОВ ishlatiladi"], "correctIndex": 1, "explanation": "Bu — darsning kaliti: inkorda mantiq TESKARI bo'ladi. Tasdiqda СОВ = aniq buyruq, inkorda СОВ = ogohlantirish." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "05-harakat-fellari-prefiks-pri-u",
+    "title": "Test — при- va у- prefikslari",
+    "questions": [
+      { "text": "«прийти́» va «приходи́ть» — aspekt farqi qanday hosil bo'ladi?", "options": ["Urg'u bilan", "Prefiks + bir yo'nalishli = СОВ; prefiks + ko'p yo'nalishli = НЕСОВ", "Tasodifiy", "Farqi yo'q"], "correctIndex": 1, "explanation": "при- + идти́ (bir yo'nalishli) = прийти́ (СОВ). при- + ходи́ть (ko'p yo'nalishli) = приходи́ть (НЕСОВ)." },
+      { "text": "«при-» prefiksi qanday ma'no beradi?", "options": ["Ketish", "Kelish, yetib kelish", "Kirish", "Chiqish"], "correctIndex": 1, "explanation": "при- = kelish: прийти́ домо́й, прие́хать в го́род, принести́ (olib kelmoq)." },
+      { "text": "«у-» prefiksi qanday ma'no beradi?", "options": ["Kelish", "Ketish, jo'nab ketish", "Yaqinlashish", "Kirish"], "correctIndex": 1, "explanation": "у- = ketish: уйти́ с рабо́ты, уе́хать из го́рода, унести́ (olib ketmoq)." },
+      { "text": "«принести́» nima degani?", "options": ["Olib ketmoq", "Olib kelmoq", "Ko'tarmoq", "Yubormoq"], "correctIndex": 1, "explanation": "при- (kelish) + нести́ (ko'tarib bormoq) = olib kelmoq. Aksi: унести́ — olib ketmoq." },
+      { "text": "«прийти́» qaysi predlog bilan keladi?", "options": ["из + Р.", "к + Д. yoki в/на + В.", "от + Р.", "с + Т."], "correctIndex": 1, "explanation": "прийти́ К кому́ (kishiga) yoki В/НА куда́ (joyga). уйти́ esa ОТ кого́ / ИЗ-С отку́да." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "06-harakat-fellari-prefiks-v-vy",
+    "title": "Test — в-/вы-, под-/от- prefikslari",
+    "questions": [
+      { "text": "«войти́» qaysi predlog bilan?", "options": ["из + Р.", "в + В.", "к + Д.", "от + Р."], "correctIndex": 1, "explanation": "Prefiks va predlog juft ishlaydi: войти́ В ко́мнату (В.к.). Aksi: вы́йти ИЗ ко́мнаты (Р.к.)." },
+      { "text": "«подойти́» qaysi predlog bilan?", "options": ["в + В.", "к + Д.", "из + Р.", "с + Т."], "correctIndex": 1, "explanation": "под- (yaqinlashish) → к + Д.: подойти́ к столу́. Aksi: отойти́ ОТ стола́ (Р.к.)." },
+      { "text": "«вы-» prefiksi qanday ma'no beradi?", "options": ["Ichkariga", "Tashqariga chiqish", "Yaqinlashish", "Kelish"], "correctIndex": 1, "explanation": "вы- = tashqariga: вы́йти из до́ма, вы́ехать из го́рода, вы́нести (tashqariga olib chiqmoq)." },
+      { "text": "«от-» prefiksi qanday ma'no beradi?", "options": ["Yaqinlashish", "Uzoqlashish, nariga surilish", "Kirish", "Kelish"], "correctIndex": 1, "explanation": "от- = uzoqlashish: отойти́ от окна́ (derazadan nariga surilmoq)." },
+      { "text": "«вы́йти» fe'lida urg'u qayerda?", "options": ["Oxirida", "«вы́» prefiksida", "O'rtada", "Urg'u yo'q"], "correctIndex": 1, "explanation": "вы- prefiksi СОВ fe'llarda DOIM urg'uni o'ziga tortadi: вы́йти, вы́ехать, вы́нести." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "07-harakat-fellari-prefiks-po-do-za-pere",
+    "title": "Test — по-, до-, за-, пере- prefikslari",
+    "questions": [
+      { "text": "«по-» prefiksining asosiy ma'nosi qaysi?", "options": ["Tugatish", "Boshlanish (jo'namoq)", "Qaytish", "Takror"], "correctIndex": 1, "explanation": "по- = harakat boshlanishi: пошёл, пое́ду (jo'nab ketdi/ketaman). Ikkinchi ma'no — «biroz vaqt»: погуля́ть." },
+      { "text": "«до-» prefiksi qaysi predlog bilan?", "options": ["в + В.", "до + Р.", "к + Д.", "от + Р."], "correctIndex": 1, "explanation": "до- doim до + Родительный: дойти́ до угла́, дое́хать до це́нтра (…gacha yetib bormoq)." },
+      { "text": "«зайти́ к дру́гу» nima degani?", "options": ["Do'stdan ketmoq", "Do'stникига yo'l-yo'lakay kirib o'tmoq", "Do'st bilan bormoq", "Do'stni chaqirmoq"], "correctIndex": 1, "explanation": "за- = yo'l-yo'lakay kirib o'tish: зайти́ к дру́гу, зае́хать в магази́н." },
+      { "text": "«пере-» prefiksi qanday ma'no beradi?", "options": ["Kirish", "Narigi tomonga kesib o'tish", "Chiqish", "Boshlanish"], "correctIndex": 1, "explanation": "пере- = kesib o'tish: перейти́ у́лицу, перее́хать в друго́й го́род (ko'chib o'tmoq)." },
+      { "text": "«пройти́ ми́мо» nima degani?", "options": ["Kirib o'tmoq", "Yonidan o'tib ketmoq", "Yetib bormoq", "Qaytmoq"], "correctIndex": 1, "explanation": "про- = yonidan/oralab o'tish: пройти́ ми́мо до́ма, прое́хать остано́вку (bekatni o'tkazib yubormoq)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "08-harakat-fellari-nesti-vesti-vezti",
+    "title": "Test — нести, вести, везти",
+    "questions": [
+      { "text": "«нести́», «вести́», «везти́» farqi nimada?", "options": ["Farqi yo'q", "нести́ — qo'lda, вести́ — yetaklab, везти́ — transportda", "Faqat aspekt farqi", "Faqat urg'u farqi"], "correctIndex": 1, "explanation": "нести́ сумку (qo'lda), вести́ ребёнка (yetaklab), везти́ ве́щи (transportda olib bormoq)." },
+      { "text": "«носи́ть» fe'lining ko'chma ma'nosi qaysi?", "options": ["Yugurmoq", "Kiyim kiymoq", "Uchmoq", "Suzmoq"], "correctIndex": 1, "explanation": "носи́ть — ko'chma ma'noda «kiymoq» (doimiy): Он но́сит очки́. Yana: носи́ть фами́лию." },
+      { "text": "«Мне везёт» nima degani?", "options": ["Meni olib ketishyapti", "Menga omad kelyapti", "Men olib boryapman", "Men yuguraman"], "correctIndex": 1, "explanation": "везти́ ning ko'chma ma'nosi — omad: Мне везёт! (omadim bor). Shaxssiz konstruksiya, DATIV bilan." },
+      { "text": "«умею пла́вать» — nega «пла́вать», «плыть» emas?", "options": ["Xato", "Ko'nikma — ko'p yo'nalishli fe'l", "Urg'u tufayli", "Farqi yo'q"], "correctIndex": 1, "explanation": "Ko'nikma/umumiy qobiliyat → ko'p yo'nalishli fe'l: уме́ю пла́вать. Ayni damda: Я плыву́ к бе́регу." },
+      { "text": "«вести́ себя́» nima degani?", "options": ["O'zini olib bormoq", "O'zini tutmoq (xulq)", "Yetaklamoq", "Boshqarmoq"], "correctIndex": 1, "explanation": "Turg'un ibora: вести́ себя́ хорошо́ — o'zini yaxshi tutmoq. Yana: вести́ маши́ну (haydash), вести́ перегово́ры." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "09-sifatdosh-hozirgi-aktiv",
+    "title": "Test — Hozirgi zamon aktiv sifatdoshi",
+    "questions": [
+      { "text": "«чита́ющий» qaysi shakldan yasalgan?", "options": ["чита́ть (infinitiv)", "чита́ют («они́» shakli)", "чита́л (o'tgan)", "чита́й (buyruq)"], "correctIndex": 1, "explanation": "«они́» shaklidan -т olib tashlanadi + qo'shimcha: чита́ют → чита́ю- → чита́ющий." },
+      { "text": "I tuslanish fe'llari qaysi qo'shimchani oladi?", "options": ["-ащ-/-ящ-", "-ущ-/-ющ-", "-вш-", "-нн-"], "correctIndex": 1, "explanation": "I tuslanish (они́ -ут/-ют) → -ущ-/-ющ-: чита́ющий. II tuslanish (они́ -ат/-ят) → -ащ-/-ящ-: говоря́щий." },
+      { "text": "«говоря́щий» qaysi fe'ldan?", "options": ["говори́ть (II tuslanish)", "говора́ть", "сказа́ть", "разговори́ть"], "correctIndex": 0, "explanation": "говори́ть → они́ говоря́т → говоря́щий (-ящ-, chunki II tuslanish)." },
+      { "text": "Sifatdosh qanday turlanadi?", "options": ["Fe'ldek tuslanadi", "Sifatdek — rod, son, kelishik bo'yicha", "O'zgarmaydi", "Faqat rod bo'yicha"], "correctIndex": 1, "explanation": "Sifatdosh — fe'l ma'nosi + sifat turlanishi: чита́ющий студе́нт, чита́ющая де́вушка, чита́ющего студе́нта." },
+      { "text": "«челове́к, чита́ющий кни́гу» — «кото́рый» bilan qanday bo'ladi?", "options": ["кото́рый чита́ет кни́гу", "кото́рого чита́ет кни́га", "кото́рому чита́ют", "кото́рым чита́ется"], "correctIndex": 0, "explanation": "Aktiv sifatdosh → кото́рый EGA sifatida + o'sha zamon: чита́ющий = кото́рый чита́ет." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "10-sifatdosh-otgan-aktiv",
+    "title": "Test — O'tgan zamon aktiv sifatdoshi",
+    "questions": [
+      { "text": "«прочита́вший» qaysi shakldan yasalgan?", "options": ["прочита́ют", "прочита́л (o'tgan zamon)", "прочита́ть", "прочита́й"], "correctIndex": 1, "explanation": "O'tgan zamondan -л olib tashlanadi + -вш- + ий: прочита́л → прочита́вший." },
+      { "text": "Undoshli o'zak (–л yo'q) qaysi qo'shimchani oladi?", "options": ["-вш-", "-ш-", "-ющ-", "-нн-"], "correctIndex": 1, "explanation": "Unlidan keyin -вш- (чита́вший), undoshdan keyin -ш-: нёс → нёсший, пришёл → прише́дший." },
+      { "text": "«прише́дший» — nega bunday shakl?", "options": ["Oddiy qoida", "Istisno — o'zak «шед-»", "Xato", "Bu hozirgi zamon"], "correctIndex": 1, "explanation": "прийти́ ning o'zagi шед- → прише́дший. Bu — yodlanadigan istisno." },
+      { "text": "«чита́вший» va «прочита́вший» farqi nimada?", "options": ["Farqi yo'q", "НСВ — jarayon; СОВ — natija (o'qib bo'lgan)", "Birinchisi hozirgi zamon", "Ikkinchisi ko'plik"], "correctIndex": 1, "explanation": "Aspekt sifatdoshda ham saqlanadi: чита́вший (o'qib o'tirgan) ↔ прочита́вший (o'qib bo'lgan)." },
+      { "text": "СОВ fe'lda hozirgi zamon aktiv sifatdoshi bormi?", "options": ["Ha, bor", "Yo'q — faqat o'tgan", "Faqat passiv shakli bor", "Faqat ko'plikda"], "correctIndex": 1, "explanation": "СОВ da hozirgi zamon yo'q, shuning uchun hozirgi aktiv sifatdosh ham yasalmaydi. Faqat прочита́вший." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "11-sifatdosh-passiv",
+    "title": "Test — Passiv sifatdosh",
+    "questions": [
+      { "text": "Passiv sifatdosh nimani tavsiflaydi?", "options": ["Harakatni bajaruvchini", "Harakat OBYEKTINI", "Vaqtni", "Joyni"], "correctIndex": 1, "explanation": "Aktiv — kim qiladi (чита́ющий — o'qiyotgan odam). Passiv — nima ustida qilinadi (прочи́танная кни́га — o'qilgan kitob)." },
+      { "text": "«прочи́танный» qaysi qo'shimcha bilan yasalgan?", "options": ["-ем-", "-нн-", "-ущ-", "-вш-"], "correctIndex": 1, "explanation": "O'tgan passiv sifatdosh: -нн- (прочи́танный), -енн- (постро́енный), -т- (откры́тый)." },
+      { "text": "«люби́мый» qaysi turdagi sifatdosh?", "options": ["Hozirgi passiv", "O'tgan aktiv", "O'tgan passiv", "Ravishdosh"], "correctIndex": 0, "explanation": "Hozirgi passiv (-ем/-им): люби́мый, уважа́емый, необходи́мый. Ular ko'pincha oddiy sifat bo'lib ketgan." },
+      { "text": "Passiv sifatdosh qaysi fe'llardan yasaladi?", "options": ["Barcha fe'llardan", "Faqat o'timli (переходный) fe'llardan", "Faqat qaytim fe'llardan", "Faqat harakat fe'llaridan"], "correctIndex": 1, "explanation": "Passiv sifatdosh faqat obyekt oladigan (o'timli) fe'llardan: чита́ть кни́гу → прочи́танная кни́га. «идти́» dan yasalmaydi." },
+      { "text": "«откры́тый» qaysi qo'shimcha bilan?", "options": ["-нн-", "-енн-", "-т-", "-ем-"], "correctIndex": 2, "explanation": "-т- qo'shimchasi: откры́тый, закры́тый, забы́тый, взя́тый." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "03-b1-orta", "article": "12-qisqa-sifatdosh",
+    "title": "Test — Qisqa sifatdosh va passiv gap",
+    "questions": [
+      { "text": "«прочи́танный» ning qisqa shakli qaysi?", "options": ["прочи́танн", "прочи́тан", "прочи́тано", "прочи́танный"], "correctIndex": 1, "explanation": "-нн → -н (BITTA «н»): прочи́танный → прочи́тан. Ayol: прочи́тана, o'rta: прочи́тано." },
+      { "text": "«Рома́н напи́сан Толсты́м» — «Толсты́м» nega vosita kelishigida?", "options": ["Xato", "Passiv gapda bajaruvchi vosita kelishigida", "Bu ega", "Bu qaratqich"], "correctIndex": 1, "explanation": "Passiv gapda «kim tomonidan» — ТВОРИ́ТЕЛЬНЫЙ: напи́сан Толсты́м, постро́ен рабо́чими." },
+      { "text": "«Дом бу́дет постро́ен» qaysi zamon?", "options": ["Hozirgi", "O'tgan", "Kelasi", "Buyruq"], "correctIndex": 2, "explanation": "быть orqali zamon: постро́ен (hozirgi), был постро́ен (o'tgan), бу́дет постро́ен (kelasi)." },
+      { "text": "Qisqa sifatdosh kelishik bo'yicha o'zgaradimi?", "options": ["Ha", "Yo'q — faqat rod va son", "Faqat qaratqichda", "O'zgarmaydi umuman"], "correctIndex": 1, "explanation": "Qisqa shakl faqat rod/son: постро́ен / постро́ена / постро́ено / постро́ены. Kelishik olmaydi — u kesim." },
+      { "text": "«Толсто́й написа́л рома́н» ni passivga aylantiring", "options": ["Рома́н написа́л Толсто́й", "Рома́н напи́сан Толсты́м", "Толсто́й напи́сан рома́ном", "Рома́ном напи́сан Толсто́й"], "correctIndex": 1, "explanation": "3 qadam: obyekt → ega (рома́н), fe'l → qisqa sifatdosh (напи́сан), ega → vosita (Толсты́м)." }
+    ]
+  }
+]

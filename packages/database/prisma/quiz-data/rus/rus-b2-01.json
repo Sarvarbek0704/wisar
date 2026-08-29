@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "01-b1-takror-b2-kirish",
+    "title": "Test — B2 ga kirish",
+    "questions": [
+      { "text": "B2 daraja qaysi rus standartiga mos keladi?", "options": ["ТРКИ-1", "ТРКИ-2", "ТРКИ-3", "ТРКИ-4"], "correctIndex": 1, "explanation": "B2 — «mustaqil ravon foydalanuvchi», ТРКИ-2 ga mos (taxminan IELTS 6–7)." },
+      { "text": "B2 nechta asosiy blokdan iborat?", "options": ["4", "6", "8", "12"], "correctIndex": 2, "explanation": "8 blok: aspekt nozikliklari, boshqaruv, oborotlar, murakkab sintaksis, so'z yasash, stilistika, frazeologizm, akademik yozuv." },
+      { "text": "«Стилистика» bloki nimani o'rgatadi?", "options": ["Faqat imloni", "Registrni: разгово́рный / официа́льный / нау́чный / публицисти́ческий", "Faqat urg'uni", "Faqat lug'atni"], "correctIndex": 1, "explanation": "B2 da bir fikrni to'rt xil registrda ayta olish talab qilinadi." },
+      { "text": "B2 da nima eng muhim ko'nikma hisoblanadi?", "options": ["Qoidalarni yodlash", "Ko'p o'qish/tinglash va registrga e'tibor", "Faqat yozuv", "Faqat lug'at"], "correctIndex": 1, "explanation": "Grammatika endi avtomatlashadi; maqsad — tabiiy, uslubga mos, ta'sirli nutq." },
+      { "text": "8 blokdan nechtasi B1 ning davomi?", "options": ["1", "2", "4", "8"], "correctIndex": 2, "explanation": "Aspekt, oborot, so'z yasash va akademik yozuv — B1 da boshlangan narsaning davomi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "02-aspekt-nozik-holatlar",
+    "title": "Test — Aspektning nozik holatlari",
+    "questions": [
+      { "text": "«Я не чита́л» va «Я не прочита́л» farqi nimada?", "options": ["Farqi yo'q", "Birinchisi — umuman bo'lmadi; ikkinchisi — boshladim, lekin tugatolmadim", "Birinchisi kelasi zamon", "Ikkinchisi taqiq"], "correctIndex": 1, "explanation": "Inkorda NSV — neytral tanlov. SV inkori maxsus ma'no beradi: natijaga yetmadim." },
+      { "text": "«Не на́до ___ » — qaysi aspekt?", "options": ["SV", "NSV (покупа́ть)", "Ikkalasi ham", "Infinitivsiz"], "correctIndex": 1, "explanation": "Ijobiy «на́до купи́ть» (SV), lekin inkor «не на́до покупа́ть» (NSV) — «hojat yo'q»." },
+      { "text": "«Нельзя́ кури́ть» va «нельзя́ откры́ть» farqi nimada?", "options": ["Farqi yo'q", "NSV = taqiq, SV = imkonsizlik", "NSV = imkonsizlik, SV = taqiq", "Ikkalasi taqiq"], "correctIndex": 1, "explanation": "нельзя́ + NSV — ruxsat yo'q; нельзя́ + SV — iloji yo'q." },
+      { "text": "«мочь» va «уме́ть» qanday farqlanadi?", "options": ["Farqi yo'q", "мочь + SV — aniq imkoniyat; уме́ть + NSV — doimiy ko'nikma", "мочь faqat o'tgan zamonda", "уме́ть — taqiq"], "correctIndex": 1, "explanation": "могу́ помо́чь (hozir yordam bera olaman) ↔ уме́ю пла́вать (suzishni bilaman). O'zbekcha «-a olmoq» ikkisini ham qamraydi." },
+      { "text": "«начина́ть, продолжа́ть, перестава́ть» qaysi aspektdagi infinitiv oladi?", "options": ["Faqat SV", "Faqat NSV", "Ikkalasi", "Infinitiv olmaydi"], "correctIndex": 1, "explanation": "Bu fazali fe'llar faqat NSV infinitiv oladi: начал чита́ть, перестал кури́ть." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "03-aspekt-juftlik-istisnolar",
+    "title": "Test — Aspekt juftliklaridagi istisnolar",
+    "questions": [
+      { "text": "«испо́льзовать» qanday fe'l?", "options": ["Faqat NSV", "Faqat SV", "Biaspektual — bitta shakl ikkala vid uchun", "Suppletiv"], "correctIndex": 2, "explanation": "испо́льзовать, организова́ть, иссле́довать, ра́нить — biaspektual. Aspektni kontekst hal qiladi." },
+      { "text": "«состоя́ть, зави́сеть, принадлежа́ть» — nega SV jufti yo'q?", "options": ["Chet so'zlar", "Holat/munosabat fe'llari — jarayon bor, natija yo'q", "Juda qadimiy", "Prefiksi bor"], "correctIndex": 1, "explanation": "Faqat NSV: состоя́ть, зави́сеть, зна́чить, сто́ить, находи́ться, нужда́ться." },
+      { "text": "«очну́ться, хлы́нуть» — nega NSV jufti yo'q?", "options": ["Chet so'zlar", "Bir zumlik harakatlar — natija bor, jarayon yo'q", "Holat fe'llari", "Juft bor"], "correctIndex": 1, "explanation": "Faqat SV: очну́ться, очути́ться, хлы́нуть, ри́нуться." },
+      { "text": "«говори́ть / сказа́ть» qanday juftlik?", "options": ["Prefiksli", "Suffiksli", "Suppletiv — jufti boshqa o'zakdan", "Biaspektual"], "correctIndex": 2, "explanation": "Suppletiv juftliklar: брать/взять, класть/положи́ть, лови́ть/пойма́ть, иска́ть/найти́." },
+      { "text": "«писа́ть → переписа́ть» — bu aspekt juftimi?", "options": ["Ha, aspekt jufti", "Yo'q — yangi fe'l, o'z NSV jufti bilan (перепи́сывать)", "Biaspektual", "Suppletiv"], "correctIndex": 1, "explanation": "написа́ть — aspekt jufti; переписа́ть/подписа́ть/записа́ть — yangi ma'noli fe'llar." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "04-harakat-fellari-prefiks-tizim",
+    "title": "Test — Harakat fe'llari prefiks tizimi",
+    "questions": [
+      { "text": "«обойти́» dagi «об-» qanday ma'no beradi?", "options": ["Tepaga", "Aylanib o'tish", "Pastga", "Tarqalish"], "correctIndex": 1, "explanation": "об- (aylanib o'tish), с- (pastga: сойти́), вз- (tepaga: взойти́)." },
+      { "text": "«разойти́сь» va «сойти́сь» qanday ega talab qiladi?", "options": ["Birlik", "Doim ko'plik", "Faqat «я»", "Egasiz"], "correctIndex": 1, "explanation": "раз-…-ся (tarqalish/ajrashish) va с-…-ся (yig'ilish/kelishish) — doim ko'plik ega." },
+      { "text": "«вы́йти за́муж» nimani anglatadi?", "options": ["Uydan chiqmoq", "Turmushga chiqmoq", "Ishga chiqmoq", "Tashqariga chiqmoq"], "correctIndex": 1, "explanation": "Ko'chma ma'nolar — B2 sakrashi: пройти́ экза́мен, подойти́ (mos kelmoq), сойти́ с ума́, перейти́ к де́лу." },
+      { "text": "«вы-» prefiksining urg'u xususiyati qanday?", "options": ["Hech qachon urg'uli emas", "SV da doim urg'uli (вы́йти, вы́шел)", "Faqat ayol rodda urg'uli", "Urg'u o'zgarmaydi"], "correctIndex": 1, "explanation": "-йти́ doim oxirida urg'uli, ammo вы- istisno: вы́йти, вы́шел, вы́писать." },
+      { "text": "«найти́» va «находи́ться» qanday farqlanadi?", "options": ["Farqi yo'q", "найти́ — topmoq; находи́ться — joylashmoq", "найти́ — joylashmoq", "Ikkalasi ham -ся bilan"], "correctIndex": 1, "explanation": "Boshqa juftliklar: подойти́ (mos) ≠ прийти́ (kelmoq); разойти́сь (ko'plik) ≠ уйти́." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "05-harakat-fellari-frazeologik-kochma",
+    "title": "Test — Harakat fe'llarining ko'chma ma'nolari",
+    "questions": [
+      { "text": "«речь идёт ___ чём-то» — qaysi predlog?", "options": ["на", "о", "к", "за"], "correctIndex": 1, "explanation": "речь идёт О — «gap ... haqida». Har iborani predlog va kelishik bilan yaxlit yodlang." },
+      { "text": "«Тебе́ идёт э́то пла́тье» nimani anglatadi?", "options": ["Sen ketyapsan", "Bu ko'ylak senga yarashadi", "Ko'ylak yurmoqda", "Ko'ylakni ol"], "correctIndex": 1, "explanation": "идти́ + jo'nalish kelishigi — «yarashmoq»." },
+      { "text": "«прийти́ ___ вы́воду» — qaysi predlog va kelishik?", "options": ["в + tushum", "к + jo'nalish", "на + tushum", "о + o'rin"], "correctIndex": 1, "explanation": "прийти́ К вы́воду / соглаше́нию (Д.), lekin прийти́ В го́лову / себя́ (В.)." },
+      { "text": "«вы́йти из себя́» nimani anglatadi?", "options": ["Uydan chiqmoq", "Jahli chiqmoq", "O'zini topmoq", "Sog'aymoq"], "correctIndex": 1, "explanation": "Boshqalari: кни́га вы́шла (chop etildi), ничего́ не вы́шло (hech narsa chiqmadi)." },
+      { "text": "«нести́ отве́тственность ___ » — qaysi predlog?", "options": ["о", "за (+ tushum)", "к", "с"], "correctIndex": 1, "explanation": "нести́ отве́тственность ЗА + В. Solishtiring: вести́ перегово́ры, вести́ к (natija)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "06-sifatdosh-oborot",
+    "title": "Test — Sifatdosh oboroti",
+    "questions": [
+      { "text": "«Кни́га, лежа́щая на столе́, — моя́» — nega vergul bor?", "options": ["Har doim vergul qo'yiladi", "Oborot aniqlanmish otdan KEYIN kelgan", "Oborot otdan oldin kelgan", "Vergul shart emas"], "correctIndex": 1, "explanation": "Otdan keyin → ikki tomondan vergul. Otdan oldin → vergul yo'q: Лежа́щая на столе́ кни́га — моя́." },
+      { "text": "Sifatdosh nimaga moslashadi?", "options": ["Oborot ichidagi so'zga", "Aniqlanmish otga — rod, son, kelishik bo'yicha", "Kesimga", "Hech nimaga"], "correctIndex": 1, "explanation": "Чита́ющую де́вушку — sifatdosh otga moslashadi, oborot ichidagi tobe so'z esa o'z kelishigini saqlaydi." },
+      { "text": "«чита́ющую кни́гу де́вушку» — «кни́гу» nega tushum kelishigida?", "options": ["Otga moslashgani uchun", "Oborot ichidagi tobe so'z o'z kelishigini saqlaydi", "Xato", "Sifatdosh talabi bilan"], "correctIndex": 1, "explanation": "Ikki mustaqil moslashuv: sifatdosh — otga; tobe so'zlar — o'z fe'l boshqaruviga." },
+      { "text": "Aniqlanmish ot oborot ichida tura oladimi?", "options": ["Ha", "Yo'q — yo oldin, yo keyin; oborot uzilmaydi", "Faqat rasmiy matnda", "Faqat ko'plikda"], "correctIndex": 1, "explanation": "Oborot yaxlit qoladi, aniqlanmish ot uni ikkiga bo'lmaydi." },
+      { "text": "Og'zaki nutqda oborot o'rniga nima afzal?", "options": ["Ravishdosh", "кото́рый bilan ergash gap", "Passiv", "Infinitiv"], "correctIndex": 1, "explanation": "Oborot — kitobiy/ilmiy/rasmiy; кото́рый — og'zaki. Kontekstga qarab tanlash B2 mahorati." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "07-ravishdosh-oborot",
+    "title": "Test — Ravishdosh oboroti",
+    "questions": [
+      { "text": "Ravishdosh oboroti qachon vergul bilan ajratiladi?", "options": ["Faqat gap boshida", "Har doim — boshida, o'rtasida, oxirida", "Faqat otdan keyin", "Hech qachon"], "correctIndex": 1, "explanation": "Bu sifatdosh oborotidan asosiy farq: ravishdoshda «vergulsiz» holat yo'q. O'rtada tursa — ikki vergul." },
+      { "text": "«Bir ega» qoidasi nimani talab qiladi?", "options": ["Ikki ega bo'lishini", "Ravishdosh va bosh kesim harakatini bitta ega bajarishini", "Egasiz gapni", "Ko'plik egani"], "correctIndex": 1, "explanation": "Buzilsa klassik xato: «Подъезжа́я к ста́нции, у меня́ слете́ла шля́па»." },
+      { "text": "«Bir ega» qoidasi buzilganda qanday tuzatiladi?", "options": ["Vergulni olib tashlash", "Egani moslashtirish yoki ergash gapga aylantirish", "Aspektni o'zgartirish", "Kelishikni almashtirish"], "correctIndex": 1, "explanation": "Ikki yo'l bor: egani to'g'rilash yoki когда́/так как bilan ergash gap qilish." },
+      { "text": "Ravishdosh qaysi shaxssiz gapda mumkin?", "options": ["Har qanday shaxssiz gapda", "Faqat infinitivli shaxssiz gapda (Чита́я, ну́жно ду́мать)", "Dativ kechinmali gapda", "Umuman mumkin emas"], "correctIndex": 1, "explanation": "«Мне бы́ло интере́сно» kabi dativ kechinmali gapda ravishdosh ishlatilmaydi." },
+      { "text": "Ravishdosh oboroti qaysi registrga tegishli?", "options": ["Og'zaki, jonli", "Yozma, kitobiy", "Bolalar tili", "Jargon"], "correctIndex": 1, "explanation": "Og'zaki uslubda когда́ / так как / по́сле того́ как ergash gaplari tabiiyroq." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "08-sifatdosh-ravishdosh-rasmiy-matnda",
+    "title": "Test — Oborotlar rasmiy matnda",
+    "questions": [
+      { "text": "Oborotlar va ergash gaplar qanday qutblarni tashkil qiladi?", "options": ["To'g'ri va xato", "Kitobiy qutb (oborot) ↔ og'zaki qutb (кото́рый/когда́)", "Yangi va eski", "Yozma va yozma"], "correctIndex": 1, "explanation": "Ma'no bir xil, uslub farqli. B2 daraja — ikki qutb orasida erkin harakatlanish." },
+      { "text": "«кото́рый» ergash gapini siqish uchun nima ishlatiladi?", "options": ["Ravishdosh oborot", "Sifatdosh oborot", "Passiv", "Infinitiv"], "correctIndex": 1, "explanation": "кото́рый → sifatdosh oborot (ega bo'lsa aktiv, obyekt bo'lsa passiv sifatdosh)." },
+      { "text": "«когда́ / так как» ni nimaga siqamiz?", "options": ["Sifatdosh oborot", "Ravishdosh oborot", "Qisqa sifat", "Kirish so'z"], "correctIndex": 1, "explanation": "Bu — yozma ko'nikma: insho, hujjat, hisobot uchun." },
+      { "text": "«Проанализи́ровав да́нные, была́ предло́жена моде́ль» — bu nega xato?", "options": ["Vergul yo'q", "Bir ega qoidasi buzilgan", "Ravishdosh shakli xato", "Kelishik xato"], "correctIndex": 1, "explanation": "Modelni tahlil qilmaydi. To'g'risi: Проанализи́ровав да́нные, а́вторы предложи́ли моде́ль." },
+      { "text": "Murakkab ilmiy gapni tushunish uchun qaysi ko'nikma kerak?", "options": ["Siqish", "Yoyish — oborotni кото́рый/когда́ ga ochish", "Yodlash", "Tarjima"], "correctIndex": 1, "explanation": "Siqish — yozuv ko'nikmasi, yoyish — o'qish ko'nikmasi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "09-passiv-toliq-tizim",
+    "title": "Test — Passivning to'liq tizimi",
+    "questions": [
+      { "text": "«Зако́н при́нят парла́ментом» — bajaruvchi qaysi kelishikda?", "options": ["Bosh kelishik", "Vosita (Творительный)", "Qaratqich", "Jo'nalish"], "correctIndex": 1, "explanation": "Passivda bajaruvchi doim Творительный kelishikda." },
+      { "text": "Aktivdan passivga o'tishning uchta qadami qaysi?", "options": ["Faqat fe'lni o'zgartirish", "Obyekt (В.) → ega (И.); fe'l → passiv; ega (И.) → Твор.", "Egani o'chirish", "Kelishikni saqlash"], "correctIndex": 1, "explanation": "Teskari yo'nalish ham aynan shu bo'yicha bajariladi." },
+      { "text": "«Устано́влено, что...» — bu qanday qurilma?", "options": ["Noaniq-shaxsli aktiv", "Shaxssiz passiv — rasmiy/ilmiy", "Oddiy aktiv", "Buyruq"], "correctIndex": 1, "explanation": "Shaxssiz passiv: устано́влено, бы́ло при́нято — ilmiy va rasmiy matnning belgisi." },
+      { "text": "«Здесь не ку́рят» — bu qanday qurilma?", "options": ["Passiv", "Noaniq-shaxsli aktiv — jonli «kimdir/hamma»", "Shaxssiz passiv", "Qisqa sifatdosh"], "correctIndex": 1, "explanation": "Bu passiv emas: в газе́те пи́шут, здесь не ку́рят — noaniq-shaxsli aktiv." },
+      { "text": "Passiv qachon zarur bo'ladi?", "options": ["Har doim", "Bajaruvchi noma'lum/muhim emas yoki rasmiy ohang kerak bo'lganda", "Faqat suhbatda", "Faqat savolda"], "correctIndex": 1, "explanation": "Passiv — rasmiy, ilmiy, OAV tili. Jonli suhbatda aktiv afzal." }
+    ]
+  }
+]

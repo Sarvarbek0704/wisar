@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "17-authorization-rbac",
+    "title": "Test — Authorization va RBAC",
+    "questions": [
+      { "text": "RBAC modeli qanday tuzilgan?", "options": ["User → Permission", "User → Role → Permission", "Role → User", "Permission → User"], "correctIndex": 1, "explanation": "Ruxsat rolga beriladi, har foydalanuvchiga alohida emas." },
+      { "text": "«Ownership» tekshiruvi nima uchun kerak?", "options": ["Tezlik", "IDOR himoyasi — «bu resurs sizniki?» savoli", "Log", "Cache"], "correctIndex": 1, "explanation": "Rol to'g'ri bo'lsa ham, boshqaning ma'lumotiga kirish mumkin bo'lmasligi kerak." },
+      { "text": "«Deny by default» tamoyili nimani anglatadi?", "options": ["Hammaga ruxsat", "Ruxsat aniq berilmagan bo'lsa — taqiqlash", "Faqat adminga", "Log yozish"], "correctIndex": 1, "explanation": "Least privilege bilan birga asosiy xavfsizlik tamoyili." },
+      { "text": "Frontend'dagi rol tekshiruvi yetarlimi?", "options": ["Ha", "Yo'q — u faqat UX; haqiqiy tekshiruv serverda", "Faqat adminda", "Faqat production'da"], "correctIndex": 1, "explanation": "Frontend kodini istalgan foydalanuvchi o'zgartira oladi." },
+      { "text": "RBAC va ABAC qanday farqlanadi?", "options": ["Farqi yo'q", "RBAC — rolga asoslangan; ABAC — atributlarga (kontekst) asoslangan", "ABAC — rolga asoslangan", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "PBAC esa aniq permissionlarga tayanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "18-otp-sms-eskiz-playmobile",
+    "title": "Test — OTP va SMS",
+    "questions": [
+      { "text": "OTP tizimida eng muhim himoya qaysi?", "options": ["Uzun kod", "Rate limiting — SMS bombing va brute-force'dan", "Chiroyli xabar", "Ko'p provayder"], "correctIndex": 1, "explanation": "Cheklovsiz OTP so'rovi ham pul, ham xavfsizlik yo'qotishi." },
+      { "text": "OTP kodi qanday saqlanishi kerak?", "options": ["Ochiq matn", "HASH qilib", "Base64", "Saqlanmaydi"], "correctIndex": 1, "explanation": "Baza sizib chiqsa ham kodlar ishlatib bo'lmaydi." },
+      { "text": "OTP kodi qanday generatsiya qilinadi?", "options": ["Math.random", "crypto modul bilan", "Date.now", "Ketma-ket"], "correctIndex": 1, "explanation": "Odatiy uzunlik — 6 raqam, muddat 2–3 daqiqa." },
+      { "text": "OTP muddatini boshqarish uchun nima qulay?", "options": ["setTimeout", "Redis TTL", "Cron", "Fayl"], "correctIndex": 1, "explanation": "Kod muddati tugagach avtomatik o'chadi." },
+      { "text": "«Provayder abstraksiyasi» nima beradi?", "options": ["Tezlik", "SMS provayderni almashtirishni osonlashtiradi", "Xavfsizlik", "Log"], "correctIndex": 1, "explanation": "Eskiz va Play Mobile API'lari bir interfeys ortida yashiriladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "19-email-nodemailer",
+    "title": "Test — Email (Nodemailer)",
+    "questions": [
+      { "text": "Nodemailer bilan ishlashning uch qadami qaysi?", "options": ["Ulanish → yopish", "Transporter → xabar → yuborish", "Yozish → o'qish", "Sozlash → test"], "correctIndex": 1, "explanation": "Transporter bir marta yaratilib qayta ishlatiladi." },
+      { "text": "HTML emailda nima uchun inline style ishlatiladi?", "options": ["Chiroyli", "Email mijozlari tashqi CSS'ni qo'llab-quvvatlamaydi", "Tezlik", "Xavfsizlik"], "correctIndex": 1, "explanation": "Email HTML'i brauzerdagidan ancha cheklangan." },
+      { "text": "Og'ir email yuborish qayerda bajarilishi kerak?", "options": ["So'rov ichida", "Navbatda (background job)", "Cron'da faqat", "Frontendda"], "correctIndex": 1, "explanation": "Aks holda foydalanuvchi javobni kutib qoladi." },
+      { "text": "SPF va DKIM nima uchun kerak?", "options": ["Tezlik", "Yetkazib berish — spamga tushmaslik uchun", "Shifrlash", "Format"], "correctIndex": 1, "explanation": "Domen nomidan yuborish huquqini tasdiqlaydi." },
+      { "text": "Emailni test qilish uchun qaysi vosita ishlatiladi?", "options": ["Real pochta", "Mailtrap", "Console", "Fayl"], "correctIndex": 1, "explanation": "Haqiqiy foydalanuvchilarga tasodifiy xat yuborilmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "20-xavfsizlik-rate-limiting-helmet-cors",
+    "title": "Test — Xavfsizlik: helmet, CORS, rate limiting",
+    "questions": [
+      { "text": "Helmet nima qiladi?", "options": ["Parol shifrlaydi", "Xavfsizlik HTTP headerlarini o'rnatadi (CSP, HSTS, X-Frame-Options)", "So'rovni cheklaydi", "CORS sozlaydi"], "correctIndex": 1, "explanation": "XSS va clickjacking'dan himoya qatlamini qo'shadi." },
+      { "text": "CORS'da «*» ishlatish nima uchun xavfli?", "options": ["Sekin", "Har qanday domen so'rov yubora oladi", "Xato beradi", "Ishlamaydi"], "correctIndex": 1, "explanation": "Ruxsat etilgan domenlarni aniq ko'rsatish kerak." },
+      { "text": "Rate limiting qaysi hujumlardan himoya qiladi?", "options": ["XSS", "Brute-force va DoS", "SQL injection", "CSRF"], "correctIndex": 1, "explanation": "Auth endpointlariga qattiqroq chegara qo'yiladi." },
+      { "text": "Ko'p serverli muhitda rate limit qayerda saqlanadi?", "options": ["Xotirada", "Redis store'da", "Faylda", "Cookie'da"], "correctIndex": 1, "explanation": "Aks holda har server o'z hisobini yuritadi." },
+      { "text": "Xavfsizlik middleware'lari qayerda joylashtiriladi?", "options": ["Oxirida", "Eng oldinda", "O'rtada", "Farqi yo'q"], "correctIndex": 1, "explanation": "Ular so'rov route'ga yetguncha ishlashi kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "21-caching-redis",
+    "title": "Test — Caching va Redis",
+    "questions": [
+      { "text": "Redis nima?", "options": ["SQL baza", "Xotira (RAM) ombori — DB o'rnini bosmaydi", "Fayl tizimi", "Message broker faqat"], "correctIndex": 1, "explanation": "Kesh, sessiya, OTP, rate limit, navbat, pub/sub — asosiy qo'llanishlari." },
+      { "text": "«Cache-aside» naqshi qanday ishlaydi?", "options": ["Faqat DB", "Redis'ni tekshir → yo'q bo'lsa DB → keshla", "Faqat Redis", "DB → Redis → DB"], "correctIndex": 1, "explanation": "Eng keng tarqalgan kesh strategiyasi." },
+      { "text": "Cache invalidation qachon zarur?", "options": ["Hech qachon", "Ma'lumot o'zgarganda — eski keshni o'chirish", "Har soatda", "Faqat TTL bilan"], "correctIndex": 1, "explanation": "Aks holda foydalanuvchi eski ma'lumot ko'radi." },
+      { "text": "Obyekt saqlash uchun Redis'da qaysi tuzilma qulay?", "options": ["String", "Hash", "List", "Set"], "correctIndex": 1, "explanation": "Sorted Set — reyting va leaderboard uchun." },
+      { "text": "«Fail-open» strategiyasi nimani anglatadi?", "options": ["Xatoni ko'rsatish", "Redis yiqilsa — DB'dan o'qishda davom etish", "Serverni to'xtatish", "Qayta urinish"], "correctIndex": 1, "explanation": "Kesh nosozligi butun xizmatni to'xtatmasligi kerak." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "22-navbatlar-bullmq-cron",
+    "title": "Test — Navbatlar (BullMQ, cron)",
+    "questions": [
+      { "text": "Navbat tizimi qanday komponentlardan iborat?", "options": ["Server va klient", "Queue, Producer, Worker", "Cache va DB", "Cron va timer"], "correctIndex": 1, "explanation": "BullMQ Redis ustiga qurilgan." },
+      { "text": "Worker qayerda ishlashi kerak?", "options": ["Web server ichida", "Alohida jarayonda", "Brauzerda", "Cron'da"], "correctIndex": 1, "explanation": "Aks holda og'ir vazifa API javob berishini sekinlashtiradi." },
+      { "text": "«Idempotentlik» nima uchun kritik?", "options": ["Tezlik", "Retry paytida ish ikki marta bajarilmasligi uchun (to'lov!)", "Xotira", "Log"], "correctIndex": 1, "explanation": "Retry + backoff ishonchlilik beradi, lekin takrorlanishni keltirib chiqaradi." },
+      { "text": "«removeOnComplete» nima uchun kerak?", "options": ["Tezlik", "Redis'ni tugallangan joblardan tozalash", "Xavfsizlik", "Retry"], "correctIndex": 1, "explanation": "Aks holda Redis xotirasi asta-sekin to'ladi." },
+      { "text": "Oddiy vaqtli vazifa uchun qaysi kutubxona yetarli?", "options": ["BullMQ", "node-cron", "Redis", "Express"], "correctIndex": 1, "explanation": "BullMQ esa retry, concurrency va monitoring kerak bo'lganda." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "23-api-hujjatlari-swagger-openapi",
+    "title": "Test — API hujjatlari (Swagger/OpenAPI)",
+    "questions": [
+      { "text": "OpenAPI va Swagger qanday farqlanadi?", "options": ["Farqi yo'q", "OpenAPI — standart (spetsifikatsiya); Swagger — vositalar to'plami", "Swagger — standart", "Ikkalasi vosita"], "correctIndex": 1, "explanation": "Swagger UI — interaktiv hujjat interfeysi." },
+      { "text": "«$ref» va komponent schema nima beradi?", "options": ["Tezlik", "DRY — takrorlanuvchi sxemalarni bir joyda saqlash", "Xavfsizlik", "Validatsiya"], "correctIndex": 1, "explanation": "Bir sxema ko'p endpointda qayta ishlatiladi." },
+      { "text": "Swagger UI'ning «Try it out» imkoniyati nima beradi?", "options": ["Kod generatsiyasi", "Brauzerdan to'g'ridan-to'g'ri so'rov yuborish", "Test yozish", "Deploy"], "correctIndex": 1, "explanation": "Frontend jamoasi uchun juda qulay." },
+      { "text": "Production'da Swagger bilan nima qilish kerak?", "options": ["Ochiq qoldirish", "Himoyalash yoki faqat ichki tarmoqda ochish", "O'chirish shart emas", "Hech narsa"], "correctIndex": 1, "explanation": "Ochiq hujjat hujumchiga API xaritasini beradi." },
+      { "text": "Hujjat va kod sinxronligini qanday saqlash mumkin?", "options": ["Qo'lda yangilash", "Zod kabi sxemalardan avtomatik generatsiya qilish", "Yangilamaslik", "Faqat commentda"], "correctIndex": 1, "explanation": "Qo'lda yozilgan hujjat tez orada eskiradi." }
+    ]
+  }
+]

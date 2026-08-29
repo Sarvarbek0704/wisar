@@ -1,0 +1,68 @@
+[
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "01-js-kirish-ozgaruvchilar-turlar-operatorlar",
+    "title": "Test — JS asoslari",
+    "questions": [
+      { "text": "«typeof null» nima qaytaradi?", "options": ["null", "object — tarixiy bug", "undefined", "number"], "correctIndex": 1, "explanation": "Bu JavaScript'ning mashhur, tuzatilmagan xatosi." },
+      { "text": "«const» bilan e'lon qilingan obyekt ichini o'zgartirish mumkinmi?", "options": ["Yo'q", "Ha — havola o'zgarmaydi, ichi o'zgaradi", "Faqat massivda", "Faqat strict mode'da"], "correctIndex": 1, "explanation": "const — qayta tayinlashni taqiqlaydi, mutatsiyani emas." },
+      { "text": "«null» va «undefined» qanday farqlanadi?", "options": ["Farqi yo'q", "null — ataylab bo'sh; undefined — qiymat berilmagan", "undefined — ataylab", "Ikkalasi xato"], "correctIndex": 1, "explanation": "null dasturchi tomonidan, undefined tizim tomonidan beriladi." },
+      { "text": "«\"5\" + 3» natijasi nima?", "options": ["8", "\"53\"", "NaN", "Xato"], "correctIndex": 1, "explanation": "«+» string bilan birlashtiradi; boshqa operatorlar songa aylantiradi." },
+      { "text": "Nega «===» ishlatish tavsiya etiladi?", "options": ["Tezroq", "Type coercion qilmaydi — kutilmagan natijalardan saqlaydi", "Qisqaroq", "Yangi"], "correctIndex": 1, "explanation": "«==» turlarni avtomatik aylantirib, chalkash natija beradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "02-shartlar-va-tsikllar",
+    "title": "Test — Shartlar va tsikllar",
+    "questions": [
+      { "text": "JavaScriptda nechta falsy qiymat bor?", "options": ["5", "6", "8", "10"], "correctIndex": 2, "explanation": "false, 0, \"\", null, undefined, NaN, -0, 0n." },
+      { "text": "Bo'sh massiv «[]» truthy'mi yoki falsy?", "options": ["Falsy", "TRUTHY", "Kontekstga bog'liq", "Xato"], "correctIndex": 1, "explanation": "{} ham truthy. Tekshirish uchun .length yoki Object.keys ishlating." },
+      { "text": "«for...of» va «for...in» qanday farqlanadi?", "options": ["Farqi yo'q", "for...of — qiymatlar; for...in — kalitlar", "for...in — qiymatlar", "Ikkalasi indeks"], "correctIndex": 1, "explanation": "Massiv uchun for...of, obyekt uchun for...in (yoki Object.entries)." },
+      { "text": "«switch» da «break» yozilmasa nima bo'ladi?", "options": ["Xato", "Fall-through — keyingi case ham bajariladi", "Hech narsa", "Tsikl to'xtaydi"], "correctIndex": 1, "explanation": "Ba'zan ataylab ishlatiladi, lekin ko'pincha bu xato." },
+      { "text": "«continue» nima qiladi?", "options": ["Tsiklni to'xtatadi", "Joriy iteratsiyani o'tkazib yuboradi", "Funksiyadan chiqadi", "Xato beradi"], "correctIndex": 1, "explanation": "break — tsiklni butunlay to'xtatadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "03-funksiyalar",
+    "title": "Test — Funksiyalar",
+    "questions": [
+      { "text": "Parametr va argument qanday farqlanadi?", "options": ["Farqi yo'q", "Parametr — e'londa; argument — chaqiriqda", "Argument — e'londa", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "function f(a) — a parametr; f(5) — 5 argument." },
+      { "text": "«Early return» nima uchun foydali?", "options": ["Tezroq", "Chuqur if'lardan qochish — kod o'qishli bo'ladi", "Xotira tejaydi", "Xato beradi"], "correctIndex": 1, "explanation": "Shartni tekshirib darhol qaytarish — guard clause naqshи." },
+      { "text": "«...» rest parametri nima qiladi?", "options": ["Bo'ladi", "Qolgan argumentlarni massivga yig'adi", "Massivni yoyadi", "Xato"], "correctIndex": 1, "explanation": "Chaqiriqda esa u spread — massivni yoyadi." },
+      { "text": "«Toza funksiya» (pure function) nima?", "options": ["Qisqa funksiya", "Bir xil inputga doim bir xil output, yon ta'sirsiz", "Arrow funksiya", "Async funksiya"], "correctIndex": 1, "explanation": "Bashoratli va test qilish oson." },
+      { "text": "«First-class qiymat» nimani anglatadi?", "options": ["Tez ishlaydi", "Funksiyani o'zgaruvchiga berish, uzatish va qaytarish mumkin", "Global bo'ladi", "Faqat bir marta chaqiriladi"], "correctIndex": 1, "explanation": "HOF, callback va closure shunga tayanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "04-execution-context-hoisting-closure",
+    "title": "Test — Execution context, hoisting, closure",
+    "questions": [
+      { "text": "«let» va «const» hoisting'da qanday holatda bo'ladi?", "options": ["undefined", "TDZ — ReferenceError beradi", "To'liq mavjud", "Hoist bo'lmaydi"], "correctIndex": 1, "explanation": "var → undefined; function declaration → to'liq; let/const → TDZ." },
+      { "text": "Closure nima?", "options": ["Yopiq funksiya", "Funksiya + u tug'ilgan muhit — o'zgaruvchini eslaydi", "Async funksiya", "Klass"], "correctIndex": 1, "explanation": "Tashqi funksiya tugagach ham o'zgaruvchi saqlanadi." },
+      { "text": "Call stack qanday tartibda ishlaydi?", "options": ["FIFO", "LIFO — oxirgi kirgan birinchi chiqadi", "Tasodifiy", "Parallel"], "correctIndex": 1, "explanation": "Execution context'lar to'plami shu tartibda boshqariladi." },
+      { "text": "Tsiklda «var» va «let» closure'da qanday farq qiladi?", "options": ["Farqi yo'q", "var — bitta binding; let — har iteratsiyada yangi", "let — bitta binding", "Ikkalasi yangi"], "correctIndex": 1, "explanation": "Bu — klassik closure tuzog'i." },
+      { "text": "Scope chain qidiruvi qaysi yo'nalishda ketadi?", "options": ["Tashqaridan ichkariga", "Ichkidan tashqariga", "Tasodifiy", "Faqat global"], "correctIndex": 1, "explanation": "Leksik scope: kod qayerda YOZILGANI muhim, qayerda chaqirilgani emas." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "05-this-prototype-inheritance",
+    "title": "Test — this, prototype va meros",
+    "questions": [
+      { "text": "«this» nimaga bog'liq?", "options": ["Funksiya qayerda yozilganiga", "Funksiya QANDAY chaqirilganiga", "Fayl nomiga", "Klassga"], "correctIndex": 1, "explanation": "Arrow funksiya esa istisno — tashqi this'ni meros qiladi." },
+      { "text": "«this» ni aniqlash ustuvorligi qanday?", "options": ["default > implicit > explicit > new", "new > explicit > implicit > default", "implicit > new", "Tasodifiy"], "correctIndex": 1, "explanation": "explicit — call/apply/bind orqali." },
+      { "text": "«__proto__» va «prototype» qanday farqlanadi?", "options": ["Farqi yo'q", "__proto__ — obyekt havolasi; prototype — funksiya shabloni", "prototype — obyekt havolasi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Prototype chain xususiyat qidiruvi uchun ishlatiladi." },
+      { "text": "«instanceof» va «hasOwnProperty» qanday farqlanadi?", "options": ["Farqi yo'q", "instanceof — meros bo'ylab tekshiradi; hasOwnProperty — faqat o'zini", "hasOwnProperty — meros bo'ylab", "Ikkalasi zanjirni tekshiradi"], "correctIndex": 1, "explanation": "instanceof prototype zanjirida berilgan prototype borligini tekshiradi." },
+      { "text": "«class» JavaScriptda nima?", "options": ["Haqiqiy klass", "Prototype merosining syntactic sugar'i", "Yangi til xususiyati", "Interfeys"], "correctIndex": 1, "explanation": "JS merosi prototypal, Java/C++ esa classical." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "02-qism-javascript", "article": "06-string-va-number-metodlari",
+    "title": "Test — String va Number metodlari",
+    "questions": [
+      { "text": "String metodlari asl qiymatni o'zgartiradimi?", "options": ["Ha", "Yo'q — string immutable, yangi qiymat qaytaradi", "Ba'zan", "Faqat replace"], "correctIndex": 1, "explanation": "Natijani tayinlashni unutmaslik — eng ko'p uchraydigan xato." },
+      { "text": "«toFixed()» nima qaytaradi?", "options": ["Number", "MATN (string)", "Boolean", "Array"], "correctIndex": 1, "explanation": "Keyingi hisob-kitob uchun Number() bilan qayta aylantirish kerak." },
+      { "text": "«NaN» ni qanday tekshirish kerak?", "options": ["x === NaN", "Number.isNaN(x)", "x == NaN", "typeof x"], "correctIndex": 1, "explanation": "NaN o'zi bilan ham teng emas — shuning uchun === ishlamaydi." },
+      { "text": "«slice» va «split» qanday farqlanadi?", "options": ["Farqi yo'q", "slice — qism kesadi; split — massivga bo'ladi", "split — kesadi", "Ikkalasi massiv qaytaradi"], "correctIndex": 1, "explanation": "Qidirish uchun: includes, indexOf, startsWith, endsWith." },
+      { "text": "«Intl.NumberFormat» nima uchun ishlatiladi?", "options": ["Matematik amal", "Valyuta va raqamlarni mahalliy formatda ko'rsatish", "Aylantirish", "Yaxlitlash"], "correctIndex": 1, "explanation": "toLocaleString ham shu vazifani bajaradi." }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "28-sinonim-antonim",
+    "title": "Test — Sinonim va antonim",
+    "questions": [
+      { "text": "Sinonimlar qaysi uch jihatdan farqlanadi?", "options": ["Rod, son, kelishik", "Uslub, ma'no darajasi, emotsional bo'yoq", "Zamon, aspekt, shaxs", "Urg'u, imlo, talaffuz"], "correctIndex": 1, "explanation": "лик / лицо́ / ро́жа (uslub); боль / страда́ние (daraja); ло́шадь / кля́ча (bo'yoq)." },
+      { "text": "Sinonimik qatorning «dominanti» nima?", "options": ["Eng kitobiy so'z", "Neytral, asosiy so'z (большо́й)", "Eng kuchli so'z", "Eng qadimiy so'z"], "correctIndex": 1, "explanation": "Qator neytral dominantdan kuchli/kitobiy variantgacha tiziladi: большо́й → огро́мный → колосса́льный." },
+      { "text": "«неприя́тный» qanday yasalgan antonim?", "options": ["Boshqa o'zakdan", "Prefiks bilan", "Suffiks bilan", "Qo'shma so'z"], "correctIndex": 1, "explanation": "Antonim ham prefiks bilan yasaladi: прия́тный → неприя́тный." },
+      { "text": "«ни жив ни мёртв» — bu qanday hodisa?", "options": ["Sinonim", "Antonimli turg'un ibora", "Paronim", "Kollokatsiya"], "correctIndex": 1, "explanation": "Antonimli iboralar nutqni ta'sirli qiladi: день и ночь, ни жив ни мёртв." },
+      { "text": "So'z tanlashda qaysi ikki savol beriladi?", "options": ["Rodi? Soni?", "Qaysi uslub? Qanchalik kuchli?", "Qaysi zamon? Qaysi aspekt?", "Urg'usi? Imlosi?"], "correctIndex": 1, "explanation": "Kitobiy/neytral/so'zlashuv va ma'no darajasi — to'g'ri javob to'g'ri so'zni beradi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "29-stilistika-funksional-uslublar",
+    "title": "Test — Funksional uslublar",
+    "questions": [
+      { "text": "Rus tilida nechta asosiy funksional uslub bor?", "options": ["3", "4", "5", "7"], "correctIndex": 2, "explanation": "разгово́рный, официа́льно-делово́й, нау́чный, публицисти́ческий, худо́жественный." },
+      { "text": "«настоя́щим уведомля́ю» — qaysi uslub signali?", "options": ["So'zlashuv", "Rasmiy-ish", "Ilmiy", "Badiiy"], "correctIndex": 1, "explanation": "Signal-so'zdan uslubni aniqlash — darsning asosiy ko'nikmasi." },
+      { "text": "«сле́дует отме́тить, да́нное явле́ние» — qaysi uslub?", "options": ["Publitsistik", "Ilmiy", "So'zlashuv", "Rasmiy-ish"], "correctIndex": 1, "explanation": "Ilmiy uslub: atama, passiv, shaxssiz konstruksiya." },
+      { "text": "«Ра́зве э́то справедли́во?» — qaysi uslub belgisi?", "options": ["Ilmiy", "Publitsistik — ritorik savol", "Rasmiy", "So'zlashuv"], "correctIndex": 1, "explanation": "Publitsistik uslub baho va ta'sirni birlashtiradi." },
+      { "text": "Stilistikaning eng muhim qoidasi qaysi?", "options": ["Ko'p atama ishlatish", "Uslublarni aralashtirmaslik", "Faqat neytral yozish", "Uzun gap tuzish"], "correctIndex": 1, "explanation": "Rasmiy hujjatda so'zlashuv so'zi, ilmiy matnda hissiyot — stilistik xato." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "30-sozlashuv-uslubi",
+    "title": "Test — So'zlashuv uslubi",
+    "questions": [
+      { "text": "«Ты куда́? — Домо́й.» — bu qanday xususiyat?", "options": ["Qisqartma", "To'liqsiz gap (ellipsis)", "Kichraytma", "Yuklama"], "correctIndex": 1, "explanation": "So'zlashuv uslubining yetti xususiyatidan biri — ellipsis." },
+      { "text": "«кла́ссно» ning neytral jufti qaysi?", "options": ["ерунда́", "отли́чно", "болта́ть", "универ"], "correctIndex": 1, "explanation": "Har so'zlashuv so'zining neytral jufti bor: болта́ть ↔ разгова́ривать, универ ↔ университе́т." },
+      { "text": "«ло́жить, ихний, зво́нит» — bu qanday hodisa?", "options": ["Adabiy so'zlashuv", "Просторе́чие — adabiy me'yordan tashqari", "Rasmiy uslub", "Jargon emas, norma"], "correctIndex": 1, "explanation": "Biz adabiy so'zlashuvni o'rganamiz — tabiiy, lekin savodli. Просторе́чие so'zlashuvda ham xato." },
+      { "text": "«ча́ёк, ручи́ща» — qaysi xususiyat?", "options": ["Qisqartma", "Ekspressivlik — kichraytma/kattalashtirma", "Ellipsis", "Klishe"], "correctIndex": 1, "explanation": "Baholovchi suffikslar so'zlashuv uslubining hissiy vositasi." },
+      { "text": "Rahbar yoki imtihon bilan qaysi uslub kerak?", "options": ["So'zlashuv", "Rasmiy/neytral", "Badiiy", "Просторе́чие"], "correctIndex": 1, "explanation": "So'zlashuv uslubi — do'st va oila uchun. Vaziyatni to'g'ri tanlash so'zdan ham muhim." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "31-rasmiy-ish-uslubi",
+    "title": "Test — Rasmiy-ish uslubi",
+    "questions": [
+      { "text": "«на основа́нии» qaysi kelishik bilan?", "options": ["Vosita (Т.)", "Qaratqich (Р.)", "Jo'nalish (Д.)", "Tushum (В.)"], "correctIndex": 1, "explanation": "на основа́нии + Р.; в соотве́тствии с + Т.; в це́лях + Р.; согла́сно + Д." },
+      { "text": "«оказа́ть по́мощь» — bu qanday hodisa?", "options": ["Frazeologizm", "Kanselyarizm (bo'lingan kesim) = помо́чь", "Paronim", "Sinonim"], "correctIndex": 1, "explanation": "приня́ть уча́стие = уча́ствовать, произвести́ опла́ту = оплати́ть. Hujjatda o'rinli, og'zaki nutqda xato." },
+      { "text": "Rasmiy uslubda shaxssizlik qanday ifodalanadi?", "options": ["«я» bilan", "Passiv va 3-shaxs orqali (устана́вливается, запреща́ется)", "Ko'plik bilan", "Savol bilan"], "correctIndex": 1, "explanation": "Buyruqda esa infinitiv: назна́чить, установи́ть." },
+      { "text": "Rasmiy-ish uslubining oltita belgisi qaysilar?", "options": ["Obrazlilik, hissiyot, erkinlik", "Standartlik, shaxssizlik, emotsiyasizlik, aniqlik, kanselyarizm, klishe", "Qisqalik, jargon, takror", "Metafora, epitet, taqqoslash"], "correctIndex": 1, "explanation": "Rasmiy uslubda shakl mazmundan muhimroq." },
+      { "text": "«Дана́ ... в том, что» — qaysi hujjat kalit iborasi?", "options": ["Заявле́ние", "Спра́вка", "Прика́з", "Дове́ренность"], "correctIndex": 1, "explanation": "Har hujjat o'z kalit so'zi bilan: Прошу́ (заявле́ние), ПРИКА́ЗЫВАЮ (прика́з), доверя́ю (дове́ренность)." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "32-ilmiy-uslub",
+    "title": "Test — Ilmiy uslub",
+    "questions": [
+      { "text": "Ilmiy uslubning uch ustuni qaysi?", "options": ["Obraz, hissiyot, ta'sir", "Terminologiya, obyektivlik, mantiq", "Qisqalik, klishe, jargon", "Metafora, epitet, ritm"], "correctIndex": 1, "explanation": "Fan, darslik, dissertatsiya va ma'ruza tili shu uch ustunga tayanadi." },
+      { "text": "«рассмо́трим, отме́тим» — bu qanday usul?", "options": ["Passiv", "Muallif ko'pligi", "Shaxssiz konstruksiya", "Ritorik savol"], "correctIndex": 1, "explanation": "Obyektivlikning uch usuli: muallif ko'pligi, passiv (бы́ло устано́влено), shaxssiz (сле́дует отме́тить)." },
+      { "text": "Ilmiy matnda «menimcha» ishlatish mumkinmi?", "options": ["Ha, tavsiya etiladi", "Yo'q — ilmiy uslubga zid", "Faqat xulosada", "Faqat kirishda"], "correctIndex": 1, "explanation": "«я/menimcha» obyektivlikni buzadi; o'rniga shaxssiz yoki passiv qurilma ishlatiladi." },
+      { "text": "«повыше́ние приво́дит к расшире́нию» — bu qanday xususiyat?", "options": ["Fe'l ustunligi", "Nominal (mavhum otlar ustunligi)", "Ellipsis", "Emotsionallik"], "correctIndex": 1, "explanation": "Ilmiy matn nominal bo'ladi: -ение, -ость, -изм suffiksli mavhum otlar ko'p." },
+      { "text": "Ilmiy maqola tuzilishi qanday?", "options": ["Kirish → xulosa", "Аннота́ция → Введе́ние → Ме́тод → Результа́ты → Обсужде́ние → Вы́вод", "Sarlavha → matn", "Reja → dalil"], "correctIndex": 1, "explanation": "Har qism o'z klishesi bilan yoziladi." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "33-publitsistik-uslub",
+    "title": "Test — Publitsistik uslub",
+    "questions": [
+      { "text": "Publitsistik uslubning ikki vazifasi qaysi?", "options": ["Faqat xabar", "Xabar + ta'sir", "Faqat ta'sir", "Faqat baho"], "correctIndex": 1, "explanation": "U faktni beradi, lekin o'quvchini befarq qoldirmaydi." },
+      { "text": "«Кто винова́т? Что де́лать?» — bu qanday vosita?", "options": ["Klishe", "Ritorik savol", "Metafora", "Anafora"], "correctIndex": 1, "explanation": "Ta'sir vositalari: ritorik savol, murojaat va «мы», takror/anafora, chaqiruv." },
+      { "text": "«проры́в» va «беспреде́л» — bu qanday leksika?", "options": ["Atama", "Baholovchi leksika — uslubning yuragi", "Kanselyarizm", "Jargon"], "correctIndex": 1, "explanation": "Baho orqali muallif o'quvchi fikrini boshqaradi. OAV o'qiganda baho so'zini tanish kerak." },
+      { "text": "«полити́ческая аре́на, волна́ проте́стов» — bu nima?", "options": ["Atama", "Metafora/obraz", "Klishe", "Qisqartma"], "correctIndex": 1, "explanation": "Metafora publitsistik uslubning tayanch qatlamlaridan biri." },
+      { "text": "Qaysi janr eng satirik?", "options": ["Заме́тка", "Репорта́ж", "Фельето́н", "Интервью́"], "correctIndex": 2, "explanation": "Janrlar: заме́тка → статья́ → репорта́ж → интервью́ → о́черк → фельето́н." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "34-frazeologizmlar-chuqur",
+    "title": "Test — Frazeologizmlar (chuqur)",
+    "questions": [
+      { "text": "«душа́ в пя́тки ушла́» nimani anglatadi?", "options": ["Juda xursand", "Qattiq qo'rqmoq", "Charchamoq", "G'azablanmoq"], "correctIndex": 1, "explanation": "His-tuyg'u guruhi: на седьмо́м не́бе (baxtdan o'zida emas), мура́шки по ко́же (eti junjikadi)." },
+      { "text": "«звёзд с не́ба не хвата́ет» — qanday odam?", "options": ["Juda aqlli", "O'rtacha, ajralib turmaydigan", "Ustomon", "Ochiqko'ngil"], "correctIndex": 1, "explanation": "Qarshi ma'no: семи́ пя́дей во лбу (o'ta aqlli)." },
+      { "text": "«когда́ рак на горе́ свистне́т» nimani anglatadi?", "options": ["Tez orada", "Hech qachon", "Bir zumda", "Ertaga"], "correctIndex": 1, "explanation": "Vaqt guruhi: в мгнове́ние о́ка (bir zumda), на ско́рую ру́ку (chala-chulpa)." },
+      { "text": "«водо́й не разольёшь» kimlar haqida?", "options": ["Dushmanlar", "Jon-jigar do'stlar", "Notanishlar", "Qarindoshlar"], "correctIndex": 1, "explanation": "Qarshi ma'no: как ко́шка с соба́кой (it-mushuk)." },
+      { "text": "Iboralar qaysi uslubga tegishli?", "options": ["Rasmiy", "Norasmiy — rasmiy va ilmiy matnda ishlatilmaydi", "Ilmiy", "Har qanday"], "correctIndex": 1, "explanation": "Iborani guruhi + ma'nosi + o'zbekcha ekvivalenti bilan yaxlit yodlang; struktura o'zgarmas." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "35-maqol-matallar",
+    "title": "Test — Maqol va matallar",
+    "questions": [
+      { "text": "Пословица va поговорка qanday farqlanadi?", "options": ["Farqi yo'q", "Maqol — to'liq gap, tayyor xulosa; matal — obraz-ibora, gap bo'lagi", "Matal uzunroq", "Maqol faqat she'rda"], "correctIndex": 1, "explanation": "Что посе́ешь, то и пожнёшь (maqol) ↔ как ры́ба в воде́ (matal)." },
+      { "text": "«погово́рка — цвето́чек, посло́вица — я́годка» nimani anglatadi?", "options": ["Ikkalasi bir xil", "Matal — boshlanish (obraz), maqol — yakuniy xulosa", "Maqol chiroyliroq", "Matal muhimroq"], "correctIndex": 1, "explanation": "Xalq iborasi ikkisining munosabatini obrazli tushuntiradi." },
+      { "text": "«Семь раз отме́рь, оди́н раз отре́жь» ning o'zbekcha muqobili qaysi?", "options": ["Ko'z qo'rqoq, qo'l botir", "Yetti o'lchab, bir kes", "Nima eksang, shuni o'rasan", "Yaxshi so'z jon ozig'i"], "correctIndex": 1, "explanation": "Ba'zi maqollar aynan bir xil — bu yodlashni osonlashtiradi." },
+      { "text": "«Лу́чше сини́ца в рука́х, чем жура́вль в не́бе» — o'zbekcha obrazi qanday?", "options": ["Aynan bir xil", "Boshqa obraz — o'pka-quyruq", "Muqobili yo'q", "So'zma-so'z tarjima qilinadi"], "correctIndex": 1, "explanation": "Ma'no universal, obraz milliy." },
+      { "text": "Maqolni tushunish zanjiri qanday?", "options": ["Tarjima → yodlash", "Obraz → ko'chma ma'no → vaziyat", "Urg'u → imlo", "O'zak → suffiks"], "correctIndex": 1, "explanation": "Keyin o'zbek muqobilini toping va suhbatda o'z o'rnida — xulosa sifatida — qo'llang." }
+    ]
+  },
+  {
+    "topic": "rus-tili", "section": "04-b2-yuqori-orta", "article": "36-kollokatsiyalar",
+    "title": "Test — Kollokatsiyalar",
+    "questions": [
+      { "text": "Kollokatsiya va frazeologizm qanday farqlanadi?", "options": ["Farqi yo'q", "Idioma ma'nosi so'zlardan chiqmaydi; kollokatsiya ma'nosi shaffof, lekin so'z tanlovi qat'iy", "Kollokatsiya uzunroq", "Idioma rasmiy"], "correctIndex": 1, "explanation": "води́ть за нос (idioma) ↔ приня́ть реше́ние (kollokatsiya)." },
+      { "text": "«___ реше́ние» — qaysi fe'l to'g'ri?", "options": ["сде́лать", "приня́ть", "дать", "поста́вить"], "correctIndex": 1, "explanation": "приня́ть реше́ние. Universal «делать» ni hamma joyga tiqishtirish — asosiy xato." },
+      { "text": "«___ влия́ние» — qaysi fe'l?", "options": ["де́лать", "оказа́ть", "дать", "взять"], "correctIndex": 1, "explanation": "оказа́ть влия́ние / по́мощь / подде́ржку — bu blok yaxlit yodlanadi." },
+      { "text": "«___ побе́ду» — qaysi fe'l?", "options": ["сде́лать", "одержа́ть", "дать", "приня́ть"], "correctIndex": 1, "explanation": "одержа́ть побе́ду — g'alaba qozonmoq. Har mavhum ot o'z «sherik fe'li»ni talab qiladi." },
+      { "text": "«jala yog'moq» rus tilida qanday?", "options": ["си́льный дождь", "проливно́й дождь", "большо́й дождь", "кре́пкий дождь"], "correctIndex": 1, "explanation": "«Kuchli»ni ot bo'yicha turlicha bering: проливно́й дождь, треску́чий моро́з, кроме́шная тьма." }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "01-nodejs-kirish-event-loop-v8",
+    "title": "Test — Node.js va event loop",
+    "questions": [
+      { "text": "Node.js nimalardan tashkil topgan?", "options": ["Faqat V8", "V8 + libuv (event loop, I/O) + Node API", "Brauzer + JS", "Faqat libuv"], "correctIndex": 1, "explanation": "Node — til yoki framework emas, runtime." },
+      { "text": "Event loop necha fazadan iborat?", "options": ["3", "4", "6: timers → pending → idle/prepare → poll → check → close", "8"], "correctIndex": 2, "explanation": "poll fazasi I/O uchun eng muhim." },
+      { "text": "Node'da eng yuqori ustuvorlikka ega microtask navbati qaysi?", "options": ["Promise", "process.nextTick", "setTimeout", "setImmediate"], "correctIndex": 1, "explanation": "Ustuvorlik: sinxron → nextTick → Promise → timer/I/O/check." },
+      { "text": "Thread pool nima uchun ishlatiladi?", "options": ["Tarmoq uchun", "Fayl, DNS va crypto operatsiyalari uchun (default 4)", "JS bajarish uchun", "Timer uchun"], "correctIndex": 1, "explanation": "Tarmoq esa OS native async — thread pool ishlatmaydi." },
+      { "text": "Node qanday bitta thread bilan minglab ulanishni boshqaradi?", "options": ["Ko'p process", "Non-blocking I/O va event loop", "Sinxron kod", "Cache"], "correctIndex": 1, "explanation": "CPU-og'ir kod esa event loopni bloklaydi — bu asosiy xavf." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "02-npm-package-json-semver",
+    "title": "Test — npm, package.json, semver",
+    "questions": [
+      { "text": "«dependencies» va «devDependencies» qanday farqlanadi?", "options": ["Farqi yo'q", "dependencies — ishlash uchun; devDependencies — faqat development", "devDependencies production'da kerak", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "-D flagi bilan devDependencies'ga qo'shiladi." },
+      { "text": "«npm ci» nima uchun ishlatiladi?", "options": ["Yangilash", "Lock fayl asosida aniq, takrorlanadigan o'rnatish (CI uchun)", "O'chirish", "Audit"], "correctIndex": 1, "explanation": "package-lock.json commit qilinadi — reproducibility uchun." },
+      { "text": "Semverda «~1.2.3» nimani anglatadi?", "options": ["Faqat 1.2.3", "Faqat PATCH yangilanishlari", "MINOR va PATCH", "Har qanday versiya"], "correctIndex": 1, "explanation": "«^» (default) MINOR va PATCH'ga ruxsat beradi." },
+      { "text": "«npx» nima qiladi?", "options": ["Paket o'rnatadi", "Paketni o'rnatmasdan ishga tushiradi", "Audit qiladi", "Publish qiladi"], "correctIndex": 1, "explanation": "Bir martalik CLI vositalar uchun juda qulay." },
+      { "text": "«npm audit» nima uchun kerak?", "options": ["Tezlik", "Bog'liqliklardagi xavfsizlik zaifliklarini tekshirish", "Formatlash", "Test"], "correctIndex": 1, "explanation": "Zanjirdagi paketlar ham tekshiriladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "03-core-modullar-fs-path-os-crypto",
+    "title": "Test — Core modullar",
+    "questions": [
+      { "text": "Serverda «fs» ning qaysi shakli ishlatilmasligi kerak?", "options": ["Promise", "Sync — event loopni bloklaydi", "Callback", "Stream"], "correctIndex": 1, "explanation": "Zamonaviy tanlov — fs/promises." },
+      { "text": "Xavfsiz tasodifiy qiymat uchun nima ishlatiladi?", "options": ["Math.random()", "crypto.randomBytes / randomUUID", "Date.now()", "Math.floor"], "correctIndex": 1, "explanation": "Math.random kriptografik jihatdan xavfsiz emas." },
+      { "text": "Parolni saqlash uchun qaysi usul to'g'ri?", "options": ["createHash('md5')", "scrypt yoki bcrypt + tuz (salt)", "Base64", "Ochiq matn"], "correctIndex": 1, "explanation": "Solishtirishda timingSafeEqual ishlatiladi." },
+      { "text": "«path.join» nima uchun kerak?", "options": ["Fayl o'qish", "OS'ga mos yo'l yasash — qo'lda yopishtirmaslik", "Papka yaratish", "Nom olish"], "correctIndex": 1, "explanation": "Windows va Unix ajratgichlari farq qiladi." },
+      { "text": "«util.promisify» nima qiladi?", "options": ["Xato ushlaydi", "Callback uslubidagi funksiyani Promise'ga aylantiradi", "Log yozadi", "Nusxa oladi"], "correctIndex": 1, "explanation": "Eski API'larni async/await bilan ishlatish imkonini beradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "04-events-eventemitter-streams",
+    "title": "Test — EventEmitter va Streams",
+    "questions": [
+      { "text": "«emit» sinxronmi yoki asinxron?", "options": ["Asinxron", "SINXRON — listenerlar darhol ishlaydi", "Ikkalasi", "Kontekstga bog'liq"], "correctIndex": 1, "explanation": "Bu ko'pincha noto'g'ri tushuniladi." },
+      { "text": "«error» event listenersiz chiqarilsa nima bo'ladi?", "options": ["E'tiborsiz qoladi", "Process qulaydi", "Log yoziladi", "Qayta uriniladi"], "correctIndex": 1, "explanation": "Har EventEmitter uchun error listener qo'yish majburiy." },
+      { "text": "Streamning nechta turi bor?", "options": ["2", "3", "4: Readable, Writable, Duplex, Transform", "5"], "correctIndex": 2, "explanation": "Hammasi EventEmitter ustiga qurilgan." },
+      { "text": "«Backpressure» nima?", "options": ["Xato", "Tez manba va sekin manzil o'rtasidagi muvozanat", "Xotira to'lishi", "Sekinlik"], "correctIndex": 1, "explanation": "Uni qo'lda boshqarmang — pipe/pipeline hal qiladi." },
+      { "text": "Production'da qaysi funksiya afzal?", "options": ["pipe", "pipeline — xato va tozalashni to'g'ri boshqaradi", "on('data')", "read()"], "correctIndex": 1, "explanation": "pipe xatolarni avtomatik tarqatmaydi va resurs sizib qolishi mumkin." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "05-http-modul-server-yaratish",
+    "title": "Test — HTTP modul",
+    "questions": [
+      { "text": "«req» obyekti qanday stream?", "options": ["Writable", "Readable — body qo'lda o'qiladi", "Duplex", "Transform"], "correctIndex": 1, "explanation": "data va end eventlari orqali body yig'iladi." },
+      { "text": "«res.end()» chaqirilmasa nima bo'ladi?", "options": ["Xato", "So'rov osilib qoladi — javob yakunlanmaydi", "Avtomatik yopiladi", "Hech narsa"], "correctIndex": 1, "explanation": "writeHead → write → end — ketma-ketlik majburiy." },
+      { "text": "Core «http» modulida routing qanday amalga oshiriladi?", "options": ["Avtomatik", "Qo'lda — req.method va url.pathname tekshiriladi", "Kutubxona bilan", "Amalga oshmaydi"], "correctIndex": 1, "explanation": "Express aynan shu ishni avtomatlashtiradi." },
+      { "text": "Static fayl uzatish uchun nima samarali?", "options": ["readFile + send", "Stream va pipe", "JSON", "Buffer.concat"], "correctIndex": 1, "explanation": "Katta fayllarni butunlay xotiraga yuklamaydi." },
+      { "text": "«Graceful shutdown» nima uchun kerak?", "options": ["Tezlik", "Faol so'rovlarni yakunlab, keyin serverni to'xtatish", "Xotira", "Log"], "correctIndex": 1, "explanation": "Production'da deploy paytida so'rovlar yo'qolmasligi uchun." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "06-express-routing-middleware",
+    "title": "Test — Express: routing va middleware",
+    "questions": [
+      { "text": "Middleware funksiyasi qanday imzoga ega?", "options": ["(req, res)", "(req, res, next)", "(err, req)", "(next)"], "correctIndex": 1, "explanation": "next() chaqirish yoki javob qaytarish MAJBURIY." },
+      { "text": "Error-handling middleware nechta argument oladi?", "options": ["2", "3", "4: (err, req, res, next)", "5"], "correctIndex": 2, "explanation": "U barcha route'lardan KEYIN, eng oxirida ro'yxatdan o'tkaziladi." },
+      { "text": "«express.json()» nima qiladi?", "options": ["Javobni JSON qiladi", "So'rov body'sini parse qilib req.body ga qo'yadi", "Validatsiya qiladi", "Xato ushlaydi"], "correctIndex": 1, "explanation": "Bu core http modulidagi qo'lda body o'qish muammosini hal qiladi." },
+      { "text": "Middleware tartibi muhimmi?", "options": ["Yo'q", "Ha — ular ro'yxatdan o'tgan tartibda ishlaydi", "Faqat error uchun", "Faqat routerda"], "correctIndex": 1, "explanation": "Noto'g'ri tartib «Cannot set headers after they are sent» kabi xatolarga olib keladi." },
+      { "text": "«express.Router» nima beradi?", "options": ["Tezlik", "Modular route tuzilmasi — fayllarga bo'lish", "Validatsiya", "Cache"], "correctIndex": 1, "explanation": "Controller/service qatlamlari bilan birga toza arxitektura beradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "07-rest-api-dizayni",
+    "title": "Test — REST API dizayni",
+    "questions": [
+      { "text": "REST'da URL qanday nomlanadi?", "options": ["Fe'l bilan: /getUsers", "Ot va ko'plik bilan: /users/5", "Tasodifiy", "Faqat raqam"], "correctIndex": 1, "explanation": "Fe'l vazifasini HTTP metod bajaradi." },
+      { "text": "401 va 403 qanday farqlanadi?", "options": ["Farqi yo'q", "401 — autentifikatsiya yo'q; 403 — ruxsat yo'q", "403 — login kerak", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "401 «kimligingiz noma'lum», 403 «kimligingiz ma'lum, lekin ruxsat yo'q»." },
+      { "text": "PUT va PATCH qanday farqlanadi?", "options": ["Farqi yo'q", "PUT — to'liq almashtirish; PATCH — qisman yangilash", "PATCH — to'liq", "PUT — yaratish"], "correctIndex": 1, "explanation": "PUT idempotent, PATCH esa har doim ham emas." },
+      { "text": "Yangi resurs yaratilganda qaysi status kod qaytariladi?", "options": ["200", "201", "204", "301"], "correctIndex": 1, "explanation": "204 — muvaffaqiyat, lekin body yo'q (masalan DELETE)." },
+      { "text": "REST'ning «stateless» cheklovi nimani anglatadi?", "options": ["Ma'lumot saqlanmaydi", "Server so'rovlar orasida mijoz holatini saqlamaydi", "Cache yo'q", "Sessiya yo'q"], "correctIndex": 1, "explanation": "Har so'rov o'zida kerakli barcha ma'lumotni olib keladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "05-qism-nodejs", "article": "08-environment-variables-dotenv-config",
+    "title": "Test — Environment variables",
+    "questions": [
+      { "text": "«process.env» qiymatlari qanday turda bo'ladi?", "options": ["Number", "DOIM string", "Boolean", "Aralash"], "correctIndex": 1, "explanation": "Number va boolean'ga qo'lda aylantirish kerak." },
+      { "text": "«.env» fayli git'ga qo'shiladimi?", "options": ["Ha", "Yo'q — .gitignore'da; .env.example esa commit qilinadi", "Faqat dev'da", "Faqat prod'da"], "correctIndex": 1, "explanation": "Sirlarni repozitoriyga tushirish — jiddiy xavfsizlik xatosi." },
+      { "text": "Env validatsiyasi nima uchun kerak?", "options": ["Tezlik", "Fail fast — kerakli o'zgaruvchi yo'q bo'lsa darhol to'xtash", "Formatlash", "Log"], "correctIndex": 1, "explanation": "Zod bilan sxema tuzib tekshiriladi." },
+      { "text": "Production'da sirlarni qayerda saqlash kerak?", "options": [".env faylda", "Platforma secrets menejerida", "Kodda", "Git'da"], "correctIndex": 1, "explanation": "12-Factor: config env'da, kodda emas." },
+      { "text": "Markazlashtirilgan config moduli nima beradi?", "options": ["Tezlik", "Env'ni bir joyda o'qish, tekshirish va aylantirish", "Xavfsizlik faqat", "Log"], "correctIndex": 1, "explanation": "Butun kod process.env emas, config.* orqali ishlaydi." }
+    ]
+  }
+]

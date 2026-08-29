@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "dasturlash", "section": "07-qism-typescript", "article": "01-ts-kirish-nega-tsconfig",
+    "title": "Test — TypeScript kirish",
+    "questions": [
+      { "text": "TypeScript JavaScript'ga nisbatan nima beradi?", "options": ["Tezroq ishlash", "Statik tur tekshiruvi — xato kompilyatsiya vaqtida topiladi", "Kichikroq bundle", "Yangi sintaksis faqat"], "correctIndex": 1, "explanation": "TS — JS ning superseti; har qanday JS to'g'ri TS hisoblanadi." },
+      { "text": "Kompilyatsiyadan keyin turlar bilan nima bo'ladi?", "options": ["Saqlanadi", "O'chiriladi (erased) — runtime'da tur yo'q", "JS'ga aylanadi", "Tekshiriladi"], "correctIndex": 1, "explanation": "Shuning uchun runtime validatsiya uchun Zod kabi vositalar kerak." },
+      { "text": "tsconfig'dagi eng muhim sozlama qaysi?", "options": ["target", "strict: true", "outDir", "module"], "correctIndex": 1, "explanation": "U bir nechta qat'iy tekshiruvni birdan yoqadi." },
+      { "text": "«strictNullChecks» nima beradi?", "options": ["Tezlik", "null va undefined'ni alohida tur sifatida tekshiradi", "Formatlash", "Import tekshiruvi"], "correctIndex": 1, "explanation": "«Cannot read property of undefined» xatolarining oldini oladi." },
+      { "text": "Kutubxona uchun turlar qayerdan olinadi?", "options": ["Avtomatik", "@types/* paketlari yoki kutubxonaning o'z turlari", "tsconfig'dan", "Yozib chiqiladi"], "correctIndex": 1, "explanation": "DefinitelyTyped loyihasi minglab paket uchun turlar beradi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "07-qism-typescript", "article": "02-turlar-interface-type-enum",
+    "title": "Test — Turlar, interface, enum",
+    "questions": [
+      { "text": "«any» va «unknown» qanday farqlanadi?", "options": ["Farqi yo'q", "unknown xavfsiz — ishlatishdan oldin tekshirish talab qiladi", "any xavfsizroq", "unknown eski"], "correctIndex": 1, "explanation": "any barcha tekshiruvni o'chiradi — undan qochish kerak." },
+      { "text": "«interface» va «type» qachon tanlanadi?", "options": ["Farqi yo'q", "Obyekt shakli → interface; union va utility → type", "Doim type", "Doim interface"], "correctIndex": 1, "explanation": "interface declaration merging'ni qo'llab-quvvatlaydi." },
+      { "text": "«never» turi nimani anglatadi?", "options": ["null", "Hech qachon yuz bermaydigan qiymat", "undefined", "Bo'sh obyekt"], "correctIndex": 1, "explanation": "Exhaustiveness tekshiruvida juda foydali." },
+      { "text": "Union tur qanday belgilanadi?", "options": ["&", "|", "+", "?"], "correctIndex": 1, "explanation": "«&» esa intersection — turlarni birlashtiradi." },
+      { "text": "Enum o'rniga zamonaviy muqobil qaysi?", "options": ["any", "Union literal yoki «as const» obyekt", "interface", "class"], "correctIndex": 1, "explanation": "Ular runtime kod generatsiya qilmaydi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "07-qism-typescript", "article": "03-funksiyalar-generics",
+    "title": "Test — Funksiyalar va generics",
+    "questions": [
+      { "text": "Generic nima uchun kerak?", "options": ["Tezlik", "Turlar orasidagi bog'liqlikni saqlash — any ishlatmasdan", "Kod qisqarishi", "Xavfsizlik faqat"], "correctIndex": 1, "explanation": "Kirish turi chiqish turini belgilaydi." },
+      { "text": "«T extends X» nima qiladi?", "options": ["Meros", "Constraint — generic turni cheklaydi", "Cast", "Import"], "correctIndex": 1, "explanation": "Masalan T extends { id: number } — faqat id'li obyektlar." },
+      { "text": "«keyof T» nima qaytaradi?", "options": ["Qiymatlar", "T obyektining kalitlari union turi", "Massiv", "Boolean"], "correctIndex": 1, "explanation": "Type-safe property accessorlar yozish uchun ishlatiladi." },
+      { "text": "Qachon generic ishlatish KERAK EMAS?", "options": ["Har doim kerak", "Tur parametri faqat bir joyda ishlatilsa", "Hech qachon", "Faqat class'da"], "correctIndex": 1, "explanation": "Ortiqcha generic kodni murakkablashtiradi." },
+      { "text": "Function overload nima beradi?", "options": ["Tezlik", "Bir funksiya uchun bir necha imzo e'lon qilish", "Meros", "Cast"], "correctIndex": 1, "explanation": "Argumentlarga qarab qaytish turi o'zgarganda ishlatiladi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "07-qism-typescript", "article": "04-ilgor-turlar-conditional-mapped-utility",
+    "title": "Test — Ilg'or turlar",
+    "questions": [
+      { "text": "«Partial<T>» nima qiladi?", "options": ["Turni o'chiradi", "Barcha maydonlarni ixtiyoriy qiladi", "Faqat o'qish", "Kalitlarni oladi"], "correctIndex": 1, "explanation": "Required — teskarisi; Readonly — o'zgarmas qiladi." },
+      { "text": "«Pick» va «Omit» qanday farqlanadi?", "options": ["Farqi yo'q", "Pick — tanlaganini oladi; Omit — tanlaganini chiqarib tashlaydi", "Omit tanlab oladi", "Ikkalasi bir xil"], "correctIndex": 1, "explanation": "Record<K, V> esa kalit-qiymat turini yasaydi." },
+      { "text": "«Discriminated union» nima beradi?", "options": ["Tezlik", "Ajratuvchi maydon orqali xavfsiz narrowing", "Meros", "Generic"], "correctIndex": 1, "explanation": "type maydoni bo'yicha switch qilish eng toza naqsh." },
+      { "text": "«infer» kalit so'zi nima qiladi?", "options": ["Import qiladi", "Conditional tur ichida turni «tutib oladi»", "Cast qiladi", "Tekshiradi"], "correctIndex": 1, "explanation": "ReturnType va Awaited shu mexanizmga tayanadi." },
+      { "text": "«Mapped type» sintaksisi qanday?", "options": ["T extends K", "[K in keyof T]", "T | K", "T & K"], "correctIndex": 1, "explanation": "Mavjud tur asosida yangi tur yasashning asosiy usuli." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "07-qism-typescript", "article": "05-type-guards-narrowing-assertions",
+    "title": "Test — Type guards va narrowing",
+    "questions": [
+      { "text": "Custom type guard qanday e'lon qilinadi?", "options": ["as T", "x is T qaytish turi bilan", "typeof x", "assert x"], "correctIndex": 1, "explanation": "function isUser(x: unknown): x is User { ... }" },
+      { "text": "«as» (type assertion) nima uchun xavfli?", "options": ["Sekin", "Kompilyator tekshiruvini chetlab o'tadi — xato yashirinadi", "Kod uzun", "Ishlamaydi"], "correctIndex": 1, "explanation": "U turni o'zgartirmaydi, faqat kompilyatorni «ishontiradi»." },
+      { "text": "«satisfies» operatori nima beradi?", "options": ["Cast qiladi", "Turga mosligini tekshiradi, lekin aniq turni saqlaydi", "Xato beradi", "Import qiladi"], "correctIndex": 1, "explanation": "«as» dan farqli — u xavfsiz va aniqroq." },
+      { "text": "Exhaustiveness tekshiruvi qanday qilinadi?", "options": ["else bilan", "default holatda «never» turiga tayinlash", "try/catch", "switch bilan faqat"], "correctIndex": 1, "explanation": "Yangi variant qo'shilsa kompilyator xato beradi." },
+      { "text": "Tashqi ma'lumot uchun qaysi tur to'g'ri?", "options": ["any", "unknown + validatsiya (Zod)", "object", "Object"], "correctIndex": 1, "explanation": "Runtime'da turlar yo'q — tekshiruv majburiy." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "07-qism-typescript", "article": "06-decorators",
+    "title": "Test — Dekoratorlar",
+    "questions": [
+      { "text": "Dekorator nima?", "options": ["Kommentariy", "Class yoki a'zoga metama'lumot va xulq qo'shuvchi «@» yorliq", "Tur", "Interfeys"], "correctIndex": 1, "explanation": "Metaprogramming — kod haqidagi kod." },
+      { "text": "Dekorator ishlashi uchun qanday sozlama kerak?", "options": ["strict", "experimentalDecorators va emitDecoratorMetadata", "target ES5", "module"], "correctIndex": 1, "explanation": "NestJS va TypeORM aynan legacy dekoratorlarga tayanadi." },
+      { "text": "«Decorator factory» nima?", "options": ["Class", "Parametr qabul qilib, dekorator qaytaruvchi funksiya", "Interfeys", "Tur"], "correctIndex": 1, "explanation": "@Column({ length: 50 }) — factory misoli." },
+      { "text": "«reflect-metadata» nima uchun kerak?", "options": ["Tezlik", "Metama'lumot saqlash — NestJS DI ning asosi", "Validatsiya", "Log"], "correctIndex": 1, "explanation": "Konstruktor parametrlari turini runtime'da bilish imkonini beradi." },
+      { "text": "Dekoratorlar qaysi tartibda qo'llanadi?", "options": ["Yuqoridan pastga", "Pastdan yuqoriga (bajarilishda)", "Tasodifiy", "Alifbo bo'yicha"], "correctIndex": 1, "explanation": "Factory'lar esa yuqoridan pastga baholanadi." }
+    ]
+  },
+  {
+    "topic": "dasturlash", "section": "07-qism-typescript", "article": "07-ts-node-express-loyiha",
+    "title": "Test — TS bilan Node/Express loyiha",
+    "questions": [
+      { "text": "«import type» nima uchun ishlatiladi?", "options": ["Tezlik", "Faqat turni import qilish — runtime import qilinmaydi", "Xavfsizlik", "Format"], "correctIndex": 1, "explanation": "Bundle hajmini kamaytiradi va sirkulyar importlarni oldini oladi." },
+      { "text": "«req.user» kabi maydon qanday qo'shiladi?", "options": ["as any", "Global tip kengaytirish (declaration merging)", "Yangi interfeys", "Cast"], "correctIndex": 1, "explanation": ".d.ts faylida Express namespace kengaytiriladi." },
+      { "text": "Development va production build qanday farqlanadi?", "options": ["Farqi yo'q", "Dev — tsx (to'g'ridan ishga tushirish); prod — tsc bilan kompilyatsiya", "Dev — tsc", "Ikkalasi tsx"], "correctIndex": 1, "explanation": "Production'da toza JS chiqadi — tez ishga tushadi." },
+      { "text": "TypeScript kompilyatsiya vaqtida tekshiradi. Runtime uchun nima kerak?", "options": ["Hech narsa", "Zod kabi runtime validatsiya", "any", "assert"], "correctIndex": 1, "explanation": "Ikki qatlam birga to'liq xavfsizlik beradi." },
+      { "text": "Qatlamli tuzilma qanday bo'ladi?", "options": ["Bitta fayl", "Controller → Service → Model", "Faqat routes", "Random"], "correctIndex": 1, "explanation": "Har qatlam o'z mas'uliyatiga ega — test va kengaytirishga qulay." }
+    ]
+  }
+]
