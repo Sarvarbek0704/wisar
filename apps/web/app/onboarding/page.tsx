@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { ChevronRight, BookOpen, Target, ArrowLeft } from "lucide-react";
 import { isLoggedIn, setCefr, setDailyGoal } from "@/lib/me-api";
 import { COURSES, type Course } from "@/lib/placement";
@@ -140,6 +141,19 @@ export default function OnboardingPage() {
         >
           Birinchi darsni boshlash <ChevronRight size={18} />
         </button>
+
+        {!isLoggedIn() && (
+          <p className="mt-5 text-sm text-soft">
+            Natijani saqlab, progressni kuzatish uchun{" "}
+            <Link
+              href={`/login?next=${encodeURIComponent(course.start[level] || `/${course.id}`)}`}
+              className="font-semibold text-accent hover:underline"
+            >
+              hisob oching
+            </Link>
+            .
+          </p>
+        )}
 
         <button
           onClick={() => setStep("course")}

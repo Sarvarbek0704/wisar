@@ -36,14 +36,15 @@ function isAdminPath(pathname: string) {
   return pathname === "/admin" || pathname.startsWith("/admin/");
 }
 
-/* Login talab qiladigan shaxsiy sahifalar — kirmagan odam yo'naltiriladi */
+/* Login talab qiladigan shaxsiy sahifalar — kirmagan odam yo'naltiriladi.
+   `/onboarding` ataylab ro'yxatda YO'Q: yangi odam avval qiymatni ko'rsin
+   (daraja aniqlansin), keyin saqlash uchun kirsin — teskarisi emas. */
 const PROTECTED_PREFIXES = [
   "/me",
   "/bookmarks",
   "/planner",
   "/flashcards",
   "/ielts",
-  "/onboarding",
   "/certificate",
 ];
 function isProtectedPath(pathname: string) {
