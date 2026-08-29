@@ -26,6 +26,12 @@ const ENGLISH_DIR = process.env.ENGLISH_DIR
 const TSV_FILE = join(ENGLISH_DIR, "Ingliz-Tili-Kursi-Anki.tsv");
 const LUGAT_FILE = join(ENGLISH_DIR, "LUGAT", "LUGAT-Anki.tsv");
 
+const RUSSIAN_DIR = process.env.RUSSIAN_DIR
+  ? resolve(MONOREPO_ROOT, process.env.RUSSIAN_DIR)
+  : resolve(MONOREPO_ROOT, "..", "Rus_Tili_Kursi");
+
+const RUS_TSV_FILE = join(RUSSIAN_DIR, "Rus-Tili-Kursi-Anki.tsv");
+
 const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
 type CefrLevel = (typeof CEFR_LEVELS)[number] | "other";
 
@@ -236,9 +242,18 @@ function parseTsv(filePath: string): Map<CefrLevel, ParsedCard[]> {
   return groups;
 }
 
-async function upsertDeck(level: CefrLevel): Promise<string> {
-  const slug = level.toLowerCase();
-  const title = level === "other" ? "Boshqa — Maxsus lug'at" : `${level} Lug'at`;
+/** Deck oilasi: ingliz (prefikssiz, tarixiy slug) yoki rus ("rus-" prefiksli). */
+interface DeckFamily {
+  slugPrefix: string;
+  titlePrefix: string;
+}
+const EN_FAMILY: DeckFamily = { slugPrefix: "", titlePrefix: "" };
+const RU_FAMILY: DeckFamily = { slugPrefix: "rus-", titlePrefix: "Rus " };
+
+async function upsertDeck(level: CefrLevel, fam: DeckFamily = EN_FAMILY): Promise<string> {
+  const slug = fam.slugPrefix + level.toLowerCase();
+  const base = level === "other" ? "Boshqa — Maxsus lug'at" : `${level} Lug'at`;
+  const title = fam.titlePrefix ? `${fam.titlePrefix}${base}` : base;
   const deck = await prisma.flashcardDeck.upsert({
     where: { slug },
     update: { title, level },
@@ -247,8 +262,8 @@ async function upsertDeck(level: CefrLevel): Promise<string> {
   return deck.id;
 }
 
-async function seedLevel(level: CefrLevel, cards: ParsedCard[]): Promise<void> {
-  const deckId = await upsertDeck(level);
+async function seedLevel(level: CefrLevel, cards: ParsedCard[], fam: DeckFamily = EN_FAMILY): Promise<void> {
+  const deckId = await upsertDeck(level, fam);
 
   // Mavjud kartalarni o'chiramiz
   await prisma.flashcard.deleteMany({ where: { deckId } });
@@ -269,7 +284,7 @@ async function seedLevel(level: CefrLevel, cards: ParsedCard[]): Promise<void> {
     });
   }
 
-  const label = level === "other" ? "other" : level;
+  const label = (fam.titlePrefix || "") + (level === "other" ? "other" : level);
   console.log(`  ${label}: ${cards.length} karta`);
 }
 
@@ -296,6 +311,21 @@ async function main() {
     if (!cards || cards.length === 0) continue;
     await seedLevel(level, cards);
     total += cards.length;
+  }
+
+  // --- Rus tili kursi (alohida "rus-*" decklar) ---
+  if (existsSync(RUS_TSV_FILE)) {
+    console.log();
+    console.log("Rus tili kursi flashcardlari:", RUS_TSV_FILE);
+    const ruGroups = parseTsv(RUS_TSV_FILE);
+    for (const level of orderedLevels) {
+      const cards = ruGroups.get(level);
+      if (!cards || cards.length === 0) continue;
+      await seedLevel(level, cards, RU_FAMILY);
+      total += cards.length;
+    }
+  } else {
+    console.log("Rus TSV topilmadi (otkazib yuborildi):", RUS_TSV_FILE);
   }
 
   console.log(`\nJami ${total} karta import qilindi.`);

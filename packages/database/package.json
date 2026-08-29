@@ -11,7 +11,7 @@
     "reset": "dotenv -e ../../.env -- prisma migrate reset --force --skip-seed && tsx prisma/seed.ts",
     "seed": "tsx prisma/seed.ts",
     "seed:english": "tsx prisma/seed-english.ts",
-    "seed:flashcards": "dotenv-cli -e ../../.env tsx prisma/seed-flashcards.ts",
+    "seed:flashcards": "tsx prisma/seed-flashcards.ts",
     "index": "dotenv -e ../../.env -- tsx prisma/index-embeddings.ts",
     "studio": "dotenv -e ../../.env -- prisma studio"
   },
