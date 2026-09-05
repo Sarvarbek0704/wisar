@@ -261,6 +261,12 @@ export class MeService {
     return { cefrLevel: safe };
   }
 
+  /** Haftalik hisobot xatiga obuna holatini o'zgartiradi. */
+  async setEmailOptIn(userId: string, optIn: boolean) {
+    await this.prisma.user.update({ where: { id: userId }, data: { emailOptIn: optIn } });
+    return { emailOptIn: optIn };
+  }
+
   // Shaxsiy dashboard: mavzular bo'yicha progress, davom ettirish, statistika
   async dashboard(userId: string) {
     const [topics, completedRows, bookmarkCount, last] = await Promise.all([

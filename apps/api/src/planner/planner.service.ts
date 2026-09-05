@@ -1,11 +1,21 @@
-import { Injectable } from "@nestjs/common";
+import { BadRequestException, Injectable } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
+
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 @Injectable()
 export class PlannerService {
   constructor(private readonly prisma: PrismaService) {}
 
+  /** URL'dan kelgan sanani tekshiradi — noto'g'ri kalit bilan qator yaratilmasin. */
+  private assertDate(date: string): void {
+    if (!DATE_RE.test(date)) {
+      throw new BadRequestException("Sana YYYY-MM-DD formatida bo'lishi kerak");
+    }
+  }
+
   async getPlannerDay(userId: string, date: string) {
+    this.assertDate(date);
     const row = await this.prisma.plannerDay.findUnique({
       where: { userId_date: { userId, date } },
     });
@@ -14,6 +24,7 @@ export class PlannerService {
   }
 
   async savePlannerDay(userId: string, date: string, data: string) {
+    this.assertDate(date);
     return this.prisma.plannerDay.upsert({
       where: { userId_date: { userId, date } },
       create: { userId, date, data },

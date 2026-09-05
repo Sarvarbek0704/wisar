@@ -1,10 +1,12 @@
 "use client";
 
-// Google OAuth callback sahifasi: /auth/google?token=xxx
-// Backend GET /api/auth/google/callback → redirect shu sahifaga token bilan
+// Google OAuth callback sahifasi: /auth/google#token=xxx
+// Backend GET /api/auth/google/callback → redirect shu sahifaga token bilan.
+// Token FRAGMENT da keladi (query emas) — fragment serverga yuborilmaydi,
+// shuning uchun u server loglariga va Referer sarlavhasiga tushmaydi.
 
 import { useEffect } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { Suspense } from "react";
 
 const TOKEN_KEY = "wisar-token";
@@ -12,10 +14,14 @@ const USER_KEY = "wisar-user";
 
 function GoogleCallbackInner() {
   const router = useRouter();
-  const sp = useSearchParams();
 
   useEffect(() => {
-    const token = sp.get("token");
+    const hash = typeof window !== "undefined" ? window.location.hash.replace(/^#/, "") : "";
+    const token = new URLSearchParams(hash).get("token");
+    // Tokenni manzil qatoridan darhol olib tashlaymiz (brauzer tarixida qolmasin).
+    if (typeof window !== "undefined" && window.location.hash) {
+      window.history.replaceState(null, "", window.location.pathname);
+    }
     if (!token) {
       router.replace("/login?error=google");
       return;
@@ -36,7 +42,7 @@ function GoogleCallbackInner() {
       return;
     }
     router.replace("/me");
-  }, [router, sp]);
+  }, [router]);
 
   return (
     <div className="flex min-h-[60vh] items-center justify-center font-sans">

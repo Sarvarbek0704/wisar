@@ -6,7 +6,7 @@ import {
 } from "@nestjs/common";
 import { JwtService } from "@nestjs/jwt";
 import * as bcrypt from "bcryptjs";
-import { randomBytes, createHash } from "crypto";
+import { randomBytes, createHash, randomInt } from "crypto";
 import { authenticator } from "otplib";
 import * as QRCode from "qrcode";
 import { PrismaService } from "../prisma.service";
@@ -15,6 +15,8 @@ import { MailService } from "../mail/mail.service";
 /** Access token muddati (qisqa) — refresh cookie uzoq muddat saqlaydi (34-vazifa). */
 const ACCESS_TTL = "15m";
 const REFRESH_TTL_DAYS = 30;
+/** Tasdiqlash kodini qayta yuborishdan oldingi kutish vaqti (email bombardimoniga qarshi). */
+const VERIFY_RESEND_COOLDOWN_MS = 2 * 60 * 1000;
 
 @Injectable()
 export class AuthService {
@@ -81,16 +83,26 @@ export class AuthService {
     );
   }
 
-  /** 6 xonali tasdiqlash kodi yaratib, DB'ga yozadi va emailga yuboradi. */
+  /**
+   * 6 xonali tasdiqlash kodi yaratib, DB'ga yozadi va emailga yuboradi.
+   * Kod kriptografik tasodifiy (`randomInt`) — `Math.random()` bashorat qilinadi.
+   * Cooldown: yaqinda kod yuborilgan bo'lsa qaytadan yubormaymiz — bu ham email
+   * bombardimonining, ham haqiqiy foydalanuvchining kodini bekor qilishning oldini oladi.
+   */
   private async issueVerificationCode(
     userId: string,
     email: string,
     name: string | null,
     mailService: MailService,
   ): Promise<void> {
-    // Eski kodlarni tozalaymiz
+    const recent = await this.prisma.emailVerification.findFirst({
+      where: { userId, createdAt: { gt: new Date(Date.now() - VERIFY_RESEND_COOLDOWN_MS) } },
+      orderBy: { createdAt: "desc" },
+    });
+    if (recent) return; // hali amaldagi kod bor — yangisini yubormaymiz
+
     await this.prisma.emailVerification.deleteMany({ where: { userId } });
-    const code = Math.floor(100000 + Math.random() * 900000).toString();
+    const code = randomInt(100000, 1000000).toString();
     const expiresAt = new Date(Date.now() + 15 * 60 * 1000); // 15 daqiqa
     await this.prisma.emailVerification.create({
       data: { userId, code, expiresAt },
@@ -211,6 +223,13 @@ export class AuthService {
   async setupTwoFactor(userId: string) {
     const user = await this.prisma.user.findUnique({ where: { id: userId } });
     if (!user) throw new BadRequestException("Foydalanuvchi topilmadi");
+    // 2FA allaqachon yoqilgan bo'lsa qayta sozlashga yo'l qo'ymaymiz: aks holda
+    // o'g'irlangan token bilan setup chaqirib, 2FA'ni kodsiz o'chirib yuborish mumkin edi.
+    if (user.twoFactorEnabled) {
+      throw new BadRequestException(
+        "2FA allaqachon yoqilgan. Qayta sozlash uchun avval joriy kod bilan o'chiring.",
+      );
+    }
     const secret = authenticator.generateSecret();
     await this.prisma.user.update({
       where: { id: userId },
@@ -281,6 +300,18 @@ export class AuthService {
 
     await this.prisma.passwordReset.update({
       where: { token },
+      data: { used: true },
+    });
+
+    // Parolni tiklash odatda hisob buzilganda qilinadi — shuning uchun BARCHA
+    // sessiyalarni yopamiz. Aks holda buzg'unchining refresh tokeni 30 kun ishlayveradi.
+    await this.prisma.refreshToken.updateMany({
+      where: { userId: reset.userId, revoked: false },
+      data: { revoked: true },
+    });
+    // Shu foydalanuvchining boshqa tiklash tokenlari ham kuchini yo'qotsin.
+    await this.prisma.passwordReset.updateMany({
+      where: { userId: reset.userId, used: false },
       data: { used: true },
     });
   }

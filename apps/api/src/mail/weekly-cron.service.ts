@@ -2,6 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
 import { PrismaService } from '../prisma.service';
 import { MailService } from './mail.service';
+import { APP_TZ, cronsEnabled } from '../common/date';
 
 @Injectable()
 export class WeeklyCronService {
@@ -12,12 +13,15 @@ export class WeeklyCronService {
     private readonly mail: MailService,
   ) {}
 
-  // Har yakshanba 09:00
-  @Cron('0 9 * * 0')
+  // Har yakshanba 09:00 — MAHALLIY vaqtda
+  @Cron('0 9 * * 0', { timeZone: APP_TZ })
   async sendWeeklySummaries() {
+    if (!cronsEnabled()) return;
     this.logger.log('Haftalik email yuborish boshlandi...');
+    // Faqat email tasdiqlagan VA obunani bekor qilmagan foydalanuvchilar.
+    // Ilgari hammaga — tasdiqlanmagan hisoblarga ham — yuborilardi.
     const users = await this.prisma.user.findMany({
-      where: { email: { not: '' } },
+      where: { emailVerified: true, emailOptIn: true },
       include: { streak: true },
     });
     const weekAgo = new Date();

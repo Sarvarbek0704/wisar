@@ -2,6 +2,46 @@ import { marked } from "marked";
 import hljs from "highlight.js";
 import { EMOJI_TO_SVG, isEmojiCodePoint } from "./icons";
 
+/**
+ * HTML atribut qiymatini ekranlash.
+ *
+ * Bu SHART: quyidagi funksiyalar markdown'dan kelgan matnni to'g'ridan-to'g'ri
+ * atribut ichiga qo'yadi. Ekranlashsiz `[___:javob" onfocus=alert(1) x="]`
+ * yoki ```js" onload="…` kabi yozuv atributdan chiqib, o'z kodini qo'sha olardi.
+ */
+function escapeAttr(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+/** HTML matn tugunini ekranlash. */
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+/**
+ * ALLAQACHON HTML-ekranlangan matnni atributga qo'yish uchun.
+ *
+ * `addFillBlanks` marked chiqargan HTML ustida ishlaydi — u yerdagi `&` lar
+ * allaqachon `&amp;` ga aylangan. Ularni qayta ekranlash `&amp;quot;` kabi
+ * ikki karra ekranlashga olib keladi va foydalanuvchi noto'g'ri matn ko'radi.
+ * Shuning uchun bu yerda faqat atributdan chiqib ketadigan belgilarni yopamiz.
+ */
+function escapeAttrPreEscaped(value: string): string {
+  return value
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 // ---- kod bloklarini highlight qilish (kitobdagi build.mjs bilan bir xil) ----
 function highlightCode(code: string, lang?: string): string {
   try {
@@ -29,8 +69,10 @@ const renderer: Partial<import("marked").RendererObject> = {
       lang = (infostring || "").split(/\s+/)[0];
     }
     const html = highlightCode(code, lang);
-    const label = lang ? `<span class="code-lang">${lang}</span>` : "";
-    return `<div class="code-wrap">${label}<pre><code class="hljs language-${lang || ""}">${html}</code></pre></div>\n`;
+    // lang markdown info-string'dan keladi (```js...) — ekranlanmasa
+    // ```js" onload="alert(1) kabi yozuv atributdan chiqib ketardi.
+    const label = lang ? `<span class="code-lang">${escapeHtml(lang)}</span>` : "";
+    return `<div class="code-wrap">${label}<pre><code class="hljs language-${escapeAttr(lang || "")}">${html}</code></pre></div>\n`;
   },
 };
 
@@ -117,7 +159,7 @@ function addFillBlanks(html: string): string {
   html = html.replace(
     /\[___:([^\]]+)\]/g,
     (_m, answer: string) =>
-      `<span class="fill-blank-wrap"><input type="text" class="fill-blank" data-answer="${answer.trim()}" placeholder="..." autocomplete="off" spellcheck="false" /><span class="fill-blank-fb"></span></span>`,
+      `<span class="fill-blank-wrap"><input type="text" class="fill-blank" data-answer="${escapeAttrPreEscaped(answer.trim())}" placeholder="..." autocomplete="off" spellcheck="false" /><span class="fill-blank-fb"></span></span>`,
   );
   // [___] — faqat kiritish, javobsiz
   html = html.replace(

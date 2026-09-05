@@ -1,9 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
-
-function todayStr(): string {
-  return new Date().toISOString().slice(0, 10);
-}
+import { dayStr, todayStr } from "../common/date";
 
 export type ActivityDelta = {
   minutes?: number;
@@ -68,9 +65,7 @@ export class ActivityService {
 
   /** So'nggi 365 kun heatmap + haftalik trend + umumiy (30-vazifa). */
   async insights(userId: string) {
-    const since = new Date();
-    since.setDate(since.getDate() - 364);
-    const sinceStr = since.toISOString().slice(0, 10);
+    const sinceStr = dayStr(-364);
 
     const rows = await this.prisma.dailyActivity.findMany({
       where: { userId, date: { gte: sinceStr } },
@@ -117,9 +112,9 @@ export class ActivityService {
       for (let d = 0; d < 7; d++) {
         const day = new Date(start);
         day.setDate(start.getDate() + d);
-        sum += byDate.get(day.toISOString().slice(0, 10)) ?? 0;
+        sum += byDate.get(dayStr(0, day)) ?? 0;
       }
-      out.push({ week: start.toISOString().slice(0, 10), minutes: sum });
+      out.push({ week: dayStr(0, start), minutes: sum });
     }
     return out;
   }

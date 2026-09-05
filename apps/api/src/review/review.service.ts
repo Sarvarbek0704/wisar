@@ -144,10 +144,27 @@ export class ReviewService {
     });
   }
 
-  /** Bir nechta xato savolni navbatga qo'shadi. */
+  /**
+   * Bir nechta xato savolni navbatga qo'shadi.
+   * Bitta `createMany` — ilgari har savol uchun alohida so'rov ketardi
+   * (20 savollik testda 30 tagacha so'rov).
+   */
   async addMistakes(userId: string, questionIds: string[]) {
-    for (const id of questionIds) {
-      await this.addMistake(userId, id);
-    }
+    if (!questionIds.length) return;
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    await this.prisma.reviewItem.createMany({
+      data: [...new Set(questionIds)].map((refId) => ({
+        userId,
+        kind: "question",
+        refId,
+        interval: 1,
+        easeFactor: 2.5,
+        reps: 0,
+        nextReview: tomorrow,
+      })),
+      // Allaqachon navbatda bo'lganlar tegilmaydi (@@unique userId+kind+refId).
+      skipDuplicates: true,
+    });
   }
 }

@@ -13,6 +13,8 @@ import { isLoggedIn } from "./auth";
 
 const KEY = "wisar-pending-reviews";
 const MAX = 500; // navbat cheksiz o'smasin
+/** Shundan eski baholar tashlab yuboriladi — server doim rad etsa navbat abadiy qolmasin. */
+const MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
 
 export type PendingReview = {
   cardId: string;
@@ -68,8 +70,13 @@ export function clearPending() {
  */
 export async function syncPendingReviews(): Promise<number> {
   if (!isLoggedIn()) return 0;
-  const list = read();
-  if (!list.length) return 0;
+  // Juda eski yozuvlarni tashlab yuboramiz (server ularni baribir qabul qilmasa).
+  const cutoff = Date.now() - MAX_AGE_MS;
+  const list = read().filter((r) => r.at >= cutoff);
+  if (!list.length) {
+    clearPending();
+    return 0;
+  }
 
   const failed: PendingReview[] = [];
   let synced = 0;

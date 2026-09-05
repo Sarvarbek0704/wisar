@@ -7,15 +7,24 @@ import {
   UseGuards,
   HttpCode,
   HttpStatus,
-  BadRequestException,
 } from "@nestjs/common";
+import { Throttle } from "@nestjs/throttler";
+import { IsInt, IsString, Max, Min } from "class-validator";
 import { FlashcardsService } from "./flashcards.service";
 import { JwtGuard } from "../auth/jwt.guard";
 import { OptionalJwtGuard } from "../auth/jwt.guard";
 import { CurrentUser, AuthUser } from "../auth/current-user.decorator";
 
+// DIQQAT: har bir maydonda class-validator dekoratori BO'LISHI SHART.
+// Global ValidationPipe `whitelist: true` bilan ishlaydi — dekoratorsiz maydonlar
+// jimgina o'chirib tashlanadi va endpoint hech qachon ishlamaydi.
 class ReviewDto {
+  @IsString()
   cardId!: string;
+
+  @IsInt()
+  @Min(0)
+  @Max(5)
   quality!: number; // 0-5
 }
 
@@ -44,21 +53,16 @@ export class FlashcardsController {
   @Post("review")
   @HttpCode(HttpStatus.OK)
   review(@CurrentUser() user: AuthUser, @Body() dto: ReviewDto) {
-    if (
-      dto.quality === undefined ||
-      dto.quality === null ||
-      !Number.isInteger(dto.quality) ||
-      dto.quality < 0 ||
-      dto.quality > 5
-    ) {
-      throw new BadRequestException("quality 0-5 orasida butun son bo'lishi kerak");
-    }
-    if (!dto.cardId) throw new BadRequestException("cardId kerak");
+    // Validatsiya ValidationPipe + ReviewDto dekoratorlari orqali bajariladi.
     return this.flashcards.reviewCard(user.sub, dto.cardId, dto.quality);
   }
 
-  /** POST /flashcards/:cardId/hint — AI yodlash maslahati + misol (11-vazifa). */
+  /**
+   * POST /flashcards/:cardId/hint — AI yodlash maslahati + misol (11-vazifa).
+   * Har chaqiruv LLM'ga pul turadi — shuning uchun qat'iy cheklov.
+   */
   @UseGuards(JwtGuard)
+  @Throttle({ default: { limit: 15, ttl: 60_000 } })
   @Post(":cardId/hint")
   @HttpCode(HttpStatus.OK)
   hint(@Param("cardId") cardId: string) {

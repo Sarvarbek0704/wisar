@@ -43,8 +43,8 @@ const CATS = [
 ];
 
 /**
- * Feedback modali — DOIM ekranда turmaydi. Faqat `openFeedback()` chaqirilganда
- * (TopBar'dagi "Fikr bildirish" tugmasi) markazда ochiladi.
+ * Feedback modali — DOIM ekranda turmaydi. Faqat `openFeedback()` chaqirilganda
+ * (TopBar'dagi "Fikr bildirish" tugmasi) markazda ochiladi.
  */
 export function FeedbackWidget() {
   const pathname = usePathname();

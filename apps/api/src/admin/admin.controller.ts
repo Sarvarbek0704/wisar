@@ -156,8 +156,15 @@ export class AdminController {
     return this.admin.getUserDetail(id);
   }
   @Patch("users/:id/role")
-  setUserRole(@Param("id") id: string, @Body() body: { role: string }) {
-    return this.admin.setUserRole(id, body?.role);
+  async setUserRole(
+    @CurrentUser() u: AuthUser,
+    @Param("id") id: string,
+    @Body() body: { role: string },
+  ) {
+    const r = await this.admin.setUserRole(id, body?.role);
+    // Rol o'zgarishi xavfsizlik uchun muhim amal — o'chirish kabi jurnalga yoziladi.
+    await this.admin.audit(u.sub, "set_user_role", id, { role: r.role });
+    return r;
   }
   @Delete("users/:id")
   async deleteUser(@CurrentUser() u: AuthUser, @Param("id") id: string) {

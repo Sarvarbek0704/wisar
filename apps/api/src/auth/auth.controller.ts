@@ -196,7 +196,11 @@ export class AuthController {
     const result = await this.auth.googleLogin(req.user);
     await this.issueRefresh(res, result.user.id);
     const frontendUrl =
-      process.env.NEXT_PUBLIC_API_URL?.replace(":4000", ":3001") || "http://localhost:3001";
-    return { url: `${frontendUrl}/auth/google?token=${result.token}` };
+      process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
+      process.env.NEXT_PUBLIC_API_URL?.replace(":4000", ":3001") ||
+      "http://localhost:3001";
+    // Token FRAGMENT (#) da uzatiladi, query (?) da emas: fragment serverga
+    // yuborilmaydi — ya'ni nginx loglariga, Referer sarlavhasiga tushmaydi.
+    return { url: `${frontendUrl}/auth/google#token=${result.token}` };
   }
 }

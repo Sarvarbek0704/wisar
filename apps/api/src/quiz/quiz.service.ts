@@ -1,4 +1,9 @@
-import { Injectable, NotFoundException, ServiceUnavailableException } from "@nestjs/common";
+import {
+  BadRequestException,
+  Injectable,
+  NotFoundException,
+  ServiceUnavailableException,
+} from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
 import { ReviewService } from "../review/review.service";
 import { LlmService } from "../llm/llm.service";
@@ -61,6 +66,11 @@ export class QuizService {
   }
 
   listBySection(sectionId: string) {
+    // Prisma'da `where: { sectionId: undefined }` = "filtrsiz" — ya'ni parametrsiz
+    // so'rov butun jadvalni qaytarardi. Aniq talab qilamiz.
+    if (!sectionId?.trim()) {
+      throw new BadRequestException("section parametri kerak");
+    }
     return this.prisma.quiz.findMany({
       where: { sectionId },
       orderBy: { order: "asc" },

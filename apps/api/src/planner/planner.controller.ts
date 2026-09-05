@@ -1,14 +1,25 @@
 import { Body, Controller, Get, Param, Put, UseGuards } from "@nestjs/common";
+import { IsString, MaxLength } from "class-validator";
 import { PlannerService } from "./planner.service";
 import { JwtGuard } from "../auth/jwt.guard";
 import { CurrentUser, type AuthUser } from "../auth/current-user.decorator";
 
+// DIQQAT: har bir maydonda class-validator dekoratori BO'LISHI SHART.
+// Global ValidationPipe `whitelist: true` bilan ishlaydi — dekoratorsiz maydonlar
+// jimgina o'chirib tashlanadi va saqlash hech qachon ishlamaydi.
 class SavePlannerDayDto {
+  @IsString()
+  @MaxLength(100_000)
   data!: string;
 }
 
 class SavePlannerHabitsDto {
+  @IsString()
+  @MaxLength(50_000)
   habits!: string;
+
+  @IsString()
+  @MaxLength(200_000)
   log!: string;
 }
 

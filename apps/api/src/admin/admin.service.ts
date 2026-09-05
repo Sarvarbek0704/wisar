@@ -1,5 +1,7 @@
 import { Injectable, NotFoundException, BadRequestException } from "@nestjs/common";
+import { randomBytes } from "crypto";
 import { PrismaService } from "../prisma.service";
+import { dayStr, diffDays, todayStr } from "../common/date";
 import { CacheService } from "../common/cache.service";
 import { CONTENT_CACHE_PREFIX } from "../content/content.service";
 import {
@@ -28,15 +30,6 @@ function slugify(text: string): string {
 function readingTime(md: string): number {
   const words = md.split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.ceil(words / 200));
-}
-
-function dayStr(offset = 0): string {
-  const d = new Date();
-  d.setDate(d.getDate() + offset);
-  return d.toISOString().slice(0, 10);
-}
-function diffDays(a: string, b: string): number {
-  return Math.round((Date.parse(a) - Date.parse(b)) / 86400000);
 }
 
 function excerpt(md: string): string {
@@ -114,10 +107,10 @@ export class AdminService {
     for (let i = 0; i < 14; i++) {
       const d = new Date(since);
       d.setDate(since.getDate() + i);
-      const key = d.toISOString().slice(0, 10);
+      const key = dayStr(0, d);
       signups.push({
         date: key,
-        count: recent.filter((u) => u.createdAt.toISOString().slice(0, 10) === key).length,
+        count: recent.filter((u) => dayStr(0, u.createdAt) === key).length,
       });
     }
     const weekAgo = new Date();
@@ -143,8 +136,8 @@ export class AdminService {
     });
 
     // Faol foydalanuvchilar (DailyActivity) — bugun / so'nggi 7 kun
-    const todayKey = new Date().toISOString().slice(0, 10);
-    const weekAgoKey = new Date(Date.now() - 6 * 86_400_000).toISOString().slice(0, 10);
+    const todayKey = todayStr();
+    const weekAgoKey = dayStr(-6);
     const [activeToday, activeWeek] = await Promise.all([
       this.prisma.dailyActivity.findMany({ where: { date: todayKey }, distinct: ["userId"], select: { userId: true } }),
       this.prisma.dailyActivity.findMany({ where: { date: { gte: weekAgoKey } }, distinct: ["userId"], select: { userId: true } }),
@@ -253,7 +246,7 @@ export class AdminService {
     let d1 = 0;
     let d7 = 0;
     for (const u of cohort) {
-      const created = u.createdAt.toISOString().slice(0, 10);
+      const created = dayStr(0, u.createdAt);
       const diffs = u.dailyActivity.map((a) => diffDays(a.date, created)).filter((d) => d >= 1);
       if (diffs.some((d) => d === 1)) d1++;
       if (diffs.some((d) => d >= 1 && d <= 7)) d7++;
@@ -456,8 +449,23 @@ export class AdminService {
     return user;
   }
 
-  setUserRole(id: string, role: string) {
+  async setUserRole(id: string, role: string) {
     const safe = role === "admin" ? "admin" : "user";
+    // Oxirgi adminni oddiy foydalanuvchiga tushirish platformani butunlay
+    // adminsiz qoldiradi (tiklash faqat baza orqali) — deleteUser'dagi kabi himoya.
+    if (safe === "user") {
+      const target = await this.prisma.user.findUnique({
+        where: { id },
+        select: { role: true },
+      });
+      if (!target) throw new NotFoundException("Foydalanuvchi topilmadi");
+      if (target.role === "admin") {
+        const admins = await this.prisma.user.count({ where: { role: "admin" } });
+        if (admins <= 1) {
+          throw new BadRequestException("Oxirgi adminni oddiy foydalanuvchiga tushirib bo'lmaydi.");
+        }
+      }
+    }
     return this.prisma.user.update({
       where: { id },
       data: { role: safe },
@@ -505,6 +513,9 @@ export class AdminService {
     return { items, total };
   }
   async deleteComment(id: string) {
+    // Comment.parent munosabati onDelete: NoAction — javoblari bor izohni
+    // to'g'ridan-to'g'ri o'chirish FK xatosi (500) beradi. Avval javoblarini o'chiramiz.
+    await this.prisma.comment.deleteMany({ where: { parentId: id } });
     await this.prisma.comment.delete({ where: { id } });
     return { ok: true };
   }
@@ -531,7 +542,9 @@ export class AdminService {
 
   // --- Invite ---
   createInvite(adminId: string) {
-    const code = Math.random().toString(36).slice(2, 10);
+    // Kriptografik tasodifiy kod — `Math.random()` bashorat qilinadi va
+    // taklif kodi ro'yxatdan o'tish huquqini beradi.
+    const code = randomBytes(9).toString("base64url"); // 12 belgi, 72 bit
     const expiresAt = new Date();
     expiresAt.setDate(expiresAt.getDate() + 7);
     return this.prisma.invite.create({

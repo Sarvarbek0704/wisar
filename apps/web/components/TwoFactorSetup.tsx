@@ -91,7 +91,7 @@ export function TwoFactorSetup() {
       ) : qr ? (
         <div>
           <p className="mb-2 text-sm text-soft">
-            Google Authenticator / Authy bilan QR kodni skanерланг, so'ng kodni kiriting:
+            Google Authenticator / Authy bilan QR kodni skanerlang, so'ng kodni kiriting:
           </p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={qr} alt="2FA QR" width={160} height={160} className="mb-3 rounded-lg border border-line" />

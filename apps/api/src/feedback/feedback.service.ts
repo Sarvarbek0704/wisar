@@ -20,7 +20,7 @@ export class FeedbackService {
     private readonly notify: NotificationService,
   ) {}
 
-  /** Fikr yuborish (kirgan yoki mehmon). Yuborilgach adminlarга bildirishnoma. */
+  /** Fikr yuborish (kirgan yoki mehmon). Yuborilgach adminlarga bildirishnoma. */
   async submit(input: SubmitFeedback) {
     const category = CATEGORIES.includes(input.category) ? input.category : "other";
     const message = (input.message || "").trim().slice(0, 4000);

@@ -4,7 +4,7 @@
 //   - Sahifa navigatsiyasi (HTML) → NETWORK-FIRST: DOIM eng yangi versiya, offline'da keshdan
 //   - API so'rovlari → tarmoq (keshlanmaydi)
 // Kesh nomi (v3) o'zgargani uchun eski kesh activate'da o'chiriladi — eski versiya ilashib qolmaydi.
-const CACHE = "wisar-v3";
+const CACHE = "wisar-v4"; // v4: shaxsiy sahifalar endi keshlanmaydi — eski kesh tozalanadi
 const OFFLINE_URL = "/offline";
 const PRECACHE = ["/offline", "/manifest.json"];
 
@@ -25,6 +25,28 @@ function isStatic(url) {
     url.pathname.startsWith("/_next/static") ||
     url.pathname.startsWith("/icon") ||
     /\.(?:css|js|woff2?|png|jpg|jpeg|svg|webp|ico)$/.test(url.pathname)
+  );
+}
+
+// Shaxsiy (kirish talab qiladigan) sahifalar — bular hech qachon keshlanmaydi.
+const PRIVATE_PREFIXES = [
+  "/me",
+  "/admin",
+  "/planner",
+  "/review",
+  "/bookmarks",
+  "/groups",
+  "/flashcards",
+  "/ielts",
+  "/onboarding",
+  "/certificate",
+  "/auth",
+  "/profile",
+];
+
+function isPublicPage(url) {
+  return !PRIVATE_PREFIXES.some(
+    (p) => url.pathname === p || url.pathname.startsWith(p + "/"),
   );
 }
 
@@ -53,13 +75,17 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  // Sahifa navigatsiyasi — NETWORK-FIRST: avval tarmoq (yangi), keyin (offline) kesh
+  // Sahifa navigatsiyasi — NETWORK-FIRST: avval tarmoq (yangi), keyin (offline) kesh.
+  // MUHIM: shaxsiy sahifalar keshlanmaydi — umumiy qurilmada chiqib ketilgandan
+  // keyin boshqa odam oldingi foydalanuvchi sahifasini ko'rmasligi uchun.
   if (req.mode === "navigate") {
     e.respondWith(
       fetch(req)
         .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE).then((c) => c.put(req, copy)).catch(() => {});
+          if (isPublicPage(url) && res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(req, copy)).catch(() => {});
+          }
           return res;
         })
         .catch(() => caches.match(req).then((cached) => cached || caches.match(OFFLINE_URL))),

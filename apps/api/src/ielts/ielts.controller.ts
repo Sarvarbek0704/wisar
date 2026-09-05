@@ -8,10 +8,22 @@ import {
   UseInterceptors,
 } from "@nestjs/common";
 import { FileInterceptor } from "@nestjs/platform-express";
+import { Throttle } from "@nestjs/throttler";
 import { IsIn, IsNumber, IsOptional, IsString, Max, MaxLength, Min } from "class-validator";
 import { IeltsService, type Skill } from "./ielts.service";
 import { OptionalJwtGuard, JwtGuard } from "../auth/jwt.guard";
 import { CurrentUser, type AuthUser } from "../auth/current-user.decorator";
+
+/**
+ * IELTS endpointlari mehmonlar uchun ham ochiq (mahsulot qarori) — lekin har biri
+ * LLM'ga real pul turadi. Shuning uchun global 100/daq yetarli emas: har bir
+ * qimmat amalga alohida, qat'iy cheklov qo'yamiz.
+ */
+const SCORE_LIMIT = { default: { limit: 5, ttl: 60_000 } };
+const GENERATE_LIMIT = { default: { limit: 5, ttl: 60_000 } };
+const TRANSCRIBE_LIMIT = { default: { limit: 3, ttl: 60_000 } };
+/** Audio uchun maksimal hajm — 10 MB (~10 daqiqa nutq). Cheklovsiz yuklash xotirani tugatadi. */
+const MAX_AUDIO_BYTES = 10 * 1024 * 1024;
 
 class ScoreWritingDto {
   @IsIn([1, 2])
@@ -80,19 +92,22 @@ class AttemptDto {
 export class IeltsController {
   constructor(private readonly svc: IeltsService) {}
 
+  @Throttle(SCORE_LIMIT)
   @Post("score-writing")
   scoreWriting(@Body() dto: ScoreWritingDto, @CurrentUser() u?: AuthUser) {
     return this.svc.scoreWriting(dto.task, dto.prompt ?? "", dto.essay, u?.sub);
   }
 
+  @Throttle(SCORE_LIMIT)
   @Post("score-speaking")
   scoreSpeaking(@Body() dto: ScoreSpeakingDto, @CurrentUser() u?: AuthUser) {
     return this.svc.scoreSpeaking(dto.part, dto.question ?? "", dto.transcript, u?.sub);
   }
 
   /** Audio → transcript (20-vazifa) */
+  @Throttle(TRANSCRIBE_LIMIT)
   @Post("transcribe")
-  @UseInterceptors(FileInterceptor("audio"))
+  @UseInterceptors(FileInterceptor("audio", { limits: { fileSize: MAX_AUDIO_BYTES, files: 1 } }))
   transcribe(@UploadedFile() file: { buffer: Buffer; mimetype?: string; originalname?: string }) {
     return this.svc.transcribe(file);
   }
@@ -111,21 +126,25 @@ export class IeltsController {
     return this.svc.attempts(u.sub);
   }
 
+  @Throttle(GENERATE_LIMIT)
   @Post("writing-prompt")
   writingPrompt(@Body() dto: GenWritingPromptDto) {
     return this.svc.generateWritingPrompt(dto.task, dto.topic);
   }
 
+  @Throttle(GENERATE_LIMIT)
   @Post("speaking-prompt")
   speakingPrompt(@Body() dto: GenPromptDto) {
     return this.svc.generateSpeakingPrompt(dto.part, dto.topic);
   }
 
+  @Throttle(GENERATE_LIMIT)
   @Post("reading-test")
   readingTest(@Body() dto: GenTestDto) {
     return this.svc.generateReading(dto.topic);
   }
 
+  @Throttle(GENERATE_LIMIT)
   @Post("listening-test")
   listeningTest(@Body() dto: GenTestDto) {
     return this.svc.generateListening(dto.topic);

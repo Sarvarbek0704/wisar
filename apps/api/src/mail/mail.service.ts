@@ -5,6 +5,19 @@ import * as nodemailer from 'nodemailer';
 export class MailService {
   private readonly logger = new Logger(MailService.name);
 
+  /**
+   * Saytning to'liq manzili (email havolalari uchun).
+   * NEXT_PUBLIC_SITE_URL birinchi navbatda — `:4000`→`:3001` almashtirish
+   * faqat lokal dev uchun mo'ljallangan mo'rt fallback.
+   */
+  private siteUrl(): string {
+    return (
+      process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
+      process.env.NEXT_PUBLIC_API_URL?.replace(":4000", ":3001") ||
+      "http://localhost:3001"
+    );
+  }
+
   private transporter() {
     return nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.gmail.com',
@@ -35,7 +48,7 @@ export class MailService {
   }
 
   async sendPasswordReset(to: string, token: string, name?: string): Promise<void> {
-    const url = `${process.env.NEXT_PUBLIC_API_URL?.replace(':4000', ':3001') || 'http://localhost:3001'}/reset-password?token=${token}`;
+    const url = `${this.siteUrl()}/reset-password?token=${token}`;
     await this.send(to, 'Parolni tiklash — Wisar', `
       <div style="font-family:sans-serif;max-width:480px;margin:0 auto;padding:32px">
         <h2 style="color:#3b5bdb">Parolni tiklash</h2>
@@ -67,7 +80,11 @@ export class MailService {
           <li>📚 <strong>${completed}</strong> bob o'qidingiz</li>
           <li>🔥 Streak: <strong>${streak}</strong> kun</li>
         </ul>
-        <a href="${process.env.NEXT_PUBLIC_API_URL?.replace(':4000', ':3001') || 'http://localhost:3001'}" style="display:inline-block;background:#3b5bdb;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;margin:16px 0">Platformaga o'tish →</a>
+        <a href="${this.siteUrl()}" style="display:inline-block;background:#3b5bdb;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;margin:16px 0">Platformaga o'tish →</a>
+        <p style="color:#aaa;font-size:12px;border-top:1px solid #eee;padding-top:12px;margin-top:24px">
+          Bu xatlarni olishni xohlamaysizmi?
+          <a href="${this.siteUrl()}/me" style="color:#888">Sozlamalardan o'chiring</a>.
+        </p>
       </div>
     `);
   }

@@ -32,6 +32,8 @@ model User {
   /// 2FA TOTP secret (base32) — yoqilgan bo'lsa to'ldiriladi (40-vazifa)
   twoFactorSecret  String?
   twoFactorEnabled Boolean       @default(false)
+  /// Haftalik hisobot xatini olishni xohlaydimi (obunani bekor qilish)
+  emailOptIn       Boolean       @default(true)
   progress       Progress[]
   bookmarks      Bookmark[]
   notes          Note[]
@@ -88,6 +90,7 @@ model Progress {
   updatedAt DateTime @updatedAt
 
   @@unique([userId, articleId])
+  @@index([articleId])
 }
 
 /// Saqlangan (bookmark) maqolalar
@@ -100,6 +103,7 @@ model Bookmark {
   createdAt DateTime @default(now())
 
   @@unique([userId, articleId])
+  @@index([articleId])
 }
 
 /// Shaxsiy eslatmalar (maqolaga)
@@ -112,6 +116,9 @@ model Note {
   body      String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([articleId])
 }
 
 /// Mavzu — eng yuqori daraja (masalan "Dasturlash kitobi", yoki istalgan boshqa soha)
@@ -197,6 +204,7 @@ model Comment {
 
   @@index([articleId, createdAt])
   @@index([parentId])
+  @@index([userId])
 }
 
 /// Interaktiv test (bo'limga bog'liq; ixtiyoriy ravishda aniq maqolaga ham)
@@ -227,6 +235,8 @@ model Question {
   correctIndex Int
   explanation  String?
   order        Int     @default(0)
+
+  @@index([quizId])
 }
 
 // ─── YANGI MODELLAR ────────────────────────────────────────────────────────────
@@ -355,11 +365,14 @@ model FlashcardReview {
   /// Keyingi takrorlashgacha kunlar soni
   interval   Int       @default(1)
   easeFactor Float     @default(2.5)
+  /// Ketma-ket to'g'ri javoblar soni — kanonik SM-2 uchun (ReviewItem bilan bir xil)
+  reps       Int       @default(0)
   nextReview DateTime  @default(now())
   reviewedAt DateTime  @default(now())
 
   @@unique([userId, cardId])
   @@index([userId, nextReview])
+  @@index([cardId])
 }
 
 // ─── IDEALLASHTIRISH SPEC YANGI MODELLARI ──────────────────────────────────────
@@ -411,6 +424,7 @@ model Highlight {
   createdAt DateTime @default(now())
 
   @@index([userId, articleId])
+  @@index([articleId])
 }
 
 /// RAG uchun maqola bo'laklari + embedding (18-vazifa)
@@ -487,6 +501,8 @@ model Group {
   owner     User          @relation("GroupsOwned", fields: [ownerId], references: [id], onDelete: Cascade)
   members   GroupMember[]
   createdAt DateTime      @default(now())
+
+  @@index([ownerId])
 }
 
 model GroupMember {
@@ -498,6 +514,7 @@ model GroupMember {
   joinedAt DateTime @default(now())
 
   @@unique([groupId, userId])
+  @@index([userId])
 }
 
 /// Comment like (28-vazifa)
@@ -509,6 +526,7 @@ model CommentLike {
   user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([commentId, userId])
+  @@index([userId])
 }
 
 /// Q&A forum (29-vazifa)
@@ -522,6 +540,7 @@ model ForumThread {
   createdAt DateTime    @default(now())
 
   @@index([createdAt])
+  @@index([userId])
 }
 
 model ForumPost {
@@ -535,6 +554,7 @@ model ForumPost {
   createdAt DateTime    @default(now())
 
   @@index([threadId])
+  @@index([userId])
 }
 
 /// Admin audit log (40-vazifa)

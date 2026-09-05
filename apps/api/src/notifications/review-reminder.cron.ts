@@ -1,6 +1,7 @@
 import { Injectable, Logger } from "@nestjs/common";
 import { Cron } from "@nestjs/schedule";
 import { PrismaService } from "../prisma.service";
+import { APP_TZ, cronsEnabled } from "../common/date";
 import { NotificationService } from "./notification.service";
 
 /**
@@ -17,9 +18,10 @@ export class ReviewReminderCron {
     private readonly notifications: NotificationService,
   ) {}
 
-  // Har kuni ertalab 08:00
-  @Cron("0 8 * * *")
+  // Har kuni ertalab 08:00 — MAHALLIY vaqtda (UTC emas, aks holda 13:00 da ketardi)
+  @Cron("0 8 * * *", { timeZone: APP_TZ })
   async remindDueReviews() {
+    if (!cronsEnabled()) return;
     const now = new Date();
 
     // Bugun takrorlanishi kerak bo'lgan kartalar/savollar — foydalanuvchi bo'yicha soni

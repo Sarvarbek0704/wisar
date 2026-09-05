@@ -19,6 +19,9 @@ export class CommentsService {
 
   /** Izohlar daraxti (reply + like) — 28-vazifa. */
   async list(articleId: string, viewerId?: string): Promise<CommentNode[]> {
+    // Prisma'da `where: { articleId: undefined }` = "filtrsiz" — parametrsiz so'rov
+    // butun jadvaldagi izohlarni qaytarardi.
+    if (!articleId?.trim()) return [];
     const rows = await this.prisma.comment.findMany({
       where: { articleId },
       orderBy: { createdAt: "asc" },

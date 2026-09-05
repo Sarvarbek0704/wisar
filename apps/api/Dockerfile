@@ -22,10 +22,14 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-COPY --from=base /app/node_modules ./node_modules
-COPY --from=base /app/packages ./packages
-COPY --from=base /app/apps/api/dist ./apps/api/dist
-COPY --from=base /app/apps/api/package.json ./apps/api/package.json
+# Xavfsizlik: root bo'lmagan foydalanuvchi (web image'da allaqachon shunday)
+RUN addgroup -g 1001 -S nodejs && adduser -S nestjs -u 1001
 
+COPY --from=base --chown=nestjs:nodejs /app/node_modules ./node_modules
+COPY --from=base --chown=nestjs:nodejs /app/packages ./packages
+COPY --from=base --chown=nestjs:nodejs /app/apps/api/dist ./apps/api/dist
+COPY --from=base --chown=nestjs:nodejs /app/apps/api/package.json ./apps/api/package.json
+
+USER nestjs
 EXPOSE 4000
 CMD ["node", "apps/api/dist/main.js"]

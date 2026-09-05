@@ -1,13 +1,8 @@
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
+import { dayStr, localWeekday } from "../common/date";
 
 const MAX_FREEZES = 3;
-
-function dayStr(offset = 0): string {
-  const d = new Date();
-  d.setDate(d.getDate() + offset);
-  return d.toISOString().slice(0, 10);
-}
 
 @Injectable()
 export class StreakService {
@@ -46,7 +41,7 @@ export class StreakService {
     }
 
     // Haftalik freeze (dushanba checkin'ida +1, cap)
-    if (new Date().getDay() === 1 && freezes < MAX_FREEZES) {
+    if (localWeekday() === 1 && freezes < MAX_FREEZES) {
       freezes += 1;
     }
 

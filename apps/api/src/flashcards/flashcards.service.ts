@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
 import { LlmService } from "../llm/llm.service";
 import { CacheService } from "../common/cache.service";
+import { sm2 } from "../review/sm2";
 
 @Injectable()
 export class FlashcardsService {
@@ -102,64 +103,60 @@ export class FlashcardsService {
   }
 
   /**
-   * SM-2 algoritmi bo'yicha kartani baholaydi va review yozuvini yangilaydi.
+   * Kartani baholaydi va review yozuvini yangilaydi.
+   *
+   * KANONIK SM-2 (`review/sm2.ts`) ishlatiladi — ilgari bu yerda alohida, biroz
+   * boshqacha nusxa bor edi (birinchi interval 1 kun emas 3 kun, EF formulasi
+   * soddalashtirilgan, xato javobda jarima yo'q). Natijada "birlashgan takrorlash
+   * navbati"ning kartalar yarmi va savollar yarmi turli jadval bo'yicha ishlardi.
+   *
    * quality: 0-5 (0=to'liq unutilgan, 5=mukammal)
    */
   async reviewCard(userId: string, cardId: string, quality: number) {
-    // Karta mavjudligini tekshiramiz
     const card = await this.prisma.flashcard.findUnique({ where: { id: cardId } });
     if (!card) throw new NotFoundException("Karta topilmadi");
 
-    // Mavjud review yoki standart qiymatlar
     const existing = await this.prisma.flashcardReview.findUnique({
       where: { userId_cardId: { userId, cardId } },
     });
 
-    const oldInterval = existing?.interval ?? 1;
-    const oldEf = existing?.easeFactor ?? 2.5;
-
-    // SM-2 hisoblash
-    let interval: number;
-    let easeFactor: number;
-
-    if (quality >= 3) {
-      interval = Math.round(oldInterval * oldEf);
-      // easeFactor yangilanishi
-      easeFactor = oldEf + 0.1 - (5 - quality) * 0.08;
-      if (easeFactor < 1.3) easeFactor = 1.3;
-    } else {
-      // Yomon natija — ertadan qayta boshlaydi
-      interval = 1;
-      easeFactor = oldEf; // EF saqlanadi
-    }
-
-    // Minimal interval 1 kun
-    if (interval < 1) interval = 1;
-
-    const nextReview = new Date();
-    nextReview.setDate(nextReview.getDate() + interval);
+    const r = sm2(
+      {
+        interval: existing?.interval ?? 1,
+        easeFactor: existing?.easeFactor ?? 2.5,
+        reps: existing?.reps ?? 0,
+      },
+      quality,
+    );
 
     const review = await this.prisma.flashcardReview.upsert({
       where: { userId_cardId: { userId, cardId } },
       update: {
         quality,
-        interval,
-        easeFactor,
-        nextReview,
+        interval: r.interval,
+        easeFactor: r.easeFactor,
+        reps: r.reps,
+        nextReview: r.nextReview,
         reviewedAt: new Date(),
       },
       create: {
         userId,
         cardId,
         quality,
-        interval,
-        easeFactor,
-        nextReview,
+        interval: r.interval,
+        easeFactor: r.easeFactor,
+        reps: r.reps,
+        nextReview: r.nextReview,
         reviewedAt: new Date(),
       },
     });
 
-    return { cardId, interval, easeFactor: review.easeFactor, nextReview };
+    return {
+      cardId,
+      interval: review.interval,
+      easeFactor: review.easeFactor,
+      nextReview: review.nextReview,
+    };
   }
 
   /**
@@ -172,9 +169,15 @@ export class FlashcardsService {
   async getStats(userId: string) {
     const now = new Date();
 
+    // Faqat kerakli ustunlar — ilgari har qator uchun butun karta va dasta
+    // yozuvi ham yuklanardi (minglab qator × ichma-ich join) va faqat sanash uchun ishlatilardi.
     const allReviews = await this.prisma.flashcardReview.findMany({
       where: { userId },
-      include: { card: { include: { deck: true } } },
+      select: {
+        interval: true,
+        nextReview: true,
+        card: { select: { deck: { select: { slug: true, title: true } } } },
+      },
     });
 
     const total = allReviews.length;

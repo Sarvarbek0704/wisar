@@ -5,6 +5,8 @@ import { CacheService } from "../common/cache.service";
 /** Public kontent kesh kaliti prefiksi (36-vazifa) */
 export const CONTENT_CACHE_PREFIX = "content:";
 const CONTENT_TTL_MS = 60_000;
+/** Qidiruv natijalari chegarasi — ILIKE to'liq skanerlagani uchun cheklab turamiz. */
+const SEARCH_LIMIT = 40;
 
 type NavItem = {
   topicSlug: string;
@@ -75,8 +77,23 @@ export class ContentService {
     return topic;
   }
 
-  /** Bitta maqola (to'liq kontent) + oldingi/keyingi navigatsiya. */
+  /**
+   * Bitta maqola (to'liq kontent) + oldingi/keyingi navigatsiya.
+   *
+   * Keshlanadi: bu ilovaning ENG issiq yo'li — har maqola ko'rilganda butun
+   * mavzu daraxti (bo'limlar + maqolalar) so'ralardi. Kesh admin kontentni
+   * o'zgartirganda `CONTENT_CACHE_PREFIX` bo'yicha tozalanadi, ya'ni tahrirlar
+   * darhol ko'rinadi.
+   */
   async article(topicSlug: string, sectionSlug: string, articleSlug: string) {
+    return this.cache.wrap(
+      `${CONTENT_CACHE_PREFIX}article:${topicSlug}/${sectionSlug}/${articleSlug}`,
+      CONTENT_TTL_MS,
+      () => this.articleUncached(topicSlug, sectionSlug, articleSlug),
+    );
+  }
+
+  private async articleUncached(topicSlug: string, sectionSlug: string, articleSlug: string) {
     const topic = await this.prisma.topic.findUnique({
       where: { slug: topicSlug },
       include: {
@@ -98,7 +115,13 @@ export class ContentService {
     if (!section) throw new NotFoundException("Bo'lim topilmadi");
 
     const article = await this.prisma.article.findFirst({
-      where: { slug: articleSlug, section: { slug: sectionSlug, topic: { slug: topicSlug } } },
+      // `published: true` SHART — usiz qoralama maqolani to'g'ridan-to'g'ri
+      // URL bilan ochish mumkin edi (navigatsiya ro'yxati filtrlangan bo'lsa ham).
+      where: {
+        slug: articleSlug,
+        published: true,
+        section: { slug: sectionSlug, topic: { slug: topicSlug } },
+      },
       include: { section: { select: { slug: true, title: true } } },
     });
     if (!article) throw new NotFoundException("Maqola topilmadi");
@@ -138,13 +161,17 @@ export class ContentService {
     const query = (q || "").trim();
     if (query.length < 2) return [];
 
-    const select = {
+    // Sarlavha/excerpt bo'yicha topilganlarga `content` KERAK EMAS — snippet ham
+    // yasalmaydi. Ilgari u ham tanlangani uchun 40 tagacha maqolaning to'liq matni
+    // bazadan behuda tortilardi.
+    const baseSelect = {
       slug: true,
       title: true,
       excerpt: true,
-      content: true,
       section: { select: { slug: true, title: true, topic: { select: { slug: true, title: true } } } },
     } as const;
+    // Matn ichidan topilganlar uchun snippet kerak — faqat shu holda content olamiz.
+    const contentSelect = { ...baseSelect, content: true } as const;
     // PostgreSQL case-insensitive qidiruv uchun mode: "insensitive"
     const titleOrExcerpt = {
       OR: [
@@ -153,30 +180,35 @@ export class ContentService {
       ],
     };
 
-    // 1) Asosiy — sarlavha/excerpt'da topilganlar (eng relevant)
+    // 1) Asosiy — sarlavha/excerpt'da topilganlar (eng relevant), content'siz
     const primary = await this.prisma.article.findMany({
       where: { published: true, ...titleOrExcerpt },
-      select,
-      take: 40,
+      select: baseSelect,
+      take: SEARCH_LIMIT,
     });
 
-    // 2) Qo'shimcha — matn ICHIDA topilganlar
-    let secondary: typeof primary = [];
-    if (primary.length < 40) {
+    // 2) Qo'shimcha — matn ICHIDA topilganlar (snippet uchun content kerak)
+    let secondary: Array<
+      (typeof primary)[number] & { content: string }
+    > = [];
+    if (primary.length < SEARCH_LIMIT) {
       secondary = await this.prisma.article.findMany({
         where: {
           published: true,
           content: { contains: query, mode: 'insensitive' as const },
           NOT: titleOrExcerpt,
         },
-        select,
-        take: 40 - primary.length,
+        select: contentSelect,
+        take: SEARCH_LIMIT - primary.length,
       });
     }
 
-    const toResult = (r: (typeof primary)[number], inContent: boolean) => ({
+    const toResult = (
+      r: (typeof primary)[number],
+      snippetText?: string,
+    ) => ({
       title: r.title,
-      excerpt: (inContent && this.snippet(r.content, query)) || r.excerpt,
+      excerpt: snippetText || r.excerpt,
       topicSlug: r.section.topic.slug,
       topicTitle: r.section.topic.title,
       sectionSlug: r.section.slug,
@@ -184,7 +216,10 @@ export class ContentService {
       slug: r.slug,
     });
 
-    return [...primary.map((r) => toResult(r, false)), ...secondary.map((r) => toResult(r, true))];
+    return [
+      ...primary.map((r) => toResult(r)),
+      ...secondary.map((r) => toResult(r, this.snippet(r.content, query))),
+    ];
   }
 
   /** Ochiq foydalanuvchi profili (email va passwordHash yo'q). */

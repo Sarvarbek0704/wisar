@@ -25,8 +25,9 @@ class AskDto {
 export class TutorController {
   constructor(private readonly tutor: TutorService) {}
 
-  // Eski bitta savol-javob
-  @Throttle({ default: { limit: 20, ttl: 60000 } })
+  // Eski bitta savol-javob. Har chaqiruv LLM'ga pul turadi — guard + qat'iy cheklov.
+  @UseGuards(OptionalJwtGuard)
+  @Throttle({ default: { limit: 10, ttl: 60_000 } })
   @Post("ask")
   ask(@Body() dto: AskTutorDto) {
     return this.tutor.askTutor(dto.articleId, dto.question);
@@ -41,22 +42,27 @@ export class TutorController {
 
   @UseGuards(OptionalJwtGuard)
   @Get("thread/:id")
-  getThread(@Param("id") id: string) {
-    return this.tutor.getThread(id);
+  getThread(@Param("id") id: string, @CurrentUser() u?: AuthUser) {
+    return this.tutor.getThread(id, u?.sub);
   }
 
   // SSE streaming javob (17-vazifa)
-  @Throttle({ default: { limit: 30, ttl: 60000 } })
+  @Throttle({ default: { limit: 15, ttl: 60_000 } })
   @UseGuards(OptionalJwtGuard)
   @Post("thread/:id/ask")
-  async askStream(@Param("id") id: string, @Body() dto: AskDto, @Res() res: Response) {
+  async askStream(
+    @Param("id") id: string,
+    @Body() dto: AskDto,
+    @Res() res: Response,
+    @CurrentUser() u?: AuthUser,
+  ) {
     res.setHeader("Content-Type", "text/event-stream");
     res.setHeader("Cache-Control", "no-cache, no-transform");
     res.setHeader("Connection", "keep-alive");
     res.setHeader("X-Accel-Buffering", "no");
     (res as unknown as { flushHeaders?: () => void }).flushHeaders?.();
     try {
-      for await (const delta of this.tutor.askStream(id, dto.question)) {
+      for await (const delta of this.tutor.askStream(id, dto.question, u?.sub)) {
         res.write(`data: ${JSON.stringify({ delta })}\n\n`);
       }
       res.write(`data: ${JSON.stringify({ done: true })}\n\n`);
@@ -69,9 +75,10 @@ export class TutorController {
 
   // Roleplay suhbati oxiri fikr-mulohaza (19-vazifa)
   @UseGuards(OptionalJwtGuard)
+  @Throttle({ default: { limit: 10, ttl: 60_000 } })
   @Post("thread/:id/feedback")
-  feedback(@Param("id") id: string) {
-    return this.tutor.feedback(id);
+  feedback(@Param("id") id: string, @CurrentUser() u?: AuthUser) {
+    return this.tutor.feedback(id, u?.sub);
   }
 
   // RAG indeksatsiya (18-vazifa, admin)

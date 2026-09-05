@@ -4,6 +4,9 @@ import { parseJson } from "./parse-json";
 export type ChatMessage = { role: "user" | "assistant"; content: string };
 
 const ANTHROPIC_URL = "https://api.anthropic.com/v1/messages";
+/** Bitta AI so'rovi uchun maksimal kutish vaqti. Streaming uzoqroq davom etadi. */
+const REQUEST_TIMEOUT_MS = Number(process.env.LLM_TIMEOUT_MS) || 60_000;
+const STREAM_TIMEOUT_MS = Number(process.env.LLM_STREAM_TIMEOUT_MS) || 180_000;
 const NOT_CONFIGURED =
   "AI sozlanmagan. .env ga BEPUL provayder qo'shing: LLM_BASE_URL + LLM_API_KEY + LLM_MODEL " +
   "(Groq/Gemini/Ollama) — yoki ANTHROPIC_API_KEY.";
@@ -141,7 +144,7 @@ export class LlmService {
       method: "POST",
       headers: this.openaiHeaders(),
       body: JSON.stringify(this.openaiBody(messages, system, maxTokens, false, true)),
-    });
+    }, STREAM_TIMEOUT_MS);
     for await (const data of this.parseSSE(res)) {
       try {
         const j = JSON.parse(data) as { choices?: Array<{ delta?: { content?: string } }> };
@@ -163,7 +166,9 @@ export class LlmService {
   }
 
   private anthropicBody(messages: ChatMessage[], system: string, maxTokens: number, stream: boolean) {
-    const model = process.env.ANTHROPIC_MODEL?.trim() || "claude-sonnet-4-6";
+    // claude-sonnet-5 — joriy avlod: claude-sonnet-4-6 dan yangiroq VA arzonroq
+    // ($2/$10 vs $3/$15 har 1M token).
+    const model = process.env.ANTHROPIC_MODEL?.trim() || "claude-sonnet-5";
     return { model, max_tokens: maxTokens, system, stream, messages };
   }
 
@@ -195,7 +200,7 @@ export class LlmService {
       method: "POST",
       headers: this.anthropicHeaders(),
       body: JSON.stringify(this.anthropicBody(messages, system, maxTokens, true)),
-    });
+    }, STREAM_TIMEOUT_MS);
     for await (const data of this.parseSSE(res)) {
       try {
         const j = JSON.parse(data) as { type?: string; delta?: { text?: string } };
@@ -207,16 +212,32 @@ export class LlmService {
   }
 
   // ─── Umumiy yordamchilar ─────────────────────────────────────────────────────
-  private async fetchOrThrow(url: string, init: RequestInit): Promise<Response> {
+  /**
+   * Timeout bilan fetch. Timeout'siz provayder osilib qolsa so'rov cheksiz kutadi
+   * va ulanishlar to'planib qoladi.
+   */
+  private async fetchOrThrow(
+    url: string,
+    init: RequestInit,
+    timeoutMs = REQUEST_TIMEOUT_MS,
+  ): Promise<Response> {
     let res: Response;
     try {
-      res = await fetch(url, init);
+      res = await fetch(url, { ...init, signal: AbortSignal.timeout(timeoutMs) });
     } catch (e) {
-      throw new ServiceUnavailableException("AI xizmatiga ulanib bo'lmadi: " + (e as Error).message);
+      const err = e as Error;
+      const reason = err.name === "TimeoutError" || err.name === "AbortError" ? "vaqt tugadi" : err.message;
+      this.logger.error(`AI so'rovi muvaffaqiyatsiz (${url}): ${err.message}`);
+      throw new ServiceUnavailableException(`AI xizmatiga ulanib bo'lmadi: ${reason}`);
     }
     if (!res.ok) {
       const body = await res.text().catch(() => "");
-      throw new ServiceUnavailableException(`AI xizmati xatosi (${res.status}): ${body.slice(0, 300)}`);
+      // Provayder javobi ichki sozlama tafsilotlarini o'z ichiga olishi mumkin —
+      // uni faqat LOGGA yozamiz, mijozga umumiy xabar qaytaramiz.
+      this.logger.error(`AI xizmati xatosi (${res.status}): ${body.slice(0, 500)}`);
+      throw new ServiceUnavailableException(
+        `AI xizmati javob bermadi (${res.status}). Keyinroq urinib ko'ring.`,
+      );
     }
     return res;
   }

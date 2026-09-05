@@ -1,15 +1,10 @@
 import { Injectable, NotFoundException, ForbiddenException, BadRequestException } from "@nestjs/common";
 import { randomBytes } from "crypto";
 import { PrismaService } from "../prisma.service";
+import { dayStr } from "../common/date";
 
 function makeCode(): string {
   return randomBytes(4).toString("hex").slice(0, 6).toUpperCase();
-}
-
-function dayStr(offset = 0): string {
-  const d = new Date();
-  d.setDate(d.getDate() + offset);
-  return d.toISOString().slice(0, 10);
 }
 
 @Injectable()
@@ -66,26 +61,39 @@ export class GroupsService {
     }
 
     const since = dayStr(-6);
-    const members = await Promise.all(
-      group.members.map(async (m) => {
-        const [completed, streak, activity] = await Promise.all([
-          this.prisma.progress.count({ where: { userId: m.userId, completed: true } }),
-          this.prisma.streak.findUnique({ where: { userId: m.userId }, select: { current: true } }),
-          this.prisma.dailyActivity.findMany({
-            where: { userId: m.userId, date: { gte: since } },
-            select: { minutes: true },
-          }),
-        ]);
-        return {
-          id: m.user.id,
-          name: m.user.name || m.user.email.split("@")[0],
-          isOwner: m.userId === group.ownerId,
-          completedCount: completed,
-          streakCurrent: streak?.current ?? 0,
-          weeklyMinutes: activity.reduce((s, a) => s + a.minutes, 0),
-        };
+    const memberIds = group.members.map((m) => m.userId);
+
+    // Har a'zoga 3 tadan so'rov o'rniga 3 ta guruhlangan so'rov —
+    // 50 kishilik guruhda 150 emas, 3 ta so'rov ketadi.
+    const [progressRows, streakRows, activityRows] = await Promise.all([
+      this.prisma.progress.groupBy({
+        by: ["userId"],
+        where: { userId: { in: memberIds }, completed: true },
+        _count: { _all: true },
       }),
-    );
+      this.prisma.streak.findMany({
+        where: { userId: { in: memberIds } },
+        select: { userId: true, current: true },
+      }),
+      this.prisma.dailyActivity.groupBy({
+        by: ["userId"],
+        where: { userId: { in: memberIds }, date: { gte: since } },
+        _sum: { minutes: true },
+      }),
+    ]);
+
+    const completedBy = new Map(progressRows.map((r) => [r.userId, r._count._all]));
+    const streakBy = new Map(streakRows.map((r) => [r.userId, r.current]));
+    const minutesBy = new Map(activityRows.map((r) => [r.userId, r._sum.minutes ?? 0]));
+
+    const members = group.members.map((m) => ({
+      id: m.user.id,
+      name: m.user.name || m.user.email.split("@")[0],
+      isOwner: m.userId === group.ownerId,
+      completedCount: completedBy.get(m.userId) ?? 0,
+      streakCurrent: streakBy.get(m.userId) ?? 0,
+      weeklyMinutes: minutesBy.get(m.userId) ?? 0,
+    }));
     // Eng faol a'zolar tepada
     members.sort((a, b) => b.weeklyMinutes - a.weeklyMinutes);
 

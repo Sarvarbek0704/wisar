@@ -105,6 +105,7 @@ export async function verifyEmail(email: string, code: string): Promise<AuthUser
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, code }),
+    credentials: "include", // refresh cookie'ni qabul qilish uchun SHART
   });
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.message || "Kod noto'g'ri");

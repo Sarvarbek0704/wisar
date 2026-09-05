@@ -50,12 +50,15 @@ export class NotificationService {
 
   /** Ro'yxat — eng yangisi birinchi (sahifalash bilan). */
   async list(userId: string, opts: { unreadOnly?: boolean; take?: number; skip?: number } = {}) {
-    const take = Math.min(opts.take ?? 20, 50);
+    // `?take=abc` -> Number("abc") = NaN -> Prisma 500.
+    // Number.isFinite bilan har qanday yaroqsiz qiymatni standartga qaytaramiz.
+    const take = Number.isFinite(opts.take) ? Math.min(Math.max(1, opts.take!), 50) : 20;
+    const skip = Number.isFinite(opts.skip) ? Math.max(0, opts.skip!) : 0;
     return this.prisma.notification.findMany({
       where: { userId, ...(opts.unreadOnly ? { read: false } : {}) },
       orderBy: { createdAt: "desc" },
       take,
-      skip: opts.skip ?? 0,
+      skip,
     });
   }
 

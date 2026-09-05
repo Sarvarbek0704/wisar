@@ -1,4 +1,10 @@
-import { Injectable, NotFoundException, ServiceUnavailableException } from "@nestjs/common";
+import {
+  ForbiddenException,
+  Injectable,
+  Logger,
+  NotFoundException,
+  ServiceUnavailableException,
+} from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
 import { LlmService, type ChatMessage } from "../llm/llm.service";
 import { EmbedService, cosineSimilarity } from "../llm/embed.service";
@@ -27,8 +33,16 @@ export type RagSource = {
   slug: string;
 };
 
+/** Xotiradagi RAG indeksining bitta yozuvi (embedding allaqachon parse qilingan). */
+type RagEntry = { content: string; vec: number[]; source: RagSource };
+
+/** Savol uchun olinadigan eng mos bo'laklar soni. */
+const RAG_TOP_K = 5;
+
 @Injectable()
 export class TutorService {
+  private readonly logger = new Logger(TutorService.name);
+
   constructor(
     private readonly prisma: PrismaService,
     private readonly llm: LlmService,
@@ -63,13 +77,90 @@ export class TutorService {
     });
   }
 
-  async getThread(id: string) {
+  /**
+   * Suhbatga kirish huquqini tekshiradi.
+   * Egasi bor suhbatni FAQAT o'sha foydalanuvchi ko'ra oladi — aks holda ID'ni
+   * bilgan har kim boshqa odamning AI yozishmasini o'qiy olardi.
+   * Egasiz (anonim) suhbatlar ochiq qoladi — ular ro'yxatdan o'tmagan foydalanuvchi uchun.
+   */
+  private assertThreadAccess(thread: { userId: string | null }, viewerId?: string): void {
+    if (thread.userId && thread.userId !== viewerId) {
+      throw new ForbiddenException("Bu suhbat sizga tegishli emas.");
+    }
+  }
+
+  async getThread(id: string, viewerId?: string) {
     const thread = await this.prisma.aiThread.findUnique({
       where: { id },
       include: { messages: { orderBy: { createdAt: "asc" } } },
     });
     if (!thread) throw new NotFoundException("Suhbat topilmadi");
+    this.assertThreadAccess(thread, viewerId);
     return thread;
+  }
+
+  /**
+   * RAG indeksini xotirada saqlaymiz.
+   *
+   * Ilgari HAR savolda 3000 ta qator bazadan o'qilib, har birining embedding'i
+   * JSON.parse qilinardi (~4.6 mln son) — bu event loop'ni bloklab, shu vaqtda
+   * butun API'ni javobsiz qoldirardi. Endi indeks bir marta yig'iladi va
+   * `indexAll()` dan keyin yangilanadi.
+   */
+  private ragIndex: RagEntry[] | null = null;
+  private ragIndexLoading: Promise<RagEntry[]> | null = null;
+
+  private async getRagIndex(): Promise<RagEntry[]> {
+    if (this.ragIndex) return this.ragIndex;
+    // Parallel so'rovlar bitta yuklashni kutadi (bir necha marta qurilmasin).
+    if (!this.ragIndexLoading) {
+      this.ragIndexLoading = (async () => {
+        const chunks = await this.prisma.articleChunk.findMany({
+          select: {
+            content: true,
+            embedding: true,
+            article: {
+              select: {
+                title: true,
+                slug: true,
+                section: { select: { slug: true, topic: { select: { slug: true } } } },
+              },
+            },
+          },
+        });
+        const entries: RagEntry[] = [];
+        for (const c of chunks) {
+          let vec: number[];
+          try {
+            vec = JSON.parse(c.embedding) as number[];
+          } catch {
+            continue; // buzilgan yozuvni tashlab ketamiz
+          }
+          if (!Array.isArray(vec) || !vec.length) continue;
+          entries.push({
+            content: c.content,
+            vec,
+            source: {
+              title: c.article.title,
+              topicSlug: c.article.section.topic.slug,
+              sectionSlug: c.article.section.slug,
+              slug: c.article.slug,
+            },
+          });
+        }
+        this.ragIndex = entries;
+        this.ragIndexLoading = null;
+        this.logger.log(`RAG indeksi xotiraga yuklandi: ${entries.length} bo'lak.`);
+        return entries;
+      })();
+    }
+    return this.ragIndexLoading;
+  }
+
+  /** Kontent qayta indekslangach xotiradagi nusxani bekor qilamiz. */
+  private invalidateRagIndex(): void {
+    this.ragIndex = null;
+    this.ragIndexLoading = null;
   }
 
   /** RAG: savolga tegishli kurs bo'laklarini topadi (18-vazifa). */
@@ -81,51 +172,45 @@ export class TutorService {
     } catch {
       return { context: "", sources: [] };
     }
-    const chunks = await this.prisma.articleChunk.findMany({
-      take: 3000,
-      include: {
-        article: {
-          select: {
-            title: true,
-            slug: true,
-            section: { select: { slug: true, topic: { select: { slug: true } } } },
-          },
-        },
-      },
-    });
-    const scored = chunks
-      .map((c) => {
-        let vec: number[] = [];
-        try {
-          vec = JSON.parse(c.embedding) as number[];
-        } catch {
-          /* skip */
-        }
-        return { c, score: cosineSimilarity(qvec, vec) };
-      })
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 5);
 
-    const context = scored.map((s) => s.c.content).join("\n---\n");
+    const index = await this.getRagIndex();
+    if (!index.length) return { context: "", sources: [] };
+
+    // Eng yaxshi 5 tasini to'liq saralashsiz topamiz (O(n), O(n log n) emas).
+    const top: { entry: RagEntry; score: number }[] = [];
+    for (const entry of index) {
+      const score = cosineSimilarity(qvec, entry.vec);
+      if (top.length < RAG_TOP_K) {
+        top.push({ entry, score });
+        top.sort((a, b) => a.score - b.score); // eng past birinchi
+      } else if (score > top[0].score) {
+        top[0] = { entry, score };
+        top.sort((a, b) => a.score - b.score);
+      }
+    }
+    const scored = top.reverse(); // eng yuqori birinchi
+
+    const context = scored.map((s) => s.entry.content).join("\n---\n");
     const seen = new Set<string>();
     const sources: RagSource[] = [];
     for (const s of scored) {
-      const a = s.c.article;
-      const key = `${a.section.topic.slug}/${a.section.slug}/${a.slug}`;
+      const a = s.entry.source;
+      const key = `${a.topicSlug}/${a.sectionSlug}/${a.slug}`;
       if (seen.has(key)) continue;
       seen.add(key);
-      sources.push({ title: a.title, topicSlug: a.section.topic.slug, sectionSlug: a.section.slug, slug: a.slug });
+      sources.push(a);
     }
     return { context, sources };
   }
 
   /** Streaming javob: kontekst + tarix bilan, so'zma-so'z (17,18,19-vazifa). */
-  async *askStream(threadId: string, question: string): AsyncGenerator<string> {
+  async *askStream(threadId: string, question: string, viewerId?: string): AsyncGenerator<string> {
     const thread = await this.prisma.aiThread.findUnique({
       where: { id: threadId },
       include: { messages: { orderBy: { createdAt: "asc" } } },
     });
     if (!thread) throw new NotFoundException("Suhbat topilmadi");
+    this.assertThreadAccess(thread, viewerId);
 
     await this.prisma.aiMessage.create({
       data: { threadId, role: "user", content: question },
@@ -172,12 +257,13 @@ export class TutorService {
   }
 
   /** Roleplay suhbati oxirida qisqa fikr-mulohaza (19-vazifa). */
-  async feedback(threadId: string) {
+  async feedback(threadId: string, viewerId?: string) {
     const thread = await this.prisma.aiThread.findUnique({
       where: { id: threadId },
       include: { messages: { orderBy: { createdAt: "asc" } } },
     });
     if (!thread) throw new NotFoundException("Suhbat topilmadi");
+    this.assertThreadAccess(thread, viewerId);
     const convo = thread.messages
       .map((m) => `${m.role === "user" ? "Talaba" : "AI"}: ${m.content}`)
       .join("\n");
@@ -213,6 +299,7 @@ export class TutorService {
       });
       totalChunks += chunks.length;
     }
+    this.invalidateRagIndex();
     return { articles: articles.length, chunks: totalChunks };
   }
 }

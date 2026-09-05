@@ -1,4 +1,4 @@
-import { Controller, Get, HttpCode, HttpStatus } from "@nestjs/common";
+import { Controller, Get, HttpException, HttpStatus } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
 
 @Controller("health")
@@ -11,9 +11,14 @@ export class HealthController {
     return { status: "ok", timestamp: new Date().toISOString() };
   }
 
-  /** Readiness — DB ulanishini tekshiradi. Trafik yuborishdan oldin tekshiriladi. */
+  /**
+   * Readiness — DB ulanishini tekshiradi. Trafik yuborishdan oldin tekshiriladi.
+   *
+   * Baza yiqilsa 503 qaytaradi. Ilgari bu yerda `@HttpCode(OK)` turgani uchun
+   * xato holatda ham 200 qaytar edi — Docker healthcheck faqat HTTP kodini
+   * ko'rgani sababli konteyner o'lik baza bilan ham "healthy" ko'rinardi.
+   */
   @Get("ready")
-  @HttpCode(HttpStatus.OK)
   async ready() {
     const started = Date.now();
     try {
@@ -25,7 +30,10 @@ export class HealthController {
         timestamp: new Date().toISOString(),
       };
     } catch {
-      return { status: "error", db: "down", timestamp: new Date().toISOString() };
+      throw new HttpException(
+        { status: "error", db: "down", timestamp: new Date().toISOString() },
+        HttpStatus.SERVICE_UNAVAILABLE,
+      );
     }
   }
 }

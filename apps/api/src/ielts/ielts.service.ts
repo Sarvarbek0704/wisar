@@ -134,10 +134,10 @@ Band 9 = "expert user" (native-daraja). Halol, qattiq, lekin adolatli baho ber �
 2. Lexical Resource: aniq, idiomatik, kam uchraydigan lug'at, paraphrase.
 3. Grammatical Range & Accuracy: to'liq range, murakkab tuzilmalar, aniqlik.
 4. Pronunciation: tushunarlilik, urg'u/ritm/intonatsiya (aksent o'zi muammo emas).
-Eslatma: matn (transcript) bo'yicha baholaganda, Pronunciation'ni faqat taxminiy baho (matnда ko'rinmaydi) — buni izohда ayt.
+Eslatma: matn (transcript) bo'yicha baholaganda, Pronunciation'ni faqat taxminiy baho (matnda ko'rinmaydi) — buni izohda ayt.
 Band 9 = native-daraja. Halol baho ber.`;
 
-  private readonly OUTPUT_FORMAT = `JAVOBNI FAQAT shu JSON formatда qaytar (boshqa matn YO'Q):
+  private readonly OUTPUT_FORMAT = `JAVOBNI FAQAT shu JSON formatda qaytar (boshqa matn YO'Q):
 {
   "overallBand": <umumiy band, 4 mezon o'rtachasi 0.5 ga yaxlitlangan>,
   "criteria": [{"name": "<mezon nomi>", "band": <0-9>, "comment": "<o'zbekcha qisqa izoh>"}],
@@ -162,7 +162,7 @@ ${prompt || "(topshiriq berilmadi — esse mazmunidan aniqla)"}
 FOYDALANUVCHI ESSESI (${wordCount} so'z):
 ${trimmed}
 
-Yuqoridagi essega 4 mezon bo'yicha IELTS band ber va JSON formatда javob qaytar.`;
+Yuqoridagi essega 4 mezon bo'yicha IELTS band ber va JSON formatda javob qaytar.`;
 
     const raw = await this.ask(system, user, 3500, true);
     const parsed = this.parseJson<Omit<WritingScore, "wordCount">>(raw);
@@ -189,7 +189,7 @@ ${question || "(savol berilmadi)"}
 FOYDALANUVCHI JAVOBI (transcript):
 ${trimmed}
 
-Bu javobga 4 mezon bo'yicha IELTS Speaking band ber va JSON formatда javob qaytar.`;
+Bu javobga 4 mezon bo'yicha IELTS Speaking band ber va JSON formatda javob qaytar.`;
 
     const raw = await this.ask(system, user, 3000, true);
     const result = this.parseJson<SpeakingScore>(raw);
@@ -218,7 +218,7 @@ Part 1: tanish mavzuda oddiy savol. Part 2: cue card ("Describe..." + 3-4 bullet
 
   private readonly QUESTION_FORMAT = `Har savol JSON obyekti:
 {"type": "TFNG"|"MCQ"|"completion", "question": "<savol (inglizcha)>", "options": ["<A>","<B>","<C>","<D>"] (faqat MCQ uchun), "answer": "<to'g'ri javob>", "explanation": "<o'zbekcha qisqa izoh: nega shu javob>"}
-- TFNG: answer = "TRUE" | "FALSE" | "NOT GIVEN" (IELTS qoidasi: FALSE=matnga ZID, NOT GIVEN=matnда YO'Q).
+- TFNG: answer = "TRUE" | "FALSE" | "NOT GIVEN" (IELTS qoidasi: FALSE=matnga ZID, NOT GIVEN=matnda YO'Q).
 - MCQ: options 4 ta, answer = to'g'ri variant matni.
 - completion: bo'sh joyni to'ldirish, answer = 1-3 so'z (matndan).`;
 
@@ -226,7 +226,7 @@ Part 1: tanish mavzuda oddiy savol. Part 2: cue card ("Describe..." + 3-4 bullet
   async generateReading(topic?: string): Promise<ReadingTest> {
     const system = `Sen IELTS Academic Reading test muallifisan. Bitta akademik matn (~600-750 so'z, B2-C1 darajada, qiziqarli, faktik) va 10 ta savol yarat (turlar aralash: bir nechta TFNG, MCQ, completion).
 ${this.QUESTION_FORMAT}
-JAVOBNI FAQAT shu JSON formatда qaytar:
+JAVOBNI FAQAT shu JSON formatda qaytar:
 {"title": "<sarlavha>", "passage": "<to'liq matn (inglizcha, paragraflar \\n\\n bilan)>", "questions": [ ... ]}`;
     const user = `IELTS Academic Reading mashq testi yarat${topic ? ` "${topic}" mavzusida` : ""}. 10 savol.`;
     const raw = await this.ask(system, user, 4000, true);
@@ -238,7 +238,7 @@ JAVOBNI FAQAT shu JSON formatда qaytar:
     const system = `Sen IELTS Listening test muallifisan. Bitta tabiiy gaplashuv yoki monolog SKRIPTI (~250-350 so'z, og'zaki uslub, ismlar/raqamlar bilan) va 8 ta savol yarat (turlar aralash: completion ko'p, MCQ).
 ${this.QUESTION_FORMAT}
 ESLATMA: bu brauzer TTS (sun'iy ovoz) bilan o'qiladi — real imtihon audiosi emas (real audio uchun Cambridge IELTS).
-JAVOBNI FAQAT shu JSON formatда qaytar:
+JAVOBNI FAQAT shu JSON formatda qaytar:
 {"title": "<sarlavha>", "script": "<to'liq og'zaki skript (inglizcha)>", "questions": [ ... ]}`;
     const user = `IELTS Listening mashqi yarat${topic ? ` "${topic}" mavzusida` : ""}. 8 savol.`;
     const raw = await this.ask(system, user, 3500, true);

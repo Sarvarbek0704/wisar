@@ -9,7 +9,7 @@ import {
   Query,
   UseGuards,
 } from "@nestjs/common";
-import { IsInt, IsNumber, IsOptional, IsString, Max, Min } from "class-validator";
+import { IsBoolean, IsInt, IsNumber, IsOptional, IsString, Max, Min } from "class-validator";
 import { MeService } from "./me.service";
 import { StreakService } from "./streak.service";
 import { ActivityService } from "./activity.service";
@@ -33,6 +33,10 @@ class GoalDto {
 
 class CefrDto {
   @IsString() level!: string;
+}
+
+class EmailOptInDto {
+  @IsBoolean() optIn!: boolean;
 }
 
 class ScrollDto {
@@ -148,6 +152,12 @@ export class MeController {
   @Put("cefr")
   setCefr(@CurrentUser() u: AuthUser, @Body() dto: CefrDto) {
     return this.me.setCefr(u.sub, dto.level);
+  }
+
+  /** Haftalik hisobot xatiga obuna (obunani bekor qilish imkoniyati). */
+  @Put("email-optin")
+  setEmailOptIn(@CurrentUser() u: AuthUser, @Body() dto: EmailOptInDto) {
+    return this.me.setEmailOptIn(u.sub, dto.optIn);
   }
 
   @Get("insights")
