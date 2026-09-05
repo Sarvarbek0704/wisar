@@ -37,14 +37,27 @@ export default function PlannerPage() {
     setAllDays(loadAllDays());
     if (isLoggedIn()) {
       loadHabitsRemote().then((remote) => {
+        const localHabits = loadHabits();
+        const localLog = loadHabitLog();
+        // DIQQAT: server BO'SH javob qaytarishi mumkin (hech qachon saqlanmagan,
+        // yoki eski nosozlik tufayli bo'sh yozilgan). Bunday javob bilan lokal
+        // ma'lumotni ALMASHTIRIB YUBORMAYMIZ — aks holda foydalanuvchi rejasi
+        // yo'qoladi. Bunday holatda lokalni serverga yuklaymiz.
+        const remoteEmpty = !remote || remote.habits.length === 0;
+        if (remoteEmpty && localHabits.length > 0) {
+          setHabits(localHabits);
+          setLog(localLog);
+          saveHabitsRemote(localHabits, localLog);
+          return;
+        }
         if (remote) {
           setHabits(remote.habits);
           setLog(remote.log);
           saveHabits(remote.habits);
           saveHabitLog(remote.log);
         } else {
-          setHabits(loadHabits());
-          setLog(loadHabitLog());
+          setHabits(localHabits);
+          setLog(localLog);
         }
       });
       setSync("synced");
