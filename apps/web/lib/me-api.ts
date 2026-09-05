@@ -30,12 +30,21 @@ export type DashboardData = {
   } | null;
   bookmarkCount: number;
   completedCount: number;
+  /** Haftalik hisobot xatiga obuna. */
+  emailOptIn: boolean;
 };
 
 export const isLoggedIn = () => !!getToken();
 
 export const getState = () => authFetch<UserState>("/me/state");
 export const getDashboard = () => authFetch<DashboardData>("/me/dashboard");
+
+/** Haftalik hisobot xatiga obunani yoqish/o'chirish. */
+export const setEmailOptIn = (optIn: boolean) =>
+  authFetch<{ emailOptIn: boolean }>("/me/email-optin", {
+    method: "PUT",
+    body: JSON.stringify({ optIn }),
+  });
 export const markRead = (id: string) =>
   authFetch(`/me/progress/${id}`, { method: "POST" });
 export const unmarkRead = (id: string) =>

@@ -14,6 +14,7 @@ import { DailyGoalRing } from "@/components/DailyGoalRing";
 import { InsightsPanel } from "@/components/InsightsPanel";
 import { TwoFactorSetup } from "@/components/TwoFactorSetup";
 import { ChangePassword } from "@/components/ChangePassword";
+import { EmailPreferences } from "@/components/EmailPreferences";
 
 /* ── SVG helpers ──────────────────────────────────────── */
 
@@ -301,6 +302,9 @@ export default function MePage() {
 
           {/* ── Tavsiyalar + analitika (10,30,32-vazifa) ── */}
           <InsightsPanel topicProgress={data.topicProgress} />
+
+          {/* ── Email obunasi ── */}
+          <EmailPreferences initial={data.emailOptIn} />
 
           {/* ── Xavfsizlik: parol + 2FA (40-vazifa) ── */}
           <ChangePassword />

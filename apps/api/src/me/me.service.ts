@@ -269,7 +269,7 @@ export class MeService {
 
   // Shaxsiy dashboard: mavzular bo'yicha progress, davom ettirish, statistika
   async dashboard(userId: string) {
-    const [topics, completedRows, bookmarkCount, last] = await Promise.all([
+    const [topics, completedRows, bookmarkCount, last, prefs] = await Promise.all([
       this.prisma.topic.findMany({
         where: { published: true },
         orderBy: { order: "asc" },
@@ -306,6 +306,11 @@ export class MeService {
           },
         },
       }),
+      // Email obunasi — sozlamalar tugmasi uchun (qo'shimcha so'rovsiz)
+      this.prisma.user.findUnique({
+        where: { id: userId },
+        select: { emailOptIn: true },
+      }),
     ]);
 
     const completed = new Set(completedRows.map((p) => p.articleId));
@@ -339,6 +344,7 @@ export class MeService {
       lastRead,
       bookmarkCount,
       completedCount: completed.size,
+      emailOptIn: prefs?.emailOptIn ?? true,
     };
   }
 }
