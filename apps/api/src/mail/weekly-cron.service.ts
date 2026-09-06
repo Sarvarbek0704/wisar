@@ -3,6 +3,7 @@ import { Cron } from '@nestjs/schedule';
 import { PrismaService } from '../prisma.service';
 import { MailService } from './mail.service';
 import { APP_TZ, cronsEnabled } from '../common/date';
+import { displayName } from '../common/display-name';
 
 @Injectable()
 export class WeeklyCronService {
@@ -21,7 +22,9 @@ export class WeeklyCronService {
     // Faqat email tasdiqlagan VA obunani bekor qilmagan foydalanuvchilar.
     // Ilgari hammaga — tasdiqlanmagan hisoblarga ham — yuborilardi.
     const users = await this.prisma.user.findMany({
-      where: { emailVerified: true, emailOptIn: true },
+      // email: { not: null } — telefon bilan ro'yxatdan o'tgan foydalanuvchida
+      // email bo'lmasligi mumkin, ularga xat yuborib bo'lmaydi.
+      where: { emailVerified: true, emailOptIn: true, email: { not: null } },
       include: { streak: true },
     });
     const weekAgo = new Date();
@@ -33,8 +36,8 @@ export class WeeklyCronService {
           where: { userId: user.id, updatedAt: { gte: weekAgo } },
         });
         const streak = user.streak?.current ?? 0;
-        const name = user.name || user.email.split('@')[0];
-        await this.mail.sendWeeklySummary(user.email, name, completed, streak);
+        if (!user.email) continue; // TypeScript uchun ham, xavfsizlik uchun ham
+        await this.mail.sendWeeklySummary(user.email, displayName(user), completed, streak);
       } catch (e) {
         this.logger.error(`${user.email} uchun xato: ${e}`);
       }

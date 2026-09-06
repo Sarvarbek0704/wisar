@@ -7,9 +7,16 @@ function makePrismaMock() {
   return {
     user: {
       findUnique: jest.fn(),
+      findFirst: jest.fn(),
       count: jest.fn(),
       create: jest.fn(),
       update: jest.fn(),
+    },
+    phoneLinkToken: {
+      deleteMany: jest.fn().mockResolvedValue({ count: 0 }),
+      create: jest.fn().mockResolvedValue({}),
+      findUnique: jest.fn(),
+      update: jest.fn().mockResolvedValue({}),
     },
     emailVerification: {
       deleteMany: jest.fn().mockResolvedValue({ count: 0 }),
@@ -43,13 +50,16 @@ describe("AuthService", () => {
 
   describe("register", () => {
     it("birinchi foydalanuvchini admin qilib darhol kiritadi (token qaytaradi)", async () => {
-      prisma.user.findUnique.mockResolvedValue(null);
+      prisma.user.findFirst.mockResolvedValue(null);
       prisma.user.count.mockResolvedValue(0);
       prisma.user.create.mockImplementation(({ data }: any) =>
         Promise.resolve({ id: "u1", ...data, name: data.name ?? null }),
       );
 
-      const res: any = await auth.register("a@b.uz", "secret1", "Ali", undefined, mailMock);
+      const res: any = await auth.register(
+        { email: "a@b.uz", password: "secret1", name: "Ali" },
+        mailMock,
+      );
 
       expect(prisma.user.create).toHaveBeenCalled();
       const createArg = prisma.user.create.mock.calls[0][0].data;
@@ -59,34 +69,66 @@ describe("AuthService", () => {
     });
 
     it("ikkinchi foydalanuvchidan email tasdiqlash so'raydi", async () => {
-      prisma.user.findUnique.mockResolvedValue(null);
+      prisma.user.findFirst.mockResolvedValue(null);
       prisma.user.count.mockResolvedValue(1);
       prisma.user.create.mockResolvedValue({ id: "u2", email: "c@d.uz", name: null });
 
-      const res: any = await auth.register("c@d.uz", "secret1", undefined, undefined, mailMock);
+      const res: any = await auth.register({ email: "c@d.uz", password: "secret1" }, mailMock);
 
       expect(res.needsVerification).toBe(true);
       expect(mailMock.sendVerificationCode).toHaveBeenCalled();
     });
 
     it("tasdiqlangan email allaqachon mavjud bo'lsa ConflictException tashlaydi", async () => {
-      prisma.user.findUnique.mockResolvedValue({
+      prisma.user.findFirst.mockResolvedValue({
         id: "u1",
         email: "a@b.uz",
         emailVerified: true,
         name: null,
       });
       await expect(
-        auth.register("a@b.uz", "secret1", undefined, undefined, mailMock),
+        auth.register({ email: "a@b.uz", password: "secret1" }, mailMock),
       ).rejects.toBeInstanceOf(ConflictException);
     });
 
+    it("telefon bilan ro'yxatdan o'tishda Telegram tasdiqlashini so'raydi", async () => {
+      prisma.user.findFirst.mockResolvedValue(null);
+      prisma.user.count.mockResolvedValue(3);
+      prisma.user.create.mockResolvedValue({ id: "u4", phone: "998901234567", name: null });
+      prisma.user.findUnique.mockResolvedValue({ phone: "998901234567", phoneVerified: false });
+
+      const res: any = await auth.register(
+        { phone: "+998 90 123 45 67", password: "secret1" },
+        mailMock,
+      );
+
+      // Telefon normallashtirilgan ko'rinishda saqlanadi
+      expect(prisma.user.create.mock.calls[0][0].data.phone).toBe("998901234567");
+      expect(prisma.user.create.mock.calls[0][0].data.email).toBeNull();
+      expect(res.needsPhoneVerification).toBe(true);
+      // Telefon oqimida email KETMAYDI
+      expect(mailMock.sendVerificationCode).not.toHaveBeenCalled();
+    });
+
+    it("email ham, telefon ham berilmasa rad etadi", async () => {
+      await expect(auth.register({ password: "secret1" }, mailMock)).rejects.toBeInstanceOf(
+        BadRequestException,
+      );
+    });
+
+    it("noto'g'ri telefon raqamini rad etadi", async () => {
+      // Shahar raqami — Telegram/SMS bormaydi, tasdiqlab bo'lmaydi
+      await expect(
+        auth.register({ phone: "998712345678", password: "secret1" }, mailMock),
+      ).rejects.toBeInstanceOf(BadRequestException);
+    });
+
     it("parolni bcrypt bilan hash qiladi (ochiq saqlamaydi)", async () => {
-      prisma.user.findUnique.mockResolvedValue(null);
+      prisma.user.findFirst.mockResolvedValue(null);
       prisma.user.count.mockResolvedValue(5);
       prisma.user.create.mockResolvedValue({ id: "u3", email: "x@y.uz", name: null });
 
-      await auth.register("x@y.uz", "myPlainPass", undefined, undefined, mailMock);
+      await auth.register({ email: "x@y.uz", password: "myPlainPass" }, mailMock);
       const hash = prisma.user.create.mock.calls[0][0].data.passwordHash;
       expect(hash).not.toBe("myPlainPass");
       expect(await bcrypt.compare("myPlainPass", hash)).toBe(true);

@@ -2,7 +2,9 @@ import { createParamDecorator, ExecutionContext } from "@nestjs/common";
 
 export type AuthUser = {
   sub: string;
-  email: string;
+  /** Telefon bilan ro'yxatdan o'tgan foydalanuvchida email bo'lmasligi mumkin. */
+  email: string | null;
+  phone: string | null;
   role: string;
   name?: string | null;
 };

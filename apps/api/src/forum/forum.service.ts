@@ -1,10 +1,7 @@
 import { Injectable, NotFoundException, ForbiddenException, BadRequestException } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
 import { NotificationService } from "../notifications/notification.service";
-
-function authorName(u: { name: string | null; email: string }): string {
-  return u.name || u.email.split("@")[0];
-}
+import { displayName as authorName } from "../common/display-name";
 
 @Injectable()
 export class ForumService {

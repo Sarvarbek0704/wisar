@@ -15,6 +15,7 @@ import { InsightsPanel } from "@/components/InsightsPanel";
 import { TwoFactorSetup } from "@/components/TwoFactorSetup";
 import { ChangePassword } from "@/components/ChangePassword";
 import { EmailPreferences } from "@/components/EmailPreferences";
+import { PhoneSettings } from "@/components/PhoneSettings";
 
 /* ── SVG helpers ──────────────────────────────────────── */
 
@@ -302,6 +303,9 @@ export default function MePage() {
 
           {/* ── Tavsiyalar + analitika (10,30,32-vazifa) ── */}
           <InsightsPanel topicProgress={data.topicProgress} />
+
+          {/* ── Telefon raqami (Telegram orqali tasdiqlanadi) ── */}
+          <PhoneSettings initialPhone={data.phone} initialVerified={data.phoneVerified} />
 
           {/* ── Email obunasi ── */}
           <EmailPreferences initial={data.emailOptIn} />

@@ -3,8 +3,11 @@
 import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { GraduationCap, Eye, EyeOff } from "lucide-react";
-import { register, loginWithGoogle, isLoggedIn } from "@/lib/auth";
+import { GraduationCap, Eye, EyeOff, Mail, Phone } from "lucide-react";
+import { register, loginWithGoogle, isLoggedIn, savePendingPhone } from "@/lib/auth";
+
+/** Ro'yxatdan o'tish usuli — foydalanuvchi bittasini tanlaydi. */
+type Mode = "email" | "phone";
 
 function RegisterInner() {
   const router = useRouter();
@@ -15,7 +18,11 @@ function RegisterInner() {
     if (isLoggedIn()) router.replace(next);
   }, [next, router]);
 
+  // Telegram bot sozlangach buni "phone" ga o'zgartiring — telefon
+  // O'zbekistonda tanishroq usul. Hozircha bot yo'q, shuning uchun email.
+  const [mode, setMode] = useState<Mode>("email");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [showPw, setShowPw] = useState(false);
   const [name, setName] = useState("");
@@ -27,9 +34,21 @@ function RegisterInner() {
     setErr("");
     setLoading(true);
     try {
-      const r = await register(email, password, name);
+      const r = await register(
+        mode === "email"
+          ? { email, password, name }
+          : { phone, password, name },
+      );
       if (!r.ok) {
-        router.push(`/verify-email?email=${encodeURIComponent(r.email)}&next=${encodeURIComponent(next)}`);
+        if ("needsPhoneVerification" in r) {
+          // Telefon oqimi — Telegram orqali tasdiqlash sahifasiga
+          savePendingPhone(r.verification);
+          router.push(`/verify-phone?next=${encodeURIComponent(next)}`);
+          return;
+        }
+        router.push(
+          `/verify-email?email=${encodeURIComponent(r.email)}&next=${encodeURIComponent(next)}`,
+        );
         return;
       }
       router.push(next);
@@ -63,14 +82,52 @@ function RegisterInner() {
           placeholder="Ism"
           className="w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-ink outline-none focus:border-accent"
         />
-        <input
-          type="email"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          className="w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-ink outline-none focus:border-accent"
-        />
+        {/* Telefon yoki email — bittasi yetarli */}
+        <div className="flex gap-1 rounded-lg border border-line bg-bg p-1">
+          {(["phone", "email"] as Mode[]).map((m) => (
+            <button
+              key={m}
+              type="button"
+              onClick={() => {
+                setMode(m);
+                setErr("");
+              }}
+              className={`flex flex-1 items-center justify-center gap-1.5 rounded-md py-1.5 text-sm font-medium transition ${
+                mode === m ? "bg-accent text-white" : "text-soft hover:text-ink"
+              }`}
+            >
+              {m === "phone" ? <Phone size={15} /> : <Mail size={15} />}
+              {m === "phone" ? "Telefon" : "Email"}
+            </button>
+          ))}
+        </div>
+
+        {mode === "phone" ? (
+          <>
+            <input
+              type="tel"
+              required
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="+998 90 123 45 67"
+              autoComplete="tel"
+              className="w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-ink outline-none focus:border-accent"
+            />
+            <p className="text-xs text-soft">
+              Raqamni Telegram orqali tasdiqlaysiz — kod terish shart emas.
+            </p>
+          </>
+        ) : (
+          <input
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            autoComplete="email"
+            className="w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-ink outline-none focus:border-accent"
+          />
+        )}
         <div className="relative">
           <input
             type={showPw ? "text" : "password"}

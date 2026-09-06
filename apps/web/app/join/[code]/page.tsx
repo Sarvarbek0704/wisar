@@ -33,7 +33,7 @@ export default function JoinPage() {
     setErr("");
     setLoading(true);
     try {
-      await register(email, password, name, code);
+      await register({ email, password, name, inviteCode: code });
       router.push("/me");
       router.refresh();
     } catch (e) {

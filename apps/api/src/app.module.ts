@@ -23,6 +23,7 @@ import { GroupsModule } from "./groups/groups.module";
 import { ForumModule } from "./forum/forum.module";
 import { NotificationModule } from "./notifications/notification.module";
 import { FeedbackModule } from "./feedback/feedback.module";
+import { TelegramModule } from "./telegram/telegram.module";
 import { HealthController } from "./health/health.controller";
 
 @Module({
@@ -47,6 +48,7 @@ import { HealthController } from "./health/health.controller";
     ForumModule,
     NotificationModule,
     FeedbackModule,
+    TelegramModule,
   ],
   controllers: [ContentController, HealthController],
   providers: [

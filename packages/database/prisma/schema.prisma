@@ -17,14 +17,23 @@ datasource db {
 /// Foydalanuvchi (auth, admin, progress, bookmark uchun)
 model User {
   id             String          @id @default(cuid())
-  email          String          @unique
+  /// Email YOKI telefon bo'lishi shart (kodda tekshiriladi — Prisma buni ifodalay olmaydi).
+  /// Telefon bilan ro'yxatdan o'tgan foydalanuvchida email bo'lmasligi mumkin.
+  email          String?         @unique
+  /// Normallashtirilgan ko'rinish: 998901234567 (common/phone.ts)
+  phone          String?         @unique
   name           String?
   passwordHash   String
   googleId       String?         @unique
+  /// Telegram foydalanuvchi ID'si — raqamni tasdiqlagan hisob
+  telegramId     String?         @unique
   /// "admin" yoki "user"
   role           String          @default("user")
   /// Email tasdiqlangan-yo'qligi (qat'iy verification)
   emailVerified  Boolean         @default(false)
+  /// Telefon Telegram orqali tasdiqlanganmi
+  phoneVerified  Boolean         @default(false)
+  phoneLinkTokens PhoneLinkToken[]
   /// Onboarding aniqlagan CEFR daraja: "A1".."C2" (10,32-vazifa)
   cefrLevel        String?
   /// Kunlik maqsad (daqiqa) (4-vazifa)
@@ -307,6 +316,30 @@ model PasswordReset {
   createdAt DateTime @default(now())
 
   @@index([userId])
+}
+
+/// Telefonni Telegram orqali tasdiqlash uchun bir martalik token.
+///
+/// Oqim: sayt token yaratadi → foydalanuvchi `t.me/<bot>?start=<token>` ga o'tadi
+/// → botda "Raqamni ulashish" tugmasini bosadi → Telegram BOTGA haqiqiy raqamni
+/// yuboradi → biz tokendan qaysi hisob ekanini bilib, raqamni tasdiqlaymiz.
+///
+/// Ya'ni foydalanuvchi hech qanday kod termaydi va raqam haqiqiyligini
+/// Telegram'ning o'zi kafolatlaydi.
+model PhoneLinkToken {
+  id        String    @id @default(cuid())
+  token     String    @unique
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// Foydalanuvchi botda /start bosgach yoziladi. Raqam keyinroq alohida
+  /// xabar bilan kelgani uchun, o'sha chatni tokenga bog'lab qo'yishimiz kerak.
+  chatId    String?
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+  @@index([chatId])
 }
 
 /// Email tasdiqlash kodlari (6 xonali)

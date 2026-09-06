@@ -2,6 +2,7 @@ import { Injectable, NotFoundException, ForbiddenException, BadRequestException 
 import { randomBytes } from "crypto";
 import { PrismaService } from "../prisma.service";
 import { dayStr } from "../common/date";
+import { displayName } from "../common/display-name";
 
 function makeCode(): string {
   return randomBytes(4).toString("hex").slice(0, 6).toUpperCase();
@@ -88,7 +89,7 @@ export class GroupsService {
 
     const members = group.members.map((m) => ({
       id: m.user.id,
-      name: m.user.name || m.user.email.split("@")[0],
+      name: displayName(m.user),
       isOwner: m.userId === group.ownerId,
       completedCount: completedBy.get(m.userId) ?? 0,
       streakCurrent: streakBy.get(m.userId) ?? 0,

@@ -8,7 +8,9 @@ const USER_KEY = "wisar-user";
 
 export type AuthUser = {
   id: string;
-  email: string;
+  /** Telefon bilan ro'yxatdan o'tgan foydalanuvchida email bo'lmasligi mumkin. */
+  email: string | null;
+  phone: string | null;
   name: string | null;
   role: string;
 };
@@ -38,10 +40,61 @@ export function logout() {
   localStorage.removeItem(USER_KEY);
 }
 
-// Natija: tizimga kirildi YOKI email tasdiqlash / 2FA kerak
+/** Telegram orqali telefonni tasdiqlash uchun kerakli ma'lumot. */
+export type PhoneVerification = {
+  phone: string;
+  telegramUrl: string | null;
+  linkToken: string;
+  expiresInMinutes: number;
+};
+
+const PENDING_PHONE_KEY = "wisar-pending-phone";
+
+/**
+ * Tasdiqlash ma'lumotini sahifalar orasida saqlaymiz.
+ * sessionStorage — chunki bu vaqtinchalik va faqat shu tabga tegishli.
+ */
+export function savePendingPhone(v: PhoneVerification): void {
+  try {
+    sessionStorage.setItem(PENDING_PHONE_KEY, JSON.stringify(v));
+  } catch {
+    /* xotira yopiq bo'lsa jim o'tamiz */
+  }
+}
+
+export function readPendingPhone(): PhoneVerification | null {
+  try {
+    const raw = sessionStorage.getItem(PENDING_PHONE_KEY);
+    return raw ? (JSON.parse(raw) as PhoneVerification) : null;
+  } catch {
+    return null;
+  }
+}
+
+export function clearPendingPhone(): void {
+  try {
+    sessionStorage.removeItem(PENDING_PHONE_KEY);
+  } catch {
+    /* ignore */
+  }
+}
+
+/** Havola tokeni bo'yicha tasdiqlash holati — kirish talab qilinmaydi. */
+export async function checkPhoneLink(
+  token: string,
+): Promise<{ verified: boolean; expired?: boolean; phone?: string | null }> {
+  const res = await fetchWithTimeout(
+    `${API}/api/auth/phone/link-status?token=${encodeURIComponent(token)}`,
+  );
+  if (!res.ok) return { verified: false };
+  return res.json();
+}
+
+// Natija: tizimga kirildi YOKI tasdiqlash / 2FA kerak
 export type AuthResult =
   | { ok: true; user: AuthUser }
   | { ok: false; needsVerification: true; email: string }
+  | { ok: false; needsPhoneVerification: true; verification: PhoneVerification }
   | { ok: false; needs2fa: true; email: string };
 
 async function authRequest(
@@ -68,6 +121,19 @@ async function authRequest(
   if (data?.needsVerification) {
     return { ok: false, needsVerification: true, email: data.email ?? (body.email as string) };
   }
+  // Telefon tasdiqlanmagan — Telegram havolasi qaytadi
+  if (data?.needsPhoneVerification) {
+    return {
+      ok: false,
+      needsPhoneVerification: true,
+      verification: {
+        phone: data.phone,
+        telegramUrl: data.telegramUrl ?? null,
+        linkToken: data.linkToken,
+        expiresInMinutes: data.expiresInMinutes ?? 30,
+      },
+    };
+  }
   // 2FA kodi kerak (40-vazifa)
   if (data?.needs2fa) {
     return { ok: false, needs2fa: true, email: body.email as string };
@@ -77,8 +143,9 @@ async function authRequest(
   return { ok: true, user: data.user };
 }
 
-export const login = (email: string, password: string, code?: string) =>
-  authRequest("/auth/login", { email, password, ...(code ? { code } : {}) });
+/** `identifier` — email yoki telefon raqami. */
+export const login = (identifier: string, password: string, code?: string) =>
+  authRequest("/auth/login", { identifier, password, ...(code ? { code } : {}) });
 
 // 2FA boshqaruv (40-vazifa)
 export const get2faStatus = () =>
@@ -97,8 +164,45 @@ export const changePassword = (currentPassword: string, newPassword: string) =>
     body: JSON.stringify({ currentPassword, newPassword }),
   });
 
-export const register = (email: string, password: string, name?: string, inviteCode?: string) =>
-  authRequest("/auth/register", { email, password, name, ...(inviteCode ? { inviteCode } : {}) });
+/** Ro'yxatdan o'tish — `email` YOKI `phone` dan bittasi berilishi kerak. */
+export const register = (input: {
+  email?: string;
+  phone?: string;
+  password: string;
+  name?: string;
+  inviteCode?: string;
+}) => authRequest("/auth/register", { ...input });
+
+// ─── Telefon (Telegram orqali tasdiqlanadi) ──────────────────────────────────
+
+/** Hisobga telefon qo'shadi/o'zgartiradi va tasdiqlashni boshlaydi. */
+export const setPhone = (phone: string) =>
+  authFetch<PhoneVerification & { needsPhoneVerification: true }>("/auth/phone", {
+    method: "PUT",
+    body: JSON.stringify({ phone }),
+  });
+
+/** Tasdiqlash havolasini qaytadan oladi. */
+export const startPhoneVerification = () =>
+  authFetch<PhoneVerification & { needsPhoneVerification?: true; phoneVerified?: true }>(
+    "/auth/phone/start",
+    { method: "POST" },
+  );
+
+/**
+ * Tasdiqlash holatini so'raydi. Tasdiqlangan bo'lsa yangi token ham keladi —
+ * uni saqlab qo'yamiz, foydalanuvchi qaytadan kirmasin.
+ */
+export async function phoneStatus(): Promise<{ phoneVerified: boolean; phone: string | null }> {
+  const r = await authFetch<{
+    phoneVerified: boolean;
+    phone: string | null;
+    token?: string;
+    user?: AuthUser;
+  }>("/auth/phone/status");
+  if (r.phoneVerified && r.token && r.user) save(r.token, r.user);
+  return { phoneVerified: r.phoneVerified, phone: r.phone };
+}
 
 export async function verifyEmail(email: string, code: string): Promise<AuthUser> {
   const res = await fetch(`${API}/api/auth/verify-email`, {

@@ -1,8 +1,11 @@
 import {
+  BadRequestException,
   Body,
   Controller,
   Get,
   Post,
+  Put,
+  Query,
   Redirect,
   Req,
   Res,
@@ -15,7 +18,7 @@ import type { Request, Response, CookieOptions } from "express";
 import { AuthService } from "./auth.service";
 import {
   LoginDto, RegisterDto, ForgotPasswordDto, ResetPasswordDto,
-  VerifyEmailDto, ResendVerificationDto, ChangePasswordDto,
+  VerifyEmailDto, ResendVerificationDto, ChangePasswordDto, SetPhoneDto,
 } from "./dto";
 import { JwtGuard } from "./jwt.guard";
 import { CurrentUser, type AuthUser } from "./current-user.decorator";
@@ -63,7 +66,16 @@ export class AuthController {
   @Throttle({ default: { limit: 5, ttl: 60_000 } })
   @Post("register")
   async register(@Body() dto: RegisterDto, @Res({ passthrough: true }) res: Response) {
-    const result = await this.auth.register(dto.email, dto.password, dto.name, dto.inviteCode, this.mail);
+    const result = await this.auth.register(
+      {
+        email: dto.email,
+        phone: dto.phone,
+        password: dto.password,
+        name: dto.name,
+        inviteCode: dto.inviteCode,
+      },
+      this.mail,
+    );
     if ("token" in result) await this.issueRefresh(res, result.user.id);
     return result;
   }
@@ -72,7 +84,10 @@ export class AuthController {
   @Throttle({ default: { limit: 10, ttl: 60_000 } })
   @Post("login")
   async login(@Body() dto: LoginDto, @Res({ passthrough: true }) res: Response) {
-    const result = await this.auth.login(dto.email, dto.password, this.mail, dto.code);
+    // `identifier` — email yoki telefon. `email` eski mijozlar uchun qoldirilgan.
+    const identifier = (dto.identifier ?? dto.email ?? "").trim();
+    if (!identifier) throw new BadRequestException("Email yoki telefon raqamini kiriting");
+    const result = await this.auth.login(identifier, dto.password, this.mail, dto.code);
     await this.issueRefresh(res, result.user.id);
     return result;
   }
@@ -143,6 +158,46 @@ export class AuthController {
   @Get("me")
   me(@CurrentUser() user: AuthUser) {
     return user;
+  }
+
+  // ─── Telefon raqami (Telegram orqali tasdiqlanadi) ──────────────────────────
+
+  /** Hisobga telefon raqamini qo'shadi/o'zgartiradi va tasdiqlashni boshlaydi. */
+  @Throttle({ default: { limit: 5, ttl: 60_000 } })
+  @UseGuards(JwtGuard)
+  @Put("phone")
+  setPhone(@CurrentUser() u: AuthUser, @Body() dto: SetPhoneDto) {
+    return this.auth.setPhone(u.sub, dto.phone);
+  }
+
+  /** Tasdiqlash havolasini qaytadan yaratadi (havola muddati 30 daqiqa). */
+  @Throttle({ default: { limit: 5, ttl: 60_000 } })
+  @UseGuards(JwtGuard)
+  @Post("phone/start")
+  startPhoneVerification(@CurrentUser() u: AuthUser) {
+    return this.auth.startPhoneVerification(u.sub);
+  }
+
+  /**
+   * Tasdiqlash holati — sayt Telegram'dan qaytgach shu endpoint'ni so'raydi.
+   * Tasdiqlangan bo'lsa yangi token beradi (foydalanuvchi darhol kiradi).
+   */
+  @UseGuards(JwtGuard)
+  @Get("phone/status")
+  phoneStatus(@CurrentUser() u: AuthUser) {
+    return this.auth.phoneStatus(u.sub);
+  }
+
+  /**
+   * Havola tokeni bo'yicha holat — AUTH KERAK EMAS.
+   * Telefon bilan endi ro'yxatdan o'tgan foydalanuvchida token yo'q, shuning
+   * uchun sayt tasdiqlanishini shu yerdan kutadi.
+   */
+  @Throttle({ default: { limit: 60, ttl: 60_000 } })
+  @Get("phone/link-status")
+  checkPhoneLink(@Query("token") token: string) {
+    if (!token?.trim()) throw new BadRequestException("token kerak");
+    return this.auth.checkPhoneLink(token.trim());
   }
 
   // Parolni yangilash (login qilingan holda). Brute-force himoyasi: 5/daqiqa.

@@ -4,7 +4,7 @@ import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { GraduationCap, Eye, EyeOff } from "lucide-react";
-import { login, register, loginWithGoogle, isLoggedIn } from "@/lib/auth";
+import { login, register, loginWithGoogle, isLoggedIn, savePendingPhone } from "@/lib/auth";
 import { syncPendingReviews } from "@/lib/pending-reviews";
 
 function LoginInner() {
@@ -32,11 +32,16 @@ function LoginInner() {
     try {
       const r = mode === "login"
         ? await login(email, password, twofa ? code : undefined)
-        : await register(email, password, name);
+        : await register({ email, password, name });
       if (!r.ok) {
         if ("needs2fa" in r) {
           setTwofa(true);
           setErr(code ? "2FA kodi noto'g'ri" : "Authenticator kodini kiriting");
+          return;
+        }
+        if ("needsPhoneVerification" in r) {
+          savePendingPhone(r.verification);
+          router.push(`/verify-phone?next=${encodeURIComponent(next)}`);
           return;
         }
         router.push(`/verify-email?email=${encodeURIComponent(r.email)}&next=${encodeURIComponent(next)}`);
@@ -83,11 +88,11 @@ function LoginInner() {
           />
         )}
         <input
-          type="email"
+          type={mode === "login" ? "text" : "email"}
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
+          placeholder={mode === "login" ? "Email yoki telefon" : "Email"}
           className="w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-ink outline-none focus:border-accent"
         />
         <div className="relative">

@@ -39,7 +39,8 @@ export function UserMenu() {
     );
   }
 
-  const initial = (user.name || user.email).charAt(0).toUpperCase();
+  // Telefon bilan kirgan foydalanuvchida email bo'lmasligi mumkin.
+  const initial = (user.name || user.email || "F").charAt(0).toUpperCase();
   const item =
     "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left transition hover:bg-bg";
 

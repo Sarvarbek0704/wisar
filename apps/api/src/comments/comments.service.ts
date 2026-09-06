@@ -1,5 +1,6 @@
 import { ForbiddenException, Injectable } from "@nestjs/common";
 import { PrismaService } from "../prisma.service";
+import { displayName } from "../common/display-name";
 
 export type CommentNode = {
   id: string;
@@ -47,7 +48,7 @@ export class CommentsService {
         body: c.body,
         createdAt: c.createdAt,
         userId: c.userId,
-        author: c.user.name || c.user.email.split("@")[0],
+        author: displayName(c.user),
         parentId: c.parentId,
         likeCount: c._count.likes,
         likedByMe: likedSet.has(c.id),

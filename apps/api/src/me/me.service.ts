@@ -306,10 +306,10 @@ export class MeService {
           },
         },
       }),
-      // Email obunasi — sozlamalar tugmasi uchun (qo'shimcha so'rovsiz)
+      // Sozlamalar uchun (qo'shimcha so'rovsiz)
       this.prisma.user.findUnique({
         where: { id: userId },
-        select: { emailOptIn: true },
+        select: { emailOptIn: true, phone: true, phoneVerified: true },
       }),
     ]);
 
@@ -345,6 +345,8 @@ export class MeService {
       bookmarkCount,
       completedCount: completed.size,
       emailOptIn: prefs?.emailOptIn ?? true,
+      phone: prefs?.phone ?? null,
+      phoneVerified: prefs?.phoneVerified ?? false,
     };
   }
 }

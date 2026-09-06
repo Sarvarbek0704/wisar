@@ -32,6 +32,9 @@ export type DashboardData = {
   completedCount: number;
   /** Haftalik hisobot xatiga obuna. */
   emailOptIn: boolean;
+  /** Normallashtirilgan telefon (998...) yoki null. */
+  phone: string | null;
+  phoneVerified: boolean;
 };
 
 export const isLoggedIn = () => !!getToken();

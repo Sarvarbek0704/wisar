@@ -1,8 +1,19 @@
-import { IsEmail, IsOptional, IsString, MinLength } from "class-validator";
+import { IsEmail, IsOptional, IsString, MaxLength, MinLength } from "class-validator";
 
+/**
+ * Ro'yxatdan o'tish: foydalanuvchi EMAIL yoki TELEFON dan bittasini kiritadi.
+ * Ikkalasi ham ixtiyoriy deb belgilangan, lekin kamida bittasi bo'lishi
+ * `AuthService.register` da tekshiriladi (class-validator buni ifodalay olmaydi).
+ */
 export class RegisterDto {
-  @IsEmail()
-  email!: string;
+  @IsOptional()
+  @IsEmail({}, { message: "Email manzili noto'g'ri" })
+  email?: string;
+
+  @IsOptional()
+  @IsString()
+  @MaxLength(20)
+  phone?: string;
 
   @MinLength(6, { message: "Parol kamida 6 belgi bo'lsin" })
   password!: string;
@@ -17,8 +28,19 @@ export class RegisterDto {
 }
 
 export class LoginDto {
-  @IsEmail()
-  email!: string;
+  /**
+   * Email yoki telefon raqami — qaysi biri ekani serverda aniqlanadi.
+   * `email` — eski mijozlar uchun; ikkalasidan biri bo'lsa yetadi.
+   */
+  @IsOptional()
+  @IsString()
+  @MaxLength(200)
+  identifier?: string;
+
+  @IsOptional()
+  @IsString()
+  @MaxLength(200)
+  email?: string;
 
   @IsString()
   password!: string;
@@ -64,4 +86,11 @@ export class ChangePasswordDto {
 
   @MinLength(6, { message: "Yangi parol kamida 6 belgi bo'lsin" })
   newPassword!: string;
+}
+
+export class SetPhoneDto {
+  @IsString()
+  @MinLength(9, { message: "Telefon raqami juda qisqa" })
+  @MaxLength(20)
+  phone!: string;
 }
