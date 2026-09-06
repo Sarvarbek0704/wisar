@@ -18,9 +18,8 @@ function RegisterInner() {
     if (isLoggedIn()) router.replace(next);
   }, [next, router]);
 
-  // Telegram bot sozlangach buni "phone" ga o'zgartiring — telefon
-  // O'zbekistonda tanishroq usul. Hozircha bot yo'q, shuning uchun email.
-  const [mode, setMode] = useState<Mode>("email");
+  // Telefon O'zbekistonda tanishroq usul, shuning uchun standart tanlov.
+  const [mode, setMode] = useState<Mode>("phone");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
